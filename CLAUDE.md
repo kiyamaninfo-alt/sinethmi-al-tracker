@@ -1,11 +1,11 @@
-# Project: krishsoft
-Developer: Anjana
+# Sinethmi A/L Tracker (krishsoft)
+Stack: Vite + React + Tailwind v4 + Supabase + PWA
 
-## Guidelines for Claude Code:
-1. **Targeted Inspection**: Never read whole files when searching for functions or variables. Always prioritize `ripgrep` (`rg`) and `ast-grep` to locate precise lines.
-2. **Antigravity Bug-Fixing Rule (Surgical Fixes Only)**: 
-   - When fixing bugs in code generated or maintained by Antigravity, treat the existing architecture, styling, and framework choices as intentional.
-   - Do NOT refactor, rewrite, or modernize working code.
-   - Apply only the absolute minimal, targeted changes (surgical diffs) required to fix the specific issue.
-3. **Ignore Heavy Paths**: Never inspect `node_modules`, `.git`, or large build output directories.
-4. **Concise Responses**: Provide direct technical explanations and exact terminal commands without conversational fluff.
+## Architecture Rule (Micro-Files & Modular Design):
+1. **Never write large monolithic files**: Break components and logic into small, dedicated files (< 80 lines).
+2. **Directory Structure**:
+   - `src/components/`: Pure UI presentation components (e.g., SubjectCard.jsx, ProgressBar.jsx).
+   - `src/services/`: Supabase queries and data fetching only.
+   - `src/constants/`: Static subjects, A/L syllabus metadata, colors.
+3. **Surgical Fixes**: Inspect and edit only the targeted micro-file. Never rewrite unrelated modules.
+4. **Tool Usage**: Use `rg` and `ast-grep` to jump directly to target functions.
