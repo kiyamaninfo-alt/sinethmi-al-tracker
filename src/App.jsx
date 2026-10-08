@@ -1,17 +1,40 @@
+import { useState } from 'react';
+import CandidateLogin from './components/CandidateLogin';
+import CommandCenterDashboard from './components/CommandCenter/CommandCenterDashboard';
+import StudyAnalyticsDashboard from './components/StudyAnalytics/StudyAnalyticsDashboard';
+import VisualAnalyticsDashboard from './components/VisualAnalytics/VisualAnalyticsDashboard';
+
 export default function App() {
+  const [view, setView] = useState('visual-analytics');
+
+  const views = [
+    { id: 'visual-analytics', label: 'Visual Analytics', color: 'bg-emerald-500/20 text-emerald-300 border-emerald-400/40' },
+    { id: 'study-analytics', label: 'Study Analytics', color: 'bg-purple-500/20 text-purple-300 border-purple-400/40' },
+    { id: 'command-center', label: 'Command Center', color: 'bg-cyan-500/20 text-cyan-300 border-cyan-400/40' },
+    { id: 'login', label: 'Candidate Login', color: 'bg-indigo-500/20 text-indigo-300 border-indigo-400/40' },
+  ];
+
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-100 flex flex-col items-center justify-center p-4">
-      <header className="max-w-md w-full bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-700 text-center">
-        <h1 className="text-2xl font-bold tracking-tight text-emerald-400">
-          Sinethmi A/L Tracker
-        </h1>
-        <p className="text-slate-400 text-sm mt-2">
-          Technology Stream: ICT • ET • SFT
-        </p>
-        <div className="mt-4 inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-          Tailwind CSS Active
-        </div>
-      </header>
+    <div className="relative">
+      <div className="fixed bottom-4 right-4 z-50 flex items-center gap-1.5 p-1.5 rounded-full bg-slate-900/90 border border-white/10 backdrop-blur-md shadow-2xl text-xs font-mono">
+        {views.map((v) => (
+          <button
+            key={v.id}
+            type="button"
+            onClick={() => setView(v.id)}
+            className={`px-3 py-1 rounded-full transition cursor-pointer ${
+              view === v.id ? `${v.color} border font-bold` : 'text-slate-400 hover:text-white'
+            }`}
+          >
+            {v.label}
+          </button>
+        ))}
+      </div>
+
+      {view === 'visual-analytics' && <VisualAnalyticsDashboard onBack={() => setView('command-center')} />}
+      {view === 'study-analytics' && <StudyAnalyticsDashboard onBack={() => setView('command-center')} />}
+      {view === 'command-center' && <CommandCenterDashboard />}
+      {view === 'login' && <CandidateLogin />}
     </div>
   );
 }

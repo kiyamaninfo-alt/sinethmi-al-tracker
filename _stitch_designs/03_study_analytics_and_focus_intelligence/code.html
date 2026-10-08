@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="si"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Study Analytics &amp; Focus Intelligence | Sinethmi Mission Control</title>
+<!-- Tailwind CSS CDN with forms and container queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Inter Google Font -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Noto+Sans+Sinhala:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans Sinhala', 'sans-serif'],
+          },
+          colors: {
+            obsidian: {
+              DEFAULT: '#060e20',
+              deep: '#040814',
+              surface: '#0b1326',
+              card: '#10192e',
+              border: 'rgba(255, 255, 255, 0.08)',
+              hover: 'rgba(255, 255, 255, 0.04)'
+            },
+            ict: {
+              DEFAULT: '#10B981',
+              dim: '#064e3b',
+              glow: 'rgba(16, 185, 129, 0.3)'
+            },
+            et: {
+              DEFAULT: '#8B5CF6',
+              dim: '#4c1d95',
+              glow: 'rgba(139, 92, 246, 0.3)'
+            },
+            sft: {
+              DEFAULT: '#06B6D4',
+              dim: '#164e63',
+              glow: 'rgba(6, 182, 212, 0.3)'
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-glass-and-glow">
+    body {
+      background-color: #060e20;
+      color: #e2e8f0;
+      font-family: 'Inter', 'Noto Sans Sinhala', sans-serif;
+      background-image: 
+        radial-gradient(circle at 15% 10%, rgba(139, 92, 246, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 35%, rgba(6, 182, 212, 0.07) 0%, transparent 45%),
+        radial-gradient(circle at 50% 80%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+      background-attachment: fixed;
+    }
+    
+    .glass-card {
+      background: rgba(16, 25, 46, 0.72);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+
+    .glass-card-interactive {
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .glass-card-interactive:hover {
+      border-color: rgba(139, 92, 246, 0.35);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 36px 0 rgba(139, 92, 246, 0.12);
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: rgba(11, 19, 38, 0.8);
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 9999px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: rgba(139, 92, 246, 0.5);
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-100 antialiased selection:bg-purple-600 selection:text-white">
+<!-- BEGIN: MainCommandHeader -->
+<header class="sticky top-0 z-50 border-b border-obsidian-border bg-obsidian-deep/80 backdrop-blur-xl px-4 lg:px-8 py-3.5 transition-all">
+<div class="max-w-[1720px] mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
+<!-- Left side: Breadcrumb & Title with Emblem -->
+<div class="flex items-center gap-4">
+<!-- Return to Dashboard -->
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide text-slate-400 bg-obsidian-surface hover:text-white hover:bg-slate-800 border border-obsidian-border transition" href="#dashboard">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+          Dashboard
+        </a>
+<div class="h-6 w-px bg-slate-800"></div>
+<!-- Emblem Logo -->
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 flex-shrink-0 drop-shadow-[0_0_12px_rgba(139,92,246,0.5)]">
+<svg fill="none" height="100%" viewbox="0 0 120 120" width="100%" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient gradientunits="userSpaceOnUse" id="primaryGrad" x1="10" x2="110" y1="10" y2="110">
+<stop offset="0%" stop-color="#06B6D4"></stop>
+<stop offset="50%" stop-color="#8B5CF6"></stop>
+<stop offset="100%" stop-color="#10B981"></stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="glowRing" x1="0" x2="120" y1="0" y2="120">
+<stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.8"></stop>
+<stop offset="100%" stop-color="#06B6D4" stop-opacity="0.2"></stop>
+</lineargradient>
+<filter height="140%" id="neonGlow" width="140%" x="-20%" y="-20%">
+<fegaussianblur result="blur" stddeviation="3"></fegaussianblur>
+<fecomposite in="SourceGraphic" in2="blur" operator="over"></fecomposite>
+</filter>
+</defs>
+<polygon fill="#0b1326" points="60,6 106,32 106,88 60,114 14,88 14,32" stroke="url(#glowRing)" stroke-width="2.5"></polygon>
+<circle cx="60" cy="60" r="38" stroke="rgba(255,255,255,0.08)" stroke-dasharray="4 4" stroke-width="1.5"></circle>
+<circle cx="60" cy="60" r="28" stroke="rgba(6,182,212,0.25)" stroke-width="1"></circle>
+<path d="M60 22 L76 72 L60 62 L44 72 Z" fill="url(#primaryGrad)" filter="url(#neonGlow)"></path>
+<circle cx="60" cy="62" fill="#FFFFFF" r="3.5"></circle>
+<circle cx="86" cy="42" fill="#10B981" r="3"></circle>
+<circle cx="34" cy="78" fill="#8B5CF6" r="2.5"></circle>
+<circle cx="60" cy="95" fill="#06B6D4" r="2"></circle>
+<path d="M38 78 L26 84 M82 78 L94 84" stroke="url(#primaryGrad)" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h1 class="text-base md:text-lg font-bold tracking-tight text-white flex items-center gap-2">
+                Study Analytics &amp; Focus Intelligence
+              </h1>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/30">
+                PRO INTEL
+              </span>
+</div>
+<p class="text-xs text-slate-400 font-medium">ගැඹුරු අධ්‍යයන දත්ත, අඛණ්ඩතා Heatmap සහ විෂය ප්‍රගති විශ්ලේෂණය</p>
+</div>
+</div>
+</div>
+<!-- Right side: Online Status & Actions -->
+<div class="flex items-center gap-2.5 self-end md:self-auto">
+<!-- Live telemetry sync badge -->
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-xs font-medium">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+</span>
+          Online Synced
+        </div>
+<!-- Add Session CTA -->
+<button class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 border border-purple-400/30 shadow-[0_0_15px_rgba(139,92,246,0.35)] transition" type="button">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+          Add Session
+        </button>
+<!-- Refresh CTA -->
+<button class="p-1.5 rounded-lg text-slate-400 hover:text-white bg-obsidian-surface hover:bg-slate-800 border border-obsidian-border transition" title="Refresh Telemetry" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+</header>
+<!-- END: MainCommandHeader -->
+<!-- BEGIN: MainContent -->
+<main class="max-w-[1720px] mx-auto px-4 lg:px-8 py-6 space-y-6">
+<!-- BEGIN: KPITelemetryGrid -->
+<!-- 9 Core Mission Telemetry Metrics -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-9 gap-3" data-purpose="telemetry-kpis">
+<!-- 1. Current Streak -->
+<div class="glass-card glass-card-interactive p-4 rounded-xl flex flex-col justify-between relative overflow-hidden xl:col-span-1">
+<div class="flex items-center justify-between text-slate-400 text-xs font-semibold tracking-wider uppercase mb-1">
+<span>Current Streak</span>
+<span class="text-amber-400">🔥</span>
+</div>
+<div>
+<div class="text-2xl font-black text-white tracking-tight">3 <span class="text-xs font-medium text-slate-400">Days</span></div>
+<div class="text-[11px] text-slate-400 mt-1">Best Record: <span class="text-slate-300 font-semibold">3 Days</span></div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-amber-500 to-transparent"></div>
+</div>
+<!-- 2. Total Focus Time -->
+<div class="glass-card glass-card-interactive p-4 rounded-xl flex flex-col justify-between relative overflow-hidden xl:col-span-1">
+<div class="flex items-center justify-between text-slate-400 text-xs font-semibold tracking-wider uppercase mb-1">
+<span>Total Focus Time</span>
+<span class="text-purple-400">⏱️</span>
+</div>
+<div>
+<div class="text-2xl font-black text-white tracking-tight">11.6 <span class="text-xs font-medium text-purple-400">Hrs</span></div>
+<div class="text-[11px] text-slate-400 mt-1">Total: <span class="text-purple-300 font-semibold">697 Mins</span></div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-500 to-transparent"></div>
+</div>
+<!-- 3. Today's Focus -->
+<div class="glass-card glass-card-interactive p-4 rounded-xl flex flex-col justify-between relative overflow-hidden xl:col-span-1 border-purple-500/30">
+<div class="flex items-center justify-between text-slate-400 text-xs font-semibold tracking-wider uppercase mb-1">
+<span>Today's Focus</span>
+<span class="text-cyan-400">📅</span>
+</div>
+<div>
+<div class="text-2xl font-black text-cyan-400 tracking-tight">222 <span class="text-xs font-medium text-slate-300">Mins</span></div>
+<div class="text-[11px] text-emerald-400 mt-1 flex items-center gap-1 font-medium">
+<span>Daily Target: 180m</span>
+<span class="text-[9px] bg-emerald-500/20 px-1 py-0.2 rounded">+42m</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-cyan-400 to-transparent"></div>
+</div>
+<!-- 4. Daily Average (7D) -->
+<div class="glass-card glass-card-interactive p-4 rounded-xl flex flex-col justify-between relative overflow-hidden xl:col-span-1">
+<div class="flex items-center justify-between text-slate-400 text-xs font-semibold tracking-wider uppercase mb-1">
+<span>Daily Avg (7D)</span>
+<span class="text-emerald-400">📈</span>
+</div>
+<div>
+<div class="text-2xl font-black text-white tracking-tight">92 <span class="text-xs font-medium text-slate-400">m/day</span></div>
+<div class="text-[11px] text-slate-400 mt-1">This Week: <span class="text-slate-300 font-semibold">647 Mins</span></div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-emerald-500 to-transparent"></div>
+</div>
+<!-- 5. Peak Study Time -->
+<div class="glass-card glass-card-interactive p-4 rounded-xl flex flex-col justify-between relative overflow-hidden xl:col-span-1">
+<div class="flex items-center justify-between text-slate-400 text-xs font-semibold tracking-wider uppercase mb-1">
+<span>Peak Time</span>
+<span class="text-amber-400">🎯</span>
+</div>
+<div>
+<div class="text-lg font-bold text-white tracking-tight leading-tight">Afternoon</div>
+<div class="text-xs text-amber-300 font-medium">(12–5 PM)</div>
+<div class="text-[11px] text-slate-400 mt-1">Slot Share: <span class="text-amber-300 font-semibold">43%</span></div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-amber-400 to-transparent"></div>
+</div>
+<!-- 6. This Week's Focus -->
+<div class="glass-card glass-card-interactive p-4 rounded-xl flex flex-col justify-between relative overflow-hidden xl:col-span-1">
+<div class="flex items-center justify-between text-slate-400 text-xs font-semibold tracking-wider uppercase mb-1">
+<span>Week Focus</span>
+<span class="text-blue-400">📊</span>
+</div>
+<div>
+<div class="text-2xl font-black text-white tracking-tight">9.1 <span class="text-xs font-medium text-slate-400">Hrs</span></div>
+<div class="text-[11px] text-slate-400 mt-1">Target: <span class="text-cyan-400 font-semibold">45%</span> (Goal: 20h)</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-500 to-transparent"></div>
+</div>
+<!-- 7. Active Study Days -->
+<div class="glass-card glass-card-interactive p-4 rounded-xl flex flex-col justify-between relative overflow-hidden xl:col-span-1">
+<div class="flex items-center justify-between text-slate-400 text-xs font-semibold tracking-wider uppercase mb-1">
+<span>Active Days</span>
+<span class="text-rose-400">📆</span>
+</div>
+<div>
+<div class="text-2xl font-black text-white tracking-tight">3 <span class="text-xs font-medium text-slate-400">Days</span></div>
+<div class="text-[11px] text-slate-400 mt-1">This Month: <span class="text-rose-400 font-semibold">50% Active</span></div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-rose-500 to-transparent"></div>
+</div>
+<!-- 8. Top Focus Subject -->
+<div class="glass-card glass-card-interactive p-4 rounded-xl flex flex-col justify-between relative overflow-hidden xl:col-span-1 border-cyan-500/30">
+<div class="flex items-center justify-between text-slate-400 text-xs font-semibold tracking-wider uppercase mb-1">
+<span>Top Subject</span>
+<span class="text-cyan-400">🏆</span>
+</div>
+<div>
+<div class="text-2xl font-black text-cyan-400 tracking-tight">SFT</div>
+<div class="text-[11px] text-slate-400 mt-1">Share: <span class="text-cyan-300 font-semibold">51%</span> (6.0h)</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-cyan-400 to-transparent"></div>
+</div>
+<!-- 9. Completion Rate -->
+<div class="glass-card glass-card-interactive p-4 rounded-xl flex flex-col justify-between relative overflow-hidden xl:col-span-1">
+<div class="flex items-center justify-between text-slate-400 text-xs font-semibold tracking-wider uppercase mb-1">
+<span>Completion</span>
+<span class="text-red-400">🎯</span>
+</div>
+<div>
+<div class="text-2xl font-black text-white tracking-tight">36%</div>
+<div class="text-[11px] text-slate-400 mt-1">Goal: 25h/w <span class="text-slate-500">(Cur: 9.1h)</span></div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-red-500 to-transparent"></div>
+</div>
+</section>
+<!-- END: KPITelemetryGrid -->
+<!-- BEGIN: HeatmapSection -->
+<section class="glass-card rounded-2xl p-5 border border-obsidian-border" data-purpose="study-consistency-heatmap">
+<!-- Header & Range Filters -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-obsidian-border">
+<div class="flex items-center gap-3">
+<span class="text-lg">🗓️</span>
+<div>
+<h2 class="text-base font-bold text-white tracking-wide">
+              Study Consistency Heatmap <span class="text-slate-400 font-normal text-sm font-sans">(අඛණ්ඩතා දර්ශකය)</span>
+</h2>
+<p class="text-xs text-slate-400">Historical telemetry of daily active study commitment</p>
+</div>
+</div>
+<div class="flex items-center bg-obsidian-surface p-1 rounded-xl border border-obsidian-border self-start sm:self-auto text-xs">
+<button class="px-3 py-1 rounded-lg text-slate-400 hover:text-white transition">3 Months</button>
+<button class="px-3 py-1 rounded-lg text-white font-semibold bg-purple-600/70 shadow-sm border border-purple-400/30">6 Months</button>
+<button class="px-3 py-1 rounded-lg text-slate-400 hover:text-white transition">1 Year</button>
+<button class="px-3 py-1 rounded-lg text-slate-400 hover:text-white transition">All Time</button>
+</div>
+</div>
+<!-- Heatmap Visual Grid Container -->
+<div class="pt-5 overflow-x-auto custom-scrollbar">
+<div class="min-w-[760px]">
+<!-- Month labels -->
+<div class="grid grid-cols-7 text-[11px] font-medium text-slate-400 mb-2 pl-6">
+<div>Apr</div>
+<div>May</div>
+<div>Jun</div>
+<div>Jul</div>
+<div>Aug</div>
+<div>Sep</div>
+<div class="text-purple-400 font-semibold">Oct (Current)</div>
+</div>
+<!-- Heatmap body with day-of-week indicators -->
+<div class="flex gap-2">
+<!-- Day labels -->
+<div class="flex flex-col justify-between text-[10px] text-slate-500 font-mono py-1 pr-1 select-none">
+<span>M</span>
+<span>W</span>
+<span>F</span>
+<span>S</span>
+</div>
+<!-- Dot Grid (simulated 26 columns x 7 days) -->
+<div class="grid grid-flow-col grid-rows-7 gap-1.5 flex-1">
+<!-- Generate inactive historical cells -->
+<!-- 24 columns of subtle inactive dark cells -->
+<script data-purpose="render-heatmap-simulation">
+                // Pure HTML fallback rendering for standard layout
+              </script>
+<!-- 24 weeks inactive -->
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/40 border border-slate-700/20"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/40 border border-slate-700/20"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/40 border border-slate-700/20"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/40 border border-slate-700/20"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/40 border border-slate-700/20"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/40 border border-slate-700/20"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/40 border border-slate-700/20"></div>
+<!-- Repetition for months Apr-Sep -->
+<!-- Block 1 -->
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div><div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<!-- Last active week in October with the 3 active days -->
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<!-- Sunday (Active Day 1) -->
+<div class="w-3.5 h-3.5 rounded-sm bg-purple-500 shadow-[0_0_8px_#8B5CF6] border border-purple-300"></div>
+<!-- Monday (Active Day 2) -->
+<div class="w-3.5 h-3.5 rounded-sm bg-purple-600 shadow-[0_0_8px_#8B5CF6] border border-purple-300"></div>
+<!-- Tuesday (Active Day 3 - Today) -->
+<div class="w-3.5 h-3.5 rounded-sm bg-cyan-400 shadow-[0_0_10px_#06B6D4] border border-white ring-2 ring-cyan-400/40"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+<div class="w-3.5 h-3.5 rounded-sm bg-slate-800/30"></div>
+</div>
+</div>
+<!-- Bottom Heatmap Status & Legend -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between text-xs text-slate-400 mt-4 pt-3 border-t border-slate-800/80 gap-3">
+<div>
+              Total Active Days: <span class="font-bold text-white">3</span> / 182 <span class="text-slate-500">(1.6%)</span>
+</div>
+<!-- Heatmap Intensity Legend -->
+<div class="flex items-center gap-2">
+<span class="text-[11px] text-slate-500">Less</span>
+<div class="flex items-center gap-1">
+<span class="w-3 h-3 rounded-sm bg-slate-800/50"></span>
+<span class="w-3 h-3 rounded-sm bg-purple-900/60"></span>
+<span class="w-3 h-3 rounded-sm bg-purple-600"></span>
+<span class="w-3 h-3 rounded-sm bg-cyan-500"></span>
+<span class="w-3 h-3 rounded-sm bg-emerald-400"></span>
+</div>
+<span class="text-[11px] text-slate-500">More</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Date Filter Chips -->
+<div class="flex flex-wrap items-center gap-2 mt-4 pt-3 border-t border-obsidian-border">
+<button class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-purple-600/30 text-purple-300 border border-purple-500/40 shadow-sm">
+<span>📌</span> අද දිනය (Today)
+        </button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-obsidian-surface text-slate-300 hover:text-white border border-obsidian-border transition">
+<span>📅</span> දින 7 (7 Days)
+        </button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-obsidian-surface text-slate-300 hover:text-white border border-obsidian-border transition">
+<span>📅</span> දින 30 (30 Days)
+        </button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-obsidian-surface text-slate-300 hover:text-white border border-obsidian-border transition">
+<span>📅</span> වසර 1 (1 Year)
+        </button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-obsidian-surface text-slate-300 hover:text-white border border-obsidian-border transition">
+<span>🌐</span> All Time
+        </button>
+</div>
+<!-- Today's Deep Dive Callout Banner -->
+<div class="mt-4 p-3.5 rounded-xl bg-gradient-to-r from-purple-950/40 via-cyan-950/20 to-slate-900/60 border border-purple-500/20 flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="flex items-center gap-2.5">
+<span class="text-rose-400 text-lg">📌</span>
+<div>
+<span class="text-xs md:text-sm font-bold text-white">අද දින තොරතුරු (Today — 2026-10-06):</span>
+<span class="text-xs md:text-sm font-extrabold text-cyan-400 ml-1.5">222 Mins (3.7h)</span>
+<span class="text-xs text-slate-400 ml-2">| 5 Sessions Logged</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-md text-xs font-bold bg-purple-500/15 text-purple-300 border border-purple-500/30">
+            ET: 150M (2.5H)
+          </span>
+<span class="px-2.5 py-1 rounded-md text-xs font-bold bg-cyan-500/15 text-cyan-300 border border-cyan-500/30">
+            SFT: 72M (1.2H)
+          </span>
+</div>
+</div>
+</section>
+<!-- END: HeatmapSection -->
+<!-- BEGIN: PeakStudyTimeSection -->
+<section class="glass-card rounded-2xl p-5 border border-obsidian-border space-y-4" data-purpose="peak-study-time-analysis">
+<!-- Top Title and Controls -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="text-lg">🕒</span>
+<div>
+<h2 class="text-base font-bold text-white tracking-wide">
+              වැඩිපුරම පාඩම් කල කාල පරාසයන් <span class="text-slate-400 font-normal text-sm font-sans">(Peak Study Time Periods Analysis)</span>
+</h2>
+<p class="text-xs text-slate-400">Chronobiological focus efficiency across dayparts</p>
+</div>
+</div>
+<!-- Filter button bars -->
+<div class="flex flex-wrap items-center gap-2 text-xs">
+<!-- Time range tabs -->
+<div class="flex items-center bg-obsidian-surface p-1 rounded-xl border border-obsidian-border">
+<button class="px-2.5 py-1 rounded-lg text-slate-400 hover:text-white">1 Day</button>
+<button class="px-2.5 py-1 rounded-lg text-slate-400 hover:text-white">7 Days</button>
+<button class="px-2.5 py-1 rounded-lg text-slate-400 hover:text-white">1 Month</button>
+<button class="px-2.5 py-1 rounded-lg text-slate-400 hover:text-white">3 Months</button>
+<button class="px-2.5 py-1 rounded-lg text-slate-400 hover:text-white">1 Year</button>
+<button class="px-2.5 py-1 rounded-lg text-white font-semibold bg-purple-600/70 border border-purple-400/30">All Time</button>
+</div>
+<!-- Subject filter buttons -->
+<div class="flex items-center bg-obsidian-surface p-1 rounded-xl border border-obsidian-border">
+<button class="px-2.5 py-1 rounded-lg text-white font-medium bg-slate-700/50 border border-slate-600/50">All Subjects</button>
+<button class="px-2.5 py-1 rounded-lg text-emerald-400 hover:text-white">ICT</button>
+<button class="px-2.5 py-1 rounded-lg text-purple-400 hover:text-white">ET</button>
+<button class="px-2.5 py-1 rounded-lg text-cyan-400 hover:text-white">SFT</button>
+</div>
+</div>
+</div>
+<!-- Featured Peak Focus Window Banner -->
+<div class="p-4 rounded-xl bg-gradient-to-r from-amber-500/10 via-purple-950/20 to-transparent border border-amber-500/30 flex items-start sm:items-center gap-3.5">
+<div class="p-2 rounded-lg bg-amber-500/20 text-amber-400 text-xl flex-shrink-0">
+          🏆
+        </div>
+<div class="text-xs leading-relaxed text-slate-200">
+<div class="font-bold text-amber-300 text-sm mb-0.5">Peak Focus Window (ALL): Afternoon (12:00 – 17:00)</div>
+<span>ඔබ සියලු විෂයන් සඳහා වැඩිපුරම අවධානයෙන් පාඩම් කර ඇත්තේ දවල් / පස්වරුව කාලයේදීය - තෝරාගත් කාල පරාසයේ සම්පූර්ණ කාලයෙන් <strong class="text-amber-300 font-semibold">43%</strong> (5.0 පැය, සැසි 8).</span>
+</div>
+</div>
+<!-- 5 Time Window Metric Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3.5">
+<!-- Window 1: Early Morning -->
+<div class="glass-card p-4 rounded-xl border border-obsidian-border hover:border-slate-600 transition flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-amber-400 text-base">🌅</span>
+<span class="text-[11px] font-bold text-amber-400">22%</span>
+</div>
+<div class="text-xs font-bold text-white">Early Morning</div>
+<div class="text-[11px] text-slate-400">පාන්දර / පෙරවරුව</div>
+<div class="text-[10px] text-slate-500 font-mono mt-0.5">04:00 – 08:00</div>
+</div>
+<div class="mt-4 pt-2 border-t border-slate-800">
+<div class="text-lg font-black text-white">2.5 <span class="text-xs font-normal text-slate-400">Hrs</span></div>
+<div class="text-[10px] text-slate-400">3 Sessions</div>
+</div>
+</div>
+<!-- Window 2: Morning -->
+<div class="glass-card p-4 rounded-xl border border-obsidian-border hover:border-slate-600 transition flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-amber-300 text-base">☀️</span>
+<span class="text-[11px] font-bold text-amber-300">29%</span>
+</div>
+<div class="text-xs font-bold text-white">Morning</div>
+<div class="text-[11px] text-slate-400">උදෑසන / දවල්</div>
+<div class="text-[10px] text-slate-500 font-mono mt-0.5">08:00 – 12:00</div>
+</div>
+<div class="mt-4 pt-2 border-t border-slate-800">
+<div class="text-lg font-black text-white">3.3 <span class="text-xs font-normal text-slate-400">Hrs</span></div>
+<div class="text-[10px] text-slate-400">5 Sessions</div>
+</div>
+</div>
+<!-- Window 3: Afternoon [PEAK ACTIVE] -->
+<div class="glass-card p-4 rounded-xl border-2 border-amber-500/50 bg-amber-500/5 shadow-[0_0_20px_rgba(245,158,11,0.15)] flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-6 top-2 rotate-45 bg-amber-500 text-obsidian-deep text-[8px] font-black uppercase px-6 py-0.5 tracking-wider">
+            PEAK
+          </div>
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-amber-400 text-base">☀️</span>
+<span class="text-xs font-black text-amber-300">43%</span>
+</div>
+<div class="text-xs font-bold text-white">Afternoon</div>
+<div class="text-[11px] text-amber-200/80">දවල් / පස්වරුව</div>
+<div class="text-[10px] text-amber-400/90 font-mono mt-0.5">12:00 – 17:00</div>
+</div>
+<div class="mt-4 pt-2 border-t border-amber-500/20">
+<div class="text-xl font-black text-amber-300">5.0 <span class="text-xs font-normal text-slate-300">Hrs</span></div>
+<div class="text-[10px] text-amber-200/90 font-medium">8 Sessions</div>
+</div>
+</div>
+<!-- Window 4: Evening -->
+<div class="glass-card p-4 rounded-xl border border-obsidian-border hover:border-slate-600 transition flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-purple-400 text-base">🌇</span>
+<span class="text-[11px] font-bold text-purple-400">7%</span>
+</div>
+<div class="text-xs font-bold text-white">Evening</div>
+<div class="text-[11px] text-slate-400">සන්ධ්‍යා කාලය</div>
+<div class="text-[10px] text-slate-500 font-mono mt-0.5">17:00 – 21:00</div>
+</div>
+<div class="mt-4 pt-2 border-t border-slate-800">
+<div class="text-lg font-black text-white">0.8 <span class="text-xs font-normal text-slate-400">Hrs</span></div>
+<div class="text-[10px] text-slate-400">1 Session</div>
+</div>
+</div>
+<!-- Window 5: Late Night -->
+<div class="glass-card p-4 rounded-xl border border-obsidian-border hover:border-slate-600 transition flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-blue-400 text-base">🌙</span>
+<span class="text-[11px] font-bold text-slate-500">0%</span>
+</div>
+<div class="text-xs font-bold text-white">Late Night</div>
+<div class="text-[11px] text-slate-400">රාත්‍රී / මැදියම</div>
+<div class="text-[10px] text-slate-500 font-mono mt-0.5">21:00 – 04:00</div>
+</div>
+<div class="mt-4 pt-2 border-t border-slate-800">
+<div class="text-lg font-black text-slate-400">0.0 <span class="text-xs font-normal text-slate-500">Hrs</span></div>
+<div class="text-[10px] text-slate-500">0 Sessions</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: PeakStudyTimeSection -->
+<!-- BEGIN: DayOfWeekMatrixSection -->
+<section class="glass-card rounded-2xl p-5 border border-obsidian-border space-y-4" data-purpose="active-times-matrix">
+<!-- Section Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-obsidian-border">
+<div class="flex items-center gap-3">
+<span class="text-lg">📊</span>
+<div>
+<h2 class="text-base font-bold text-white tracking-wide">
+              සතිපතා දෛනික හා කාල පරාස අනුකෘතිය <span class="text-slate-400 font-normal text-sm font-sans">(24 × 7 Day-of-Week &amp; Active Times Matrix)</span>
+</h2>
+<p class="text-xs text-slate-400">සතියේ දින 7 සහ පැය 24 පුරා අධ්‍යයන රටාව (Weekly Focus Habits)</p>
+</div>
+</div>
+</div>
+<!-- Matrix Interactive Heat Grid -->
+<div class="overflow-x-auto custom-scrollbar">
+<div class="min-w-[1080px]">
+<!-- Column Headers: Hours 00 to 23 -->
+<div class="grid grid-cols-[140px_repeat(24,1fr)] gap-1 text-center text-[10px] font-mono text-slate-400 pb-2">
+<div class="text-left font-sans font-semibold text-slate-400">Day / Time</div>
+<div>00:00</div><div>01:00</div><div>02:00</div><div>03:00</div><div>04:00</div><div>05:00</div>
+<div>06:00</div><div>07:00</div><div>08:00</div><div>09:00</div><div>10:00</div><div>11:00</div>
+<div>12:00</div><div>13:00</div><div>14:00</div><div>15:00</div><div>16:00</div><div>17:00</div>
+<div>18:00</div><div>19:00</div><div>20:00</div><div>21:00</div><div>22:00</div><div>23:00</div>
+</div>
+<!-- Day Rows -->
+<div class="space-y-1.5">
+<!-- Monday -->
+<div class="grid grid-cols-[140px_repeat(24,1fr)] gap-1 items-center">
+<div class="text-xs font-medium text-slate-300">
+<span class="font-bold text-white">Monday</span> <span class="text-[11px] text-slate-500">සඳුදා</span>
+</div>
+<!-- 00-04 inactive -->
+<div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div>
+<!-- 05:00, 06:00, 07:00 ACTIVE (Purple/Cyan) -->
+<div class="h-6 rounded bg-purple-600 shadow-[0_0_8px_#8B5CF6] border border-purple-400" title="Monday 05:00 Focus"></div>
+<div class="h-6 rounded bg-purple-600 shadow-[0_0_8px_#8B5CF6] border border-purple-400" title="Monday 06:00 Focus"></div>
+<div class="h-6 rounded bg-purple-500 border border-purple-300" title="Monday 07:00 Focus"></div>
+<!-- 08-09 -->
+<div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div>
+<!-- 10:00 ACTIVE -->
+<div class="h-6 rounded bg-purple-600 border border-purple-400" title="Monday 10:00 Focus"></div>
+<!-- 11:00 -->
+<div class="h-6 rounded bg-slate-800/30"></div>
+<!-- 12:00 ACTIVE -->
+<div class="h-6 rounded bg-purple-600 border border-purple-400" title="Monday 12:00 Focus"></div>
+<!-- 13:00 -->
+<div class="h-6 rounded bg-slate-800/30"></div>
+<!-- 14:00 ACTIVE -->
+<div class="h-6 rounded bg-purple-600 border border-purple-400" title="Monday 14:00 Focus"></div>
+<!-- 15-16 -->
+<div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div>
+<!-- 17:00 ACTIVE -->
+<div class="h-6 rounded bg-purple-600 border border-purple-400" title="Monday 17:00 Focus"></div>
+<!-- 18-23 -->
+<div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div>
+</div>
+<!-- Tuesday -->
+<div class="grid grid-cols-[140px_repeat(24,1fr)] gap-1 items-center">
+<div class="text-xs font-medium text-slate-300">
+<span class="font-bold text-white">Tuesday</span> <span class="text-[11px] text-slate-500">අඟහරුවාදා</span>
+</div>
+<!-- 00-09 -->
+<div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div>
+<!-- 10:00 ACTIVE -->
+<div class="h-6 rounded bg-purple-600 border border-purple-400" title="Tuesday 10:00 Focus"></div>
+<!-- 11:00 -->
+<div class="h-6 rounded bg-slate-800/30"></div>
+<!-- 12:00 ACTIVE -->
+<div class="h-6 rounded bg-purple-600 border border-purple-400" title="Tuesday 12:00 Focus"></div>
+<!-- 13-14 -->
+<div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div>
+<!-- 15:00 ACTIVE -->
+<div class="h-6 rounded bg-purple-600 border border-purple-400" title="Tuesday 15:00 Focus"></div>
+<!-- 16-23 -->
+<div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div>
+</div>
+<!-- Wednesday -->
+<div class="grid grid-cols-[140px_repeat(24,1fr)] gap-1 items-center">
+<div class="text-xs font-medium text-slate-300">
+<span class="font-bold text-white">Wednesday</span> <span class="text-[11px] text-slate-500">බදාදා</span>
+</div>
+<div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div>
+</div>
+<!-- Thursday -->
+<div class="grid grid-cols-[140px_repeat(24,1fr)] gap-1 items-center">
+<div class="text-xs font-medium text-slate-300">
+<span class="font-bold text-white">Thursday</span> <span class="text-[11px] text-slate-500">බ්‍රහස්පතින්දා</span>
+</div>
+<div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div>
+</div>
+<!-- Friday -->
+<div class="grid grid-cols-[140px_repeat(24,1fr)] gap-1 items-center">
+<div class="text-xs font-medium text-slate-300">
+<span class="font-bold text-white">Friday</span> <span class="text-[11px] text-slate-500">සිකුරාදා</span>
+</div>
+<div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div>
+</div>
+<!-- Saturday -->
+<div class="grid grid-cols-[140px_repeat(24,1fr)] gap-1 items-center">
+<div class="text-xs font-medium text-slate-300">
+<span class="font-bold text-white">Saturday</span> <span class="text-[11px] text-slate-500">සෙනසුරාදා</span>
+</div>
+<div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div>
+</div>
+<!-- Sunday -->
+<div class="grid grid-cols-[140px_repeat(24,1fr)] gap-1 items-center">
+<div class="text-xs font-medium text-slate-300">
+<span class="font-bold text-white">Sunday</span> <span class="text-[11px] text-slate-500">ඉරිදා</span>
+</div>
+<!-- 00-12 -->
+<div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div>
+<!-- 13:00, 14:00 ACTIVE -->
+<div class="h-6 rounded bg-purple-600 border border-purple-400" title="Sunday 13:00 Focus"></div>
+<div class="h-6 rounded bg-purple-600 border border-purple-400" title="Sunday 14:00 Focus"></div>
+<!-- 15-16 -->
+<div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div>
+<!-- 17:00 ACTIVE -->
+<div class="h-6 rounded bg-purple-600 border border-purple-400" title="Sunday 17:00 Focus"></div>
+<!-- 18-23 -->
+<div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div><div class="h-6 rounded bg-slate-800/30"></div>
+</div>
+</div>
+<!-- Matrix Footer Legend -->
+<div class="flex items-center justify-between text-xs text-slate-400 mt-4 pt-3 border-t border-slate-800">
+<div class="flex items-center gap-2">
+<span class="text-amber-400">💡</span>
+<span>Hover or tap any cell to inspect focus time</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-[11px] text-slate-500">Less</span>
+<div class="flex items-center gap-1">
+<span class="w-3 h-3 rounded-sm bg-slate-800/50"></span>
+<span class="w-3 h-3 rounded-sm bg-purple-900"></span>
+<span class="w-3 h-3 rounded-sm bg-purple-600"></span>
+<span class="w-3 h-3 rounded-sm bg-cyan-400"></span>
+</div>
+<span class="text-[11px] text-slate-500">More</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: DayOfWeekMatrixSection -->
+<!-- BEGIN: DistributionAndTrendCharts -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-6" data-purpose="charts-row">
+<!-- Column 1: Subject Distribution Donut (5 cols) -->
+<div class="lg:col-span-5 glass-card rounded-2xl p-5 border border-obsidian-border flex flex-col justify-between">
+<div>
+<!-- Title & Range -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-obsidian-border">
+<div class="flex items-center gap-2">
+<span class="text-amber-400">🍩</span>
+<h2 class="text-sm font-bold text-white">
+                විෂය අනුව කාලය බෙදීම <span class="text-xs text-slate-400 font-normal">(Subject Distribution)</span>
+</h2>
+</div>
+</div>
+<!-- Secondary Time Filter Tabs -->
+<div class="flex flex-wrap items-center gap-1 mt-3 text-[11px] bg-obsidian-surface p-1 rounded-lg border border-obsidian-border w-fit">
+<button class="px-2 py-0.5 rounded text-slate-400 hover:text-white">7 Days</button>
+<button class="px-2 py-0.5 rounded text-slate-400 hover:text-white">14 Days</button>
+<button class="px-2 py-0.5 rounded text-slate-400 hover:text-white">1 Month</button>
+<button class="px-2 py-0.5 rounded text-slate-400 hover:text-white">3 Months</button>
+<button class="px-2 py-0.5 rounded text-slate-400 hover:text-white">1 Year</button>
+<button class="px-2 py-0.5 rounded text-white font-bold bg-purple-600/70 border border-purple-400/30">All Time</button>
+</div>
+<!-- SVG Donut Chart -->
+<div class="relative py-8 flex items-center justify-center">
+<div class="w-64 h-64 relative flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<!-- Background track -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#131b2e" stroke-width="12"></circle>
+<!-- SFT Segment: 52% (approx 124 units of 238.7 perimeter) -->
+<circle class="drop-shadow-[0_0_8px_rgba(6,182,212,0.5)]" cx="50" cy="50" fill="transparent" r="38" stroke="#06B6D4" stroke-dasharray="124.1 238.7" stroke-dashoffset="0" stroke-linecap="round" stroke-width="12"></circle>
+<!-- ET Segment: 29% (approx 69 units) -->
+<circle class="drop-shadow-[0_0_8px_rgba(139,92,246,0.5)]" cx="50" cy="50" fill="transparent" r="38" stroke="#8B5CF6" stroke-dasharray="69.2 238.7" stroke-dashoffset="-124.1" stroke-linecap="round" stroke-width="12"></circle>
+<!-- ICT Segment: 19% (approx 45.4 units) -->
+<circle class="drop-shadow-[0_0_8px_rgba(16,185,129,0.5)]" cx="50" cy="50" fill="transparent" r="38" stroke="#10B981" stroke-dasharray="45.4 238.7" stroke-dashoffset="-193.3" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<!-- Center Hollow Metric -->
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Total Tracked</span>
+<span class="text-3xl font-black text-white tracking-tight">11.6 <span class="text-xs font-normal text-purple-400">Hrs</span></span>
+<span class="text-[11px] text-emerald-400 font-medium">17 Logged Sessions</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Legend Pills -->
+<div class="flex items-center justify-center gap-4 pt-3 border-t border-obsidian-border text-xs">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-ict"></span>
+<span class="text-slate-300 font-medium">ICT (19%)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-et"></span>
+<span class="text-slate-300 font-medium">ET (29%)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-sft"></span>
+<span class="text-slate-300 font-medium">SFT (52%)</span>
+</div>
+</div>
+</div>
+<!-- Column 2: 14-Day Focus Trend Stacked Chart (7 cols) -->
+<div class="lg:col-span-7 glass-card rounded-2xl p-5 border border-obsidian-border flex flex-col justify-between">
+<div>
+<!-- Title & Range -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-obsidian-border">
+<div class="flex items-center gap-2">
+<span class="text-cyan-400">📊</span>
+<h2 class="text-sm font-bold text-white">
+                ප්‍රගති ප්‍රවණතාව <span class="text-xs text-slate-400 font-normal">(14-Day Focus Trend)</span>
+</h2>
+</div>
+<!-- Resolution Filter -->
+<div class="flex items-center gap-1 bg-obsidian-surface p-1 rounded-lg border border-obsidian-border text-xs self-start sm:self-auto">
+<button class="px-2.5 py-0.5 rounded text-slate-400 hover:text-white">7D</button>
+<button class="px-2.5 py-0.5 rounded text-white font-bold bg-purple-600/70 border border-purple-400/30">14D</button>
+<button class="px-2.5 py-0.5 rounded text-slate-400 hover:text-white">1M</button>
+<button class="px-2.5 py-0.5 rounded text-slate-400 hover:text-white">3M</button>
+<button class="px-2.5 py-0.5 rounded text-slate-400 hover:text-white">1Y</button>
+<button class="px-2.5 py-0.5 rounded text-slate-400 hover:text-white">All</button>
+</div>
+</div>
+<!-- Stacked Bar Chart Visualization -->
+<div class="pt-6 pb-2">
+<div class="relative h-64 flex items-end">
+<!-- Y-Axis Grid Lines & Labels -->
+<div class="absolute inset-0 flex flex-col justify-between pointer-events-none text-[10px] font-mono text-slate-500">
+<div class="border-b border-slate-800/80 pb-0.5 flex justify-between"><span>350m</span></div>
+<div class="border-b border-slate-800/80 pb-0.5 flex justify-between"><span>300m</span></div>
+<div class="border-b border-slate-800/80 pb-0.5 flex justify-between"><span>250m</span></div>
+<div class="border-b border-slate-800/80 pb-0.5 flex justify-between"><span>200m</span></div>
+<div class="border-b border-slate-800/80 pb-0.5 flex justify-between"><span>150m</span></div>
+<div class="border-b border-slate-800/80 pb-0.5 flex justify-between"><span>100m</span></div>
+<div class="border-b border-slate-800/80 pb-0.5 flex justify-between"><span>0m</span></div>
+</div>
+<!-- Bar series (14 Days: Wed 23 to Tue 6) -->
+<div class="relative w-full h-full flex items-end justify-between gap-1 sm:gap-2 px-6 pt-4">
+<!-- Wed 23 (0m) -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<div class="w-full max-w-[28px] h-0 bg-transparent"></div>
+<span class="text-[9px] text-slate-500 mt-2">Wed 23</span>
+</div>
+<!-- Thu 24 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<div class="w-full max-w-[28px] h-0 bg-transparent"></div>
+<span class="text-[9px] text-slate-500 mt-2">Thu 24</span>
+</div>
+<!-- Fri 25 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<div class="w-full max-w-[28px] h-0 bg-transparent"></div>
+<span class="text-[9px] text-slate-500 mt-2">Fri 25</span>
+</div>
+<!-- Sat 26 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<div class="w-full max-w-[28px] h-0 bg-transparent"></div>
+<span class="text-[9px] text-slate-500 mt-2">Sat 26</span>
+</div>
+<!-- Sun 27 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<div class="w-full max-w-[28px] h-0 bg-transparent"></div>
+<span class="text-[9px] text-slate-500 mt-2">Sun 27</span>
+</div>
+<!-- Mon 28 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<div class="w-full max-w-[28px] h-0 bg-transparent"></div>
+<span class="text-[9px] text-slate-500 mt-2">Mon 28</span>
+</div>
+<!-- Tue 29 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<div class="w-full max-w-[28px] h-0 bg-transparent"></div>
+<span class="text-[9px] text-slate-500 mt-2">Tue 29</span>
+</div>
+<!-- Wed 30 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<div class="w-full max-w-[28px] h-0 bg-transparent"></div>
+<span class="text-[9px] text-slate-500 mt-2">Wed 30</span>
+</div>
+<!-- Thu 1 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<div class="w-full max-w-[28px] h-0 bg-transparent"></div>
+<span class="text-[9px] text-slate-500 mt-2">Thu 1</span>
+</div>
+<!-- Fri 2 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<div class="w-full max-w-[28px] h-0 bg-transparent"></div>
+<span class="text-[9px] text-slate-500 mt-2">Fri 2</span>
+</div>
+<!-- Sat 3 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<div class="w-full max-w-[28px] h-0 bg-transparent"></div>
+<span class="text-[9px] text-slate-500 mt-2">Sat 3</span>
+</div>
+<!-- Sun 4 (Active: 140 Mins -> Green ICT) -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<div class="w-full max-w-[28px] rounded-t overflow-hidden shadow-lg transition-all group-hover:brightness-125" style="height: 40%;">
+<div class="w-full h-full bg-emerald-500" title="Sun 4: 140 Mins ICT"></div>
+</div>
+<span class="text-[9px] font-bold text-emerald-400 mt-2">Sun 4</span>
+</div>
+<!-- Mon 5 (Active Peak: 335 Mins -> Stacked Green, Blue, Purple) -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<div class="w-full max-w-[28px] rounded-t overflow-hidden shadow-[0_0_12px_rgba(139,92,246,0.3)] transition-all group-hover:brightness-125 flex flex-col-reverse" style="height: 95%;">
+<!-- ICT -->
+<div class="w-full bg-emerald-500" style="height: 15%;" title="ICT"></div>
+<!-- SFT -->
+<div class="w-full bg-cyan-400" style="height: 25%;" title="SFT"></div>
+<!-- ET -->
+<div class="w-full bg-purple-600" style="height: 60%;" title="ET"></div>
+</div>
+<span class="text-[9px] font-bold text-purple-400 mt-2">Mon 5</span>
+</div>
+<!-- Tue 6 (Today: 222 Mins -> Stacked Blue SFT & Purple ET) -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<div class="w-full max-w-[28px] rounded-t overflow-hidden shadow-[0_0_12px_rgba(6,182,212,0.3)] ring-1 ring-cyan-400/50 transition-all group-hover:brightness-125 flex flex-col-reverse" style="height: 64%;">
+<!-- SFT -->
+<div class="w-full bg-cyan-400" style="height: 60%;" title="SFT 72m"></div>
+<!-- ET -->
+<div class="w-full bg-purple-600" style="height: 40%;" title="ET 150m"></div>
+</div>
+<span class="text-[9px] font-bold text-cyan-400 mt-2">Tue 6</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Legend for Trend Stack -->
+<div class="flex items-center justify-center gap-4 pt-3 border-t border-obsidian-border text-xs">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded bg-emerald-500"></span>
+<span class="text-slate-300 font-medium">ICT</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded bg-purple-600"></span>
+<span class="text-slate-300 font-medium">ET</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded bg-cyan-400"></span>
+<span class="text-slate-300 font-medium">SFT</span>
+</div>
+</div>
+</div>
+</section>
+<!-- END: DistributionAndTrendCharts -->
+<!-- BEGIN: SubjectWiseProgressSection -->
+<section class="glass-card rounded-2xl p-5 border border-obsidian-border space-y-4" data-purpose="subject-wise-progress">
+<!-- Section Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-obsidian-border">
+<div class="flex items-center gap-3">
+<span class="text-lg">🎯</span>
+<div>
+<h2 class="text-base font-bold text-white tracking-wide">
+              විෂය අනුව අධ්‍යයන ප්‍රගතිය <span class="text-slate-400 font-normal text-sm font-sans">(Subject-wise Study Progress &amp; Goal Distribution)</span>
+</h2>
+<p class="text-xs text-slate-400">විෂය තුල්‍යතාවය (Overall Subject Study Balance) | Target: ICT 33% | ET 33% | SFT 34%</p>
+</div>
+</div>
+<div class="text-xs font-semibold text-slate-300 bg-obsidian-surface px-3 py-1.5 rounded-lg border border-obsidian-border">
+          සම්පූර්ණ කරන ලද්ද: <span class="text-cyan-400 font-bold">11.6 Hrs</span>
+</div>
+</div>
+<!-- Comparative Balance Bar -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between text-xs text-slate-400">
+<span>Actual Distribution</span>
+<div class="flex items-center gap-3 text-[11px] font-semibold">
+<span class="text-emerald-400">● ICT 19%</span>
+<span class="text-purple-400">● ET 29%</span>
+<span class="text-cyan-400">● SFT 52%</span>
+</div>
+</div>
+<div class="h-3 w-full bg-slate-800 rounded-full overflow-hidden flex p-0.5 gap-0.5">
+<!-- ICT: 19% -->
+<div class="h-full bg-emerald-500 rounded-l-full shadow-[0_0_8px_rgba(16,185,129,0.5)]" style="width: 19.3%;"></div>
+<!-- ET: 29% -->
+<div class="h-full bg-purple-600 shadow-[0_0_8px_rgba(139,92,246,0.5)]" style="width: 29.3%;"></div>
+<!-- SFT: 52% -->
+<div class="h-full bg-cyan-400 rounded-r-full shadow-[0_0_8px_rgba(6,182,212,0.5)]" style="width: 51.4%;"></div>
+</div>
+</div>
+<!-- 3 Subject Detail Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+<!-- Subject 1: ICT -->
+<div class="glass-card p-4 rounded-xl border border-emerald-500/30 relative overflow-hidden flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-[11px] font-black bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">ICT</span>
+<span class="text-xs text-slate-400">තොරතුරු තාක්ෂණය</span>
+</div>
+<span class="text-lg font-black text-emerald-400">23%</span>
+</div>
+<p class="text-xs font-medium text-slate-300 mt-2">තොරතුරු හා සන්නිවේදන තාක්ෂණය</p>
+<div class="grid grid-cols-3 gap-2 text-center my-4 py-2 rounded-lg bg-obsidian-surface border border-obsidian-border text-xs">
+<div>
+<div class="text-[10px] text-slate-400">කාලය</div>
+<div class="font-bold text-white">2.3 Hrs</div>
+</div>
+<div>
+<div class="text-[10px] text-slate-400">සැසි</div>
+<div class="font-bold text-white">3</div>
+</div>
+<div>
+<div class="text-[10px] text-slate-400">ප්‍රගතිය</div>
+<div class="font-bold text-emerald-400">3 / 13 Units</div>
+</div>
+</div>
+</div>
+<div class="space-y-2 pt-2 border-t border-slate-800">
+<div class="flex items-center justify-between text-[11px]">
+<span class="text-slate-400">ඉලක්ක ප්‍රගතිය: <strong class="text-slate-200">23% Coverage</strong></span>
+<span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/30">In Progress ⏳</span>
+</div>
+<div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+<div class="bg-emerald-500 h-full rounded-full" style="width: 23%;"></div>
+</div>
+<div class="text-[10px] text-slate-500 text-right">2.3h logged of 10.0h benchmark</div>
+</div>
+</div>
+<!-- Subject 2: ET -->
+<div class="glass-card p-4 rounded-xl border border-purple-500/30 relative overflow-hidden flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-[11px] font-black bg-purple-500/20 text-purple-400 border border-purple-500/40">⚙️ ET</span>
+<span class="text-xs text-slate-400">ඉංජිනේරු තාක්ෂණය</span>
+</div>
+<span class="text-lg font-black text-purple-400">14%</span>
+</div>
+<p class="text-xs font-medium text-slate-300 mt-2">ඉංජිනේරු තාක්ෂණවේදය</p>
+<div class="grid grid-cols-3 gap-2 text-center my-4 py-2 rounded-lg bg-obsidian-surface border border-obsidian-border text-xs">
+<div>
+<div class="text-[10px] text-slate-400">කාලය</div>
+<div class="font-bold text-white">3.4 Hrs</div>
+</div>
+<div>
+<div class="text-[10px] text-slate-400">සැසි</div>
+<div class="font-bold text-white">6</div>
+</div>
+<div>
+<div class="text-[10px] text-slate-400">ප්‍රගතිය</div>
+<div class="font-bold text-purple-400">2 / 14 Units</div>
+</div>
+</div>
+</div>
+<div class="space-y-2 pt-2 border-t border-slate-800">
+<div class="flex items-center justify-between text-[11px]">
+<span class="text-slate-400">ඉලක්ක ප්‍රගතිය: <strong class="text-slate-200">14% Coverage</strong></span>
+<span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/30">In Progress ⏳</span>
+</div>
+<div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+<div class="bg-purple-500 h-full rounded-full" style="width: 14%;"></div>
+</div>
+<div class="text-[10px] text-slate-500 text-right">3.4h logged of 24.0h benchmark</div>
+</div>
+</div>
+<!-- Subject 3: SFT -->
+<div class="glass-card p-4 rounded-xl border border-cyan-500/30 relative overflow-hidden flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-[11px] font-black bg-cyan-500/20 text-cyan-400 border border-cyan-500/40">🔬 SFT</span>
+<span class="text-xs text-slate-400">තාක්ෂණ විද්‍යාව</span>
+</div>
+<span class="text-lg font-black text-cyan-400">9%</span>
+</div>
+<p class="text-xs font-medium text-slate-300 mt-2">තාක්ෂණවේදය සඳහා විද්‍යාව</p>
+<div class="grid grid-cols-3 gap-2 text-center my-4 py-2 rounded-lg bg-obsidian-surface border border-obsidian-border text-xs">
+<div>
+<div class="text-[10px] text-slate-400">කාලය</div>
+<div class="font-bold text-white">6.0 Hrs</div>
+</div>
+<div>
+<div class="text-[10px] text-slate-400">සැසි</div>
+<div class="font-bold text-white">8</div>
+</div>
+<div>
+<div class="text-[10px] text-slate-400">ප්‍රගතිය</div>
+<div class="font-bold text-cyan-400">2 / 23 Units</div>
+</div>
+</div>
+</div>
+<div class="space-y-2 pt-2 border-t border-slate-800">
+<div class="flex items-center justify-between text-[11px]">
+<span class="text-slate-400">ඉලක්ක ප්‍රගතිය: <strong class="text-slate-200">9% Coverage</strong></span>
+<span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/30">In Progress ⏳</span>
+</div>
+<div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+<div class="bg-cyan-400 h-full rounded-full" style="width: 9%;"></div>
+</div>
+<div class="text-[10px] text-slate-500 text-right">6.0h logged of 66.0h benchmark</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: SubjectWiseProgressSection -->
+<!-- BEGIN: SessionHistoryTableSection -->
+<section class="glass-card rounded-2xl p-5 border border-obsidian-border space-y-4" data-purpose="session-history-log">
+<!-- Table Header & Controls -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-3 border-b border-obsidian-border">
+<div class="flex items-center gap-3">
+<span class="text-lg">📜</span>
+<div>
+<h2 class="text-base font-bold text-white tracking-wide">
+              අධ්‍යයන සැසි වාර්තාව <span class="text-slate-400 font-normal text-sm font-sans">(Session History Log)</span>
+</h2>
+<p class="text-xs text-slate-400">Individual focus timers logged to local datastore and cloud sync</p>
+</div>
+</div>
+<!-- Filter Buttons Bar -->
+<div class="flex flex-wrap items-center gap-2 text-xs">
+<!-- Time Presets -->
+<div class="flex items-center bg-obsidian-surface p-1 rounded-xl border border-obsidian-border">
+<button class="px-2 py-1 rounded-lg text-slate-400 hover:text-white">1 Day</button>
+<button class="px-2 py-1 rounded-lg text-slate-400 hover:text-white">7 Days</button>
+<button class="px-2 py-1 rounded-lg text-slate-400 hover:text-white">14 Days</button>
+<button class="px-2 py-1 rounded-lg text-slate-400 hover:text-white">1 Month</button>
+<button class="px-2 py-1 rounded-lg text-slate-400 hover:text-white">3 Months</button>
+<button class="px-2 py-1 rounded-lg text-slate-400 hover:text-white">1 Year</button>
+<button class="px-2.5 py-1 rounded-lg text-white font-semibold bg-purple-600/70 border border-purple-400/30">All Time</button>
+</div>
+<!-- Subject Filter Pills -->
+<div class="flex items-center bg-obsidian-surface p-1 rounded-xl border border-obsidian-border">
+<button class="px-2.5 py-1 rounded-lg text-white font-semibold bg-slate-700/60 border border-slate-600">සියල්ල (All)</button>
+<button class="px-2.5 py-1 rounded-lg text-emerald-400 hover:text-white">ICT</button>
+<button class="px-2.5 py-1 rounded-lg text-purple-400 hover:text-white">ET</button>
+<button class="px-2.5 py-1 rounded-lg text-cyan-400 hover:text-white">SFT</button>
+</div>
+<!-- Total Count Badge -->
+<div class="px-2.5 py-1.5 rounded-lg bg-slate-800/80 border border-slate-700 text-[11px] font-semibold text-slate-300">
+            Total Logged: <span class="text-purple-400 font-bold">17</span>
+</div>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto custom-scrollbar">
+<table class="w-full text-left text-xs whitespace-nowrap">
+<thead>
+<tr class="text-slate-400 border-b border-slate-800 font-semibold uppercase tracking-wider text-[10px]">
+<th class="py-3 px-3" scope="col">ටයිමර් ආරම්භය (Timer Start)</th>
+<th class="py-3 px-3" scope="col">ටයිමර් අවසානය (Timer Stop)</th>
+<th class="py-3 px-3" scope="col">විෂය (Subject)</th>
+<th class="py-3 px-3" scope="col">පාඩම / ඒකකය (Unit / Topic)</th>
+<th class="py-3 px-3" scope="col">කාලය (Mins)</th>
+<th class="py-3 px-3" scope="col">තත්ත්වය (Status)</th>
+<th class="py-3 px-3 text-right" scope="col">ක්‍රියා (Actions)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-800/60 font-sans">
+<!-- Row 1: SFT -->
+<tr class="hover:bg-slate-800/30 transition-colors">
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-06</span> <span class="text-white font-semibold">21:49:16</span>
+</td>
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-06</span> <span class="text-white font-semibold">22:11:26</span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold bg-cyan-500/15 text-cyan-400 border border-cyan-500/30">SFT</span>
+</td>
+<td class="py-3 px-3 text-slate-200 font-medium max-w-xs truncate" title="ඒකකය 04: ජීවීන්ගේ සෛලීය සංවිධානය සහ කාර්යභාරය">
+                ඒකකය 04: ජීවීන්ගේ සෛලීය සංවිධානය සහ ...
+              </td>
+<td class="py-3 px-3 font-bold text-cyan-400">22 min</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/25">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Fully Completed (Synced)
+                </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1.5">
+<button class="p-1 rounded hover:bg-slate-700 text-slate-400 hover:text-white transition" title="Edit">✏️</button>
+<button class="p-1 rounded hover:bg-rose-900/40 text-slate-400 hover:text-rose-400 transition" title="Delete">🗑️</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: SFT -->
+<tr class="hover:bg-slate-800/30 transition-colors">
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-06</span> <span class="text-white font-semibold">20:58:43</span>
+</td>
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-06</span> <span class="text-white font-semibold">21:48:46</span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold bg-cyan-500/15 text-cyan-400 border border-cyan-500/30">SFT</span>
+</td>
+<td class="py-3 px-3 text-slate-200 font-medium max-w-xs truncate" title="ඒකකය 04: ජීවීන්ගේ සෛලීය සංවිධානය සහ කාර්යභාරය">
+                ඒකකය 04: ජීවීන්ගේ සෛලීය සංවිධානය සහ ...
+              </td>
+<td class="py-3 px-3 font-bold text-cyan-400">50 min</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/25">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Fully Completed (Synced)
+                </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1.5">
+<button class="p-1 rounded hover:bg-slate-700 text-slate-400 hover:text-white transition" title="Edit">✏️</button>
+<button class="p-1 rounded hover:bg-rose-900/40 text-slate-400 hover:text-rose-400 transition" title="Delete">🗑️</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: ET -->
+<tr class="hover:bg-slate-800/30 transition-colors">
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-06</span> <span class="text-white font-semibold">18:19:54</span>
+</td>
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-06</span> <span class="text-white font-semibold">19:09:56</span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold bg-purple-500/15 text-purple-400 border border-purple-500/30">ET</span>
+</td>
+<td class="py-3 px-3 text-slate-200 font-medium max-w-xs truncate" title="ඒකකය 04: ගොඩනැගිලි ඉදිකිරීම් තාක්ෂණවේදය">
+                ඒකකය 04: ගොඩනැගිලි ඉදිකිරීම් තාක්ෂණවේද...
+              </td>
+<td class="py-3 px-3 font-bold text-purple-400">50 min</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/25">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Fully Completed (Synced)
+                </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1.5">
+<button class="p-1 rounded hover:bg-slate-700 text-slate-400 hover:text-white transition" title="Edit">✏️</button>
+<button class="p-1 rounded hover:bg-rose-900/40 text-slate-400 hover:text-rose-400 transition" title="Delete">🗑️</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: ET -->
+<tr class="hover:bg-slate-800/30 transition-colors">
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-06</span> <span class="text-white font-semibold">16:10:41</span>
+</td>
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-06</span> <span class="text-white font-semibold">17:00:45</span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold bg-purple-500/15 text-purple-400 border border-purple-500/30">ET</span>
+</td>
+<td class="py-3 px-3 text-slate-200 font-medium max-w-xs truncate" title="ඒකකය 04: ගොඩනැගිලි ඉදිකිරීම් තාක්ෂණවේදය">
+                ඒකකය 04: ගොඩනැගිලි ඉදිකිරීම් තාක්ෂණවේද...
+              </td>
+<td class="py-3 px-3 font-bold text-purple-400">50 min</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/25">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Fully Completed (Synced)
+                </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1.5">
+<button class="p-1 rounded hover:bg-slate-700 text-slate-400 hover:text-white transition" title="Edit">✏️</button>
+<button class="p-1 rounded hover:bg-rose-900/40 text-slate-400 hover:text-rose-400 transition" title="Delete">🗑️</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: ET -->
+<tr class="hover:bg-slate-800/30 transition-colors">
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-06</span> <span class="text-white font-semibold">15:09:43</span>
+</td>
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-06</span> <span class="text-white font-semibold">15:59:46</span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold bg-purple-500/15 text-purple-400 border border-purple-500/30">ET</span>
+</td>
+<td class="py-3 px-3 text-slate-200 font-medium max-w-xs truncate" title="ඒකකය 01: ඉංජිනේරු තාක්ෂණවේදයේ සංවර්ධනය">
+                ඒකකය 01: ඉංජිනේරු තාක්ෂණවේදයේ සංවර්ධ...
+              </td>
+<td class="py-3 px-3 font-bold text-purple-400">50 min</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/25">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Fully Completed (Synced)
+                </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1.5">
+<button class="p-1 rounded hover:bg-slate-700 text-slate-400 hover:text-white transition" title="Edit">✏️</button>
+<button class="p-1 rounded hover:bg-rose-900/40 text-slate-400 hover:text-rose-400 transition" title="Delete">🗑️</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: ICT -->
+<tr class="hover:bg-slate-800/30 transition-colors">
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-05</span> <span class="text-white font-semibold">22:21:00</span>
+</td>
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-05</span> <span class="text-white font-semibold">22:56:00</span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">ICT</span>
+</td>
+<td class="py-3 px-3 text-slate-200 font-medium max-w-xs truncate" title="ඒකකය 02: පරිගණක උපකරණවල පරිගණක පද්ධති">
+                ඒකකය 02: පරිගණක උපකරණවල පරිගණක ප...
+              </td>
+<td class="py-3 px-3 font-bold text-emerald-400">35 min</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/25">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Fully Completed (Synced)
+                </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1.5">
+<button class="p-1 rounded hover:bg-slate-700 text-slate-400 hover:text-white transition" title="Edit">✏️</button>
+<button class="p-1 rounded hover:bg-rose-900/40 text-slate-400 hover:text-rose-400 transition" title="Delete">🗑️</button>
+</div>
+</td>
+</tr>
+<!-- Row 7: ET -->
+<tr class="hover:bg-slate-800/30 transition-colors">
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-05</span> <span class="text-white font-semibold">19:03:14</span>
+</td>
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-05</span> <span class="text-white font-semibold">19:39:19</span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold bg-purple-500/15 text-purple-400 border border-purple-500/30">ET</span>
+</td>
+<td class="py-3 px-3 text-slate-200 font-medium max-w-xs truncate" title="ඒකකය 01: ඉංජිනේරු තාක්ෂණවේදයේ සංවර්ධනය">
+                ඒකකය 01: ඉංජිනේරු තාක්ෂණවේදයේ සංවර්ධ...
+              </td>
+<td class="py-3 px-3 font-bold text-purple-400">36 min</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/25">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Fully Completed (Synced)
+                </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1.5">
+<button class="p-1 rounded hover:bg-slate-700 text-slate-400 hover:text-white transition" title="Edit">✏️</button>
+<button class="p-1 rounded hover:bg-rose-900/40 text-slate-400 hover:text-rose-400 transition" title="Delete">🗑️</button>
+</div>
+</td>
+</tr>
+<!-- Row 8: ET -->
+<tr class="hover:bg-slate-800/30 transition-colors">
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-05</span> <span class="text-white font-semibold">17:43:00</span>
+</td>
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-05</span> <span class="text-white font-semibold">17:47:01</span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold bg-purple-500/15 text-purple-400 border border-purple-500/30">ET</span>
+</td>
+<td class="py-3 px-3 text-slate-200 font-medium max-w-xs truncate" title="ඒකකය 01: ඉංජිනේරු තාක්ෂණවේදයේ සංවර්ධනය">
+                ඒකකය 01: ඉංජිනේරු තාක්ෂණවේදයේ සංවර්ධ...
+              </td>
+<td class="py-3 px-3 font-bold text-purple-400">4 min</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/25">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Fully Completed (Synced)
+                </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1.5">
+<button class="p-1 rounded hover:bg-slate-700 text-slate-400 hover:text-white transition" title="Edit">✏️</button>
+<button class="p-1 rounded hover:bg-rose-900/40 text-slate-400 hover:text-rose-400 transition" title="Delete">🗑️</button>
+</div>
+</td>
+</tr>
+<!-- Row 9: ET -->
+<tr class="hover:bg-slate-800/30 transition-colors">
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-05</span> <span class="text-white font-semibold">17:27:39</span>
+</td>
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-05</span> <span class="text-white font-semibold">17:42:41</span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold bg-purple-500/15 text-purple-400 border border-purple-500/30">ET</span>
+</td>
+<td class="py-3 px-3 text-slate-200 font-medium max-w-xs truncate" title="ඒකකය 01: ඉංජිනේරු තාක්ෂණවේදයේ සංවර්ධනය">
+                ඒකකය 01: ඉංජිනේරු තාක්ෂණවේදයේ සංවර්ධ...
+              </td>
+<td class="py-3 px-3 font-bold text-purple-400">15 min</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/25">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Fully Completed (Synced)
+                </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1.5">
+<button class="p-1 rounded hover:bg-slate-700 text-slate-400 hover:text-white transition" title="Edit">✏️</button>
+<button class="p-1 rounded hover:bg-rose-900/40 text-slate-400 hover:text-rose-400 transition" title="Delete">🗑️</button>
+</div>
+</td>
+</tr>
+<!-- Row 10: SFT -->
+<tr class="hover:bg-slate-800/30 transition-colors">
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-05</span> <span class="text-white font-semibold">16:50:02</span>
+</td>
+<td class="py-3 px-3 font-mono text-slate-300">
+<span class="text-slate-400">📅 2026-10-05</span> <span class="text-white font-semibold">17:24:52</span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold bg-cyan-500/15 text-cyan-400 border border-cyan-500/30">SFT</span>
+</td>
+<td class="py-3 px-3 text-slate-200 font-medium max-w-xs truncate" title="ඒකකය 01: ජීවවිද්‍යා සහ පාරිසරික විද්‍යාව පිළිබඳ මූලිකාංග">
+                ඒකකය 01: ජීවවිද්‍යා සහ පාරිසර පිළිබඳ මූලික...
+              </td>
+<td class="py-3 px-3 font-bold text-cyan-400">35 min</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/25">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Fully Completed (Synced)
+                </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1.5">
+<button class="p-1 rounded hover:bg-slate-700 text-slate-400 hover:text-white transition" title="Edit">✏️</button>
+<button class="p-1 rounded hover:bg-rose-900/40 text-slate-400 hover:text-rose-400 transition" title="Delete">🗑️</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Navigation -->
+<div class="flex items-center justify-between pt-3 border-t border-obsidian-border text-xs">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-obsidian-surface text-slate-400 hover:text-white border border-obsidian-border transition">
+          ← Previous
+        </button>
+<span class="font-medium text-slate-400">Page <strong class="text-white">1</strong> of 2</span>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-obsidian-surface text-slate-200 hover:text-white border border-purple-500/30 transition hover:bg-slate-800">
+          Next →
+        </button>
+</div>
+</section>
+<!-- END: SessionHistoryTableSection -->
+</main>
+<!-- END: MainContent -->
+<!-- BEGIN: MissionControlFooter -->
+<footer class="mt-12 border-t border-obsidian-border bg-obsidian-deep py-6 px-4 text-center text-xs text-slate-500">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-purple-500"></span>
+<span class="text-slate-400 font-medium">Sinethmi A-Level Mission Control Intelligence Engine</span>
+</div>
+<div class="text-[11px] text-slate-500">
+        Obsidian Kinetic System v4.8 • Realtime Synced Telemetry • 2026
+      </div>
+</div>
+</footer>
+<!-- END: MissionControlFooter -->
+</body></html>
