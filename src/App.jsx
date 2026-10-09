@@ -1,40 +1,35 @@
-import { useState } from 'react';
-import CandidateLogin from './components/CandidateLogin';
+import { BrowserRouter, Routes, Route, Navigate, useNavigate } from 'react-router-dom';
+import CandidateLogin from './components/CandidateLogin/CandidateLogin';
+import CandidateProfileSetup from './components/ProfileSetup/CandidateProfileSetup';
 import CommandCenterDashboard from './components/CommandCenter/CommandCenterDashboard';
 import StudyAnalyticsDashboard from './components/StudyAnalytics/StudyAnalyticsDashboard';
 import VisualAnalyticsDashboard from './components/VisualAnalytics/VisualAnalyticsDashboard';
+import DevNav from './components/DevNav';
 
-export default function App() {
-  const [view, setView] = useState('visual-analytics');
-
-  const views = [
-    { id: 'visual-analytics', label: 'Visual Analytics', color: 'bg-emerald-500/20 text-emerald-300 border-emerald-400/40' },
-    { id: 'study-analytics', label: 'Study Analytics', color: 'bg-purple-500/20 text-purple-300 border-purple-400/40' },
-    { id: 'command-center', label: 'Command Center', color: 'bg-cyan-500/20 text-cyan-300 border-cyan-400/40' },
-    { id: 'login', label: 'Candidate Login', color: 'bg-indigo-500/20 text-indigo-300 border-indigo-400/40' },
-  ];
+function RouteContent() {
+  const navigate = useNavigate();
+  const toCommand = () => navigate('/command-center');
 
   return (
-    <div className="relative">
-      <div className="fixed bottom-4 right-4 z-50 flex items-center gap-1.5 p-1.5 rounded-full bg-slate-900/90 border border-white/10 backdrop-blur-md shadow-2xl text-xs font-mono">
-        {views.map((v) => (
-          <button
-            key={v.id}
-            type="button"
-            onClick={() => setView(v.id)}
-            className={`px-3 py-1 rounded-full transition cursor-pointer ${
-              view === v.id ? `${v.color} border font-bold` : 'text-slate-400 hover:text-white'
-            }`}
-          >
-            {v.label}
-          </button>
-        ))}
-      </div>
+    <Routes>
+      <Route path="/" element={<CandidateLogin />} />
+      <Route path="/login" element={<CandidateLogin />} />
+      <Route path="/profile-setup" element={<CandidateProfileSetup />} />
+      <Route path="/command-center" element={<CommandCenterDashboard />} />
+      <Route path="/study-analytics" element={<StudyAnalyticsDashboard onBack={toCommand} />} />
+      <Route path="/visual-analytics" element={<VisualAnalyticsDashboard onBack={toCommand} />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
+  );
+}
 
-      {view === 'visual-analytics' && <VisualAnalyticsDashboard onBack={() => setView('command-center')} />}
-      {view === 'study-analytics' && <StudyAnalyticsDashboard onBack={() => setView('command-center')} />}
-      {view === 'command-center' && <CommandCenterDashboard />}
-      {view === 'login' && <CandidateLogin />}
-    </div>
+export default function App() {
+  return (
+    <BrowserRouter>
+      <div className="relative min-h-screen">
+        <DevNav />
+        <RouteContent />
+      </div>
+    </BrowserRouter>
   );
 }

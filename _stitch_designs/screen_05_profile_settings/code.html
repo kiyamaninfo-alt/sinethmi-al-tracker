@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mission Control - Candidate Profile Settings &amp; Mission Parameters</title>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms & Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config verbatum injection -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary-container": "#03b5d3",
+            "secondary": "#4cd7f6",
+            "outline": "#958ea0",
+            "secondary-fixed": "#acedff",
+            "surface-bright": "#31394d",
+            "on-primary-container": "#340080",
+            "inverse-primary": "#6d3bd7",
+            "surface-container-low": "#131b2e",
+            "on-secondary-fixed": "#001f26",
+            "tertiary-container": "#00a572",
+            "surface-container-high": "#222a3d",
+            "on-tertiary": "#003824",
+            "surface-tint": "#d0bcff",
+            "outline-variant": "#494454",
+            "error": "#ffb4ab",
+            "surface-container": "#171f33",
+            "error-container": "#93000a",
+            "surface": "#0b1326",
+            "on-tertiary-container": "#00311f",
+            "secondary-fixed-dim": "#4cd7f6",
+            "on-secondary": "#003640",
+            "on-tertiary-fixed": "#002113",
+            "on-secondary-fixed-variant": "#004e5c",
+            "inverse-on-surface": "#283044",
+            "surface-container-highest": "#2d3449",
+            "background": "#0b1326",
+            "on-surface": "#dae2fd",
+            "surface-container-lowest": "#060e20",
+            "on-error": "#690005",
+            "tertiary": "#4edea3",
+            "inverse-surface": "#dae2fd",
+            "tertiary-fixed-dim": "#4edea3",
+            "primary": "#d0bcff",
+            "surface-variant": "#2d3449",
+            "primary-fixed-dim": "#d0bcff",
+            "on-secondary-container": "#00424e",
+            "on-primary-fixed-variant": "#5516be",
+            "on-primary-fixed": "#23005c",
+            "tertiary-fixed": "#6ffbbe",
+            "primary-fixed": "#e9ddff",
+            "on-error-container": "#ffdad6",
+            "surface-dim": "#0b1326",
+            "on-tertiary-fixed-variant": "#005236",
+            "on-surface-variant": "#cbc3d7",
+            "on-primary": "#3c0091",
+            "on-background": "#dae2fd",
+            "primary-container": "#a078ff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-xl": "2.5rem",
+            "space-lg": "1.5rem",
+            "gutter": "1.5rem",
+            "margin": "2rem",
+            "margin-mobile": "1rem",
+            "gutter-mobile": "0.75rem",
+            "space-xs": "0.25rem"
+          },
+          "fontFamily": {
+            "label-md": ["Inter"],
+            "headline-md": ["Inter"],
+            "label-lg": ["Inter"],
+            "headline-lg": ["Inter"],
+            "display": ["Inter"],
+            "headline-lg-mobile": ["Inter"],
+            "metric-display": ["Inter"],
+            "body-md": ["Inter"],
+            "display-mobile": ["Inter"],
+            "body-lg": ["Inter"],
+            "body-sm": ["Inter"],
+            "headline-sm": ["Inter"],
+            "label-sm": ["Inter"]
+          },
+          "fontSize": {
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "display": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "metric-display": ["40px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "display-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-specular-glow {
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 0 24px -6px rgba(139, 92, 246, 0.15);
+    }
+    .neon-violet-glow {
+      box-shadow: 0 0 20px rgba(139, 92, 246, 0.35);
+    }
+    .neon-cyan-glow {
+      box-shadow: 0 0 16px rgba(6, 182, 212, 0.35);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #060e20;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #222a3d;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen font-body-md antialiased overflow-x-hidden selection:bg-primary selection:text-on-primary">
+<!-- TOP APP BAR (Shared Component Anchor) -->
+<header class="bg-surface-container-low border-b border-outline-variant/30 shadow-sm sticky top-0 z-50 backdrop-blur-md bg-opacity-95">
+<div class="w-full px-space-lg flex justify-between items-center h-16 max-w-full">
+<!-- Left: Brand Emblem & Identity -->
+<div class="flex items-center space-x-space-md">
+<div class="relative flex items-center justify-center w-10 h-10 rounded-lg overflow-hidden border border-outline-variant/40 bg-surface-container-lowest">
+<img alt="Sinethmi Mission Control logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1X_PS4ssj3l1MLwBhuXGwsVh1pDEBb4aHZkZ7uXn5TnvOOC5penLaH1rKhot9-NejghHngxQbYl-inE4WaRqJvO7mowZwjl-L8pkiqJs3TL_qnfhciMQ1suxunGUPCxs3bkfkiDrFLFDSB8gnpJFW9B7nof1xJOlFIYmYRSjcmYnieRAMJckzkLMBAAMcAMMNR7pYd5wpSJjDYsRZKbUR3Eb6PQ6zV5qeWSHJ397V8SAQ"/>
+<div class="absolute inset-0 ring-1 ring-inset ring-primary/30 rounded-lg"></div>
+</div>
+<div class="flex flex-col">
+<span class="text-headline-sm font-headline-sm font-black tracking-tight text-primary">Mission Control</span>
+<span class="text-label-sm font-label-sm text-secondary tracking-widest uppercase">Telemetry Horizon 2028</span>
+</div>
+</div>
+<!-- Center: Navigation Links -->
+<nav class="hidden md:flex items-center space-x-space-md">
+<a class="text-on-surface-variant font-label-md px-space-md py-space-sm rounded-lg hover:text-primary hover:bg-surface-container-high/40 transition-colors" href="#">Dashboard</a>
+<!-- ACTIVE TAB: Parameters based on intent -->
+<a class="text-primary border-b-2 border-primary font-label-md px-space-md py-space-sm flex items-center space-x-1" href="#">
+<span>Parameters</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping inline-block"></span>
+</a>
+<a class="text-on-surface-variant font-label-md px-space-md py-space-sm rounded-lg hover:text-primary hover:bg-surface-container-high/40 transition-colors" href="#">Syllabus Matrix</a>
+<a class="text-on-surface-variant font-label-md px-space-md py-space-sm rounded-lg hover:text-primary hover:bg-surface-container-high/40 transition-colors" href="#">Telemetry</a>
+<a class="text-on-surface-variant font-label-md px-space-md py-space-sm rounded-lg hover:text-primary hover:bg-surface-container-high/40 transition-colors" href="#">Analytics</a>
+</nav>
+<!-- Right: Action Controls & Telemetry Stats -->
+<div class="flex items-center space-x-space-md">
+<div class="hidden lg:flex items-center space-x-space-xs text-on-surface-variant">
+<button class="p-2 rounded-lg hover:text-primary hover:bg-surface-container-high/40 transition-all duration-200 active:scale-95" title="Notifications">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+</button>
+<button class="p-2 rounded-lg hover:text-primary hover:bg-surface-container-high/40 transition-all duration-200 active:scale-95" title="Terminal CLI">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</button>
+<button class="p-2 rounded-lg hover:text-primary hover:bg-surface-container-high/40 transition-all duration-200 active:scale-95" title="Tune Engine">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<button class="hidden xl:inline-flex items-center text-label-md font-label-md px-space-md py-1.5 rounded-lg border border-outline-variant/40 bg-surface-container text-on-surface hover:border-secondary hover:text-secondary transition-all">
+<span class="material-symbols-outlined text-[16px] mr-1.5">sync</span>
+          Sync Telemetry
+        </button>
+<button class="bg-primary text-on-primary text-label-md font-label-md px-space-md py-1.5 rounded-lg transition-all duration-200 active:scale-95 shadow-sm hover:opacity-90 flex items-center">
+<span class="material-symbols-outlined text-[16px] mr-1">rocket_launch</span>
+          Deploy Parameters
+        </button>
+</div>
+</div>
+</header>
+<!-- MAIN APP CONTAINER WITH SIDEBAR & CONTENT AREA -->
+<div class="flex min-h-[calc(100vh-4rem)] bg-background">
+<!-- DESKTOP SIDE NAVIGATION (Shared Component Anchor) -->
+<aside class="hidden xl:flex flex-col justify-between h-[calc(100vh-4rem)] sticky top-16 p-space-md w-72 bg-surface-container-lowest border-r border-outline-variant/30 flex-shrink-0">
+<div>
+<!-- Profile Anchor in SideNav -->
+<div class="flex items-center space-x-space-sm p-space-sm mb-space-md bg-surface-container-low/60 rounded-lg border border-outline-variant/20">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center border border-primary/30 relative">
+<span class="material-symbols-outlined text-primary text-[24px]">school</span>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary border-2 border-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="text-label-md font-label-md text-on-surface truncate">Sinethmi</span>
+<span class="text-body-sm font-body-sm text-outline truncate">Tech Stream • 2026 Horizon</span>
+</div>
+</div>
+<!-- Navigation Tabs -->
+<div class="space-y-1">
+<a class="text-on-surface-variant font-label-md px-space-md py-space-sm rounded-lg hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center space-x-space-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">space_dashboard</span>
+<span>Overview</span>
+</a>
+<!-- ACTIVE TAB: Mission Parameters -->
+<a class="bg-primary-container/20 text-primary border-r-2 border-primary font-label-md rounded-lg px-space-md py-space-sm flex items-center space-x-space-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+<span>Mission Parameters</span>
+</a>
+<a class="text-on-surface-variant font-label-md px-space-md py-space-sm rounded-lg hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center space-x-space-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">dataset</span>
+<span>Curriculum Matrix</span>
+</a>
+<a class="text-on-surface-variant font-label-md px-space-md py-space-sm rounded-lg hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center space-x-space-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+<span>Focus Telemetry</span>
+</a>
+<a class="text-on-surface-variant font-label-md px-space-md py-space-sm rounded-lg hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center space-x-space-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">military_tech</span>
+<span>Rank Benchmarks</span>
+</a>
+<a class="text-on-surface-variant font-label-md px-space-md py-space-sm rounded-lg hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center space-x-space-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+<span>System Core</span>
+</a>
+</div>
+</div>
+<!-- Bottom SideNav CTA & Links -->
+<div class="space-y-space-md pt-space-md border-t border-outline-variant/20">
+<button class="w-full py-2 px-space-md bg-secondary text-on-secondary rounded-lg font-label-md text-label-md flex items-center justify-center space-x-2 hover:bg-secondary-fixed transition-colors active:scale-98">
+<span class="material-symbols-outlined text-[18px]">satellite_alt</span>
+<span>Initialize Mission</span>
+</button>
+<div class="space-y-1">
+<a class="text-on-surface-variant font-label-md px-space-md py-1.5 rounded-lg hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center space-x-space-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">help_outline</span>
+<span>Help &amp; Docs</span>
+</a>
+<a class="text-on-surface-variant font-label-md px-space-md py-1.5 rounded-lg hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center space-x-space-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">power_settings_new</span>
+<span>Logout</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- WORKSPACE CANVAS -->
+<main class="flex-1 px-4 sm:px-6 lg:px-8 py-6 max-w-7xl mx-auto space-y-6">
+<!-- ========================================== -->
+<!-- SECTION 1: HEADER & CANDIDATE PROFILE BANNER -->
+<!-- ========================================== -->
+<section class="space-y-4">
+<!-- Top Title, Breadcrumbs & Telemetry Status -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-outline-variant/20">
+<div>
+<div class="flex items-center space-x-2 text-body-sm font-body-sm text-outline mb-1">
+<span>Mission Control</span>
+<span class="text-outline-variant">/</span>
+<span>Configuration</span>
+<span class="text-outline-variant">/</span>
+<span class="text-secondary font-medium">Candidate Parameters</span>
+</div>
+<h1 class="text-headline-lg font-headline-lg tracking-tight text-on-surface flex items-center gap-3">
+              Sinethmi A-Level Mission Control
+              <span class="text-xs font-label-sm tracking-wider uppercase px-2.5 py-0.5 rounded-full bg-secondary-container/20 text-secondary border border-secondary/40">
+                A/L 2028 Pipeline
+              </span>
+</h1>
+</div>
+<!-- Top status and rapid exit controls -->
+<div class="flex flex-wrap items-center gap-3">
+<div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-surface-container-low border border-tertiary/30 text-tertiary">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span>
+</span>
+<span class="text-label-sm font-label-sm tracking-wider uppercase">MISSION PARAMETERS V1.0 • TELEMETRY SYNCED</span>
+</div>
+<button class="text-body-sm font-label-md px-3 py-1.5 rounded-lg border border-outline-variant/40 bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors flex items-center space-x-1">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span>Back to Command Center</span>
+</button>
+<button class="text-body-sm font-label-md px-3 py-1.5 rounded-lg border border-error/30 text-error hover:bg-error-container/30 transition-colors flex items-center space-x-1">
+<span class="material-symbols-outlined text-[16px]">power_settings_new</span>
+<span>Logout / Terminate Session</span>
+</button>
+</div>
+</div>
+<!-- Glassmorphism Candidate Profile Banner -->
+<div class="relative overflow-hidden rounded-xl border border-outline-variant/30 bg-surface-container-low/80 backdrop-blur-md p-5 custom-specular-glow">
+<div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 relative z-10 items-center">
+<!-- Avatar & Main Identifiers -->
+<div class="lg:col-span-4 flex items-center space-x-4">
+<div class="relative flex-shrink-0">
+<div class="w-16 h-16 rounded-xl bg-surface-container-high border-2 border-primary/40 flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-primary text-[36px]">psychology</span>
+</div>
+<div class="absolute -bottom-1 -right-1 px-1.5 py-0.5 rounded bg-tertiary text-on-tertiary text-label-sm font-label-sm tracking-tight flex items-center">
+<span>99.8%</span>
+</div>
+</div>
+<div class="min-w-0">
+<div class="flex items-center space-x-2">
+<h2 class="text-headline-sm font-headline-sm text-on-surface truncate">Sinethmi Rathnayake</h2>
+<span class="material-symbols-outlined text-secondary text-[18px]" title="Verified STEM Candidate">verified</span>
+</div>
+<p class="text-body-sm font-body-sm text-outline">Index: <span class="font-mono text-on-surface">AL-2028-TECH-0492</span></p>
+<div class="flex items-center space-x-2 mt-1">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface-variant border border-outline-variant/30">
+                    Visakha Vidyalaya Colombo
+                  </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-label-sm font-label-sm bg-secondary/10 text-secondary border border-secondary/30">
+                    Colombo District • Tier 1
+                  </span>
+</div>
+</div>
+</div>
+<!-- Academic Pipeline Stats & Targets -->
+<div class="lg:col-span-5 grid grid-cols-2 sm:grid-cols-3 gap-3 border-y lg:border-y-0 lg:border-x border-outline-variant/30 py-4 lg:py-0 lg:px-6">
+<div>
+<p class="text-label-sm font-label-sm text-outline uppercase tracking-wider">Candidate Track</p>
+<p class="text-body-md font-label-md text-tertiary mt-0.5 flex items-center">
+<span class="w-2 h-2 rounded-full bg-tertiary mr-1.5"></span> Verified STEM
+                </p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Bio/Tech Track</p>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-outline uppercase tracking-wider">Target Z-Score</p>
+<p class="text-headline-sm font-headline-sm text-primary font-mono mt-0.5">&gt; 2.450</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Alpha Horizon 2028</p>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<p class="text-label-sm font-label-sm text-outline uppercase tracking-wider">Target Exam Year</p>
+<p class="text-body-md font-label-md text-secondary mt-0.5">2028 Horizon</p>
+<p class="text-body-sm font-body-sm text-outline">728 Days Remaining</p>
+</div>
+</div>
+<!-- Live Telemetry Stream Telemetry Matrix -->
+<div class="lg:col-span-3 flex flex-col justify-between space-y-2 bg-surface-container/60 p-3 rounded-lg border border-outline-variant/20 font-mono text-body-sm">
+<div class="flex items-center justify-between text-label-sm">
+<span class="text-outline uppercase">Telemetry Engine:</span>
+<span class="text-tertiary font-bold">SYNCHRONIZED (99.8%)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-outline">Heartbeat Latency:</span>
+<span class="text-secondary font-medium">18ms (Stable)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-outline">Active DB Node:</span>
+<span class="text-on-surface">SGP-01 • Supabase Direct</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden mt-1">
+<div class="bg-gradient-to-r from-primary to-secondary h-full rounded-full" style="width: 99.8%"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 2: STREAM & SUBJECTS SELECTOR MATRIX -->
+<!-- ========================================== -->
+<section class="space-y-4">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-center space-x-3">
+<div class="p-2 rounded-lg bg-surface-container-high text-primary border border-primary/30">
+<span class="material-symbols-outlined text-[20px]">account_tree</span>
+</div>
+<div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Stream &amp; Subjects Selector Matrix</h2>
+<p class="text-body-sm font-body-sm text-outline">Technology Stream (තාක්ෂණවේදය විෂය ධාරාව) • Balanced Study Distribution</p>
+</div>
+</div>
+<!-- Preset active badge -->
+<div class="inline-flex items-center space-x-2 px-3 py-1 rounded-lg bg-secondary-container/10 border border-secondary-container/30 text-secondary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="text-label-md font-label-md">Active Stream: Technology (තාක්ෂණවේදය)</span>
+</div>
+</div>
+<!-- 3 Interactive Sci-Fi Subject Telemetry Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<!-- Subject A: Engineering Technology (ET-065) -->
+<div class="rounded-xl bg-surface-container-low/70 border border-primary/30 p-5 space-y-4 relative overflow-hidden custom-specular-glow hover:border-primary/60 transition-all duration-300">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="text-label-sm font-label-sm font-mono px-2 py-0.5 rounded bg-primary-container/20 text-primary border border-primary/30">
+                  ET-065 • 4.0 Credits
+                </span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mt-2">Engineering Technology</h3>
+<p class="text-body-sm font-body-sm text-outline">ඉංජිනේරු තාක්ෂණවේදය</p>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="toggle-et" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</div>
+</div>
+<!-- Telemetry Attributes -->
+<div class="grid grid-cols-2 gap-2 text-body-sm font-body-sm pt-2 border-t border-outline-variant/20">
+<div class="bg-surface-container/40 p-2 rounded border border-outline-variant/20">
+<span class="text-outline text-label-sm block">Unit Coverage</span>
+<span class="text-primary font-bold">14 Units (100%)</span>
+</div>
+<div class="bg-surface-container/40 p-2 rounded border border-outline-variant/20">
+<span class="text-outline text-label-sm block">Target Grade</span>
+<span class="text-tertiary font-bold">A* (Distinction 90+)</span>
+</div>
+<div class="col-span-2 bg-surface-container/40 p-2 rounded border border-outline-variant/20 flex justify-between items-center">
+<span class="text-outline text-label-sm">Syllabus Completion Target</span>
+<span class="text-on-surface font-mono font-medium">Nov 15, 2027</span>
+</div>
+</div>
+<!-- Weekly Quota Slider -->
+<div class="space-y-2 pt-2">
+<div class="flex justify-between items-center text-label-md font-label-md">
+<span class="text-on-surface-variant">Weekly Allocation</span>
+<span class="text-primary font-mono font-bold">16.0 Hours/Week (38%)</span>
+</div>
+<input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary" max="24" min="8" step="0.5" type="range" value="16"/>
+<div class="flex justify-between text-label-sm text-outline font-mono">
+<span>Min: 8h</span>
+<span>Optimal: 16h</span>
+<span>Max: 24h</span>
+</div>
+</div>
+</div>
+<!-- Subject B: Science for Technology (SFT-066) -->
+<div class="rounded-xl bg-surface-container-low/70 border border-secondary/30 p-5 space-y-4 relative overflow-hidden custom-specular-glow hover:border-secondary/60 transition-all duration-300">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="text-label-sm font-label-sm font-mono px-2 py-0.5 rounded bg-secondary-container/20 text-secondary border border-secondary/30">
+                  SFT-066 • 4.0 Credits
+                </span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mt-2">Science for Technology</h3>
+<p class="text-body-sm font-body-sm text-outline">තාක්ෂණවේදය සඳහා විද්‍යාව</p>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="toggle-sft" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</div>
+</div>
+<!-- Telemetry Attributes -->
+<div class="grid grid-cols-2 gap-2 text-body-sm font-body-sm pt-2 border-t border-outline-variant/20">
+<div class="bg-surface-container/40 p-2 rounded border border-outline-variant/20">
+<span class="text-outline text-label-sm block">Unit Coverage</span>
+<span class="text-secondary font-bold">23 Units (100%)</span>
+</div>
+<div class="bg-surface-container/40 p-2 rounded border border-outline-variant/20">
+<span class="text-outline text-label-sm block">Target Grade</span>
+<span class="text-tertiary font-bold">A* (Distinction 90+)</span>
+</div>
+<div class="col-span-2 bg-surface-container/40 p-2 rounded border border-outline-variant/20 flex justify-between items-center">
+<span class="text-outline text-label-sm">Syllabus Completion Target</span>
+<span class="text-on-surface font-mono font-medium">Jan 20, 2028</span>
+</div>
+</div>
+<!-- Weekly Quota Slider -->
+<div class="space-y-2 pt-2">
+<div class="flex justify-between items-center text-label-md font-label-md">
+<span class="text-on-surface-variant">Weekly Allocation</span>
+<span class="text-secondary font-mono font-bold">14.0 Hours/Week (33%)</span>
+</div>
+<input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-secondary" max="24" min="8" step="0.5" type="range" value="14"/>
+<div class="flex justify-between text-label-sm text-outline font-mono">
+<span>Min: 8h</span>
+<span>Optimal: 14h</span>
+<span>Max: 24h</span>
+</div>
+</div>
+</div>
+<!-- Subject C: ICT (ICT-020) -->
+<div class="rounded-xl bg-surface-container-low/70 border border-tertiary/30 p-5 space-y-4 relative overflow-hidden custom-specular-glow hover:border-tertiary/60 transition-all duration-300">
+<div class="absolute top-0 right-0 w-32 h-32 bg-tertiary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="text-label-sm font-label-sm font-mono px-2 py-0.5 rounded bg-tertiary-container/20 text-tertiary border border-tertiary/30">
+                  ICT-020 • 4.0 Credits
+                </span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mt-2">Information &amp; Comm. Tech</h3>
+<p class="text-body-sm font-body-sm text-outline">තොරතුරු හා සන්නිවේදන තාක්ෂණය</p>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="toggle-ict" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-tertiary"></div>
+</div>
+</div>
+<!-- Telemetry Attributes -->
+<div class="grid grid-cols-2 gap-2 text-body-sm font-body-sm pt-2 border-t border-outline-variant/20">
+<div class="bg-surface-container/40 p-2 rounded border border-outline-variant/20">
+<span class="text-outline text-label-sm block">Unit Coverage</span>
+<span class="text-tertiary font-bold">13 Units (100%)</span>
+</div>
+<div class="bg-surface-container/40 p-2 rounded border border-outline-variant/20">
+<span class="text-outline text-label-sm block">Target Grade</span>
+<span class="text-tertiary font-bold">A* (Distinction 90+)</span>
+</div>
+<div class="col-span-2 bg-surface-container/40 p-2 rounded border border-outline-variant/20 flex justify-between items-center">
+<span class="text-outline text-label-sm">Syllabus Completion Target</span>
+<span class="text-on-surface font-mono font-medium">Oct 10, 2027</span>
+</div>
+</div>
+<!-- Weekly Quota Slider -->
+<div class="space-y-2 pt-2">
+<div class="flex justify-between items-center text-label-md font-label-md">
+<span class="text-on-surface-variant">Weekly Allocation</span>
+<span class="text-tertiary font-mono font-bold">12.0 Hours/Week (29%)</span>
+</div>
+<input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-tertiary" max="24" min="8" step="0.5" type="range" value="12"/>
+<div class="flex justify-between text-label-sm text-outline font-mono">
+<span>Min: 8h</span>
+<span>Optimal: 12h</span>
+<span>Max: 24h</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Validation telemetry status bar -->
+<div class="p-3.5 rounded-lg bg-surface-container border border-outline-variant/20 flex flex-wrap items-center justify-between text-body-sm font-body-sm gap-2">
+<div class="flex items-center space-x-2 text-tertiary">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>All 14 Parameter Constraints Validated • Syllabus weights balanced (100%) • Zero-Data-Loss Protocol Ready</span>
+</div>
+<div class="flex items-center space-x-4 text-outline font-mono text-label-sm">
+<span>ET: 38%</span>
+<span>•</span>
+<span>SFT: 33%</span>
+<span>•</span>
+<span>ICT: 29%</span>
+<span>= 100.0% Net Load</span>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 3: TARGET HORIZON & CALIBRATION PANEL -->
+<!-- ========================================== -->
+<section class="space-y-4">
+<div class="flex items-center space-x-3">
+<div class="p-2 rounded-lg bg-surface-container-high text-secondary border border-secondary/30">
+<span class="material-symbols-outlined text-[20px]">radar</span>
+</div>
+<div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Target Horizon &amp; Calibration Panel</h2>
+<p class="text-body-sm font-body-sm text-outline">Examination Milestones, Z-Score Objectives &amp; Cadence Balancing</p>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+<!-- Left Column: Year Horizon & Rank Targets (7 Cols) -->
+<div class="lg:col-span-7 space-y-4">
+<!-- Target Exam Horizon Year Selector Pills -->
+<div class="rounded-xl bg-surface-container-low/70 border border-outline-variant/30 p-5 space-y-3">
+<label class="text-label-md font-label-md text-outline block uppercase tracking-wider">
+                Target Examination Horizon Year
+              </label>
+<div class="grid grid-cols-3 gap-3">
+<!-- 2026 -->
+<button class="py-2.5 px-4 rounded-lg bg-surface-container border border-outline-variant/30 text-on-surface-variant font-label-md hover:border-outline hover:text-on-surface transition-all text-center">
+                  2026 Horizon
+                </button>
+<!-- 2027 -->
+<button class="py-2.5 px-4 rounded-lg bg-surface-container border border-outline-variant/30 text-on-surface-variant font-label-md hover:border-outline hover:text-on-surface transition-all text-center">
+                  2027 Horizon
+                </button>
+<!-- 2028 (Active) -->
+<button class="py-2.5 px-4 rounded-lg bg-primary/20 border-2 border-primary text-primary font-label-md font-bold text-center neon-violet-glow relative">
+<span>2028 ★ Selected</span>
+</button>
+</div>
+<!-- Countdown status for selected 2028 -->
+<div class="p-3 rounded-lg bg-surface-container/60 border border-primary/30 flex items-center justify-between">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary text-[20px]">hourglass_top</span>
+<span class="text-label-md font-label-md text-on-surface">Days to Exam Countdown:</span>
+</div>
+<div class="text-primary font-mono font-bold text-label-lg">
+                  728 Days • G.C.E. Advanced Level 2028
+                </div>
+</div>
+</div>
+<!-- Island Rank Target Milestones Card -->
+<div class="rounded-xl bg-surface-container-low/70 border border-outline-variant/30 p-5 space-y-3">
+<div class="flex justify-between items-center">
+<label class="text-label-md font-label-md text-outline uppercase tracking-wider">
+                  Island Rank Target Milestones (Technology Stream)
+                </label>
+<span class="text-label-sm font-label-sm text-secondary font-mono">Colombo District Matrix</span>
+</div>
+<div class="space-y-2">
+<!-- Rank 1: Top 10 -->
+<div class="p-3 rounded-lg bg-surface-container/40 border border-outline-variant/20 hover:border-outline-variant/40 flex items-center justify-between transition-colors">
+<div class="flex items-center space-x-3">
+<span class="w-3 h-3 rounded-full border border-outline-variant"></span>
+<div>
+<span class="font-label-md text-on-surface">Top 10 Island Rank</span>
+<span class="text-label-sm text-outline ml-2">(Tier Alpha)</span>
+</div>
+</div>
+<span class="text-body-sm font-mono text-outline">Target Z-Score &gt; 2.600</span>
+</div>
+<!-- Rank 2: Top 50 (Selected Active) -->
+<div class="p-3.5 rounded-lg bg-primary-container/20 border-2 border-primary flex items-center justify-between neon-violet-glow">
+<div class="flex items-center space-x-3">
+<span class="w-3.5 h-3.5 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-[10px]">check</span>
+</span>
+<div>
+<span class="font-label-md text-primary font-bold">Top 50 Island Rank [Selected Active Target]</span>
+<span class="text-label-sm text-tertiary ml-2">Tier Beta Prime</span>
+</div>
+</div>
+<span class="text-label-md font-mono text-primary font-bold">Target Z-Score &gt; 2.400</span>
+</div>
+<!-- Rank 3: Top 100 -->
+<div class="p-3 rounded-lg bg-surface-container/40 border border-outline-variant/20 hover:border-outline-variant/40 flex items-center justify-between transition-colors">
+<div class="flex items-center space-x-3">
+<span class="w-3 h-3 rounded-full border border-outline-variant"></span>
+<div>
+<span class="font-label-md text-on-surface">Top 100 Island Rank</span>
+<span class="text-label-sm text-outline ml-2">(Tier Gamma)</span>
+</div>
+</div>
+<span class="text-body-sm font-mono text-outline">Target Z-Score &gt; 2.250</span>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between text-body-sm text-on-surface-variant">
+<span>Target Island Merit Window:</span>
+<span class="font-mono text-secondary font-bold">#42 – #78 Island Merit Target (Tier 1 Colombo)</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Daily Study Quota Radial Dial & Cadence (5 Cols) -->
+<div class="lg:col-span-5 rounded-xl bg-surface-container-low/70 border border-outline-variant/30 p-5 flex flex-col justify-between space-y-4">
+<div>
+<div class="flex justify-between items-center mb-2">
+<span class="text-label-md font-label-md text-outline uppercase tracking-wider">Study Load Dial</span>
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded bg-tertiary/10 text-tertiary border border-tertiary/30">Calibrated</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Daily Quota &amp; Session Cadence</h3>
+</div>
+<!-- Glowing SVG circular gauge -->
+<div class="flex flex-col items-center justify-center py-2 relative">
+<div class="w-48 h-48 relative flex items-center justify-center">
+<svg class="w-full h-full -rotate-90 transform" viewbox="0 0 160 160">
+<!-- Track -->
+<circle class="text-surface-container-highest opacity-40 fill-none" cx="80" cy="80" r="68" stroke="currentColor" stroke-width="12"></circle>
+<!-- Progress Bar with Neon Violet/Cyan gradient -->
+<circle class="fill-none transition-all duration-1000 ease-out" cx="80" cy="80" r="68" stroke="url(#studyGradient)" stroke-dasharray="427" stroke-dashoffset="108" stroke-linecap="round" stroke-width="12"></circle>
+<defs>
+<lineargradient id="studyGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#8b5cf6"></stop>
+<stop offset="60%" stop-color="#06b6d4"></stop>
+<stop offset="100%" stop-color="#10b981"></stop>
+</lineargradient>
+</defs>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="text-headline-lg font-headline-lg font-black text-on-surface font-mono tracking-tight">6.5</span>
+<span class="text-label-md font-label-md text-secondary uppercase tracking-wider">Hours / Day</span>
+<span class="text-label-sm font-label-sm text-outline mt-1 font-mono">Quota: 42.0h / wk</span>
+</div>
+</div>
+</div>
+<!-- Cadence breakdown parameters -->
+<div class="space-y-2 pt-2 border-t border-outline-variant/20 font-body-sm">
+<div class="flex justify-between items-center">
+<span class="text-outline">Daily Deep Sessions:</span>
+<span class="text-on-surface font-mono font-medium">4 Deep Sessions</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-outline">Session Cadence:</span>
+<span class="text-secondary font-mono font-medium">50m Focus + 10m Spaced</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-outline">Spaced Repetition Quota:</span>
+<span class="text-tertiary font-mono font-medium">30m Flashcard Node</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 4: TELEMETRY DIRECTIVES & PREFERENCES -->
+<!-- ========================================== -->
+<section class="space-y-4">
+<div class="flex items-center space-x-3">
+<div class="p-2 rounded-lg bg-surface-container-high text-primary border border-primary/30">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Telemetry Directives &amp; Preferences</h2>
+<p class="text-body-sm font-body-sm text-outline">Persistence Architecture, HUD Micro-Interactions &amp; Briefings</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<!-- Data Synchronization Protocol Radios -->
+<div class="rounded-xl bg-surface-container-low/70 border border-outline-variant/30 p-5 space-y-4">
+<label class="text-label-md font-label-md text-outline uppercase tracking-wider flex items-center space-x-2">
+<span class="material-symbols-outlined text-[16px]">cloud_sync</span>
+<span>Data Synchronization Protocol</span>
+</label>
+<!-- Radio 1: Active Cloud Sync -->
+<label class="block p-3.5 rounded-lg border-2 border-primary bg-primary-container/10 cursor-pointer transition-all">
+<div class="flex items-start space-x-3">
+<input checked="" class="mt-1 text-primary focus:ring-primary h-4 w-4 bg-surface border-outline-variant" name="sync_protocol" type="radio"/>
+<div>
+<div class="flex items-center space-x-2">
+<span class="text-label-md font-label-md text-primary font-bold">Real-time Cloud Sync</span>
+<span class="text-label-sm font-label-sm px-1.5 py-0.2 rounded bg-tertiary/20 text-tertiary font-mono">ACTIVE</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+                    Supabase PostgreSQL WebSocket streaming with sub-second replication across all candidate consoles.
+                  </p>
+</div>
+</div>
+</label>
+<!-- Radio 2: Offline Local Cache -->
+<label class="block p-3.5 rounded-lg border border-outline-variant/30 bg-surface-container/30 hover:border-outline-variant/60 cursor-pointer transition-all">
+<div class="flex items-start space-x-3">
+<input class="mt-1 text-primary focus:ring-primary h-4 w-4 bg-surface border-outline-variant" name="sync_protocol" type="radio"/>
+<div>
+<span class="text-label-md font-label-md text-on-surface">Offline Local Cache</span>
+<p class="text-body-sm font-body-sm text-outline mt-1">
+                    IndexedDB zero-data-loss buffered persistence for offline study sessions and isolated revision environments.
+                  </p>
+</div>
+</div>
+</label>
+</div>
+<!-- Visual & Briefing Preferences Toggles -->
+<div class="rounded-xl bg-surface-container-low/70 border border-outline-variant/30 p-5 space-y-4">
+<label class="text-label-md font-label-md text-outline uppercase tracking-wider flex items-center space-x-2">
+<span class="material-symbols-outlined text-[16px]">display_settings</span>
+<span>Visual &amp; Briefing Preferences</span>
+</label>
+<div class="space-y-3">
+<!-- Toggle 1: Kinetic Neon Glow -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container/30 border border-outline-variant/20">
+<div>
+<span class="text-body-md font-label-md text-on-surface">Kinetic Neon Glow</span>
+<p class="text-body-sm font-body-sm text-outline">Full obsidian Sci-Fi HUD effects, specular glows, and aura halos</p>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="toggle-glow" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</div>
+</div>
+<!-- Toggle 2: Daily Command Briefing -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container/30 border border-outline-variant/20">
+<div>
+<span class="text-body-md font-label-md text-on-surface">Daily Command Briefing</span>
+<p class="text-body-sm font-body-sm text-outline">Scheduled prompt at 07:00 AM IST with prioritized study tasks</p>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="toggle-briefing" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</div>
+</div>
+<!-- Toggle 3: Bilingual Microcopy -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container/30 border border-outline-variant/20">
+<div>
+<span class="text-body-md font-label-md text-on-surface">Bilingual Microcopy</span>
+<p class="text-body-sm font-body-sm text-outline">Display Sinhala (සිංහල) terminology nodes alongside syllabus titles</p>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="toggle-bilingual" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-tertiary"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 5: ACTION BAR & GLOBAL FOOTER -->
+<!-- ========================================== -->
+<section class="space-y-6 pt-2">
+<!-- Dedicated Glassmorphism Command Bar -->
+<div class="rounded-xl bg-surface-container-low/90 backdrop-blur-xl border border-primary/30 p-4 sm:p-5 flex flex-col sm:flex-row items-center justify-between gap-4 custom-specular-glow">
+<div class="flex items-center space-x-3">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></span>
+<div>
+<p class="text-label-md font-label-md text-on-surface">Parameters Ready for Initial Deployment</p>
+<p class="text-body-sm font-body-sm text-outline">All candidate inputs pass 100% telemetry validation matrix.</p>
+</div>
+</div>
+<div class="flex items-center space-x-3 w-full sm:w-auto">
+<!-- Secondary Draft Save -->
+<button class="flex-1 sm:flex-none px-4 py-2.5 rounded-lg border border-outline-variant/40 bg-surface-container text-on-surface font-label-md text-label-md hover:border-secondary hover:text-secondary hover:bg-surface-container-high transition-all active:scale-98">
+              Save Parameter Draft
+            </button>
+<!-- Primary Glowing Cyber CTA Button with Telemetry Arrow Glyphs -->
+<button class="flex-1 sm:flex-none px-6 py-2.5 rounded-lg bg-gradient-to-r from-primary to-inverse-primary text-on-primary font-label-md text-label-md font-bold tracking-wide flex items-center justify-center space-x-2 shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:brightness-110 active:scale-95 transition-all">
+<span>Initialize Mission Control</span>
+<span class="material-symbols-outlined text-[18px]">trending_flat</span>
+</button>
+</div>
+</div>
+<!-- Telemetry Footer -->
+<footer class="pt-6 pb-8 border-t border-outline-variant/20 flex flex-col md:flex-row items-center justify-between gap-4 text-body-sm text-outline">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary text-[18px]">terminal</span>
+<span>Sinethmi Mission Telemetry Engine • v1.0.4-Core</span>
+<span class="text-outline-variant">|</span>
+<span>Colombo Tier 1 Horizon</span>
+</div>
+<div class="flex items-center space-x-4">
+<a class="hover:text-primary transition-colors" href="#">Audit Telemetry Log</a>
+<span class="text-outline-variant">•</span>
+<a class="hover:text-primary transition-colors" href="#">Protocol Diagnostics</a>
+<span class="text-outline-variant">•</span>
+<a class="hover:text-primary transition-colors" href="#">Privacy &amp; Storage Policy</a>
+</div>
+</footer>
+</section>
+</main>
+</div>
+</body></html>
