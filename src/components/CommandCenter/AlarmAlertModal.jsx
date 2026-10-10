@@ -1,16 +1,21 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { getTimerMessages } from '../../constants/timerMessages';
 
 export default function AlarmAlertModal({ message, onConfirm, language = 'si' }) {
   const msgs = getTimerMessages(language);
+  const onConfirmRef = useRef(onConfirm);
+
+  useEffect(() => {
+    onConfirmRef.current = onConfirm;
+  }, [onConfirm]);
 
   useEffect(() => {
     if (!message) return;
     const timer = setTimeout(() => {
-      onConfirm();
+      onConfirmRef.current?.();
     }, 10000);
     return () => clearTimeout(timer);
-  }, [message, onConfirm]);
+  }, [message]);
 
   if (!message) return null;
 

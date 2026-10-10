@@ -12,8 +12,8 @@ export function getRandomQuote() {
 }
 
 export function getAppVersion() {
-  const base = 3.3;
-  const count = typeof __COMMIT_COUNT__ !== 'undefined' ? __COMMIT_COUNT__ : 5;
-  const ver = (base + count * 0.1).toFixed(1);
-  return `PRO v${ver}`;
+  if (typeof __APP_VERSION__ !== 'undefined') {
+    return __APP_VERSION__;
+  }
+  return 'PRO v4.5';
 }

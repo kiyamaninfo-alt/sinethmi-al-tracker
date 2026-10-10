@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import { extractYouTubeEmbedUrl } from '../../constants/videoUtils';
 import { useDraggablePopup } from '../../hooks/useDraggablePopup';
 import VideoTimerOverlay from './VideoTimerOverlay';
@@ -27,7 +28,7 @@ export default function VideoFocusPopup({ videoUrl, isPaused, secondsLeft, sessi
   const embedUrl = extractYouTubeEmbedUrl(videoUrl);
   const dragStyle = pos.x !== null ? { left: `${pos.x}px`, top: `${pos.y}px`, right: 'auto', bottom: 'auto' } : {};
 
-  return (
+  return createPortal(
     <div
       ref={containerRef}
       style={dragStyle}
@@ -71,6 +72,7 @@ export default function VideoFocusPopup({ videoUrl, isPaused, secondsLeft, sessi
           )}
         </div>
       )}
-    </div>
+    </div>,
+    document.body
   );
 }

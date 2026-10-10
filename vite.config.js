@@ -5,17 +5,17 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 import { execSync } from 'child_process'
 
-let commitCount = 0
+let appVersion = 'PRO v4.5'
 try {
-  commitCount = parseInt(execSync('git rev-list --count HEAD').toString().trim(), 10) || 0
-} catch (e) {
-  commitCount = 0
-}
+  const logStr = execSync('git log -n 20 --pretty=format:%s').toString()
+  const match = logStr.match(/PRO v(\d+\.\d+)/i) || logStr.match(/v(\d+\.\d+)/i)
+  if (match) appVersion = `PRO v${match[1]}`
+} catch (e) {}
 
 // https://vite.dev/config/
 export default defineConfig({
   define: {
-    __COMMIT_COUNT__: JSON.stringify(commitCount)
+    __APP_VERSION__: JSON.stringify(appVersion)
   },
   plugins: [
     react(),

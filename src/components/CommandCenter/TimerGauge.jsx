@@ -46,7 +46,7 @@ export default function TimerGauge({
         />
       </svg>
       <div className="absolute flex flex-col items-center justify-center text-center">
-        <span className="text-4xl sm:text-5xl font-black font-mono tracking-tight text-white drop-shadow-[0_0_20px_rgba(6,182,212,0.6)]">
+        <span className="text-4xl sm:text-5xl font-black font-mono tracking-tight text-primary drop-shadow-[0_0_20px_rgba(208,188,255,0.45)]">
           {timeFormatted}
         </span>
         <span className={`mt-1 text-[11px] font-bold uppercase tracking-widest flex items-center gap-1.5 ${

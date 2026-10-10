@@ -17,6 +17,12 @@ export function useTimerCountdown({
         if (prev <= 1) {
           startAlarm();
           if (sessionMode === 'study') {
+            if (currentRound >= totalRounds) {
+              setIsActive(false);
+              setShowVideo(false);
+              setModalAlert(msgs.allRoundsCompleted);
+              return 0;
+            }
             setSessionMode('break');
             preAlarmFired.current = false;
             setModalAlert(msgs.sessionCompleted);

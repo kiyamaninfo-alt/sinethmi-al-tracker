@@ -14,7 +14,7 @@ export default function VideoTimerOverlay({ secondsLeft, sessionMode, isPaused, 
     <div className="absolute top-3 left-3 z-20 pointer-events-none select-none flex flex-col gap-0.5">
       <div className="flex items-center gap-2">
         <span className={`w-3.5 h-3.5 rounded-full ${isBreak ? 'bg-emerald-400' : 'bg-cyan-400'} ${!isPaused ? 'animate-ping' : ''}`} />
-        <span className="text-3xl sm:text-4xl lg:text-5xl font-black font-mono tracking-tight text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.98)]">
+        <span className="text-3xl sm:text-4xl lg:text-5xl font-black font-mono tracking-tight text-primary drop-shadow-[0_2px_12px_rgba(0,0,0,0.98)]">
           {timeFormatted}
         </span>
       </div>
