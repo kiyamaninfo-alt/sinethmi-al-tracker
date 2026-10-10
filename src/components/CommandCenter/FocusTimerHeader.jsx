@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-export default function FocusTimerHeader({ isMuted, onToggleMute }) {
+export default function FocusTimerHeader({ isMuted, onToggleMute, showVideoToggle, onToggleVideo, isVideoOpen }) {
   const navigate = useNavigate();
 
   const handleOpenSettings = () => {
@@ -18,6 +18,19 @@ export default function FocusTimerHeader({ isMuted, onToggleMute }) {
       </div>
 
       <div className="flex items-center gap-2">
+        {showVideoToggle && (
+          <button
+            type="button"
+            onClick={onToggleVideo}
+            title={isVideoOpen ? 'Minimize Video' : 'Reopen Video'}
+            className="px-2.5 py-1.5 rounded-xl border border-cyan-400/40 bg-cyan-500/20 text-cyan-300 hover:bg-cyan-500/30 transition-all flex items-center gap-1.5 text-xs font-bold cursor-pointer"
+          >
+            <span className="material-symbols-outlined text-[16px]">
+              {isVideoOpen ? 'videocam_off' : 'videocam'}
+            </span>
+            <span className="hidden sm:inline">{isVideoOpen ? 'Hide' : 'Reopen Video'}</span>
+          </button>
+        )}
         <button
           type="button"
           onClick={onToggleMute}

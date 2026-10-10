@@ -8,6 +8,7 @@ import TimerControls from './TimerControls';
 import VideoFocusPopup from './VideoFocusPopup';
 import AlarmAlertModal from './AlarmAlertModal';
 import SessionConfirmModal from './SessionConfirmModal';
+import VideoClosePromptModal from './VideoClosePromptModal';
 
 export default function DeepFocusTimer() {
   const profile = useCandidateProfile();
@@ -17,35 +18,28 @@ export default function DeepFocusTimer() {
 
   return (
     <section id="deep-focus-timer" className="lg:col-span-7 glass-panel rounded-3xl p-6 sm:p-7 relative overflow-hidden flex flex-col justify-between scroll-mt-24">
-      <FocusTimerHeader isMuted={timer.isMuted} onToggleMute={() => timer.setIsMuted(!timer.isMuted)} />
+      <FocusTimerHeader
+        isMuted={timer.isMuted} onToggleMute={() => timer.setIsMuted(!timer.isMuted)}
+        showVideoToggle={Boolean(timer.videoEnabled && timer.videoUrl && timer.isActive)}
+        isVideoOpen={timer.showVideo} onToggleVideo={() => timer.setShowVideo(!timer.showVideo)}
+      />
 
       <SubjectLessonDisplay
-        subjects={subjects}
-        selectedSubjectId={timer.selectedSubjectId}
-        selectedLessonId={timer.selectedLessonId}
-        onChangeClick={openModal}
+        subjects={subjects} selectedSubjectId={timer.selectedSubjectId}
+        selectedLessonId={timer.selectedLessonId} onChangeClick={openModal}
       />
 
       <div className="my-5 flex flex-col items-center justify-center">
         <TimerGauge
-          secondsLeft={timer.secondsLeft}
-          totalSeconds={timer.totalSeconds}
-          isActive={timer.isActive}
-          isPaused={timer.isPaused}
-          sessionMode={timer.sessionMode}
-          currentRound={timer.currentRound}
-          totalRounds={timer.totalRounds}
+          secondsLeft={timer.secondsLeft} totalSeconds={timer.totalSeconds}
+          isActive={timer.isActive} isPaused={timer.isPaused}
+          sessionMode={timer.sessionMode} currentRound={timer.currentRound} totalRounds={timer.totalRounds}
         />
 
         <TimerControls
-          isActive={timer.isActive}
-          isPaused={timer.isPaused}
-          sessionMode={timer.sessionMode}
-          canStart={true}
-          onStart={openModal}
-          onPause={timer.handlePause}
-          onResume={timer.handleResume}
-          onReset={timer.handleReset}
+          isActive={timer.isActive} isPaused={timer.isPaused} sessionMode={timer.sessionMode}
+          canStart={true} onStart={openModal} onPause={timer.handlePause}
+          onResume={timer.handleResume} onReset={timer.handleReset}
         />
       </div>
 
@@ -53,15 +47,23 @@ export default function DeepFocusTimer() {
         <VideoFocusPopup
           videoUrl={timer.videoUrl} isPaused={timer.isPaused} secondsLeft={timer.secondsLeft}
           sessionMode={timer.sessionMode} language={timer.language}
-          onClose={() => { timer.setShowVideo(false); timer.handlePause(); }}
+          onClose={timer.handleRequestCloseVideo}
           onTogglePause={() => (timer.isPaused ? timer.handleResume() : timer.handlePause())}
         />
       )}
 
+      <VideoClosePromptModal
+        isOpen={timer.promptCloseVideo} onYes={timer.handleConfirmCloseVideo}
+        onNo={timer.handleCancelCloseVideo} language={timer.language}
+      />
+
       <AlarmAlertModal message={timer.modalAlert} onConfirm={timer.stopAlarm} language={timer.language} />
 
       {timer.pendingNextRound && (
-        <SessionConfirmModal round={timer.pendingNextRound} onConfirm={timer.handleConfirmNextRound} onCancel={timer.handleCancelNextRound} language={timer.language} />
+        <SessionConfirmModal
+          round={timer.pendingNextRound} onConfirm={timer.handleConfirmNextRound}
+          onCancel={timer.handleCancelNextRound} language={timer.language}
+        />
       )}
 
       {renderModal(subjects)}

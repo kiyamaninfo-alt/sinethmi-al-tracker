@@ -30,7 +30,7 @@ export function useTimerCountdown({
           } else {
             setIsActive(false);
             setShowVideo(false);
-            setModalAlert(language === 'si' ? 'සියලුම වට සාර්ථකව අවසන් විය!' : 'All rounds completed!');
+            setModalAlert(msgs.allRoundsCompleted);
           }
           return durationMin * 60;
         }

@@ -17,6 +17,13 @@ export default function VideoFocusPopup({ videoUrl, isPaused, secondsLeft, sessi
     }
   };
 
+  const handleMinimize = () => {
+    if (document.fullscreenElement) {
+      document.exitFullscreen().then(() => setIsFullscreen(false)).catch(() => {});
+    }
+    setIsMinimized((prev) => !prev);
+  };
+
   const embedUrl = extractYouTubeEmbedUrl(videoUrl);
   const dragStyle = pos.x !== null ? { left: `${pos.x}px`, top: `${pos.y}px`, right: 'auto', bottom: 'auto' } : {};
 
@@ -36,7 +43,7 @@ export default function VideoFocusPopup({ videoUrl, isPaused, secondsLeft, sessi
           <button type="button" onClick={onTogglePause} className="p-1 rounded text-slate-300 hover:text-white hover:bg-white/10 cursor-pointer" title={isPaused ? 'Resume' : 'Pause'}>
             <span className="material-symbols-outlined text-[16px]">{isPaused ? 'play_arrow' : 'pause'}</span>
           </button>
-          <button type="button" onClick={() => setIsMinimized(!isMinimized)} className="p-1 rounded text-slate-300 hover:text-white hover:bg-white/10 cursor-pointer" title={isMinimized ? 'Expand' : 'Minimize'}>
+          <button type="button" onClick={handleMinimize} className="p-1 rounded text-slate-300 hover:text-white hover:bg-white/10 cursor-pointer" title={isMinimized ? 'Expand' : 'Minimize'}>
             <span className="material-symbols-outlined text-[16px]">{isMinimized ? 'expand_less' : 'minimize'}</span>
           </button>
           <button type="button" onClick={toggleFullscreen} className="p-1 rounded text-slate-300 hover:text-white hover:bg-white/10 cursor-pointer" title="Fullscreen">

@@ -8,7 +8,12 @@ export const TIMER_MESSAGES = {
     stopAlarmBtn: 'Stop Alarm (නවත්වන්න)',
     readyForRound: (round) => `ඔබට ${round} වන වටය ආරම්භ කිරීමට අවශ්‍යද?`,
     startRoundBtn: (round) => `${round} වටය අරඹන්න (OK)`,
-    cancelBtn: 'පසුවට (Cancel)'
+    cancelBtn: 'පසුවට (Cancel)',
+    continueWithoutVideoPrompt: 'වීඩියෝව නොමැතිව ටයිමරය දිගටම ක්‍රියාත්මක කිරීමට අවශ්‍යද?',
+    yesBtn: 'ඔව් (Yes)',
+    noBtn: 'නැත (No)',
+    reopenVideo: 'වීඩියෝව විවෘත කරන්න',
+    allRoundsCompleted: 'සියලුම වට සාර්ථකව අවසන් විය!'
   },
   en: {
     focusStatus: 'Focus Time Now',
@@ -19,7 +24,12 @@ export const TIMER_MESSAGES = {
     stopAlarmBtn: 'Stop Alarm',
     readyForRound: (round) => `Do you want to start round ${round}?`,
     startRoundBtn: (round) => `Start Round ${round} (OK)`,
-    cancelBtn: 'Cancel'
+    cancelBtn: 'Cancel',
+    continueWithoutVideoPrompt: 'Do you want to continue running the timer without the video?',
+    yesBtn: 'Yes',
+    noBtn: 'No',
+    reopenVideo: 'Reopen Video',
+    allRoundsCompleted: 'All rounds completed!'
   }
 };
 

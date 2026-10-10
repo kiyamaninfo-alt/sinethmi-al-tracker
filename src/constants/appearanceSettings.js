@@ -20,5 +20,5 @@ export const LANGUAGE_OPTIONS = [
 export const DEFAULT_PREFERENCES = {
   fontSize: 'default',
   theme: 'cyberpunk',
-  language: 'en'
+  language: 'si'
 };
