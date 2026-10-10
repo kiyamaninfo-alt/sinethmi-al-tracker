@@ -40,7 +40,7 @@ export default function LandingNavbar() {
             onClick={() => navigate('/login')}
             className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-400 to-emerald-400 text-slate-950 font-bold text-xs font-sans shadow-lg shadow-cyan-500/20 hover:brightness-110 active:scale-95 transition cursor-pointer"
           >
-            නොමිලේ පටන් ගන්න
+            පටන් ගන්න
           </button>
         </div>
       </div>

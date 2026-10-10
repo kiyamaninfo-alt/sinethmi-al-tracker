@@ -20,7 +20,7 @@ export default function LandingFooterCta() {
             onClick={() => navigate('/login')}
             className="px-8 py-3.5 rounded-2xl bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 text-slate-950 font-black text-sm shadow-xl shadow-cyan-500/25 hover:brightness-110 active:scale-95 transition cursor-pointer"
           >
-            දැන්ම නොමිලේ ලියාපදිංචි වන්න
+            පටන් ගන්න මෙතන ක්ලික් කරන්න
           </button>
         </div>
 
