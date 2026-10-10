@@ -12,7 +12,6 @@ export function useFocusTimerLogic(alarmSettings = {}, preferences = {}) {
   const [sessionMode, setSessionMode] = useState('study');
   const [currentRound, setCurrentRound] = useState(1);
   const [modalAlert, setModalAlert] = useState(null);
-  const [isPreAlarm, setIsPreAlarm] = useState(false);
   const [pendingNextRound, setPendingNextRound] = useState(null);
   const [showVideo, setShowVideo] = useState(false);
   const [showSubjectModal, setShowSubjectModal] = useState(false);
@@ -53,10 +52,11 @@ export function useFocusTimerLogic(alarmSettings = {}, preferences = {}) {
   useTimerCountdown({
     isActive, isPaused, sessionMode, setSessionMode, currentRound, totalRounds,
     durationMin, breakMin, setSecondsLeft, preAlarmFired, triggerSound, startAlarm,
-    setIsPreAlarm, setModalAlert, setIsPaused, setIsActive, setPendingNextRound, language
+    setModalAlert, setIsPaused, setIsActive, setPendingNextRound, setShowVideo, language
   });
 
   const handleConfirmNextRound = () => {
+    stopAlarmLoop();
     setCurrentRound(pendingNextRound); setPendingNextRound(null); setSessionMode('study');
     setSecondsLeft(durationMin * 60); preAlarmFired.current = false; setIsPaused(false);
     if (alarmSettings.videoEnabled && videoUrl) setShowVideo(true);
@@ -67,8 +67,8 @@ export function useFocusTimerLogic(alarmSettings = {}, preferences = {}) {
     selectedSubjectId, setSelectedSubjectId, selectedLessonId, setSelectedLessonId,
     isActive, isPaused, isMuted, setIsMuted, sessionMode, currentRound, totalRounds,
     secondsLeft, totalSeconds: (sessionMode === 'study' ? durationMin : breakMin) * 60,
-    modalAlert, setModalAlert, isPreAlarm, pendingNextRound, handleConfirmNextRound,
-    handleCancelNextRound: () => { setPendingNextRound(null); handleReset(); },
+    modalAlert, setModalAlert, pendingNextRound, handleConfirmNextRound,
+    handleCancelNextRound: () => { stopAlarmLoop(); setPendingNextRound(null); handleReset(); },
     showVideo, setShowVideo, videoUrl, showSubjectModal, setShowSubjectModal, language,
     handleStart: () => (!selectedSubjectId || !selectedLessonId ? setShowSubjectModal(true) : startFocusSession()),
     startFocusSession, handleReset, handlePause: () => setIsPaused(true), handleResume, stopAlarm

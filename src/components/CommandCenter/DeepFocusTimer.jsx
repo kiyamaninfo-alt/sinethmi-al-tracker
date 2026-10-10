@@ -58,7 +58,7 @@ export default function DeepFocusTimer() {
         />
       )}
 
-      <AlarmAlertModal message={timer.modalAlert} isPreAlarm={timer.isPreAlarm} onConfirm={timer.stopAlarm} language={timer.language} />
+      <AlarmAlertModal message={timer.modalAlert} onConfirm={timer.stopAlarm} language={timer.language} />
 
       {timer.pendingNextRound && (
         <SessionConfirmModal round={timer.pendingNextRound} onConfirm={timer.handleConfirmNextRound} onCancel={timer.handleCancelNextRound} language={timer.language} />
