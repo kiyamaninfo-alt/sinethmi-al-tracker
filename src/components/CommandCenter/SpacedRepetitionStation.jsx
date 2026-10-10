@@ -8,7 +8,7 @@ const REPETITION_ITEMS = [
 
 export default function SpacedRepetitionStation() {
   return (
-    <section className="glass-panel rounded-3xl p-6 space-y-4">
+    <section className="glass-panel rounded-3xl p-6 space-y-4 h-full flex flex-col">
       <div className="flex items-center justify-between pb-3 border-b border-white/5">
         <div className="flex items-center gap-2">
           <span className="text-lg">🧠</span>

@@ -8,8 +8,8 @@ const RADAR_ITEMS = [
 
 export default function UrgentRadarTable() {
   return (
-    <section className="glass-panel rounded-3xl p-6 space-y-4">
-      <div className="flex items-center justify-between pb-3 border-b border-white/5">
+    <section className="glass-panel rounded-3xl p-6 h-full flex flex-col">
+      <div className="flex items-center justify-between pb-3 border-b border-white/5 shrink-0">
         <div className="flex items-center gap-2">
           <span className="text-lg">⚡</span>
           <div>
@@ -25,9 +25,9 @@ export default function UrgentRadarTable() {
         </div>
       </div>
 
-      <div className="space-y-2.5">
+      <div className="flex-1 flex flex-col justify-between gap-2.5 pt-4">
         {RADAR_ITEMS.map((item) => (
-          <div key={item.id} className="glass-panel-elevated p-3 rounded-xl flex items-center justify-between gap-3 border border-white/5 hover:border-white/10 transition">
+          <div key={item.id} className="glass-panel-elevated p-3 rounded-xl flex-1 flex items-center justify-between gap-3 border border-white/5 hover:border-white/10 transition">
             <div className="flex items-center gap-3 min-w-0">
               <input type="checkbox" className="rounded bg-obsidian-900 border-white/20 text-neon-cyan focus:ring-0 cursor-pointer shrink-0" />
               <span className={`px-2 py-0.5 rounded text-[10px] font-mono font-bold shrink-0 ${item.subColor}`}>{item.sub}</span>
