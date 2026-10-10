@@ -6,17 +6,18 @@ export default function LandingNavbar() {
   return (
     <header className="sticky top-0 z-50 w-full backdrop-blur-xl bg-slate-950/80 border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
-        <div className="flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-cyan-500 to-emerald-400 p-0.5 shadow-lg shadow-cyan-500/20">
-            <div className="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
-              <span className="material-symbols-outlined text-cyan-400 text-[22px]">all_inclusive</span>
-            </div>
+        <div className="flex items-center gap-3 cursor-pointer group" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          <div className="relative flex items-center justify-center">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-500/40 to-violet-500/40 blur-md opacity-60 group-hover:opacity-100 transition" />
+            <img src="/emblem.svg" alt="Emblem" className="relative w-10 h-10 object-contain drop-shadow-[0_0_12px_rgba(6,182,212,0.6)]" />
           </div>
           <div>
-            <span className="text-base sm:text-lg font-black tracking-tight text-white flex items-center gap-1.5 font-mono">
-              StudyFlow <span className="text-cyan-400">AI</span>
+            <span className="block text-[10px] uppercase font-mono tracking-[0.2em] text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-fuchsia-300 to-violet-400 font-bold">
+              ✦ Sinethmi ✦
             </span>
-            <p className="text-[10px] text-slate-300 font-mono tracking-wider uppercase">A/L Smart Tracker</p>
+            <span className="text-sm sm:text-base font-black tracking-tight text-white flex items-center gap-1.5 font-sans leading-none">
+              A-Level Mission Control
+            </span>
           </div>
         </div>
 

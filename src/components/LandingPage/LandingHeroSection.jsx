@@ -12,9 +12,23 @@ export default function LandingHeroSection() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-400/30 text-cyan-300 text-xs font-mono font-medium">
-            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-            {LANDING_COPY.heroBadge}
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
+            <div className="relative flex items-center justify-center">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-500/30 to-violet-500/30 blur-lg opacity-60" />
+              <img src="/emblem.svg" alt="Emblem" className="relative w-11 h-11 object-contain drop-shadow-[0_0_12px_rgba(6,182,212,0.6)]" />
+            </div>
+            <div>
+              <span className="block text-[11px] uppercase font-mono tracking-[0.25em] text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-fuchsia-300 to-violet-400 font-bold">
+                ✦ Sinethmi ✦
+              </span>
+              <span className="text-lg font-black text-white tracking-tight font-sans">
+                A-Level Mission Control
+              </span>
+            </div>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-950/50 border border-cyan-500/30 text-cyan-300 text-[11px] font-mono">
+              <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
+              <span>{LANDING_COPY.heroBadge}</span>
+            </div>
           </div>
 
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white leading-snug sm:leading-tight font-sans tracking-tight">

@@ -25,9 +25,10 @@ export default function LandingFooterCta() {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-white/5 text-xs text-slate-400 font-mono">
-          <div className="flex items-center gap-2">
-            <span className="material-symbols-outlined text-cyan-400 text-[18px]">all_inclusive</span>
-            <span>StudyFlow AI • Sri Lanka A/L Exam Cohort</span>
+          <div className="flex items-center gap-2.5">
+            <img src="/emblem.svg" alt="Emblem" className="w-5 h-5 object-contain" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-fuchsia-300 to-violet-400 font-bold">✦ Sinethmi ✦</span>
+            <span className="text-white font-sans font-bold">A-Level Mission Control</span>
           </div>
           <div>© {new Date().getFullYear()} KrishSoft Inc. All rights reserved.</div>
         </div>
