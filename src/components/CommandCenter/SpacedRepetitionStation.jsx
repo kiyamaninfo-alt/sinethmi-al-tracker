@@ -35,15 +35,15 @@ export default function SpacedRepetitionStation() {
       <div className="space-y-2.5 flex-1 flex flex-col justify-between my-2">
         {REPETITION_ITEMS.map((item) => (
           <div key={item.id} className={`glass-panel-elevated p-3 rounded-xl flex items-center justify-between gap-3 ${item.border} transition`}>
-            <div className="flex items-center gap-3">
-              <input type="checkbox" className="rounded bg-obsidian-900 border-white/20 text-neon-cyan focus:ring-0 cursor-pointer" />
-              <span className={`px-2 py-0.5 rounded text-[10px] font-mono font-bold ${item.subColor}`}>{item.sub}</span>
-              <div>
-                <span className="text-xs font-semibold text-white block">{item.unit}</span>
-                <span className="text-[10px] text-slate-400">{item.desc}</span>
+            <div className="flex items-center gap-3 min-w-0">
+              <input type="checkbox" className="rounded bg-obsidian-900 border-white/20 text-neon-cyan focus:ring-0 cursor-pointer shrink-0" />
+              <span className={`px-2 py-0.5 rounded text-[10px] font-mono font-bold shrink-0 ${item.subColor}`}>{item.sub}</span>
+              <div className="min-w-0">
+                <span className="text-xs font-semibold text-white block truncate">{item.unit}</span>
+                <span className="text-[10px] text-slate-400 block truncate">{item.desc}</span>
               </div>
             </div>
-            <span className={`px-2.5 py-1 rounded-full text-[10px] font-mono font-bold border whitespace-nowrap ${item.tagClass}`}>
+            <span className={`px-2.5 py-1 rounded-full text-[10px] font-mono font-bold border whitespace-nowrap shrink-0 ${item.tagClass}`}>
               {item.tag}
             </span>
           </div>
