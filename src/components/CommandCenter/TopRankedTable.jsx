@@ -8,8 +8,8 @@ const TOP_PAPERS = [
 
 export default function TopRankedTable() {
   return (
-    <section className="glass-panel rounded-3xl p-6 space-y-4">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-white/5">
+    <section className="glass-panel rounded-3xl p-6 flex flex-col justify-between h-auto lg:h-[510px]">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-white/5 shrink-0">
         <div className="flex items-center gap-2.5">
           <span className="text-xl">🏆</span>
           <div>
@@ -20,7 +20,14 @@ export default function TopRankedTable() {
         <button type="button" className="px-3 py-1 rounded-lg text-xs font-semibold bg-neon-emerald/15 text-neon-emerald border border-neon-emerald/30 cursor-pointer">Top 10</button>
       </div>
 
-      <div className="space-y-2.5">
+      <div className="flex flex-wrap items-center gap-1.5 text-[11px] pb-1 shrink-0">
+        <button type="button" className="px-2.5 py-1 rounded-lg bg-neon-emerald/15 text-neon-emerald border border-neon-emerald/30">All Subjects</button>
+        <button type="button" className="px-2 py-1 rounded-lg glass-pill text-slate-400 hover:text-white">ICT (3)</button>
+        <button type="button" className="px-2 py-1 rounded-lg glass-pill text-slate-400 hover:text-white">SFT (2)</button>
+        <button type="button" className="px-2 py-1 rounded-lg glass-pill text-slate-400 hover:text-white">ET (0)</button>
+      </div>
+
+      <div className="space-y-2.5 flex-1 flex flex-col justify-between my-2">
         {TOP_PAPERS.map((row) => (
           <div key={row.name} className="glass-panel-elevated p-3 rounded-xl border border-white/5 flex items-center justify-between gap-3 hover:border-white/10 transition">
             <div className="flex items-center gap-3 min-w-0">
@@ -41,6 +48,12 @@ export default function TopRankedTable() {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="pt-2 text-center border-t border-white/5 shrink-0">
+        <button type="button" className="text-xs font-mono text-neon-emerald hover:underline inline-flex items-center gap-1 cursor-pointer">
+          More Papers →
+        </button>
       </div>
     </section>
   );

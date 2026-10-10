@@ -8,8 +8,8 @@ const REPETITION_ITEMS = [
 
 export default function SpacedRepetitionStation() {
   return (
-    <section className="glass-panel rounded-3xl p-6 space-y-4 h-full flex flex-col">
-      <div className="flex items-center justify-between pb-3 border-b border-white/5">
+    <section className="glass-panel rounded-3xl p-6 flex flex-col justify-between h-auto lg:h-[510px]">
+      <div className="flex items-center justify-between pb-3 border-b border-white/5 shrink-0">
         <div className="flex items-center gap-2">
           <span className="text-lg">🧠</span>
           <div>
@@ -23,7 +23,7 @@ export default function SpacedRepetitionStation() {
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center gap-1.5 text-[11px] pb-1">
+      <div className="flex flex-wrap items-center gap-1.5 text-[11px] pb-1 shrink-0">
         <button type="button" className="px-2.5 py-1 rounded-lg bg-neon-cyan/15 text-neon-cyan border border-neon-cyan/30">Filter: සාරාංශ</button>
         <button type="button" className="px-2 py-1 rounded-lg glass-pill text-slate-400 hover:text-white">දිනය 3</button>
         <button type="button" className="px-2 py-1 rounded-lg glass-pill text-slate-400 hover:text-white">දිනය 7</button>
@@ -32,7 +32,7 @@ export default function SpacedRepetitionStation() {
         <button type="button" className="px-2 py-1 rounded-lg glass-pill text-slate-400 hover:text-white">දිනය 40+</button>
       </div>
 
-      <div className="space-y-2.5">
+      <div className="space-y-2.5 flex-1 flex flex-col justify-between my-2">
         {REPETITION_ITEMS.map((item) => (
           <div key={item.id} className={`glass-panel-elevated p-3 rounded-xl flex items-center justify-between gap-3 ${item.border} transition`}>
             <div className="flex items-center gap-3">

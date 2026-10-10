@@ -8,8 +8,8 @@ const WEAK_PAPERS = [
 
 export default function WeakAreasTable() {
   return (
-    <section className="glass-panel rounded-3xl p-6 space-y-4">
-      <div className="flex items-center justify-between pb-3 border-b border-white/5">
+    <section className="glass-panel rounded-3xl p-6 flex flex-col justify-between h-auto lg:h-[510px]">
+      <div className="flex items-center justify-between pb-3 border-b border-white/5 shrink-0">
         <div className="flex items-center gap-2">
           <span className="text-lg">⚠️</span>
           <div>
@@ -19,9 +19,17 @@ export default function WeakAreasTable() {
         </div>
         <button type="button" className="px-3 py-1 rounded-lg text-xs font-semibold bg-rose-500/15 text-rose-400 border border-rose-500/30 cursor-pointer">Top 10</button>
       </div>
-      <div className="space-y-3">
+
+      <div className="flex flex-wrap items-center gap-1.5 text-[11px] pb-1 shrink-0">
+        <button type="button" className="px-2.5 py-1 rounded-lg bg-rose-500/15 text-rose-400 border border-rose-500/30">All Subjects</button>
+        <button type="button" className="px-2 py-1 rounded-lg glass-pill text-slate-400 hover:text-white">ICT (3)</button>
+        <button type="button" className="px-2 py-1 rounded-lg glass-pill text-slate-400 hover:text-white">ET (2)</button>
+        <button type="button" className="px-2 py-1 rounded-lg glass-pill text-slate-400 hover:text-white">SFT (0)</button>
+      </div>
+
+      <div className="space-y-2.5 flex-1 flex flex-col justify-between my-2">
         {WEAK_PAPERS.map((p) => (
-          <div key={p.name} className="glass-panel-elevated p-3.5 rounded-xl border border-white/5 flex items-center justify-between gap-3 hover:border-white/10 transition">
+          <div key={p.name} className="glass-panel-elevated p-3 rounded-xl border border-white/5 flex items-center justify-between gap-3 hover:border-white/10 transition">
             <div className="flex items-center gap-2.5 min-w-0">
               <span className="font-mono font-bold text-xs text-rose-400 shrink-0">{p.rank}</span>
               <span className={`px-1.5 py-0.5 rounded text-[9px] font-mono font-bold shrink-0 ${p.subColor}`}>{p.sub}</span>
@@ -35,6 +43,12 @@ export default function WeakAreasTable() {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="pt-2 text-center border-t border-white/5 shrink-0">
+        <button type="button" className="text-xs font-mono text-rose-400 hover:underline inline-flex items-center gap-1 cursor-pointer">
+          More Papers →
+        </button>
       </div>
     </section>
   );
