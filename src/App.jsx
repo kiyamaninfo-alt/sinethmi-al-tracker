@@ -7,13 +7,16 @@ import VisualAnalyticsDashboard from './components/VisualAnalytics/VisualAnalyti
 import SyllabusManagerPage from './components/SyllabusManager/SyllabusManagerPage';
 import DevNav from './components/DevNav';
 
+import StudyTrackerLandingPage from './components/LandingPage/StudyTrackerLandingPage';
+
 function RouteContent() {
   const navigate = useNavigate();
   const toCommand = () => navigate('/command-center');
 
   return (
     <Routes>
-      <Route path="/" element={<CandidateLogin />} />
+      <Route path="/" element={<StudyTrackerLandingPage />} />
+      <Route path="/landing" element={<StudyTrackerLandingPage />} />
       <Route path="/login" element={<CandidateLogin />} />
       <Route path="/profile-setup" element={<CandidateProfileSetup />} />
       <Route path="/command-center" element={<CommandCenterDashboard />} />

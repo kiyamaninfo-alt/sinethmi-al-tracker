@@ -11,11 +11,12 @@ export default function AlarmSettingsCard({ settings = {}, onChange }) {
   };
 
   const handleSelectTechnique = (tech) => {
+    const brkNum = tech.breakMinutes || parseInt(tech.breakTime, 10) || 10;
     onChange({
       ...current,
       selectedTechnique: tech.id,
       durationMinutes: tech.minutes,
-      breakMinutes: tech.breakTime,
+      breakMinutes: `${brkNum}m`,
       rounds: tech.rounds
     });
   };
