@@ -30,35 +30,32 @@ export function useFocusTimerLogic(alarmSettings = {}) {
 
   const startFocusSession = (subId = selectedSubjectId, lesId = selectedLessonId) => {
     if (!subId || !lesId) return;
-    setIsActive(true);
-    setIsPaused(false);
-    preAlarmFired.current = false;
+    setIsActive(true); setIsPaused(false); preAlarmFired.current = false;
     if (alarmSettings.videoEnabled && videoUrl) setShowVideo(true);
     triggerSound(0.3);
   };
 
   const handleReset = () => {
-    setIsActive(false); setIsPaused(false);
-    setSelectedSubjectId(''); setSelectedLessonId('');
-    setSessionMode('study'); setCurrentRound(1);
-    setSecondsLeft(durationMin * 60); preAlarmFired.current = false; setShowVideo(false);
+    setIsActive(false); setIsPaused(false); setSelectedSubjectId(''); setSelectedLessonId('');
+    setSessionMode('study'); setCurrentRound(1); setSecondsLeft(durationMin * 60);
+    preAlarmFired.current = false; setShowVideo(false);
+  };
+
+  const handleResume = () => {
+    setIsPaused(false);
+    if (alarmSettings.videoEnabled && videoUrl) setShowVideo(true);
+    triggerSound(0.2);
   };
 
   useTimerCountdown({
-    isActive, isPaused, sessionMode, setSessionMode,
-    currentRound, totalRounds, durationMin, breakMin,
-    setSecondsLeft, preAlarmFired, triggerSound,
+    isActive, isPaused, sessionMode, setSessionMode, currentRound, totalRounds,
+    durationMin, breakMin, setSecondsLeft, preAlarmFired, triggerSound,
     setIsPreAlarm, setModalAlert, setIsPaused, setIsActive, setPendingNextRound
   });
 
   const handleConfirmNextRound = () => {
-    setCurrentRound(pendingNextRound);
-    setPendingNextRound(null);
-    setSessionMode('study');
-    setSecondsLeft(durationMin * 60);
-    preAlarmFired.current = false;
-    setIsPaused(false);
-    triggerSound(0.4);
+    setCurrentRound(pendingNextRound); setPendingNextRound(null); setSessionMode('study');
+    setSecondsLeft(durationMin * 60); preAlarmFired.current = false; setIsPaused(false); triggerSound(0.4);
   };
 
   return {
@@ -69,7 +66,6 @@ export function useFocusTimerLogic(alarmSettings = {}) {
     handleCancelNextRound: () => { setPendingNextRound(null); handleReset(); },
     showVideo, setShowVideo, videoUrl, showSubjectModal, setShowSubjectModal,
     handleStart: () => (!selectedSubjectId || !selectedLessonId ? setShowSubjectModal(true) : startFocusSession()),
-    startFocusSession, handleReset,
-    handlePause: () => setIsPaused(true), handleResume: () => setIsPaused(false)
+    startFocusSession, handleReset, handlePause: () => setIsPaused(true), handleResume
   };
 }

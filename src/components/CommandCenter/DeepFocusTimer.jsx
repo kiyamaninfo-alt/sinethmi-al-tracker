@@ -53,7 +53,9 @@ export default function DeepFocusTimer() {
         <VideoFocusPopup
           videoUrl={timer.videoUrl}
           isPaused={timer.isPaused}
-          onClose={() => timer.setShowVideo(false)}
+          secondsLeft={timer.secondsLeft}
+          sessionMode={timer.sessionMode}
+          onClose={() => { timer.setShowVideo(false); timer.handlePause(); }}
           onTogglePause={() => (timer.isPaused ? timer.handleResume() : timer.handlePause())}
         />
       )}
@@ -65,11 +67,7 @@ export default function DeepFocusTimer() {
       />
 
       {timer.pendingNextRound && (
-        <SessionConfirmModal
-          round={timer.pendingNextRound}
-          onConfirm={timer.handleConfirmNextRound}
-          onCancel={timer.handleCancelNextRound}
-        />
+        <SessionConfirmModal round={timer.pendingNextRound} onConfirm={timer.handleConfirmNextRound} onCancel={timer.handleCancelNextRound} />
       )}
 
       {renderModal(subjects)}
