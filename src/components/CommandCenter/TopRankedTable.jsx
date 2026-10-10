@@ -18,8 +18,8 @@ export default function TopRankedTable() {
           </div>
         </div>
         <div className="flex items-center gap-2">
-          <button type="button" className="px-3 py-1 rounded-lg text-xs font-semibold bg-neon-emerald/15 text-neon-emerald border border-neon-emerald/30">Top 5 High</button>
-          <button type="button" className="px-3 py-1 rounded-lg text-xs font-semibold glass-pill text-slate-400 hover:text-white">Least 5 (දුර්වල ලකුණු)</button>
+          <button type="button" className="px-3 py-1 rounded-lg text-xs font-semibold bg-neon-emerald/15 text-neon-emerald border border-neon-emerald/30">Top 5</button>
+          <button type="button" className="px-3 py-1 rounded-lg text-xs font-semibold glass-pill text-slate-400 hover:text-white cursor-pointer">Top 10</button>
         </div>
       </div>
 

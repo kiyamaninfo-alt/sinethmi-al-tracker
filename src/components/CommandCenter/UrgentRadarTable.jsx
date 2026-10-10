@@ -42,6 +42,12 @@ export default function UrgentRadarTable() {
           </div>
         ))}
       </div>
+
+      <div className="pt-2 text-center border-t border-white/5 shrink-0">
+        <button type="button" className="text-xs font-mono text-neon-rose hover:underline inline-flex items-center gap-1 cursor-pointer">
+          More Lessons →
+        </button>
+      </div>
     </section>
   );
 }

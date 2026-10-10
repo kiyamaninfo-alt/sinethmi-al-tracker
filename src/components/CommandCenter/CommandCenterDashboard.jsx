@@ -10,6 +10,7 @@ import SpacedRepetitionStation from './SpacedRepetitionStation';
 import TopRankedTable from './TopRankedTable';
 import WeakAreasTable from './WeakAreasTable';
 import PendingLessonsCard from './PendingLessonsCard';
+import LearnedNotStudiedCard from './LearnedNotStudiedCard';
 import CommandCenterFooter from './CommandCenterFooter';
 
 export default function CommandCenterDashboard() {
@@ -52,6 +53,7 @@ export default function CommandCenterDashboard() {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <PendingLessonsCard />
+          <LearnedNotStudiedCard />
         </div>
         <CommandCenterFooter />
       </div>

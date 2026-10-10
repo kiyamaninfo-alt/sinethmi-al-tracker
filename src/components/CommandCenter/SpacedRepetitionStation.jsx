@@ -17,9 +17,9 @@ export default function SpacedRepetitionStation() {
             <p className="text-xs text-slate-400">ප්රමුඛතා ලයිස්තුව අනුව පෙල ගස්වා ඇත</p>
           </div>
         </div>
-        <div className="flex items-center gap-1.5">
+        <div className="flex flex-col items-end gap-1 shrink-0">
           <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-neon-cyan/20 text-neon-cyan border border-neon-cyan/40">Cycle 1 (28)</span>
-          <span className="text-[10px] font-mono px-2 py-0.5 rounded glass-pill text-slate-400">Cycle 2</span>
+          <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-neon-cyan/20 text-neon-cyan border border-neon-cyan/40">Cycle 2 (14)</span>
         </div>
       </div>
 
@@ -48,6 +48,12 @@ export default function SpacedRepetitionStation() {
             </span>
           </div>
         ))}
+      </div>
+
+      <div className="pt-2 text-center border-t border-white/5 shrink-0">
+        <button type="button" className="text-xs font-mono text-neon-cyan hover:underline inline-flex items-center gap-1 cursor-pointer">
+          More Lessons →
+        </button>
       </div>
     </section>
   );
