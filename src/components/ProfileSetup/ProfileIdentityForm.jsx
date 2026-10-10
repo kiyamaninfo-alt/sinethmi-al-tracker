@@ -1,17 +1,16 @@
 import { PROVINCES_MAP } from '../../constants/profileSetup';
 
-export default function ProfileIdentityForm({ profile, onChange }) {
+export default function ProfileIdentityForm({ profile, onChange, onUpdate, isSaved }) {
   const districts = PROVINCES_MAP[profile.province] || [];
   const handleProvChange = (e) => {
-    const p = e.target.value;
-    onChange('province', p);
-    onChange('district', (PROVINCES_MAP[p] || [])[0] || '');
+    onChange('province', e.target.value);
+    onChange('district', (PROVINCES_MAP[e.target.value] || [])[0] || '');
   };
 
   return (
     <div className="rounded-xl bg-surface-container-low/80 border border-outline-variant/30 p-5 space-y-4 backdrop-blur-md">
       <div className="flex items-center gap-4 pb-3 border-b border-outline-variant/20">
-        <div className="relative w-14 h-14 rounded-xl overflow-hidden border-2 border-primary/40 bg-surface-container-high flex-shrink-0">
+        <div className="relative w-14 h-14 rounded-xl overflow-hidden border-2 border-primary/40 bg-surface-container-high shrink-0">
           <img src={profile.avatarUrl} alt="Avatar" className="w-full h-full object-cover" />
           <span className="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-emerald-400 border-2 border-surface-container-lowest" />
         </div>
@@ -61,6 +60,14 @@ export default function ProfileIdentityForm({ profile, onChange }) {
           <input type="tel" value={profile.phone} onChange={(e) => onChange('phone', e.target.value)}
             className="w-full bg-surface-container-high/60 border border-outline-variant/40 rounded-lg px-3 py-2 text-on-surface font-mono focus:border-primary focus:outline-none" />
         </div>
+      </div>
+
+      <div className="pt-3 border-t border-outline-variant/20 flex justify-end">
+        <button type="button" onClick={onUpdate}
+          className="w-full sm:w-auto px-5 py-2 rounded-lg bg-gradient-to-r from-primary to-inverse-primary text-on-primary text-xs font-bold tracking-wide flex items-center justify-center gap-1.5 shadow-lg shadow-primary/20 hover:brightness-110 active:scale-95 transition-all cursor-pointer">
+          <span className="material-symbols-outlined text-[15px]">{isSaved ? 'check_circle' : 'sync'}</span>
+          <span>{isSaved ? 'Profile Updated ✓' : 'Update Profile'}</span>
+        </button>
       </div>
     </div>
   );

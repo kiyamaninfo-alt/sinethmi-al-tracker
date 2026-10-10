@@ -1,7 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 
-export default function ProfileSetupHeader({ profile }) {
+export default function ProfileSetupHeader({ profile, onSave, isSaved }) {
   const navigate = useNavigate();
+  const handleSave = onSave || (() => navigate('/command-center'));
 
   return (
     <div className="space-y-4">
@@ -23,17 +24,17 @@ export default function ProfileSetupHeader({ profile }) {
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-surface-container-low border border-tertiary/30 text-tertiary text-xs font-mono">
-            <span className="w-2 h-2 rounded-full bg-tertiary animate-ping" />
-            <span>MISSION PARAMETERS V1.0 • SYNCED</span>
+          <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-surface-container-low border border-tertiary/30 text-tertiary text-xs font-mono">
+            <span className="w-2 h-2 rounded-full bg-tertiary animate-pulse" />
+            <span>{isSaved ? 'PROFILE UPDATED' : 'SYNCHRONIZED'}</span>
           </div>
           <button
             type="button"
-            onClick={() => navigate('/command-center')}
-            className="text-xs px-3 py-1.5 rounded-lg border border-outline-variant/40 bg-surface-container-low text-on-surface-variant hover:text-white flex items-center gap-1"
+            onClick={handleSave}
+            className="px-4 py-1.5 rounded-lg bg-gradient-to-r from-primary to-inverse-primary text-on-primary text-xs font-bold tracking-wide flex items-center gap-1.5 shadow-lg shadow-primary/20 hover:brightness-110 active:scale-95 transition-all cursor-pointer"
           >
-            <span className="material-symbols-outlined text-[16px]">arrow_back</span>
-            Command Center
+            <span>Save Profile -&gt;</span>
+            <span className="material-symbols-outlined text-[16px]">rocket_launch</span>
           </button>
         </div>
       </div>

@@ -3,8 +3,20 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
+import { execSync } from 'child_process'
+
+let commitCount = 0
+try {
+  commitCount = parseInt(execSync('git rev-list --count HEAD').toString().trim(), 10) || 0
+} catch (e) {
+  commitCount = 0
+}
+
 // https://vite.dev/config/
 export default defineConfig({
+  define: {
+    __COMMIT_COUNT__: JSON.stringify(commitCount)
+  },
   plugins: [
     react(),
     tailwindcss(),

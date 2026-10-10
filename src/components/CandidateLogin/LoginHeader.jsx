@@ -1,8 +1,9 @@
-import { useState } from 'react';
+const QUOTES = {
+  si: '“විභාග ජයග්රහණය හුදෙක් වාසනාව නොව, විනයගරුක සැලැස්මක සහ අඛණ්ඩ කැපවීමේ සැබෑ ප්රතිඵලයකි.”',
+  ta: '“பரீட்சை வெற்றி என்பது வெறும் அதிர்ஷ்டம் அல்ல, அது ஒழுக்கமான திட்டமிடல் மற்றும் தொடர்ச்சியான அர்ப்பணிப்பின் உண்மையான பலனாகும்.”',
+};
 
-export default function LoginHeader() {
-  const [lang, setLang] = useState('si');
-
+export default function LoginHeader({ lang = 'si', onLangChange }) {
   return (
     <div className="w-full flex flex-col items-center">
       <div className="w-full flex items-center justify-between pb-3.5 border-b border-outline-variant/15">
@@ -14,7 +15,7 @@ export default function LoginHeader() {
         <div className="inline-flex items-center p-0.5 rounded-full bg-surface-container-high/90 border border-outline-variant/30 text-[11px] font-mono">
           <button
             type="button"
-            onClick={() => setLang('si')}
+            onClick={() => onLangChange?.('si')}
             className={`px-2.5 py-0.5 rounded-full transition-all ${
               lang === 'si' ? 'bg-cyan-500/20 text-cyan-300 font-bold border border-cyan-400/40 shadow-sm' : 'text-outline hover:text-white'
             }`}
@@ -24,7 +25,7 @@ export default function LoginHeader() {
           <span className="text-outline/40">|</span>
           <button
             type="button"
-            onClick={() => setLang('ta')}
+            onClick={() => onLangChange?.('ta')}
             className={`px-2.5 py-0.5 rounded-full transition-all ${
               lang === 'ta' ? 'bg-cyan-500/20 text-cyan-300 font-bold border border-cyan-400/40 shadow-sm' : 'text-outline hover:text-white'
             }`}
@@ -59,7 +60,7 @@ export default function LoginHeader() {
         </div>
 
         <p className="text-xs text-on-surface-variant/90 mt-2.5 max-w-md mx-auto leading-relaxed font-sans italic">
-          &ldquo;විභාග ජයග්රහණය හුදෙක් වාසනාව නොව, විනයගරුක සැලැස්මක සහ අඛණ්ඩ කැපවීමේ සැබෑ ප්රතිඵලයකි.&rdquo;
+          {QUOTES[lang] || QUOTES.si}
         </p>
       </div>
     </div>

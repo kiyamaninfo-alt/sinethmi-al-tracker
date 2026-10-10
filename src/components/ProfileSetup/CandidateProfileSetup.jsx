@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { INITIAL_PROFILE } from '../../constants/profileSetup';
 import ProfileSetupHeader from './ProfileSetupHeader';
@@ -6,6 +6,11 @@ import ProfileIdentityForm from './ProfileIdentityForm';
 import StreamSelector from './StreamSelector';
 import SubjectSelector from './SubjectSelector';
 import TargetHorizonForm from './TargetHorizonForm';
+import AlarmSettingsCard from './AlarmSettingsCard';
+import PreferencesCard from './PreferencesCard';
+import NotificationAlertsCard from './NotificationAlertsCard';
+import OfflineStorageCard from './OfflineStorageCard';
+import ProfileSaveBar from './ProfileSaveBar';
 
 export default function CandidateProfileSetup() {
   const navigate = useNavigate();
@@ -13,9 +18,27 @@ export default function CandidateProfileSetup() {
     const saved = localStorage.getItem('candidate_profile');
     return saved ? JSON.parse(saved) : INITIAL_PROFILE;
   });
+  const [isSaved, setIsSaved] = useState(false);
 
-  const handleChange = (field, val) => {
-    setProfile((prev) => ({ ...prev, [field]: val }));
+  useEffect(() => {
+    if (window.location.hash) {
+      setTimeout(() => {
+        const el = document.querySelector(window.location.hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 150);
+    }
+  }, []);
+
+  const handleChange = (field, val) => setProfile((prev) => {
+    const next = { ...prev, [field]: val };
+    localStorage.setItem('candidate_profile', JSON.stringify(next));
+    return next;
+  });
+
+  const handleUpdate = () => {
+    localStorage.setItem('candidate_profile', JSON.stringify(profile));
+    setIsSaved(true);
+    setTimeout(() => setIsSaved(false), 2500);
   };
 
   const handleSaveAndEnter = () => {
@@ -28,32 +51,25 @@ export default function CandidateProfileSetup() {
       <div className="fixed inset-0 pointer-events-none opacity-20 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] z-0" />
 
       <main className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-6 space-y-6">
-        <ProfileSetupHeader profile={profile} />
-        <ProfileIdentityForm profile={profile} onChange={handleChange} />
-        <StreamSelector selectedStream={profile.stream} onSelectStream={(s) => handleChange('stream', s)} />
+        <ProfileSetupHeader profile={profile} onSave={handleSaveAndEnter} isSaved={isSaved} />
+        <ProfileIdentityForm profile={profile} onChange={handleChange} onUpdate={handleUpdate} isSaved={isSaved} />
+        <StreamSelector
+          selectedStream={profile.stream}
+          onSelectStream={(s) => handleChange('stream', s)}
+          subjects={profile.subjects}
+          onUpdateSubjects={(subs) => handleChange('subjects', subs)}
+          onUpdate={handleUpdate}
+          isSaved={isSaved}
+        />
         <SubjectSelector subjects={profile.subjects} onUpdateSubjects={(subs) => handleChange('subjects', subs)} />
         <TargetHorizonForm profile={profile} onChange={handleChange} />
-
-        <div className="rounded-xl bg-surface-container-low/90 backdrop-blur-xl border border-primary/30 p-4 sm:p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <span className="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse" />
-            <div>
-              <p className="text-xs font-bold text-on-surface">Candidate Telemetry Initialized</p>
-              <p className="text-[11px] text-outline font-mono">Parameters ready for Mission Control deployment</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-3 w-full sm:w-auto">
-            <button
-              type="button"
-              onClick={handleSaveAndEnter}
-              className="w-full sm:w-auto px-6 py-2.5 rounded-lg bg-gradient-to-r from-primary to-inverse-primary text-on-primary text-xs font-bold tracking-wide flex items-center justify-center gap-2 shadow-lg shadow-primary/20 hover:brightness-110 active:scale-95 transition-all"
-            >
-              <span>Save Candidate Profile &amp; Enter Mission Control -&gt;</span>
-              <span className="material-symbols-outlined text-[16px]">rocket_launch</span>
-            </button>
-          </div>
+        <div id="focus-alarm-settings" className="scroll-mt-6">
+          <AlarmSettingsCard settings={profile.alarmSettings} onChange={(s) => handleChange('alarmSettings', s)} />
         </div>
+        <PreferencesCard preferences={profile.preferences} onChange={(p) => handleChange('preferences', p)} />
+        <NotificationAlertsCard settings={profile.notificationSettings} onChange={(n) => handleChange('notificationSettings', n)} />
+        <OfflineStorageCard profile={profile} onReset={() => setProfile(INITIAL_PROFILE)} />
+        <ProfileSaveBar onSave={handleSaveAndEnter} />
       </main>
     </div>
   );

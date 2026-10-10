@@ -16,28 +16,33 @@ export default function LoginFooter() {
   }, []);
 
   const daysRemaining = useMemo(() => {
-    const saved = localStorage.getItem('candidate_profile');
-    const year = saved ? JSON.parse(saved).targetYear || 2028 : 2028;
-    const diff = new Date(`${year}-11-15T00:00:00`) - new Date();
+    const now = new Date();
+    const currentYear = now.getFullYear();
+    // Next nearest annual Sri Lanka G.C.E. A/L exam starting date (late November)
+    let nextExamDate = new Date(currentYear, 10, 25, 8, 30, 0);
+    if (now > nextExamDate) {
+      nextExamDate = new Date(currentYear + 1, 10, 25, 8, 30, 0);
+    }
+    const diff = nextExamDate - now;
     return Math.max(0, Math.ceil(diff / (1000 * 60 * 60 * 24)));
   }, []);
 
   return (
-    <div className="w-full mt-4 pt-4 border-t border-cyan-500/15 flex flex-col gap-3 font-mono text-xs">
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 p-2.5 rounded-xl bg-[#050b14]/90 border border-cyan-500/20 backdrop-blur-md">
-        <div className="flex items-center gap-1.5 col-span-2 sm:col-span-1">
+    <div className="w-full mt-4 pt-4 border-t border-cyan-500/15 flex flex-col gap-3.5 font-mono text-xs">
+      <div className="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 sm:gap-6 px-4 py-3 rounded-xl bg-[#050b14]/90 border border-cyan-500/20 backdrop-blur-md">
+        <div className="flex items-center gap-2 whitespace-nowrap">
           <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse shrink-0" />
-          <span className="text-on-surface-variant text-[11px]">
+          <span className="text-on-surface-variant text-[11px] whitespace-nowrap">
             COUNTDOWN: <strong className="text-white">{daysRemaining} DAYS</strong>
           </span>
         </div>
 
-        <div className="flex items-center gap-1.5 justify-start sm:justify-center">
+        <div className="flex items-center gap-2 whitespace-nowrap">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
           <span className="text-emerald-400 font-bold text-[11px]">{onlineCount}* ONLINE</span>
         </div>
 
-        <div className="flex items-center gap-1.5 justify-end">
+        <div className="flex items-center gap-2 whitespace-nowrap">
           <span className={`w-2 h-2 rounded-full shrink-0 ${isOnline ? 'bg-cyan-400' : 'bg-amber-400'}`} />
           <span className={`text-[11px] font-bold ${isOnline ? 'text-cyan-300' : 'text-amber-300'}`}>
             {isOnline ? 'CLOUD SYNCED' : 'LOCAL CACHE ACTIVE'}

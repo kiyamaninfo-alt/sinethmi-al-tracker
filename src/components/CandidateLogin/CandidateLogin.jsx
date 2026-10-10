@@ -1,9 +1,12 @@
+import { useState } from 'react';
 import LoginShowcase from './LoginShowcase';
 import LoginHeader from './LoginHeader';
 import LoginForm from './LoginForm';
 import LoginFooter from './LoginFooter';
 
 export default function CandidateLogin() {
+  const [lang, setLang] = useState('si');
+
   return (
     <main className="w-full min-h-screen bg-[#050811] grid grid-cols-1 lg:grid-cols-2 selection:bg-primary-container selection:text-on-primary-container">
       <LoginShowcase />
@@ -25,8 +28,8 @@ export default function CandidateLogin() {
 
         {/* Main Authentication Console Card */}
         <div className="relative z-10 w-full max-w-lg mx-auto rounded-2xl bg-surface-container-low/90 backdrop-blur-2xl shadow-2xl p-6 sm:p-8 flex flex-col items-center border border-outline-variant/20">
-          <LoginHeader />
-          <LoginForm />
+          <LoginHeader lang={lang} onLangChange={setLang} />
+          <LoginForm lang={lang} />
           <LoginFooter />
         </div>
       </div>
