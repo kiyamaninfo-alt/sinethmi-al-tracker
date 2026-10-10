@@ -17,10 +17,7 @@ export default function WeakAreasTable() {
             <p className="text-xs text-slate-400">නැවත සමාලෝචනය හා ප්‍රතිසංස්කරණය කළ යුතු පාඩම්</p>
           </div>
         </div>
-        <div className="flex items-center gap-2">
-          <button type="button" className="px-3 py-1 rounded-lg text-xs font-semibold bg-rose-500/15 text-rose-400 border border-rose-500/30">Top 5</button>
-          <button type="button" className="px-3 py-1 rounded-lg text-xs font-semibold glass-pill text-slate-400 hover:text-white cursor-pointer">Top 10</button>
-        </div>
+        <button type="button" className="px-3 py-1 rounded-lg text-xs font-semibold bg-rose-500/15 text-rose-400 border border-rose-500/30 cursor-pointer">Top 10</button>
       </div>
       <div className="space-y-3">
         {WEAK_PAPERS.map((p) => (

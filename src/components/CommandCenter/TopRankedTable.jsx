@@ -17,10 +17,7 @@ export default function TopRankedTable() {
             <p className="text-xs text-slate-400">විෂය සවිස්තරාත්මක සාමාර්ථ්‍ය හා ප්‍රතිඵල පුවරුව (Zero-mark excluded)</p>
           </div>
         </div>
-        <div className="flex items-center gap-2">
-          <button type="button" className="px-3 py-1 rounded-lg text-xs font-semibold bg-neon-emerald/15 text-neon-emerald border border-neon-emerald/30">Top 5</button>
-          <button type="button" className="px-3 py-1 rounded-lg text-xs font-semibold glass-pill text-slate-400 hover:text-white cursor-pointer">Top 10</button>
-        </div>
+        <button type="button" className="px-3 py-1 rounded-lg text-xs font-semibold bg-neon-emerald/15 text-neon-emerald border border-neon-emerald/30 cursor-pointer">Top 10</button>
       </div>
 
       <div className="space-y-2.5">
