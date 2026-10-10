@@ -16,7 +16,7 @@ export default function DeepFocusTimer() {
   const { openModal, renderModal } = useSubjectLessonSelection(timer);
 
   return (
-    <section className="lg:col-span-7 glass-panel rounded-3xl p-6 sm:p-7 relative overflow-hidden flex flex-col justify-between">
+    <section id="deep-focus-timer" className="lg:col-span-7 glass-panel rounded-3xl p-6 sm:p-7 relative overflow-hidden flex flex-col justify-between scroll-mt-24">
       <FocusTimerHeader isMuted={timer.isMuted} onToggleMute={() => timer.setIsMuted(!timer.isMuted)} />
 
       <SubjectLessonDisplay

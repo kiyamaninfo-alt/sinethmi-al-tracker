@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Header from './Header';
 import TodayPriorities from './TodayPriorities';
 import DeepFocusTimer from './DeepFocusTimer';
@@ -11,6 +12,14 @@ import WeakAreasAndPending from './WeakAreasAndPending';
 import CommandCenterFooter from './CommandCenterFooter';
 
 export default function CommandCenterDashboard() {
+  useEffect(() => {
+    if (window.location.hash) {
+      setTimeout(() => {
+        const el = document.querySelector(window.location.hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 150);
+    }
+  }, []);
   return (
     <div className="min-h-screen bg-[#050811] text-slate-200 antialiased selection:bg-neon-cyan/20 selection:text-neon-cyan relative">
       {/* Ambient background decorative light grids */}

@@ -1,14 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import { DEFAULT_ALARM_SETTINGS } from '../../constants/alarmSettings';
 import StudyTechniqueSelector from './StudyTechniqueSelector';
 import AlarmDurationAndColor from './AlarmDurationAndColor';
 import AlarmMediaSettingsGrid from './AlarmMediaSettingsGrid';
 
 export default function AlarmSettingsCard({ settings = {}, onChange }) {
+  const navigate = useNavigate();
   const current = { ...DEFAULT_ALARM_SETTINGS, ...settings };
 
-  const update = (key, val) => {
-    onChange({ ...current, [key]: val });
-  };
+  const update = (key, val) => onChange({ ...current, [key]: val });
 
   const handleSelectTechnique = (tech) => {
     const brkNum = tech.breakMinutes || parseInt(tech.breakTime, 10) || 10;
@@ -41,11 +41,19 @@ export default function AlarmSettingsCard({ settings = {}, onChange }) {
           </h3>
           <p className="text-xs text-slate-300">Select Pomodoro/Flow protocol or set manual duration, interval &amp; rounds</p>
         </div>
-        <div className="text-xs font-mono px-3 py-1 rounded-lg bg-surface-container-high/80 border border-outline-variant/40 flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-          <span className="text-cyan-300 font-bold">
-            {current.durationMinutes}m &bull; {current.breakMinutes || '10m'} break &bull; {current.rounds || 3}x
-          </span>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={() => navigate('/command-center#deep-focus-timer')}
+            className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-cyan-500 to-emerald-400 hover:brightness-110 text-slate-950 text-xs font-mono font-bold flex items-center gap-1 shadow-md shadow-cyan-500/20 active:scale-95 transition cursor-pointer"
+          >
+            <span className="material-symbols-outlined text-[15px]">arrow_forward</span>
+            <span>Go to timer</span>
+          </button>
+          <div className="text-xs font-mono px-3 py-1 rounded-lg bg-surface-container-high/80 border border-outline-variant/40 flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+            <span className="text-cyan-300 font-bold">{current.durationMinutes}m &bull; {current.breakMinutes || '10m'} &bull; {current.rounds || 3}x</span>
+          </div>
         </div>
       </div>
 
