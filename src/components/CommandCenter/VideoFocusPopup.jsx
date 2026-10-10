@@ -3,7 +3,7 @@ import { extractYouTubeEmbedUrl } from '../../constants/videoUtils';
 import { useDraggablePopup } from '../../hooks/useDraggablePopup';
 import VideoTimerOverlay from './VideoTimerOverlay';
 
-export default function VideoFocusPopup({ videoUrl, isPaused, secondsLeft, sessionMode, onClose, onTogglePause }) {
+export default function VideoFocusPopup({ videoUrl, isPaused, secondsLeft, sessionMode, language, onClose, onTogglePause }) {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
   const containerRef = useRef(null);
@@ -18,13 +18,13 @@ export default function VideoFocusPopup({ videoUrl, isPaused, secondsLeft, sessi
   };
 
   const embedUrl = extractYouTubeEmbedUrl(videoUrl);
-  const dragStyle = pos.x !== null ? { transform: `translate(${pos.x}px, ${pos.y}px)` } : {};
+  const dragStyle = pos.x !== null ? { left: `${pos.x}px`, top: `${pos.y}px`, right: 'auto', bottom: 'auto' } : {};
 
   return (
     <div
       ref={containerRef}
       style={dragStyle}
-      className={`fixed bottom-6 right-6 z-50 rounded-2xl bg-slate-950/95 border border-cyan-400/40 shadow-2xl backdrop-blur-xl flex flex-col transition-[height,width] ${
+      className={`fixed ${pos.x === null ? 'bottom-6 right-6' : ''} z-50 rounded-2xl bg-slate-950/95 border border-cyan-400/40 shadow-2xl backdrop-blur-xl flex flex-col transition-[height,width] ${
         isMinimized ? 'w-64 min-w-[250px]' : 'w-80 sm:w-96 resize overflow-auto min-w-[280px] max-w-[90vw] min-h-[200px] max-h-[80vh]'
       }`}
     >
@@ -50,11 +50,11 @@ export default function VideoFocusPopup({ videoUrl, isPaused, secondsLeft, sessi
 
       {!isMinimized && (
         <div className="flex-1 relative bg-black aspect-video overflow-hidden">
-          <VideoTimerOverlay secondsLeft={secondsLeft} sessionMode={sessionMode} isPaused={isPaused} />
+          <VideoTimerOverlay secondsLeft={secondsLeft} sessionMode={sessionMode} isPaused={isPaused} language={language} />
           {isPaused ? (
             <div className="absolute inset-0 bg-black/85 flex flex-col items-center justify-center gap-2 z-10 text-center p-4">
               <span className="material-symbols-outlined text-amber-400 text-3xl">pause_circle</span>
-              <span className="text-xs text-slate-200 font-mono">Video Paused (Timer Paused)</span>
+              <span className="text-xs text-slate-200 font-mono">Video Paused</span>
               <button type="button" onClick={onTogglePause} className="mt-1 px-3 py-1 rounded-lg bg-cyan-500 text-black text-xs font-bold cursor-pointer">
                 Resume
               </button>

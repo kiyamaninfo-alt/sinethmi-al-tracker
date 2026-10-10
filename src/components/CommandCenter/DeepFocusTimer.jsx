@@ -11,7 +11,7 @@ import SessionConfirmModal from './SessionConfirmModal';
 
 export default function DeepFocusTimer() {
   const profile = useCandidateProfile();
-  const timer = useFocusTimerLogic(profile?.alarmSettings || {});
+  const timer = useFocusTimerLogic(profile?.alarmSettings || {}, profile?.preferences || {});
   const subjects = profile?.subjects || [];
   const { openModal, renderModal } = useSubjectLessonSelection(timer);
 
@@ -51,23 +51,17 @@ export default function DeepFocusTimer() {
 
       {timer.showVideo && (
         <VideoFocusPopup
-          videoUrl={timer.videoUrl}
-          isPaused={timer.isPaused}
-          secondsLeft={timer.secondsLeft}
-          sessionMode={timer.sessionMode}
+          videoUrl={timer.videoUrl} isPaused={timer.isPaused} secondsLeft={timer.secondsLeft}
+          sessionMode={timer.sessionMode} language={timer.language}
           onClose={() => { timer.setShowVideo(false); timer.handlePause(); }}
           onTogglePause={() => (timer.isPaused ? timer.handleResume() : timer.handlePause())}
         />
       )}
 
-      <AlarmAlertModal
-        message={timer.modalAlert}
-        isPreAlarm={timer.isPreAlarm}
-        onConfirm={() => timer.setModalAlert(null)}
-      />
+      <AlarmAlertModal message={timer.modalAlert} isPreAlarm={timer.isPreAlarm} onConfirm={timer.stopAlarm} language={timer.language} />
 
       {timer.pendingNextRound && (
-        <SessionConfirmModal round={timer.pendingNextRound} onConfirm={timer.handleConfirmNextRound} onCancel={timer.handleCancelNextRound} />
+        <SessionConfirmModal round={timer.pendingNextRound} onConfirm={timer.handleConfirmNextRound} onCancel={timer.handleCancelNextRound} language={timer.language} />
       )}
 
       {renderModal(subjects)}

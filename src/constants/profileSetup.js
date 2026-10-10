@@ -55,7 +55,7 @@ export const INITIAL_PROFILE = {
   preferences: {
     fontSize: 'default',
     theme: 'cyberpunk',
-    language: 'en'
+    language: 'si'
   },
   notificationSettings: {
     masterEnabled: true,

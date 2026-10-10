@@ -1,4 +1,5 @@
 let audioCtx = null;
+let activeLoopNode = null;
 
 function getAudioContext() {
   if (!audioCtx) {
@@ -17,34 +18,49 @@ export function playAlarmTone(type = 'radar_ping', duration = 0.5) {
     if (!ctx) return;
     const osc = ctx.createOscillator();
     const gain = ctx.createGain();
-
     const now = ctx.currentTime;
     if (type === 'cyber_chime') {
       osc.type = 'triangle';
       osc.frequency.setValueAtTime(880, now);
       osc.frequency.exponentialRampToValueAtTime(1760, now + duration);
     } else if (type === 'zen_bell') {
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(528, now);
+      osc.type = 'sine'; osc.frequency.setValueAtTime(528, now);
     } else if (type === 'pulse_alarm') {
-      osc.type = 'sawtooth';
-      osc.frequency.setValueAtTime(440, now);
+      osc.type = 'sawtooth'; osc.frequency.setValueAtTime(440, now);
       osc.frequency.setValueAtTime(880, now + duration / 2);
     } else {
-      // Default radar_ping or lofi_synth
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(659.25, now);
+      osc.type = 'sine'; osc.frequency.setValueAtTime(659.25, now);
       osc.frequency.exponentialRampToValueAtTime(440, now + duration);
     }
-
     gain.gain.setValueAtTime(0.3, now);
     gain.gain.exponentialRampToValueAtTime(0.001, now + duration);
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.start(now); osc.stop(now + duration);
+  } catch (err) {}
+}
 
-    osc.connect(gain);
-    gain.connect(ctx.destination);
-    osc.start(now);
-    osc.stop(now + duration);
-  } catch (err) {
-    console.warn('Audio tone play failed', err);
+export function startAlarmLoop(type = 'pulse_alarm') {
+  stopAlarmLoop();
+  try {
+    const ctx = getAudioContext();
+    if (!ctx) return;
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = type === 'zen_bell' ? 'sine' : type === 'cyber_chime' ? 'triangle' : 'sawtooth';
+    osc.frequency.setValueAtTime(660, ctx.currentTime);
+    gain.gain.setValueAtTime(0.25, ctx.currentTime);
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.start();
+    activeLoopNode = { osc, gain, ctx };
+  } catch (e) {}
+}
+
+export function stopAlarmLoop() {
+  if (activeLoopNode) {
+    try {
+      activeLoopNode.gain.gain.setValueAtTime(0.001, activeLoopNode.ctx.currentTime);
+      activeLoopNode.osc.stop();
+    } catch (e) {}
+    activeLoopNode = null;
   }
 }

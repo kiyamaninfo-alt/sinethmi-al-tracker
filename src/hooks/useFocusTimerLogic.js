@@ -1,9 +1,9 @@
 import { useState, useRef } from 'react';
-import { playAlarmTone } from '../constants/soundPlayer';
+import { playAlarmTone, startAlarmLoop, stopAlarmLoop } from '../constants/soundPlayer';
 import { resolveVideoUrl } from '../constants/timerUrlHelper';
 import { useTimerCountdown } from './useTimerCountdown';
 
-export function useFocusTimerLogic(alarmSettings = {}) {
+export function useFocusTimerLogic(alarmSettings = {}, preferences = {}) {
   const [selectedSubjectId, setSelectedSubjectId] = useState('');
   const [selectedLessonId, setSelectedLessonId] = useState('');
   const [isActive, setIsActive] = useState(false);
@@ -17,6 +17,7 @@ export function useFocusTimerLogic(alarmSettings = {}) {
   const [showVideo, setShowVideo] = useState(false);
   const [showSubjectModal, setShowSubjectModal] = useState(false);
 
+  const language = preferences.language || 'si';
   const durationMin = Number(alarmSettings.durationMinutes) || 50;
   const breakMin = parseInt(alarmSettings.breakMinutes, 10) || 10;
   const totalRounds = Number(alarmSettings.rounds) || 3;
@@ -27,6 +28,8 @@ export function useFocusTimerLogic(alarmSettings = {}) {
   const triggerSound = (dur = 0.5) => {
     if (!isMuted) playAlarmTone(alarmSettings.soundTrack || 'radar_ping', dur);
   };
+  const startAlarm = () => { if (!isMuted) startAlarmLoop(alarmSettings.soundTrack || 'pulse_alarm'); };
+  const stopAlarm = () => { stopAlarmLoop(); setModalAlert(null); };
 
   const startFocusSession = (subId = selectedSubjectId, lesId = selectedLessonId) => {
     if (!subId || !lesId) return;
@@ -36,9 +39,9 @@ export function useFocusTimerLogic(alarmSettings = {}) {
   };
 
   const handleReset = () => {
-    setIsActive(false); setIsPaused(false); setSelectedSubjectId(''); setSelectedLessonId('');
-    setSessionMode('study'); setCurrentRound(1); setSecondsLeft(durationMin * 60);
-    preAlarmFired.current = false; setShowVideo(false);
+    stopAlarmLoop(); setIsActive(false); setIsPaused(false); setSelectedSubjectId('');
+    setSelectedLessonId(''); setSessionMode('study'); setCurrentRound(1);
+    setSecondsLeft(durationMin * 60); preAlarmFired.current = false; setShowVideo(false);
   };
 
   const handleResume = () => {
@@ -49,13 +52,15 @@ export function useFocusTimerLogic(alarmSettings = {}) {
 
   useTimerCountdown({
     isActive, isPaused, sessionMode, setSessionMode, currentRound, totalRounds,
-    durationMin, breakMin, setSecondsLeft, preAlarmFired, triggerSound,
-    setIsPreAlarm, setModalAlert, setIsPaused, setIsActive, setPendingNextRound
+    durationMin, breakMin, setSecondsLeft, preAlarmFired, triggerSound, startAlarm,
+    setIsPreAlarm, setModalAlert, setIsPaused, setIsActive, setPendingNextRound, language
   });
 
   const handleConfirmNextRound = () => {
     setCurrentRound(pendingNextRound); setPendingNextRound(null); setSessionMode('study');
-    setSecondsLeft(durationMin * 60); preAlarmFired.current = false; setIsPaused(false); triggerSound(0.4);
+    setSecondsLeft(durationMin * 60); preAlarmFired.current = false; setIsPaused(false);
+    if (alarmSettings.videoEnabled && videoUrl) setShowVideo(true);
+    triggerSound(0.4);
   };
 
   return {
@@ -64,8 +69,8 @@ export function useFocusTimerLogic(alarmSettings = {}) {
     secondsLeft, totalSeconds: (sessionMode === 'study' ? durationMin : breakMin) * 60,
     modalAlert, setModalAlert, isPreAlarm, pendingNextRound, handleConfirmNextRound,
     handleCancelNextRound: () => { setPendingNextRound(null); handleReset(); },
-    showVideo, setShowVideo, videoUrl, showSubjectModal, setShowSubjectModal,
+    showVideo, setShowVideo, videoUrl, showSubjectModal, setShowSubjectModal, language,
     handleStart: () => (!selectedSubjectId || !selectedLessonId ? setShowSubjectModal(true) : startFocusSession()),
-    startFocusSession, handleReset, handlePause: () => setIsPaused(true), handleResume
+    startFocusSession, handleReset, handlePause: () => setIsPaused(true), handleResume, stopAlarm
   };
 }
