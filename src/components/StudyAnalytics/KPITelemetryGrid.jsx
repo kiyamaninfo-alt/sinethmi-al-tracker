@@ -12,23 +12,28 @@ const METRICS = [
 
 export default function KPITelemetryGrid() {
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-9 gap-3">
+    <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-9 gap-3">
       {METRICS.map((m) => (
         <div
           key={m.label}
-          className={`glass-card glass-card-interactive p-4 rounded-xl flex flex-col justify-between relative overflow-hidden xl:col-span-1 ${
+          className={`glass-card glass-card-interactive p-3 rounded-xl flex flex-col justify-between h-36 min-h-[144px] relative overflow-hidden ${
             m.border || ''
           }`}
         >
-          <div className="flex items-center justify-between text-slate-400 text-xs font-semibold tracking-wider uppercase mb-1">
-            <span>{m.label}</span>
-            <span>{m.icon}</span>
+          <div className="flex items-center justify-between text-slate-400 text-[10px] font-semibold tracking-wider uppercase shrink-0">
+            <span className="truncate mr-1">{m.label}</span>
+            <span className="shrink-0">{m.icon}</span>
           </div>
-          <div>
-            <div className={`text-2xl font-black tracking-tight ${m.valClass}`}>
-              {m.value} <span className="text-xs font-medium text-slate-400">{m.unit}</span>
+          <div className="my-auto py-1">
+            <div className="flex items-baseline gap-1">
+              <span className={`text-xl sm:text-2xl font-black tracking-tight leading-none ${m.valClass}`}>
+                {m.value}
+              </span>
+              {m.unit && <span className="text-[10px] font-medium text-slate-400 shrink-0">{m.unit}</span>}
             </div>
-            <div className="text-[11px] text-slate-400 mt-1">{m.sub}</div>
+          </div>
+          <div className="text-[10px] text-slate-400 truncate shrink-0 pt-1 border-t border-white/5">
+            {m.sub}
           </div>
           <div className={`absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r ${m.color} to-transparent`} />
         </div>
