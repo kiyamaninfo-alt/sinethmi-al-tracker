@@ -3,7 +3,7 @@ const METRICS = [
   { label: 'Total Focus Time', icon: '⏱️', value: '11.6', unit: 'Hrs', sub: 'Total: 697 Mins', color: 'from-purple-500', valClass: 'text-white' },
   { label: "Today's Focus", icon: '📅', value: '222', unit: 'Mins', sub: 'Target: 180m (+42m)', color: 'from-cyan-400', valClass: 'text-cyan-400', border: 'border-purple-500/30' },
   { label: 'Daily Avg (7D)', icon: '📈', value: '92', unit: 'm/day', sub: 'This Week: 647m', color: 'from-emerald-500', valClass: 'text-white' },
-  { label: 'Peak Time', icon: '🎯', value: 'Afternoon', unit: '12–5 PM', sub: 'Slot Share: 43%', color: 'from-amber-400', valClass: 'text-white' },
+  { label: 'Peak Time', icon: '🎯', value: 'Aftn', unit: '12–5 PM', sub: 'Slot: 43%', color: 'from-amber-400', valClass: 'text-amber-300' },
   { label: 'Week Focus', icon: '📊', value: '9.1', unit: 'Hrs', sub: 'Target: 45% (20h)', color: 'from-blue-500', valClass: 'text-white' },
   { label: 'Active Days', icon: '📆', value: '3', unit: 'Days', sub: 'This Month: 50%', color: 'from-rose-500', valClass: 'text-white' },
   { label: 'Top Subject', icon: '🏆', value: 'SFT', unit: '6.0h', sub: 'Share: 51%', color: 'from-cyan-400', valClass: 'text-cyan-400', border: 'border-cyan-500/30' },
