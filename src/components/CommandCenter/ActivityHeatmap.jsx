@@ -1,4 +1,7 @@
+import { useNavigate } from 'react-router-dom';
+
 export default function ActivityHeatmap() {
+  const navigate = useNavigate();
   const days = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
 
   return (
@@ -65,7 +68,7 @@ export default function ActivityHeatmap() {
         </div>
       </div>
 
-      <button type="button" className="w-full py-3 rounded-xl font-bold text-xs sm:text-sm bg-neon-violet/20 hover:bg-neon-violet/30 text-neon-violet border border-neon-violet/40 hover:border-neon-violet transition flex items-center justify-center gap-2 cursor-pointer">
+      <button type="button" onClick={() => navigate('/study-analytics')} className="w-full py-3 rounded-xl font-bold text-xs sm:text-sm bg-neon-violet/20 hover:bg-neon-violet/30 text-neon-violet border border-neon-violet/40 hover:border-neon-violet transition flex items-center justify-center gap-2 cursor-pointer">
         <span>📊</span> View Full Analytics &amp; Spaced Heatmap Matrix
       </button>
     </section>
