@@ -4,7 +4,7 @@ export default function ProgressionSubCharts() {
       <div className="glass-panel-elevated p-4 rounded-2xl border border-white/5 space-y-2">
         <div className="flex items-center justify-between text-xs">
           <span className="font-bold text-white flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-neon-cyan" /> Full Paper Score Progression (All %)
+            <span className="w-2 h-2 rounded-full bg-neon-cyan" /> Full Lesson Paper
           </span>
           <span className="font-mono text-[10px] text-slate-400">Zoom: 80% - 100%</span>
         </div>
@@ -30,7 +30,7 @@ export default function ProgressionSubCharts() {
       <div className="glass-panel-elevated p-4 rounded-2xl border border-white/5 space-y-2">
         <div className="flex items-center justify-between text-xs">
           <span className="font-bold text-white flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-neon-amber" /> Full Unit Paper Score Progression (All)
+            <span className="w-2 h-2 rounded-full bg-neon-amber" /> Unit Paper Progression
           </span>
           <span className="font-mono text-[10px] text-slate-400">5-Paper Moving Trend</span>
         </div>

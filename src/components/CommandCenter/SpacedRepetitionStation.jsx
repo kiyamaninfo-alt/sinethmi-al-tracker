@@ -13,8 +13,8 @@ export default function SpacedRepetitionStation() {
         <div className="flex items-center gap-2">
           <span className="text-lg">🧠</span>
           <div>
-            <h3 className="text-base font-bold text-white">පැමිණි ඒකකයන් - Spaced Repetition</h3>
-            <p className="text-xs text-slate-400">දීර්ඝකාලීන මතකය (Long-term Retention Cycles)</p>
+            <h3 className="text-base font-bold text-white">Space Repetition - Long Term Retention Cycle</h3>
+            <p className="text-xs text-slate-400">ප්රමුඛතා ලයිස්තුව අනුව පෙල ගස්වා ඇත</p>
           </div>
         </div>
         <div className="flex items-center gap-1.5">

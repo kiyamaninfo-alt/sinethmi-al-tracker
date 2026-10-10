@@ -45,7 +45,9 @@ export default function CommandCenterDashboard() {
           <SpacedRepetitionStation />
         </div>
 
-        <TopRankedTable />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <TopRankedTable />
+        </div>
         <WeakAreasAndPending />
         <CommandCenterFooter />
       </div>

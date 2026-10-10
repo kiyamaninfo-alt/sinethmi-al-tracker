@@ -8,12 +8,12 @@ const TOP_PAPERS = [
 
 export default function TopRankedTable() {
   return (
-    <section className="glass-panel rounded-3xl p-6">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-white/5">
+    <section className="glass-panel rounded-3xl p-6 space-y-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-white/5">
         <div className="flex items-center gap-2.5">
           <span className="text-xl">🏆</span>
           <div>
-            <h3 className="text-base sm:text-lg font-bold text-white">වැඩිම ලකුණු සහිත Unit Papers (Top Mastery)</h3>
+            <h3 className="text-base font-bold text-white">වැඩිම ලකුණු සහිත Unit Papers (Top Mastery)</h3>
             <p className="text-xs text-slate-400">විෂය සවිස්තරාත්මක සාමාර්ථ්‍ය හා ප්‍රතිඵල පුවරුව (Zero-mark excluded)</p>
           </div>
         </div>
@@ -23,40 +23,27 @@ export default function TopRankedTable() {
         </div>
       </div>
 
-      <div className="overflow-x-auto mt-4">
-        <table className="w-full text-left text-xs">
-          <thead>
-            <tr className="text-slate-400 border-b border-white/10 uppercase font-mono text-[10px]">
-              <th className="py-2.5 px-3">Rank</th>
-              <th className="py-2.5 px-3">Subject</th>
-              <th className="py-2.5 px-3">Unit</th>
-              <th className="py-2.5 px-3">Unit / Lesson Name</th>
-              <th className="py-2.5 px-3 text-center">Avg Marks</th>
-              <th className="py-2.5 px-3 text-right">Exam Date</th>
-              <th className="py-2.5 px-3 text-right">Actions</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-white/5">
-            {TOP_PAPERS.map((row) => (
-              <tr key={row.name} className="hover:bg-white/[0.03] transition">
-                <td className={`py-3.5 px-3 font-bold flex items-center gap-1.5 font-mono ${row.rankColor}`}>{row.rank}</td>
-                <td className="py-3.5 px-3"><span className={`px-2 py-0.5 rounded font-mono font-bold text-[10px] ${row.subColor}`}>{row.sub}</span></td>
-                <td className="py-3.5 px-3 font-mono text-slate-300">{row.unit}</td>
-                <td className="py-3.5 px-3 text-white font-medium">{row.name}</td>
-                <td className="py-3.5 px-3 text-center">
-                  <span className="px-2.5 py-1 rounded-full font-mono font-black text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
-                    {row.score}
-                  </span>
-                  <span className="block text-[9px] text-slate-400 mt-0.5">{row.count}</span>
-                </td>
-                <td className="py-3.5 px-3 text-right font-mono text-slate-400">{row.date}</td>
-                <td className="py-3.5 px-3 text-right">
-                  <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300 border border-white/10">Printed ✓</span>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      <div className="space-y-2.5">
+        {TOP_PAPERS.map((row) => (
+          <div key={row.name} className="glass-panel-elevated p-3 rounded-xl border border-white/5 flex items-center justify-between gap-3 hover:border-white/10 transition">
+            <div className="flex items-center gap-3 min-w-0">
+              <span className={`font-mono font-bold text-xs sm:text-sm w-12 shrink-0 ${row.rankColor}`}>{row.rank}</span>
+              <span className={`px-2 py-0.5 rounded font-mono font-bold text-[10px] shrink-0 ${row.subColor}`}>{row.sub}</span>
+              <div className="min-w-0">
+                <span className="text-xs font-semibold text-white block truncate">{row.unit} • {row.name}</span>
+                <span className="text-[10px] font-mono text-slate-400 block truncate">Exam: {row.date} • {row.count}</span>
+              </div>
+            </div>
+            <div className="flex items-center gap-2.5 shrink-0">
+              <span className="px-2.5 py-1 rounded-full font-mono font-black text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                {row.score}
+              </span>
+              <span className="hidden sm:inline-block px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300 border border-white/10">
+                Printed ✓
+              </span>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

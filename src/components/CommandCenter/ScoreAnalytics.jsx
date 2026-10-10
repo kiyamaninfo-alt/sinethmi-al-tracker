@@ -10,7 +10,7 @@ export default function ScoreAnalytics() {
         <div>
           <div className="flex items-center gap-2">
             <h3 className="text-lg font-bold text-white tracking-wide">
-              📈 Full Paper &amp; Unit Paper Score Progression
+              📈 Full Subject Paper Score Progression
             </h3>
             <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-neon-cyan/15 text-neon-cyan border border-neon-cyan/30">
               Analytics Engine v2
