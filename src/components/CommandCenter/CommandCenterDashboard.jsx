@@ -8,7 +8,8 @@ import ScoreAnalytics from './ScoreAnalytics';
 import UrgentRadarTable from './UrgentRadarTable';
 import SpacedRepetitionStation from './SpacedRepetitionStation';
 import TopRankedTable from './TopRankedTable';
-import WeakAreasAndPending from './WeakAreasAndPending';
+import WeakAreasTable from './WeakAreasTable';
+import PendingLessonsCard from './PendingLessonsCard';
 import CommandCenterFooter from './CommandCenterFooter';
 
 export default function CommandCenterDashboard() {
@@ -47,8 +48,11 @@ export default function CommandCenterDashboard() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <TopRankedTable />
+          <WeakAreasTable />
         </div>
-        <WeakAreasAndPending />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <PendingLessonsCard />
+        </div>
         <CommandCenterFooter />
       </div>
     </div>
