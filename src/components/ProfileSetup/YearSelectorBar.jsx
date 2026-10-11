@@ -11,7 +11,7 @@ export default function YearSelectorBar({ selectedYear, onSelectYear, customExam
   const visibleYears = Array.from({ length: 3 }, (_, i) => String(currentYear + offset + i));
 
   return (
-    <div className="space-y-2">
+    <div id="candidate-target-year" className="space-y-2">
       <label className="text-outline uppercase tracking-wider block text-xs">Target Exam Year</label>
       <div className="flex items-center gap-1.5">
         <button

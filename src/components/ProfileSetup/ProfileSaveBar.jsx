@@ -1,6 +1,6 @@
 export default function ProfileSaveBar({ onSave }) {
   return (
-    <div className="rounded-xl bg-surface-container-low/90 backdrop-blur-xl border border-primary/30 p-4 sm:p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div id="candidate-save-identity" className="rounded-xl bg-surface-container-low/90 backdrop-blur-xl border border-primary/30 p-4 sm:p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
       <div className="flex items-center gap-3">
         <span className="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse" />
         <div>

@@ -1,8 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { INITIAL_PROFILE } from '../../constants/profileSetup';
 import { saveProfileToCloud } from './profileSyncHelper';
-import { getInitialCleanProfile } from './profileCleanState';
+import { getInitialCleanProfile, hydrateProfileWithAuth } from './profileCleanState';
+import { useCandidateProfileSetup } from './useCandidateProfileSetup';
+import { useOnboardingTour } from '../../hooks/useOnboardingTour';
+import OnboardingTourOverlay from './OnboardingTourOverlay';
 import ProfileSetupHeader from './ProfileSetupHeader';
 import ProfileIdentityForm from './ProfileIdentityForm';
 import StreamSelector from './StreamSelector';
@@ -16,28 +19,15 @@ import ProfileSaveBar from './ProfileSaveBar';
 
 export default function CandidateProfileSetup() {
   const navigate = useNavigate();
-  const [profile, setProfile] = useState(getInitialCleanProfile);
-  const [isSaved, setIsSaved] = useState(false);
+  const { profile, setProfile, isSaved, handleChange } = useCandidateProfileSetup(getInitialCleanProfile);
+  const { showTour, tourStep, totalSteps, currentStepData, handleNext, handlePrev, handleSkip, startTour } = useOnboardingTour();
 
   useEffect(() => {
+    hydrateProfileWithAuth(profile, setProfile);
     if (window.location.hash) {
-      setTimeout(() => {
-        document.querySelector(window.location.hash)?.scrollIntoView({ behavior: 'smooth' });
-      }, 150);
+      setTimeout(() => document.querySelector(window.location.hash)?.scrollIntoView({ behavior: 'smooth' }), 150);
     }
   }, []);
-
-  const handleChange = (field, val) => setProfile((prev) => {
-    const next = { ...prev, [field]: val };
-    localStorage.setItem('candidate_profile', JSON.stringify(next));
-    return next;
-  });
-
-  const handleUpdate = () => {
-    localStorage.setItem('candidate_profile', JSON.stringify(profile));
-    setIsSaved(true);
-    setTimeout(() => setIsSaved(false), 2500);
-  };
 
   const handleSaveAndEnter = async () => {
     localStorage.setItem('candidate_profile', JSON.stringify(profile));
@@ -47,14 +37,17 @@ export default function CandidateProfileSetup() {
 
   return (
     <div className="min-h-screen bg-[#050811] text-slate-200 antialiased relative pb-16">
+      {showTour && (
+        <OnboardingTourOverlay currentStep={tourStep} totalSteps={totalSteps} stepData={currentStepData} onNext={handleNext} onPrev={handlePrev} onSkip={handleSkip} />
+      )}
       <div className="fixed inset-0 pointer-events-none opacity-20 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] z-0" />
       <main className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-6 space-y-6">
-        <ProfileSetupHeader profile={profile} onSave={handleSaveAndEnter} isSaved={isSaved} />
-        <ProfileIdentityForm profile={profile} onChange={handleChange} onUpdate={handleUpdate} isSaved={isSaved} />
+        <ProfileSetupHeader profile={profile} onSave={handleSaveAndEnter} isSaved={isSaved} onStartTour={startTour} />
+        <ProfileIdentityForm profile={profile} onChange={handleChange} isSaved={isSaved} />
         <StreamSelector
           selectedStream={profile.stream} onSelectStream={(s) => handleChange('stream', s)}
           subjects={profile.subjects} onUpdateSubjects={(subs) => handleChange('subjects', subs)}
-          onUpdate={handleUpdate} isSaved={isSaved}
+          onUpdate={handleSaveAndEnter} isSaved={isSaved}
         />
         <SubjectSelector subjects={profile.subjects} onUpdateSubjects={(subs) => handleChange('subjects', subs)} />
         <TargetHorizonForm profile={profile} onChange={handleChange} />

@@ -37,7 +37,7 @@ export const INITIAL_PROFILE = {
   district: '',
   town: '',
   phone: '',
-  stream: 'Technology',
+  stream: '',
   targetYear: '2028',
   targetRank: 'Top 50 Island Rank',
   targetZScore: '2.450',
@@ -66,10 +66,6 @@ export const INITIAL_PROFILE = {
     keySoundEnabled: true,
     vibrateEnabled: true
   },
-  subjectScoreTargets: { et: 85, sft: 80, ict: 85 },
-  subjects: [
-    { id: 'et', code: 'ET-065', name: 'Engineering Technology', sinhala: 'ඉංජිනේරු තාක්ෂණවේදය', color: 'violet', units: 14, hours: 9 },
-    { id: 'sft', code: 'SFT-066', name: 'Science for Technology', sinhala: 'තාක්ෂණවේදය සඳහා විද්‍යාව', color: 'cyan', units: 23, hours: 8 },
-    { id: 'ict', code: 'ICT-020', name: 'Information & Comm. Tech', sinhala: 'තොරතුරු හා සන්නිවේදන', color: 'emerald', units: 13, hours: 8 }
-  ]
+  subjectScoreTargets: {},
+  subjects: []
 };

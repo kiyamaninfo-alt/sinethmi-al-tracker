@@ -16,9 +16,15 @@ export default function LoginForm({ lang = 'si' }) {
     setErrorMessage(''); setLoading(true);
     const res = await handleSmartLaunch(email, password);
     setLoading(false);
-    if (res.action === 'dashboard') navigate('/command-center');
-    else if (res.action === 'profile_setup') navigate('/profile-setup');
-    else if (res.action === 'error') setErrorMessage(res.error);
+    if (res.action === 'dashboard') {
+      navigate('/command-center');
+    } else if (res.action === 'profile_setup') {
+      localStorage.removeItem('candidate_profile');
+      localStorage.removeItem('onboarding_completed');
+      navigate('/profile-setup');
+    } else if (res.action === 'error') {
+      setErrorMessage(res.error);
+    }
   };
 
   const handleGoogle = async () => {

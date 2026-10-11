@@ -32,10 +32,6 @@ export async function signInWithGoogle() {
 
 export async function handleSmartLaunch(email, password) {
   const trimmed = email.trim().toLowerCase();
-  if (trimmed.endsWith('@gmail.com')) {
-    await signInWithGoogle();
-    return { action: 'oauth' };
-  }
   const { data: signInData, error: signInErr } = await signInWithEmail(trimmed, password);
   if (!signInErr && signInData?.user) {
     return { action: 'dashboard', user: signInData.user };

@@ -37,7 +37,7 @@ export default function StreamSelector({ selectedStream, onSelectStream, subject
   const handleToggleEdit = () => isEditing ? setIsEditing(false) : (setIsEditing(true), setModalStream(selectedStream));
 
   return (
-    <div className="rounded-xl bg-surface-container-low/80 border border-outline-variant/30 p-5 space-y-4 backdrop-blur-md">
+    <div id="candidate-stream-select" className="rounded-xl bg-surface-container-low/80 border border-outline-variant/30 p-5 space-y-4 backdrop-blur-md">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
         <div>
           <h3 className="text-sm font-bold text-on-surface flex items-center gap-2">

@@ -21,7 +21,9 @@ export default function SubjectSelector({ subjects, onUpdateSubjects }) {
   };
 
   return (
-    <div className="rounded-xl bg-surface-container-low/80 border border-outline-variant/30 p-5 space-y-4 backdrop-blur-md">
+    <div id="candidate-subjects-grid" className={`rounded-xl bg-surface-container-low/80 border border-outline-variant/30 p-5 space-y-4 backdrop-blur-md transition-opacity duration-300 ${
+      subjects.length === 0 ? 'opacity-60 border-dashed' : 'opacity-100'
+    }`}>
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
         <div>
           <h3 className="text-sm font-bold text-on-surface flex items-center gap-2">
