@@ -29,13 +29,14 @@ export const RANK_TARGET_OPTIONS = [
 export { PROVINCES_MAP } from './provinces';
 
 export const INITIAL_PROFILE = {
-  name: 'Sinethmi Rathnayake',
-  avatarUrl: 'https://lh3.googleusercontent.com/aida/AEtjO1X_PS4ssj3l1MLwBhuXGwsVh1pDEBb4aHZkZ7uXn5TnvOOC5penLaH1rKhot9-NejghHngxQbYl-inE4WaRqJvO7mowZwjl-L8pkiqJs3TL_qnfhciMQ1suxunGUPCxs3bkfkiDrFLFDSB8gnpJFW9B7nof1xJOlFIYmYRSjcmYnieRAMJckzkLMBAAMcAMMNR7pYd5wpSJjDYsRZKbUR3Eb6PQ6zV5qeWSHJ397V8SAQ',
-  school: 'Visakha Vidyalaya Colombo',
-  province: 'Western',
-  district: 'Colombo',
-  town: 'Bambalapitiya',
-  phone: '+94 77 123 4567',
+  name: '',
+  candidateIndex: '',
+  avatarUrl: '',
+  school: '',
+  province: '',
+  district: '',
+  town: '',
+  phone: '',
   stream: 'Technology',
   targetYear: '2028',
   targetRank: 'Top 50 Island Rank',
