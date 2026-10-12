@@ -5,6 +5,7 @@ import { useTimerCountdown } from './useTimerCountdown';
 import { useVideoPopupState } from './useVideoPopupState';
 import { useTimerLiveSettingsSync } from './useTimerLiveSettingsSync';
 import { useTimerTabSync } from './useTimerTabSync';
+import { useTimerAmbientSound } from './useTimerAmbientSound';
 
 export function useFocusTimerLogic(alarmSettings = {}, preferences = {}) {
   const [selectedSubjectId, setSelectedSubjectId] = useState('');
@@ -29,6 +30,7 @@ export function useFocusTimerLogic(alarmSettings = {}, preferences = {}) {
 
   useTimerLiveSettingsSync({ isActive, sessionMode, durationMin, breakMin, setSecondsLeft });
   useTimerTabSync({ isActive, isPaused, secondsLeft, sessionMode, currentRound, totalRounds });
+  useTimerAmbientSound({ isActive, isPaused, sessionMode, isMuted, alarmSettings });
 
   const triggerSound = (dur = 0.5) => { if (!isMuted) playAlarmTone(alarmSettings.soundTrack || 'radar_ping', dur); };
   const startAlarm = () => { if (!isMuted) startAlarmLoop(alarmSettings.soundTrack || 'pulse_alarm'); };
@@ -49,8 +51,7 @@ export function useFocusTimerLogic(alarmSettings = {}, preferences = {}) {
 
   const handleResume = () => {
     setIsPaused(false);
-    if (alarmSettings.videoEnabled && videoUrl && !video.promptCloseVideo) video.setShowVideo(true);
-    triggerSound(0.2);
+    if (alarmSettings.videoEnabled && videoUrl && !video.promptCloseVideo) video.setShowVideo(true); triggerSound(0.2);
   };
 
   useTimerCountdown({
@@ -62,8 +63,7 @@ export function useFocusTimerLogic(alarmSettings = {}, preferences = {}) {
   const handleConfirmNextRound = () => {
     stopAlarmLoop(); setCurrentRound(pendingNextRound); setPendingNextRound(null);
     setSessionMode('study'); setSecondsLeft(durationMin * 60); preAlarmFired.current = false;
-    setIsPaused(false); if (alarmSettings.videoEnabled && videoUrl) video.setShowVideo(true);
-    triggerSound(0.4);
+    setIsPaused(false); if (alarmSettings.videoEnabled && videoUrl) video.setShowVideo(true); triggerSound(0.4);
   };
 
   return {

@@ -26,6 +26,8 @@ export const DEFAULT_ALARM_SETTINGS = {
   soundEnabled: true,
   soundTrack: 'radar_ping',
   randomSound: false,
+  ambientNoiseTrack: 'brown',
+  ambientNoiseEnabled: true,
   videoEnabled: false,
   videoTrack: 'lofi_study',
   customVideoUrl: '',
