@@ -6,6 +6,7 @@ import { saveProfileToCloud } from './profileSyncHelper';
 import { getInitialCleanProfile, hydrateProfileWithAuth } from './profileCleanState';
 import { useCandidateProfileSetup } from './useCandidateProfileSetup';
 import { useOnboardingTour } from '../../hooks/useOnboardingTour';
+import { useGlobalFeedbackAudio } from '../../hooks/useGlobalFeedbackAudio';
 import OnboardingTourOverlay from './OnboardingTourOverlay';
 import ProfileSetupHeader from './ProfileSetupHeader';
 import ProfileIdentityForm from './ProfileIdentityForm';
@@ -21,6 +22,7 @@ import ProfileSaveBar from './ProfileSaveBar';
 export default function CandidateProfileSetup() {
   const navigate = useNavigate();
   const { profile, setProfile, isSaved, handleChange } = useCandidateProfileSetup(getInitialCleanProfile);
+  useGlobalFeedbackAudio(profile?.notificationSettings);
   const isExistingUser = Boolean(profile?.name?.trim() || (profile?.subjects && profile.subjects.length > 0));
   const { showTour, tourStep, totalSteps, currentStepData, handleNext, handlePrev, handleSkip, startTour } = useOnboardingTour(isExistingUser);
 

@@ -6,12 +6,11 @@ import StudyAnalyticsDashboard from './components/StudyAnalytics/StudyAnalyticsD
 import VisualAnalyticsDashboard from './components/VisualAnalytics/VisualAnalyticsDashboard';
 import SyllabusManagerPage from './components/SyllabusManager/SyllabusManagerPage';
 import DevNav from './components/DevNav';
-
 import StudyTrackerLandingPage from './components/LandingPage/StudyTrackerLandingPage';
-
 import AuthCallbackHandler from './components/CandidateLogin/AuthCallbackHandler';
-
 import ProtectedRoute from './components/ProtectedRoute';
+import { useCandidateProfile } from './hooks/useCandidateProfile';
+import { useGlobalFeedbackAudio } from './hooks/useGlobalFeedbackAudio';
 
 function RouteContent() {
   const navigate = useNavigate();
@@ -36,6 +35,8 @@ function RouteContent() {
 }
 
 export default function App() {
+  const profile = useCandidateProfile();
+  useGlobalFeedbackAudio(profile?.notificationSettings);
   const showDev = import.meta.env.DEV || window.location.search.includes('dev=true');
 
   return (

@@ -23,6 +23,11 @@ export async function getCandidateSubjects(userId) {
 export async function syncCandidateSubjects(userId, subjectsArray = []) {
   if (!userId) return { data: null, error: new Error('User ID is required') };
   try {
+    if (subjectsArray.length === 0) {
+      const { error: delErr } = await supabase.from('subjects').delete().eq('user_id', userId);
+      return { data: [], error: delErr };
+    }
+
     const payload = subjectsArray.map((s, idx) => ({
       user_id: userId,
       slug: s.id || s.slug || `sub_${idx}`,
@@ -36,6 +41,9 @@ export async function syncCandidateSubjects(userId, subjectsArray = []) {
       credits: Number(s.credits ?? 4.0),
       display_order: idx
     }));
+
+    const activeSlugs = payload.map((p) => p.slug);
+    await supabase.from('subjects').delete().eq('user_id', userId).not('slug', 'in', `(${activeSlugs.join(',')})`);
 
     const { data, error } = await supabase
       .from('subjects')

@@ -10,7 +10,7 @@ export default function HapticAndAudioFeedback({
   onToggleVibrate,
   disabled
 }) {
-  const handleTestVibrate = () => {
+  const handleVibrate = () => {
     playClickSound('subtle');
     if ('vibrate' in navigator) navigator.vibrate(50);
   };
@@ -24,44 +24,35 @@ export default function HapticAndAudioFeedback({
           <span className="material-symbols-outlined text-[14px] text-cyan-400">touch_app</span>
           Interactive Feedback &amp; Haptics
         </span>
-        {vibrateEnabled && (
-          <button
-            type="button"
-            onClick={handleTestVibrate}
-            className="text-[10px] font-mono text-cyan-400 hover:text-cyan-300 underline cursor-pointer"
-          >
-            Test Pulse
-          </button>
-        )}
+        <div className="flex items-center gap-2">
+          {keySoundEnabled && (
+            <button type="button" onClick={() => playClickSound('key')} className="text-[10px] font-mono text-cyan-400 hover:text-cyan-300 underline cursor-pointer">
+              Test Tap
+            </button>
+          )}
+          {vibrateEnabled && (
+            <button type="button" onClick={handleVibrate} className="text-[10px] font-mono text-emerald-400 hover:text-emerald-300 underline cursor-pointer">
+              Test Pulse
+            </button>
+          )}
+        </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
         <FeedbackToggleItem
-          title="Click Sounds"
-          subtitle="Audio click on UI buttons &amp; actions"
-          icon="volume_up"
-          enabled={clickSoundEnabled}
-          onToggle={onToggleClickSound}
-          color="cyan"
-          disabled={disabled}
+          title="Click Sounds" subtitle="Audio click on UI buttons &amp; actions"
+          icon="volume_up" enabled={clickSoundEnabled} onToggle={onToggleClickSound}
+          color="cyan" disabled={disabled}
         />
         <FeedbackToggleItem
-          title="Key Sound"
-          subtitle="Audio clicks on keyboard typing"
-          icon="keyboard"
-          enabled={keySoundEnabled}
-          onToggle={onToggleKeySound}
-          color="cyan"
-          disabled={disabled}
+          title="Key Sound" subtitle="Audio clicks on keyboard typing"
+          icon="keyboard" enabled={keySoundEnabled} onToggle={onToggleKeySound}
+          color="cyan" disabled={disabled}
         />
         <FeedbackToggleItem
-          title="Vibration"
-          subtitle="Haptic tactile alerts on touch"
-          icon="vibration"
-          enabled={vibrateEnabled}
-          onToggle={onToggleVibrate}
-          color="emerald"
-          disabled={disabled}
+          title="Vibration" subtitle="Haptic tactile alerts on touch"
+          icon="vibration" enabled={vibrateEnabled} onToggle={onToggleVibrate}
+          color="emerald" disabled={disabled}
         />
       </div>
     </div>

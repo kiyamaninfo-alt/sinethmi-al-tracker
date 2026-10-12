@@ -27,18 +27,24 @@ export async function hydrateProfileWithAuth(currentProfile, setProfile) {
       localStorage.removeItem('candidate_profile');
     }
 
-    const { data: cloudProfile } = await supabase
-      .from('profiles')
-      .select('*')
-      .eq('id', user.id)
-      .maybeSingle();
+    const [{ data: cloudProfile }, { data: cloudSubjects }] = await Promise.all([
+      supabase.from('profiles').select('*').eq('id', user.id).maybeSingle(),
+      supabase.from('subjects').select('*').eq('user_id', user.id).order('display_order', { ascending: true })
+    ]);
 
     const generatedIndex = String(Math.abs(user.id.split('').reduce((acc, c) => ((acc << 5) - acc) + c.charCodeAt(0), 0)) % 9000000 + 1000000);
+
+    const mappedSubjects = cloudSubjects && cloudSubjects.length > 0 ? cloudSubjects.map((cs) => ({
+      id: cs.slug, code: cs.code, name: cs.name, sinhala: cs.sinhala, color: cs.color,
+      hours: Number(cs.weekly_hours), units: Number(cs.total_units), credits: Number(cs.credits),
+      targetScore: Number(cs.target_score)
+    })) : null;
 
     if (cloudProfile && cloudProfile.name) {
       const merged = {
         ...INITIAL_PROFILE,
         ...cloudProfile,
+        subjects: mappedSubjects || parsedCache?.subjects || INITIAL_PROFILE.subjects,
         userId: user.id,
         email: user.email,
         candidateIndex: cloudProfile.candidate_index || generatedIndex,

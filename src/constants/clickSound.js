@@ -1,13 +1,14 @@
 // Micro sound player utility for UI audio cues (<80 lines)
 let audioCtx = null;
 
-function getAudioCtx() {
+export function getAudioCtx() {
+  if (typeof window === 'undefined') return null;
   if (!audioCtx) {
-    const AudioContext = window.AudioContext || window.webkitAudioContext;
-    if (AudioContext) audioCtx = new AudioContext();
+    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+    if (AudioContextClass) audioCtx = new AudioContextClass();
   }
   if (audioCtx && audioCtx.state === 'suspended') {
-    audioCtx.resume();
+    audioCtx.resume().catch(() => {});
   }
   return audioCtx;
 }
@@ -20,36 +21,46 @@ export function playClickSound(type = 'subtle') {
     const gain = ctx.createGain();
     const now = ctx.currentTime;
 
-    if (type === 'toggle_on') {
+    if (type === 'key') {
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(650, now);
+      osc.frequency.exponentialRampToValueAtTime(320, now + 0.04);
+      gain.gain.setValueAtTime(0.18, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.04);
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start(now);
+      osc.stop(now + 0.04);
+    } else if (type === 'toggle_on') {
       osc.type = 'sine';
       osc.frequency.setValueAtTime(800, now);
-      osc.frequency.exponentialRampToValueAtTime(1200, now + 0.05);
-      gain.gain.setValueAtTime(0.12, now);
-      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+      osc.frequency.exponentialRampToValueAtTime(1200, now + 0.06);
+      gain.gain.setValueAtTime(0.2, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.06);
       osc.connect(gain);
       gain.connect(ctx.destination);
       osc.start(now);
-      osc.stop(now + 0.05);
+      osc.stop(now + 0.06);
     } else if (type === 'toggle_off') {
       osc.type = 'sine';
-      osc.frequency.setValueAtTime(1000, now);
-      osc.frequency.exponentialRampToValueAtTime(500, now + 0.05);
-      gain.gain.setValueAtTime(0.1, now);
-      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+      osc.frequency.setValueAtTime(950, now);
+      osc.frequency.exponentialRampToValueAtTime(450, now + 0.06);
+      gain.gain.setValueAtTime(0.18, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.06);
       osc.connect(gain);
       gain.connect(ctx.destination);
       osc.start(now);
-      osc.stop(now + 0.05);
+      osc.stop(now + 0.06);
     } else {
       osc.type = 'sine';
-      osc.frequency.setValueAtTime(1200, now);
-      osc.frequency.exponentialRampToValueAtTime(800, now + 0.03);
-      gain.gain.setValueAtTime(0.08, now);
-      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.03);
+      osc.frequency.setValueAtTime(1100, now);
+      osc.frequency.exponentialRampToValueAtTime(600, now + 0.035);
+      gain.gain.setValueAtTime(0.15, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.035);
       osc.connect(gain);
       gain.connect(ctx.destination);
       osc.start(now);
-      osc.stop(now + 0.03);
+      osc.stop(now + 0.035);
     }
   } catch (err) {}
 }

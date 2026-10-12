@@ -19,8 +19,11 @@ export default function FeedbackToggleItem({
   const handleClick = () => {
     if (disabled) return;
     const nextState = !enabled;
-    if (nextState) playClickSound('toggle_on');
-    else playClickSound('toggle_off');
+    if (icon === 'keyboard') {
+      playClickSound(nextState ? 'key' : 'toggle_off');
+    } else {
+      playClickSound(nextState ? 'toggle_on' : 'toggle_off');
+    }
     onToggle(nextState);
   };
 
