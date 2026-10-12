@@ -1,25 +1,18 @@
 import { useNavigate } from 'react-router-dom';
 import { capitalizeWords } from '../../utils/formatters';
-import SoundQuickToggle from './SoundQuickToggle';
 
-export default function ProfileSetupHeader({ profile, onSave, isSaved, onStartTour, onLoadMock, onToggleClickSound }) {
+export default function ProfileSetupHeader({ profile, onSave, isSaved, onStartTour }) {
   const navigate = useNavigate();
   const handleSave = onSave || (() => navigate('/command-center'));
   const isEmailVerified = Boolean(profile.isEmailVerified ?? profile.emailVerified ?? false);
   const displayName = profile.name ? capitalizeWords(profile.name) : (profile.email || 'Candidate');
   const displaySchool = profile.school ? capitalizeWords(profile.school) : '';
   const displayDistrict = profile.district ? capitalizeWords(profile.district) : '';
-  const isSoundActive = profile?.notificationSettings?.clickSoundEnabled !== false;
 
   return (
     <div className="space-y-4">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-outline-variant/20">
         <div>
-          <div className="flex items-center space-x-2 text-xs font-mono text-outline mb-1">
-            <span>Mission Control</span><span className="text-outline-variant">/</span>
-            <span>Configuration</span><span className="text-outline-variant">/</span>
-            <span className="text-secondary font-medium">Candidate Parameters</span>
-          </div>
           <h1 className="text-xl md:text-2xl font-black tracking-tight text-on-surface flex items-center gap-3">
             Sinethmi A-Level Mission Control
             <span className="text-[10px] font-mono tracking-wider uppercase px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary border border-secondary/40">{profile.targetYear || '2028'} Horizon</span>
@@ -27,15 +20,6 @@ export default function ProfileSetupHeader({ profile, onSave, isSaved, onStartTo
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
-          {onToggleClickSound && (
-            <SoundQuickToggle enabled={isSoundActive} onToggle={onToggleClickSound} />
-          )}
-          {onLoadMock && (
-            <button type="button" onClick={onLoadMock} title="Populate all fields with standard mock data" className="px-3 py-1.5 rounded-lg border border-purple-400/40 bg-purple-500/10 hover:bg-purple-500/20 text-purple-300 text-xs font-mono flex items-center gap-1.5 transition-all cursor-pointer">
-              <span className="material-symbols-outlined text-[15px]">auto_fix_high</span>
-              <span>Fill Mock Data</span>
-            </button>
-          )}
           {onStartTour && (
             <button type="button" onClick={onStartTour} className="px-3 py-1.5 rounded-lg border border-cyan-400/40 bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-300 text-xs font-mono flex items-center gap-1.5 transition-all cursor-pointer">
               <span className="material-symbols-outlined text-[15px]">help</span>

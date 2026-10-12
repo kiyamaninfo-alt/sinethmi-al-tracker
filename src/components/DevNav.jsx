@@ -14,6 +14,7 @@ export default function DevNav() {
   const [isTourActive, setIsTourActive] = useState(() => {
     return sessionStorage.getItem('onboarding_tour_active') === 'true';
   });
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleTourChange = (e) => setIsTourActive(Boolean(e.detail?.isActive));
@@ -21,10 +22,27 @@ export default function DevNav() {
     return () => window.removeEventListener('tourstatechange', handleTourChange);
   }, []);
 
-  if (isTourActive) return null;
+  useEffect(() => {
+    let hideTimer = null;
+    const handleScroll = () => {
+      setIsVisible(true);
+      if (hideTimer) clearTimeout(hideTimer);
+      hideTimer = setTimeout(() => {
+        setIsVisible(false);
+      }, 3000);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (hideTimer) clearTimeout(hideTimer);
+    };
+  }, []);
+
+  if (isTourActive || !isVisible) return null;
 
   return (
-    <nav className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1.5 p-1.5 rounded-full bg-slate-900/90 border border-white/10 backdrop-blur-md shadow-2xl text-xs font-mono max-w-[95vw] overflow-x-auto">
+    <nav className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1.5 p-1.5 rounded-full bg-slate-900/90 border border-white/10 backdrop-blur-md shadow-2xl text-xs font-mono max-w-[95vw] overflow-x-auto transition-all animate-in fade-in duration-300">
       {navItems.map(({ path, label, color }) => (
         <NavLink
           key={path}
