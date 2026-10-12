@@ -15,15 +15,9 @@ function isReturningUser() {
   return false;
 }
 
-export function useOnboardingTour(isExistingUser = false) {
+export function useOnboardingTour() {
   const [tourStep, setTourStep] = useState(0);
-  const [showTour, setShowTour] = useState(() => !isReturningUser() && !isExistingUser);
-
-  useEffect(() => {
-    if (isExistingUser && showTour && !sessionStorage.getItem('tour_manually_opened')) {
-      setShowTour(false);
-    }
-  }, [isExistingUser, showTour]);
+  const [showTour, setShowTour] = useState(() => !isReturningUser());
 
   useEffect(() => {
     if (!showTour) return;

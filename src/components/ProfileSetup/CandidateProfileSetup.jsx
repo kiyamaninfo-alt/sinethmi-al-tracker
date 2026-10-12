@@ -23,8 +23,7 @@ export default function CandidateProfileSetup() {
   const navigate = useNavigate();
   const { profile, setProfile, isSaved, handleChange } = useCandidateProfileSetup(getInitialCleanProfile);
   useGlobalFeedbackAudio(profile?.notificationSettings);
-  const isExistingUser = Boolean(profile?.name?.trim() || (profile?.subjects && profile.subjects.length > 0));
-  const { showTour, tourStep, totalSteps, currentStepData, handleNext, handlePrev, handleSkip, startTour } = useOnboardingTour(isExistingUser);
+  const { showTour, tourStep, totalSteps, currentStepData, handleNext, handlePrev, handleSkip, startTour } = useOnboardingTour();
 
   useEffect(() => {
     hydrateProfileWithAuth(profile, setProfile);

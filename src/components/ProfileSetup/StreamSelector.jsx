@@ -32,9 +32,10 @@ export default function StreamSelector({ selectedStream, onSelectStream, subject
   };
 
   const baseStreams = customStream ? [customStream, ...STANDARD_STREAMS] : STANDARD_STREAMS;
-  const isSelectedWithSubjects = Boolean(selectedStream && subjects && subjects.length > 0 && !isEditing);
-  const displayStreams = isSelectedWithSubjects ? baseStreams.filter((s) => s.name === selectedStream) : baseStreams;
-  const handleToggleEdit = () => isEditing ? setIsEditing(false) : (setIsEditing(true), setModalStream(selectedStream));
+  const handleToggleEdit = () => {
+    if (isEditing) { setIsEditing(false); }
+    else { setIsEditing(true); setModalStream(selectedStream || STANDARD_STREAMS[0].name); setIsModalOpen(true); }
+  };
 
   return (
     <div id="candidate-stream-select" className="rounded-xl bg-surface-container-low/80 border border-outline-variant/30 p-5 space-y-4 backdrop-blur-md">
@@ -52,8 +53,8 @@ export default function StreamSelector({ selectedStream, onSelectStream, subject
         </div>
       </div>
 
-      <div className={isSelectedWithSubjects ? "flex justify-center max-w-sm mx-auto w-full" : "grid grid-cols-2 sm:grid-cols-3 gap-3 items-stretch"}>
-        {displayStreams.map((st) => (
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 items-stretch">
+        {baseStreams.map((st) => (
           <StreamButton key={st.id} stream={st} isSelected={selectedStream === st.name} isDimmed={false}
             isEditing={isEditing} subjects={selectedStream === st.name ? subjects : []} onClick={() => handleCardClick(st.name)}
             onDeleteCustom={handleDeleteCustom} onEditCustom={() => setIsCustomOpen(true)} />
