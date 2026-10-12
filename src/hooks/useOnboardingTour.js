@@ -2,17 +2,7 @@ import { useState, useEffect } from 'react';
 import { ONBOARDING_STEPS } from '../constants/onboardingTour';
 
 function isReturningUser() {
-  if (localStorage.getItem('onboarding_completed') === 'true') return true;
-  try {
-    const raw = localStorage.getItem('candidate_profile');
-    if (raw) {
-      const p = JSON.parse(raw);
-      if (p?.name?.trim() || p?.userId || (p?.subjects && p.subjects.length > 0)) {
-        return true;
-      }
-    }
-  } catch (e) {}
-  return false;
+  return localStorage.getItem('onboarding_completed') === 'true';
 }
 
 export function useOnboardingTour() {
