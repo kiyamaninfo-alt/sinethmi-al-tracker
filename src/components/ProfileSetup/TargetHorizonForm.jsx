@@ -20,7 +20,7 @@ function calculateExamCountdown(targetYear, customExamDate) {
   return Math.max(0, Math.ceil((examDate.getTime() - now.getTime()) / 86400000));
 }
 
-export default function TargetHorizonForm({ profile, onChange }) {
+export default function TargetHorizonForm({ profile, onChange, error }) {
   const daysRemaining = calculateExamCountdown(profile.targetYear, profile.customExamDate);
 
   const handleScoreTargetChange = (subId, score) => {
@@ -51,6 +51,7 @@ export default function TargetHorizonForm({ profile, onChange }) {
             onSelectYear={(y) => onChange('targetYear', y)}
             customExamDate={profile.customExamDate}
             onSelectCustomDate={(d) => onChange('customExamDate', d)}
+            error={error}
           />
           <SubjectScoreTarget subjects={profile.subjects || []} targets={profile.subjectScoreTargets || {}} onChangeTarget={handleScoreTargetChange} />
         </div>

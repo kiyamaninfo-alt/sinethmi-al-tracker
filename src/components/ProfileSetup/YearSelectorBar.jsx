@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ExamDatePicker from './ExamDatePicker';
 
-export default function YearSelectorBar({ selectedYear, onSelectYear, customExamDate, onSelectCustomDate }) {
+export default function YearSelectorBar({ selectedYear, onSelectYear, customExamDate, onSelectCustomDate, error }) {
   const currentYear = new Date().getFullYear();
   const [offset, setOffset] = useState(() => {
     const sel = parseInt(selectedYear, 10);
@@ -11,8 +11,11 @@ export default function YearSelectorBar({ selectedYear, onSelectYear, customExam
   const visibleYears = Array.from({ length: 3 }, (_, i) => String(currentYear + offset + i));
 
   return (
-    <div id="candidate-target-year" className="space-y-2">
-      <label className="text-outline uppercase tracking-wider block text-xs">Target Exam Year</label>
+    <div id="candidate-target-year" className={`space-y-2 p-2 rounded-xl transition-colors ${
+      error ? 'border border-rose-500 ring-2 ring-rose-500/30 bg-rose-950/20' : ''
+    }`}>
+      <label className="text-outline uppercase tracking-wider block text-xs">Target Exam Year *</label>
+      {error && <p className="text-[11px] text-rose-400 font-sans">{error}</p>}
       <div className="flex items-center gap-1.5">
         <button
           type="button"

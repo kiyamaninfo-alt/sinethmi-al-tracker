@@ -61,15 +61,16 @@ export function useOnboardingTour(onComplete) {
     setShowTour(false);
   };
 
-  const startTour = () => {
-    sessionStorage.setItem('tour_manually_opened', 'true');
-    setTourStep(0);
-    setShowTour(true);
+  const jumpToStep = (idx) => {
+    if (typeof idx === 'number' && idx >= 0 && idx < ONBOARDING_STEPS.length) {
+      setTourStep(idx);
+      setShowTour(true);
+    }
   };
 
   return {
     showTour, tourStep, totalSteps: ONBOARDING_STEPS.length,
     currentStepData: ONBOARDING_STEPS[tourStep],
-    handleNext, handlePrev, handleSkip, startTour
+    handleNext, handlePrev, handleSkip, startTour, jumpToStep
   };
 }

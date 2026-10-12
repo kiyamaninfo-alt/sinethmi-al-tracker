@@ -1,13 +1,7 @@
-import { PROVINCES_MAP } from '../../constants/profileSetup';
 import WhatsAppLogo from './WhatsAppLogo';
+import CandidateLocationFields from './CandidateLocationFields';
 
-export default function ProfileIdentityForm({ profile, onChange }) {
-  const districts = PROVINCES_MAP[profile.province] || [];
-  const handleProv = (e) => {
-    onChange('province', e.target.value);
-    onChange('district', (PROVINCES_MAP[e.target.value] || [])[0] || '');
-  };
-
+export default function ProfileIdentityForm({ profile, onChange, errors = {} }) {
   return (
     <div className="rounded-xl bg-surface-container-low/80 border border-outline-variant/30 p-5 space-y-4 backdrop-blur-md">
       <div className="flex items-center gap-4 pb-3 border-b border-outline-variant/20">
@@ -24,8 +18,15 @@ export default function ProfileIdentityForm({ profile, onChange }) {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
         <div>
-          <label className="text-outline uppercase tracking-wider block mb-1">Candidate Full Name</label>
-          <input id="candidate-name-input" type="text" value={profile.name} onChange={(e) => onChange('name', e.target.value)} placeholder="Enter candidate full name" className="w-full bg-surface-container-high/60 border border-outline-variant/40 rounded-lg px-3 py-2 text-on-surface focus:border-primary focus:outline-none" />
+          <label className="text-outline uppercase tracking-wider block mb-1">Candidate Full Name *</label>
+          <input
+            id="candidate-name-input" type="text" value={profile.name} onChange={(e) => onChange('name', e.target.value)}
+            placeholder="Enter candidate full name"
+            className={`w-full bg-surface-container-high/60 border rounded-lg px-3 py-2 text-on-surface focus:outline-none transition-colors ${
+              errors.name ? 'border-rose-500 ring-2 ring-rose-500/30' : 'border-outline-variant/40 focus:border-primary'
+            }`}
+          />
+          {errors.name && <p className="text-[11px] text-rose-400 mt-1 font-sans">{errors.name}</p>}
         </div>
         <div>
           <label className="text-outline uppercase tracking-wider block mb-1 flex items-center justify-between">
@@ -38,32 +39,20 @@ export default function ProfileIdentityForm({ profile, onChange }) {
           <label className="text-outline uppercase tracking-wider block mb-1">School / Academy</label>
           <input type="text" value={profile.school} onChange={(e) => onChange('school', e.target.value)} placeholder="Enter school name" className="w-full bg-surface-container-high/60 border border-outline-variant/40 rounded-lg px-3 py-2 text-on-surface focus:border-primary focus:outline-none" />
         </div>
-        <div>
-          <label className="text-outline uppercase tracking-wider block mb-1">Province</label>
-          <select value={profile.province} onChange={handleProv} className="w-full bg-surface-container-high border border-outline-variant/40 rounded-lg px-3 py-2 text-on-surface focus:border-primary focus:outline-none">
-            <option value="">Select Province</option>
-            {Object.keys(PROVINCES_MAP).map((p) => (<option key={p} value={p} className="bg-surface-container-high">{p}</option>))}
-          </select>
-        </div>
-        <div className="grid grid-cols-2 gap-2">
-          <div>
-            <label className="text-outline uppercase tracking-wider block mb-1">District</label>
-            <select value={profile.district} onChange={(e) => onChange('district', e.target.value)} className="w-full bg-surface-container-high border border-outline-variant/40 rounded-lg px-2 py-2 text-on-surface focus:border-primary focus:outline-none">
-              <option value="">Select District</option>
-              {districts.map((d) => <option key={d} value={d} className="bg-surface-container-high">{d}</option>)}
-            </select>
-          </div>
-          <div>
-            <label className="text-outline uppercase tracking-wider block mb-1">Town</label>
-            <input type="text" value={profile.town} onChange={(e) => onChange('town', e.target.value)} placeholder="Enter town" className="w-full bg-surface-container-high/60 border border-outline-variant/40 rounded-lg px-2 py-2 text-on-surface focus:border-primary focus:outline-none" />
-          </div>
-        </div>
+        <CandidateLocationFields profile={profile} onChange={onChange} />
         <div className="md:col-span-2">
           <label className="text-outline uppercase tracking-wider block mb-1 flex items-center gap-1.5 text-emerald-400">
             <WhatsAppLogo className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-            <span>WhatsApp Number (Alerts & Telemetry)</span>
+            <span>WhatsApp Number (Alerts & Telemetry) *</span>
           </label>
-          <input id="candidate-phone-input" type="tel" value={profile.phone} onChange={(e) => onChange('phone', e.target.value)} placeholder="+94 7X XXX XXXX" className="w-full bg-surface-container-high/60 border border-outline-variant/40 rounded-lg px-3 py-2 text-on-surface font-mono focus:border-emerald-400 focus:outline-none" />
+          <input
+            id="candidate-phone-input" type="tel" value={profile.phone} onChange={(e) => onChange('phone', e.target.value)}
+            placeholder="+94 7X XXX XXXX"
+            className={`w-full bg-surface-container-high/60 border rounded-lg px-3 py-2 text-on-surface font-mono focus:outline-none transition-colors ${
+              errors.phone ? 'border-rose-500 ring-2 ring-rose-500/30' : 'border-outline-variant/40 focus:border-emerald-400'
+            }`}
+          />
+          {errors.phone && <p className="text-[11px] text-rose-400 mt-1 font-sans">{errors.phone}</p>}
         </div>
       </div>
     </div>
