@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { capitalizeWords } from '../../utils/formatters';
 
-export default function ProfileSetupHeader({ profile, onSave, isSaved, onStartTour }) {
+export default function ProfileSetupHeader({ profile, onSave, isSaved, onStartTour, onLoadMock }) {
   const navigate = useNavigate();
   const handleSave = onSave || (() => navigate('/command-center'));
   const isEmailVerified = Boolean(profile.isEmailVerified ?? profile.emailVerified ?? false);
@@ -25,6 +25,12 @@ export default function ProfileSetupHeader({ profile, onSave, isSaved, onStartTo
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
+          {onLoadMock && (
+            <button type="button" onClick={onLoadMock} title="Populate all fields with standard mock data" className="px-3 py-1.5 rounded-lg border border-purple-400/40 bg-purple-500/10 hover:bg-purple-500/20 text-purple-300 text-xs font-mono flex items-center gap-1.5 transition-all cursor-pointer">
+              <span className="material-symbols-outlined text-[15px]">auto_fix_high</span>
+              <span>Fill Mock Data</span>
+            </button>
+          )}
           {onStartTour && (
             <button type="button" onClick={onStartTour} className="px-3 py-1.5 rounded-lg border border-cyan-400/40 bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-300 text-xs font-mono flex items-center gap-1.5 transition-all cursor-pointer">
               <span className="material-symbols-outlined text-[15px]">help</span>
@@ -50,11 +56,7 @@ export default function ProfileSetupHeader({ profile, onSave, isSaved, onStartTo
           <div>
             <div className="flex items-center gap-2">
               <h2 className="text-sm font-bold text-on-surface">{displayName}</h2>
-              <span className={`material-symbols-outlined text-[16px] rounded-full ${
-                isEmailVerified ? 'text-white bg-blue-500 shadow-sm p-0.5 text-[12px]' : 'text-slate-500'
-              }`}>
-                verified
-              </span>
+              <span className={`material-symbols-outlined text-[16px] rounded-full ${isEmailVerified ? 'text-white bg-blue-500 shadow-sm p-0.5 text-[12px]' : 'text-slate-500'}`}>verified</span>
             </div>
             <p className="text-xs text-outline font-mono">
               {displaySchool ? `${displaySchool} • ` : ''}{displayDistrict ? `${displayDistrict} District` : (profile.email || 'Mission Control')}
@@ -62,14 +64,8 @@ export default function ProfileSetupHeader({ profile, onSave, isSaved, onStartTo
           </div>
         </div>
         <div className="flex items-center gap-6 text-xs font-mono">
-          <div>
-            <span className="text-outline block text-[10px]">TARGET Z-SCORE</span>
-            <span className="text-primary font-bold text-sm">&gt; {profile.targetZScore}</span>
-          </div>
-          <div>
-            <span className="text-outline block text-[10px]">STREAM TRACK</span>
-            <span className="text-secondary font-bold">{profile.stream || 'Not Selected'}</span>
-          </div>
+          <div><span className="text-outline block text-[10px]">TARGET Z-SCORE</span><span className="text-primary font-bold text-sm">&gt; {profile.targetZScore}</span></div>
+          <div><span className="text-outline block text-[10px]">STREAM TRACK</span><span className="text-secondary font-bold">{profile.stream || 'Not Selected'}</span></div>
         </div>
       </div>
     </div>
