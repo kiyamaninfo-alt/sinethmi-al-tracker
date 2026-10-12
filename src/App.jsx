@@ -36,10 +36,12 @@ function RouteContent() {
 }
 
 export default function App() {
+  const showDev = import.meta.env.DEV || window.location.search.includes('dev=true');
+
   return (
     <BrowserRouter>
       <div className="relative min-h-screen">
-        <DevNav />
+        {showDev && <DevNav />}
         <RouteContent />
       </div>
     </BrowserRouter>

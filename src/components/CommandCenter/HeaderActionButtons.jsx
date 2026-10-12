@@ -34,6 +34,22 @@ export default function HeaderActionButtons() {
         <span className="material-symbols-outlined text-[16px] text-purple-300">manage_accounts</span>
         <span>Profile Settings</span>
       </button>
+
+      <button
+        type="button"
+        onClick={async () => {
+          localStorage.removeItem('candidate_profile');
+          localStorage.removeItem('onboarding_completed');
+          const { signOutUser } = await import('../../services/authService');
+          await signOutUser();
+          navigate('/login');
+        }}
+        title="Sign Out of Mission Control"
+        className={`${buttonBase} bg-rose-500/10 text-rose-300 border-rose-500/30 hover:border-rose-400 hover:bg-rose-500/20`}
+      >
+        <span className="material-symbols-outlined text-[16px] text-rose-400">logout</span>
+        <span>Sign Out</span>
+      </button>
     </div>
   );
 }

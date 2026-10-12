@@ -34,7 +34,13 @@ export async function handleSmartLaunch(email, password) {
   const trimmed = email.trim().toLowerCase();
   const { data: signInData, error: signInErr } = await signInWithEmail(trimmed, password);
   if (!signInErr && signInData?.user) {
-    return { action: 'dashboard', user: signInData.user };
+    const { data: profile } = await supabase
+      .from('profiles')
+      .select('id, name')
+      .eq('id', signInData.user.id)
+      .maybeSingle();
+    const action = profile?.name ? 'dashboard' : 'profile_setup';
+    return { action, user: signInData.user };
   }
   const { data: signUpData, error: signUpErr } = await signUpWithEmail(trimmed, password);
   if (!signUpErr && signUpData?.user) {

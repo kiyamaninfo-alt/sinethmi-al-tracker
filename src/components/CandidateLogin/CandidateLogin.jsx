@@ -1,10 +1,28 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { supabase } from '../../lib/supabase';
 import LoginHeader from './LoginHeader';
 import LoginForm from './LoginForm';
 import LoginFooter from './LoginFooter';
 
 export default function CandidateLogin() {
   const [lang, setLang] = useState('si');
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (session?.user) {
+        supabase
+          .from('profiles')
+          .select('id, name')
+          .eq('id', session.user.id)
+          .maybeSingle()
+          .then(({ data }) => {
+            navigate(data?.name ? '/command-center' : '/profile-setup', { replace: true });
+          });
+      }
+    });
+  }, [navigate]);
 
   return (
     <main className="w-full min-h-screen bg-[#050811] flex items-center justify-center p-4 sm:p-8 relative overflow-hidden selection:bg-primary-container selection:text-on-primary-container">
