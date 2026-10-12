@@ -13,6 +13,9 @@ export default function Header() {
   const targetYear = profile.targetYear || '2028';
   const customExamDate = profile.customExamDate || '';
 
+  const rawName = (profile.name || profile.username || 'Sinethmi').trim();
+  const displayName = rawName.split(/\s+/)[0] || 'Sinethmi';
+
   return (
     <header className="glass-panel rounded-3xl p-5 sm:p-7 shadow-glow-card relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-neon-violet via-neon-cyan to-neon-emerald opacity-80" />
@@ -21,11 +24,11 @@ export default function Header() {
         <div className="text-center lg:text-left space-y-1.5">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-neon-cyan/10 text-neon-cyan border border-neon-cyan/30">
             <span className="w-2 h-2 rounded-full bg-neon-cyan animate-ping" />
-            A/L {targetYear} Target Cohort • Batch Protocol Activated
+            Sinethmi A-Level Mission Control
           </div>
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white flex items-center justify-center lg:justify-start gap-3">
             <img src="/emblem.svg" alt="Mission Emblem" className="w-8 h-8 sm:w-9 sm:h-9 object-contain inline-block drop-shadow-[0_0_8px_rgba(6,182,212,0.6)]" />
-            <span>Sinethmi A/L {targetYear} Mission Control</span>
+            <span>{displayName} A/L {targetYear} Mission Control</span>
             <span className="text-xs tracking-wider px-2 py-0.5 rounded-md bg-neon-violet/20 text-neon-violet font-mono border border-neon-violet/30 uppercase">{appVersion}</span>
           </h1>
           <p className="text-xs sm:text-sm text-slate-300 font-medium">
