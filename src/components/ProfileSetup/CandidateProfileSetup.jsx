@@ -20,17 +20,20 @@ import ProfileSaveBar from './ProfileSaveBar';
 export default function CandidateProfileSetup() {
   const navigate = useNavigate();
   const { profile, setProfile, isSaved, handleChange } = useCandidateProfileSetup(getInitialCleanProfile);
-  const { showTour, tourStep, totalSteps, currentStepData, handleNext, handlePrev, handleSkip, startTour } = useOnboardingTour();
+  const isExistingUser = Boolean(profile?.name?.trim() || (profile?.subjects && profile.subjects.length > 0));
+  const { showTour, tourStep, totalSteps, currentStepData, handleNext, handlePrev, handleSkip, startTour } = useOnboardingTour(isExistingUser);
 
   useEffect(() => {
     hydrateProfileWithAuth(profile, setProfile);
-    if (window.location.hash) {
-      setTimeout(() => document.querySelector(window.location.hash)?.scrollIntoView({ behavior: 'smooth' }), 150);
+    const hash = window.location.hash;
+    if (hash && /^#[a-zA-Z][\w-]*$/.test(hash)) {
+      setTimeout(() => document.querySelector(hash)?.scrollIntoView({ behavior: 'smooth' }), 150);
     }
   }, []);
 
   const handleSaveAndEnter = async () => {
     localStorage.setItem('candidate_profile', JSON.stringify(profile));
+    localStorage.setItem('onboarding_completed', 'true');
     await saveProfileToCloud(profile);
     navigate('/command-center');
   };
@@ -48,8 +51,9 @@ export default function CandidateProfileSetup() {
           selectedStream={profile.stream} onSelectStream={(s) => handleChange('stream', s)}
           subjects={profile.subjects} onUpdateSubjects={(subs) => handleChange('subjects', subs)}
           onUpdate={handleSaveAndEnter} isSaved={isSaved}
-        />
-        <SubjectSelector subjects={profile.subjects} onUpdateSubjects={(subs) => handleChange('subjects', subs)} />
+        >
+          <SubjectSelector subjects={profile.subjects} onUpdateSubjects={(subs) => handleChange('subjects', subs)} />
+        </StreamSelector>
         <TargetHorizonForm profile={profile} onChange={handleChange} />
         <div id="focus-alarm-settings" className="scroll-mt-6">
           <AlarmSettingsCard settings={profile.alarmSettings} onChange={(s) => handleChange('alarmSettings', s)} />

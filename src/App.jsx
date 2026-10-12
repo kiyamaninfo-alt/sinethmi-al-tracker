@@ -9,6 +9,10 @@ import DevNav from './components/DevNav';
 
 import StudyTrackerLandingPage from './components/LandingPage/StudyTrackerLandingPage';
 
+import AuthCallbackHandler from './components/CandidateLogin/AuthCallbackHandler';
+
+import ProtectedRoute from './components/ProtectedRoute';
+
 function RouteContent() {
   const navigate = useNavigate();
   const toCommand = () => navigate('/command-center');
@@ -18,12 +22,15 @@ function RouteContent() {
       <Route path="/" element={<StudyTrackerLandingPage />} />
       <Route path="/landing" element={<StudyTrackerLandingPage />} />
       <Route path="/login" element={<CandidateLogin />} />
-      <Route path="/profile-setup" element={<CandidateProfileSetup />} />
-      <Route path="/command-center" element={<CommandCenterDashboard />} />
-      <Route path="/syllabus-manager" element={<SyllabusManagerPage />} />
-      <Route path="/study-analytics" element={<StudyAnalyticsDashboard onBack={toCommand} />} />
-      <Route path="/visual-analytics" element={<VisualAnalyticsDashboard onBack={toCommand} />} />
-      <Route path="*" element={<Navigate to="/" replace />} />
+      <Route path="/auth/callback" element={<AuthCallbackHandler />} />
+      <Route element={<ProtectedRoute />}>
+        <Route path="/profile-setup" element={<CandidateProfileSetup />} />
+        <Route path="/command-center" element={<CommandCenterDashboard />} />
+        <Route path="/syllabus-manager" element={<SyllabusManagerPage />} />
+        <Route path="/study-analytics" element={<StudyAnalyticsDashboard onBack={toCommand} />} />
+        <Route path="/visual-analytics" element={<VisualAnalyticsDashboard onBack={toCommand} />} />
+      </Route>
+      <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>
   );
 }

@@ -1,6 +1,6 @@
 import { COLOR_SWATCHES } from '../../constants/profileSetup';
 
-export default function SubjectCard({ subject, onUpdateColor, onUpdateHours, onRemove }) {
+export default function SubjectCard({ subject, otherUsedColors = [], onUpdateColor, onUpdateHours, onRemove }) {
   const swatch = COLOR_SWATCHES.find((s) => s.id === subject.color) || COLOR_SWATCHES[0];
 
   return (
@@ -26,17 +26,32 @@ export default function SubjectCard({ subject, onUpdateColor, onUpdateHours, onR
       <div className="space-y-1">
         <label className="text-[10px] text-outline uppercase font-mono block">Color Telemetry</label>
         <div className="flex items-center gap-1.5">
-          {COLOR_SWATCHES.map((c) => (
-            <button
-              key={c.id}
-              type="button"
-              onClick={() => onUpdateColor(subject.id, c.id)}
-              className={`w-5 h-5 rounded-full ${c.dot} transition-transform cursor-pointer ${
-                subject.color === c.id ? 'ring-2 ring-white scale-125 shadow-md' : 'opacity-60 hover:opacity-100'
-              }`}
-              title={c.name}
-            />
-          ))}
+          {COLOR_SWATCHES.map((c) => {
+            const isSelected = subject.color === c.id;
+            const isTaken = otherUsedColors.includes(c.id);
+            return (
+              <button
+                key={c.id}
+                type="button"
+                disabled={isTaken}
+                onClick={() => onUpdateColor(subject.id, c.id)}
+                className={`relative w-5 h-5 rounded-full ${c.dot} transition-transform ${
+                  isSelected
+                    ? 'ring-2 ring-white scale-125 shadow-md cursor-default'
+                    : isTaken
+                      ? 'opacity-25 cursor-not-allowed filter grayscale'
+                      : 'opacity-60 hover:opacity-100 cursor-pointer hover:scale-110'
+                }`}
+                title={isTaken ? `${c.name} (Assigned to another subject)` : c.name}
+              >
+                {isTaken && (
+                  <span className="absolute inset-0 flex items-center justify-center text-[10px] text-white/90 font-bold leading-none select-none">
+                    ×
+                  </span>
+                )}
+              </button>
+            );
+          })}
         </div>
       </div>
 

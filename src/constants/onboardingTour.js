@@ -3,30 +3,40 @@ export const ONBOARDING_STEPS = [
     id: 'tour-name',
     targetId: 'candidate-name-input',
     title: '1. Candidate Full Name',
-    desc: 'Enter your official candidate name. This will personalize your Mission Control telemetry HUD.'
+    sinhalaTitle: '1. අපේක්ෂකයාගේ සම්පූර්ණ නම',
+    desc: 'Type your official candidate name for Mission Control HUD.',
+    sinhalaDesc: 'ඔබගේ නම මෙතැනින් ඇතුළත් කරන්න. මෙමගින් පද්ධතිය ඔබගේ නමට සකස් වේ.'
   },
   {
     id: 'tour-whatsapp',
     targetId: 'candidate-phone-input',
     title: '2. WhatsApp Number (Alerts & Telemetry)',
-    desc: 'Provide your WhatsApp contact number (+94) for daily study reminders, milestone alerts, and exam sync.'
+    sinhalaTitle: '2. WhatsApp දුරකථන අංකය',
+    desc: 'Enter active WhatsApp number (+94) for daily study alerts & analytics.',
+    sinhalaDesc: 'දෛනික පාඩම් ඇඟවීම් සහ විභාග ප්‍රගතිය WhatsApp මගින් ලබාගැනීමට අංකය ඇතුළත් කරන්න.'
   },
   {
     id: 'tour-stream',
     targetId: 'candidate-stream-select',
     title: '3. Select Examination Stream',
-    desc: 'Choose your A-Level examination stream (Technology, Physical Science, Bio, Commerce, Arts) to load subject tracks.'
+    sinhalaTitle: '3. විභාග විෂය ධාරාව තෝරන්න',
+    desc: 'Choose your A/L stream (Technology, Maths, Science, Commerce, Arts).',
+    sinhalaDesc: 'ඔබ A/L විභාගයට පෙනී සිටින විෂය ධාරාව (තාක්ෂණ, විද්‍යා, ගණිත, වාණිජ හෝ කලා) තෝරන්න.'
   },
   {
     id: 'tour-year',
     targetId: 'candidate-target-year',
     title: '4. Target Exam Year',
-    desc: 'Select your target examination cohort year (e.g. 2026, 2027, 2028) to synchronize live countdown timers.'
+    sinhalaTitle: '4. ඉලක්කගත විභාග වර්ෂය',
+    desc: 'Select your target examination cohort year (2026, 2027, 2028).',
+    sinhalaDesc: 'ඔබ පෙනී සිටින විභාග වර්ෂය තෝරන්න. ඒ අනුව විභාගයට ඉතිරි දින ගණන ගණනය වේ.'
   },
   {
     id: 'tour-save',
     targetId: 'candidate-save-identity',
     title: '5. Mission Identity & Launch',
-    desc: 'Review your candidate parameters and click "Save Candidate Profile & Enter Mission Control" to launch your dashboard.'
+    sinhalaTitle: '5. තොරතුරු සුරැකීම සහ ආරම්භය',
+    desc: 'Click "Save Candidate Profile & Enter Mission Control" to launch dashboard.',
+    sinhalaDesc: 'සියලු තොරතුරු සම්පූර්ණ කර "Save Candidate Profile" බොත්තම ඔබා Mission Control වෙත පිවිසෙන්න.'
   }
 ];

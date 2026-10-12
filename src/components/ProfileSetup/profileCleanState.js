@@ -53,6 +53,7 @@ export async function hydrateProfileWithAuth(currentProfile, setProfile) {
       };
       setProfile(merged);
       localStorage.setItem('candidate_profile', JSON.stringify(merged));
+      localStorage.setItem('onboarding_completed', 'true');
     } else {
       setProfile((prev) => {
         const isPreviousUser = prev.userId && prev.userId !== user.id;

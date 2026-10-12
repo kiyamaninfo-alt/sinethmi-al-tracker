@@ -15,9 +15,10 @@ import CommandCenterFooter from './CommandCenterFooter';
 
 export default function CommandCenterDashboard() {
   useEffect(() => {
-    if (window.location.hash) {
+    const hash = window.location.hash;
+    if (hash && /^#[a-zA-Z][\w-]*$/.test(hash)) {
       setTimeout(() => {
-        const el = document.querySelector(window.location.hash);
+        const el = document.querySelector(hash);
         if (el) el.scrollIntoView({ behavior: 'smooth' });
       }, 150);
     }

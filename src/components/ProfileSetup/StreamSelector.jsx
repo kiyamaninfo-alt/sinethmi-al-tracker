@@ -5,7 +5,7 @@ import CustomStreamForm from './CustomStreamForm';
 import StreamSubjectsModal from './StreamSubjectsModal';
 import StreamActionBar from './StreamActionBar';
 
-export default function StreamSelector({ selectedStream, onSelectStream, subjects, onUpdateSubjects, onUpdate, isSaved }) {
+export default function StreamSelector({ selectedStream, onSelectStream, subjects, onUpdateSubjects, onUpdate, isSaved, children }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalStream, setModalStream] = useState(selectedStream);
   const [isCustomOpen, setIsCustomOpen] = useState(false);
@@ -62,6 +62,8 @@ export default function StreamSelector({ selectedStream, onSelectStream, subject
 
       <CustomStreamForm isOpen={isCustomOpen} onOpen={() => setIsCustomOpen(true)} onClose={() => setIsCustomOpen(false)}
         onApply={handleApplyCustom} hasCustomStream={Boolean(customStream)} initialVal={customStream?.name || ''} />
+
+      {children}
 
       <StreamActionBar isEditing={isEditing} onToggleEdit={handleToggleEdit} onUpdate={() => { setIsEditing(false); onUpdate(); }} isSaved={isSaved} />
 

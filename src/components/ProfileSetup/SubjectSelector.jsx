@@ -1,22 +1,24 @@
 import { useState } from 'react';
 import SubjectCard from './SubjectCard';
+import { getAvailableColor } from '../../utils/subjectColors';
 
 export default function SubjectSelector({ subjects, onUpdateSubjects }) {
   const [newTitle, setNewTitle] = useState('');
   const isCapReached = subjects.length >= 3;
   const totalHours = subjects.reduce((sum, s) => sum + (Number(s.hours) || 0), 0);
 
-  const updateColor = (id, color) => onUpdateSubjects(subjects.map((s) => (s.id === id ? { ...s, color } : s)));
+  const updateColor = (id, color) => {
+    if (subjects.some((s) => s.id !== id && s.color === color)) return;
+    onUpdateSubjects(subjects.map((s) => (s.id === id ? { ...s, color } : s)));
+  };
   const updateHours = (id, hours) => onUpdateSubjects(subjects.map((s) => (s.id === id ? { ...s, hours } : s)));
   const removeSub = (id) => onUpdateSubjects(subjects.filter((s) => s.id !== id));
 
   const handleAddCustom = (e) => {
     e.preventDefault();
     if (!newTitle.trim() || isCapReached) return;
-    onUpdateSubjects([
-      ...subjects,
-      { id: `c-${Date.now()}`, code: `SUB-0${subjects.length + 1}`, name: newTitle.trim(), color: 'cyan', hours: 8 }
-    ]);
+    const color = getAvailableColor(subjects);
+    onUpdateSubjects([...subjects, { id: `c-${Date.now()}`, code: `SUB-0${subjects.length + 1}`, name: newTitle.trim(), color, hours: 8 }]);
     setNewTitle('');
   };
 
@@ -53,25 +55,21 @@ export default function SubjectSelector({ subjects, onUpdateSubjects }) {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
           {subjects.map((sub) => (
-            <SubjectCard key={sub.id} subject={sub} onUpdateColor={updateColor} onUpdateHours={updateHours} onRemove={removeSub} />
+            <SubjectCard key={sub.id} subject={sub} otherUsedColors={subjects.filter((s) => s.id !== sub.id).map((s) => s.color)} onUpdateColor={updateColor} onUpdateHours={updateHours} onRemove={removeSub} />
           ))}
         </div>
       )}
 
       {!isCapReached ? (
         <form onSubmit={handleAddCustom} className="flex gap-2 pt-1">
-          <input
-            type="text" placeholder="Add Custom Subject name..." value={newTitle} onChange={(e) => setNewTitle(e.target.value)}
-            className="flex-1 bg-surface-container-high border border-outline-variant/40 rounded-lg px-3 py-1.5 text-xs text-on-surface focus:outline-none focus:border-tertiary"
-          />
+          <input type="text" placeholder="Add Custom Subject name..." value={newTitle} onChange={(e) => setNewTitle(e.target.value)}
+            className="flex-1 bg-surface-container-high border border-outline-variant/40 rounded-lg px-3 py-1.5 text-xs text-on-surface focus:outline-none focus:border-tertiary" />
           <button type="submit" className="px-3 py-1.5 bg-tertiary text-on-tertiary text-xs font-bold rounded-lg flex items-center gap-1 cursor-pointer">
             <span className="material-symbols-outlined text-[16px]">add</span> Add Subject
           </button>
         </form>
       ) : (
-        <p className="text-[11px] font-mono text-outline text-right">
-          ★ Maximum 3 A-Level Subjects Cap Active. Remove an entry to add custom subjects.
-        </p>
+        <p className="text-[11px] font-mono text-outline text-right">★ Maximum 3 A-Level Subjects Cap Active. Remove an entry to add custom subjects.</p>
       )}
     </div>
   );
