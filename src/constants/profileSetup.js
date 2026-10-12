@@ -63,6 +63,7 @@ export const INITIAL_PROFILE = {
     studySessionAlerts: true,
     dailyMilestones: true,
     examCountdowns: true,
+    clickSoundEnabled: true,
     keySoundEnabled: true,
     vibrateEnabled: true
   },

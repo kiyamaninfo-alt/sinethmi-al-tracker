@@ -1,4 +1,11 @@
+import { playClickSound } from '../../constants/clickSound';
+
 export default function ProfileSaveBar({ onSave }) {
+  const handleSave = () => {
+    playClickSound('toggle_on');
+    if (onSave) onSave();
+  };
+
   return (
     <div id="candidate-save-identity" className="rounded-xl bg-surface-container-low/90 backdrop-blur-xl border border-primary/30 p-4 sm:p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
       <div className="flex items-center gap-3">
@@ -12,7 +19,7 @@ export default function ProfileSaveBar({ onSave }) {
       <div className="flex items-center gap-3 w-full sm:w-auto">
         <button
           type="button"
-          onClick={onSave}
+          onClick={handleSave}
           className="w-full sm:w-auto px-6 py-2.5 rounded-lg bg-gradient-to-r from-primary to-inverse-primary text-on-primary text-xs font-bold tracking-wide flex items-center justify-center gap-2 shadow-lg shadow-primary/20 hover:brightness-110 active:scale-95 transition-all cursor-pointer"
         >
           <span>Save Candidate Profile &amp; Enter Mission Control -&gt;</span>

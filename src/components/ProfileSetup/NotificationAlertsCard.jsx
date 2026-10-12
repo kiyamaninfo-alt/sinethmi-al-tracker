@@ -21,13 +21,8 @@ export default function NotificationAlertsCard({ settings = {}, onChange }) {
     }
   };
 
-  const handleMasterToggle = (val) => {
-    onChange({ ...current, masterEnabled: val });
-  };
-
-  const handleChannelToggle = (key, val) => {
-    onChange({ ...current, [key]: val });
-  };
+  const handleMasterToggle = (val) => onChange({ ...current, masterEnabled: val });
+  const handleChannelToggle = (key, val) => onChange({ ...current, [key]: val });
 
   return (
     <div className="rounded-xl bg-surface-container-low/80 border border-outline-variant/30 p-5 space-y-4 backdrop-blur-md">
@@ -61,8 +56,10 @@ export default function NotificationAlertsCard({ settings = {}, onChange }) {
       />
 
       <HapticAndAudioFeedback
+        clickSoundEnabled={current.clickSoundEnabled}
         keySoundEnabled={current.keySoundEnabled}
         vibrateEnabled={current.vibrateEnabled}
+        onToggleClickSound={(val) => handleChannelToggle('clickSoundEnabled', val)}
         onToggleKeySound={(val) => handleChannelToggle('keySoundEnabled', val)}
         onToggleVibrate={(val) => handleChannelToggle('vibrateEnabled', val)}
         disabled={!current.masterEnabled}

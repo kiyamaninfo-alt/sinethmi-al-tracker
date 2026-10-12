@@ -45,15 +45,14 @@ export default function CandidateProfileSetup() {
     localStorage.setItem('candidate_profile', JSON.stringify(populated));
     saveProfileToCloud(populated);
   };
+  const toggleClick = (val) => handleChange('notificationSettings', { ...(profile.notificationSettings || {}), clickSoundEnabled: val });
 
   return (
     <div className="min-h-screen bg-[#050811] text-slate-200 antialiased relative pb-16">
-      {showTour && (
-        <OnboardingTourOverlay currentStep={tourStep} totalSteps={totalSteps} stepData={currentStepData} onNext={handleNext} onPrev={handlePrev} onSkip={handleSkip} />
-      )}
+      {showTour && <OnboardingTourOverlay currentStep={tourStep} totalSteps={totalSteps} stepData={currentStepData} onNext={handleNext} onPrev={handlePrev} onSkip={handleSkip} />}
       <div className="fixed inset-0 pointer-events-none opacity-20 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] z-0" />
       <main className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-6 space-y-6">
-        <ProfileSetupHeader profile={profile} onSave={handleSaveAndEnter} isSaved={isSaved} onStartTour={startTour} onLoadMock={handleLoadMock} />
+        <ProfileSetupHeader profile={profile} onSave={handleSaveAndEnter} isSaved={isSaved} onStartTour={startTour} onLoadMock={handleLoadMock} onToggleClickSound={toggleClick} />
         <ProfileIdentityForm profile={profile} onChange={handleChange} isSaved={isSaved} />
         <StreamSelector
           selectedStream={profile.stream} onSelectStream={(s) => handleChange('stream', s)}

@@ -1,11 +1,17 @@
+import FeedbackToggleItem from './FeedbackToggleItem';
+import { playClickSound } from '../../constants/clickSound';
+
 export default function HapticAndAudioFeedback({
-  keySoundEnabled,
-  vibrateEnabled,
+  clickSoundEnabled = true,
+  keySoundEnabled = true,
+  vibrateEnabled = true,
+  onToggleClickSound,
   onToggleKeySound,
   onToggleVibrate,
   disabled
 }) {
   const handleTestVibrate = () => {
+    playClickSound('subtle');
     if ('vibrate' in navigator) navigator.vibrate(50);
   };
 
@@ -29,46 +35,34 @@ export default function HapticAndAudioFeedback({
         )}
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-        <div
-          onClick={() => onToggleKeySound(!keySoundEnabled)}
-          className={`p-2.5 rounded-lg border flex items-center justify-between transition-all cursor-pointer ${
-            keySoundEnabled ? 'bg-surface-container-high/80 border-cyan-400/40 text-on-surface' : 'bg-surface-container-low/40 border-outline-variant/20 text-outline'
-          }`}
-        >
-          <div className="flex items-center gap-2">
-            <span className={`material-symbols-outlined text-[16px] ${keySoundEnabled ? 'text-cyan-400' : 'text-outline'}`}>keyboard</span>
-            <div>
-              <div className="text-xs font-bold">Key Sound</div>
-              <div className="text-[9px] text-outline font-mono">Audio clicks on key taps</div>
-            </div>
-          </div>
-          <span className={`text-[10px] px-2 py-0.5 rounded font-mono font-bold ${
-            keySoundEnabled ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-400/30' : 'bg-slate-800 text-slate-400'
-          }`}>
-            {keySoundEnabled ? 'ON' : 'OFF'}
-          </span>
-        </div>
-
-        <div
-          onClick={() => onToggleVibrate(!vibrateEnabled)}
-          className={`p-2.5 rounded-lg border flex items-center justify-between transition-all cursor-pointer ${
-            vibrateEnabled ? 'bg-surface-container-high/80 border-emerald-400/40 text-on-surface' : 'bg-surface-container-low/40 border-outline-variant/20 text-outline'
-          }`}
-        >
-          <div className="flex items-center gap-2">
-            <span className={`material-symbols-outlined text-[16px] ${vibrateEnabled ? 'text-emerald-400' : 'text-outline'}`}>vibration</span>
-            <div>
-              <div className="text-xs font-bold">Vibration</div>
-              <div className="text-[9px] text-outline font-mono">Haptic tactile alerts</div>
-            </div>
-          </div>
-          <span className={`text-[10px] px-2 py-0.5 rounded font-mono font-bold ${
-            vibrateEnabled ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-400/30' : 'bg-slate-800 text-slate-400'
-          }`}>
-            {vibrateEnabled ? 'ON' : 'OFF'}
-          </span>
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+        <FeedbackToggleItem
+          title="Click Sounds"
+          subtitle="Audio click on UI buttons &amp; actions"
+          icon="volume_up"
+          enabled={clickSoundEnabled}
+          onToggle={onToggleClickSound}
+          color="cyan"
+          disabled={disabled}
+        />
+        <FeedbackToggleItem
+          title="Key Sound"
+          subtitle="Audio clicks on keyboard typing"
+          icon="keyboard"
+          enabled={keySoundEnabled}
+          onToggle={onToggleKeySound}
+          color="cyan"
+          disabled={disabled}
+        />
+        <FeedbackToggleItem
+          title="Vibration"
+          subtitle="Haptic tactile alerts on touch"
+          icon="vibration"
+          enabled={vibrateEnabled}
+          onToggle={onToggleVibrate}
+          color="emerald"
+          disabled={disabled}
+        />
       </div>
     </div>
   );

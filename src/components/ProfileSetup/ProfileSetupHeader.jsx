@@ -1,13 +1,15 @@
 import { useNavigate } from 'react-router-dom';
 import { capitalizeWords } from '../../utils/formatters';
+import SoundQuickToggle from './SoundQuickToggle';
 
-export default function ProfileSetupHeader({ profile, onSave, isSaved, onStartTour, onLoadMock }) {
+export default function ProfileSetupHeader({ profile, onSave, isSaved, onStartTour, onLoadMock, onToggleClickSound }) {
   const navigate = useNavigate();
   const handleSave = onSave || (() => navigate('/command-center'));
   const isEmailVerified = Boolean(profile.isEmailVerified ?? profile.emailVerified ?? false);
   const displayName = profile.name ? capitalizeWords(profile.name) : (profile.email || 'Candidate');
   const displaySchool = profile.school ? capitalizeWords(profile.school) : '';
   const displayDistrict = profile.district ? capitalizeWords(profile.district) : '';
+  const isSoundActive = profile?.notificationSettings?.clickSoundEnabled !== false;
 
   return (
     <div className="space-y-4">
@@ -25,6 +27,9 @@ export default function ProfileSetupHeader({ profile, onSave, isSaved, onStartTo
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
+          {onToggleClickSound && (
+            <SoundQuickToggle enabled={isSoundActive} onToggle={onToggleClickSound} />
+          )}
           {onLoadMock && (
             <button type="button" onClick={onLoadMock} title="Populate all fields with standard mock data" className="px-3 py-1.5 rounded-lg border border-purple-400/40 bg-purple-500/10 hover:bg-purple-500/20 text-purple-300 text-xs font-mono flex items-center gap-1.5 transition-all cursor-pointer">
               <span className="material-symbols-outlined text-[15px]">auto_fix_high</span>
