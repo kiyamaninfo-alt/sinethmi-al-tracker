@@ -1,5 +1,4 @@
-import { useCandidateProfile } from '../../hooks/useCandidateProfile';
-import { useFocusTimerLogic } from '../../hooks/useFocusTimerLogic';
+import { useGlobalFocusTimer } from '../../context/FocusTimerContext';
 import { useSubjectLessonSelection } from '../../hooks/useSubjectLessonSelection';
 import FocusTimerHeader from './FocusTimerHeader';
 import SubjectLessonDisplay from './SubjectLessonDisplay';
@@ -11,8 +10,7 @@ import SessionConfirmModal from './SessionConfirmModal';
 import VideoClosePromptModal from './VideoClosePromptModal';
 
 export default function DeepFocusTimer() {
-  const profile = useCandidateProfile();
-  const timer = useFocusTimerLogic(profile?.alarmSettings || {}, profile?.preferences || {});
+  const { timer, profile } = useGlobalFocusTimer();
   const subjects = profile?.subjects || [];
   const { openModal, renderModal } = useSubjectLessonSelection(timer);
 

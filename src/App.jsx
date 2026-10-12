@@ -11,6 +11,8 @@ import AuthCallbackHandler from './components/CandidateLogin/AuthCallbackHandler
 import ProtectedRoute from './components/ProtectedRoute';
 import { useCandidateProfile } from './hooks/useCandidateProfile';
 import { useGlobalFeedbackAudio } from './hooks/useGlobalFeedbackAudio';
+import { FocusTimerProvider } from './context/FocusTimerContext';
+import GlobalTimerFloatingWidget from './components/CommandCenter/GlobalTimerFloatingWidget';
 
 function RouteContent() {
   const navigate = useNavigate();
@@ -41,10 +43,13 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <div className="relative min-h-screen">
-        {showDev && <DevNav />}
-        <RouteContent />
-      </div>
+      <FocusTimerProvider>
+        <div className="relative min-h-screen">
+          {showDev && <DevNav />}
+          <RouteContent />
+          <GlobalTimerFloatingWidget />
+        </div>
+      </FocusTimerProvider>
     </BrowserRouter>
   );
 }

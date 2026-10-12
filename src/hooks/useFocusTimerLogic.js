@@ -3,6 +3,8 @@ import { playAlarmTone, startAlarmLoop, stopAlarmLoop } from '../constants/sound
 import { resolveVideoUrl } from '../constants/timerUrlHelper';
 import { useTimerCountdown } from './useTimerCountdown';
 import { useVideoPopupState } from './useVideoPopupState';
+import { useTimerLiveSettingsSync } from './useTimerLiveSettingsSync';
+import { useTimerTabSync } from './useTimerTabSync';
 
 export function useFocusTimerLogic(alarmSettings = {}, preferences = {}) {
   const [selectedSubjectId, setSelectedSubjectId] = useState('');
@@ -25,9 +27,10 @@ export function useFocusTimerLogic(alarmSettings = {}, preferences = {}) {
   const preAlarmFired = useRef(false);
   const videoUrl = resolveVideoUrl(alarmSettings);
 
-  const triggerSound = (dur = 0.5) => {
-    if (!isMuted) playAlarmTone(alarmSettings.soundTrack || 'radar_ping', dur);
-  };
+  useTimerLiveSettingsSync({ isActive, sessionMode, durationMin, breakMin, setSecondsLeft });
+  useTimerTabSync({ isActive, isPaused, secondsLeft, sessionMode, currentRound, totalRounds });
+
+  const triggerSound = (dur = 0.5) => { if (!isMuted) playAlarmTone(alarmSettings.soundTrack || 'radar_ping', dur); };
   const startAlarm = () => { if (!isMuted) startAlarmLoop(alarmSettings.soundTrack || 'pulse_alarm'); };
   const stopAlarm = () => { stopAlarmLoop(); setModalAlert(null); };
 
@@ -57,10 +60,9 @@ export function useFocusTimerLogic(alarmSettings = {}, preferences = {}) {
   });
 
   const handleConfirmNextRound = () => {
-    stopAlarmLoop();
-    setCurrentRound(pendingNextRound); setPendingNextRound(null); setSessionMode('study');
-    setSecondsLeft(durationMin * 60); preAlarmFired.current = false; setIsPaused(false);
-    if (alarmSettings.videoEnabled && videoUrl) video.setShowVideo(true);
+    stopAlarmLoop(); setCurrentRound(pendingNextRound); setPendingNextRound(null);
+    setSessionMode('study'); setSecondsLeft(durationMin * 60); preAlarmFired.current = false;
+    setIsPaused(false); if (alarmSettings.videoEnabled && videoUrl) video.setShowVideo(true);
     triggerSound(0.4);
   };
 
@@ -72,7 +74,6 @@ export function useFocusTimerLogic(alarmSettings = {}, preferences = {}) {
     handleCancelNextRound: () => { stopAlarmLoop(); setPendingNextRound(null); handleReset(); },
     videoUrl, showSubjectModal, setShowSubjectModal, language, videoEnabled: alarmSettings.videoEnabled,
     handleStart: () => (!selectedSubjectId || !selectedLessonId ? setShowSubjectModal(true) : startFocusSession()),
-    startFocusSession, handleReset, handlePause: () => setIsPaused(true), handleResume, stopAlarm,
-    ...video
+    startFocusSession, handleReset, handlePause: () => setIsPaused(true), handleResume, stopAlarm, ...video
   };
 }
