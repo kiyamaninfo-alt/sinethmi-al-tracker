@@ -8,6 +8,7 @@ import { useCandidateProfileSetup } from './useCandidateProfileSetup';
 import { useOnboardingTour } from '../../hooks/useOnboardingTour';
 import { useGlobalFeedbackAudio } from '../../hooks/useGlobalFeedbackAudio';
 import OnboardingTourOverlay from './OnboardingTourOverlay';
+import StreamTourHintBox from './StreamTourHintBox';
 import ProfileSetupHeader from './ProfileSetupHeader';
 import ProfileIdentityForm from './ProfileIdentityForm';
 import StreamSelector from './StreamSelector';
@@ -23,7 +24,15 @@ export default function CandidateProfileSetup() {
   const navigate = useNavigate();
   const { profile, setProfile, isSaved, handleChange } = useCandidateProfileSetup(getInitialCleanProfile);
   useGlobalFeedbackAudio(profile?.notificationSettings);
-  const { showTour, tourStep, totalSteps, currentStepData, handleNext, handlePrev, handleSkip, startTour } = useOnboardingTour();
+
+  const handleSaveAndEnter = async () => {
+    localStorage.setItem('candidate_profile', JSON.stringify(profile));
+    localStorage.setItem('onboarding_completed', 'true');
+    await saveProfileToCloud(profile);
+    navigate('/command-center');
+  };
+
+  const { showTour, tourStep, totalSteps, currentStepData, handleNext, handlePrev, handleSkip, startTour } = useOnboardingTour(handleSaveAndEnter);
 
   useEffect(() => {
     hydrateProfileWithAuth(profile, setProfile);
@@ -33,24 +42,18 @@ export default function CandidateProfileSetup() {
     }
   }, []);
 
-  const handleSaveAndEnter = async () => {
-    localStorage.setItem('candidate_profile', JSON.stringify(profile));
-    localStorage.setItem('onboarding_completed', 'true');
-    await saveProfileToCloud(profile);
-    navigate('/command-center');
-  };
-
   const handleLoadMock = () => {
-    const populated = { ...profile, ...MOCK_PROFILE, userId: profile.userId || '', email: profile.email || 'sinethmi@missioncontrol.edu' };
-    setProfile(populated);
-    localStorage.setItem('candidate_profile', JSON.stringify(populated));
-    saveProfileToCloud(populated);
+    const pop = { ...profile, ...MOCK_PROFILE, userId: profile.userId || '', email: profile.email || 'sinethmi@missioncontrol.edu' };
+    setProfile(pop);
+    localStorage.setItem('candidate_profile', JSON.stringify(pop));
+    saveProfileToCloud(pop);
   };
   const toggleClick = (val) => handleChange('notificationSettings', { ...(profile.notificationSettings || {}), clickSoundEnabled: val });
 
   return (
     <div className="min-h-screen bg-[#050811] text-slate-200 antialiased relative pb-16">
       {showTour && <OnboardingTourOverlay currentStep={tourStep} totalSteps={totalSteps} stepData={currentStepData} onNext={handleNext} onPrev={handlePrev} onSkip={handleSkip} />}
+      {showTour && currentStepData?.id === 'tour-stream' && <StreamTourHintBox onNext={handleNext} onSkip={handleSkip} />}
       <div className="fixed inset-0 pointer-events-none opacity-20 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] z-0" />
       <main className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-6 space-y-6">
         <ProfileSetupHeader profile={profile} onSave={handleSaveAndEnter} isSaved={isSaved} onStartTour={startTour} onLoadMock={handleLoadMock} onToggleClickSound={toggleClick} />

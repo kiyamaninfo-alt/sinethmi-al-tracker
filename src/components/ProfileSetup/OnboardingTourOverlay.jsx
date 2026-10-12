@@ -57,7 +57,7 @@ export default function OnboardingTourOverlay({
             </button>
           ) : <div />}
           <button type="button" onClick={onNext} className="px-4 py-2 rounded-xl bg-gradient-to-r from-primary to-inverse-primary text-on-primary text-xs font-black tracking-wide flex items-center gap-1.5 shadow-xl shadow-primary/30 hover:brightness-110 active:scale-95 cursor-pointer">
-            <span>{isLast ? 'Start Mission →' : 'Next Step →'}</span>
+            <span>{isLast ? 'Save Candidate Profile & Enter Mission Control ->' : 'Next Step →'}</span>
             <span className="material-symbols-outlined text-[15px]">{isLast ? 'rocket_launch' : 'arrow_forward'}</span>
           </button>
         </div>

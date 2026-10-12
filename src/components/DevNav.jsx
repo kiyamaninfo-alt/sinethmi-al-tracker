@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const navItems = [
@@ -10,8 +11,20 @@ const navItems = [
 ];
 
 export default function DevNav() {
+  const [isTourActive, setIsTourActive] = useState(() => {
+    return sessionStorage.getItem('onboarding_tour_active') === 'true';
+  });
+
+  useEffect(() => {
+    const handleTourChange = (e) => setIsTourActive(Boolean(e.detail?.isActive));
+    window.addEventListener('tourstatechange', handleTourChange);
+    return () => window.removeEventListener('tourstatechange', handleTourChange);
+  }, []);
+
+  if (isTourActive) return null;
+
   return (
-    <nav className="fixed bottom-4 right-4 z-50 flex items-center gap-1.5 p-1.5 rounded-full bg-slate-900/90 border border-white/10 backdrop-blur-md shadow-2xl text-xs font-mono">
+    <nav className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1.5 p-1.5 rounded-full bg-slate-900/90 border border-white/10 backdrop-blur-md shadow-2xl text-xs font-mono max-w-[95vw] overflow-x-auto">
       {navItems.map(({ path, label, color }) => (
         <NavLink
           key={path}

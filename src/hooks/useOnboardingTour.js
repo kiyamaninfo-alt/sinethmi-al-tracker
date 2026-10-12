@@ -5,9 +5,24 @@ function isReturningUser() {
   return localStorage.getItem('onboarding_completed') === 'true';
 }
 
-export function useOnboardingTour() {
+function updateTourActiveFlag(isActive) {
+  try {
+    sessionStorage.setItem('onboarding_tour_active', isActive ? 'true' : 'false');
+    window.dispatchEvent(new CustomEvent('tourstatechange', { detail: { isActive } }));
+  } catch (e) {}
+}
+
+export function useOnboardingTour(onComplete) {
   const [tourStep, setTourStep] = useState(0);
-  const [showTour, setShowTour] = useState(() => !isReturningUser());
+  const [showTour, setShowTour] = useState(() => {
+    const active = !isReturningUser();
+    updateTourActiveFlag(active);
+    return active;
+  });
+
+  useEffect(() => {
+    updateTourActiveFlag(showTour);
+  }, [showTour]);
 
   useEffect(() => {
     if (!showTour) return;
@@ -34,6 +49,7 @@ export function useOnboardingTour() {
       sessionStorage.removeItem('tour_manually_opened');
       localStorage.setItem('onboarding_completed', 'true');
       setShowTour(false);
+      if (onComplete) onComplete();
     }
   };
 

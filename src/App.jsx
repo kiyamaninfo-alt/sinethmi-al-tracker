@@ -39,13 +39,12 @@ function RouteContent() {
 export default function App() {
   const profile = useCandidateProfile();
   useGlobalFeedbackAudio(profile?.notificationSettings);
-  const showDev = import.meta.env.DEV || window.location.search.includes('dev=true');
 
   return (
     <BrowserRouter>
       <FocusTimerProvider>
         <div className="relative min-h-screen">
-          {showDev && <DevNav />}
+          <DevNav />
           <RouteContent />
           <GlobalTimerFloatingWidget />
         </div>
