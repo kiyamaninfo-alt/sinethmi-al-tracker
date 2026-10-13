@@ -23,6 +23,17 @@ export function getFieldStepIndex(errors) {
   return -1;
 }
 
+export function getMissingTourStepIds(errors) {
+  const ids = [];
+  if (errors.name) ids.push('tour-name');
+  if (errors.phone) ids.push('tour-whatsapp');
+  if (errors.stream) ids.push('tour-stream');
+  if (errors.targetYear) ids.push('tour-year');
+  if (ids.length > 0) ids.push('tour-save');
+  return ids;
+}
+
+
 export function highlightField(elementId) {
   const el = document.getElementById(elementId);
   if (el) {

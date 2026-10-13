@@ -10,6 +10,7 @@ function updateTourActiveFlag(isActive) {
 
 export function useOnboardingTour(onComplete) {
   const [tourStep, setTourStep] = useState(0);
+  const [activeSteps, setActiveSteps] = useState(ONBOARDING_STEPS);
   const [showTour, setShowTour] = useState(() => {
     const active = localStorage.getItem('onboarding_completed') !== 'true';
     updateTourActiveFlag(active);
@@ -20,7 +21,7 @@ export function useOnboardingTour(onComplete) {
 
   useEffect(() => {
     if (!showTour) return;
-    const current = ONBOARDING_STEPS[tourStep];
+    const current = activeSteps[tourStep];
     const el = current?.targetId ? document.getElementById(current.targetId) : null;
     if (el) {
       el.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -34,43 +35,43 @@ export function useOnboardingTour(onComplete) {
         el.classList.remove('ring-4', 'ring-cyan-400', 'ring-offset-2', 'ring-offset-slate-950');
       };
     }
-  }, [tourStep, showTour]);
-
-  const handleNext = () => {
-    if (tourStep < ONBOARDING_STEPS.length - 1) {
-      setTourStep((s) => s + 1);
-    } else {
-      sessionStorage.removeItem('tour_manually_opened');
-      localStorage.setItem('onboarding_completed', 'true');
-      setShowTour(false);
-      if (onComplete) onComplete();
-    }
-  };
+  }, [tourStep, showTour, activeSteps]);
 
   const handlePrev = () => setTourStep((s) => Math.max(0, s - 1));
-
-  const handleSkip = () => {
+  const finishTour = () => {
     sessionStorage.removeItem('tour_manually_opened');
     localStorage.setItem('onboarding_completed', 'true');
     setShowTour(false);
   };
-
-  const jumpToStep = (idx) => {
-    if (typeof idx === 'number' && idx >= 0 && idx < ONBOARDING_STEPS.length) {
-      setTourStep(idx);
-      setShowTour(true);
-    }
+  const handleSkip = finishTour;
+  const handleNext = () => {
+    if (tourStep < activeSteps.length - 1) setTourStep((s) => s + 1);
+    else { finishTour(); if (onComplete) onComplete(); }
   };
+
+
 
   const startTour = () => {
     sessionStorage.setItem('tour_manually_opened', 'true');
+    setActiveSteps(ONBOARDING_STEPS);
+    setTourStep(0);
+    setShowTour(true);
+  };
+
+  const startFilteredTour = (stepIds) => {
+    if (!stepIds || stepIds.length === 0) return;
+    const filtered = ONBOARDING_STEPS.filter((s) => stepIds.includes(s.id));
+    if (filtered.length === 0) return;
+    sessionStorage.setItem('tour_manually_opened', 'true');
+    setActiveSteps(filtered);
     setTourStep(0);
     setShowTour(true);
   };
 
   return {
-    showTour, tourStep, totalSteps: ONBOARDING_STEPS.length,
-    currentStepData: ONBOARDING_STEPS[tourStep],
-    handleNext, handlePrev, handleSkip, startTour, jumpToStep
+    showTour, tourStep, totalSteps: activeSteps.length,
+    currentStepData: activeSteps[tourStep],
+    handleNext, handlePrev, handleSkip, startTour, startFilteredTour
   };
 }
+

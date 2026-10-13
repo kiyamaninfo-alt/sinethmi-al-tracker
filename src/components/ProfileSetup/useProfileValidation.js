@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { validateProfile, getFieldStepIndex, highlightField } from './profileValidation';
+import { validateProfile, getFieldStepIndex, getMissingTourStepIds, highlightField } from './profileValidation';
 
 const STEP_ELEMENT_MAP = {
   0: 'candidate-name-input',
@@ -8,7 +8,7 @@ const STEP_ELEMENT_MAP = {
   3: 'candidate-target-year'
 };
 
-export function useProfileValidation(profile, jumpToStep) {
+export function useProfileValidation(profile, startFilteredTour) {
   const [errors, setErrors] = useState({});
   const [showErrorModal, setShowErrorModal] = useState(false);
 
@@ -24,9 +24,12 @@ export function useProfileValidation(profile, jumpToStep) {
   };
 
   const handleFocusFirstError = () => {
+    const missingIds = getMissingTourStepIds(errors);
+    if (startFilteredTour && missingIds.length > 0) {
+      startFilteredTour(missingIds);
+    }
     const stepIdx = getFieldStepIndex(errors);
     if (stepIdx !== -1) {
-      if (jumpToStep) jumpToStep(stepIdx);
       const targetId = STEP_ELEMENT_MAP[stepIdx];
       if (targetId) setTimeout(() => highlightField(targetId), 200);
     }
@@ -47,3 +50,4 @@ export function useProfileValidation(profile, jumpToStep) {
     validate, handleFocusFirstError, clearError
   };
 }
+

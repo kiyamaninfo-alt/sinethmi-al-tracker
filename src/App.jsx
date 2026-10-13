@@ -37,20 +37,27 @@ function RouteContent() {
   );
 }
 
+function AppContent({ profile }) {
+  useAppTheme(profile?.preferences?.theme);
+  return (
+    <FocusTimerProvider>
+      <div className="relative min-h-screen">
+        <DevNav />
+        <RouteContent />
+        <GlobalTimerFloatingWidget />
+      </div>
+    </FocusTimerProvider>
+  );
+}
+
 export default function App() {
   const profile = useCandidateProfile();
   useGlobalFeedbackAudio(profile?.notificationSettings);
-  useAppTheme(profile?.preferences?.theme);
 
   return (
     <BrowserRouter>
-      <FocusTimerProvider>
-        <div className="relative min-h-screen">
-          <DevNav />
-          <RouteContent />
-          <GlobalTimerFloatingWidget />
-        </div>
-      </FocusTimerProvider>
+      <AppContent profile={profile} />
     </BrowserRouter>
   );
 }
+
