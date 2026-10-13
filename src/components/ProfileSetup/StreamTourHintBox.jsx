@@ -12,20 +12,17 @@ export default function StreamTourHintBox({ onNext, onSkip }) {
         mobileCoords ? 'left-3 right-3 max-w-sm mx-auto' : 'top-5 left-5 max-w-xs sm:max-w-sm'
       }`}
     >
-      <div className="rounded-xl sm:rounded-2xl bg-[#070e1c]/95 border border-cyan-400 sm:border-2 p-2.5 sm:p-4 shadow-[0_0_20px_rgba(34,211,238,0.35)] sm:shadow-[0_0_35px_rgba(34,211,238,0.45)] backdrop-blur-2xl space-y-1.5 sm:space-y-3">
-        <div className="flex items-start gap-2">
-          <span className="material-symbols-outlined text-cyan-400 text-[18px] sm:text-[22px] shrink-0 mt-0.5">
+      <div className="rounded-xl sm:rounded-2xl bg-[#070e1c]/95 border border-cyan-400 sm:border-2 p-2 sm:p-4 shadow-[0_0_20px_rgba(34,211,238,0.35)] backdrop-blur-2xl space-y-1 sm:space-y-3">
+        <div className="flex items-center gap-1.5 sm:gap-2">
+          <span className="material-symbols-outlined text-cyan-400 text-[16px] sm:text-[22px] shrink-0">
             account_tree
           </span>
-          <div className="space-y-0.5 truncate">
-            <p className="text-[10px] sm:text-xs font-mono font-bold uppercase tracking-wider text-cyan-300">
+          <div className="min-w-0 flex-1 truncate">
+            <p className="text-[10px] font-mono font-bold uppercase tracking-wider text-cyan-300">
               Stream Guidance
             </p>
-            <p className="text-xs sm:text-sm font-bold text-white leading-tight truncate">
-              Select your subject stream and subjects
-            </p>
-            <p className="text-[11px] sm:text-xs text-slate-300 font-sans line-clamp-2">
-              ඔබේ විභාග විෂය ධාරාව සහ අදාළ විෂයයන් තෝරන්න.
+            <p className="text-[11px] sm:text-sm font-bold text-white leading-tight truncate">
+              Select stream &amp; subjects (විෂය ධාරාව තෝරන්න)
             </p>
           </div>
         </div>

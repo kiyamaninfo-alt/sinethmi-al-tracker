@@ -15,19 +15,33 @@ export function useTourPosition(targetId) {
         return;
       }
       const rect = el.getBoundingClientRect();
-      const popupHeight = 120;
+      const popupHeight = 100;
+      const isNameField = targetId === 'candidate-name-input';
+      const isStreamTarget = targetId === 'candidate-stream-select';
       const isSaveTarget = targetId === 'candidate-save-identity';
 
-      if (isSaveTarget) {
-        const top = Math.max(12, Math.round(rect.top - popupHeight - 14));
+      if (isNameField) {
+        const top = Math.max(12, Math.round(rect.top - popupHeight - 32));
         setCoords({ top, isAbove: true });
         return;
       }
 
-      if (rect.top >= popupHeight + 20) {
-        setCoords({ top: Math.max(12, Math.round(rect.top - popupHeight - 12)), isAbove: true });
-      } else if (window.innerHeight - rect.bottom >= popupHeight + 20) {
-        setCoords({ top: Math.round(rect.bottom + 12), isAbove: false });
+      if (isStreamTarget) {
+        const top = Math.max(12, Math.round(rect.top - popupHeight - 20));
+        setCoords({ top, isAbove: true });
+        return;
+      }
+
+      if (isSaveTarget) {
+        const top = Math.max(12, Math.round(rect.top - popupHeight - 16));
+        setCoords({ top, isAbove: true });
+        return;
+      }
+
+      if (rect.top >= popupHeight + 25) {
+        setCoords({ top: Math.max(12, Math.round(rect.top - popupHeight - 20)), isAbove: true });
+      } else if (window.innerHeight - rect.bottom >= popupHeight + 25) {
+        setCoords({ top: Math.round(rect.bottom + 16), isAbove: false });
       } else {
         setCoords({ top: 12, isAbove: true });
       }
@@ -37,7 +51,7 @@ export function useTourPosition(targetId) {
     const handleScrollOrResize = () => updatePosition();
     window.addEventListener('scroll', handleScrollOrResize, { passive: true });
     window.addEventListener('resize', handleScrollOrResize, { passive: true });
-    const timer = setTimeout(updatePosition, 350);
+    const timer = setTimeout(updatePosition, 300);
 
     return () => {
       clearTimeout(timer);

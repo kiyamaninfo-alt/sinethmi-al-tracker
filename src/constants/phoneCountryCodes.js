@@ -21,30 +21,21 @@ export const COUNTRY_DIAL_CODES = [
   { code: 'KR', name: 'South Korea', dialCode: '+82', flag: '🇰🇷' }
 ];
 
-export function formatSriLankanNumber(raw, defaultCountryCode = '+94') {
-  if (!raw) return '';
-  const digits = raw.replace(/\D/g, '');
-  if (!digits) return '';
+export function formatPhoneNumberWithCode(raw, dialCode = '+94') {
+  if (!raw) return `${dialCode} `;
+  let digits = raw.replace(/\D/g, '');
+  const prefixDigits = dialCode.replace(/\D/g, '');
 
-  // Local starting with 0 (e.g. 0759555924 -> 075 955 5924)
-  if (digits.startsWith('0') && digits.length <= 10) {
-    const p1 = digits.slice(0, 3);
-    const p2 = digits.slice(3, 6);
-    const p3 = digits.slice(6, 10);
-    return [p1, p2, p3].filter(Boolean).join(' ');
+  if (digits.startsWith(prefixDigits)) {
+    digits = digits.slice(prefixDigits.length);
+  } else if (digits.startsWith('0')) {
+    digits = digits.slice(1);
   }
 
-  // Starts with 94 (e.g. 94759555924 -> +94 75 955 5924)
-  if (digits.startsWith('94')) {
-    const rest = digits.slice(2);
-    const p1 = rest.slice(0, 2);
-    const p2 = rest.slice(2, 5);
-    const p3 = rest.slice(5, 9);
-    return ['+94', p1, p2, p3].filter(Boolean).join(' ');
-  }
-
-  // Generic formatting in 3-4 chunks
-  if (digits.length <= 4) return digits;
-  if (digits.length <= 7) return `${digits.slice(0, 3)} ${digits.slice(3)}`;
-  return `${digits.slice(0, 3)} ${digits.slice(3, 6)} ${digits.slice(6, 10)}`;
+  if (!digits) return `${dialCode} `;
+  const p1 = digits.slice(0, 2);
+  const p2 = digits.slice(2, 5);
+  const p3 = digits.slice(5, 9);
+  const rest = [p1, p2, p3].filter(Boolean).join(' ');
+  return `${dialCode} ${rest}`;
 }

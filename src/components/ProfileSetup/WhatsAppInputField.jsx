@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import WhatsAppLogo from './WhatsAppLogo';
-import { COUNTRY_DIAL_CODES, formatSriLankanNumber } from '../../constants/phoneCountryCodes';
+import { COUNTRY_DIAL_CODES, formatPhoneNumberWithCode } from '../../constants/phoneCountryCodes';
 
 export default function WhatsAppInputField({ value = '', onChange, error }) {
   const [selectedCountry, setSelectedCountry] = useState('+94');
@@ -8,15 +8,13 @@ export default function WhatsAppInputField({ value = '', onChange, error }) {
   const handleCountryChange = (e) => {
     const newCode = e.target.value;
     setSelectedCountry(newCode);
-    const digits = (value || '').replace(/\D/g, '');
-    const cleanDigits = digits.startsWith('94') ? digits.slice(2) : (digits.startsWith('0') ? digits.slice(1) : digits);
-    const formatted = cleanDigits ? `${newCode} ${formatSriLankanNumber(cleanDigits)}` : newCode + ' ';
+    const formatted = formatPhoneNumberWithCode(value, newCode);
     onChange(formatted);
   };
 
   const handleInputChange = (e) => {
     const raw = e.target.value;
-    const formatted = formatSriLankanNumber(raw, selectedCountry);
+    const formatted = formatPhoneNumberWithCode(raw, selectedCountry);
     onChange(formatted);
   };
 
