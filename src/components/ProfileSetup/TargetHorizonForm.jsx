@@ -61,6 +61,7 @@ export default function TargetHorizonForm({ profile, onChange, error }) {
             targetRank={profile.targetRank}
             targetZScore={profile.targetZScore}
             zScoreCriteria={profile.zScoreCriteria}
+            subjectsCount={profile.subjects?.length || 0}
             onChangeRank={(r) => onChange('targetRank', r)}
             onChangeZScore={(z) => onChange('targetZScore', z)}
             onChangeCriteria={(crit) => onChange('zScoreCriteria', crit)}

@@ -11,6 +11,7 @@ import AuthCallbackHandler from './components/CandidateLogin/AuthCallbackHandler
 import ProtectedRoute from './components/ProtectedRoute';
 import { useCandidateProfile } from './hooks/useCandidateProfile';
 import { useGlobalFeedbackAudio } from './hooks/useGlobalFeedbackAudio';
+import { useAppTheme } from './hooks/useAppTheme';
 import { FocusTimerProvider } from './context/FocusTimerContext';
 import GlobalTimerFloatingWidget from './components/CommandCenter/GlobalTimerFloatingWidget';
 
@@ -39,6 +40,7 @@ function RouteContent() {
 export default function App() {
   const profile = useCandidateProfile();
   useGlobalFeedbackAudio(profile?.notificationSettings);
+  useAppTheme(profile?.preferences?.theme);
 
   return (
     <BrowserRouter>

@@ -5,6 +5,7 @@ export default function RankZScoreCalibration({
   targetRank,
   targetZScore,
   zScoreCriteria,
+  subjectsCount = 0,
   onChangeRank,
   onChangeZScore,
   onChangeCriteria
@@ -14,6 +15,8 @@ export default function RankZScoreCalibration({
     const found = RANK_TARGET_OPTIONS.find((r) => r.label === label);
     if (found) onChangeZScore(found.minZ);
   };
+
+  const hasThreeSubjects = subjectsCount >= 3;
 
   return (
     <div className="space-y-2">
@@ -31,24 +34,33 @@ export default function RankZScoreCalibration({
           ))}
         </select>
 
-        <div className="flex items-center gap-2">
-          <div className="flex-1">
-            <span className="text-[10px] text-outline font-mono block">Edit Z-Score Criteria</span>
-            <input
-              type="text"
-              value={targetZScore || ''}
-              onChange={(e) => onChangeZScore(e.target.value)}
-              placeholder="e.g. 2.450"
-              className="w-full bg-surface-container-high/60 border border-outline-variant/40 rounded-lg px-3 py-1.5 text-primary font-mono text-sm font-bold focus:border-primary focus:outline-none"
-            />
+        {hasThreeSubjects ? (
+          <>
+            <div className="flex items-center gap-2">
+              <div className="flex-1">
+                <span className="text-[10px] text-outline font-mono block">Edit Z-Score Criteria</span>
+                <input
+                  type="text"
+                  value={targetZScore || ''}
+                  onChange={(e) => onChangeZScore(e.target.value)}
+                  placeholder="e.g. 2.450"
+                  className="w-full bg-surface-container-high/60 border border-outline-variant/40 rounded-lg px-3 py-1.5 text-primary font-mono text-sm font-bold focus:border-primary focus:outline-none"
+                />
+              </div>
+              <div className="text-right shrink-0 pt-3">
+                <span className="text-[10px] font-mono text-cyan-400 block font-bold">Standardized Gaussian</span>
+                <span className="text-[11px] font-mono text-slate-300">&gt; {targetZScore || '2.400'} Cutoff</span>
+              </div>
+            </div>
+            <ZScoreParametersInput criteria={zScoreCriteria} onChangeCriteria={onChangeCriteria} />
+          </>
+        ) : (
+          <div className="p-3 rounded-lg border border-dashed border-outline-variant/30 bg-surface-container/30 text-center">
+            <span className="text-[11px] text-outline font-mono">
+              Target Z-Score unlocks after selecting all 3 subjects ({subjectsCount}/3 selected)
+            </span>
           </div>
-          <div className="text-right shrink-0 pt-3">
-            <span className="text-[10px] font-mono text-cyan-400 block font-bold">Standardized Gaussian</span>
-            <span className="text-[11px] font-mono text-slate-300">&gt; {targetZScore || '2.400'} Cutoff</span>
-          </div>
-        </div>
-
-        <ZScoreParametersInput criteria={zScoreCriteria} onChangeCriteria={onChangeCriteria} />
+        )}
       </div>
     </div>
   );

@@ -53,7 +53,9 @@ export default function ProfileSetupHeader({ profile, onSave, isSaved, onStartTo
           </div>
         </div>
         <div className="flex items-center gap-6 text-xs font-mono">
-          <div><span className="text-outline block text-[10px]">TARGET Z-SCORE</span><span className="text-primary font-bold text-sm">&gt; {profile.targetZScore}</span></div>
+          {(profile.subjects?.length >= 3) && (
+            <div><span className="text-outline block text-[10px]">TARGET Z-SCORE</span><span className="text-primary font-bold text-sm">&gt; {profile.targetZScore}</span></div>
+          )}
           <div><span className="text-outline block text-[10px]">STREAM TRACK</span><span className="text-secondary font-bold">{profile.stream || 'Not Selected'}</span></div>
         </div>
       </div>

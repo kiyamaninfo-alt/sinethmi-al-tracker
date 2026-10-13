@@ -7,6 +7,7 @@ import { useCandidateProfileSetup } from './useCandidateProfileSetup';
 import { useOnboardingTour } from '../../hooks/useOnboardingTour';
 import { useProfileValidation } from './useProfileValidation';
 import { useGlobalFeedbackAudio } from '../../hooks/useGlobalFeedbackAudio';
+import { useAppTheme } from '../../hooks/useAppTheme';
 import OnboardingTourOverlay from './OnboardingTourOverlay';
 import StreamTourHintBox from './StreamTourHintBox';
 import ValidationAlertModal from './ValidationAlertModal';
@@ -22,6 +23,7 @@ export default function CandidateProfileSetup() {
   const navigate = useNavigate();
   const { profile, setProfile, isSaved, handleChange } = useCandidateProfileSetup(getInitialCleanProfile);
   useGlobalFeedbackAudio(profile?.notificationSettings);
+  useAppTheme(profile?.preferences?.theme);
 
   const { showTour, tourStep, totalSteps, currentStepData, handleNext, handlePrev, handleSkip, startTour, jumpToStep } = useOnboardingTour();
   const { errors, showErrorModal, setShowErrorModal, validate, handleFocusFirstError, clearError } = useProfileValidation(profile, jumpToStep);

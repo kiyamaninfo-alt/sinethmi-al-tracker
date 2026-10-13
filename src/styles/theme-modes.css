@@ -1,0 +1,50 @@
+/* Theme overrides based on data-theme attribute on html root */
+
+:root[data-theme="synthwave"],
+[data-theme="synthwave"] {
+  --color-surface: #120726 !important;
+  --color-surface-dim: #0a0318 !important;
+  --color-surface-container-lowest: #0d0420 !important;
+  --color-surface-container-low: #190b35 !important;
+  --color-surface-container: #221045 !important;
+  --color-surface-container-high: #2d1659 !important;
+  --color-surface-container-highest: #3b1d73 !important;
+  --color-primary: #f43f5e !important;
+  --color-secondary: #d946ef !important;
+  --color-tertiary: #06b6d4 !important;
+  --color-on-surface: #fdf4ff !important;
+  --color-outline: #a855f7 !important;
+}
+
+:root[data-theme="matrix"],
+[data-theme="matrix"] {
+  --color-surface: #021208 !important;
+  --color-surface-dim: #010a04 !important;
+  --color-surface-container-lowest: #010c05 !important;
+  --color-surface-container-low: #041f0d !important;
+  --color-surface-container: #062b13 !important;
+  --color-surface-container-high: #0a3a1b !important;
+  --color-surface-container-highest: #0f4c24 !important;
+  --color-primary: #22c55e !important;
+  --color-secondary: #4ade80 !important;
+  --color-tertiary: #86efac !important;
+  --color-on-surface: #dcfce7 !important;
+  --color-outline: #15803d !important;
+}
+
+:root[data-theme="minimal_light"],
+[data-theme="minimal_light"] {
+  --color-surface: #f8fafc !important;
+  --color-surface-dim: #e2e8f0 !important;
+  --color-surface-container-lowest: #ffffff !important;
+  --color-surface-container-low: #f1f5f9 !important;
+  --color-surface-container: #e2e8f0 !important;
+  --color-surface-container-high: #cbd5e1 !important;
+  --color-surface-container-highest: #94a3b8 !important;
+  --color-primary: #0284c7 !important;
+  --color-secondary: #0ea5e9 !important;
+  --color-tertiary: #10b981 !important;
+  --color-on-surface: #0f172a !important;
+  --color-outline: #64748b !important;
+  color-scheme: light !important;
+}

@@ -1,3 +1,4 @@
 @import "tailwindcss";
 @import "./styles/theme.css";
 @import "./styles/glass.css";
+@import "./styles/theme-modes.css";
