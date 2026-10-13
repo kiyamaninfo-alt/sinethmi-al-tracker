@@ -15,17 +15,12 @@ export function useTourPosition(targetId) {
         return;
       }
       const rect = el.getBoundingClientRect();
-      const popupHeight = 92;
-      const gap = 12;
-
-      // Calculate candidate top position directly above element
+      const popupHeight = targetId === 'candidate-stream-select' ? 96 : 130;
+      const gap = 16;
       let top = Math.round(rect.top - popupHeight - gap);
-
-      // If too close to viewport top, ensure it stays visible
-      if (top < 10) {
+      if (top < 12) {
         top = Math.round(rect.bottom + gap);
       }
-
       setCoords({ top });
     };
 
@@ -33,7 +28,7 @@ export function useTourPosition(targetId) {
     const handleScrollOrResize = () => updatePosition();
     window.addEventListener('scroll', handleScrollOrResize, { passive: true });
     window.addEventListener('resize', handleScrollOrResize, { passive: true });
-    const timer = setTimeout(updatePosition, 300);
+    const timer = setTimeout(updatePosition, 250);
 
     return () => {
       clearTimeout(timer);

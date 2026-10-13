@@ -26,7 +26,7 @@ export default function CandidateProfileSetup() {
   useGlobalFeedbackAudio(profile?.notificationSettings);
   useAppTheme(profile?.preferences?.theme);
 
-  const { showTour, tourStep, totalSteps, currentStepData, handleNext, handlePrev, handleSkip, startTour, startFilteredTour } = useOnboardingTour();
+  const { showTour, tourStep, totalSteps, currentStepData, handleNext, handlePrev, handleSkip, startTour, startFilteredTour } = useOnboardingTour(null, profile);
   const { errors, showErrorModal, setShowErrorModal, validate, handleFocusFirstError, clearError } = useProfileValidation(profile, startFilteredTour);
 
   const handleSubmit = async () => {
