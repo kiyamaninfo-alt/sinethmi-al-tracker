@@ -33,13 +33,13 @@ export default function LoginForm({ lang = 'si' }) {
     if (error) setErrorMessage(error.message);
   };
 
-  const googleText = lang === 'ta' ? 'Google கணக்கு மூலம் தொடරவும்' : 'Google ගිණුමෙන් ඇතුල් වන්න';
+  const googleText = lang === 'ta' ? 'Google கணக்கு மூலம் தொடරவும்' : lang === 'en' ? 'Continue with Google Account' : 'Google ගිණුමෙන් ඇතුල් වන්න';
 
   return (
     <div className="w-full flex flex-col items-center mt-3.5">
       <button type="button" onClick={handleGoogle} className="w-full h-10 rounded-lg bg-surface-container-high/80 hover:bg-surface-variant text-on-surface flex items-center justify-center gap-2.5 transition-all mb-3.5 border border-cyan-500/20 text-xs font-semibold shadow-sm cursor-pointer group">
         <GoogleLogo className="w-4 h-4 shrink-0 transition-transform duration-200 group-hover:scale-110" />
-        <span>{googleText} (Continue with Google)</span>
+        <span>{googleText}</span>
       </button>
 
       {errorMessage && (
