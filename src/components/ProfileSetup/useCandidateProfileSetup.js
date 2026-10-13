@@ -24,6 +24,7 @@ export function useCandidateProfileSetup(initialProfile) {
     setProfile((prev) => {
       const next = { ...prev, [field]: finalVal };
       localStorage.setItem('candidate_profile', JSON.stringify(next));
+      window.dispatchEvent(new CustomEvent('candidate_profile_updated', { detail: next }));
 
       if (debounceTimerRef.current) clearTimeout(debounceTimerRef.current);
       debounceTimerRef.current = setTimeout(async () => {

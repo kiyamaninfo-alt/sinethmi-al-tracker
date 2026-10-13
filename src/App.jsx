@@ -38,7 +38,7 @@ function RouteContent() {
 }
 
 function AppContent({ profile }) {
-  useAppTheme(profile?.preferences?.theme);
+  useAppTheme(profile?.preferences?.theme, profile?.preferences?.fontSize);
   return (
     <FocusTimerProvider>
       <div className="relative min-h-screen">

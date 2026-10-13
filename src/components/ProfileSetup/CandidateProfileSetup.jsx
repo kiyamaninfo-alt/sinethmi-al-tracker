@@ -22,7 +22,7 @@ export default function CandidateProfileSetup() {
   const navigate = useNavigate();
   const { profile, setProfile, isSaved, handleChange } = useCandidateProfileSetup(getInitialCleanProfile);
   useGlobalFeedbackAudio(profile?.notificationSettings);
-  useAppTheme(profile?.preferences?.theme);
+  useAppTheme(profile?.preferences?.theme, profile?.preferences?.fontSize);
 
   const { showTour, tourStep, totalSteps, currentStepData, handleNext, handlePrev, handleSkip, startTour, startFilteredTour } = useOnboardingTour();
   const { errors, showErrorModal, setShowErrorModal, validate, handleFocusFirstError, clearError } = useProfileValidation(profile, startFilteredTour);
