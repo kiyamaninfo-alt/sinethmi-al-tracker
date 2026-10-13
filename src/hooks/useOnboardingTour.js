@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { ONBOARDING_STEPS } from '../constants/onboardingTour';
-import { filterStepsForMobile } from '../utils/tourStepFilter';
 
 function updateTourActiveFlag(isActive) {
   try {
@@ -9,20 +8,24 @@ function updateTourActiveFlag(isActive) {
   } catch {}
 }
 
-export function useOnboardingTour(onComplete, profile) {
+const isMobileScreen = () => typeof window !== 'undefined' && window.innerWidth < 640;
+
+export function useOnboardingTour(onComplete) {
   const [tourStep, setTourStep] = useState(0);
-  const [activeSteps, setActiveSteps] = useState(() => filterStepsForMobile(ONBOARDING_STEPS, profile));
+  const [activeSteps, setActiveSteps] = useState(ONBOARDING_STEPS);
   const [showTour, setShowTour] = useState(() => {
+    if (isMobileScreen()) return false;
     const active = localStorage.getItem('onboarding_completed') !== 'true';
     updateTourActiveFlag(active);
     return active;
   });
 
   useEffect(() => {
-    if (showTour && profile) {
-      setActiveSteps((prev) => filterStepsForMobile(prev, profile));
+    if (isMobileScreen()) {
+      setShowTour(false);
+      updateTourActiveFlag(false);
     }
-  }, [profile, showTour]);
+  }, []);
 
   useEffect(() => { updateTourActiveFlag(showTour); }, [showTour]);
 
@@ -51,13 +54,14 @@ export function useOnboardingTour(onComplete, profile) {
     else { finishTour(); if (onComplete) onComplete(); }
   };
   const startTour = () => {
+    if (isMobileScreen()) return;
     sessionStorage.setItem('tour_manually_opened', 'true');
-    setActiveSteps(filterStepsForMobile(ONBOARDING_STEPS, profile));
+    setActiveSteps(ONBOARDING_STEPS);
     setTourStep(0);
     setShowTour(true);
   };
   const startFilteredTour = (stepIds) => {
-    if (!stepIds || stepIds.length === 0) return;
+    if (isMobileScreen() || !stepIds || stepIds.length === 0) return;
     const filtered = ONBOARDING_STEPS.filter((s) => stepIds.includes(s.id));
     if (filtered.length === 0) return;
     sessionStorage.setItem('tour_manually_opened', 'true');
@@ -72,4 +76,3 @@ export function useOnboardingTour(onComplete, profile) {
     handleNext, handlePrev, handleSkip: finishTour, startTour, startFilteredTour
   };
 }
-

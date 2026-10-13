@@ -21,7 +21,7 @@ export default function ProfileSetupHeader({ profile, onSave, isSaved, onStartTo
 
         <div className="flex flex-wrap items-center gap-2">
           {onStartTour && (
-            <button type="button" onClick={onStartTour} className="px-3 py-1.5 rounded-lg border border-cyan-400/40 bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-300 text-xs font-mono flex items-center gap-1.5 transition-all cursor-pointer">
+            <button type="button" onClick={onStartTour} className="hidden sm:flex px-3 py-1.5 rounded-lg border border-cyan-400/40 bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-300 text-xs font-mono items-center gap-1.5 transition-all cursor-pointer">
               <span className="material-symbols-outlined text-[15px]">help</span>
               <span>Tour</span>
             </button>

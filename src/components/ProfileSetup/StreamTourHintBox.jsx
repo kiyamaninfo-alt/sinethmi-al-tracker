@@ -1,16 +1,8 @@
-import { useTourPosition } from '../../hooks/useTourPosition';
-
 export default function StreamTourHintBox({ onNext, onSkip }) {
-  const mobileCoords = useTourPosition('candidate-stream-select');
-  const containerStyle = mobileCoords ? { top: `${mobileCoords.top}px` } : {};
-
   return (
     <div
       role="alert"
-      style={containerStyle}
-      className={`fixed z-50 pointer-events-auto select-none transition-all ${
-        mobileCoords ? 'left-3 right-3 max-w-sm mx-auto' : 'top-5 left-5 max-w-xs sm:max-w-sm'
-      }`}
+      className="fixed z-50 pointer-events-auto select-none transition-all top-5 left-5 max-w-xs sm:max-w-sm hidden sm:block"
     >
       <div className="rounded-xl sm:rounded-2xl bg-[#070e1c]/95 border border-cyan-400 sm:border-2 p-2 sm:p-4 shadow-[0_0_20px_rgba(34,211,238,0.35)] backdrop-blur-2xl space-y-1 sm:space-y-3">
         <div className="flex items-center gap-1.5 sm:gap-2">
