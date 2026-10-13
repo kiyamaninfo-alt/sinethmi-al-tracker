@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { MOCK_PROFILE } from '../../constants/mockProfile';
 import { saveProfileToCloud } from './profileSyncHelper';
 import { getInitialCleanProfile, hydrateProfileWithAuth } from './profileCleanState';
+import { playClickSound } from '../../constants/clickSound';
 import { useCandidateProfileSetup } from './useCandidateProfileSetup';
 import { useOnboardingTour } from '../../hooks/useOnboardingTour';
 import { useProfileValidation } from './useProfileValidation';
@@ -28,9 +29,9 @@ export default function CandidateProfileSetup() {
   const { showTour, tourStep, totalSteps, currentStepData, handleNext, handlePrev, handleSkip, startTour, startFilteredTour } = useOnboardingTour();
   const { errors, showErrorModal, setShowErrorModal, validate, handleFocusFirstError, clearError } = useProfileValidation(profile, startFilteredTour);
 
-
   const handleSubmit = async () => {
-    if (!validate()) return;
+    playClickSound('toggle_on');
+    if (!validate()) { handleSkip(); return; }
     localStorage.setItem('candidate_profile', JSON.stringify(profile));
     localStorage.setItem('onboarding_completed', 'true');
     await saveProfileToCloud(profile);
