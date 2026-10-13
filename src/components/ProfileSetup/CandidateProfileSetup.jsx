@@ -16,7 +16,6 @@ import ProfileSetupHeader from './ProfileSetupHeader';
 import ProfileIdentityForm from './ProfileIdentityForm';
 import StreamSelector from './StreamSelector';
 import TargetHorizonForm from './TargetHorizonForm';
-import AlarmSettingsCard from './AlarmSettingsCard';
 import ProfileAuxiliaryCards from './ProfileAuxiliaryCards';
 
 export default function CandidateProfileSetup() {
@@ -65,9 +64,6 @@ export default function CandidateProfileSetup() {
         <ProfileIdentityForm profile={profile} onChange={handleFieldChange} errors={errors} isSaved={isSaved} />
         <StreamSelector selectedStream={profile.stream} onSelectStream={(s) => handleFieldChange('stream', s)} subjects={profile.subjects} onUpdateSubjects={(subs) => handleFieldChange('subjects', subs)} error={errors.stream} />
         <TargetHorizonForm profile={profile} onChange={handleFieldChange} error={errors.targetYear} />
-        <div id="focus-alarm-settings" className="scroll-mt-6">
-          <AlarmSettingsCard settings={profile.alarmSettings} onChange={(s) => handleChange('alarmSettings', s)} />
-        </div>
         <ProfileAuxiliaryCards profile={profile} onChange={handleChange} setProfile={setProfile} onSave={handleSubmit} />
       </main>
     </div>

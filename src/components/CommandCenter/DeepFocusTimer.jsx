@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useGlobalFocusTimer } from '../../context/FocusTimerContext';
 import { useSubjectLessonSelection } from '../../hooks/useSubjectLessonSelection';
 import FocusTimerHeader from './FocusTimerHeader';
@@ -8,11 +9,19 @@ import VideoFocusPopup from './VideoFocusPopup';
 import AlarmAlertModal from './AlarmAlertModal';
 import SessionConfirmModal from './SessionConfirmModal';
 import VideoClosePromptModal from './VideoClosePromptModal';
+import FocusAlarmSettingsModal from './FocusAlarmSettingsModal';
 
 export default function DeepFocusTimer() {
   const { timer, profile } = useGlobalFocusTimer();
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const subjects = profile?.subjects || [];
   const { openModal, renderModal } = useSubjectLessonSelection(timer);
+
+  const handleAlarmSettingsChange = (newAlarmSettings) => {
+    if (profile?.updateProfile) {
+      profile.updateProfile((prev) => ({ ...prev, alarmSettings: newAlarmSettings }));
+    }
+  };
 
   return (
     <section id="deep-focus-timer" className="lg:col-span-7 glass-panel rounded-3xl p-6 sm:p-7 relative overflow-hidden flex flex-col justify-between scroll-mt-24">
@@ -20,6 +29,7 @@ export default function DeepFocusTimer() {
         isMuted={timer.isMuted} onToggleMute={() => timer.setIsMuted(!timer.isMuted)}
         showVideoToggle={Boolean(timer.videoEnabled && timer.videoUrl && timer.isActive)}
         isVideoOpen={timer.showVideo} onToggleVideo={() => timer.setShowVideo(!timer.showVideo)}
+        onOpenSettings={() => setIsSettingsOpen(true)}
       />
 
       <SubjectLessonDisplay
@@ -58,13 +68,10 @@ export default function DeepFocusTimer() {
       <AlarmAlertModal message={timer.modalAlert} onConfirm={timer.stopAlarm} language={timer.language} />
 
       {timer.pendingNextRound && (
-        <SessionConfirmModal
-          round={timer.pendingNextRound} onConfirm={timer.handleConfirmNextRound}
-          onCancel={timer.handleCancelNextRound} language={timer.language}
-        />
+        <SessionConfirmModal round={timer.pendingNextRound} onConfirm={timer.handleConfirmNextRound} onCancel={timer.handleCancelNextRound} language={timer.language} />
       )}
-
       {renderModal(subjects)}
+      <FocusAlarmSettingsModal isOpen={isSettingsOpen} onClose={() => setIsSettingsOpen(false)} settings={profile?.alarmSettings || {}} onChange={handleAlarmSettingsChange} />
     </section>
   );
 }

@@ -11,17 +11,31 @@ export function useCandidateProfile() {
     }
   });
 
+  const updateProfile = (updater) => {
+    setProfile((prev) => {
+      const next = typeof updater === 'function' ? updater(prev) : { ...prev, ...updater };
+      try {
+        localStorage.setItem('candidate_profile', JSON.stringify(next));
+        window.dispatchEvent(new CustomEvent('candidate_profile_updated', { detail: next }));
+      } catch {}
+      return next;
+    });
+  };
+
   useEffect(() => {
     const handleStorage = (e) => {
       if (e.key === 'candidate_profile' && e.newValue) {
-        try {
-          setProfile(JSON.parse(e.newValue));
-        } catch (err) {}
+        try { setProfile(JSON.parse(e.newValue)); } catch {}
       }
     };
+    const handleCustom = (e) => { if (e.detail) setProfile(e.detail); };
     window.addEventListener('storage', handleStorage);
-    return () => window.removeEventListener('storage', handleStorage);
+    window.addEventListener('candidate_profile_updated', handleCustom);
+    return () => {
+      window.removeEventListener('storage', handleStorage);
+      window.removeEventListener('candidate_profile_updated', handleCustom);
+    };
   }, []);
 
-  return profile;
+  return Object.assign(profile, { updateProfile });
 }

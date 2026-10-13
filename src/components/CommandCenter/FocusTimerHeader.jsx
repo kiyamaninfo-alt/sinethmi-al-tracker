@@ -1,11 +1,4 @@
-import { useNavigate } from 'react-router-dom';
-
-export default function FocusTimerHeader({ isMuted, onToggleMute, showVideoToggle, onToggleVideo, isVideoOpen }) {
-  const navigate = useNavigate();
-
-  const handleOpenSettings = () => {
-    navigate('/profile-setup#focus-alarm-settings');
-  };
+export default function FocusTimerHeader({ isMuted, onToggleMute, showVideoToggle, onToggleVideo, isVideoOpen, onOpenSettings }) {
 
   return (
     <div className="flex items-center justify-between pb-3 border-b border-white/5">
@@ -48,8 +41,8 @@ export default function FocusTimerHeader({ isMuted, onToggleMute, showVideoToggl
 
         <button
           type="button"
-          onClick={handleOpenSettings}
-          title="Open Focus alarms and session reminders in Profile Setup"
+          onClick={onOpenSettings}
+          title="Open Focus Alarm & Session Telemetry Settings"
           className="p-2 rounded-xl bg-surface-container hover:bg-white/10 text-slate-300 hover:text-white border border-white/10 transition cursor-pointer"
         >
           <span className="material-symbols-outlined text-[18px]">settings</span>
