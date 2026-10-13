@@ -38,7 +38,12 @@ export function useCandidateProfileSetup(initialProfile) {
   };
 
   useEffect(() => {
+    const handleUpdate = (e) => {
+      if (e.detail) setProfile((prev) => ({ ...prev, ...e.detail }));
+    };
+    window.addEventListener('candidate_profile_updated', handleUpdate);
     return () => {
+      window.removeEventListener('candidate_profile_updated', handleUpdate);
       if (debounceTimerRef.current) clearTimeout(debounceTimerRef.current);
     };
   }, []);

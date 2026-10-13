@@ -2,7 +2,7 @@ import CompactLanguageToggle from '../common/CompactLanguageToggle';
 
 const QUOTES = {
   si: '“විභාග ජයග්රහණය හුදෙක් වාසනාව නොව, විනයගරුක සැලැස්මක සහ අඛණ්ඩ කැපවීමේ සැබෑ ප්රතිඵලයකි.”',
-  ta: '“පරීක්‍ෂෛ වෙත්‍රී එන්පදු වෙරුම් අදිර්ෂ්ටම් අල්ල, අදු ඔලුක්කමාන තිට්ටමිඩල් මට්‍රුම් තොඩර්ච්චියාන අර්ප්පණිප්පින් උණ්මෛයාන පලනාගුම්.”',
+  ta: '“பரீட்சை வெற்றி என்பது வெறும் அதிர்ஷ்டம் அல்ல, அது ஒழுக்கமான திட்டமிடல் மற்றும் தொடர்ச்சியான அர்ப்பணிப்பின் உண்மையான பலனாகும்.”',
   en: '“Exam victory is never sheer chance; it is the realized dividend of relentless discipline and structured persistence.”'
 };
 

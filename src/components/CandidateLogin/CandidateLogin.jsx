@@ -1,12 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '../../lib/supabase';
+import { useAppLanguage } from '../../hooks/useAppLanguage';
 import LoginHeader from './LoginHeader';
 import LoginForm from './LoginForm';
 import LoginFooter from './LoginFooter';
 
 export default function CandidateLogin() {
-  const [lang, setLang] = useState('si');
+  const [lang, setLang] = useAppLanguage();
   const navigate = useNavigate();
 
   useEffect(() => {

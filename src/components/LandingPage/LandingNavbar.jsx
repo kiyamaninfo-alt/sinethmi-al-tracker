@@ -1,28 +1,12 @@
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useAppLanguage } from '../../hooks/useAppLanguage';
 import CompactLanguageToggle from '../common/CompactLanguageToggle';
 
-export default function LandingNavbar() {
+export default function LandingNavbar({ lang: propLang, onLangChange }) {
   const navigate = useNavigate();
-  const [lang, setLang] = useState(() => {
-    try {
-      const p = localStorage.getItem('candidate_profile');
-      return p ? JSON.parse(p)?.preferences?.language || 'si' : 'si';
-    } catch {
-      return 'si';
-    }
-  });
-
-  const handleLangChange = (newLang) => {
-    setLang(newLang);
-    try {
-      const raw = localStorage.getItem('candidate_profile');
-      const profile = raw ? JSON.parse(raw) : {};
-      const updated = { ...profile, preferences: { ...(profile.preferences || {}), language: newLang } };
-      localStorage.setItem('candidate_profile', JSON.stringify(updated));
-      window.dispatchEvent(new CustomEvent('candidate_profile_updated', { detail: updated }));
-    } catch {}
-  };
+  const [hookLang, setHookLang] = useAppLanguage();
+  const lang = propLang || hookLang;
+  const handleLangChange = onLangChange || setHookLang;
 
   return (
     <header className="sticky top-0 z-50 w-full backdrop-blur-xl bg-slate-950/80 border-b border-white/10">

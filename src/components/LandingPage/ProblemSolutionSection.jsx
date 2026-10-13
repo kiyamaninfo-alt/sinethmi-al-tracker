@@ -1,15 +1,17 @@
-import { COMPARISON_DATA, LANDING_COPY } from '../../constants/landingCopy';
+import { getLandingCopy } from '../../constants/landingCopy';
+import { getComparisonData } from '../../constants/landingComparisonData';
 
-export default function ProblemSolutionSection() {
-  const { traditional, smart } = COMPARISON_DATA;
+export default function ProblemSolutionSection({ lang = 'si' }) {
+  const { traditional, smart } = getComparisonData(lang);
+  const copy = getLandingCopy(lang);
 
   return (
     <section id="problem-solution" className="py-16 sm:py-24 border-t border-white/5 bg-slate-950/60 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-12">
         <div className="text-center max-w-2xl mx-auto space-y-3">
           <span className="text-xs font-mono uppercase tracking-widest text-cyan-400 font-bold">The Reality Check</span>
-          <h2 className="text-xl sm:text-3xl font-black text-white">{LANDING_COPY.comparisonTitle}</h2>
-          <p className="text-xs sm:text-sm text-slate-400 font-sans">{LANDING_COPY.comparisonSubtitle}</p>
+          <h2 className="text-xl sm:text-3xl font-black text-white">{copy.comparisonTitle}</h2>
+          <p className="text-xs sm:text-sm text-slate-400 font-sans">{copy.comparisonSubtitle}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">

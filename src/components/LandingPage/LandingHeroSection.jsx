@@ -1,9 +1,10 @@
 import { useNavigate } from 'react-router-dom';
-import { LANDING_COPY } from '../../constants/landingCopy';
+import { getLandingCopy } from '../../constants/landingCopy';
 import HeroFloatingCard from './HeroFloatingCard';
 
-export default function LandingHeroSection() {
+export default function LandingHeroSection({ lang = 'si' }) {
   const navigate = useNavigate();
+  const copy = getLandingCopy(lang);
 
   return (
     <section className="relative pt-12 pb-20 sm:pt-20 sm:pb-28 overflow-hidden">
@@ -27,16 +28,16 @@ export default function LandingHeroSection() {
             </div>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-950/50 border border-cyan-500/30 text-cyan-300 text-[11px] font-mono">
               <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-              <span>{LANDING_COPY.heroBadge}</span>
+              <span>{copy.heroBadge}</span>
             </div>
           </div>
 
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white leading-snug sm:leading-tight font-sans tracking-tight">
-            {LANDING_COPY.heroHeadline}
+            {copy.heroHeadline}
           </h1>
 
           <p className="text-sm sm:text-base text-slate-300 font-sans leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            {LANDING_COPY.heroSubheadline}
+            {copy.heroSubheadline}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
@@ -45,14 +46,14 @@ export default function LandingHeroSection() {
               onClick={() => navigate('/login')}
               className="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 text-slate-950 font-black text-sm shadow-xl shadow-cyan-500/25 hover:brightness-110 active:scale-95 transition cursor-pointer"
             >
-              {LANDING_COPY.heroPrimaryCta}
+              {copy.heroPrimaryCta}
             </button>
             <a
               href="#playground"
               className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-surface-container/80 hover:bg-white/10 border border-white/10 text-white font-bold text-xs sm:text-sm transition flex items-center justify-center gap-2 cursor-pointer"
             >
               <span className="material-symbols-outlined text-[18px] text-cyan-400">play_circle</span>
-              {LANDING_COPY.heroSecondaryCta}
+              {copy.heroSecondaryCta}
             </a>
           </div>
         </div>
