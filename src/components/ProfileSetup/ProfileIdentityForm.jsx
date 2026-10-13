@@ -1,5 +1,5 @@
-import WhatsAppLogo from './WhatsAppLogo';
 import CandidateLocationFields from './CandidateLocationFields';
+import WhatsAppInputField from './WhatsAppInputField';
 
 export default function ProfileIdentityForm({ profile, onChange, errors = {} }) {
   return (
@@ -40,20 +40,7 @@ export default function ProfileIdentityForm({ profile, onChange, errors = {} }) 
           <input type="text" value={profile.school} onChange={(e) => onChange('school', e.target.value)} placeholder="Enter school name" className="w-full bg-surface-container-high/60 border border-outline-variant/40 rounded-lg px-3 py-2 text-on-surface focus:border-primary focus:outline-none" />
         </div>
         <CandidateLocationFields profile={profile} onChange={onChange} />
-        <div className="md:col-span-2">
-          <label className="text-outline uppercase tracking-wider block mb-1 flex items-center gap-1.5 text-emerald-400">
-            <WhatsAppLogo className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-            <span>WhatsApp Number (Alerts & Telemetry) *</span>
-          </label>
-          <input
-            id="candidate-phone-input" type="tel" value={profile.phone} onChange={(e) => onChange('phone', e.target.value)}
-            placeholder="+94 7X XXX XXXX"
-            className={`w-full bg-surface-container-high/60 border rounded-lg px-3 py-2 text-on-surface font-mono focus:outline-none transition-colors ${
-              errors.phone ? 'border-rose-500 ring-2 ring-rose-500/30' : 'border-outline-variant/40 focus:border-emerald-400'
-            }`}
-          />
-          {errors.phone && <p className="text-[11px] text-rose-400 mt-1 font-sans">{errors.phone}</p>}
-        </div>
+        <WhatsAppInputField value={profile.phone} onChange={(v) => onChange('phone', v)} error={errors.phone} />
       </div>
     </div>
   );

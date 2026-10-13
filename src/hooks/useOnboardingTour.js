@@ -24,7 +24,8 @@ export function useOnboardingTour(onComplete) {
     const current = activeSteps[tourStep];
     const el = current?.targetId ? document.getElementById(current.targetId) : null;
     if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const isMobile = window.innerWidth < 640;
+      el.scrollIntoView({ behavior: 'smooth', block: isMobile ? 'nearest' : 'center' });
       el.focus?.();
       el.classList.add('ring-4', 'ring-cyan-400', 'ring-offset-2', 'ring-offset-slate-950');
       const timer = setTimeout(() => {

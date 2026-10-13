@@ -16,18 +16,28 @@ export function useTourPosition(targetId) {
       }
       const rect = el.getBoundingClientRect();
       const popupHeight = 120;
-      let top = rect.top - popupHeight - 8;
-      if (top < 12) {
-        top = Math.min(window.innerHeight - popupHeight - 16, rect.bottom + 8);
+      const isSaveTarget = targetId === 'candidate-save-identity';
+
+      if (isSaveTarget) {
+        const top = Math.max(12, Math.round(rect.top - popupHeight - 14));
+        setCoords({ top, isAbove: true });
+        return;
       }
-      setCoords({ top: Math.max(12, Math.round(top)) });
+
+      if (rect.top >= popupHeight + 20) {
+        setCoords({ top: Math.max(12, Math.round(rect.top - popupHeight - 12)), isAbove: true });
+      } else if (window.innerHeight - rect.bottom >= popupHeight + 20) {
+        setCoords({ top: Math.round(rect.bottom + 12), isAbove: false });
+      } else {
+        setCoords({ top: 12, isAbove: true });
+      }
     };
 
     updatePosition();
     const handleScrollOrResize = () => updatePosition();
     window.addEventListener('scroll', handleScrollOrResize, { passive: true });
     window.addEventListener('resize', handleScrollOrResize, { passive: true });
-    const timer = setTimeout(updatePosition, 300);
+    const timer = setTimeout(updatePosition, 350);
 
     return () => {
       clearTimeout(timer);

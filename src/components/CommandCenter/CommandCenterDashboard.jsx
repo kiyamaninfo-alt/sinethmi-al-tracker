@@ -21,6 +21,8 @@ export default function CommandCenterDashboard() {
         const el = document.querySelector(hash);
         if (el) el.scrollIntoView({ behavior: 'smooth' });
       }, 150);
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }
   }, []);
   return (

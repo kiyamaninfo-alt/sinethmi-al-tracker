@@ -30,8 +30,8 @@ export default function StreamSubjectsModal({ streamName, isOpen, onClose, initi
   );
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-4 bg-black/85 backdrop-blur-md">
-      <div className="w-full max-w-3xl max-h-[90vh] rounded-2xl bg-[#050b14] border border-cyan-500/30 p-4 sm:p-5 flex flex-col shadow-2xl space-y-3">
+    <div className="fixed inset-0 z-[100] flex flex-col p-2 sm:p-4 bg-black/90 backdrop-blur-md">
+      <div className="w-full h-full max-w-5xl mx-auto rounded-2xl bg-[#050b14] border border-cyan-500/30 p-4 sm:p-6 flex flex-col shadow-2xl space-y-3 flex-1 overflow-hidden">
         <div className="flex items-center justify-between pb-2 border-b border-cyan-500/20">
           <div>
             <h3 className="text-sm sm:text-base font-bold text-white flex items-center gap-2">
@@ -50,8 +50,8 @@ export default function StreamSubjectsModal({ streamName, isOpen, onClose, initi
             className="w-full bg-surface-container/60 border border-outline-variant/30 rounded-xl px-3.5 py-2 pl-9 text-xs text-on-surface focus:outline-none focus:border-cyan-400" />
           <span className="material-symbols-outlined text-outline text-[16px] absolute left-3 top-2.5">search</span>
         </div>
-        <div className="flex-1 overflow-y-auto pr-1 space-y-2 max-h-56 min-h-36 custom-scrollbar">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+        <div className="flex-1 overflow-y-auto pr-1 space-y-2 custom-scrollbar">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
             {filtered.map((s) => (
               <ModalSubjectItem key={s.id} subject={s} isSelected={selectedList.some((item) => item.id === s.id)} onToggle={toggleSubject} />
             ))}
