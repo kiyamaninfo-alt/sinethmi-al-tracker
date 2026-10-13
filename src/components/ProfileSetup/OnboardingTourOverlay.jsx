@@ -18,7 +18,7 @@ export default function OnboardingTourOverlay({
   return (
     <aside aria-label="Candidate Onboarding Guide" style={containerStyle}
       className={`fixed z-50 pointer-events-auto select-none transition-shadow touch-none ${
-        mobileCoords ? 'left-3 right-3 w-auto' : 'bottom-3 sm:bottom-6 left-3 right-3 sm:left-auto sm:right-8 w-auto sm:w-[92vw] sm:max-w-md'
+        mobileCoords ? 'left-3 right-3 max-w-[calc(100vw-24px)] mx-auto' : 'bottom-3 sm:bottom-6 left-3 right-3 sm:left-auto sm:right-8 max-w-[calc(100vw-24px)] sm:max-w-md'
       }`}>
       <div className={`relative rounded-xl sm:rounded-2xl bg-[#070e1c]/95 border border-cyan-400 sm:border-2 p-2.5 sm:p-6 shadow-[0_0_20px_rgba(34,211,238,0.35)] sm:shadow-[0_0_45px_rgba(34,211,238,0.45)] backdrop-blur-2xl space-y-1.5 sm:space-y-3.5 ${isDragging ? 'cursor-grabbing opacity-90' : ''}`}>
         <div onPointerDown={handlePointerDown} className="flex items-center justify-between border-b border-cyan-500/25 pb-1 sm:pb-2.5 cursor-grab">

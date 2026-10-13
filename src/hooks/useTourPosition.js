@@ -15,36 +15,18 @@ export function useTourPosition(targetId) {
         return;
       }
       const rect = el.getBoundingClientRect();
-      const popupHeight = 100;
-      const isNameField = targetId === 'candidate-name-input';
-      const isStreamTarget = targetId === 'candidate-stream-select';
-      const isSaveTarget = targetId === 'candidate-save-identity';
+      const popupHeight = 92;
+      const gap = 12;
 
-      if (isNameField) {
-        const top = Math.max(12, Math.round(rect.top - popupHeight - 32));
-        setCoords({ top, isAbove: true });
-        return;
+      // Calculate candidate top position directly above element
+      let top = Math.round(rect.top - popupHeight - gap);
+
+      // If too close to viewport top, ensure it stays visible
+      if (top < 10) {
+        top = Math.round(rect.bottom + gap);
       }
 
-      if (isStreamTarget) {
-        const top = Math.max(12, Math.round(rect.top - popupHeight - 20));
-        setCoords({ top, isAbove: true });
-        return;
-      }
-
-      if (isSaveTarget) {
-        const top = Math.max(12, Math.round(rect.top - popupHeight - 16));
-        setCoords({ top, isAbove: true });
-        return;
-      }
-
-      if (rect.top >= popupHeight + 25) {
-        setCoords({ top: Math.max(12, Math.round(rect.top - popupHeight - 20)), isAbove: true });
-      } else if (window.innerHeight - rect.bottom >= popupHeight + 25) {
-        setCoords({ top: Math.round(rect.bottom + 16), isAbove: false });
-      } else {
-        setCoords({ top: 12, isAbove: true });
-      }
+      setCoords({ top });
     };
 
     updatePosition();

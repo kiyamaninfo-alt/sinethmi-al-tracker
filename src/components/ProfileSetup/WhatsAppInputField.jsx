@@ -19,7 +19,7 @@ export default function WhatsAppInputField({ value = '', onChange, error }) {
   };
 
   return (
-    <div className="md:col-span-2">
+    <div id="candidate-phone-field" className="md:col-span-2">
       <label className="text-outline uppercase tracking-wider block mb-1 flex items-center gap-1.5 text-emerald-400">
         <WhatsAppLogo className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
         <span>WhatsApp Number (Alerts & Telemetry) *</span>

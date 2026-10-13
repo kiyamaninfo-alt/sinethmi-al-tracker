@@ -3,7 +3,7 @@ import WhatsAppInputField from './WhatsAppInputField';
 
 export default function ProfileIdentityForm({ profile, onChange, errors = {} }) {
   return (
-    <div className="rounded-xl bg-surface-container-low/80 border border-outline-variant/30 p-5 space-y-4 backdrop-blur-md">
+    <div id="candidate-identity-card" className="rounded-xl bg-surface-container-low/80 border border-outline-variant/30 p-5 space-y-4 backdrop-blur-md">
       <div className="flex items-center gap-4 pb-3 border-b border-outline-variant/20">
         <div className="relative w-14 h-14 rounded-xl overflow-hidden border-2 border-primary/40 bg-surface-container-high shrink-0 flex items-center justify-center">
           {profile.avatarUrl ? <img src={profile.avatarUrl} alt="Avatar" className="w-full h-full object-cover" /> : <span className="material-symbols-outlined text-outline text-[28px]">person</span>}
