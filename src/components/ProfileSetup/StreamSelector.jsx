@@ -4,12 +4,14 @@ import StreamButton from './StreamButton';
 import CustomStreamForm from './CustomStreamForm';
 import StreamSubjectsModal from './StreamSubjectsModal';
 import StreamActionBar from './StreamActionBar';
+import SubjectSelectorModal from './SubjectSelectorModal';
 
-export default function StreamSelector({ selectedStream, onSelectStream, subjects, onUpdateSubjects, onUpdate, isSaved, error, children }) {
+export default function StreamSelector({ selectedStream, onSelectStream, subjects = [], onUpdateSubjects, error }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalStream, setModalStream] = useState(selectedStream);
   const [isCustomOpen, setIsCustomOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
+  const [isMatrixOpen, setIsMatrixOpen] = useState(false);
 
   const [customStream, setCustomStream] = useState(() => {
     const isStd = STANDARD_STREAMS.some((s) => s.name === selectedStream);
@@ -17,8 +19,9 @@ export default function StreamSelector({ selectedStream, onSelectStream, subject
   });
 
   const handleCardClick = (name) => {
+    if (subjects.length >= 3 && !isEditing) { setIsMatrixOpen(true); return; }
     onSelectStream(name); setModalStream(name);
-    if (onUpdateSubjects) onUpdateSubjects([]);
+    if (onUpdateSubjects && subjects.length === 0) onUpdateSubjects([]);
     setIsModalOpen(true);
   };
   const handleApplyCustom = (name) => {
@@ -30,12 +33,9 @@ export default function StreamSelector({ selectedStream, onSelectStream, subject
     if (selectedStream === customStream?.name) { onSelectStream(STANDARD_STREAMS[0].name); if (onUpdateSubjects) onUpdateSubjects([]); }
     setCustomStream(null);
   };
-
   const baseStreams = customStream ? [customStream, ...STANDARD_STREAMS] : STANDARD_STREAMS;
-  const handleToggleEdit = () => {
-    if (isEditing) { setIsEditing(false); }
-    else { setIsEditing(true); setModalStream(selectedStream || STANDARD_STREAMS[0].name); setIsModalOpen(true); }
-  };
+  const isLocked = subjects.length >= 3 && !isEditing;
+  const displayedStreams = isLocked ? baseStreams.filter((s) => s.name === selectedStream) : baseStreams;
 
   return (
     <div id="candidate-stream-select" className={`rounded-xl bg-surface-container-low/80 border p-5 space-y-4 backdrop-blur-md transition-colors ${
@@ -47,17 +47,17 @@ export default function StreamSelector({ selectedStream, onSelectStream, subject
             <span className="material-symbols-outlined text-secondary text-[18px]">account_tree</span>
             Select Examination Stream *
           </h3>
-          <p className="text-xs text-outline">Click stream to set track &amp; subjects. Custom tracks appear first.</p>
+          <p className="text-xs text-outline">{isLocked ? 'Click stream card to inspect or customize active subjects matrix.' : 'Click stream to set track & subjects.'}</p>
           {error && <p className="text-[11px] text-rose-400 mt-1 font-sans">{error}</p>}
         </div>
         <div className="flex items-center gap-2">
           {isEditing && <span className="text-[11px] font-mono font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40">Editing Active</span>}
-          <span className="text-xs px-2.5 py-1 rounded bg-secondary-container/20 text-secondary border border-secondary/30 font-mono">Active: {selectedStream}</span>
+          <span className="text-xs px-2.5 py-1 rounded bg-secondary-container/20 text-secondary border border-secondary/30 font-mono">Active: {selectedStream || 'None'}</span>
         </div>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 items-stretch">
-        {baseStreams.map((st) => (
+      <div className={`grid gap-3 items-stretch ${isLocked ? 'grid-cols-1 max-w-sm mx-auto' : 'grid-cols-2 sm:grid-cols-3'}`}>
+        {displayedStreams.map((st) => (
           <StreamButton key={st.id} stream={st} isSelected={selectedStream === st.name} isDimmed={false}
             isEditing={isEditing} subjects={selectedStream === st.name ? subjects : []} onClick={() => handleCardClick(st.name)}
             onDeleteCustom={handleDeleteCustom} onEditCustom={() => setIsCustomOpen(true)} />
@@ -67,13 +67,12 @@ export default function StreamSelector({ selectedStream, onSelectStream, subject
       <CustomStreamForm isOpen={isCustomOpen} onOpen={() => setIsCustomOpen(true)} onClose={() => setIsCustomOpen(false)}
         onApply={handleApplyCustom} hasCustomStream={Boolean(customStream)} initialVal={customStream?.name || ''} />
 
-      {children}
-
-      <StreamActionBar isEditing={isEditing} onToggleEdit={handleToggleEdit} onUpdate={() => { setIsEditing(false); onUpdate(); }} isSaved={isSaved} />
+      <StreamActionBar isEditing={isEditing} onToggleEdit={() => setIsEditing(!isEditing)} />
 
       {isModalOpen && (
         <StreamSubjectsModal streamName={modalStream} isOpen={isModalOpen} initialSubjects={subjects} onClose={() => setIsModalOpen(false)} onSaveSubjects={onUpdateSubjects} />
       )}
+      <SubjectSelectorModal isOpen={isMatrixOpen} onClose={() => setIsMatrixOpen(false)} subjects={subjects} onUpdateSubjects={onUpdateSubjects} />
     </div>
   );
 }

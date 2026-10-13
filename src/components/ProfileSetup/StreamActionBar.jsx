@@ -1,4 +1,4 @@
-export default function StreamActionBar({ isEditing, onToggleEdit, onUpdate, isSaved }) {
+export default function StreamActionBar({ isEditing, onToggleEdit }) {
   return (
     <div className="pt-3 border-t border-outline-variant/20 flex flex-wrap items-center justify-end gap-2.5">
       <button
@@ -10,14 +10,6 @@ export default function StreamActionBar({ isEditing, onToggleEdit, onUpdate, isS
       >
         <span className="material-symbols-outlined text-[15px]">{isEditing ? 'lock' : 'edit'}</span>
         <span>{isEditing ? 'Lock Streams' : 'Edit Stream & Subjects'}</span>
-      </button>
-      <button
-        type="button"
-        onClick={onUpdate}
-        className="w-full sm:w-auto px-5 py-2 rounded-lg bg-gradient-to-r from-primary to-inverse-primary text-on-primary text-xs font-bold flex items-center justify-center gap-1.5 shadow-lg shadow-primary/20 hover:brightness-110 active:scale-95 transition-all cursor-pointer"
-      >
-        <span className="material-symbols-outlined text-[15px]">{isSaved ? 'check_circle' : 'sync'}</span>
-        <span>{isSaved ? 'Profile Updated ✓' : 'Update Profile'}</span>
       </button>
     </div>
   );

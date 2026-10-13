@@ -15,7 +15,6 @@ import ValidationAlertModal from './ValidationAlertModal';
 import ProfileSetupHeader from './ProfileSetupHeader';
 import ProfileIdentityForm from './ProfileIdentityForm';
 import StreamSelector from './StreamSelector';
-import SubjectSelector from './SubjectSelector';
 import TargetHorizonForm from './TargetHorizonForm';
 import AlarmSettingsCard from './AlarmSettingsCard';
 import ProfileAuxiliaryCards from './ProfileAuxiliaryCards';
@@ -64,9 +63,7 @@ export default function CandidateProfileSetup() {
       <main className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-6 space-y-6">
         <ProfileSetupHeader profile={profile} onSave={handleSubmit} isSaved={isSaved} onStartTour={startTour} />
         <ProfileIdentityForm profile={profile} onChange={handleFieldChange} errors={errors} isSaved={isSaved} />
-        <StreamSelector selectedStream={profile.stream} onSelectStream={(s) => handleFieldChange('stream', s)} subjects={profile.subjects} onUpdateSubjects={(subs) => handleFieldChange('subjects', subs)} onUpdate={handleSubmit} isSaved={isSaved} error={errors.stream}>
-          <SubjectSelector subjects={profile.subjects} onUpdateSubjects={(subs) => handleFieldChange('subjects', subs)} />
-        </StreamSelector>
+        <StreamSelector selectedStream={profile.stream} onSelectStream={(s) => handleFieldChange('stream', s)} subjects={profile.subjects} onUpdateSubjects={(subs) => handleFieldChange('subjects', subs)} error={errors.stream} />
         <TargetHorizonForm profile={profile} onChange={handleFieldChange} error={errors.targetYear} />
         <div id="focus-alarm-settings" className="scroll-mt-6">
           <AlarmSettingsCard settings={profile.alarmSettings} onChange={(s) => handleChange('alarmSettings', s)} />
