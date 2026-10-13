@@ -1,28 +1,22 @@
 import { useState, useEffect } from 'react';
 import { ONBOARDING_STEPS } from '../constants/onboardingTour';
 
-function isReturningUser() {
-  return localStorage.getItem('onboarding_completed') === 'true';
-}
-
 function updateTourActiveFlag(isActive) {
   try {
     sessionStorage.setItem('onboarding_tour_active', isActive ? 'true' : 'false');
     window.dispatchEvent(new CustomEvent('tourstatechange', { detail: { isActive } }));
-  } catch (e) {}
+  } catch {}
 }
 
 export function useOnboardingTour(onComplete) {
   const [tourStep, setTourStep] = useState(0);
   const [showTour, setShowTour] = useState(() => {
-    const active = !isReturningUser();
+    const active = localStorage.getItem('onboarding_completed') !== 'true';
     updateTourActiveFlag(active);
     return active;
   });
 
-  useEffect(() => {
-    updateTourActiveFlag(showTour);
-  }, [showTour]);
+  useEffect(() => { updateTourActiveFlag(showTour); }, [showTour]);
 
   useEffect(() => {
     if (!showTour) return;
@@ -66,6 +60,12 @@ export function useOnboardingTour(onComplete) {
       setTourStep(idx);
       setShowTour(true);
     }
+  };
+
+  const startTour = () => {
+    sessionStorage.setItem('tour_manually_opened', 'true');
+    setTourStep(0);
+    setShowTour(true);
   };
 
   return {
