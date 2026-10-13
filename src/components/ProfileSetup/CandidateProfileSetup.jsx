@@ -52,7 +52,7 @@ export default function CandidateProfileSetup() {
   const toggleClick = (v) => handleChange('notificationSettings', { ...(profile.notificationSettings || {}), clickSoundEnabled: v });
 
   return (
-    <div className="min-h-screen bg-[#050811] text-slate-200 antialiased relative pb-16">
+    <div className="min-h-screen bg-surface text-on-surface antialiased relative pb-16">
       {showTour && currentStepData?.id !== 'tour-stream' && (
         <OnboardingTourOverlay currentStep={tourStep} totalSteps={totalSteps} stepData={currentStepData} onNext={tourStep >= totalSteps - 1 ? handleSubmit : handleNext} onPrev={handlePrev} onSkip={handleSkip} />
       )}

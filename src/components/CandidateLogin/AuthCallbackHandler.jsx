@@ -54,7 +54,7 @@ export default function AuthCallbackHandler() {
   }, [navigate]);
 
   return (
-    <div className="min-h-screen bg-[#050811] flex items-center justify-center text-slate-200">
+    <div className="min-h-screen bg-surface flex items-center justify-center text-on-surface">
       <div className="flex items-center gap-3 p-5 rounded-2xl bg-surface-container-low border border-cyan-400/40">
         <span className="w-3 h-3 rounded-full bg-cyan-400 animate-ping" />
         <span className="font-mono text-xs text-cyan-300">Synchronizing Mission Control Telemetry...</span>

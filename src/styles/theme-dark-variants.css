@@ -1,0 +1,28 @@
+/* Synthwave & Matrix theme global canvas overrides */
+html[data-theme="synthwave"],
+html[data-theme="synthwave"] body,
+html[data-theme="synthwave"] .min-h-screen,
+html[data-theme="synthwave"] [class*="bg-[#050811]"] {
+  background-color: #120726 !important;
+  color: #fdf4ff !important;
+}
+
+html[data-theme="synthwave"] .glass-panel,
+html[data-theme="synthwave"] .glass-card {
+  background: rgba(34, 16, 69, 0.75) !important;
+  border-color: rgba(217, 70, 239, 0.2) !important;
+}
+
+html[data-theme="matrix"],
+html[data-theme="matrix"] body,
+html[data-theme="matrix"] .min-h-screen,
+html[data-theme="matrix"] [class*="bg-[#050811]"] {
+  background-color: #021208 !important;
+  color: #dcfce7 !important;
+}
+
+html[data-theme="matrix"] .glass-panel,
+html[data-theme="matrix"] .glass-card {
+  background: rgba(6, 43, 19, 0.75) !important;
+  border-color: rgba(34, 197, 94, 0.2) !important;
+}

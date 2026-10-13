@@ -1,0 +1,43 @@
+/* Minimal Light Text and Typography Overrides */
+html[data-theme="minimal_light"] .text-slate-100,
+html[data-theme="minimal_light"] .text-slate-200,
+html[data-theme="minimal_light"] .text-slate-300 {
+  color: #1e293b !important;
+}
+
+html[data-theme="minimal_light"] .text-slate-400 {
+  color: #475569 !important;
+}
+
+html[data-theme="minimal_light"] .text-slate-500 {
+  color: #64748b !important;
+}
+
+html[data-theme="minimal_light"] .text-white {
+  color: #0f172a !important;
+}
+
+html[data-theme="minimal_light"] .text-on-surface {
+  color: #0f172a !important;
+}
+
+html[data-theme="minimal_light"] .text-outline {
+  color: #475569 !important;
+}
+
+html[data-theme="minimal_light"] .text-cyan-200,
+html[data-theme="minimal_light"] .text-cyan-300 {
+  color: #0284c7 !important;
+}
+
+html[data-theme="minimal_light"] .text-purple-200,
+html[data-theme="minimal_light"] .text-purple-300 {
+  color: #7c3aed !important;
+}
+
+html[data-theme="minimal_light"] .border-white\/5,
+html[data-theme="minimal_light"] .border-white\/10,
+html[data-theme="minimal_light"] .border-white\/15,
+html[data-theme="minimal_light"] .border-white\/20 {
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}

@@ -2,3 +2,6 @@
 @import "./styles/theme.css";
 @import "./styles/glass.css";
 @import "./styles/theme-modes.css";
+@import "./styles/theme-light.css";
+@import "./styles/theme-light-text.css";
+@import "./styles/theme-dark-variants.css";

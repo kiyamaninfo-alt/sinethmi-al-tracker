@@ -11,7 +11,7 @@ export default function SyllabusManagerPage() {
   const totalUnits = subjects.reduce((acc, s) => acc + (s.units || 14), 0);
 
   return (
-    <div className="min-h-screen bg-[#050811] text-slate-200 antialiased relative pb-16">
+    <div className="min-h-screen bg-surface text-on-surface antialiased relative pb-16">
       <div className="fixed inset-0 pointer-events-none opacity-20 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] z-0" />
 
       <main className="relative z-10 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-6 space-y-6">

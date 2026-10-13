@@ -24,7 +24,7 @@ export default function CommandCenterDashboard() {
     }
   }, []);
   return (
-    <div className="min-h-screen bg-[#050811] text-slate-200 antialiased selection:bg-neon-cyan/20 selection:text-neon-cyan relative">
+    <div className="min-h-screen bg-surface text-on-surface antialiased selection:bg-neon-cyan/20 selection:text-neon-cyan relative">
       {/* Ambient background decorative light grids */}
       <div className="fixed inset-0 pointer-events-none opacity-20 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] z-0" />
       

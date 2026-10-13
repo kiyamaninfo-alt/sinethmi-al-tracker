@@ -12,7 +12,7 @@ import VisualAnalyticsFooter from './VisualAnalyticsFooter';
 
 export default function VisualAnalyticsDashboard({ onBack }) {
   return (
-    <div className="min-h-screen bg-[#060e20] text-slate-100 antialiased selection:bg-purple-600 selection:text-white">
+    <div className="min-h-screen bg-surface text-on-surface antialiased selection:bg-purple-600 selection:text-white">
       <VisualAnalyticsHeader onBack={onBack} />
 
       <main className="max-w-[1780px] mx-auto px-4 lg:px-8 py-5 space-y-5">

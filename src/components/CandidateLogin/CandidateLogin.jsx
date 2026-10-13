@@ -25,7 +25,7 @@ export default function CandidateLogin() {
   }, [navigate]);
 
   return (
-    <main className="w-full min-h-screen bg-[#050811] flex items-center justify-center p-4 sm:p-8 relative overflow-hidden selection:bg-primary-container selection:text-on-primary-container">
+    <main className="w-full min-h-screen bg-surface text-on-surface flex items-center justify-center p-4 sm:p-8 relative overflow-hidden selection:bg-primary-container selection:text-on-primary-container">
       {/* Ambient Depth Lighting */}
       <div className="absolute -top-32 -right-20 w-80 h-80 rounded-full bg-cyan-500/10 blur-3xl pointer-events-none" />
       <div className="absolute -bottom-32 -left-20 w-80 h-80 rounded-full bg-purple-500/10 blur-3xl pointer-events-none" />

@@ -1,0 +1,51 @@
+/* Minimal Light Mode Global Theme Overrides */
+html[data-theme="minimal_light"],
+html[data-theme="minimal_light"] body,
+html[data-theme="minimal_light"] .min-h-screen,
+html[data-theme="minimal_light"] [class*="bg-[#050811]"],
+html[data-theme="minimal_light"] [class*="bg-[#060e20]"],
+html[data-theme="minimal_light"] [class*="bg-[#040814]"] {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+html[data-theme="minimal_light"] .glass-panel {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+html[data-theme="minimal_light"] .glass-panel-elevated,
+html[data-theme="minimal_light"] .glass-card {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.06) !important;
+}
+
+html[data-theme="minimal_light"] .glass-pill {
+  background: rgba(0, 0, 0, 0.03) !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+html[data-theme="minimal_light"] input,
+html[data-theme="minimal_light"] select,
+html[data-theme="minimal_light"] textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+html[data-theme="minimal_light"] input::placeholder,
+html[data-theme="minimal_light"] textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+html[data-theme="minimal_light"] select option {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+html[data-theme="minimal_light"] [class*="bg-[radial-gradient"] {
+  opacity: 0.07 !important;
+  filter: invert(1);
+}
