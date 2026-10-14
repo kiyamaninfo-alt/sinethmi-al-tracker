@@ -37,7 +37,7 @@ export default function OfflineStorageCard({ profile, onReset }) {
         <div className="p-5 pt-0 space-y-4 border-t border-outline-variant/20 animate-in fade-in duration-150">
           <StorageAndSystemTelemetry />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <OfflineSyncAndCacheActions />
+            <OfflineSyncAndCacheActions profile={profile} />
             <AppInstallAndUpdate />
           </div>
           <AppInfoAndPrivacy />

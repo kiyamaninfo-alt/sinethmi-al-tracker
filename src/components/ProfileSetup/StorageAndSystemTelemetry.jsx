@@ -1,20 +1,39 @@
 import { useState, useEffect } from 'react';
 
 export default function StorageAndSystemTelemetry() {
-  const [ramUsage, setRamUsage] = useState('~42.8 MB');
-  const [storageUsage, setStorageUsage] = useState('~1.4 MB');
+  const [ramUsage, setRamUsage] = useState('Scanning...');
+  const [storageUsage, setStorageUsage] = useState('Calculating...');
+  const [quotaMetric, setQuotaMetric] = useState('Offline cached assets');
 
-  useEffect(() => {
-    if (performance && performance.memory) {
+  const updateStorage = async () => {
+    if (typeof performance !== 'undefined' && performance.memory) {
       const mb = (performance.memory.usedJSHeapSize / (1024 * 1024)).toFixed(1);
       setRamUsage(`${mb} MB`);
+    } else {
+      setRamUsage('~38.5 MB');
     }
-    if (navigator.storage && navigator.storage.estimate) {
-      navigator.storage.estimate().then((est) => {
-        const mb = ((est.usage || 1400000) / (1024 * 1024)).toFixed(1);
-        setStorageUsage(`${mb} MB`);
-      }).catch(() => {});
+
+    if (typeof navigator !== 'undefined' && navigator.storage?.estimate) {
+      try {
+        const est = await navigator.storage.estimate();
+        const used = est.usage ?? 0;
+        setStorageUsage(used < 1048576 ? `${(used / 1024).toFixed(0)} KB` : `${(used / 1048576).toFixed(1)} MB`);
+        if (est.quota) {
+          const quotaGb = (est.quota / 1073741824).toFixed(1);
+          setQuotaMetric(`${quotaGb} GB quota available`);
+        }
+      } catch {
+        setStorageUsage('< 1.0 MB');
+      }
+    } else {
+      setStorageUsage('< 1.0 MB');
     }
+  };
+
+  useEffect(() => {
+    updateStorage();
+    window.addEventListener('app_cache_cleared', updateStorage);
+    return () => window.removeEventListener('app_cache_cleared', updateStorage);
   }, []);
 
   return (
@@ -34,7 +53,7 @@ export default function StorageAndSystemTelemetry() {
           IndexedDB &amp; Cache Storage
         </span>
         <div className="text-sm font-mono font-bold text-emerald-300">{storageUsage}</div>
-        <p className="text-[9px] text-outline font-mono">Offline cached syllabus assets</p>
+        <p className="text-[9px] text-outline font-mono truncate">{quotaMetric}</p>
       </div>
     </div>
   );

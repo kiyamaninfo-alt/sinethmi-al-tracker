@@ -5,16 +5,21 @@ export default function DataBackupAndReset({ profile, onReset }) {
   const [confirmInput, setConfirmInput] = useState('');
 
   const handleBackup = () => {
-    const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(profile, null, 2));
-    const dl = document.createElement('a');
-    dl.setAttribute('href', dataStr);
-    dl.setAttribute('download', `sinethmi_telemetry_backup_${new Date().toISOString().slice(0, 10)}.json`);
-    dl.click();
+    try {
+      const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(profile, null, 2));
+      const dl = document.createElement('a');
+      dl.setAttribute('href', dataStr);
+      dl.setAttribute('download', `sinethmi_telemetry_backup_${new Date().toISOString().slice(0, 10)}.json`);
+      document.body.appendChild(dl);
+      dl.click();
+      document.body.removeChild(dl);
+    } catch (e) { console.warn('Backup export failure:', e); }
   };
 
   const handleExecuteReset = () => {
     if (confirmInput.trim().toUpperCase() === 'RESET') {
-      localStorage.clear();
+      localStorage.removeItem('candidate_profile');
+      localStorage.removeItem('onboarding_completed');
       onReset();
       setShowConfirm(false);
       setConfirmInput('');
@@ -26,19 +31,11 @@ export default function DataBackupAndReset({ profile, onReset }) {
       <div className="flex items-center justify-between">
         <span className="text-[11px] font-mono text-outline">Candidate Data Safety</span>
         <div className="flex items-center gap-2">
-          <button
-            type="button"
-            onClick={handleBackup}
-            className="text-[11px] font-mono text-cyan-300 hover:text-cyan-200 underline decoration-cyan-400/40 flex items-center gap-1 cursor-pointer"
-          >
+          <button type="button" onClick={handleBackup} className="text-[11px] font-mono text-cyan-300 hover:text-cyan-200 underline decoration-cyan-400/40 flex items-center gap-1 cursor-pointer">
             <span className="material-symbols-outlined text-[13px]">download</span>
             Backup JSON
           </button>
-          <button
-            type="button"
-            onClick={() => setShowConfirm(!showConfirm)}
-            className="text-[11px] font-mono text-rose-400 hover:text-rose-300 underline decoration-rose-400/40 flex items-center gap-1 cursor-pointer"
-          >
+          <button type="button" onClick={() => setShowConfirm(!showConfirm)} className="text-[11px] font-mono text-rose-400 hover:text-rose-300 underline decoration-rose-400/40 flex items-center gap-1 cursor-pointer">
             <span className="material-symbols-outlined text-[13px]">restart_alt</span>
             Reset Data
           </button>
@@ -52,16 +49,11 @@ export default function DataBackupAndReset({ profile, onReset }) {
           </p>
           <div className="flex items-center gap-2">
             <input
-              type="text"
-              value={confirmInput}
-              onChange={(e) => setConfirmInput(e.target.value)}
-              placeholder="RESET"
-              className="bg-surface-container border border-rose-400/50 rounded px-2.5 py-1 text-xs font-mono text-rose-300 focus:outline-none"
+              type="text" value={confirmInput} onChange={(e) => setConfirmInput(e.target.value)}
+              placeholder="RESET" className="bg-surface-container border border-rose-400/50 rounded px-2.5 py-1 text-xs font-mono text-rose-300 focus:outline-none"
             />
             <button
-              type="button"
-              disabled={confirmInput.trim().toUpperCase() !== 'RESET'}
-              onClick={handleExecuteReset}
+              type="button" disabled={confirmInput.trim().toUpperCase() !== 'RESET'} onClick={handleExecuteReset}
               className="px-3 py-1 rounded bg-rose-500 text-white font-mono text-xs font-bold disabled:opacity-40 cursor-pointer"
             >
               Confirm Wipe

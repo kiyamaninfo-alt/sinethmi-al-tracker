@@ -1,24 +1,38 @@
 import { useState } from 'react';
+import { saveProfileToCloud } from './profileSyncHelper';
 
-export default function OfflineSyncAndCacheActions() {
+export default function OfflineSyncAndCacheActions({ profile }) {
   const [syncStatus, setSyncStatus] = useState('Idle');
   const [cacheStatus, setCacheStatus] = useState('Clear Cache');
 
-  const handleManualSync = () => {
+  const handleManualSync = async () => {
+    if (!navigator.onLine) {
+      setSyncStatus('Offline (Queued)');
+      setTimeout(() => setSyncStatus('Idle'), 2500);
+      return;
+    }
     setSyncStatus('Syncing Telemetry...');
-    setTimeout(() => {
-      setSyncStatus('Synchronized!');
-      setTimeout(() => setSyncStatus('Idle'), 2000);
-    }, 1200);
+    try {
+      const res = await saveProfileToCloud(profile);
+      setSyncStatus(res?.success ? 'Synchronized!' : 'Sync Failed');
+    } catch {
+      setSyncStatus('Sync Failed');
+    }
+    setTimeout(() => setSyncStatus('Idle'), 2500);
   };
 
   const handleClearCache = async () => {
     setCacheStatus('Clearing...');
-    if ('caches' in window) {
-      const keys = await caches.keys();
-      await Promise.all(keys.map((k) => caches.delete(k)));
+    try {
+      if ('caches' in window) {
+        const keys = await caches.keys();
+        await Promise.all(keys.map((k) => caches.delete(k)));
+      }
+      window.dispatchEvent(new CustomEvent('app_cache_cleared'));
+      setCacheStatus('Cache Cleared!');
+    } catch {
+      setCacheStatus('Error Clearing');
     }
-    setCacheStatus('Cache Cleared!');
     setTimeout(() => setCacheStatus('Clear Cache'), 2000);
   };
 

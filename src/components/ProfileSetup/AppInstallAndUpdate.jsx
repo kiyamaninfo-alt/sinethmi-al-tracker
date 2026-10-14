@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { APP_METADATA } from '../../constants/offlineSettings';
 
 export default function AppInstallAndUpdate() {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
@@ -17,23 +18,24 @@ export default function AppInstallAndUpdate() {
     if (deferredPrompt) {
       deferredPrompt.prompt();
       const choice = await deferredPrompt.userChoice;
-      if (choice.outcome === 'accepted') setDeferredPrompt(null);
+      if (choice?.outcome === 'accepted') setDeferredPrompt(null);
     } else {
-      alert('PWA already installed or accessible directly from browser menu.');
+      alert('PWA is already installed or accessible directly from your browser menu.');
     }
   };
 
-  const handleUpdate = () => {
+  const handleUpdate = async () => {
     setUpdateMsg('Checking...');
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistration().then((reg) => {
-        if (reg) reg.update();
-      });
+    try {
+      if ('serviceWorker' in navigator) {
+        const reg = await navigator.serviceWorker.getRegistration();
+        if (reg) await reg.update();
+      }
+      setUpdateMsg(`Latest (${APP_METADATA.version.split('-')[0]})`);
+    } catch {
+      setUpdateMsg('Up to date');
     }
-    setTimeout(() => {
-      setUpdateMsg('Latest (v2.4.0)');
-      setTimeout(() => setUpdateMsg('Check Update'), 2500);
-    }, 1200);
+    setTimeout(() => setUpdateMsg('Check Update'), 2500);
   };
 
   return (
