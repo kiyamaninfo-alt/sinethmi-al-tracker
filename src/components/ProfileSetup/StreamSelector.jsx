@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { STANDARD_STREAMS } from '../../constants/profileSetup';
+import { useStreamAutoLock } from '../../hooks/useStreamAutoLock';
 import StreamButton from './StreamButton';
 import CustomStreamForm from './CustomStreamForm';
 import StreamSubjectsModal from './StreamSubjectsModal';
@@ -12,6 +13,7 @@ export default function StreamSelector({ selectedStream, onSelectStream, subject
   const [isCustomOpen, setIsCustomOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
   const [isMatrixOpen, setIsMatrixOpen] = useState(false);
+  const { timeLeft } = useStreamAutoLock(isEditing, setIsEditing, subjects.length);
 
   const [customStream, setCustomStream] = useState(() => {
     const isStd = STANDARD_STREAMS.some((s) => s.name === selectedStream);
@@ -51,7 +53,7 @@ export default function StreamSelector({ selectedStream, onSelectStream, subject
           {error && <p className="text-[11px] text-rose-400 mt-1 font-sans">{error}</p>}
         </div>
         <div className="flex items-center gap-2">
-          {isEditing && <span className="text-[11px] font-mono font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40">Editing Active</span>}
+          {isEditing && <span className="text-[11px] font-mono font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40">Editing ({timeLeft}s)</span>}
           <span className="text-xs px-2.5 py-1 rounded bg-secondary-container/20 text-secondary border border-secondary/30 font-mono">Active: {selectedStream || 'None'}</span>
         </div>
       </div>
@@ -64,14 +66,12 @@ export default function StreamSelector({ selectedStream, onSelectStream, subject
         ))}
       </div>
 
-      <CustomStreamForm isOpen={isCustomOpen} onOpen={() => setIsCustomOpen(true)} onClose={() => setIsCustomOpen(false)}
-        onApply={handleApplyCustom} hasCustomStream={Boolean(customStream)} initialVal={customStream?.name || ''} />
-
-      <StreamActionBar isEditing={isEditing} onToggleEdit={() => setIsEditing(!isEditing)} />
-
-      {isModalOpen && (
-        <StreamSubjectsModal streamName={modalStream} isOpen={isModalOpen} initialSubjects={subjects} onClose={() => setIsModalOpen(false)} onSaveSubjects={onUpdateSubjects} />
+      {!isLocked && (
+        <CustomStreamForm isOpen={isCustomOpen} onOpen={() => setIsCustomOpen(true)} onClose={() => setIsCustomOpen(false)}
+          onApply={handleApplyCustom} hasCustomStream={Boolean(customStream)} initialVal={customStream?.name || ''} />
       )}
+      <StreamActionBar isEditing={isEditing} onToggleEdit={() => setIsEditing(!isEditing)} timeLeft={timeLeft} />
+      {isModalOpen && <StreamSubjectsModal streamName={modalStream} isOpen={isModalOpen} initialSubjects={subjects} onClose={() => setIsModalOpen(false)} onSaveSubjects={onUpdateSubjects} />}
       <SubjectSelectorModal isOpen={isMatrixOpen} onClose={() => setIsMatrixOpen(false)} subjects={subjects} onUpdateSubjects={onUpdateSubjects} />
     </div>
   );

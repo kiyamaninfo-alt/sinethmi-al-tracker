@@ -1,4 +1,8 @@
-export default function StreamActionBar({ isEditing, onToggleEdit }) {
+export default function StreamActionBar({ isEditing, onToggleEdit, timeLeft }) {
+  const lockLabel = isEditing && typeof timeLeft === 'number' && timeLeft < 60
+    ? `Lock Streams (${timeLeft}s)`
+    : isEditing ? 'Lock Streams' : 'Edit Stream & Subjects';
+
   return (
     <div className="pt-3 border-t border-outline-variant/20 flex flex-wrap items-center justify-end gap-2.5">
       <button
@@ -9,7 +13,7 @@ export default function StreamActionBar({ isEditing, onToggleEdit }) {
         }`}
       >
         <span className="material-symbols-outlined text-[15px]">{isEditing ? 'lock' : 'edit'}</span>
-        <span>{isEditing ? 'Lock Streams' : 'Edit Stream & Subjects'}</span>
+        <span>{lockLabel}</span>
       </button>
     </div>
   );
