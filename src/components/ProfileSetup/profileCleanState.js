@@ -43,15 +43,17 @@ export async function hydrateProfileWithAuth(currentProfile, setProfile) {
     if (cloudProfile && cloudProfile.name) {
       const merged = {
         ...INITIAL_PROFILE,
+        ...(parsedCache || {}),
         ...cloudProfile,
+        preferences: { ...INITIAL_PROFILE.preferences, ...(parsedCache?.preferences || {}) },
         subjects: mappedSubjects || parsedCache?.subjects || INITIAL_PROFILE.subjects,
         userId: user.id,
         email: user.email,
-        candidateIndex: cloudProfile.candidate_index || generatedIndex,
+        candidateIndex: cloudProfile.candidate_index || parsedCache?.candidateIndex || generatedIndex,
         isEmailVerified,
-        targetYear: String(cloudProfile.target_year || '2028'),
-        targetRank: cloudProfile.target_rank || INITIAL_PROFILE.targetRank,
-        targetZScore: String(cloudProfile.target_z_score || INITIAL_PROFILE.targetZScore),
+        targetYear: String(cloudProfile.target_year || parsedCache?.targetYear || '2028'),
+        targetRank: cloudProfile.target_rank || parsedCache?.targetRank || INITIAL_PROFILE.targetRank,
+        targetZScore: String(cloudProfile.target_z_score || parsedCache?.targetZScore || INITIAL_PROFILE.targetZScore),
       };
       setProfile(merged);
       localStorage.setItem('candidate_profile', JSON.stringify(merged));
