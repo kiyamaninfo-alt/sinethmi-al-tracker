@@ -1,6 +1,7 @@
 import { supabase } from '../../lib/supabase';
 import { upsertProfile } from '../../services/profileService';
 import { syncCandidateSubjects } from '../../services/subjectService';
+import { upsertStudentPreferences } from '../../services/preferenceService';
 
 export async function saveProfileToCloud(profile) {
   try {
@@ -28,6 +29,9 @@ export async function saveProfileToCloud(profile) {
 
     const { error: subjectsError } = await syncCandidateSubjects(user.id, profile.subjects || []);
     if (subjectsError) return { success: false, error: subjectsError };
+
+    const { error: prefError } = await upsertStudentPreferences(user.id, profile);
+    if (prefError) console.warn('[saveProfileToCloud] Preferences sync warning:', prefError.message);
 
     return { success: true, error: null };
   } catch (err) {

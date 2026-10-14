@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { INITIAL_PROFILE } from '../constants/profileSetup';
+import { hydrateProfileWithAuth } from '../components/ProfileSetup/profileCleanState';
 
 export function useCandidateProfile() {
   const [profile, setProfile] = useState(() => {
@@ -23,6 +24,7 @@ export function useCandidateProfile() {
   };
 
   useEffect(() => {
+    hydrateProfileWithAuth(profile, setProfile);
     const handleStorage = (e) => {
       if (e.key === 'candidate_profile' && e.newValue) {
         try { setProfile(JSON.parse(e.newValue)); } catch {}

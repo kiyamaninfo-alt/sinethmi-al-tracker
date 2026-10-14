@@ -24,6 +24,9 @@ export default function FeedbackToggleItem({
     } else {
       playClickSound(nextState ? 'toggle_on' : 'toggle_off');
     }
+    if (icon === 'vibration' && nextState && 'vibrate' in navigator) {
+      try { navigator.vibrate(40); } catch (_) {}
+    }
     onToggle(nextState);
   };
 

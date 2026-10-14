@@ -1,30 +1,60 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { playClickSound, getAudioCtx } from '../constants/clickSound';
 
-export function useGlobalFeedbackAudio(notificationSettings) {
-  useEffect(() => {
-    const isKeySoundActive = notificationSettings?.masterEnabled !== false &&
-      notificationSettings?.keySoundEnabled !== false;
+const INTERACTIVES = 'button, a, input, select, textarea, label, [role="button"], [data-interactive="true"]';
 
-    if (!isKeySoundActive) return;
+export function useGlobalFeedbackAudio(notificationSettings) {
+  const lastAudioRef = useRef(0);
+  const lastHapticRef = useRef(0);
+
+  useEffect(() => {
+    const isMaster = notificationSettings?.masterEnabled !== false;
+    const isKey = isMaster && notificationSettings?.keySoundEnabled !== false;
+    const isClick = isMaster && notificationSettings?.clickSoundEnabled !== false;
+    const isVibrate = isMaster && notificationSettings?.vibrateEnabled !== false;
+
+    if (!isMaster) return;
 
     const handleKeyDown = (e) => {
-      // Don't trigger on meta / control / shift / alt alone
+      if (!isKey) return;
       if (['Control', 'Shift', 'Alt', 'Meta', 'CapsLock', 'Tab'].includes(e.key)) return;
       playClickSound('key');
     };
 
-    const handlePointerDown = () => {
-      // Unlock AudioContext on initial user gesture if suspended
-      getAudioCtx();
+    const handleInteractiveClick = (e) => {
+      const target = e.target;
+      if (!target?.closest) return;
+      const el = target.closest(INTERACTIVES);
+      if (!el) return;
+
+      const now = Date.now();
+      if (isClick && now - lastAudioRef.current > 70) {
+        lastAudioRef.current = now;
+        playClickSound('subtle');
+      }
+      if (isVibrate && now - lastHapticRef.current > 70) {
+        lastHapticRef.current = now;
+        if ('vibrate' in navigator) {
+          try { navigator.vibrate(25); } catch (_) {}
+        }
+      }
     };
 
+    const unlockAudio = () => getAudioCtx();
+
     window.addEventListener('keydown', handleKeyDown, true);
-    window.addEventListener('pointerdown', handlePointerDown, { once: true });
+    window.addEventListener('click', handleInteractiveClick, true);
+    window.addEventListener('pointerdown', unlockAudio, { once: true });
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown, true);
-      window.removeEventListener('pointerdown', handlePointerDown);
+      window.removeEventListener('click', handleInteractiveClick, true);
+      window.removeEventListener('pointerdown', unlockAudio);
     };
-  }, [notificationSettings?.masterEnabled, notificationSettings?.keySoundEnabled]);
+  }, [
+    notificationSettings?.masterEnabled,
+    notificationSettings?.keySoundEnabled,
+    notificationSettings?.clickSoundEnabled,
+    notificationSettings?.vibrateEnabled
+  ]);
 }

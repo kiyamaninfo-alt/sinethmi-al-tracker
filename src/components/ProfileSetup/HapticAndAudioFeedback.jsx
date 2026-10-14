@@ -12,7 +12,9 @@ export default function HapticAndAudioFeedback({
 }) {
   const handleVibrate = () => {
     playClickSound('subtle');
-    if ('vibrate' in navigator) navigator.vibrate(50);
+    if ('vibrate' in navigator) {
+      try { navigator.vibrate([40, 60, 40]); } catch (_) {}
+    }
   };
 
   return (

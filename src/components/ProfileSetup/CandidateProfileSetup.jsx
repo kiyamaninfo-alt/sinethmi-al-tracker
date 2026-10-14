@@ -7,7 +7,6 @@ import { playClickSound } from '../../constants/clickSound';
 import { useCandidateProfileSetup } from './useCandidateProfileSetup';
 import { useOnboardingTour } from '../../hooks/useOnboardingTour';
 import { useProfileValidation } from './useProfileValidation';
-import { useGlobalFeedbackAudio } from '../../hooks/useGlobalFeedbackAudio';
 import { useAppTheme } from '../../hooks/useAppTheme';
 import OnboardingTourOverlay from './OnboardingTourOverlay';
 import StreamTourHintBox from './StreamTourHintBox';
@@ -21,7 +20,6 @@ import ProfileAuxiliaryCards from './ProfileAuxiliaryCards';
 export default function CandidateProfileSetup() {
   const navigate = useNavigate();
   const { profile, setProfile, isSaved, handleChange } = useCandidateProfileSetup(getInitialCleanProfile);
-  useGlobalFeedbackAudio(profile?.notificationSettings);
   useAppTheme(profile?.preferences?.theme, profile?.preferences?.fontSize);
 
   const { showTour, tourStep, totalSteps, currentStepData, handleNext, handlePrev, handleSkip, startTour, startFilteredTour } = useOnboardingTour();
