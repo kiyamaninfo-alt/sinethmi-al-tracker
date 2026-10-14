@@ -17,7 +17,7 @@ export default function PreferencesCard({ preferences = {}, onChange }) {
             <span className="material-symbols-outlined text-secondary text-[18px]">display_settings</span>
             Appearance, Typography &amp; Language
           </h3>
-          <p className="text-xs text-outline">Configure HUD font scaling, visual themes, and telemetry language</p>
+          <p className="text-xs text-outline">Configure HUD font scaling, visual themes, and medium of instruction</p>
         </div>
         <div className="text-[11px] font-mono text-outline flex items-center gap-2">
           <span className="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/30 uppercase text-cyan-300">

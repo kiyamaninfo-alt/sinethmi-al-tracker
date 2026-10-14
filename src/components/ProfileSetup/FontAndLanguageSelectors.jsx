@@ -25,7 +25,7 @@ export default function FontAndLanguageSelectors({ fontSize, language, onChangeF
       </div>
 
       <div className="space-y-1.5">
-        <label className="text-[11px] font-mono text-outline block">Telemetry Language</label>
+        <label className="text-[11px] font-mono text-outline block">Medium of Instruction (අධ්‍යාපනය ලබන මාධ්‍යය)</label>
         <div className="grid grid-cols-3 gap-1.5">
           {LANGUAGE_OPTIONS.map((l) => (
             <button
