@@ -2,7 +2,12 @@ import { COLOR_SWATCHES } from '../../constants/profileSetup';
 import { getUnitsForSubject } from '../../constants/syllabusUnits';
 import UnitCard from './UnitCard';
 
-export default function SubjectUnitsColumn({ subject, searchQuery, syllabusHooks }) {
+export default function SubjectUnitsColumn({
+  subject,
+  searchQuery,
+  syllabusHooks,
+  onUnitClick
+}) {
   const swatch = COLOR_SWATCHES.find((s) => s.id === subject.color) || COLOR_SWATCHES[0];
   const units = getUnitsForSubject(subject);
 
@@ -40,6 +45,7 @@ export default function SubjectUnitsColumn({ subject, searchQuery, syllabusHooks
               swatch={swatch}
               isMatch={Boolean(q)}
               syllabusHooks={syllabusHooks}
+              onUnitClick={onUnitClick}
             />
           ))
         ) : (
