@@ -4,35 +4,35 @@ export default function HeaderActionButtons() {
   const navigate = useNavigate();
 
   const buttonBase =
-    'h-9 px-3.5 rounded-xl border flex items-center justify-center gap-1.5 text-xs font-semibold tracking-wide transition-all duration-200 cursor-pointer shadow-sm active:scale-95 whitespace-nowrap';
+    'h-9 min-h-[36px] px-2.5 sm:px-3.5 rounded-xl border flex items-center justify-center gap-1.5 text-[11px] sm:text-xs font-semibold tracking-wide transition-all duration-200 cursor-pointer shadow-sm active:scale-95 whitespace-nowrap';
 
   return (
-    <div className="flex items-center gap-2.5 ml-auto w-full sm:w-auto overflow-x-auto pb-1 sm:pb-0">
+    <div className="grid grid-cols-2 sm:flex sm:items-center gap-2 w-full sm:w-auto sm:ml-auto">
       <button
         type="button"
         onClick={() => navigate('/syllabus-manager')}
-        className={`${buttonBase} bg-gradient-to-r from-amber-500/15 to-orange-500/15 text-amber-300 border-amber-500/30 hover:border-amber-400 hover:bg-amber-500/25`}
+        className={`${buttonBase} w-full sm:w-auto bg-gradient-to-r from-amber-500/15 to-orange-500/15 text-amber-300 border-amber-500/30 hover:border-amber-400 hover:bg-amber-500/25`}
       >
-        <span className="material-symbols-outlined text-[16px] text-amber-400">menu_book</span>
-        <span>Syllabus Manager</span>
+        <span className="material-symbols-outlined text-[16px] text-amber-400 shrink-0">menu_book</span>
+        <span className="truncate">Syllabus Manager</span>
       </button>
 
       <button
         type="button"
-        className={`${buttonBase} bg-gradient-to-r from-blue-600/20 to-cyan-500/20 text-cyan-200 border-cyan-400/30 hover:border-cyan-400 hover:bg-cyan-500/25`}
+        className={`${buttonBase} w-full sm:w-auto bg-gradient-to-r from-blue-600/20 to-cyan-500/20 text-cyan-200 border-cyan-400/30 hover:border-cyan-400 hover:bg-cyan-500/25`}
       >
-        <span className="material-symbols-outlined text-[16px] text-cyan-400">assignment_turned_in</span>
-        <span>Submit Marks</span>
+        <span className="material-symbols-outlined text-[16px] text-cyan-400 shrink-0">assignment_turned_in</span>
+        <span className="truncate">Submit Marks</span>
       </button>
 
       <button
         type="button"
         onClick={() => navigate('/profile-setup')}
         title="Candidate Profile & Telemetry Settings"
-        className={`${buttonBase} bg-gradient-to-r from-purple-600/20 to-pink-500/20 text-purple-200 border-purple-400/30 hover:border-purple-400 hover:bg-purple-500/25`}
+        className={`${buttonBase} w-full sm:w-auto bg-gradient-to-r from-purple-600/20 to-pink-500/20 text-purple-200 border-purple-400/30 hover:border-purple-400 hover:bg-purple-500/25`}
       >
-        <span className="material-symbols-outlined text-[16px] text-purple-300">manage_accounts</span>
-        <span>Profile Settings</span>
+        <span className="material-symbols-outlined text-[16px] text-purple-300 shrink-0">manage_accounts</span>
+        <span className="truncate">Profile Settings</span>
       </button>
 
       <button
@@ -45,10 +45,10 @@ export default function HeaderActionButtons() {
           navigate('/login');
         }}
         title="Sign Out of Mission Control"
-        className={`${buttonBase} bg-rose-500/10 text-rose-300 border-rose-500/30 hover:border-rose-400 hover:bg-rose-500/20`}
+        className={`${buttonBase} w-full sm:w-auto bg-rose-500/10 text-rose-300 border-rose-500/30 hover:border-rose-400 hover:bg-rose-500/20`}
       >
-        <span className="material-symbols-outlined text-[16px] text-rose-400">logout</span>
-        <span>Sign Out</span>
+        <span className="material-symbols-outlined text-[16px] text-rose-400 shrink-0">logout</span>
+        <span className="truncate">Sign Out</span>
       </button>
     </div>
   );

@@ -11,24 +11,25 @@ export default function SubjectFilterBar({ subjects = [] }) {
   };
 
   const buttonBase =
-    'h-9 min-w-[170px] max-w-[210px] px-3 rounded-xl border flex items-center justify-center gap-1.5 text-xs font-semibold tracking-wide transition-all duration-200 cursor-pointer shadow-sm active:scale-95 shrink-0 truncate';
+    'h-9 min-h-[36px] px-3 sm:px-3.5 rounded-xl border flex items-center justify-center gap-1.5 text-[11px] sm:text-xs font-semibold tracking-wide transition-all duration-200 cursor-pointer shadow-sm active:scale-95 whitespace-nowrap';
 
   return (
     <>
       <div className="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0 w-full lg:w-auto">
         {subjects.map((sub) => {
           const swatch = getSubjectColorClasses(sub.color);
-          const label = `${sub.code || sub.name} (${sub.sinhala || sub.name})`;
+          const codeLabel = sub.code || sub.name;
+          const fullLabel = `${codeLabel}${sub.sinhala ? ` (${sub.sinhala})` : ''}`;
           return (
             <button
               key={sub.id || sub.code}
               type="button"
-              title={label}
+              title={fullLabel}
               onClick={() => setSelectedModalSubject(sub)}
-              className={`${buttonBase} ${swatch.bg} ${swatch.border} ${swatch.text} hover:brightness-125`}
+              className={`${buttonBase} flex-1 sm:flex-initial min-w-[72px] ${swatch.bg} ${swatch.border} ${swatch.text} hover:brightness-125`}
             >
-              <span className={`w-1.5 h-1.5 rounded-full ${swatch.dot} shrink-0`} />
-              <span className="truncate">{label}</span>
+              <span className={`w-2 h-2 rounded-full ${swatch.dot} shrink-0`} />
+              <span>{codeLabel}</span>
             </button>
           );
         })}

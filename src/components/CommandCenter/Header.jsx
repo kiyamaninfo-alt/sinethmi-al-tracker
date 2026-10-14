@@ -39,7 +39,7 @@ export default function Header() {
         <ExamCountdown targetYear={targetYear} customExamDate={customExamDate} />
       </div>
 
-      <div className="mt-6 pt-5 border-t border-white/5 flex flex-wrap items-center justify-between gap-3 text-xs font-semibold">
+      <div className="mt-6 pt-5 border-t border-white/5 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-3 text-xs font-semibold">
         <SubjectFilterBar subjects={profile.subjects || []} />
         <HeaderActionButtons />
       </div>

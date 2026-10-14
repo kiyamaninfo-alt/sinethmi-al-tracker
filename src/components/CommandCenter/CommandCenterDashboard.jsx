@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import { Navigate } from 'react-router-dom';
+import { useCandidateProfile } from '../../hooks/useCandidateProfile';
 import Header from './Header';
 import TodayPriorities from './TodayPriorities';
 import DeepFocusTimer from './DeepFocusTimer';
@@ -14,6 +16,8 @@ import LearnedNotStudiedCard from './LearnedNotStudiedCard';
 import CommandCenterFooter from './CommandCenterFooter';
 
 export default function CommandCenterDashboard() {
+  const profile = useCandidateProfile();
+
   useEffect(() => {
     const hash = window.location.hash;
     if (hash && /^#[a-zA-Z][\w-]*$/.test(hash)) {
@@ -25,6 +29,11 @@ export default function CommandCenterDashboard() {
       window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }
   }, []);
+
+  if (!profile?.subjects || profile.subjects.length < 3) {
+    return <Navigate to="/profile-setup#candidate-stream-select" replace />;
+  }
+
   return (
     <div className="min-h-screen bg-surface text-on-surface antialiased selection:bg-neon-cyan/20 selection:text-neon-cyan relative">
       {/* Ambient background decorative light grids */}
