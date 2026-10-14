@@ -1,12 +1,19 @@
 import { useState } from 'react';
+import { Navigate } from 'react-router-dom';
 import { useCandidateProfile } from '../../hooks/useCandidateProfile';
+import { useSyllabusState } from '../../hooks/useSyllabusState';
 import SyllabusHeader from './SyllabusHeader';
 import SubjectUnitsColumn from './SubjectUnitsColumn';
 
 export default function SyllabusManagerPage() {
   const profile = useCandidateProfile();
+  const syllabusHooks = useSyllabusState();
   const [searchQuery, setSearchQuery] = useState('');
   const subjects = profile.subjects || [];
+
+  if (!subjects || subjects.length < 3) {
+    return <Navigate to="/profile-setup#candidate-stream-select" replace />;
+  }
 
   const totalUnits = subjects.reduce((acc, s) => acc + (s.units || 14), 0);
 
@@ -28,6 +35,7 @@ export default function SyllabusManagerPage() {
               key={sub.id || sub.code}
               subject={sub}
               searchQuery={searchQuery}
+              syllabusHooks={syllabusHooks}
             />
           ))}
         </div>

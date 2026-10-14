@@ -2,7 +2,7 @@ import { COLOR_SWATCHES } from '../../constants/profileSetup';
 import { getUnitsForSubject } from '../../constants/syllabusUnits';
 import UnitCard from './UnitCard';
 
-export default function SubjectUnitsColumn({ subject, searchQuery }) {
+export default function SubjectUnitsColumn({ subject, searchQuery, syllabusHooks }) {
   const swatch = COLOR_SWATCHES.find((s) => s.id === subject.color) || COLOR_SWATCHES[0];
   const units = getUnitsForSubject(subject);
 
@@ -30,10 +30,17 @@ export default function SubjectUnitsColumn({ subject, searchQuery }) {
         </span>
       </div>
 
-      <div className="space-y-3 flex-1 overflow-y-auto max-h-[650px] pr-1">
+      <div className="space-y-3 flex-1 overflow-y-auto max-h-[700px] pr-1">
         {filteredUnits.length > 0 ? (
           filteredUnits.map((u) => (
-            <UnitCard key={u.num} unit={u} swatch={swatch} isMatch={Boolean(q)} />
+            <UnitCard
+              key={u.num}
+              unit={u}
+              subject={subject}
+              swatch={swatch}
+              isMatch={Boolean(q)}
+              syllabusHooks={syllabusHooks}
+            />
           ))
         ) : (
           <div className="p-6 text-center text-xs text-slate-400 font-mono">

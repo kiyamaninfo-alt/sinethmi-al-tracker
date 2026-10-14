@@ -1,42 +1,71 @@
-export default function UnitCard({ unit, swatch, isMatch }) {
+import { useState } from 'react';
+import UnitProgressBar from './UnitProgressBar';
+import SubUnitItem from './SubUnitItem';
+import { getSubUnitKey } from '../../services/syllabusService';
+
+export default function UnitCard({ unit, subject, swatch, isMatch, syllabusHooks }) {
+  const [isExpanded, setIsExpanded] = useState(() => isMatch || unit.num === 1);
+  const { getSubUnit, toggleGodaDamuda, toggleWadeIwarai, restartSpacedRepetition } = syllabusHooks;
+  const progress = syllabusHooks.calculateUnitProgress(subject, unit);
+  const isComplete = syllabusHooks.isUnitFullyComplete(subject, unit);
+
   return (
-    <div className={`p-4 rounded-2xl border transition-all ${
-      isMatch
-        ? `${swatch.bg} ${swatch.border} ring-1 ring-cyan-400/30`
-        : 'bg-surface-container/50 border-white/5 hover:border-white/15'
-    }`}>
-      <div className="flex items-center justify-between gap-2 mb-2">
-        <div className="flex items-center gap-2">
-          <span className={`px-2 py-0.5 rounded-lg text-xs font-mono font-bold border ${swatch.bg} ${swatch.border} ${swatch.text}`}>
+    <div
+      className={`rounded-2xl border transition-all duration-200 overflow-hidden ${
+        isMatch
+          ? `${swatch.bg} ${swatch.border} ring-1 ring-cyan-400/30`
+          : 'bg-surface-container/50 border-white/5 hover:border-white/15'
+      }`}
+    >
+      <div
+        role="button"
+        tabIndex={0}
+        onClick={() => setIsExpanded((prev) => !prev)}
+        onKeyDown={(e) => e.key === 'Enter' && setIsExpanded((prev) => !prev)}
+        className="p-3.5 flex items-center justify-between gap-2 cursor-pointer select-none bg-surface-container-high/30 hover:bg-surface-container-high/60 transition"
+      >
+        <div className="flex items-center gap-2 min-w-0">
+          <UnitProgressBar progress={progress} isFullyComplete={isComplete} />
+          <span
+            className={`px-2 py-0.5 rounded-lg text-xs font-mono font-bold border shrink-0 ${swatch.bg} ${swatch.border} ${swatch.text}`}
+          >
             UNIT {unit.num}
           </span>
-          <h4 className="text-sm font-bold text-white truncate">{unit.title}</h4>
-        </div>
-        <span className="text-[10px] text-slate-400 font-mono shrink-0">
-          {unit.subUnits.length} Sub-units
-        </span>
-      </div>
-
-      <p className="text-[11px] text-slate-300 font-medium mb-3">{unit.sinhala}</p>
-
-      <div className="space-y-1.5 pl-2 border-l-2 border-white/10">
-        {unit.subUnits.map((su) => (
-          <div
-            key={su.num}
-            className="flex items-center justify-between text-xs py-1 px-2 rounded-lg bg-surface-container-high/40 hover:bg-surface-container-high transition"
-          >
-            <div className="flex items-center gap-2 truncate">
-              <span className={`text-[10px] font-mono font-bold px-1.5 py-0.2 rounded bg-black/30 ${swatch.text}`}>
-                {su.num}
-              </span>
-              <span className="text-slate-200 truncate">{su.title}</span>
-            </div>
-            <span className="text-[10px] font-mono text-outline shrink-0 ml-2">
-              {su.hours}h Target
-            </span>
+          <div className="min-w-0">
+            <h4 className="text-xs sm:text-sm font-bold text-white truncate">{unit.title}</h4>
+            <p className="text-[10px] text-slate-400 truncate">{unit.sinhala}</p>
           </div>
-        ))}
+        </div>
+
+        <div className="flex items-center gap-2 shrink-0">
+          <span className="text-[10px] font-mono text-slate-400 hidden sm:inline">
+            {unit.subUnits.length} sub-units
+          </span>
+          <span className="material-symbols-outlined text-slate-400 text-[18px]">
+            {isExpanded ? 'expand_less' : 'expand_more'}
+          </span>
+        </div>
       </div>
+
+      {isExpanded && (
+        <div className="p-3 space-y-2 border-t border-white/5 bg-surface-container-low/40">
+          {unit.subUnits.map((su) => {
+            const key = getSubUnitKey(subject, su.num);
+            const data = getSubUnit(key);
+            return (
+              <SubUnitItem
+                key={su.num}
+                subUnit={su}
+                swatch={swatch}
+                subUnitData={data}
+                onToggleGodaDamuda={() => toggleGodaDamuda(key)}
+                onToggleWadeIwarai={() => toggleWadeIwarai(key)}
+                onRestartRepetition={() => restartSpacedRepetition(key)}
+              />
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }
