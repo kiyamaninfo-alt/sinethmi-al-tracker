@@ -1,5 +1,4 @@
 import { supabase } from '../lib/supabase';
-import { getUnitsForSubject } from '../constants/syllabusUnits';
 import { persistSyllabusUnitsToDB } from './syllabusSync';
 
 export async function fetchDBSubjects(userId) {
@@ -51,6 +50,7 @@ export async function fetchSubjectSyllabus(subject) {
     }
   }
 
+  const { getUnitsForSubject } = await import('../constants/syllabusUnits');
   const fallbackUnits = getUnitsForSubject(subject);
   if (dbId && fallbackUnits.length) {
     persistSyllabusUnitsToDB(dbId, fallbackUnits).catch(() => {});

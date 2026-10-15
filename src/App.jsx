@@ -1,12 +1,6 @@
+import { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, useNavigate } from 'react-router-dom';
-import CandidateLogin from './components/CandidateLogin/CandidateLogin';
-import CandidateProfileSetup from './components/ProfileSetup/CandidateProfileSetup';
-import CommandCenterDashboard from './components/CommandCenter/CommandCenterDashboard';
-import StudyAnalyticsDashboard from './components/StudyAnalytics/StudyAnalyticsDashboard';
-import VisualAnalyticsDashboard from './components/VisualAnalytics/VisualAnalyticsDashboard';
 import DevNav from './components/DevNav';
-import StudyTrackerLandingPage from './components/LandingPage/StudyTrackerLandingPage';
-import AuthCallbackHandler from './components/CandidateLogin/AuthCallbackHandler';
 import ProtectedRoute from './components/ProtectedRoute';
 import { useCandidateProfile } from './hooks/useCandidateProfile';
 import { useGlobalFeedbackAudio } from './hooks/useGlobalFeedbackAudio';
@@ -14,25 +8,35 @@ import { useAppTheme } from './hooks/useAppTheme';
 import { FocusTimerProvider } from './context/FocusTimerContext';
 import GlobalTimerFloatingWidget from './components/CommandCenter/GlobalTimerFloatingWidget';
 
+const StudyTrackerLandingPage = lazy(() => import('./components/LandingPage/StudyTrackerLandingPage'));
+const CandidateLogin = lazy(() => import('./components/CandidateLogin/CandidateLogin'));
+const CandidateProfileSetup = lazy(() => import('./components/ProfileSetup/CandidateProfileSetup'));
+const CommandCenterDashboard = lazy(() => import('./components/CommandCenter/CommandCenterDashboard'));
+const StudyAnalyticsDashboard = lazy(() => import('./components/StudyAnalytics/StudyAnalyticsDashboard'));
+const VisualAnalyticsDashboard = lazy(() => import('./components/VisualAnalytics/VisualAnalyticsDashboard'));
+const AuthCallbackHandler = lazy(() => import('./components/CandidateLogin/AuthCallbackHandler'));
+
 function RouteContent() {
   const navigate = useNavigate();
   const toCommand = () => navigate('/command-center');
 
   return (
-    <Routes>
-      <Route path="/" element={<StudyTrackerLandingPage />} />
-      <Route path="/landing" element={<StudyTrackerLandingPage />} />
-      <Route path="/login" element={<CandidateLogin />} />
-      <Route path="/auth/callback" element={<AuthCallbackHandler />} />
-      <Route element={<ProtectedRoute />}>
-        <Route path="/profile-setup" element={<CandidateProfileSetup />} />
-        <Route path="/command-center" element={<CommandCenterDashboard />} />
-        <Route path="/syllabus-manager" element={<Navigate to="/command-center?modal=syllabus" replace />} />
-        <Route path="/study-analytics" element={<StudyAnalyticsDashboard onBack={toCommand} />} />
-        <Route path="/visual-analytics" element={<VisualAnalyticsDashboard onBack={toCommand} />} />
-      </Route>
-      <Route path="*" element={<Navigate to="/login" replace />} />
-    </Routes>
+    <Suspense fallback={<div className="min-h-screen bg-[#070b14] flex items-center justify-center"><div className="w-8 h-8 rounded-full border-2 border-cyan-400 border-t-transparent animate-spin" /></div>}>
+      <Routes>
+        <Route path="/" element={<StudyTrackerLandingPage />} />
+        <Route path="/landing" element={<StudyTrackerLandingPage />} />
+        <Route path="/login" element={<CandidateLogin />} />
+        <Route path="/auth/callback" element={<AuthCallbackHandler />} />
+        <Route element={<ProtectedRoute />}>
+          <Route path="/profile-setup" element={<CandidateProfileSetup />} />
+          <Route path="/command-center" element={<CommandCenterDashboard />} />
+          <Route path="/syllabus-manager" element={<Navigate to="/command-center?modal=syllabus" replace />} />
+          <Route path="/study-analytics" element={<StudyAnalyticsDashboard onBack={toCommand} />} />
+          <Route path="/visual-analytics" element={<VisualAnalyticsDashboard onBack={toCommand} />} />
+        </Route>
+        <Route path="*" element={<Navigate to="/login" replace />} />
+      </Routes>
+    </Suspense>
   );
 }
 
