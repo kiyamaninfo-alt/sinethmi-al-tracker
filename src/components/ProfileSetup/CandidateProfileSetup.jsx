@@ -27,9 +27,10 @@ export default function CandidateProfileSetup() {
 
   const handleSubmit = async () => {
     playClickSound('toggle_on');
-    if (!validate()) { handleSkip(); return; }
+    if (!validate()) return;
     localStorage.setItem('candidate_profile', JSON.stringify(profile));
     localStorage.setItem('onboarding_completed', 'true');
+    handleSkip();
     await saveProfileToCloud(profile);
     navigate('/command-center');
   };
@@ -55,7 +56,7 @@ export default function CandidateProfileSetup() {
         <OnboardingTourOverlay currentStep={tourStep} totalSteps={totalSteps} stepData={currentStepData} onNext={tourStep >= totalSteps - 1 ? handleSubmit : handleNext} onPrev={handlePrev} onSkip={handleSkip} />
       )}
       {showTour && currentStepData?.id === 'tour-stream' && (
-        <StreamTourHintBox onNext={tourStep >= totalSteps - 1 ? handleSubmit : handleNext} onSkip={handleSkip} />
+        <StreamTourHintBox onNext={tourStep >= totalSteps - 1 ? handleSubmit : handleNext} onPrev={handlePrev} onSkip={handleSkip} />
       )}
       <ValidationAlertModal errors={showErrorModal ? errors : null} onClose={() => setShowErrorModal(false)} onFocusFirstError={handleFocusFirstError} />
       <div className="fixed inset-0 pointer-events-none opacity-20 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] z-0" />

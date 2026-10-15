@@ -1,4 +1,4 @@
-export default function StreamTourHintBox({ onNext, onSkip }) {
+export default function StreamTourHintBox({ onNext, onPrev, onSkip }) {
   return (
     <div
       role="alert"
@@ -20,13 +20,24 @@ export default function StreamTourHintBox({ onNext, onSkip }) {
         </div>
 
         <div className="flex items-center justify-between pt-1 border-t border-cyan-500/20">
-          <button
-            type="button"
-            onClick={onSkip}
-            className="text-[10px] sm:text-xs font-mono font-semibold text-slate-400 hover:text-rose-400 px-2 py-0.5 rounded bg-white/5 border border-white/10 cursor-pointer"
-          >
-            ✕ Skip
-          </button>
+          <div className="flex items-center gap-1.5">
+            <button
+              type="button"
+              onClick={onSkip}
+              className="text-[10px] sm:text-xs font-mono font-semibold text-slate-400 hover:text-rose-400 px-2 py-0.5 rounded bg-white/5 border border-white/10 cursor-pointer"
+            >
+              ✕ Skip
+            </button>
+            {onPrev && (
+              <button
+                type="button"
+                onClick={onPrev}
+                className="text-[10px] sm:text-xs font-mono font-semibold text-slate-300 hover:text-white px-2 py-0.5 rounded bg-white/5 border border-white/10 cursor-pointer"
+              >
+                ← Back
+              </button>
+            )}
+          </div>
           <button
             type="button"
             onClick={onNext}

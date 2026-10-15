@@ -1,3 +1,8 @@
+import { attachTourSpotlight, isMobile } from './tourElementSpotlight';
+
+export { isMobile, attachTourSpotlight };
+export const highlightTourElement = attachTourSpotlight;
+
 export function updateTourActiveFlag(isActive) {
   try {
     sessionStorage.setItem('onboarding_tour_active', isActive ? 'true' : 'false');
@@ -7,24 +12,27 @@ export function updateTourActiveFlag(isActive) {
   } catch {}
 }
 
-export const isMobile = () => typeof window !== 'undefined' && window.innerWidth < 640;
-
-export function finishTourStorage() {
-  sessionStorage.removeItem('tour_manually_opened');
-  localStorage.setItem('has_visited', 'true');
-  localStorage.setItem('onboarding_completed', 'true');
+export function saveTourStep(step) {
+  try {
+    sessionStorage.setItem('onboarding_tour_step', String(step));
+  } catch {}
 }
 
-export function highlightTourElement(targetId) {
-  if (!targetId) return undefined;
-  const el = document.getElementById(targetId);
-  if (!el) return undefined;
-  el.scrollIntoView({ behavior: 'smooth', block: isMobile() ? 'nearest' : 'center' });
-  el.focus?.();
-  el.classList.add('ring-4', 'ring-cyan-400', 'ring-offset-2', 'ring-offset-slate-950');
-  const t = setTimeout(() => el.classList.remove('ring-4', 'ring-cyan-400', 'ring-offset-2', 'ring-offset-slate-950'), 3500);
-  return () => {
-    clearTimeout(t);
-    el.classList.remove('ring-4', 'ring-cyan-400', 'ring-offset-2', 'ring-offset-slate-950');
-  };
+export function getSavedTourStep() {
+  try {
+    const s = parseInt(sessionStorage.getItem('onboarding_tour_step'), 10);
+    return isNaN(s) ? 0 : s;
+  } catch {
+    return 0;
+  }
+}
+
+export function finishTourStorage() {
+  try {
+    sessionStorage.removeItem('tour_manually_opened');
+    sessionStorage.removeItem('onboarding_tour_step');
+    updateTourActiveFlag(false);
+    localStorage.setItem('has_visited', 'true');
+    localStorage.setItem('onboarding_completed', 'true');
+  } catch {}
 }

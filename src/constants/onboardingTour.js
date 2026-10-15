@@ -1,7 +1,7 @@
 export const ONBOARDING_STEPS = [
   {
     id: 'tour-name',
-    targetId: 'candidate-identity-card',
+    targetId: 'candidate-name-input',
     title: '1. Candidate Full Name & Identity',
     sinhalaTitle: '1. අපේක්ෂකයාගේ සම්පූර්ණ නම සහ අනන්‍යතාවය',
     desc: 'Type your official candidate name for Mission Control HUD.',
@@ -9,7 +9,7 @@ export const ONBOARDING_STEPS = [
   },
   {
     id: 'tour-whatsapp',
-    targetId: 'candidate-phone-field',
+    targetId: 'candidate-phone-input',
     title: '2. WhatsApp Number (Alerts & Telemetry)',
     sinhalaTitle: '2. WhatsApp දුරකථන අංකය',
     desc: 'Enter active WhatsApp number (+94) for daily study alerts & analytics.',
