@@ -1,69 +1,60 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { ONBOARDING_STEPS } from '../constants/onboardingTour';
+import { isReturningVisitor, getMissingStepIdsForProfile } from '../components/ProfileSetup/profileValidation';
+import { updateTourActiveFlag, isMobile, finishTourStorage, highlightTourElement } from './onboardingTourStorage';
 
-function updateTourActiveFlag(isActive) {
-  try {
-    sessionStorage.setItem('onboarding_tour_active', isActive ? 'true' : 'false');
-    window.dispatchEvent(new CustomEvent('tourstatechange', { detail: { isActive } }));
-  } catch {}
-}
-
-const isMobileScreen = () => typeof window !== 'undefined' && window.innerWidth < 640;
-
-export function useOnboardingTour(onComplete) {
+export function useOnboardingTour(profile, onComplete) {
   const [tourStep, setTourStep] = useState(0);
-  const [activeSteps, setActiveSteps] = useState(ONBOARDING_STEPS);
+
+  const initialSteps = useMemo(() => {
+    if (sessionStorage.getItem('tour_manually_opened') === 'true') return ONBOARDING_STEPS;
+    const missing = getMissingStepIdsForProfile(profile);
+    return ONBOARDING_STEPS.filter((s) => missing.includes(s.id));
+  }, []);
+
+  const [activeSteps, setActiveSteps] = useState(initialSteps);
   const [showTour, setShowTour] = useState(() => {
-    if (isMobileScreen()) return false;
-    const active = localStorage.getItem('onboarding_completed') !== 'true';
-    updateTourActiveFlag(active);
-    return active;
+    if (isMobile()) return false;
+    if (sessionStorage.getItem('tour_manually_opened') === 'true') return true;
+    const returning = isReturningVisitor(profile);
+    const missing = getMissingStepIdsForProfile(profile);
+    localStorage.setItem('has_visited', 'true');
+    if (returning && missing.length === 0) return false;
+    return missing.length > 0;
   });
 
   useEffect(() => {
-    if (isMobileScreen()) {
-      setShowTour(false);
-      updateTourActiveFlag(false);
-    }
-  }, []);
+    if (isMobile()) return setShowTour(false);
+    if (sessionStorage.getItem('tour_manually_opened') === 'true') return;
+    const missing = getMissingStepIdsForProfile(profile);
+    if (missing.length === 0) setShowTour(false);
+    else setActiveSteps(ONBOARDING_STEPS.filter((s) => missing.includes(s.id)));
+  }, [profile?.name, profile?.phone, profile?.stream, profile?.targetYear, profile?.subjects?.length]);
 
   useEffect(() => { updateTourActiveFlag(showTour); }, [showTour]);
 
   useEffect(() => {
     if (!showTour) return;
-    const current = activeSteps[tourStep];
-    const el = current?.targetId ? document.getElementById(current.targetId) : null;
-    if (el) {
-      const isMobile = window.innerWidth < 640;
-      el.scrollIntoView({ behavior: 'smooth', block: isMobile ? 'nearest' : 'center' });
-      el.focus?.();
-      el.classList.add('ring-4', 'ring-cyan-400', 'ring-offset-2', 'ring-offset-slate-950');
-      const timer = setTimeout(() => el.classList.remove('ring-4', 'ring-cyan-400', 'ring-offset-2', 'ring-offset-slate-950'), 3500);
-      return () => { clearTimeout(timer); el.classList.remove('ring-4', 'ring-cyan-400', 'ring-offset-2', 'ring-offset-slate-950'); };
-    }
+    return highlightTourElement(activeSteps[tourStep]?.targetId);
   }, [tourStep, showTour, activeSteps]);
 
+  const finishTour = () => { finishTourStorage(); setShowTour(false); };
   const handlePrev = () => setTourStep((s) => Math.max(0, s - 1));
-  const finishTour = () => {
-    sessionStorage.removeItem('tour_manually_opened');
-    localStorage.setItem('onboarding_completed', 'true');
-    setShowTour(false);
-  };
   const handleNext = () => {
     if (tourStep < activeSteps.length - 1) setTourStep((s) => s + 1);
-    else { finishTour(); if (onComplete) onComplete(); }
+    else { finishTour(); onComplete?.(); }
   };
   const startTour = () => {
-    if (isMobileScreen()) return;
+    if (isMobile()) return;
     sessionStorage.setItem('tour_manually_opened', 'true');
     setActiveSteps(ONBOARDING_STEPS);
     setTourStep(0);
     setShowTour(true);
   };
   const startFilteredTour = (stepIds) => {
-    if (isMobileScreen() || !stepIds || stepIds.length === 0) return;
+    if (isMobile() || !stepIds?.length) return;
     const filtered = ONBOARDING_STEPS.filter((s) => stepIds.includes(s.id));
-    if (filtered.length === 0) return;
+    if (!filtered.length) return;
     sessionStorage.setItem('tour_manually_opened', 'true');
     setActiveSteps(filtered);
     setTourStep(0);

@@ -22,7 +22,7 @@ export default function CandidateProfileSetup() {
   const { profile, setProfile, isSaved, handleChange } = useCandidateProfileSetup(getInitialCleanProfile);
   useAppTheme(profile?.preferences?.theme, profile?.preferences?.fontSize);
 
-  const { showTour, tourStep, totalSteps, currentStepData, handleNext, handlePrev, handleSkip, startTour, startFilteredTour } = useOnboardingTour();
+  const { showTour, tourStep, totalSteps, currentStepData, handleNext, handlePrev, handleSkip, startTour, startFilteredTour } = useOnboardingTour(profile);
   const { errors, showErrorModal, setShowErrorModal, validate, handleFocusFirstError, clearError } = useProfileValidation(profile, startFilteredTour);
 
   const handleSubmit = async () => {
@@ -54,7 +54,9 @@ export default function CandidateProfileSetup() {
       {showTour && currentStepData?.id !== 'tour-stream' && (
         <OnboardingTourOverlay currentStep={tourStep} totalSteps={totalSteps} stepData={currentStepData} onNext={tourStep >= totalSteps - 1 ? handleSubmit : handleNext} onPrev={handlePrev} onSkip={handleSkip} />
       )}
-      {showTour && currentStepData?.id === 'tour-stream' && <StreamTourHintBox onNext={handleNext} onSkip={handleSkip} />}
+      {showTour && currentStepData?.id === 'tour-stream' && (
+        <StreamTourHintBox onNext={tourStep >= totalSteps - 1 ? handleSubmit : handleNext} onSkip={handleSkip} />
+      )}
       <ValidationAlertModal errors={showErrorModal ? errors : null} onClose={() => setShowErrorModal(false)} onFocusFirstError={handleFocusFirstError} />
       <div className="fixed inset-0 pointer-events-none opacity-20 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] z-0" />
       <main className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-6 space-y-6">

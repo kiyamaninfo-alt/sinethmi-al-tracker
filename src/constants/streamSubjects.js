@@ -22,6 +22,15 @@ const CORE_SINHALA = [
   'උසස් ගණිතය', 'සිවිල් තාක්ෂණය', 'යාන්ත්‍රික තාක්ෂණය', 'ඉලෙක්ට්‍රොනික', 'ආහාර තාක්ෂණය'
 ];
 
+const CORE_TAMIL = [
+  'உயிரியல்', 'வேதியியல்', 'பௌதிகவியல்', 'இணைந்த கணிதம்',
+  'தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்பம்', 'விவசாய அறிவியல்', 'பொறியியல் தொழில்நுட்பம்',
+  'தொழில்நுட்பத்திற்கான அறிவியல்', 'கணக்கியல்', 'வணிகக் கல்வி', 'பொருளியல்',
+  'அரசியல் அறிவியல்', 'அளவையியலும் விஞ்ஞான முறையும்', 'புவியியல்', 'சிங்கள மொழி', 'ஆங்கில இலக்கியம்',
+  'பௌத்த கலாச்சாரம்', 'சித்திரக்கலை', 'தொடர்பாடலும் ஊடகக் கல்வியும்', 'புள்ளிவிவரவியல்',
+  'உயர் கணிதம்', 'சிவில் தொழில்நுட்பம்', 'இயந்திர தொழில்நுட்பம்', 'மின் மற்றும் மின்னணு', 'உணவு தொழில்நுட்பம்'
+];
+
 const ELECTIVE_NAMES = [
   'Software Development', 'Data Analytics & AI', 'Robotics & Embedded Systems', 'Graphic Design & VFX',
   'Cybersecurity Fundamentals', 'Environmental Science', 'Astronomy & Astrophysics', 'Marine Biology',
@@ -39,12 +48,14 @@ export const MOCK_100_SUBJECTS = Array.from({ length: 100 }, (_, i) => {
   const num = String(i + 1).padStart(3, '0');
   const baseName = isCore ? CORE_NAMES[i % CORE_NAMES.length] : ELECTIVE_NAMES[i % ELECTIVE_NAMES.length];
   const sinhala = isCore ? CORE_SINHALA[i % CORE_SINHALA.length] : 'අතිරේක මොඩියුලය';
+  const tamil = isCore ? CORE_TAMIL[i % CORE_TAMIL.length] : 'கூடுதல் தொகுதி';
   const name = i < 25 || (i >= 50 && i < 75) ? baseName : `${baseName} (Module II)`;
   return {
     id: `subj-${num}`,
     code: `AL-${num}`,
     name,
     sinhala,
+    tamil,
     category: isCore ? 'core' : 'elective',
     color: COLORS[i % COLORS.length],
     hours: 12 + ((i % 4) * 2),

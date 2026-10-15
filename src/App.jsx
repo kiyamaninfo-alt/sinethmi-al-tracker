@@ -4,7 +4,6 @@ import CandidateProfileSetup from './components/ProfileSetup/CandidateProfileSet
 import CommandCenterDashboard from './components/CommandCenter/CommandCenterDashboard';
 import StudyAnalyticsDashboard from './components/StudyAnalytics/StudyAnalyticsDashboard';
 import VisualAnalyticsDashboard from './components/VisualAnalytics/VisualAnalyticsDashboard';
-import SyllabusManagerPage from './components/SyllabusManager/SyllabusManagerPage';
 import DevNav from './components/DevNav';
 import StudyTrackerLandingPage from './components/LandingPage/StudyTrackerLandingPage';
 import AuthCallbackHandler from './components/CandidateLogin/AuthCallbackHandler';
@@ -28,7 +27,7 @@ function RouteContent() {
       <Route element={<ProtectedRoute />}>
         <Route path="/profile-setup" element={<CandidateProfileSetup />} />
         <Route path="/command-center" element={<CommandCenterDashboard />} />
-        <Route path="/syllabus-manager" element={<SyllabusManagerPage />} />
+        <Route path="/syllabus-manager" element={<Navigate to="/command-center?modal=syllabus" replace />} />
         <Route path="/study-analytics" element={<StudyAnalyticsDashboard onBack={toCommand} />} />
         <Route path="/visual-analytics" element={<VisualAnalyticsDashboard onBack={toCommand} />} />
       </Route>
