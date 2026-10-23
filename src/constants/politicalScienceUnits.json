@@ -1,0 +1,407 @@
+[
+  {
+    "num": 1,
+    "title": "Understanding Political Science & Core Concepts",
+    "english": "Understanding Political Science & Core Concepts",
+    "sinhala": "දේශපාලන විද්‍යාව සහ මූලික සංකල්ප අවබෝධ කර ගැනීම",
+    "sinhala_title": "ඒකකය 01: දේශපාලන විද්‍යාව සහ මූලික සංකල්ප",
+    "tamil": "அரசியல் அறிவியலையும் அடிப்படைக் கருத்துக்களையும் புரிந்துகொள்ளல்",
+    "tamil_title": "அலகு 01: அரசியல் அறிவியலும் அடிப்படைக் கருத்துக்களும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Nature, scope and importance of studying political science",
+        "english": "Nature, scope and importance of studying political science",
+        "sinhala": "දේශපාලන විද්‍යාවේ ස්වභාවය, විෂය පථය සහ වැදගත්කම",
+        "tamil": "அரசியல் அறிவியலின் தன்மையும் எல்லையும் முக்கியத்துவமும்",
+        "hours": 5
+      },
+      {
+        "num": "1.2",
+        "title": "Key concepts: Power, authority, legitimacy and sovereignty",
+        "english": "Key concepts: Power, authority, legitimacy and sovereignty",
+        "sinhala": "මූලික සංකල්ප: බලය, අධිකාරය, නීත්‍යානුකූලභාවය සහ ස්වෛරීභාවය",
+        "tamil": "முக்கிய கருத்துக்கள்: அதிகாரம், அதிகாரமளிப்பு, சட்டபூர்வத்தன்மை மற்றும் இறைமை",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Approaches to the Study of Politics",
+    "english": "Approaches to the Study of Politics",
+    "sinhala": "දේශපාලනය හැදෑරීමේ ප්‍රවේශයන්",
+    "sinhala_title": "ඒකකය 02: දේශපාලනය හැදෑරීමේ ප්‍රවේශයන්",
+    "tamil": "அரசியலைக் கற்பதற்கான அணுகுமுறைகள்",
+    "tamil_title": "அலகு 02: அரசியலைக் கற்பதற்கான அணுகுமுறைகள்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Traditional, institutional and philosophical approaches",
+        "english": "Traditional, institutional and philosophical approaches",
+        "sinhala": "සාම්ප්‍රදායික, ආයතනික සහ දාර්ශනික ප්‍රවේශ",
+        "tamil": "பாரம்பரிய, நிறுவன மற்றும் தத்துவார்த்த அணுகுமுறைகள்",
+        "hours": 5
+      },
+      {
+        "num": "2.2",
+        "title": "Modern behavioral and post-behavioral approaches",
+        "english": "Modern behavioral and post-behavioral approaches",
+        "sinhala": "නූතන චර්යාවාදී සහ පසු-චර්යාවාදී ප්‍රවේශ",
+        "tamil": "நவீன நடத்தைவாத மற்றும் பிந்தைய நடத்தைவாத அணுகுமுறைகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "The State and Theories of Origin",
+    "english": "The State and Theories of Origin",
+    "sinhala": "රාජ්‍යය සහ සම්භවය පිළිබඳ න්‍යායයන්",
+    "sinhala_title": "ඒකකය 03: රාජ්‍යය සහ සම්භවය පිළිබඳ න්‍යායයන්",
+    "tamil": "அரசும் அதன் தோற்றக் கோட்பாடுகளும்",
+    "tamil_title": "அலகு 03: அரசும் அதன் தோற்றக் கோட்பாடுகளும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Elements of the state and evolutionary/social contract theories",
+        "english": "Elements of the state and evolutionary/social contract theories",
+        "sinhala": "රාජ්‍යයේ මූලද්‍රව්‍ය සහ පරිණාමවාදී/සමාජ සම්මුති න්‍යාය",
+        "tamil": "அரசின் மூலகங்களும் கூர்ப்பு/சமூக ஒப்பந்தக் கோட்பாடுகளும்",
+        "hours": 5
+      },
+      {
+        "num": "3.2",
+        "title": "Liberal, Marxist and feminist perspectives on the state",
+        "english": "Liberal, Marxist and feminist perspectives on the state",
+        "sinhala": "රාජ්‍යය පිළිබඳ ලිබරල්වාදී, මාක්ස්වාදී සහ ස්ත්‍රීවාදී දෘෂ්ටිකෝණ",
+        "tamil": "அரசு பற்றிய தாராளவாத, மார்க்சிய மற்றும் பெண்ணியக் கண்ணோட்டங்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Forms and Systems of Government",
+    "english": "Forms and Systems of Government",
+    "sinhala": "ආණ්ඩු ක්‍රම සහ ආකෘති",
+    "sinhala_title": "ඒකකය 04: ආණ්ඩු ක්‍රම සහ ආකෘති",
+    "tamil": "அரசாங்க வடிவங்களும் முறைகளும்",
+    "tamil_title": "அலகு 04: அரசாங்க வடிவங்களும் முறைகளும்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Unitary and Federal forms of government",
+        "english": "Unitary and Federal forms of government",
+        "sinhala": "ඒකීය සහ සන්ධීය ආණ්ඩු ක්‍රම",
+        "tamil": "ஒற்றையாட்சி மற்றும் சமஷ்டி அரசாங்க வடிவங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "4.2",
+        "title": "Parliamentary, Presidential and Semi-Presidential systems",
+        "english": "Parliamentary, Presidential and Semi-Presidential systems",
+        "sinhala": "පාර්ලිමේන්තු, ජනාධිපති සහ අර්ධ-ජනාධිපති ක්‍රම",
+        "tamil": "பாராளுமன்ற, ஜனாதிபதி மற்றும் அரை-ஜனாதிபதி ஆட்சிமுறைகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Political Ideologies",
+    "english": "Political Ideologies",
+    "sinhala": "දේශපාලන මතවාද",
+    "sinhala_title": "ඒකකය 05: දේශපාලන මතවාද",
+    "tamil": "அரசியல் சித்தாந்தங்கள்",
+    "tamil_title": "அலகு 05: அரசியல் சித்தாந்தங்கள்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "Liberalism, Socialism and Social Democracy",
+        "english": "Liberalism, Socialism and Social Democracy",
+        "sinhala": "ලිබරල්වාදය, සමාජවාදය සහ ප්‍රජාතන්ත්‍රවාදී සමාජවාදය",
+        "tamil": "தாராளவாதம், சோசலிசம் மற்றும் சமூக ஜனநாயகவாதம்",
+        "hours": 5
+      },
+      {
+        "num": "5.2",
+        "title": "Fascism, Nationalism, Secularism and Feminism",
+        "english": "Fascism, Nationalism, Secularism and Feminism",
+        "sinhala": "ෆැසිස්ට්වාදය, ජාතිකවාදය, අනාගමිකවාදය සහ ස්ත්‍රීවාදය",
+        "tamil": "பாசிசம், தேசியவாதம், மதச்சார்பின்மை மற்றும் பெண்ணியம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Conflict & Conflict Resolution",
+    "english": "Conflict & Conflict Resolution",
+    "sinhala": "ගැටුම් සහ ගැටුම් නිරාකරණය",
+    "sinhala_title": "ඒකකය 06: ගැටුම් සහ ගැටුම් නිරාකරණය",
+    "tamil": "முரண்பாடுகளும் முரண்பாடு தீர்த்தலும்",
+    "tamil_title": "அலகு 06: முரண்பாடுகளும் முரண்பாடு தீர்த்தலும்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "Causes and dynamics of social and political conflicts",
+        "english": "Causes and dynamics of social and political conflicts",
+        "sinhala": "සමාජ හා දේශපාලන ගැටුම්වල හේතු සහ ගතිකයන්",
+        "tamil": "சமூக மற்றும் அரசியல் முரண்பாடுகளுக்கான காரணங்களும் இயக்கங்களும்",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "Conflict management, peacebuilding and reconciliation mechanisms",
+        "english": "Conflict management, peacebuilding and reconciliation mechanisms",
+        "sinhala": "ගැටුම් කළමනාකරණය, සාමය ගොඩනැගීම සහ සංහිඳියා ක්‍රමවේද",
+        "tamil": "முரண்பாட்டு முகாமைத்துவம், சமாதானக் கட்டமைப்பு மற்றும் நல்லிணக்க வழிமுறைகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Democracy & Good Governance",
+    "english": "Democracy & Good Governance",
+    "sinhala": "ප්‍රජාතන්ත්‍රවාදය සහ යහපාලනය",
+    "sinhala_title": "ඒකකය 07: ප්‍රජාතන්ත්‍රවාදය සහ යහපාලනය",
+    "tamil": "ஜனநாயகமும் நல்லாட்சியும்",
+    "tamil_title": "அலகு 07: ஜனநாயகமும் நல்லாட்சியும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Principles, models and institutions of representative democracy",
+        "english": "Principles, models and institutions of representative democracy",
+        "sinhala": "නියෝජිත ප්‍රජාතන්ත්‍රවාදයේ මූලධර්ම, ආකෘති සහ ආයතන",
+        "tamil": "பிரதிநிதித்துவ ஜனநாயகத்தின் கோட்பாடுகள், மாதிரிகள் மற்றும் நிறுவனங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "7.2",
+        "title": "Good governance: Rule of law, transparency and accountability",
+        "english": "Good governance: Rule of law, transparency and accountability",
+        "sinhala": "යහපාලනය: නීතියේ ආධිපත්‍යය, විනිවිදභාවය සහ වගවීම",
+        "tamil": "நல்லாட்சி: சட்டத்தின் ஆட்சி, வெளிப்படைத்தன்மை மற்றும் பொறுப்புக்கூறல்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Political Culture & Socialization",
+    "english": "Political Culture & Socialization",
+    "sinhala": "දේශපාලන සංස්කෘතිය සහ දේශපාලන සමාජානුයෝජනය",
+    "sinhala_title": "ඒකකය 08: දේශපාලන සංස්කෘතිය සහ සමාජානුයෝජනය",
+    "tamil": "அரசியல் கலாச்சாரமும் சமூகமயமாக்கலும்",
+    "tamil_title": "அலகு 08: அரசியல் கலாச்சாரமும் சமூகமயமாக்கலும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Types of political culture and civic attitudes",
+        "english": "Types of political culture and civic attitudes",
+        "sinhala": "දේශපාලන සංස්කෘති වර්ග සහ පුරවැසි ආකල්ප",
+        "tamil": "அரசியல் கலாச்சார வகைகள் மற்றும் பிரஜைகளின் மனப்பாங்குகள்",
+        "hours": 5
+      },
+      {
+        "num": "8.2",
+        "title": "Agents of political socialization and public opinion",
+        "english": "Agents of political socialization and public opinion",
+        "sinhala": "දේශපාලන සමාජානුයෝජන නියෝජිතයන් සහ මහජන මතය",
+        "tamil": "அரசியல் சமூகமயமாக்கல் முகவர்களும் பொதுக் கருத்தும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 9,
+    "title": "Political Parties & Interest Groups",
+    "english": "Political Parties & Interest Groups",
+    "sinhala": "දේශපාලන පක්ෂ සහ බලපෑම් කණ්ඩායම්",
+    "sinhala_title": "ඒකකය 09: දේශපාලන පක්ෂ සහ බලපෑම් කණ්ඩායම්",
+    "tamil": "அரசியல் கட்சிகளும் ஆர்வக் குழுக்களும்",
+    "tamil_title": "அலகு 09: அரசியல் கட்சிகளும் ஆர்வக் குழுக்களும்",
+    "subUnits": [
+      {
+        "num": "9.1",
+        "title": "Functions of political parties and party systems",
+        "english": "Functions of political parties and party systems",
+        "sinhala": "දේශපාලන පක්ෂවල කාර්යභාරය සහ පක්ෂ ක්‍රම",
+        "tamil": "அரசியல் கட்சிகளின் தொழிற்பாடுகளும் கட்சி முறைகளும்",
+        "hours": 5
+      },
+      {
+        "num": "9.2",
+        "title": "Interest groups, civil society and advocacy movements",
+        "english": "Interest groups, civil society and advocacy movements",
+        "sinhala": "බලපෑම් කණ්ඩායම්, සිවිල් සමාජය සහ මහජන ව්‍යාපාර",
+        "tamil": "ஆர்வக் குழுக்கள், சிவில் சமூகம் மற்றும் வக்காலத்து இயக்கங்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 10,
+    "title": "Public Administration & Bureaucracy",
+    "english": "Public Administration & Bureaucracy",
+    "sinhala": "රාජ්‍ය පරිපාලනය සහ නිලධාරි තන්ත්‍රය",
+    "sinhala_title": "ඒකකය 10: රාජ්‍ය පරිපාලනය සහ නිලධාරි තන්ත්‍රය",
+    "tamil": "பொது நிர்வாகமும் அதிகாரத்துவமும்",
+    "tamil_title": "அலகு 10: பொது நிர்வாகமும் அதிகாரத்துவமும்",
+    "subUnits": [
+      {
+        "num": "10.1",
+        "title": "Weberian bureaucracy, public management and reforms",
+        "english": "Weberian bureaucracy, public management and reforms",
+        "sinhala": "වෙබරියානු නිලධාරි තන්ත්‍රය, රාජ්‍ය කළමනාකරණය සහ ප්‍රතිසංස්කරණ",
+        "tamil": "வெபரின் அதிகாரத்துவம், பொது முகாமைத்துவம் மற்றும் சீர்திருத்தங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "10.2",
+        "title": "Control of administrative power and ombudsman",
+        "english": "Control of administrative power and ombudsman",
+        "sinhala": "පරිපාලන බලය පාලනය කිරීම සහ පාර්ලිමේන්තු කොමසාරිස් (ඔම්බුඩ්ස්මන්)",
+        "tamil": "நிர்வாக அதிகாரக் கட்டுப்பாடும் ஒம்புட்ஸ்மனும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 11,
+    "title": "Constitutions & Constitutionalism",
+    "english": "Constitutions & Constitutionalism",
+    "sinhala": "ආණ්ඩුක්‍රම ව්‍යවස්ථාව සහ ව්‍යවස්ථාපිතවාදය",
+    "sinhala_title": "ඒකකය 11: ආණ්ඩුක්‍රම ව්‍යවස්ථාව සහ ව්‍යවස්ථාපිතවාදය",
+    "tamil": "அரசியலமைப்பும் அரசியலமைப்புவாதமும்",
+    "tamil_title": "அலகு 11: அரசியலமைப்பும் அரசியலமைப்புவாதமும்",
+    "subUnits": [
+      {
+        "num": "11.1",
+        "title": "Classification and features of modern constitutions",
+        "english": "Classification and features of modern constitutions",
+        "sinhala": "නූතන ආණ්ඩුක්‍රම ව්‍යවස්ථාවල වර්ගීකරණය සහ ලක්ෂණ",
+        "tamil": "நவீன அரசியலமைப்புகளின் வகைப்படுத்தலும் சிறப்பியல்புகளும்",
+        "hours": 5
+      },
+      {
+        "num": "11.2",
+        "title": "Separation of powers, checks and balances and judicial review",
+        "english": "Separation of powers, checks and balances and judicial review",
+        "sinhala": "බලතල බෙදීම, තුලන හා සංවරණ සහ අධිකරණ සමාලෝචනය",
+        "tamil": "அதிகாரப் பகிர்வு, சமநிலைகளும் கட்டுப்பாடுகளும் மற்றும் நீதித்துறை மீளாய்வு",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 12,
+    "title": "Constitutional Evolution in Sri Lanka (Colonial to 1972)",
+    "english": "Constitutional Evolution in Sri Lanka (Colonial to 1972)",
+    "sinhala": "ශ්‍රී ලංකාවේ ව්‍යවස්ථාමය පරිණාමය (යටත්විජිත යුගයේ සිට 1972 දක්වා)",
+    "sinhala_title": "ඒකකය 12: ශ්‍රී ලංකාවේ ව්‍යවස්ථාමය පරිණාමය (1972 දක්වා)",
+    "tamil": "இலங்கையின் அரசியலமைப்புப் பரிணாமம் (1972 வரை)",
+    "tamil_title": "அலகு 12: இலங்கையின் அரசியலமைப்புப் பரிணாமம் (1972 வரை)",
+    "subUnits": [
+      {
+        "num": "12.1",
+        "title": "Colebrooke-Cameron, Donoughmore and Soulbury Constitutions",
+        "english": "Colebrooke-Cameron, Donoughmore and Soulbury Constitutions",
+        "sinhala": "කෝල්බෲක්-කැමරන්, ඩොනමෝර් සහ සෝල්බරි ආණ්ඩුක්‍රම ව්‍යවස්ථා",
+        "tamil": "கோல்புறூக்-கமரன், டொனமூர் மற்றும் சோல்பரி அரசியலமைப்புகள்",
+        "hours": 5
+      },
+      {
+        "num": "12.2",
+        "title": "The First Republican Constitution of Sri Lanka (1972)",
+        "english": "The First Republican Constitution of Sri Lanka (1972)",
+        "sinhala": "1972 ප්‍රථම ජනරජ ආණ්ඩුක්‍රම ව්‍යවස්ථාව",
+        "tamil": "1972 முதலாம் குடியரசு அரசியலமைப்பு",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 13,
+    "title": "The 1978 Constitution of Sri Lanka & Major Amendments",
+    "english": "The 1978 Constitution of Sri Lanka & Major Amendments",
+    "sinhala": "1978 ශ්‍රී ලංකා ආණ්ඩුක්‍රම ව්‍යවස්ථාව සහ ප්‍රධාන සංශෝධන",
+    "sinhala_title": "ඒකකය 13: 1978 ආණ්ඩුක්‍රම ව්‍යවස්ථාව සහ සංශෝධන",
+    "tamil": "1978 இலங்கை அரசியலமைப்பும் முக்கிய திருத்தங்களும்",
+    "tamil_title": "அலகு 13: 1978 அரசியலமைப்பும் முக்கிய திருத்தங்களும்",
+    "subUnits": [
+      {
+        "num": "13.1",
+        "title": "Executive Presidency, Parliament and Judicial system",
+        "english": "Executive Presidency, Parliament and Judicial system",
+        "sinhala": "විධායක ජනාධිපති ධුරය, පාර්ලිමේන්තුව සහ අධිකරණ පද්ධතිය",
+        "tamil": "நிறைவேற்று ஜனாதிபதி முறை, பாராளுமன்றம் மற்றும் நீதித்துறை",
+        "hours": 6
+      },
+      {
+        "num": "13.2",
+        "title": "Devolution of power (13th Amendment) and Fundamental Rights",
+        "english": "Devolution of power (13th Amendment) and Fundamental Rights",
+        "sinhala": "බලය බෙදීම (13 වන සංශෝධනය) සහ මූලික අයිතිවාසිකම්",
+        "tamil": "அதிகாரப் பரவலாக்கல் (13வது திருத்தம்) மற்றும் அடிப்படை உரிமைகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 14,
+    "title": "Electoral Systems & Local Government in Sri Lanka",
+    "english": "Electoral Systems & Local Government in Sri Lanka",
+    "sinhala": "මැතිවරණ ක්‍රම සහ පළාත් පාලනය",
+    "sinhala_title": "ඒකකය 14: මැතිවරණ ක්‍රම සහ පළාත් පාලනය",
+    "tamil": "தேர்தல் முறைகளும் உள்ளூராட்சி மன்றங்களும்",
+    "tamil_title": "அலகு 14: தேர்தல் முறைகளும் உள்ளூராட்சி மன்றங்களும்",
+    "subUnits": [
+      {
+        "num": "14.1",
+        "title": "Proportional representation and electoral reforms in Sri Lanka",
+        "english": "Proportional representation and electoral reforms in Sri Lanka",
+        "sinhala": "සමානුපාතික නියෝජන ක්‍රමය සහ මැතිවරණ ප්‍රතිසංස්කරණ",
+        "tamil": "விகிதாசாரப் பிரதிநிதித்துவமும் தேர்தல் சீர்திருத்தங்களும்",
+        "hours": 5
+      },
+      {
+        "num": "14.2",
+        "title": "Structure and functions of local government authorities",
+        "english": "Structure and functions of local government authorities",
+        "sinhala": "පළාත් පාලන ආයතනවල ව්‍යුහය සහ කාර්යභාරය",
+        "tamil": "உள்ளூராட்சி அதிகார சபைகளின் கட்டமைப்பும் பணிகளும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 15,
+    "title": "Sri Lanka's Foreign Policy & Global Affairs",
+    "english": "Sri Lanka's Foreign Policy & Global Affairs",
+    "sinhala": "ශ්‍රී ලංකාවේ විදේශ ප්‍රතිපත්තිය සහ ජාත්‍යන්තර සබඳතා",
+    "sinhala_title": "ඒකකය 15: විදේශ ප්‍රතිපත්තිය සහ ජාත්‍යන්තර සබඳතා",
+    "tamil": "இலங்கையின் வெளியுறவுக் கொள்கையும் உலக விவகாரங்களும்",
+    "tamil_title": "அலகு 15: வெளியுறவுக் கொள்கையும் உலக விவகாரங்களும்",
+    "subUnits": [
+      {
+        "num": "15.1",
+        "title": "Determinants of foreign policy and the Non-Aligned Movement",
+        "english": "Determinants of foreign policy and the Non-Aligned Movement",
+        "sinhala": "විදේශ ප්‍රතිපත්තියේ නිර්ණායක සහ නොබැඳි ජාතීන්ගේ ව්‍යාපාරය",
+        "tamil": "வெளியுறவுக் கொள்கையின் தீர்மானிகளும் அணிசேரா இயக்கமும்",
+        "hours": 5
+      },
+      {
+        "num": "15.2",
+        "title": "Regional cooperation (SAARC, BIMSTEC) and the United Nations",
+        "english": "Regional cooperation (SAARC, BIMSTEC) and the United Nations",
+        "sinhala": "කලාපීය සහයෝගිතාව (සාර්ක්, බිම්ස්ටෙක්) සහ එක්සත් ජාතීන්ගේ සංවිධානය",
+        "tamil": "பிராந்திய ஒத்துழைப்பு (சார்க், பிம்ஸ்டெக்) மற்றும் ஐக்கிய நாடுகள் சபை",
+        "hours": 5
+      }
+    ]
+  }
+]

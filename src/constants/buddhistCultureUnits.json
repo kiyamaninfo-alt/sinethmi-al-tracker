@@ -1,0 +1,218 @@
+[
+  {
+    "num": 1,
+    "title": "Historical Background & Origin of Buddhism in India",
+    "english": "Historical Background & Origin of Buddhism in India",
+    "sinhala": "භාරතයේ ඓතිහාසික පසුබිම සහ බුදුසමයේ ආරම්භය",
+    "sinhala_title": "ඒකකය 01: භාරතීය පසුබිම සහ බුදුසමයේ ආරම්භය",
+    "tamil": "இந்தியாவில் வரலாற்றுப் பின்னணியும் பௌத்தத்தின் தோற்றமும்",
+    "tamil_title": "அலகு 01: வரலாற்றுப் பின்னணியும் பௌத்த தோற்றமும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Socio-political and religious conditions of 6th Century BCE India",
+        "english": "Socio-political and religious conditions of 6th Century BCE India",
+        "sinhala": "ක්‍රි.පූ. 6 වන සියවසේ භාරතයේ සමාජ, දේශපාලන සහ ආගමික පරිසරය",
+        "tamil": "கி.மு. 6 ஆம் நூற்றாண்டு இந்தியாவின் சமூக, அரசியல், மதச் சூழல்",
+        "hours": 5
+      },
+      {
+        "num": "1.2",
+        "title": "Life of Siddhartha Gautama, Enlightenment and First Sermon",
+        "english": "Life of Siddhartha Gautama, Enlightenment and First Sermon",
+        "sinhala": "සිද්ධාර්ථ චරිතය, බුද්ධත්වයට පත්වීම සහ දම්සක් පැවතුම් සූත්‍රය",
+        "tamil": "சித்தார்த்த கௌதமரின் வாழ்க்கை, ஞானமடைதல், முதல் போதனை",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Fundamental Philosophical Doctrines of Buddhism",
+    "english": "Fundamental Philosophical Doctrines of Buddhism",
+    "sinhala": "මූලික බෞද්ධ දාර්ශනික ඉගැන්වීම්",
+    "sinhala_title": "ඒකකය 02: මූලික බෞද්ධ දාර්ශනික ඉගැන්වීම්",
+    "tamil": "பௌத்தத்தின் அடிப்படைத் தத்துவக் கோட்பாடுகள்",
+    "tamil_title": "அலகு 02: அடிப்படைத் தத்துவக் கோட்பாடுகள்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "The Four Noble Truths, Noble Eightfold Path and Middle Way",
+        "english": "The Four Noble Truths, Noble Eightfold Path and Middle Way",
+        "sinhala": "චතුරාර්ය සත්‍යය, ආර්ය අෂ්ටාංගික මාර්ගය සහ මධ්‍යම ප්‍රතිපදාව",
+        "tamil": "நான்கு ஆரிய உண்மைகள், எண்வகை மார்க்கம் மற்றும் நடுவழி",
+        "hours": 5
+      },
+      {
+        "num": "2.2",
+        "title": "Dependent Origination (Paticcasamuppada), Tilakkhana and Kamma",
+        "english": "Dependent Origination (Paticcasamuppada), Tilakkhana and Kamma",
+        "sinhala": "පටිච්චසමුප්පාදය, ත්‍රිලක්ෂණය සහ කර්ම න්‍යාය",
+        "tamil": "சார்புத் தோற்றக் கொள்கை, முப்பண்புகள் மற்றும் கர்மக் கோட்பாடு",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Buddhist Monastic Organization & Early Councils",
+    "english": "Buddhist Monastic Organization & Early Councils",
+    "sinhala": "බෞද්ධ භික්ෂු සංවිධානය සහ ධර්ම සංගායනා",
+    "sinhala_title": "ඒකකය 03: භික්ෂු සංවිධානය සහ ධර්ම සංගායනා",
+    "tamil": "பௌத்த துறவற அமைப்பும் ஆரம்பகால தர்ம சங்காயனைகளும்",
+    "tamil_title": "அலகு 03: துறவற அமைப்பும் சங்காயனைகளும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Vinaya rules, monastic order (Sangha) and administration",
+        "english": "Vinaya rules, monastic order (Sangha) and administration",
+        "sinhala": "විනය නීති, මහා සංඝ රත්නය සහ ආරාමික පරිපාලනය",
+        "tamil": "விநய விதிகள், சங்க அமைப்பு மற்றும் நிர்வாகம்",
+        "hours": 5
+      },
+      {
+        "num": "3.2",
+        "title": "First, Second and Third Buddhist Councils and Tipitaka canon",
+        "english": "First, Second and Third Buddhist Councils and Tipitaka canon",
+        "sinhala": "ප්‍රථම, ද්විතීය සහ තෘතීය ධර්ම සංගායනා සහ ත්‍රිපිටකය",
+        "tamil": "முதலாவது, இரண்டாவது மற்றும் மூன்றாவது தர்ம சங்காயனைகள், திரிபிடகம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Introduction & Evolution of Buddhism in Sri Lanka",
+    "english": "Introduction & Evolution of Buddhism in Sri Lanka",
+    "sinhala": "ශ්‍රී ලංකාවට බුදුසමය පැමිණීම සහ ව්‍යාප්තිය",
+    "sinhala_title": "ඒකකය 04: ලංකාවේ බුදුසසුනේ ආරම්භය සහ ව්‍යාප්තිය",
+    "tamil": "இலங்கையில் பௌத்தத்தின் அறிமுகமும் வரலாற்று வளர்ச்சியும்",
+    "tamil_title": "அலகு 04: இலங்கையில் பௌத்தத்தின் வளர்ச்சி",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Arahant Mahinda's mission, Devanampiyatissa and cultural transformation",
+        "english": "Arahant Mahinda's mission, Devanampiyatissa and cultural transformation",
+        "sinhala": "මිහිඳු මහරහතන් වහන්සේගේ ලංකාගමනය සහ සංස්කෘතික පරිවර්තනය",
+        "tamil": "மகிந்த தேரரின் வருகை, தேவநம்பியதீசன் மற்றும் கலாச்சார மாற்றம்",
+        "hours": 5
+      },
+      {
+        "num": "4.2",
+        "title": "Arrival of Sanghamitta Theri, sacred Bodhi tree and Bhikkhuni Sasana",
+        "english": "Arrival of Sanghamitta Theri, sacred Bodhi tree and Bhikkhuni Sasana",
+        "sinhala": "සඟමිත් තෙරණියගේ පැමිණීම, ශ්‍රී මහා බෝධිය සහ භික්ෂුණී ශාසනය",
+        "tamil": "சங்கமித்தை தேரியின் வருகை, ஸ்ரீ மகா போதி, பிக்குணி சாசனம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Buddhist Monasteries (Mahavihara, Abhayagiri, Jetavana)",
+    "english": "Buddhist Monasteries (Mahavihara, Abhayagiri, Jetavana)",
+    "sinhala": "මහා විහාරය, අභයගිරිය සහ ජේතවනය බෞද්ධ ආරාමික සම්ප්‍රදායන්",
+    "sinhala_title": "ඒකකය 05: මහා විහාර, අභයගිරි, ජේතවන සම්ප්‍රදායන්",
+    "tamil": "மகாவிகாரை, அபயகிரி, ஜேதவன பௌத்த மடாலய மரபுகள்",
+    "tamil_title": "அலகு 05: பௌத்த மடாலய மரபுகள்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "The Theravada orthodox tradition of Mahavihara and Pali commentaries",
+        "english": "The Theravada orthodox tradition of Mahavihara and Pali commentaries",
+        "sinhala": "මහා විහාරීය ථේරවාද සම්ප්‍රදාය සහ පාලි අටුවා සාහිත්‍යය",
+        "tamil": "மகாவிகாரையின் தேரவாத மரபும் பாளி உரைநூல்களும்",
+        "hours": 5
+      },
+      {
+        "num": "5.2",
+        "title": "Abhayagiri, Jetavana, Mahayana influences and international ties",
+        "english": "Abhayagiri, Jetavana, Mahayana influences and international ties",
+        "sinhala": "අභයගිරිය, ජේතවනය, මහායාන ආභාසය සහ ජාත්‍යන්තර සබඳතා",
+        "tamil": "அபயகிரி, ஜேதவன விகாரைகள் மற்றும் மகாயான தாக்கங்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Buddhist Art, Architecture & Sculpture in Sri Lanka",
+    "english": "Buddhist Art, Architecture & Sculpture in Sri Lanka",
+    "sinhala": "ශ්‍රී ලංකාවේ බෞද්ධ කලා, වාස්තුවිද්‍යා සහ මූර්ති ශිල්පය",
+    "sinhala_title": "ඒකකය 06: බෞද්ධ කලා, වාස්තුවිද්‍යා සහ මූර්ති",
+    "tamil": "இலங்கையின் பௌத்த கலை, கட்டிடக்கலை மற்றும் சிற்பக்கலை",
+    "tamil_title": "அலகு 06: பௌத்த கலை மற்றும் கட்டிடக்கலை",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "Stupas (Dagobas), Vatadage, moonstones (Sandakada Pahana) and guardstones",
+        "english": "Stupas (Dagobas), Vatadage, moonstones (Sandakada Pahana) and guardstones",
+        "sinhala": "චෛත්‍ය (දාගැබ්), වටදාගෙවල්, සඳකඩපහණ සහ මුරගල් නිර්මාණ කලාව",
+        "tamil": "தூபிகள் (தாகோபங்கள்), வட்டதாகே, சந்திரவட்டக்கல் மற்றும் காவல் கற்கள்",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "Buddha statues (Samadhi, Avukana) and Sigiri/Tivanka murals",
+        "english": "Buddha statues (Samadhi, Avukana) and Sigiri/Tivanka murals",
+        "sinhala": "බුද්ධ ප්‍රතිමා (සමාධි, අවුකන) සහ තිවංක පිළිමගෙය/සීගිරි බිතුසිතුවම්",
+        "tamil": "புத்தர் சிலைகள் (சமாதி, அவுக்கண) மற்றும் சுவரோவியங்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Buddhist Social Philosophy & Human Values",
+    "english": "Buddhist Social Philosophy & Human Values",
+    "sinhala": "බෞද්ධ සමාජ දර්ශනය සහ මානව වටිනාකම්",
+    "sinhala_title": "ඒකකය 07: බෞද්ධ සමාජ දර්ශනය සහ මානව සාරධර්ම",
+    "tamil": "பௌத்த சமூகத் தத்துவமும் மனித விழுமியங்களும்",
+    "tamil_title": "அலகு 07: சமூகத் தத்துவமும் மனித விழுமியங்களும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Sigalovada Sutta: Family relationships, social harmony and duties",
+        "english": "Sigalovada Sutta: Family relationships, social harmony and duties",
+        "sinhala": "සිඟාලෝවාද සූත්‍රය: පවුල් සබඳතා, සමාජ සහජීවනය සහ යුතුකම්",
+        "tamil": "சிங்காலோவாத சூத்திரம்: குடும்ப உறவுகள், சமூக நல்லிணக்கம்",
+        "hours": 5
+      },
+      {
+        "num": "7.2",
+        "title": "Buddhist political philosophy: Cakkavatti Sihanada and Agganna Sutta",
+        "english": "Buddhist political philosophy: Cakkavatti Sihanada and Agganna Sutta",
+        "sinhala": "බෞද්ධ දේශපාලන දර්ශනය: චක්කවත්ති සීහනාද සහ අග්ගඤ්ඤ සූත්‍ර",
+        "tamil": "பௌத்த அரசியல் தத்துவம்: சக்கவத்தி சீஹநாத மற்றும் அக்கஞ்ஞ சூத்திரங்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Buddhism, Ecology & Contemporary Global Challenges",
+    "english": "Buddhism, Ecology & Contemporary Global Challenges",
+    "sinhala": "බුදුදහම, පාරිසරික සදාචාරය සහ සමකාලීන ගෝලීය අභියෝග",
+    "sinhala_title": "ඒකකය 08: පාරිසරික සදාචාරය සහ ගෝලීය අභියෝග",
+    "tamil": "பௌத்தம், சூழலியல் மற்றும் சமகால உலகளாவிய சவால்கள்",
+    "tamil_title": "அலகு 08: சூழலியலும் சமகால சவால்களும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Buddhist environmental ethics, compassion towards nature and living beings",
+        "english": "Buddhist environmental ethics, compassion towards nature and living beings",
+        "sinhala": "බෞද්ධ පාරිසරික ආචාරධර්ම, සොබාදහමට සහ සතුන්ට දයාව දැක්වීම",
+        "tamil": "பௌத்த சுற்றுச்சூழல் அறவியல், இயற்கை மற்றும் உயிரினங்கள் மீதான கருணை",
+        "hours": 5
+      },
+      {
+        "num": "8.2",
+        "title": "Conflict resolution, global peace and mental wellbeing in modern life",
+        "english": "Conflict resolution, global peace and mental wellbeing in modern life",
+        "sinhala": "ගැටුම් නිරාකරණය, ලෝක සාමය සහ නූතන ජීවිතයේ මානසික සුවතාව",
+        "tamil": "முரண்பாடுகளைத் தீர்த்தல், உலக அமைதி மற்றும் நவீன வாழ்வில் மனநலன்",
+        "hours": 5
+      }
+    ]
+  }
+]

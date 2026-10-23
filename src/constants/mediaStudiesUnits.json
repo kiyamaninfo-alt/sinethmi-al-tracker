@@ -1,0 +1,272 @@
+[
+  {
+    "num": 1,
+    "title": "Introduction to Communication: Nature, Scope & Types",
+    "english": "Introduction to Communication: Nature, Scope & Types",
+    "sinhala": "සන්නිවේදනය හැඳින්වීම: ස්වභාවය, විෂය පථය සහ වර්ගීකරණය",
+    "sinhala_title": "ඒකකය 01: සන්නිවේදනය හැඳින්වීම සහ වර්ගීකරණය",
+    "tamil": "தொடர்பாடல் ஓர் அறிமுகம்: இயல்பு, எல்லை மற்றும் வகைகள்",
+    "tamil_title": "அலகு 01: தொடர்பாடல் அறிமுகமும் வகைகளும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Definitions, elements and functions of communication",
+        "english": "Definitions, elements and functions of communication",
+        "sinhala": "සන්නිවේදනයේ අර්ථ දැක්වීම්, මූලිකාංග සහ කාර්යභාරය",
+        "tamil": "தொடர்பாடலின் வரைவிலக்கணம், மூலகங்கள் மற்றும் பணிகள்",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "title": "Forms: Intrapersonal, interpersonal, group and mass communication",
+        "english": "Forms: Intrapersonal, interpersonal, group and mass communication",
+        "sinhala": "ස්වරූප: ආත්මීය, අන්තර්පුද්ගල, කණ්ඩායම් සහ ජන සන්නිවේදනය",
+        "tamil": "வடிவங்கள்: தனியாளிடை, ஆட்களிடை, குழு மற்றும் வெகுஜனத் தொடர்பாடல்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Communication Process & Classical Models",
+    "english": "Communication Process & Classical Models",
+    "sinhala": "සන්නිවේදන ක්‍රියාවලිය සහ සම්භාව්‍ය ආකෘති",
+    "sinhala_title": "ඒකකය 02: සන්නිවේදන ක්‍රියාවලිය සහ ආකෘති",
+    "tamil": "தொடர்பாடல் செயன்முறையும் பாரம்பரிய மாதிரிகளும்",
+    "tamil_title": "அலகு 02: தொடர்பாடல் மாதிரிகள்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Sender, encoding, message, channel, receiver and feedback",
+        "english": "Sender, encoding, message, channel, receiver and feedback",
+        "sinhala": "ප්‍රභවය, කේතනය, පණිවිඩය, නාලිකාව, ප්‍රතිග්‍රාහකයා සහ ප්‍රතිපෝෂණය",
+        "tamil": "அனுப்புநர், குறிமுறையாக்கம், செய்தி, ஊடகம், பெறுநர் மற்றும் பின்னூட்டம்",
+        "hours": 5
+      },
+      {
+        "num": "2.2",
+        "title": "Aristotle, Lasswell, Shannon-Weaver and Berlo's models",
+        "english": "Aristotle, Lasswell, Shannon-Weaver and Berlo's models",
+        "sinhala": "ඇරිස්ටෝටල්, ලැස්වෙල්, ෂැනන්-වීවර් සහ බර්ලෝගේ සන්නිවේදන ආකෘති",
+        "tamil": "அரிஸ்டோட்டில், லஸ்வெல், ஷானன்-வீவர் மற்றும் பெர்லோவின் மாதிரிகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Print Media & News Journalism",
+    "english": "Print Media & News Journalism",
+    "sinhala": "මුද්‍රිත මාධ්‍ය සහ පුවත්පත් කලාව",
+    "sinhala_title": "ඒකකය 03: මුද්‍රිත මාධ්‍ය සහ පුවත්පත් කලාව",
+    "tamil": "அச்சு ஊடகமும் செய்தியியலும்",
+    "tamil_title": "அலகு 03: அச்சு ஊடகமும் செய்தியியலும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "News values, reporting techniques, interviews and lead writing",
+        "english": "News values, reporting techniques, interviews and lead writing",
+        "sinhala": "පුවත් වටිනාකම්, වාර්තාකරණ ශිල්පක්‍රම, සම්මුඛ සාකච්ඡා සහ ප්‍රමුඛ ඡේදය",
+        "tamil": "செய்திப் பெறுமதிகள், செய்தி சேகரிப்பு உத்திகள் மற்றும் முன்னுரை எழுதுதல்",
+        "hours": 5
+      },
+      {
+        "num": "3.2",
+        "title": "Feature articles, editorial writing, layout and sub-editing",
+        "english": "Feature articles, editorial writing, layout and sub-editing",
+        "sinhala": "විශේෂාංග ලිපි, කතුවැකි, පිටු සැකසුම සහ උප සංස්කරණය",
+        "tamil": "சிறப்புக் கட்டுரைகள், தலையங்கங்கள் மற்றும் பக்க வடிவமைப்பு",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Radio Broadcasting & Audio Production",
+    "english": "Radio Broadcasting & Audio Production",
+    "sinhala": "ගුවන්විදුලි විකාශනය සහ ශ්‍රව්‍ය නිෂ්පාදනය",
+    "sinhala_title": "ඒකකය 04: ගුවන්විදුලි විකාශනය සහ ශ්‍රව්‍ය නිෂ්පාදනය",
+    "tamil": "வானொலி ஒலிபரப்பும் ஒலிசார் தயாரிப்பும்",
+    "tamil_title": "அலகு 04: வானொலி ஒலிபரப்பும் ஒலிசார் தயாரிப்பும்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Characteristics of radio medium and sound techniques (voice, SFX, music)",
+        "english": "Characteristics of radio medium and sound techniques (voice, SFX, music)",
+        "sinhala": "ගුවන්විදුලි මාධ්‍යයේ ලක්ෂණ සහ ශබ්ද ශිල්පක්‍රම (කටහඬ, ශබ්ද ප්‍රයෝග, සංගීතය)",
+        "tamil": "வானொலி ஊடகத்தின் பண்புகளும் ஒலி உத்திகளும் (குரல், ஒலிவிளைவு, இசை)",
+        "hours": 5
+      },
+      {
+        "num": "4.2",
+        "title": "Radio drama, documentaries, news bulletins and interview production",
+        "english": "Radio drama, documentaries, news bulletins and interview production",
+        "sinhala": "ගුවන්විදුලි නාට්‍ය, වාර්තා වැඩසටහන්, ප්‍රවෘත්ති ප්‍රකාශ සහ සම්මුඛ සාකච්ඡා",
+        "tamil": "வானொலி நாடகம், ஆவணப்படங்கள், செய்தி அறிக்கைகள் மற்றும் நேர்காணல்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Television & Audio-Visual Production",
+    "english": "Television & Audio-Visual Production",
+    "sinhala": "රූපවාහිනිය සහ ශ්‍රව්‍ය-දෘශ්‍ය නිෂ්පාදනය",
+    "sinhala_title": "ඒකකය 05: රූපවාහිනිය සහ දෘශ්‍ය නිෂ්පාදනය",
+    "tamil": "தொலைக்காட்சியும் காட்சிக் கலைத் தயாரிப்பும்",
+    "tamil_title": "அலகு 05: தொலைக்காட்சியும் காட்சிக் கலைத் தயாரிப்பும்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "Camera shots, camera movements, lighting principles and audio recording",
+        "english": "Camera shots, camera movements, lighting principles and audio recording",
+        "sinhala": "කැමරා කෝණ සහ රූප රාමු, ආලෝකකරණය සහ ශබ්ද පටිගත කිරීම",
+        "tamil": "கமரா கோணங்கள், ஒளிப்பதிவு உத்திகள் மற்றும் ஒளியமைப்பு",
+        "hours": 5
+      },
+      {
+        "num": "5.2",
+        "title": "Scriptwriting, storyboarding, video editing and broadcast genres",
+        "english": "Scriptwriting, storyboarding, video editing and broadcast genres",
+        "sinhala": "තිර රචනය, කථා පුවරුව, වීඩියෝ සංස්කරණය සහ වැඩසටහන් ප්‍රභේද",
+        "tamil": "திரைக்கதை, படக்கதை பலகை, படத்தொகுப்பு மற்றும் ஒளிபரப்பு வகைகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Cinema & Film Language Appreciation",
+    "english": "Cinema & Film Language Appreciation",
+    "sinhala": "සිනමාව සහ සිනමා භාෂා රසවින්දනය",
+    "sinhala_title": "ඒකකය 06: සිනමාව සහ සිනමා රසවින්දනය",
+    "tamil": "திரைப்படமும் சினிமா மொழியும்",
+    "tamil_title": "அலகு 06: திரைப்படமும் சினிமா மொழியும்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "Elements of film language: Mise-en-scène, cinematography and montage",
+        "english": "Elements of film language: Mise-en-scène, cinematography and montage",
+        "sinhala": "සිනමා භාෂාවේ මූලිකාංග: මිසොන්සේන්, සිනමාරූපණය සහ මොන්ටාජ් න්‍යාය",
+        "tamil": "திரைப்பட மொழியின் கூறுகள்: காட்சி அமைப்பு, ஒளிப்பதிவு மற்றும் மாண்டாஜ்",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "Milestones in world cinema and evolution of Sri Lankan cinema",
+        "english": "Milestones in world cinema and evolution of Sri Lankan cinema",
+        "sinhala": "ලෝක සිනමාවේ සන්ධිස්ථාන සහ ශ්‍රී ලාංකේය සිනමාවේ පරිණාමය",
+        "tamil": "உலக சினிமாவின் மைல்கற்களும் இலங்கை சினிமாவின் வளர்ச்சியும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Advertising & Marketing Communication",
+    "english": "Advertising & Marketing Communication",
+    "sinhala": "ප්‍රචාරණය සහ අලෙවිකරණ සන්නිවේදනය",
+    "sinhala_title": "ඒකකය 07: ප්‍රචාරණය සහ අලෙවිකරණ සන්නිවේදනය",
+    "tamil": "விளம்பரமும் சந்தைப்படுத்தல் தொடர்பாடலும்",
+    "tamil_title": "அலகு 07: விளம்பரமும் சந்தைப்படுத்தல் தொடர்பாடலும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Advertising objectives, copy-writing, appeals and consumer psychology",
+        "english": "Advertising objectives, copy-writing, appeals and consumer psychology",
+        "sinhala": "ප්‍රචාරණ අරමුණු, ප්‍රචාරණ පිටපත් ලිවීම සහ පාරිභෝගික මනෝවිද්‍යාව",
+        "tamil": "விளம்பர நோக்கங்கள், வாசகம் எழுதுதல் மற்றும் நுகர்வோர் உளவியல்",
+        "hours": 4
+      },
+      {
+        "num": "7.2",
+        "title": "Public Relations (PR), corporate identity and crisis management",
+        "english": "Public Relations (PR), corporate identity and crisis management",
+        "sinhala": "මහජන සම්බන්ධතා (PR), ආයතනික ප්‍රතිරූපය සහ අර්බුද කළමනාකරණය",
+        "tamil": "மக்கள் தொடர்பு (PR), நிறுவன அடையாளம் மற்றும் இடர் முகாமைத்துவம்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Digital New Media & Social Media Communication",
+    "english": "Digital New Media & Social Media Communication",
+    "sinhala": "ඩිජිටල් නව මාධ්‍ය සහ සමාජ මාධ්‍ය සන්නිවේදනය",
+    "sinhala_title": "ඒකකය 08: ඩිජිටල් නව මාධ්‍ය සහ සමාජ මාධ්‍ය",
+    "tamil": "டிஜிட்டல் புதிய ஊடகமும் சமூக ஊடகத் தொடர்பாடலும்",
+    "tamil_title": "அலகு 08: புதிய ஊடகமும் சமூக ஊடகமும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Characteristics of new media: Interactivity, hypertext and convergence",
+        "english": "Characteristics of new media: Interactivity, hypertext and convergence",
+        "sinhala": "නව මාධ්‍ය ලක්ෂණ: අන්තර්ක්‍රියාකාරීත්වය, බහුමාධ්‍ය සහ මාධ්‍ය අභිසාරීතාව",
+        "tamil": "புதிய ஊடகப் பண்புகள்: ஊடாட்டம், பல்லூடகம் மற்றும் ஒருங்கமைவு",
+        "hours": 5
+      },
+      {
+        "num": "8.2",
+        "title": "Social networks, online content creation, citizen journalism and algorithms",
+        "english": "Social networks, online content creation, citizen journalism and algorithms",
+        "sinhala": "සමාජ ජාල, මාර්ගගත අන්තර්ගත නිර්මාණය සහ පුරවැසි මාධ්‍යවේදය",
+        "tamil": "சமூக வலைப்பின்னல்கள், இணைய உள்ளடக்க உருவாக்கம் மற்றும் குடிமக்கள் ஊடகவியல்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 9,
+    "title": "Media, Society, Culture & Impact",
+    "english": "Media, Society, Culture & Impact",
+    "sinhala": "මාධ්‍යය, සමාජය, සංස්කෘතිය සහ බලපෑම",
+    "sinhala_title": "ඒකකය 09: මාධ්‍යය, සමාජය සහ සංස්කෘතිය",
+    "tamil": "ஊடகமும் சமூகமும் கலாச்சாரமும் தாக்கங்களும்",
+    "tamil_title": "அலகு 09: ஊடகமும் சமூகமும் கலாச்சாரமும்",
+    "subUnits": [
+      {
+        "num": "9.1",
+        "title": "Mass media effects theories: Magic Bullet, Two-step flow and Cultivation",
+        "english": "Mass media effects theories: Magic Bullet, Two-step flow and Cultivation",
+        "sinhala": "ජනමාධ්‍ය බලපෑම් න්‍යායයන්: මැජික් බුලට්, ද්වි-පියවර ගැලීම සහ වගා න්‍යාය",
+        "tamil": "ஊடகத் தாக்கக் கோட்பாடுகள்: மாயத் துப்பாக்கி ரவை, இருபடிப் பாய்ச்சல்",
+        "hours": 5
+      },
+      {
+        "num": "9.2",
+        "title": "Media literacy, fake news, stereotypes and cultural imperialism",
+        "english": "Media literacy, fake news, stereotypes and cultural imperialism",
+        "sinhala": "මාධ්‍ය සාක්ෂරතාව, ව්‍යාජ පුවත්, ඒකාකෘතික ආකල්ප සහ සංස්කෘතික අධිරාජ්‍යවාදය",
+        "tamil": "ஊடக எழுத்தறிவு, போலிச் செய்திகள் மற்றும் கலாச்சார ஆதிக்கம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 10,
+    "title": "Media Law, Ethics & Freedom of Expression",
+    "english": "Media Law, Ethics & Freedom of Expression",
+    "sinhala": "මාධ්‍ය නීතිය, ආචාරධර්ම සහ අදහස් ප්‍රකාශ කිරීමේ නිදහස",
+    "sinhala_title": "ඒකකය 10: මාධ්‍ය නීතිය, ආචාරධර්ම සහ නිදහස",
+    "tamil": "ஊடகச் சட்டம், ஒழுக்கவியல் மற்றும் கருத்துச் சுதந்திரம்",
+    "tamil_title": "அலகு 10: ஊடகச் சட்டம் மற்றும் ஒழுக்கவியல்",
+    "subUnits": [
+      {
+        "num": "10.1",
+        "title": "Constitutional freedom of speech, defamation, copyright and RTI in Sri Lanka",
+        "english": "Constitutional freedom of speech, defamation, copyright and RTI in Sri Lanka",
+        "sinhala": "අදහස් ප්‍රකාශ කිරීමේ නිදහස, අපහාස නීතිය, ප්‍රකාශන හිමිකම සහ RTI පනත",
+        "tamil": "பேச்சுச் சுதந்திரம், அவதூறுச் சட்டம், காப்புரிமை மற்றும் தகவல் அறியும் உரிமை",
+        "hours": 5
+      },
+      {
+        "num": "10.2",
+        "title": "Codes of ethics, privacy rights, censorship and social responsibility",
+        "english": "Codes of ethics, privacy rights, censorship and social responsibility",
+        "sinhala": "මාධ්‍ය ආචාරධර්ම පද්ධති, පෞද්ගලිකත්ව අයිතිය, වාරණය සහ සමාජ වගකීම",
+        "tamil": "ஒழுக்கக் கோவைகள், அந்தரங்க உரிமை, தணிக்கை மற்றும் சமூகப் பொறுப்புணர்வு",
+        "hours": 5
+      }
+    ]
+  }
+]

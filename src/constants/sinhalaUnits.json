@@ -1,0 +1,218 @@
+[
+  {
+    "num": 1,
+    "title": "Sinhala Grammar, Morphology & Phonology",
+    "english": "Sinhala Grammar, Morphology & Phonology",
+    "sinhala": "සිංහල ව්‍යාකරණ, පද සාධනය සහ ධ්වනි විචාරය",
+    "sinhala_title": "ඒකකය 01: සිංහල ව්‍යාකරණ සහ පද සාධනය",
+    "tamil": "சிங்கள இலக்கணம், உருபனியல் மற்றும் ஒலியியல்",
+    "tamil_title": "அலகு 01: சிங்கள இலக்கணமும் உருபனியலும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Letters, phonemes, sandhi (euphony) and morphophonemics",
+        "english": "Letters, phonemes, sandhi (euphony) and morphophonemics",
+        "sinhala": "අක්ෂර මාලාව, ධ්වනි, සන්ධි විධි සහ රූපාක්ෂර විචාරය",
+        "tamil": "எழுத்துக்கள், ஒலியன்கள், புணர்ச்சி விதிகள்",
+        "hours": 5
+      },
+      {
+        "num": "1.2",
+        "title": "Nouns, case endings, verb classification and active/passive syntax",
+        "english": "Nouns, case endings, verb classification and active/passive syntax",
+        "sinhala": "නාම පද, විභක්ති ප්‍රත්‍යය, ආඛ්‍යාත වර්ගීකරණය සහ කර්මකාරක වාක්‍ය",
+        "tamil": "பெயர்ச்சொற்கள், வேற்றுமை உருபுகள், வினைச்சொற்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Evolution of Sinhala Language & Epigraphy",
+    "english": "Evolution of Sinhala Language & Epigraphy",
+    "sinhala": "සිංහල භාෂාවේ පරිණාමය සහ සෙල්ලිපි අධ්‍යයනය",
+    "sinhala_title": "ඒකකය 02: භාෂා පරිණාමය සහ සෙල්ලිපි",
+    "tamil": "சிங்கள மொழியின் பரிணாமமும் கல்வெட்டியலும்",
+    "tamil_title": "அலகு 02: மொழிப் பரிணாமமும் கல்வெட்டுக்களும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Brahmi rock inscriptions, Sigiri graffiti and historical stages",
+        "english": "Brahmi rock inscriptions, Sigiri graffiti and historical stages",
+        "sinhala": "පූර්ව බ්‍රාහ්මී සෙල්ලිපි, සීගිරි කුරුටු ගී සහ භාෂා ඓතිහාසික යුග",
+        "tamil": "பிராமி கல்வெட்டுக்கள், சீகிரிய கவிதைகள் மற்றும் மொழிக் காலப்பகுதிகள்",
+        "hours": 5
+      },
+      {
+        "num": "2.2",
+        "title": "Indo-Aryan roots, Dravidian influences and foreign loan words",
+        "english": "Indo-Aryan roots, Dravidian influences and foreign loan words",
+        "sinhala": "ඉන්දු-ආර්ය මූලයන්, ද්‍රවිඩ භාෂා ආභාසය සහ පරාර්ථමය වචන",
+        "tamil": "இந்தோ-ஆரிய மூலங்கள், திராவிட மொழிகளின் தாக்கங்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Classical Prose Literature (Anuradhapura to Kotte)",
+    "english": "Classical Prose Literature (Anuradhapura to Kotte)",
+    "sinhala": "සම්භාව්‍ය ගද්‍ය සාහිත්‍යය (අනුරාධපුර සිට කෝට්ටේ යුගය දක්වා)",
+    "sinhala_title": "ඒකකය 03: සම්භාව්‍ය ගද්‍ය සාහිත්‍යය",
+    "tamil": "செவ்வியல் உரைநடை இலக்கியம் (அனுராதபுரம் முதல் கோட்டே வரை)",
+    "tamil_title": "அலகு 03: செவ்வியல் உரைநடை இலக்கியம்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Amavatura, Butsarana and religious prose traditions",
+        "english": "Amavatura, Butsarana and religious prose traditions",
+        "sinhala": "අමාවතුර, බුත්සරණ සහ ආගමික ගද්‍ය සාහිත්‍ය සම්ප්‍රදාය",
+        "tamil": "அமாவத்துர, புத்சரண மற்றும் மதசார் உரைநடை மரபுகள்",
+        "hours": 5
+      },
+      {
+        "num": "3.2",
+        "title": "Pujavaliya, Saddharma Ratnavaliya and narrative art",
+        "english": "Pujavaliya, Saddharma Ratnavaliya and narrative art",
+        "sinhala": "පූජාවලිය, සද්ධර්ම රත්නාවලිය සහ කථා කීමේ කලාව",
+        "tamil": "பூஜாவலிய, சத்தர்ம ரத்னாவலிய மற்றும் கதை சொல்லும் கலை",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Classical Poetic Literature & Sandesha Poems",
+    "english": "Classical Poetic Literature & Sandesha Poems",
+    "sinhala": "සම්භාව්‍ය පද්‍ය සාහිත්‍යය සහ සංදේශ කාව්‍ය",
+    "sinhala_title": "ඒකකය 04: සම්භාව්‍ය පද්‍ය සහ සංදේශ කාව්‍ය",
+    "tamil": "செவ்வியல் கவிதை இலக்கியமும் தூதுக் காவியங்களும்",
+    "tamil_title": "அலகு 04: செவ்வியல் செய்யுள் இலக்கியம்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Gi poetry: Sasadavata, Muvadevdavata and Kavsilumina",
+        "english": "Gi poetry: Sasadavata, Muvadevdavata and Kavsilumina",
+        "sinhala": "ගී කාව්‍ය සම්ප්‍රදාය: සසදාවත, මුවදෙව්දාවත සහ කව්සිළුමිණ",
+        "tamil": "கீ கவிதை மரபு: சசதாவத, முவதெவ்தாவத, கவ்சிளுமிண",
+        "hours": 5
+      },
+      {
+        "num": "4.2",
+        "title": "Kotte era Sandesha (Message) poetry: Gira and Selalihini",
+        "english": "Kotte era Sandesha (Message) poetry: Gira and Selalihini",
+        "sinhala": "කෝට්ටේ යුගයේ සංදේශ කාව්‍ය: ගිරා සංදේශය සහ සැළලිහිණි සංදේශය",
+        "tamil": "கோட்டே காலத் தூதுக் கவிதைகள்: கிரா, செலகிஹிணி சந்தேசய",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Modern Sinhala Poetry & Free Verse Movement",
+    "english": "Modern Sinhala Poetry & Free Verse Movement",
+    "sinhala": "නූතන සිංහල කාව්‍යය සහ නිසඳැස් කාව්‍ය ව්‍යාපාරය",
+    "sinhala_title": "ඒකකය 05: නූතන සිංහල කාව්‍යය සහ නිසඳැස්",
+    "tamil": "நவீன சிங்களக் கவிதையும் புதுக்கவிதை இயக்கமும்",
+    "tamil_title": "அலகு 05: நவீன சிங்களக் கவிதைகள்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "Colombo Era poets (1st and 2nd generations) and poetic forms",
+        "english": "Colombo Era poets (1st and 2nd generations) and poetic forms",
+        "sinhala": "කොළඹ යුගයේ කිවිවරු (පළමු සහ දෙවන පරපුර) සහ කාව්‍ය රීති",
+        "tamil": "கொழும்பு காலக் கவிஞர்களும் மரபுக் கவிதை வடிவங்களும்",
+        "hours": 5
+      },
+      {
+        "num": "5.2",
+        "title": "Free verse movement: Siri Gunasinghe, Mahagama Sekera and contemporary trends",
+        "english": "Free verse movement: Siri Gunasinghe, Mahagama Sekera and contemporary trends",
+        "sinhala": "නිසඳැස් කාව්‍ය ව්‍යාපාරය: සිරි ගුණසිංහ, මහගම සේකර සහ සමකාලීන කාව්‍ය",
+        "tamil": "புதுக்கவிதை இயக்கம்: சிறி குணசிங்க, மககம சேகர",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Modern Sinhala Novels & Narrative Realism",
+    "english": "Modern Sinhala Novels & Narrative Realism",
+    "sinhala": "නූතන සිංහල නවකතාව සහ යථාර්ථවාදී ප්‍රබන්ධ කලාව",
+    "sinhala_title": "ඒකකය 06: නූතන සිංහල නවකතාව",
+    "tamil": "நவீன சிங்கள நாவல்களும் எதார்த்தவாதப் புனைகதையும்",
+    "tamil_title": "அலகு 06: நவீன சிங்கள நாவல்கள்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "Piyadasa Sirisena, early didactic novels and transformation",
+        "english": "Piyadasa Sirisena, early didactic novels and transformation",
+        "sinhala": "පියදාස සිරිසේන, මුල්කාලීන උපදේශාත්මක නවකතා සහ ප්‍රවණතා",
+        "tamil": "பியதாச சிறிசேன, ஆரம்ப உபதேச நாவல்கள்",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "Martin Wickramasinghe (Gamperaliya trilogy) and realistic fiction",
+        "english": "Martin Wickramasinghe (Gamperaliya trilogy) and realistic fiction",
+        "sinhala": "මාර්ටින් වික්‍රමසිංහ (ගම්පෙරළිය ත්‍රිත්වය) සහ යථාර්ථවාදී නවකතාව",
+        "tamil": "மார்ட்டின் விக்கிரமசிங்க (கம்பெரலிய நாவல் தொடர்)",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "The Sinhala Short Story & Stylistic Evolution",
+    "english": "The Sinhala Short Story & Stylistic Evolution",
+    "sinhala": "සිංහල කෙටිකතාව සහ ආකෘතික පරිණාමය",
+    "sinhala_title": "ඒකකය 07: සිංහල කෙටිකතාව සහ පරිණාමය",
+    "tamil": "சிங்கள சிறுகதையும் அதன் பாணிப் பரிணாமமும்",
+    "tamil_title": "அலகு 07: சிங்கள சிறுகதைகள்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Genesis of short stories: Martin Wickramasinghe and G.B. Senanayake",
+        "english": "Genesis of short stories: Martin Wickramasinghe and G.B. Senanayake",
+        "sinhala": "කෙටිකතාවේ ආරම්භය: මාර්ටින් වික්‍රමසිංහ සහ ජී.බී. සේනානායක",
+        "tamil": "சிறுகதையின் தோற்றம்: மார்ட்டின் விக்கிரமசிங்க, ஜீ.பி. சேனாநாயக்க",
+        "hours": 5
+      },
+      {
+        "num": "7.2",
+        "title": "K. Jayatilake, Gunadasa Amarasekara and contemporary short story craft",
+        "english": "K. Jayatilake, Gunadasa Amarasekara and contemporary short story craft",
+        "sinhala": "කේ. ජයතිලක, ගුණදාස අමරසේකර සහ සමකාලීන කෙටිකතා කලාව",
+        "tamil": "கே. ஜெயதிலக, குணதாச அமரசேகர மற்றும் சமகால சிறுகதைகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Sinhala Drama, Theatre Arts & Criticism",
+    "english": "Sinhala Drama, Theatre Arts & Criticism",
+    "sinhala": "සිංහල නාට්‍ය කලාව, රංග ශිල්පය සහ විචාරය",
+    "sinhala_title": "ඒකකය 08: සිංහල නාට්‍ය කලාව සහ විචාරය",
+    "tamil": "சிங்கள நாடகக் கலை, அரங்கியல் மற்றும் இலக்கிய விமர்சனம்",
+    "tamil_title": "அலகு 08: சிங்கள நாடகமும் விமர்சனமும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Folk theatre (Nadagam, Kolam, Sokari) and stylized traditions",
+        "english": "Folk theatre (Nadagam, Kolam, Sokari) and stylized traditions",
+        "sinhala": "ජන නාට්‍ය (නාඩගම්, කෝලම්, සොකරි) සහ ශෛලිගත නාට්‍ය සම්ප්‍රදාය",
+        "tamil": "நாட்டுக்கூத்து (நாடகம், கோலம், சொக்கரி) மற்றும் நாடக மரபுகள்",
+        "hours": 5
+      },
+      {
+        "num": "8.2",
+        "title": "Ediriweera Sarachchandra (Maname, Sinhabahu) and modern realistic theatre",
+        "english": "Ediriweera Sarachchandra (Maname, Sinhabahu) and modern realistic theatre",
+        "sinhala": "එදිරිවීර සරච්චන්ද්‍ර (මනමේ, සිංහබාහු) සහ නූතන යථාර්ථවාදී නාට්‍ය",
+        "tamil": "எதிரிவீர சரச்சந்திர (மனமே, சிங்கபாகு) மற்றும் நவீன நாடகங்கள்",
+        "hours": 5
+      }
+    ]
+  }
+]

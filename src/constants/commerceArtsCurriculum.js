@@ -1,6 +1,20 @@
 import { BIOLOGY_UNITS } from './biologyUnits.js';
+import { POL_SCI_UNITS } from './politicalScienceUnits.js';
+import { LOGIC_UNITS } from './logicUnits.js';
+import { GEOGRAPHY_UNITS } from './geographyUnits.js';
+import { MEDIA_UNITS } from './mediaStudiesUnits.js';
+import { SINHALA_UNITS } from './sinhalaUnits.js';
+import { BUDDHIST_CULTURE_UNITS } from './buddhistCultureUnits.js';
 
-export { BIOLOGY_UNITS };
+export {
+  BIOLOGY_UNITS,
+  POL_SCI_UNITS,
+  LOGIC_UNITS,
+  GEOGRAPHY_UNITS,
+  MEDIA_UNITS,
+  SINHALA_UNITS,
+  BUDDHIST_CULTURE_UNITS
+};
 
 export const COMMERCE_UNITS = [
   { num: 1, title: 'Accounting Systems & Financial Reporting', sinhala: 'ගිණුම්කරණ පද්ධති හා මූල්‍ය ප්‍රකාශන',

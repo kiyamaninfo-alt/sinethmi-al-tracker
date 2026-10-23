@@ -1,0 +1,326 @@
+[
+  {
+    "num": 1,
+    "title": "Introduction to Modern Geography & Cartography",
+    "english": "Introduction to Modern Geography & Cartography",
+    "sinhala": "නූතන භූගෝල විද්‍යාව සහ සිතියම් විද්‍යාව හැඳින්වීම",
+    "sinhala_title": "ඒකකය 01: නූතන භූගෝල විද්‍යාව සහ සිතියම් විද්‍යාව",
+    "tamil": "நவீன புவியியலும் நிலப்படக்கலையும் ஓர் அறிமுகம்",
+    "tamil_title": "அலகு 01: நவீன புவியியலும் நிலப்படக்கலையும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Scope, traditions and spatial perspectives in geography",
+        "english": "Scope, traditions and spatial perspectives in geography",
+        "sinhala": "භූගෝල විද්‍යාවේ විෂය පථය, සම්ප්‍රදායන් සහ අවකාශීය දෘෂ්ටිකෝණය",
+        "tamil": "புவியியலின் எல்லை, மரபுகள் மற்றும் வெளிசார் கண்ணோட்டங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "1.2",
+        "title": "Map reading: Scales, grids, contours and topographical symbols",
+        "english": "Map reading: Scales, grids, contours and topographical symbols",
+        "sinhala": "සිතියම් කියවීම: පරිමාණ, ප්‍රදේශ ජාල, සමෝච්ච රේඛා සහ සංකේත",
+        "tamil": "நிலப்பட வாசிப்பு: அளவிடைகள், வலையமைப்புகள் மற்றும் நிலத்தோற்றக் குறியீடுகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "The Earth's Crust & Geomorphological Processes",
+    "english": "The Earth's Crust & Geomorphological Processes",
+    "sinhala": "පෘථිවි පෘෂ්ඨය සහ භූරූප විද්‍යාත්මක ක්‍රියාවලි",
+    "sinhala_title": "ඒකකය 02: පෘථිවි පෘෂ්ඨය සහ භූරූප ක්‍රියාවලි",
+    "tamil": "புவியோடு மற்றும் நிலவுருவவியல் செயன்முறைகள்",
+    "tamil_title": "அலகு 02: புவியோடு மற்றும் நிலவுருவவியல் செயன்முறைகள்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Plate tectonics, continental drift, earthquakes and volcanism",
+        "english": "Plate tectonics, continental drift, earthquakes and volcanism",
+        "sinhala": "තැටි භූචලනවාදය, මහාද්වීපික ප්ලාවනය, භූමිකම්පා සහ ගිනි කඳු",
+        "tamil": "தட்டுப் புவிப்பொறிமுறை, கண்டப்பெயர்ச்சி, நிலநடுக்கங்கள் மற்றும் எரிமலைகள்",
+        "hours": 5
+      },
+      {
+        "num": "2.2",
+        "title": "Weathering, mass movement, fluvial and coastal landforms",
+        "english": "Weathering, mass movement, fluvial and coastal landforms",
+        "sinhala": "කාළගුණීභවනය, මහාපරිමාණ චලන, ගංගා සහ වෙරළබඩ භූරූප",
+        "tamil": "வானிலையாலழிதல், திணிவு அசைவு, ஆற்று மற்றும் கரையோர நிலவுருவங்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Atmosphere, Weather & Global Climatic Systems",
+    "english": "Atmosphere, Weather & Global Climatic Systems",
+    "sinhala": "වායුගෝලය, කාලගුණය සහ ගෝලීය දේශගුණික පද්ධති",
+    "sinhala_title": "ඒකකය 03: වායුගෝලය, කාලගුණය සහ දේශගුණය",
+    "tamil": "வளிமண்டலம், வானிலை மற்றும் உலகக் காலநிலைத் தொகுதிகள்",
+    "tamil_title": "அலகு 03: வளிமண்டலம், வானிலை மற்றும் காலநிலை",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Atmospheric structure, insolation and global wind belts",
+        "english": "Atmospheric structure, insolation and global wind belts",
+        "sinhala": "වායුගෝලීය ව්‍යුහය, සූර්යතාපය සහ ගෝලීය සුළං පද්ධති",
+        "tamil": "வளிமண்டலக் கட்டமைப்பு, சூரியக்கதிர்வீசல் மற்றும் உலக வளிமண்டல அழுத்த வலயங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "3.2",
+        "title": "Precipitation types, monsoons and tropical cyclones",
+        "english": "Precipitation types, monsoons and tropical cyclones",
+        "sinhala": "වර්ෂාපතන වර්ග, මෝසම් සුළං සහ නිවර්තන සුළි සුළං",
+        "tamil": "வீழ்ச்சி வகைகள், பருவக்காற்றுகள் மற்றும் அயனமண்டலச் சூறாவளிகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Hydrosphere & Ocean Resources",
+    "english": "Hydrosphere & Ocean Resources",
+    "sinhala": "ජලගෝලය සහ සාගර සම්පත්",
+    "sinhala_title": "ඒකකය 04: ජලගෝලය සහ සාගර සම්පත්",
+    "tamil": "நீர்க்கோளமும் சமுத்திர வளங்களும்",
+    "tamil_title": "அலகு 04: நீர்க்கோளமும் சமுத்திர வளங்களும்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "The hydrological cycle, ocean currents and tidal dynamics",
+        "english": "The hydrological cycle, ocean currents and tidal dynamics",
+        "sinhala": "ජල විද්‍යාත්මක චක්‍රය, සාගර දියවැල් සහ වඩදිය-බාදිය ගතිකයන්",
+        "tamil": "நீரியல் வட்டம், சமுத்திர நீரோட்டங்கள் மற்றும் அலைப்பெருக்கு இயக்கவியல்",
+        "hours": 5
+      },
+      {
+        "num": "4.2",
+        "title": "Ocean bottom relief and sustainable marine resource extraction",
+        "english": "Ocean bottom relief and sustainable marine resource extraction",
+        "sinhala": "සාගර පත්ලේ භූරූප සහ තිරසාර සාගර සම්පත් පරිහරණය",
+        "tamil": "சமுத்திரத் தரை நிலவுருவங்களும் பேண்தகு கடல்சார் வளப்பயன்பாடும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Biogeography: Ecosystems, Biomes & Soils",
+    "english": "Biogeography: Ecosystems, Biomes & Soils",
+    "sinhala": "ජෛව භූගෝල විද්‍යාව: පරිසර පද්ධති, ජෛව කලාප සහ පස්",
+    "sinhala_title": "ඒකකය 05: පරිසර පද්ධති, ජෛව කලාප සහ පස්",
+    "tamil": "உயிர்ப்புவியியல்: சூழற்றொகுதிகள், உயிரினப் பெருங்கூறுகள் மற்றும் மண்",
+    "tamil_title": "அலகு 05: சூழற்றொகுதிகள், உயிர்க்கோளங்கள் மற்றும் மண்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "Major terrestrial biomes: Tropical rainforests, savannas and tundras",
+        "english": "Major terrestrial biomes: Tropical rainforests, savannas and tundras",
+        "sinhala": "ප්‍රධාන භෞමික ජෛව කලාප: නිවර්තන වැසි වනාන්තර, සැවානා සහ තුන්ඩ්‍රා",
+        "tamil": "முக்கிய நிலப்பரப்பு உயிரினப் பெருங்கூறுகள்: அயன மழைக்காடுகள், சவன்னா",
+        "hours": 5
+      },
+      {
+        "num": "5.2",
+        "title": "Soil formation, profiles, soil degradation and conservation",
+        "english": "Soil formation, profiles, soil degradation and conservation",
+        "sinhala": "පස් සෑදීම, පාංශු පැතිකඩ, පාංශු ඛාදනය සහ සංරක්ෂණය",
+        "tamil": "மண் உருவாக்கம், மண் வெட்டுமுகம், மண் சீரழிவும் பாதுகாப்பும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Population Geography & Global Migration Dynamics",
+    "english": "Population Geography & Global Migration Dynamics",
+    "sinhala": "ජනගහන භූගෝල විද්‍යාව සහ ගෝලීය සංක්‍රමණ ගතිකයන්",
+    "sinhala_title": "ඒකකය 06: ජනගහන භූගෝල විද්‍යාව සහ සංක්‍රමණ",
+    "tamil": "மக்கள்தொகைப் புவியியலும் உலகளாவிய இடம்பெயர்வு இயக்கங்களும்",
+    "tamil_title": "அலகு 06: மக்கள்தொகைப் புவியியலும் இடம்பெயர்வும்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "World population growth, demographic transition and distribution",
+        "english": "World population growth, demographic transition and distribution",
+        "sinhala": "ලෝක ජනගහන වර්ධනය, ජනගහන සංක්‍රාන්ති න්‍යාය සහ ව්‍යාප්තිය",
+        "tamil": "உலக மக்கள்தொகை வளர்ச்சி, சனத்தொகை மாற்றக் கோட்பாடு மற்றும் பரம்பல்",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "Internal and international migration: Push-pull factors and impacts",
+        "english": "Internal and international migration: Push-pull factors and impacts",
+        "sinhala": "දේශීය සහ ජාත්‍යන්තර සංක්‍රමණ: තල්ලු-ඇද ගැනුම් සාධක සහ බලපෑම්",
+        "tamil": "உள்ளூர் மற்றும் சர்வதேச இடம்பெயர்வு: உந்து-இழு காரணிகளும் தாக்கங்களும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Agricultural Patterns & Global Food Security",
+    "english": "Agricultural Patterns & Global Food Security",
+    "sinhala": "කෘෂිකාර්මික රටා සහ ගෝලීය ආහාර සුරක්ෂිතතාව",
+    "sinhala_title": "ඒකකය 07: කෘෂිකාර්මික රටා සහ ආහාර සුරක්ෂිතතාව",
+    "tamil": "விவசாய அமைப்புகளும் உலக உணவுப் பாதுகாப்பும்",
+    "tamil_title": "அலகு 07: விவசாய அமைப்புகளும் உணவுப் பாதுகாப்பும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Subsistence vs commercial agriculture and Green Revolution",
+        "english": "Subsistence vs commercial agriculture and Green Revolution",
+        "sinhala": "පැවැත්ම සඳහා වන කෘෂිකර්මය, වාණිජ කෘෂිකර්මය සහ හරිත විප්ලවය",
+        "tamil": "வாழ்வாதார விவசாயம், வணிக விவசாயம் மற்றும் பசுமைப் புரட்சி",
+        "hours": 5
+      },
+      {
+        "num": "7.2",
+        "title": "Agricultural patterns in Sri Lanka: Paddy, plantation crops and issues",
+        "english": "Agricultural patterns in Sri Lanka: Paddy, plantation crops and issues",
+        "sinhala": "ශ්‍රී ලංකාවේ කෘෂිකාර්මික රටා: වී වගාව, වැවිලි බෝග සහ අභියෝග",
+        "tamil": "இலங்கையின் விவசாய வடிவங்கள்: நெற்செய்கை, பெருந்தோட்டப் பயிர்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Industrialisation & Location Theories",
+    "english": "Industrialisation & Location Theories",
+    "sinhala": "කාර්මීකරණය සහ ස්ථානගත කිරීමේ න්‍යාය",
+    "sinhala_title": "ඒකකය 08: කාර්මීකරණය සහ ස්ථානගත කිරීමේ න්‍යාය",
+    "tamil": "கைத்தொழில்மயமாக்கலும் அமைவிடக் கோட்பாடுகளும்",
+    "tamil_title": "அலகு 08: கைத்தொழில்மயமாக்கலும் அமைவிடக் கோட்பாடுகளும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Factors of industrial location and Weber's Least Cost Theory",
+        "english": "Factors of industrial location and Weber's Least Cost Theory",
+        "sinhala": "කර්මාන්ත පිහිටුවීමේ සාධක සහ වෙබර්ගේ අවම පිරිවැය න්‍යාය",
+        "tamil": "கைத்தொழில் அமைவிடக் காரணிகளும் வெபரின் குறைந்த செலவுக் கோட்பாடும்",
+        "hours": 5
+      },
+      {
+        "num": "8.2",
+        "title": "Major manufacturing regions of the world and industries in Sri Lanka",
+        "english": "Major manufacturing regions of the world and industries in Sri Lanka",
+        "sinhala": "ලෝකයේ ප්‍රධාන නිෂ්පාදන කලාප සහ ශ්‍රී ලංකාවේ කර්මාන්ත",
+        "tamil": "உலகின் பிரதான உற்பத்தி வலயங்களும் இலங்கையின் கைத்தொழில்களும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 9,
+    "title": "Urbanisation & Settlement Geography",
+    "english": "Urbanisation & Settlement Geography",
+    "sinhala": "නාගරීකරණය සහ ජනාවාස භූගෝල විද්‍යාව",
+    "sinhala_title": "ඒකකය 09: නාගරීකරණය සහ ජනාවාස භූගෝල විද්‍යාව",
+    "tamil": "நகரமயமாக்கலும் குடியேற்றப் புவியியலும்",
+    "tamil_title": "அலகு 09: நகரமயமாக்கலும் குடியேற்றப் புவியியலும்",
+    "subUnits": [
+      {
+        "num": "9.1",
+        "title": "Rural and urban settlements, central place theory and urban growth",
+        "english": "Rural and urban settlements, central place theory and urban growth",
+        "sinhala": "ග්‍රාමීය සහ නාගරික ජනාවාස, මධ්‍ය ස්ථාන න්‍යාය සහ නාගරික වර්ධනය",
+        "tamil": "கிராமிய மற்றும் நகர்ப்புற குடியேற்றங்கள், மத்திய இடக்கோட்பாடு",
+        "hours": 5
+      },
+      {
+        "num": "9.2",
+        "title": "Urbanization challenges in developing countries and Sri Lanka",
+        "english": "Urbanization challenges in developing countries and Sri Lanka",
+        "sinhala": "සංවර්ධනය වෙමින් පවතින රටවල සහ ශ්‍රී ලංකාවේ නාගරීකරණ ගැටලු",
+        "tamil": "வளரும் நாடுகளிலும் இலங்கையிலும் நகரமயமாக்கல் எதிர்கொள்ளும் சவால்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 10,
+    "title": "Water Resources of Sri Lanka & Basin Management",
+    "english": "Water Resources of Sri Lanka & Basin Management",
+    "sinhala": "ශ්‍රී ලංකාවේ ජල සම්පත් සහ නිම්න කළමනාකරණය",
+    "sinhala_title": "ඒකකය 10: ජල සම්පත් සහ නිම්න කළමනාකරණය",
+    "tamil": "இலங்கையின் நீர்வளங்களும் வடிநில முகாமைத்துவமும்",
+    "tamil_title": "அலகு 10: நீர்வளங்களும் வடிநில முகாமைத்துவமும்",
+    "subUnits": [
+      {
+        "num": "10.1",
+        "title": "River basins, ancient cascade tank systems and irrigation heritage",
+        "english": "River basins, ancient cascade tank systems and irrigation heritage",
+        "sinhala": "ගංගා නිම්න, එල්ලංගා වැව් පද්ධති සහ වාරි ශිෂ්ටාචාර උරුමය",
+        "tamil": "ஆற்றுப் படுக்கைகள், பண்டைய குளம்சார் நீர்ப்பாசன மரபு",
+        "hours": 5
+      },
+      {
+        "num": "10.2",
+        "title": "Multipurpose river development projects: Mahaweli and Yan Oya",
+        "english": "Multipurpose river development projects: Mahaweli and Yan Oya",
+        "sinhala": "බහුවිධ ගංගා සංවර්ධන යෝජනා ක්‍රම: මහවැලි සහ යාන් ඔය",
+        "tamil": "பல்நோக்கு ஆற்று அபிவிருத்தித் திட்டங்கள்: மகாவலி மற்றும் யான் ஓயா",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 11,
+    "title": "Natural Hazards & Disaster Management",
+    "english": "Natural Hazards & Disaster Management",
+    "sinhala": "ස්වභාවික උපද්‍රව සහ ආපදා කළමනාකරණය",
+    "sinhala_title": "ඒකකය 11: ස්වභාවික උපද්‍රව සහ ආපදා කළමනාකරණය",
+    "tamil": "இயற்கை அனர்த்தங்களும் அனர்த்த முகாமைத்துவமும்",
+    "tamil_title": "அலகு 11: இயற்கை அனர்த்தங்களும் அனர்த்த முகாமைத்துவமும்",
+    "subUnits": [
+      {
+        "num": "11.1",
+        "title": "Floods, landslides, droughts, coastal erosion and early warnings",
+        "english": "Floods, landslides, droughts, coastal erosion and early warnings",
+        "sinhala": "ගංවතුර, නායයෑම්, නියඟය, වෙරළ ඛාදනය සහ පූර්ව අනතුරු ඇඟවීම්",
+        "tamil": "வெள்ளப்பெருக்கு, மண்சரிவு, வரட்சி, கரையோர அரிப்பு மற்றும் முன்னெச்சரிக்கை",
+        "hours": 5
+      },
+      {
+        "num": "11.2",
+        "title": "Disaster management framework and mitigation policies in Sri Lanka",
+        "english": "Disaster management framework and mitigation policies in Sri Lanka",
+        "sinhala": "ශ්‍රී ලංකාවේ ආපදා කළමනාකරණ රාමුව සහ අවම කිරීමේ ප්‍රතිපත්ති",
+        "tamil": "இலங்கையின் அனர்த்த முகாமைத்துவக் கட்டமைப்பும் தணிப்பு நடவடிக்கைகளும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 12,
+    "title": "Geographical Information Systems (GIS) & Field Research",
+    "english": "Geographical Information Systems (GIS) & Field Research",
+    "sinhala": "භූගෝලීය තොරතුරු පද්ධති (GIS) සහ ක්ෂේත්‍ර අධ්‍යයනය",
+    "sinhala_title": "ඒකකය 12: GIS තාක්ෂණය සහ ක්ෂේත්‍ර අධ්‍යයනය",
+    "tamil": "புவியியல் தகவல் தொகுதி (GIS) மற்றும் கள ஆய்வு",
+    "tamil_title": "அலகு 12: GIS தொழில்நுட்பமும் கள ஆய்வும்",
+    "subUnits": [
+      {
+        "num": "12.1",
+        "title": "Remote sensing, GPS and basic GIS spatial data analysis",
+        "english": "Remote sensing, GPS and basic GIS spatial data analysis",
+        "sinhala": "දුරස්ථ සංවේදනය, GPS සහ මූලික GIS අවකාශීය දත්ත විශ්ලේෂණය",
+        "tamil": "தொலையுணர்வு, GPS மற்றும் அடிப்படை GIS வெளிசார் தரவுப் பகுப்பாய்வு",
+        "hours": 5
+      },
+      {
+        "num": "12.2",
+        "title": "Conducting local geographical field investigations and reporting",
+        "english": "Conducting local geographical field investigations and reporting",
+        "sinhala": "දේශීය භූගෝලීය ක්ෂේත්‍ර පරීක්ෂණ පැවැත්වීම සහ වාර්තාකරණය",
+        "tamil": "உள்ளூர் புவியியல் கள ஆய்வை நடத்துதலும் அறிக்கைப்படுத்தலும்",
+        "hours": 5
+      }
+    ]
+  }
+]

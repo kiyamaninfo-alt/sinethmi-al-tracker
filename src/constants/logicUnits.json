@@ -1,0 +1,326 @@
+[
+  {
+    "num": 1,
+    "title": "Introduction to Logic & Nature of Thought",
+    "english": "Introduction to Logic & Nature of Thought",
+    "sinhala": "තර්ක ශාස්ත්‍රය හැඳින්වීම සහ චින්තනයේ ස්වභාවය",
+    "sinhala_title": "ඒකකය 01: තර්ක ශාස්ත්‍රය හැඳින්වීම සහ චින්තනය",
+    "tamil": "அளவையியல் ஓர் அறிமுகமும் சிந்தனையின் தன்மையும்",
+    "tamil_title": "அலகு 01: அளவையியல் அறிமுகமும் சிந்தனையும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Definitions, nature, scope and utility of logic",
+        "english": "Definitions, nature, scope and utility of logic",
+        "sinhala": "තර්ක ශාස්ත්‍රයේ නිර්වචන, ස්වභාවය, විෂය පථය සහ උපයෝගීතාව",
+        "tamil": "அளவையியலின் வரைவிலக்கணம், இயல்பு, எல்லை மற்றும் பயன்கள்",
+        "hours": 5
+      },
+      {
+        "num": "1.2",
+        "title": "Distinction between formal truth and material truth",
+        "english": "Distinction between formal truth and material truth",
+        "sinhala": "ආකාරමය සත්‍යය සහ විෂයානුබද්ධ සත්‍යය අතර වෙනස",
+        "tamil": "வடிவ ரீதியான உண்மைக்கும் பொருள்சார் உண்மைக்குமான வேறுபாடு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Logic and Language",
+    "english": "Logic and Language",
+    "sinhala": "තර්ක ශාස්ත්‍රය සහ භාෂාව",
+    "sinhala_title": "ඒකකය 02: තර්ක ශාස්ත්‍රය සහ භාෂාව",
+    "tamil": "அளவையியலும் மொழியும்",
+    "tamil_title": "அலகு 02: அளவையியலும் மொழியும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Functions of language: Informative, expressive and directive",
+        "english": "Functions of language: Informative, expressive and directive",
+        "sinhala": "භාෂාවේ කාර්යයන්: තොරතුරුමය, ප්‍රකාශනාත්මක සහ නියෝගාත්මක",
+        "tamil": "மொழியின் தொழிற்பாடுகள்: தகவல் தரும், உணர்ச்சிவெளிப்பாட்டு மற்றும் பணிக்கும்",
+        "hours": 4
+      },
+      {
+        "num": "2.2",
+        "title": "Terms, propositions and classification of definitions",
+        "english": "Terms, propositions and classification of definitions",
+        "sinhala": "පද, ප්‍රකාශන සහ නිර්වචන වර්ගීකරණය",
+        "tamil": "பதங்கள், கூற்றுக்கள் மற்றும் வரைவிலக்கணங்களின் வகைப்படுத்தல்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Deductive & Inductive Reasoning",
+    "english": "Deductive & Inductive Reasoning",
+    "sinhala": "නිගාමී සහ ආගාමී තර්කනය",
+    "sinhala_title": "ඒකකය 03: නිගාමී සහ ආගාමී තර්කනය",
+    "tamil": "உய்த்தறிவும் தொகுத்தறிவும்",
+    "tamil_title": "அலகு 03: உய்த்தறிவும் தொகுத்தறிவும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Structure of arguments: Premises and conclusions",
+        "english": "Structure of arguments: Premises and conclusions",
+        "sinhala": "තර්කයක ව්‍යුහය: පූර්විකා සහ නිගමන",
+        "tamil": "வாதங்களின் கட்டமைப்பு: முன்னனுமானங்களும் முடிவுகளும்",
+        "hours": 5
+      },
+      {
+        "num": "3.2",
+        "title": "Characteristics of deduction, induction and validity vs truth",
+        "english": "Characteristics of deduction, induction and validity vs truth",
+        "sinhala": "නිගමනයේ සහ ආගමනයේ ලක්ෂණ, වලංගුභාවය සහ සත්‍යතාව",
+        "tamil": "உய்த்தறிவு, தொகுத்தறிவு பண்புகளும் செல்லுபடியாகும் தன்மையும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Traditional Categorical Propositions",
+    "english": "Traditional Categorical Propositions",
+    "sinhala": "සාම්ප්‍රදායික නිරුපාධික ප්‍රකාශන",
+    "sinhala_title": "ඒකකය 04: සාම්ප්‍රදායික නිරුපාධික ප්‍රකාශන",
+    "tamil": "பாரம்பரிய நிபந்தனையற்ற கூற்றுக்கள்",
+    "tamil_title": "அலகு 04: பாரம்பரிய நிபந்தனையற்ற கூற்றுக்கள்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Standard forms of categorical propositions (A, E, I, O)",
+        "english": "Standard forms of categorical propositions (A, E, I, O)",
+        "sinhala": "නිරුපාධික ප්‍රකාශනවල සම්මත ආකාර (A, E, I, O)",
+        "tamil": "நிபந்தனையற்ற கூற்றுக்களின் திட்ட வடிவங்கள் (A, E, I, O)",
+        "hours": 5
+      },
+      {
+        "num": "4.2",
+        "title": "Distribution of terms and traditional square of opposition",
+        "english": "Distribution of terms and traditional square of opposition",
+        "sinhala": "පද ව්‍යාප්තිය සහ සම්ප්‍රදායික විරුද්ධත්ව චතුරස්‍රය",
+        "tamil": "பதங்களின் வியாபகமும் பாரம்பரிய எதிர்ப்புக் சதுரமும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Immediate Inferences & Venn Diagrams",
+    "english": "Immediate Inferences & Venn Diagrams",
+    "sinhala": "අව්‍යවහිත අනුමිති සහ වෙන් රූපසටහන්",
+    "sinhala_title": "ඒකකය 05: අව්‍යවහිත අනුමිති සහ වෙන් රූපසටහන්",
+    "tamil": "உடனடி அனுமானங்களும் வென் வரிப்படங்களும்",
+    "tamil_title": "அலகு 05: உடனடி அனுமானங்களும் வென் வரிப்படங்களும்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "Conversion, obversion and contraposition",
+        "english": "Conversion, obversion and contraposition",
+        "sinhala": "පරිවර්තනය, ප්‍රතිවර්තනය සහ පර්යාවර්තනය",
+        "tamil": "பரிமாற்றம், தலைகீழாக்கம் மற்றும் எதிர்மாற்றம்",
+        "hours": 5
+      },
+      {
+        "num": "5.2",
+        "title": "Representation and validity testing using Venn diagrams",
+        "english": "Representation and validity testing using Venn diagrams",
+        "sinhala": "වෙන් රූපසටහන් මගින් නිරූපණය සහ වලංගුභාවය පරීක්ෂා කිරීම",
+        "tamil": "வென் வரிப்படங்களைப் பயன்படுத்தி செல்லுபடித்தன்மையை சோதித்தல்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Categorical Syllogisms",
+    "english": "Categorical Syllogisms",
+    "sinhala": "නිරුපාධික න්‍යායවාක්‍ය",
+    "sinhala_title": "ඒකකය 06: නිරුපාධික න්‍යායවාක්‍ය",
+    "tamil": "நிபந்தனையற்ற நியாயத்தொடை",
+    "tamil_title": "அலகு 06: நிபந்தனையற்ற நியாயத்தொடை",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "Standard form syllogisms: Major, minor and middle terms",
+        "english": "Standard form syllogisms: Major, minor and middle terms",
+        "sinhala": "සම්මත න්‍යායවාක්‍ය: ප්‍රධාන, අනුප්‍රධාන සහ මධ්‍ය පද",
+        "tamil": "திட்ட நியாயத்தொடை: பிரதான, துணை மற்றும் இடைப் பதங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "Moods, figures and fallacies of categorical syllogisms",
+        "english": "Moods, figures and fallacies of categorical syllogisms",
+        "sinhala": "න්‍යායවාක්‍යවල මාදිලි, රූප සහ ආභාසයන්",
+        "tamil": "நியாயத்தொடையின் முறைகள், உருவங்கள் மற்றும் போலி வாதங்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Symbolic Logic: Propositional Calculus",
+    "english": "Symbolic Logic: Propositional Calculus",
+    "sinhala": "සංකේතාත්මක තර්කනය: ප්‍රකාශන කලනය",
+    "sinhala_title": "ඒකකය 07: සංකේතාත්මක තර්කනය: ප්‍රකාශන කලනය",
+    "tamil": "குறியீட்டு அளவையியல்: கூற்றுக்கணிதம்",
+    "tamil_title": "அலகு 07: குறியீட்டு அளவையியல்: கூற்றுக்கணிதம்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Logical connectives, truth functional statements and symbols",
+        "english": "Logical connectives, truth functional statements and symbols",
+        "sinhala": "තාර්කික සම්බන්ධක, සත්‍යතා ශ්‍රිත සහ සංකේත",
+        "tamil": "தருக்க இணைப்புகள், மெய்மைச் சார்புக் கூற்றுக்கள் மற்றும் குறியீடுகள்",
+        "hours": 5
+      },
+      {
+        "num": "7.2",
+        "title": "Truth tables: Tautology, contradiction and testing argument validity",
+        "english": "Truth tables: Tautology, contradiction and testing argument validity",
+        "sinhala": "සත්‍යතා වගු: පුනරුක්ති, ව්‍යාඝාත සහ තර්කවල වලංගුභාවය",
+        "tamil": "மெய்மை அட்டவணைகள்: ஒருபொருட்பன்மொழி, முரண்பாடுகள் மற்றும் செல்லுபடித்தன்மை",
+        "hours": 6
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Scientific Method & Induction",
+    "english": "Scientific Method & Induction",
+    "sinhala": "විද්‍යාත්මක ක්‍රමය සහ ආගමනය",
+    "sinhala_title": "ඒකකය 08: විද්‍යාත්මක ක්‍රමය සහ ආගමනය",
+    "tamil": "விஞ்ஞான முறையும் தொகுத்தறிவும்",
+    "tamil_title": "அலகு 08: விஞ்ஞான முறையும் தொகுத்தறிவும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Nature and stages of the scientific method of inquiry",
+        "english": "Nature and stages of the scientific method of inquiry",
+        "sinhala": "විද්‍යාත්මක පර්යේෂණ ක්‍රමයේ ස්වභාවය සහ පියවර",
+        "tamil": "விஞ்ஞான ஆய்வு முறையின் தன்மையும் படிநிலைகளும்",
+        "hours": 5
+      },
+      {
+        "num": "8.2",
+        "title": "Observation, experimentation and scientific classification",
+        "english": "Observation, experimentation and scientific classification",
+        "sinhala": "නිරීක්ෂණය, පරීක්ෂණය සහ විද්‍යාත්මක වර්ගීකරණය",
+        "tamil": "அவதானிப்பு, பரிசோதனை மற்றும் விஞ்ஞான வகைப்படுத்தல்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 9,
+    "title": "Scientific Hypothesis & Theories",
+    "english": "Scientific Hypothesis & Theories",
+    "sinhala": "විද්‍යාත්මක උපකල්පන සහ න්‍යාය",
+    "sinhala_title": "ඒකකය 09: විද්‍යාත්මක උපකල්පන සහ න්‍යාය",
+    "tamil": "விஞ்ஞான எடுகோள்களும் கோட்பாடுகளும்",
+    "tamil_title": "அலகு 09: விஞ்ஞான எடுகோள்களும் கோட்பாடுகளும்",
+    "subUnits": [
+      {
+        "num": "9.1",
+        "title": "Formulation, conditions of valid hypothesis and testing",
+        "english": "Formulation, conditions of valid hypothesis and testing",
+        "sinhala": "විද්‍යාත්මක උපකල්පන ගොඩනැගීම, වලංගු කොන්දේසි සහ පරීක්ෂා කිරීම",
+        "tamil": "எடுகோள் உருவாக்கம், செல்லுபடியாகும் நிபந்தனைகள் மற்றும் சோதித்தல்",
+        "hours": 5
+      },
+      {
+        "num": "9.2",
+        "title": "Scientific laws, verification, falsification and theories",
+        "english": "Scientific laws, verification, falsification and theories",
+        "sinhala": "විද්‍යාත්මක නියම, තහවුරු කිරීම, අසත්‍යාපනය සහ න්‍යාය",
+        "tamil": "விஞ்ஞான விதிகள், உறுதிப்படுத்தல், பொய்யாக்கல் மற்றும் கோட்பாடுகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 10,
+    "title": "Mill's Methods of Experimental Inquiry",
+    "english": "Mill's Methods of Experimental Inquiry",
+    "sinhala": "මිල්ගේ පරීක්ෂණාත්මක ක්‍රම",
+    "sinhala_title": "ඒකකය 10: මිල්ගේ පරීක්ෂණාත්මක ක්‍රම",
+    "tamil": "மில்லின் பரிசோதனை ஆய்வு முறைகள்",
+    "tamil_title": "அலகு 10: மில்லின் பரிசோதனை ஆய்வு முறைகள்",
+    "subUnits": [
+      {
+        "num": "10.1",
+        "title": "Method of Agreement and Method of Difference",
+        "english": "Method of Agreement and Method of Difference",
+        "sinhala": "එකඟතා ක්‍රමය සහ ව්‍යතිරේක ක්‍රමය",
+        "tamil": "உடன்பாட்டு முறை மற்றும் வேற்றுமை முறை",
+        "hours": 5
+      },
+      {
+        "num": "10.2",
+        "title": "Joint Method, Residues and Concomitant Variation",
+        "english": "Joint Method, Residues and Concomitant Variation",
+        "sinhala": "සංයුක්ත ක්‍රමය, ශේෂ ක්‍රමය සහ සහවිචලන ක්‍රමය",
+        "tamil": "இணைப்பு முறை, மீதி முறை மற்றும் இணை மாறுபாட்டு முறை",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 11,
+    "title": "Informal Fallacies in Everyday Reasoning",
+    "english": "Informal Fallacies in Everyday Reasoning",
+    "sinhala": "එදිනෙදා තර්කනයේ අනාකාරික ආභාස",
+    "sinhala_title": "ඒකකය 11: එදිනෙදා තර්කනයේ අනාකාරික ආභාස",
+    "tamil": "அன்றாட வாதங்களில் வடிவமற்ற போலிவாதங்கள்",
+    "tamil_title": "அலகு 11: வடிவமற்ற போலிவாதங்கள்",
+    "subUnits": [
+      {
+        "num": "11.1",
+        "title": "Fallacies of relevance: Ad hominem, appeal to pity and authority",
+        "english": "Fallacies of relevance: Ad hominem, appeal to pity and authority",
+        "sinhala": "අදාළත්වයේ ආභාස: පුද්ගල ප්‍රහාරය, අනුකම්පාව සහ අධිකාරය යෙදීම",
+        "tamil": "தொடர்புடைமைப் போலிகள்: ஆள்தாக்குதல், பரிதாபக்கோரல் மற்றும் அதிகாரக்கோரல்",
+        "hours": 4
+      },
+      {
+        "num": "11.2",
+        "title": "Fallacies of ambiguity and presumption (Equivocation, Petitio Principii)",
+        "english": "Fallacies of ambiguity and presumption (Equivocation, Petitio Principii)",
+        "sinhala": "ද්විඅර්ථකත්වයේ සහ උපකල්පනයේ ආභාස (ආත්මය ආයාචනය)",
+        "tamil": "மயக்கப் போலிகள் மற்றும் ஊகப் போலிகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 12,
+    "title": "Philosophy of Science & Modern Epistemology",
+    "english": "Philosophy of Science & Modern Epistemology",
+    "sinhala": "විද්‍යා දර්ශනය සහ නූතන ඥානවිභාගය",
+    "sinhala_title": "ඒකකය 12: විද්‍යා දර්ශනය සහ ඥානවිභාගය",
+    "tamil": "விஞ்ஞானத் தத்துவமும் நவீன அறிவாராய்ச்சியியலும்",
+    "tamil_title": "அலகு 12: விஞ்ஞானத் தத்துவமும் அறிவாராய்ச்சியியலும்",
+    "subUnits": [
+      {
+        "num": "12.1",
+        "title": "Karl Popper's falsificationism and scientific revolutions",
+        "english": "Karl Popper's falsificationism and scientific revolutions",
+        "sinhala": "කාල් පොපර්ගේ අසත්‍යාපනවාදය සහ විද්‍යාත්මක විප්ලව",
+        "tamil": "கார்ல் பொப்பரின் பொய்யாக்கல் கொள்கையும் விஞ்ஞானப் புரட்சிகளும்",
+        "hours": 5
+      },
+      {
+        "num": "12.2",
+        "title": "Thomas Kuhn's paradigm shifts and research programmes",
+        "english": "Thomas Kuhn's paradigm shifts and research programmes",
+        "sinhala": "තෝමස් කුන්ගේ ආදර්ශ ආකෘති මාරුවීම් සහ පර්යේෂණ වැඩසටහන්",
+        "tamil": "தோமஸ் குனின் முன்மாதிரி மாற்றங்களும் ஆய்வுத் திட்டங்களும்",
+        "hours": 5
+      }
+    ]
+  }
+]
