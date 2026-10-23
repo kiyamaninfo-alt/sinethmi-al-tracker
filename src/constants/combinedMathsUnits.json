@@ -1,0 +1,758 @@
+[
+  {
+    "num": 1,
+    "title": "Real Number System & Functions",
+    "english": "Real Number System & Functions",
+    "sinhala": "තාත්වික සංඛ්‍යා පද්ධතිය සහ ශ්‍රිත",
+    "sinhala_title": "ඒකකය 01: තාත්වික සංඛ්‍යා පද්ධතිය සහ ශ්‍රිත",
+    "tamil": "மெய் எண் தொகுதியும் சார்புகளும்",
+    "tamil_title": "அலகு 01: மெய் எண் தொகுதியும் சார்புகளும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Real numbers, properties and absolute values",
+        "english": "Real numbers, properties and absolute values",
+        "sinhala": "තාත්වික සංඛ්‍යා, ගුණ සහ මාපාංකය",
+        "tamil": "மெய் எண்கள், இயல்புகள் மற்றும் மட்டுப் பெறுமானங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "title": "Functions, domain, range and composite functions",
+        "english": "Functions, domain, range and composite functions",
+        "sinhala": "ශ්‍රිත, ප්‍රදේශය, පරාසය සහ සංයුක්ත ශ්‍රිත",
+        "tamil": "சார்புகள், வீச்சம் மற்றும் சார்புகளின் சேர்வை",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Polynomials & Rational Functions",
+    "english": "Polynomials & Rational Functions",
+    "sinhala": "බහුපද ශ්‍රිත සහ ආංශික භාග",
+    "sinhala_title": "ඒකකය 02: බහුපද ශ්‍රිත සහ ආංශික භාග",
+    "tamil": "பல்லுறுப்புச் சார்புகளும் பகுதிப் பின்னங்களும்",
+    "tamil_title": "அலகு 02: பல்லுறுப்புச் சார்புகளும் பகுதிப் பின்னங்களும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Polynomial division, Remainder Theorem and Factor Theorem",
+        "english": "Polynomial division, Remainder Theorem and Factor Theorem",
+        "sinhala": "බහුපද බෙදීම, ශේෂ ප්‍රමේයය සහ සාධක ප්‍රමේයය",
+        "tamil": "பல்லுறுப்பு வகுத்தல், மீதித் தேற்றம் மற்றும் காரணித் தேற்றம்",
+        "hours": 4
+      },
+      {
+        "num": "2.2",
+        "title": "Rational functions and resolution into partial fractions",
+        "english": "Rational functions and resolution into partial fractions",
+        "sinhala": "ආංශික භාගවලට වෙන් කිරීම",
+        "tamil": "விகிதமுறு சார்புகள் மற்றும் பகுதிப் பின்னங்களாகப் பிரித்தல்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Quadratic Equations & Expressions",
+    "english": "Quadratic Equations & Expressions",
+    "sinhala": "වර්ගජ සමීකරණ සහ ප්‍රකාශන",
+    "sinhala_title": "ඒකකය 03: වර්ගජ සමීකරණ සහ ප්‍රකාශන",
+    "tamil": "இருபடிச் சமன்பாடுகளும் கோவைகளும்",
+    "tamil_title": "அலகு 03: இருபடிச் சமன்பாடுகளும் கோவைகளும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Roots and discriminant of quadratic equations",
+        "english": "Roots and discriminant of quadratic equations",
+        "sinhala": "වර්ගජ සමීකරණවල මූල සහ විවේචකය",
+        "tamil": "இருபடிச் சமன்பாட்டின் மூலங்களும் விவரிக்காட்டியும்",
+        "hours": 5
+      },
+      {
+        "num": "3.2",
+        "title": "Symmetric functions of roots and sign of quadratic expressions",
+        "english": "Symmetric functions of roots and sign of quadratic expressions",
+        "sinhala": "මූලවල සමමිතික ශ්‍රිත සහ වර්ගජ ප්‍රකාශනවල ලකුණ",
+        "tamil": "மூலங்களின் சமச்சீர் சார்புகள் மற்றும் குறிகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Inequalities & Modulus Functions",
+    "english": "Inequalities & Modulus Functions",
+    "sinhala": "අසමානතා සහ මාපාංක ශ්‍රිත",
+    "sinhala_title": "ඒකකය 04: අසමානතා සහ මාපාංක ශ්‍රිත",
+    "tamil": "சமனிலிகளும் மட்டுச் சார்புகளும்",
+    "tamil_title": "அலகு 04: சமனிலிகளும் மட்டுச் சார்புகளும்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Linear, rational and quadratic inequalities",
+        "english": "Linear, rational and quadratic inequalities",
+        "sinhala": "රේඛීය, භාගික සහ වර්ගජ අසමානතා",
+        "tamil": "நேரியல், விகிதமுறு மற்றும் இருபடி சமனிலிகள்",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "title": "Modulus inequalities and graphical solutions",
+        "english": "Modulus inequalities and graphical solutions",
+        "sinhala": "මාපාංක අසමානතා සහ ප්‍රස්තාරික විසඳුම්",
+        "tamil": "மட்டுச் சமனிலிகள் மற்றும் வரைபுத் தீர்வுகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Mathematical Induction & Binomial Theorem",
+    "english": "Mathematical Induction & Binomial Theorem",
+    "sinhala": "ගණිත අභ්‍යුහනය සහ ද්විපද ප්‍රමේයය",
+    "sinhala_title": "ඒකකය 05: ගණිත අභ්‍යුහනය සහ ද්විපද ප්‍රමේයය",
+    "tamil": "கணிதத் தொகுத்தறிதலும் ஈருறுப்புத் தேற்றமும்",
+    "tamil_title": "அலகு 05: கணிதத் தொகுத்தறிதலும் ஈருறுப்புத் தேற்றமும்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "Principle of Mathematical Induction",
+        "english": "Principle of Mathematical Induction",
+        "sinhala": "ගණිත අභ්‍යුහන මූලධර්මය",
+        "tamil": "கணிதத் தொகுத்தறிதல் கொள்கை",
+        "hours": 5
+      },
+      {
+        "num": "5.2",
+        "title": "Binomial Theorem for positive integers and rational indices",
+        "english": "Binomial Theorem for positive integers and rational indices",
+        "sinhala": "ධන නිඛිලමය සහ භාගික දර්ශක සඳහා ද්විපද ප්‍රමේයය",
+        "tamil": "நேர் நிறைவெண் மற்றும் விகிதமுறு சுட்டிகளுக்கான ஈருறுப்புத் தேற்றம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Sequences and Series",
+    "english": "Sequences and Series",
+    "sinhala": "අනුක්‍රම සහ ශ්‍රේණි",
+    "sinhala_title": "ඒකකය 06: අනුක්‍රම සහ ශ්‍රේණි",
+    "tamil": "தொடரிகளும் தொடர்களும்",
+    "tamil_title": "அலகு 06: தொடரிகளும் தொடர்களும்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "Arithmetic and Geometric progressions",
+        "english": "Arithmetic and Geometric progressions",
+        "sinhala": "සමාන්තර සහ ගුණෝත්තර ශ්‍රේණි",
+        "tamil": "கூட்டல் மற்றும் பெருக்குத் தொடர்கள்",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "Method of differences and infinite convergent series",
+        "english": "Method of differences and infinite convergent series",
+        "sinhala": "අන්තර ක්‍රමය සහ අනන්ත අභිසාරී ශ්‍රේණි",
+        "tamil": "வித்தியாச முறை மற்றும் முடிவிலி ஒருங்கு தொடர்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Permutations and Combinations",
+    "english": "Permutations and Combinations",
+    "sinhala": "සංකරණ සහ සංයෝජන",
+    "sinhala_title": "ඒකකය 07: සංකරණ සහ සංයෝජන",
+    "tamil": "வரிசைமாற்றங்களும் தெரிவுகளும்",
+    "tamil_title": "அலகு 07: வரிசைமாற்றங்களும் தெரிவுகளும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Fundamental principle of counting and permutations",
+        "english": "Fundamental principle of counting and permutations",
+        "sinhala": "මූලික ගණන් කිරීමේ මූලධර්මය සහ සංකරණ",
+        "tamil": "எண்ணுகையின் அடிப்படைக் கொள்கை மற்றும் வரிசைமாற்றங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "7.2",
+        "title": "Combinations and restricted selections",
+        "english": "Combinations and restricted selections",
+        "sinhala": "සංයෝජන සහ සීමා සහිත වරණයන්",
+        "tamil": "தெரிவுகளும் மட்டுப்படுத்தல்களுடன் கூடிய தெரிவுகளும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Matrices and Systems of Linear Equations",
+    "english": "Matrices and Systems of Linear Equations",
+    "sinhala": "න්‍යාස සහ ඒකජ සමීකරණ පද්ධති",
+    "sinhala_title": "ඒකකය 08: න්‍යාස සහ ඒකජ සමීකරණ පද්ධති",
+    "tamil": "தாயங்களும் நேரியல் சமன்பாட்டுத் தொகுதிகளும்",
+    "tamil_title": "அலகு 08: தாயங்களும் நேரியல் சமன்பாட்டுத் தொகுதிகளும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Matrix operations, determinants and inverse matrices",
+        "english": "Matrix operations, determinants and inverse matrices",
+        "sinhala": "න්‍යාස කර්ම, නිශ්චායක සහ ප්‍රතිලෝම න්‍යාස",
+        "tamil": "தாயச் செய்கைகள், துணிகோவைகள் மற்றும் நேர்மாறு தாயங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "8.2",
+        "title": "Solving linear equations using matrix algebra",
+        "english": "Solving linear equations using matrix algebra",
+        "sinhala": "න්‍යාස මගින් ඒකජ සමීකරණ පද්ධති විසඳීම",
+        "tamil": "தாய முறைகளைப் பயன்படுத்தி நேரியல் சமன்பாடுகளைத் தீர்த்தல்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 9,
+    "title": "Complex Numbers",
+    "english": "Complex Numbers",
+    "sinhala": "සංකීර්ණ සංඛ්‍යා",
+    "sinhala_title": "ඒකකය 09: සංකීර්ණ සංඛ්‍යා",
+    "tamil": "சிக்கலெண்கள்",
+    "tamil_title": "அலகு 09: சிக்கலெண்கள்",
+    "subUnits": [
+      {
+        "num": "9.1",
+        "title": "Complex algebra, modulus, conjugate and argument",
+        "english": "Complex algebra, modulus, conjugate and argument",
+        "sinhala": "සංකීර්ණ සංඛ්‍යා වීජ ගණිතය, මාපාංකය සහ විස්තාරය",
+        "tamil": "சிக்கலெண் அட்சரகணிதம், மட்டு, இணை மற்றும் வீச்சம்",
+        "hours": 5
+      },
+      {
+        "num": "9.2",
+        "title": "Argand diagrams, geometric loci and De Moivre's Theorem",
+        "english": "Argand diagrams, geometric loci and De Moivre's Theorem",
+        "sinhala": "ආගන්ඩ් සටහන, ජ්‍යාමිතික පථ සහ ඩි මෝවාර් ප්‍රමේයය",
+        "tamil": "ஆர்கண்ட் வரிப்படம், ஒழுக்கு மற்றும் டி மோய்வரின் தேற்றம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 10,
+    "title": "Trigonometric Functions & Identities",
+    "english": "Trigonometric Functions & Identities",
+    "sinhala": "ත්‍රිකෝණමිතික ශ්‍රිත සහ සර්වසාම්‍ය",
+    "sinhala_title": "ඒකකය 10: ත්‍රිකෝණමිතික ශ්‍රිත සහ සර්වසාම්‍ය",
+    "tamil": "திரிகோணகணிதச் சார்புகளும் முற்றொருமைகளும்",
+    "tamil_title": "அலகு 10: திரிகோணகணிதச் சார்புகளும் முற்றொருமைகளும்",
+    "subUnits": [
+      {
+        "num": "10.1",
+        "title": "Compound, multiple angles and product-to-sum identities",
+        "english": "Compound, multiple angles and product-to-sum identities",
+        "sinhala": "සංයුක්ත, ගුණිත කෝණ සූත්‍ර සහ ගුණිත-ඓක්‍ය සර්වසාම්‍ය",
+        "tamil": "கூட்டு, மடங்குக் கோணச் சூத்திரங்கள் மற்றும் காரணிச் சூத்திரங்கள்",
+        "hours": 6
+      },
+      {
+        "num": "10.2",
+        "title": "General solutions of trigonometric equations and inverse functions",
+        "english": "General solutions of trigonometric equations and inverse functions",
+        "sinhala": "ත්‍රිකෝණමිතික සමීකරණවල පොදු විසඳුම් සහ ප්‍රතිලෝම ශ්‍රිත",
+        "tamil": "திரிகோணகணிதச் சமன்பாடுகளின் பொதுத் தீர்வுகள் மற்றும் நேர்மாறுச் சார்புகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 11,
+    "title": "Limits and Continuity",
+    "english": "Limits and Continuity",
+    "sinhala": "සීමා සහ අඛණ්ඩතාව",
+    "sinhala_title": "ඒකකය 11: සීමා සහ අඛණ්ඩතාව",
+    "tamil": "எல்லைகளும் தொடர்ச்சியும்",
+    "tamil_title": "அலகு 11: எல்லைகளும் தொடர்ச்சியும்",
+    "subUnits": [
+      {
+        "num": "11.1",
+        "title": "Algebraic limits, limits at infinity and squeeze theorem",
+        "english": "Algebraic limits, limits at infinity and squeeze theorem",
+        "sinhala": "වීජීය සීමා, අනන්තයේදී සීමාව සහ සැන්ඩ්විච් ප්‍රමේයය",
+        "tamil": "அட்சரகணித எல்லைகள், முடிவிலியில் எல்லை மற்றும் நெருக்குகைத் தேற்றம்",
+        "hours": 4
+      },
+      {
+        "num": "11.2",
+        "title": "Trigonometric limits and continuity of functions",
+        "english": "Trigonometric limits and continuity of functions",
+        "sinhala": "ත්‍රිකෝණමිතික සීමා සහ ශ්‍රිතවල අඛණ්ඩතාව",
+        "tamil": "திரிகோணகணித எல்லைகளும் சார்புகளின் தொடர்ச்சியும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 12,
+    "title": "Differentiation and Applications",
+    "english": "Differentiation and Applications",
+    "sinhala": "අවකලනය සහ යෙදවුම්",
+    "sinhala_title": "ඒකකය 12: අවකලනය සහ යෙදවුම්",
+    "tamil": "வகையீடும் அதன் பயன்பாடுகளும்",
+    "tamil_title": "அலகு 12: வகையீடும் அதன் பயன்பாடுகளும்",
+    "subUnits": [
+      {
+        "num": "12.1",
+        "title": "First principles, product, quotient and chain rules",
+        "english": "First principles, product, quotient and chain rules",
+        "sinhala": "ප්‍රථම මූලධර්මය, ගුණිත, භාග සහ දාම නීති",
+        "tamil": "முதற் கொள்கை, பெருக்கல், வகுத்தல் மற்றும் சங்கிலி விதிகள்",
+        "hours": 6
+      },
+      {
+        "num": "12.2",
+        "title": "Tangents, normals, rates of change and curve sketching",
+        "english": "Tangents, normals, rates of change and curve sketching",
+        "sinhala": "ස්පර්ශක, අභිලම්භ, විචලන සීඝ්‍රතා සහ ප්‍රස්තාර ඇඳීම",
+        "tamil": "தொடலிகள், செவ்வன்கள், மாறல் வீதங்கள் மற்றும் வளைவரை வரைதல்",
+        "hours": 6
+      }
+    ]
+  },
+  {
+    "num": 13,
+    "title": "Integration and Applications",
+    "english": "Integration and Applications",
+    "sinhala": "අනුකලනය සහ යෙදවුම්",
+    "sinhala_title": "ඒකකය 13: අනුකලනය සහ යෙදවුම්",
+    "tamil": "தொகையீடும் அதன் பயன்பாடுகளும்",
+    "tamil_title": "அலகு 13: தொகையீடும் அதன் பயன்பாடுகளும்",
+    "subUnits": [
+      {
+        "num": "13.1",
+        "title": "Standard integrals, substitution and integration by parts",
+        "english": "Standard integrals, substitution and integration by parts",
+        "sinhala": "සම්මත අනුකල, ආදේශ ක්‍රමය සහ කොටස් වශයෙන් අනුකලනය",
+        "tamil": "திட்ட தொகையீடுகள், பிரதியீட்டு முறை மற்றும் பகுதிப் பகுதியான தொகையீடு",
+        "hours": 6
+      },
+      {
+        "num": "13.2",
+        "title": "Definite integrals, area under curves and solids of revolution",
+        "english": "Definite integrals, area under curves and solids of revolution",
+        "sinhala": "නියත අනුකල, ක්ෂේත්‍රඵල සෙවීම සහ පරිභ්‍රමණ ඝන වස්තුවල පරිමාව",
+        "tamil": "குறித்த தொகையீடுகள், வளைவரையின் கீழான பரப்பளவு மற்றும் சுழற்சித் திண்மக் கனவளவு",
+        "hours": 6
+      }
+    ]
+  },
+  {
+    "num": 14,
+    "title": "Analytical Geometry: The Straight Line",
+    "english": "Analytical Geometry: The Straight Line",
+    "sinhala": "විශ්ලේෂී ජ්‍යාමිතිය: සරල රේඛාව",
+    "sinhala_title": "ඒකකය 14: විශ්ලේෂී ජ්‍යාමිතිය: සරල රේඛාව",
+    "tamil": "பகுமுறை வடிவகணிதம்: நேர்கோடு",
+    "tamil_title": "அலகு 14: பகுமுறை வடிவகணிதம்: நேர்கோடு",
+    "subUnits": [
+      {
+        "num": "14.1",
+        "title": "Forms of line equations and angle between two lines",
+        "english": "Forms of line equations and angle between two lines",
+        "sinhala": "සරල රේඛා සමීකරණ ආකාර සහ රේඛා දෙකක් අතර කෝණය",
+        "tamil": "நேர்கோட்டுச் சமன்பாட்டு வடிவங்கள் மற்றும் இரு கோடுகளுக்கு இடைப்பட்ட கோணம்",
+        "hours": 5
+      },
+      {
+        "num": "14.2",
+        "title": "Perpendicular distance, angle bisectors and concurrency",
+        "english": "Perpendicular distance, angle bisectors and concurrency",
+        "sinhala": "ලම්බ දුර, කෝණ සමච්ඡේදක සහ සමගාමී රේඛා",
+        "tamil": "செங்குத்துத் தூரம், கோண இருகூறாக்கிகள் மற்றும் ஒருபுள்ளிச் சந்திப்பு",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 15,
+    "title": "Analytical Geometry: The Circle",
+    "english": "Analytical Geometry: The Circle",
+    "sinhala": "විශ්ලේෂී ජ්‍යාමිතිය: වෘත්තය",
+    "sinhala_title": "ඒකකය 15: විශ්ලේෂී ජ්‍යාමිතිය: වෘත්තය",
+    "tamil": "பகுமுறை வடிவகணிதம்: வட்டம்",
+    "tamil_title": "அலகு 15: பகுமுறை வடிவகணிதம்: வட்டம்",
+    "subUnits": [
+      {
+        "num": "15.1",
+        "title": "Standard equation, center, radius and parametric form",
+        "english": "Standard equation, center, radius and parametric form",
+        "sinhala": "වෘත්තයේ සම්මත සමීකරණය, කේන්ද්‍රය, අරය සහ පරාමිතික ආකාරය",
+        "tamil": "வட்டத்தின் திட்டச் சமன்பாடு, மையம், ஆரை மற்றும் பரமான வடிவங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "15.2",
+        "title": "Tangents, normals, length of tangents and orthogonal circles",
+        "english": "Tangents, normals, length of tangents and orthogonal circles",
+        "sinhala": "ස්පර්ශක, අභිලම්භ, ස්පර්ශකවල දිග සහ ලම්බක වෘත්ත",
+        "tamil": "தொடலிகள், செவ்வன்கள், தொடலியின் நீளம் மற்றும் செங்குத்து வட்டங்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 16,
+    "title": "Vectors and Vector Algebra",
+    "english": "Vectors and Vector Algebra",
+    "sinhala": "දෛශික සහ දෛශික වීජ ගණිතය",
+    "sinhala_title": "ඒකකය 16: දෛශික සහ දෛශික වීජ ගණිතය",
+    "tamil": "காவிகளும் காவி அட்சரகணிதமும்",
+    "tamil_title": "அலகு 16: காவிகளும் காவி அட்சரகணிதமும்",
+    "subUnits": [
+      {
+        "num": "16.1",
+        "title": "Vector operations, scalar product and unit vectors",
+        "english": "Vector operations, scalar product and unit vectors",
+        "sinhala": "දෛශික කර්ම, අදිශ ගුණිතය සහ ඒකක දෛශික",
+        "tamil": "காவிச் செய்கைகள், திசையிலிப் பெருக்கம் மற்றும் அலகு காவிகள்",
+        "hours": 5
+      },
+      {
+        "num": "16.2",
+        "title": "Position vectors and geometrical theorems using vectors",
+        "english": "Position vectors and geometrical theorems using vectors",
+        "sinhala": "පිහිටුම් දෛශික සහ දෛශික මගින් ජ්‍යාමිතික ප්‍රමේයයන්",
+        "tamil": "அமைவுக் காவிகள் மற்றும் காவிகள் மூலமான வடிவகணிதத் தேற்றங்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 17,
+    "title": "Coplanar Forces Acting on a Particle",
+    "english": "Coplanar Forces Acting on a Particle",
+    "sinhala": "අංශුවක් මත ක්‍රියා කරන ඒකතල බල",
+    "sinhala_title": "ඒකකය 17: අංශුවක් මත ක්‍රියා කරන ඒකතල බල",
+    "tamil": "துணிக்கையொன்றில் தொழிற்படும் ஒருதள விசைகள்",
+    "tamil_title": "அலகு 17: துணிக்கையொன்றில் தொழிற்படும் ஒருதள விசைகள்",
+    "subUnits": [
+      {
+        "num": "17.1",
+        "title": "Resultant of forces, Triangle and Polygon of forces",
+        "english": "Resultant of forces, Triangle and Polygon of forces",
+        "sinhala": "බලවල සම්ප්‍රයුක්තය, බල ත්‍රිකෝණය සහ බල බහුඅස්‍රය",
+        "tamil": "விசைகளின் விளையுள், விசை முக்கோணம் மற்றும் விசைப் பல்கோணி",
+        "hours": 5
+      },
+      {
+        "num": "17.2",
+        "title": "Resolution of forces, particle equilibrium and Lami's Theorem",
+        "english": "Resolution of forces, particle equilibrium and Lami's Theorem",
+        "sinhala": "බල සංරචක සෙවීම, අංශුවක සමතුලිතතාව සහ ලැමීගේ ප්‍රමේයය",
+        "tamil": "விசைகளின் பிரிப்பு, துணிக்கையின் சமநிலை மற்றும் லாமியின் தேற்றம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 18,
+    "title": "Equilibrium of Rigid Bodies & Moments",
+    "english": "Equilibrium of Rigid Bodies & Moments",
+    "sinhala": "දෘඪ වස්තුවල සමතුලිතතාව සහ ඝූර්ණ",
+    "sinhala_title": "ඒකකය 18: දෘඪ වස්තුවල සමතුලිතතාව සහ ඝූර්ණ",
+    "tamil": "திண்மப்பொருள்களின் சமநிலையும் திருப்புத்திறன்களும்",
+    "tamil_title": "அலகு 18: திண்மப்பொருள்களின் சமநிலையும் திருப்புத்திறன்களும்",
+    "subUnits": [
+      {
+        "num": "18.1",
+        "title": "Moment of a force, couples and Varignon's Theorem",
+        "english": "Moment of a force, couples and Varignon's Theorem",
+        "sinhala": "බලයක ඝූර්ණය, යුග්ම සහ වැරිග්නන්ගේ ප්‍රමේයය",
+        "tamil": "விசையொன்றின் திருப்புத்திறன், சோடிகள் மற்றும் வரிக்னனின் தேற்றம்",
+        "hours": 5
+      },
+      {
+        "num": "18.2",
+        "title": "Equilibrium conditions for rigid bodies under coplanar forces",
+        "english": "Equilibrium conditions for rigid bodies under coplanar forces",
+        "sinhala": "ඒකතල බල පද්ධතියක් යටතේ දෘඪ වස්තුවක සමතුලිතතා කොන්දේසි",
+        "tamil": "ஒருதள விசைகளின் கீழ் திண்மப்பொருளின் சமநிலைக்கான நிபந்தனைகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 19,
+    "title": "Friction",
+    "english": "Friction",
+    "sinhala": "ඝර්ෂණය",
+    "sinhala_title": "ඒකකය 19: ඝර්ෂණය",
+    "tamil": "உராய்வு",
+    "tamil_title": "அலகு 19: உராய்வு",
+    "subUnits": [
+      {
+        "num": "19.1",
+        "title": "Laws of friction, coefficient and angle of friction",
+        "english": "Laws of friction, coefficient and angle of friction",
+        "sinhala": "ඝර්ෂණ නියම, ඝර්ෂණ සංගුණකය සහ ඝර්ෂණ කෝණය",
+        "tamil": "உராய்வு விதிகள், உராய்வுக் குணகம் மற்றும் உராய்வுக் கோணம்",
+        "hours": 4
+      },
+      {
+        "num": "19.2",
+        "title": "Equilibrium on rough horizontal and inclined planes",
+        "english": "Equilibrium on rough horizontal and inclined planes",
+        "sinhala": "රළු තිරස් සහ ආනත තල මත වස්තුවල සමතුලිතතාව",
+        "tamil": "உராய்வுள்ள கிடை மற்றும் சாய் தளங்களில் பொருள்களின் சமநிலை",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 20,
+    "title": "Centre of Gravity",
+    "english": "Centre of Gravity",
+    "sinhala": "ගුරුත්ව කේන්ද්‍රය",
+    "sinhala_title": "ඒකකය 20: ගුරුත්ව කේන්ද්‍රය",
+    "tamil": "ஈர்ப்பு மையம்",
+    "tamil_title": "அலகு 20: ஈர்ப்பு மையம்",
+    "subUnits": [
+      {
+        "num": "20.1",
+        "title": "Centre of gravity of wires, rods and uniform plane laminae",
+        "english": "Centre of gravity of wires, rods and uniform plane laminae",
+        "sinhala": "කම්බි, දඬු සහ ඒකාකාර තලිකාවල ගුරුත්ව කේන්ද්‍රය",
+        "tamil": "கம்பிகள், தடிகள் மற்றும் சீரான தகடுகளின் ஈர்ப்பு மையம்",
+        "hours": 5
+      },
+      {
+        "num": "20.2",
+        "title": "Centre of gravity of composite bodies and suspended objects",
+        "english": "Centre of gravity of composite bodies and suspended objects",
+        "sinhala": "සංයුක්ත වස්තුවල ගුරුත්ව කේන්ද්‍රය සහ නිදහසේ එල්ලා ඇති වස්තු",
+        "tamil": "கூட்டமைக்கப்பட்ட பொருள்கள் மற்றும் தொங்கவிடப்பட்ட பொருள்களின் ஈர்ப்பு மையம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 21,
+    "title": "Frameworks / Jointed Rods",
+    "english": "Frameworks / Jointed Rods",
+    "sinhala": "සන්ධිගත සැකිලි රාමු",
+    "sinhala_title": "ඒකකය 21: සන්ධිගත සැකිලි රාමු",
+    "tamil": "மூட்டுச் சட்டகங்கள்",
+    "tamil_title": "அலகு 21: மூட்டுச் சட்டகங்கள்",
+    "subUnits": [
+      {
+        "num": "21.1",
+        "title": "Light pin-jointed frameworks, tension and thrust",
+        "english": "Light pin-jointed frameworks, tension and thrust",
+        "sinhala": "සැහැල්ලු සන්ධිගත සැකිලි රාමු, ආතතිය සහ තෙරපුම",
+        "tamil": "இலேசான மூட்டுச் சட்டகங்கள், இழுவை மற்றும் தள்ளுகை",
+        "hours": 4
+      },
+      {
+        "num": "21.2",
+        "title": "Method of joints and Bow's notation",
+        "english": "Method of joints and Bow's notation",
+        "sinhala": "සන්ධි ක්‍රමය සහ බෝ සංකේතනය",
+        "tamil": "மூட்டு முறை மற்றும் போவின் குறியீட்டு முறை",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 22,
+    "title": "Rectilinear Motion & Graphs",
+    "english": "Rectilinear Motion & Graphs",
+    "sinhala": "සරල රේඛීය චලිතය සහ ප්‍රස්තාර",
+    "sinhala_title": "ඒකකය 22: සරල රේඛීය චලිතය සහ ප්‍රස්තාර",
+    "tamil": "நேர்கோட்டு இயக்கமும் வரைபுகளும்",
+    "tamil_title": "அலகு 22: நேர்கோட்டு இயக்கமும் வரைபுகளும்",
+    "subUnits": [
+      {
+        "num": "22.1",
+        "title": "Uniform and variable accelerated rectilinear motion",
+        "english": "Uniform and variable accelerated rectilinear motion",
+        "sinhala": "ඒකාකාර සහ විචල්‍ය ත්වරණය යටතේ සරල රේඛීය චලිතය",
+        "tamil": "சீரான மற்றும் மாறும் ஆர்முடுகலின் கீழான நேர்கோட்டு இயக்கம்",
+        "hours": 5
+      },
+      {
+        "num": "22.2",
+        "title": "Velocity-time graphs and vertical motion under gravity",
+        "english": "Velocity-time graphs and vertical motion under gravity",
+        "sinhala": "ප්‍රවේග-කාල ප්‍රස්තාර සහ ගුරුත්වය යටතේ සිරස් චලිතය",
+        "tamil": "திசைவேக-நேர வரைபுகள் மற்றும் ஈர்ப்பின் கீழான நிலைக்குத்து இயக்கம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 23,
+    "title": "Relative Velocity",
+    "english": "Relative Velocity",
+    "sinhala": "සාපේක්ෂ ප්‍රවේගය",
+    "sinhala_title": "ඒකකය 23: සාපේක්ෂ ප්‍රවේගය",
+    "tamil": "சார்புத் திசைவேகம்",
+    "tamil_title": "அலகு 23: சார்புத் திசைவேகம்",
+    "subUnits": [
+      {
+        "num": "23.1",
+        "title": "Concept of relative velocity and vector triangles",
+        "english": "Concept of relative velocity and vector triangles",
+        "sinhala": "සාපේක්ෂ ප්‍රවේග සංකල්පය සහ දෛශික ත්‍රිකෝණ",
+        "tamil": "சார்புத் திசைவேகக் கருத்து மற்றும் காவி முக்கோணங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "23.2",
+        "title": "Shortest distance, interception and river-crossing problems",
+        "english": "Shortest distance, interception and river-crossing problems",
+        "sinhala": "කෙටිම දුර, අවහිරතා සහ ගංගා තරණය ගැටලු",
+        "tamil": "குறைந்த தூரம், இடைமறித்தல் மற்றும் ஆற்றுப்பாய்ச்சல் பிரச்சினைகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 24,
+    "title": "Projectiles",
+    "english": "Projectiles",
+    "sinhala": "ප්‍රක්ෂිප්ත",
+    "sinhala_title": "ඒකකය 24: ප්‍රක්ෂිප්ත",
+    "tamil": "எறியங்கள்",
+    "tamil_title": "அலகு 24: எறியங்கள்",
+    "subUnits": [
+      {
+        "num": "24.1",
+        "title": "Trajectory, maximum height, flight time and horizontal range",
+        "english": "Trajectory, maximum height, flight time and horizontal range",
+        "sinhala": "පථය, උපරිම උස, පියාසර කාලය සහ තිරස් පරාසය",
+        "tamil": "எறியப்பாதை, அதிஉயர் உயரம், பறப்பு நேரம் மற்றும் கிடை வீச்சு",
+        "hours": 5
+      },
+      {
+        "num": "24.2",
+        "title": "Equation of path and projection on an inclined plane",
+        "english": "Equation of path and projection on an inclined plane",
+        "sinhala": "පථ සමීකරණය සහ ආනත තල මත ප්‍රක්ෂිප්තය",
+        "tamil": "பாதைச் சமன்பாடு மற்றும் சாய் தளத்தில் எறியப்படுதல்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 25,
+    "title": "Newton's Laws and Connected Particles",
+    "english": "Newton's Laws and Connected Particles",
+    "sinhala": "නිව්ටන් නියම සහ සම්බන්ධිත අංශු",
+    "sinhala_title": "ඒකකය 25: නිව්ටන් නියම සහ සම්බන්ධිත අංශු",
+    "tamil": "நியூட்டனின் விதிகளும் இணைக்கப்பட்ட துணிக்கைகளும்",
+    "tamil_title": "அலகு 25: நியூட்டனின் விதிகளும் இணைக்கப்பட்ட துணிக்கைகளும்",
+    "subUnits": [
+      {
+        "num": "25.1",
+        "title": "Newton's laws of motion and dynamic equations",
+        "english": "Newton's laws of motion and dynamic equations",
+        "sinhala": "නිව්ටන්ගේ චලිත නියම සහ ගතික සමීකරණ",
+        "tamil": "நியூட்டனின் இயக்க விதிகளும் இயக்கவியல் சமன்பாடுகளும்",
+        "hours": 5
+      },
+      {
+        "num": "25.2",
+        "title": "Motion of connected particles with strings and pulleys",
+        "english": "Motion of connected particles with strings and pulleys",
+        "sinhala": "තන්තු සහ කප්පි සහිත සම්බන්ධිත අංශු චලිතය",
+        "tamil": "இழைகள் மற்றும் கப்பிகளைக் கொண்ட இணைக்கப்பட்ட துணிக்கை இயக்கம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 26,
+    "title": "Work, Energy and Power",
+    "english": "Work, Energy and Power",
+    "sinhala": "කාර්යය, ශක්තිය සහ ජවය",
+    "sinhala_title": "ඒකකය 26: කාර්යය, ශක්තිය සහ ජවය",
+    "tamil": "வேலை, சக்தியும் வலுவும்",
+    "tamil_title": "அலகு 26: வேலை, சக்தியும் வலுவும்",
+    "subUnits": [
+      {
+        "num": "26.1",
+        "title": "Work done, kinetic energy and gravitational potential energy",
+        "english": "Work done, kinetic energy and gravitational potential energy",
+        "sinhala": "කළ කාර්යය, චාලක ශක්තිය සහ ගුරුත්වාකර්ෂණ විභව ශක්තිය",
+        "tamil": "செய்த வேலை, இயக்க சக்தி மற்றும் ஈர்ப்பு அழுத்த சக்தி",
+        "hours": 5
+      },
+      {
+        "num": "26.2",
+        "title": "Conservation of energy, work-energy theorem and power",
+        "english": "Conservation of energy, work-energy theorem and power",
+        "sinhala": "ශක්ති සංස්ථිතිය, කාර්ය-ශක්ති ප්‍රමේයය සහ ජවය",
+        "tamil": "சக்திக் காப்பு, வேலை-சக்தித் தேற்றம் மற்றும் வலு",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 27,
+    "title": "Impulse, Momentum and Direct Collisions",
+    "english": "Impulse, Momentum and Direct Collisions",
+    "sinhala": "ආවේගය, ගම්‍යතාව සහ සෘජු ගැටුම්",
+    "sinhala_title": "ඒකකය 27: ආවේගය, ගම්‍යතාව සහ සෘජු ගැටුම්",
+    "tamil": "கணத்தாக்கு, உந்தமும் நேர் மோதல்களும்",
+    "tamil_title": "அலகு 27: கணத்தாக்கு, உந்தமும் நேர் மோதல்களும்",
+    "subUnits": [
+      {
+        "num": "27.1",
+        "title": "Linear impulse and principle of conservation of momentum",
+        "english": "Linear impulse and principle of conservation of momentum",
+        "sinhala": "රේඛීය ආවේගය සහ ගම්‍යතා සංස්ථිති මූලධර්මය",
+        "tamil": "நேர்கோட்டு உந்தம் மற்றும் உந்தக் காப்புக் கொள்கை",
+        "hours": 5
+      },
+      {
+        "num": "27.2",
+        "title": "Newton's experimental law of restitution and collisions",
+        "english": "Newton's experimental law of restitution and collisions",
+        "sinhala": "නිව්ටන්ගේ ප්‍රත්‍යාස්ථතා නියමය සහ සෘජු ගැටුම්",
+        "tamil": "நியூட்டனின் மீளமைப்புக் குணக விதி மற்றும் நேர் மோதல்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 28,
+    "title": "Probability & Statistics",
+    "english": "Probability & Statistics",
+    "sinhala": "සම්භාවිතාව සහ සංඛ්‍යානය",
+    "sinhala_title": "ඒකකය 28: සම්භාවිතාව සහ සංඛ්‍යානය",
+    "tamil": "நிகழ்தகவும் புள்ளிவிவரவியலும்",
+    "tamil_title": "அலகு 28: நிகழ்தகவும் புள்ளிவிவரவியலும்",
+    "subUnits": [
+      {
+        "num": "28.1",
+        "title": "Sample space, addition and multiplication laws of probability",
+        "english": "Sample space, addition and multiplication laws of probability",
+        "sinhala": "නියැදි අවකාශය, සම්භාවිතාවේ එකතු සහ ගුණ කිරීමේ නීති",
+        "tamil": "கூறுவெளி, நிகழ்தகவின் கூட்டல் மற்றும் பெருக்கல் விதிகள்",
+        "hours": 5
+      },
+      {
+        "num": "28.2",
+        "title": "Conditional probability, independence and discrete distributions",
+        "english": "Conditional probability, independence and discrete distributions",
+        "sinhala": "සප්‍රතිබන්ධ සම්භාවිතාව, ස්වායත්ත සිදුවීම් සහ විවික්ත ව්‍යාප්ති",
+        "tamil": "நிபந்தனை நிகழ்தகவு, சார்பற்ற நிகழ்வுகள் மற்றும் தனித்த பரவல்கள்",
+        "hours": 5
+      }
+    ]
+  }
+]

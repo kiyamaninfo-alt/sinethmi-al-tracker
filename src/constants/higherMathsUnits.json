@@ -1,0 +1,272 @@
+[
+  {
+    "num": 1,
+    "title": "Set Theory, Logic & Boolean Algebra",
+    "english": "Set Theory, Logic & Boolean Algebra",
+    "sinhala": "කුලක න්‍යාය, තර්කනය සහ බූලීය වීජ ගණිතය",
+    "sinhala_title": "ඒකකය 01: කුලක න්‍යාය, තර්කනය සහ බූලීය වීජ ගණිතය",
+    "tamil": "தொடைக்கோட்பாடு, அளவையியல் மற்றும் பூலியன் அட்சரகணிதம்",
+    "tamil_title": "அலகு 01: தொடைக்கோட்பாடு, அளவையியல் மற்றும் பூலியன் அட்சரகணிதம்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Sets, relations, equivalence relations and truth tables",
+        "english": "Sets, relations, equivalence relations and truth tables",
+        "sinhala": "කුලක, සම්බන්ධතා, තුල්‍යතා සම්බන්ධතා සහ සත්‍යතා වගු",
+        "tamil": "தொடைகள், தொடர்புகள், சமான தொடர்புகள் மற்றும் மெய்மை அட்டவணைகள்",
+        "hours": 5
+      },
+      {
+        "num": "1.2",
+        "title": "Boolean algebra, logic gates and circuit simplification",
+        "english": "Boolean algebra, logic gates and circuit simplification",
+        "sinhala": "බූලීය වීජ ගණිතය, තර්ක ද්වාර සහ පරිපථ සරල කිරීම",
+        "tamil": "பூலியன் அட்சரகணிதம், தருக்க வாயில்கள் மற்றும் சுற்றுச் சுருக்கல்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Group Theory & Abstract Algebra",
+    "english": "Group Theory & Abstract Algebra",
+    "sinhala": "කාණ්ඩ න්‍යාය සහ වියුක්ත වීජ ගණිතය",
+    "sinhala_title": "ඒකකය 02: කාණ්ඩ න්‍යාය සහ වියුක්ත වීජ ගණිතය",
+    "tamil": "குலக்கோட்பாடும் அருவ அட்சரகணிதமும்",
+    "tamil_title": "அலகு 02: குலக்கோட்பாடும் அருவ அட்சரகணிதமும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Binary operations, groups, subgroups and cyclic groups",
+        "english": "Binary operations, groups, subgroups and cyclic groups",
+        "sinhala": "ද්විමය කර්ම, කාණ්ඩ, උපකාණ්ඩ සහ චක්‍රීය කාණ්ඩ",
+        "tamil": "ஈருறுப்புச் செய்கைகள், குலங்கள், உபகுலங்கள் மற்றும் வட்டக் குலங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "2.2",
+        "title": "Cosets, Lagrange's Theorem and group homomorphisms",
+        "english": "Cosets, Lagrange's Theorem and group homomorphisms",
+        "sinhala": "සහකුලක, ලග්‍රාන්ජ් ප්‍රමේයය සහ කාණ්ඩ සමරූපතා",
+        "tamil": "இணைக்கணங்கள், லக்ராஞ்சின் தேற்றம் மற்றும் குல ஓரின அமைப்புகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Vector Spaces & Linear Transformations",
+    "english": "Vector Spaces & Linear Transformations",
+    "sinhala": "දෛශික අවකාශ සහ රේඛීය පරිණාමන",
+    "sinhala_title": "ඒකකය 03: දෛශික අවකාශ සහ රේඛීය පරිණාමන",
+    "tamil": "காவி வெளிகளும் நேரியல் உருமாற்றங்களும்",
+    "tamil_title": "அலகு 03: காவி வெளிகளும் நேரியல் உருமாற்றங்களும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Vector spaces, subspaces, linear independence and basis",
+        "english": "Vector spaces, subspaces, linear independence and basis",
+        "sinhala": "දෛශික අවකාශ, උපඅවකාශ, රේඛීය ස්වායත්තතාව සහ පාදම",
+        "tamil": "காவி வெளிகள், உபவெளிகள், நேரியல் சார்பின்மை மற்றும் அடிப்படை",
+        "hours": 5
+      },
+      {
+        "num": "3.2",
+        "title": "Linear transformations, rank-nullity theorem and eigenvalues",
+        "english": "Linear transformations, rank-nullity theorem and eigenvalues",
+        "sinhala": "රේඛීය පරිණාමන, පරාස-ශුන්‍යතා ප්‍රමේයය සහ අයිගන් අගයන්",
+        "tamil": "நேரியல் உருமாற்றங்கள், தரம்-வெறுமைத் தேற்றம் மற்றும் தனித்துவ பெறுமானங்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Hyperbolic Functions",
+    "english": "Hyperbolic Functions",
+    "sinhala": "හයිපර්බෝලීය ශ්‍රිත",
+    "sinhala_title": "ඒකකය 04: හයිපර්බෝලීය ශ්‍රිත",
+    "tamil": "அதிபரவளையச் சார்புகள்",
+    "tamil_title": "அலகு 04: அதிபரவளையச் சார்புகள்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Definitions, identities and graphs of hyperbolic functions",
+        "english": "Definitions, identities and graphs of hyperbolic functions",
+        "sinhala": "හයිපර්බෝලීය ශ්‍රිතවල අර්ථ දැක්වීම්, සර්වසාම්‍ය සහ ප්‍රස්තාර",
+        "tamil": "அதிபரவளையச் சார்புகளின் வரைவிலக்கணங்கள், முற்றொருமைகள் மற்றும் வரைபுகள்",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "title": "Inverse hyperbolic functions and logarithmic forms",
+        "english": "Inverse hyperbolic functions and logarithmic forms",
+        "sinhala": "ප්‍රතිලෝම හයිපර්බෝලීය ශ්‍රිත සහ ලඝුගණක ආකාර",
+        "tamil": "நேர்மாறு அதிபரவளையச் சார்புகள் மற்றும் மடக்கை வடிவங்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Differential Equations",
+    "english": "Differential Equations",
+    "sinhala": "අවකල සමීකරණ",
+    "sinhala_title": "ඒකකය 05: අවකල සමීකරණ",
+    "tamil": "வகையீட்டுச் சமன்பாடுகள்",
+    "tamil_title": "அலகு 05: வகையீட்டுச் சமன்பாடுகள்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "First order separable, homogeneous and linear differential equations",
+        "english": "First order separable, homogeneous and linear differential equations",
+        "sinhala": "පළමු පෙළ වියෝජ්‍ය, සමඝාත සහ රේඛීය අවකල සමීකරණ",
+        "tamil": "முதலாம் வரிசை பிரிபடத்தக்க, சமபடித்தான மற்றும் நேரியல் வகையீட்டுச் சமன்பாடுகள்",
+        "hours": 5
+      },
+      {
+        "num": "5.2",
+        "title": "Second order linear differential equations with constant coefficients",
+        "english": "Second order linear differential equations with constant coefficients",
+        "sinhala": "නියත සංගුණක සහිත දෙවන පෙළ රේඛීය අවකල සමීකරණ",
+        "tamil": "மாறாக் குணகங்களைக் கொண்ட இரண்டாம் வரிசை நேரியல் வகையீட்டுச் சமன்பாடுகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Multivariable Calculus",
+    "english": "Multivariable Calculus",
+    "sinhala": "බහුවිචල්‍ය කලනය",
+    "sinhala_title": "ඒකකය 06: බහුවිචල්‍ය කලනය",
+    "tamil": "பலமாறி நுண்கணிதம்",
+    "tamil_title": "அலகு 06: பலமாறி நுண்கணிதம்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "Functions of two variables and partial differentiation",
+        "english": "Functions of two variables and partial differentiation",
+        "sinhala": "විචල්‍ය දෙකෙහි ශ්‍රිත සහ ආංශික අවකලනය",
+        "tamil": "இரு மாறிகளின் சார்புகள் மற்றும் பகுதி வகையீடு",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "Total differential, chain rule and double integrals",
+        "english": "Total differential, chain rule and double integrals",
+        "sinhala": "සම්පූර්ණ අවකලය, දාම නීතිය සහ ද්විත්ව අනුකල",
+        "tamil": "மொத்த வகையீடு, சங்கிலி விதி மற்றும் இரட்டைத் தொகையீடுகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Circular Motion & Simple Harmonic Motion",
+    "english": "Circular Motion & Simple Harmonic Motion",
+    "sinhala": "වෘත්ත චලිතය සහ සරල අනුවර්තී චලිතය",
+    "sinhala_title": "ඒකකය 07: වෘත්ත චලිතය සහ සරල අනුවර්තී චලිතය",
+    "tamil": "வட்ட இயக்கமும் எளிய சீரிசை இயக்கமும்",
+    "tamil_title": "அலகு 07: வட்ட இயக்கமும் எளிய சீரிசை இயக்கமும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Horizontal and vertical circular motion",
+        "english": "Horizontal and vertical circular motion",
+        "sinhala": "තිරස් සහ සිරස් වෘත්ත චලිතය",
+        "tamil": "கிடை மற்றும் நிலைக்குத்து வட்ட இயக்கம்",
+        "hours": 5
+      },
+      {
+        "num": "7.2",
+        "title": "Simple harmonic motion, springs and simple pendulums",
+        "english": "Simple harmonic motion, springs and simple pendulums",
+        "sinhala": "සරල අනුවර්තී චලිතය, දුනු සහ සරල අවලම්බ",
+        "tamil": "எளிய சீரிசை இயக்கம், சுருளி வில்கள் மற்றும் எளிய ஊசல்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Rotation of Rigid Bodies & Moment of Inertia",
+    "english": "Rotation of Rigid Bodies & Moment of Inertia",
+    "sinhala": "දෘඪ වස්තුවල භ්‍රමණය සහ අවස්ථිති ඝූර්ණය",
+    "sinhala_title": "ඒකකය 08: දෘඪ වස්තුවල භ්‍රමණය සහ අවස්ථිති ඝූර්ණය",
+    "tamil": "திண்மப்பொருள்களின் சுழற்சியும் சடத்துவத் திருப்புத்திறனும்",
+    "tamil_title": "அலகு 08: திண்மப்பொருள்களின் சுழற்சியும் சடத்துவத் திருப்புத்திறனும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Calculation of moment of inertia of standard bodies",
+        "english": "Calculation of moment of inertia of standard bodies",
+        "sinhala": "සම්මත වස්තුවල අවස්ථිති ඝූර්ණය ගණනය කිරීම",
+        "tamil": "திட்டப் பொருள்களின் சடத்துவத் திருப்புத்திறனைக் கணித்தல்",
+        "hours": 5
+      },
+      {
+        "num": "8.2",
+        "title": "Angular momentum, rotational kinetic energy and dynamic equations",
+        "english": "Angular momentum, rotational kinetic energy and dynamic equations",
+        "sinhala": "කෝණික ගම්‍යතාව, භ්‍රමණ චාලක ශක්තිය සහ භ්‍රමණ ගතික සමීකරණ",
+        "tamil": "கோண உந்தம், சுழற்சி இயக்க சக்தி மற்றும் இயக்கவியல் சமன்பாடுகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 9,
+    "title": "Hydrostatics & Fluid Thrust",
+    "english": "Hydrostatics & Fluid Thrust",
+    "sinhala": "ජලස්ථිතිකය සහ ද්‍රව තෙරපුම",
+    "sinhala_title": "ඒකකය 09: ජලස්ථිතිකය සහ ද්‍රව තෙරපුම",
+    "tamil": "பாய்மநிலையியலும் பாய்ம உதைப்பும்",
+    "tamil_title": "அலகு 09: பாய்மநிலையியலும் பாய்ம உதைப்பும்",
+    "subUnits": [
+      {
+        "num": "9.1",
+        "title": "Fluid pressure at a depth and thrust on plane surfaces",
+        "english": "Fluid pressure at a depth and thrust on plane surfaces",
+        "sinhala": "ගැඹුරත් සමග ද්‍රව පීඩනය සහ තල පෘෂ්ඨ මත තෙරපුම",
+        "tamil": "ஆழத்துடன் பாய்ம அமுக்கம் மற்றும் தள மேற்பரப்புகளில் உதைப்பு",
+        "hours": 5
+      },
+      {
+        "num": "9.2",
+        "title": "Archimedes' principle, buoyancy and center of pressure",
+        "english": "Archimedes' principle, buoyancy and center of pressure",
+        "sinhala": "ආකිමිඩීස් මූලධර්මය, උඩුකුරු තෙරපුම සහ පීඩන කේන්ද්‍රය",
+        "tamil": "ஆக்கிமிடிசின் கொள்கை, மிதத்தல் மற்றும் அமுக்க மையம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 10,
+    "title": "Continuous Probability & Joint Distributions",
+    "english": "Continuous Probability & Joint Distributions",
+    "sinhala": "සන්තතික සම්භාවිතාව සහ සංයුක්ත ව්‍යාප්ති",
+    "sinhala_title": "ඒකකය 10: සන්තතික සම්භාවිතාව සහ සංයුක්ත ව්‍යාප්ති",
+    "tamil": "தொடர் நிகழ்தகவும் கூட்டுப் பரவல்களும்",
+    "tamil_title": "அலகு 10: தொடர் நிகழ்தகவும் கூட்டுப் பரவல்களும்",
+    "subUnits": [
+      {
+        "num": "10.1",
+        "title": "Continuous random variables, probability density and normal distribution",
+        "english": "Continuous random variables, probability density and normal distribution",
+        "sinhala": "සන්තතික සසම්භාවී විචල්‍ය, සම්භාවිතා ඝනත්ව ශ්‍රිතය සහ ප්‍රමත ව්‍යාප්තිය",
+        "tamil": "தொடர் எழுமாற்று மாறிகள், நிகழ்தகவு அடர்த்திச் சார்பு மற்றும் இயல்நிலைப் பரவல்",
+        "hours": 5
+      },
+      {
+        "num": "10.2",
+        "title": "Joint distributions, covariance and correlation",
+        "english": "Joint distributions, covariance and correlation",
+        "sinhala": "සංයුක්ත ව්‍යාප්ති, සහවිචල්‍යතාව සහ සහසම්බන්ධය",
+        "tamil": "கூட்டுப் பரவல்கள், இணைமாறுபாட்டளவு மற்றும் ஒட்டுறவு",
+        "hours": 5
+      }
+    ]
+  }
+]
