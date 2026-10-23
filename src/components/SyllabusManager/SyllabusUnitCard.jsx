@@ -1,12 +1,19 @@
 import SyllabusSubUnitItem from './SyllabusSubUnitItem';
 
-export default function SyllabusUnitCard({ unit }) {
+export default function SyllabusUnitCard({ unit, isExpanded = false, onToggle }) {
   const subCount = unit.subUnits?.length || 0;
   const subjectBadge = unit.subjectCode || unit.subject?.code || unit.subjectName || unit.subject?.name;
 
   return (
-    <div className="rounded-2xl border border-white/10 bg-[#070c18]/80 p-3.5 sm:p-4 space-y-3 shadow-sm">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 pb-2.5 border-b border-white/10">
+    <div className="rounded-2xl border border-white/10 bg-[#070c18]/80 p-3.5 sm:p-4 space-y-3 shadow-sm hover:border-white/20 transition">
+      <div
+        role="button"
+        tabIndex={0}
+        onClick={onToggle}
+        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onToggle?.(); } }}
+        className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 cursor-pointer select-none group"
+        aria-expanded={isExpanded}
+      >
         <div className="flex flex-wrap items-center gap-2">
           {subjectBadge && (
             <span className="px-2 py-0.5 rounded-lg bg-cyan-500/20 border border-cyan-500/40 text-cyan-300 font-mono text-[10px] font-bold">
@@ -16,32 +23,34 @@ export default function SyllabusUnitCard({ unit }) {
           <span className="px-2 py-0.5 rounded-lg bg-amber-500/20 border border-amber-500/40 text-amber-300 font-mono text-[11px] font-bold">
             UNIT {unit.num}
           </span>
-          <h4 className="text-xs sm:text-sm font-bold text-white tracking-wide">
+          <h4 className="text-xs sm:text-sm font-bold text-white group-hover:text-cyan-300 transition tracking-wide">
             {unit.title}
           </h4>
         </div>
-        <div className="flex flex-wrap items-center gap-2 self-start sm:self-auto">
-          {unit.sinhala && (
-            <span className="text-[11px] text-slate-400 font-medium font-sans">
+        <div className="flex items-center gap-2 self-start sm:self-auto shrink-0">
+          {unit.sinhala && unit.sinhala !== unit.title && (
+            <span className="text-[11px] text-slate-400 font-medium hidden md:inline">
               {unit.sinhala}
             </span>
           )}
-          {unit.tamil && (
-            <span className="text-[11px] text-slate-400 font-medium font-sans">
-              {unit.tamil}
-            </span>
-          )}
-          <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-surface-container border border-white/10 text-slate-300">
+          <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-slate-300">
             {subCount} {subCount === 1 ? 'sub-unit' : 'sub-units'}
           </span>
+          {subCount > 0 && (
+            <span className={`material-symbols-outlined text-[18px] text-slate-400 group-hover:text-cyan-300 transition-transform duration-200 ${isExpanded ? 'rotate-180 text-cyan-400' : ''}`}>
+              expand_more
+            </span>
+          )}
         </div>
       </div>
 
-      <div className="space-y-1.5">
-        {(unit.subUnits || []).map((su) => (
-          <SyllabusSubUnitItem key={su.num} subUnit={su} subjectBadge={subjectBadge} />
-        ))}
-      </div>
+      {isExpanded && subCount > 0 && (
+        <div className="space-y-1.5 pt-2 border-t border-white/10 animate-in fade-in duration-150">
+          {(unit.subUnits || []).map((su) => (
+            <SyllabusSubUnitItem key={su.num || su.id} subUnit={su} subjectBadge={subjectBadge} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

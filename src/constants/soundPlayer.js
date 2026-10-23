@@ -4,74 +4,72 @@ let activeLoopNode = null;
 function getAudioContext() {
   if (typeof window === 'undefined') return null;
   if (!audioCtx) {
-    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
-    if (AudioContextClass) audioCtx = new AudioContextClass();
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    if (AudioCtx) audioCtx = new AudioCtx();
   }
-  if (audioCtx && audioCtx.state === 'suspended') {
-    audioCtx.resume().catch(() => {});
-  }
+  if (audioCtx?.state === 'suspended') audioCtx.resume().catch(() => {});
   return audioCtx;
+}
+
+function playSoftChime(ctx) {
+  if (!ctx) return;
+  const now = ctx.currentTime;
+  [587.33, 880, 1174.66].forEach((freq, idx) => {
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    const start = now + idx * 0.12;
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(freq, start);
+    gain.gain.setValueAtTime(0.001, start);
+    gain.gain.linearRampToValueAtTime(0.2 / (idx + 1), start + 0.02);
+    gain.gain.exponentialRampToValueAtTime(0.0001, start + 1.8);
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.start(start);
+    osc.stop(start + 1.85);
+  });
 }
 
 export function playAlarmTone(type = 'radar_ping', duration = 0.5) {
   try {
     const ctx = getAudioContext();
     if (!ctx) return;
+    if (type === 'cyber_chime' || type === 'zen_bell') return playSoftChime(ctx);
     const osc = ctx.createOscillator();
     const gain = ctx.createGain();
     const now = ctx.currentTime;
-    if (type === 'cyber_chime') {
-      osc.type = 'triangle';
-      osc.frequency.setValueAtTime(880, now);
-      osc.frequency.exponentialRampToValueAtTime(1760, now + duration);
-    } else if (type === 'zen_bell') {
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(528, now);
-    } else if (type === 'lofi_synth') {
-      osc.type = 'triangle';
-      osc.frequency.setValueAtTime(330, now);
-      osc.frequency.exponentialRampToValueAtTime(440, now + duration);
-    } else if (type === 'pulse_alarm') {
-      osc.type = 'sawtooth';
-      osc.frequency.setValueAtTime(440, now);
-      osc.frequency.setValueAtTime(880, now + duration / 2);
-    } else {
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(659.25, now);
-      osc.frequency.exponentialRampToValueAtTime(440, now + duration);
-    }
-    gain.gain.setValueAtTime(0.35, now);
+    osc.type = type === 'lofi_synth' ? 'triangle' : 'sine';
+    osc.frequency.setValueAtTime(type === 'lofi_synth' ? 440 : 659.25, now);
+    osc.frequency.exponentialRampToValueAtTime(880, now + duration);
+    gain.gain.setValueAtTime(0.2, now);
     gain.gain.exponentialRampToValueAtTime(0.001, now + duration);
     osc.connect(gain);
     gain.connect(ctx.destination);
     osc.start(now);
     osc.stop(now + duration);
-  } catch (err) {}
+  } catch {
+    return;
+  }
 }
 
-export function startAlarmLoop(type = 'pulse_alarm') {
+export function startAlarmLoop() {
   stopAlarmLoop();
   try {
     const ctx = getAudioContext();
     if (!ctx) return;
-    const osc = ctx.createOscillator();
-    const gain = ctx.createGain();
-    osc.type = type === 'zen_bell' ? 'sine' : type === 'lofi_synth' ? 'triangle' : type === 'cyber_chime' ? 'triangle' : 'sawtooth';
-    osc.frequency.setValueAtTime(type === 'lofi_synth' ? 330 : 660, ctx.currentTime);
-    gain.gain.setValueAtTime(0.3, ctx.currentTime);
-    osc.connect(gain);
-    gain.connect(ctx.destination);
-    osc.start();
-    activeLoopNode = { osc, gain, ctx };
-  } catch (e) {}
+    playSoftChime(ctx);
+    const intervalId = setInterval(() => { const c = getAudioContext(); if (c) playSoftChime(c); }, 2800);
+    const timeoutId = setTimeout(() => stopAlarmLoop(), 60000);
+    activeLoopNode = { intervalId, timeoutId };
+  } catch {
+    return;
+  }
 }
 
 export function stopAlarmLoop() {
   if (activeLoopNode) {
-    try {
-      activeLoopNode.gain.gain.setValueAtTime(0.001, activeLoopNode.ctx.currentTime);
-      activeLoopNode.osc.stop();
-    } catch (e) {}
+    if (activeLoopNode.intervalId) clearInterval(activeLoopNode.intervalId);
+    if (activeLoopNode.timeoutId) clearTimeout(activeLoopNode.timeoutId);
     activeLoopNode = null;
   }
 }

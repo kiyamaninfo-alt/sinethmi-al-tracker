@@ -1,27 +1,30 @@
 import { useState } from 'react';
 import { useGlobalFocusTimer } from '../../context/FocusTimerContext';
 import { useSubjectLessonSelection } from '../../hooks/useSubjectLessonSelection';
+import { MOCK_100_SUBJECTS } from '../../constants/streamSubjects';
 import FocusTimerHeader from './FocusTimerHeader';
 import SubjectLessonDisplay from './SubjectLessonDisplay';
 import TimerGauge from './TimerGauge';
 import TimerControls from './TimerControls';
-import VideoFocusPopup from './VideoFocusPopup';
-import AlarmAlertModal from './AlarmAlertModal';
-import SessionConfirmModal from './SessionConfirmModal';
-import VideoClosePromptModal from './VideoClosePromptModal';
-import FocusAlarmSettingsModal from './FocusAlarmSettingsModal';
+import FocusTimerModals from './FocusTimerModals';
 
 export default function DeepFocusTimer() {
   const { timer, profile } = useGlobalFocusTimer();
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-  const subjects = profile?.subjects || [];
+  const subjects = profile?.subjects?.length > 0 ? profile.subjects : MOCK_100_SUBJECTS.slice(0, 3);
   const { openModal, renderModal } = useSubjectLessonSelection(timer);
+  const duration = Number(profile?.alarmSettings?.durationMinutes || 50);
 
-  const handleAlarmSettingsChange = (newAlarmSettings) => {
-    if (profile?.updateProfile) {
-      profile.updateProfile((prev) => ({ ...prev, alarmSettings: newAlarmSettings }));
+  const handleStartProcess = () => {
+    if (!timer.selectedSubjectId || !timer.selectedLessonId) {
+      return openModal();
     }
+    timer.startFocusSession(timer.selectedSubjectId, timer.selectedLessonId);
   };
+
+  const updateAlarm = (updater) => profile?.updateProfile?.((p) => ({
+    ...p, alarmSettings: typeof updater === 'function' ? updater(p.alarmSettings || {}) : updater
+  }));
 
   return (
     <section id="deep-focus-timer" className="lg:col-span-7 glass-panel rounded-3xl p-6 sm:p-7 relative overflow-hidden flex flex-col justify-between scroll-mt-24">
@@ -31,47 +34,28 @@ export default function DeepFocusTimer() {
         isVideoOpen={timer.showVideo} onToggleVideo={() => timer.setShowVideo(!timer.showVideo)}
         onOpenSettings={() => setIsSettingsOpen(true)}
       />
-
       <SubjectLessonDisplay
         subjects={subjects} selectedSubjectId={timer.selectedSubjectId}
         selectedLessonId={timer.selectedLessonId} onChangeClick={openModal}
       />
-
       <div className="my-5 flex flex-col items-center justify-center">
         <TimerGauge
           secondsLeft={timer.secondsLeft} totalSeconds={timer.totalSeconds}
           isActive={timer.isActive} isPaused={timer.isPaused}
           sessionMode={timer.sessionMode} currentRound={timer.currentRound} totalRounds={timer.totalRounds}
         />
-
         <TimerControls
           isActive={timer.isActive} isPaused={timer.isPaused} sessionMode={timer.sessionMode}
-          canStart={true} onStart={openModal} onPause={timer.handlePause}
+          canStart={true} onStart={handleStartProcess} onPause={timer.handlePause}
           onResume={timer.handleResume} onReset={timer.handleReset}
+          duration={duration} onSelectDuration={(m) => updateAlarm((prev) => ({ ...prev, durationMinutes: m }))}
         />
       </div>
-
-      {timer.showVideo && (
-        <VideoFocusPopup
-          videoUrl={timer.videoUrl} isPaused={timer.isPaused} secondsLeft={timer.secondsLeft}
-          sessionMode={timer.sessionMode} language={timer.language}
-          onClose={timer.handleRequestCloseVideo}
-          onTogglePause={() => (timer.isPaused ? timer.handleResume() : timer.handlePause())}
-        />
-      )}
-
-      <VideoClosePromptModal
-        isOpen={timer.promptCloseVideo} onYes={timer.handleConfirmCloseVideo}
-        onNo={timer.handleCancelCloseVideo} language={timer.language}
+      <FocusTimerModals
+        timer={timer} profile={profile} subjects={subjects}
+        isSettingsOpen={isSettingsOpen} setIsSettingsOpen={setIsSettingsOpen}
+        onAlarmSettingsChange={(s) => updateAlarm(s)} renderModal={renderModal}
       />
-
-      <AlarmAlertModal message={timer.modalAlert} onConfirm={timer.stopAlarm} language={timer.language} />
-
-      {timer.pendingNextRound && (
-        <SessionConfirmModal round={timer.pendingNextRound} onConfirm={timer.handleConfirmNextRound} onCancel={timer.handleCancelNextRound} language={timer.language} />
-      )}
-      {renderModal(subjects)}
-      <FocusAlarmSettingsModal isOpen={isSettingsOpen} onClose={() => setIsSettingsOpen(false)} settings={profile?.alarmSettings || {}} onChange={handleAlarmSettingsChange} />
     </section>
   );
 }

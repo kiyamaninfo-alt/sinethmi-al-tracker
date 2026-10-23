@@ -8,6 +8,7 @@ import CircadianHeatmapMatrix from './CircadianHeatmapMatrix';
 import MemoryDecayCurveChart from './MemoryDecayCurveChart';
 import SubjectLoadDonut from './SubjectLoadDonut';
 import MCQMasteryBars from './MCQMasteryBars';
+import RadarAndQueueSection from './RadarAndQueueSection';
 import VisualAnalyticsFooter from './VisualAnalyticsFooter';
 
 export default function VisualAnalyticsDashboard({ onBack }) {
@@ -31,6 +32,8 @@ export default function VisualAnalyticsDashboard({ onBack }) {
           <SubjectLoadDonut />
           <MCQMasteryBars />
         </section>
+
+        <RadarAndQueueSection />
       </main>
 
       <VisualAnalyticsFooter />

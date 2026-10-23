@@ -11,12 +11,15 @@ export function useSubjectLessonSelection(timer) {
     timer.setShowSubjectModal(true);
   };
 
-  const handleConfirm = () => {
-    timer.setSelectedSubjectId(tempSubjectId);
-    timer.setSelectedLessonId(tempLessonId);
+  const handleConfirm = (subId, lesId) => {
+    const finalSub = subId || tempSubjectId;
+    const finalLes = lesId || tempLessonId;
+    if (!finalSub || !finalLes) return;
+    timer.setSelectedSubjectId(finalSub);
+    timer.setSelectedLessonId(finalLes);
     timer.setShowSubjectModal(false);
     if (!timer.isActive) {
-      timer.startFocusSession(tempSubjectId, tempLessonId);
+      timer.startFocusSession(finalSub, finalLes);
     }
   };
 

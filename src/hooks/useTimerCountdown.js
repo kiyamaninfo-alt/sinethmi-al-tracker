@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { getTimerMessages } from '../constants/timerMessages';
 
 export function useTimerCountdown({
@@ -6,9 +6,11 @@ export function useTimerCountdown({
   currentRound, totalRounds, durationMin, breakMin,
   setSecondsLeft, preAlarmFired, triggerSound, startAlarm,
   setModalAlert, setIsPaused, setIsActive,
-  setPendingNextRound, setShowVideo, language = 'si'
+  setPendingNextRound, setShowVideo, language = 'si',
+  onStudyCompleted
 }) {
   const msgs = getTimerMessages(language);
+  const reportedRoundRef = useRef(null);
 
   useEffect(() => {
     if (!isActive || isPaused) return;
@@ -17,6 +19,10 @@ export function useTimerCountdown({
         if (prev <= 1) {
           startAlarm();
           if (sessionMode === 'study') {
+            if (reportedRoundRef.current !== currentRound) {
+              reportedRoundRef.current = currentRound;
+              if (typeof onStudyCompleted === 'function') onStudyCompleted({ currentRound, durationMin });
+            }
             if (currentRound >= totalRounds) {
               setIsActive(false);
               setShowVideo(false);
@@ -28,7 +34,7 @@ export function useTimerCountdown({
             setModalAlert(msgs.sessionCompleted);
             return breakMin * 60;
           }
-          // Break/rest finished
+          reportedRoundRef.current = null;
           setIsPaused(true);
           preAlarmFired.current = false;
           if (currentRound < totalRounds) {
@@ -44,5 +50,5 @@ export function useTimerCountdown({
       });
     }, 1000);
     return () => clearInterval(interval);
-  }, [isActive, isPaused, sessionMode, currentRound, totalRounds, durationMin, breakMin, language]);
+  }, [isActive, isPaused, sessionMode, currentRound, totalRounds, durationMin, breakMin, language, onStudyCompleted]);
 }

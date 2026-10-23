@@ -8,6 +8,13 @@ export default function SubjectLessonModal({
   const currentSubject = subjects.find((s) => s.id === tempSubjectId);
   const units = currentSubject ? getUnitsForSubject(currentSubject) : [];
 
+  const handleProceed = () => {
+    if (!tempSubjectId) return;
+    const finalLesson = tempLessonId || (units[0]?.subUnits[0] ? `${units[0].num}-${units[0].subUnits[0].num}` : '');
+    if (!finalLesson) return;
+    onConfirm(tempSubjectId, finalLesson);
+  };
+
   return (
     <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
       <div className="bg-[#0b1020] border border-cyan-400/40 rounded-3xl max-w-md w-full p-5 sm:p-6 space-y-4 shadow-2xl animate-in fade-in zoom-in-95 duration-150">
@@ -44,7 +51,7 @@ export default function SubjectLessonModal({
               onChange={(e) => onSelectLesson(e.target.value)}
               className="w-full bg-[#070b18] border border-white/15 rounded-xl px-3 py-2 text-xs text-white font-medium focus:border-cyan-400 focus:outline-none cursor-pointer disabled:opacity-40"
             >
-              <option value="">-- Select Lesson --</option>
+              <option value="">-- Select Lesson (Default: First Lesson) --</option>
               {units.map((u) => (
                 <optgroup key={u.num} label={`Unit ${u.num}: ${u.title}`}>
                   {u.subUnits.map((su) => (
@@ -60,7 +67,7 @@ export default function SubjectLessonModal({
           <button type="button" onClick={onClose} className="flex-1 py-2.5 rounded-xl bg-surface-container border border-white/10 text-slate-300 text-xs font-mono font-bold hover:bg-white/10 cursor-pointer">
             Cancel
           </button>
-          <button type="button" disabled={!tempSubjectId || !tempLessonId} onClick={onConfirm} className="flex-1 py-2.5 rounded-xl bg-cyan-400 disabled:opacity-40 text-slate-950 text-xs font-mono font-bold shadow-md shadow-cyan-400/20 hover:brightness-110 cursor-pointer">
+          <button type="button" disabled={!tempSubjectId} onClick={handleProceed} className="flex-1 py-2.5 rounded-xl bg-cyan-400 disabled:opacity-40 text-slate-950 text-xs font-mono font-bold shadow-md shadow-cyan-400/20 hover:brightness-110 cursor-pointer">
             Confirm &amp; Proceed
           </button>
         </div>

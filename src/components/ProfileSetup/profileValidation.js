@@ -36,18 +36,27 @@ export function getMissingStepIdsForProfile(profile) {
   return getMissingTourStepIds(validateProfile(profile));
 }
 
-export function isReturningVisitor(profile) {
+export function isProfileDataAvailable(profile) {
+  if (profile) {
+    if (profile.name?.trim() || profile.stream?.trim() || profile.phone?.trim() || profile.school?.trim()) return true;
+    if (profile.district?.trim() || profile.town?.trim() || (profile.candidateIndex && String(profile.candidateIndex).trim())) return true;
+    if (Array.isArray(profile.subjects) && profile.subjects.length > 0) return true;
+  }
   try {
-    if (localStorage.getItem('has_visited') === 'true') return true;
     if (localStorage.getItem('onboarding_completed') === 'true') return true;
-    if (profile?.userId || profile?.email) return true;
-    const saved = localStorage.getItem('candidate_profile');
-    if (saved) {
-      const p = JSON.parse(saved);
-      if (p?.userId || p?.name?.trim() || p?.stream) return true;
+    const raw = localStorage.getItem('candidate_profile');
+    if (raw) {
+      const p = JSON.parse(raw);
+      if (p?.name?.trim() || p?.stream?.trim() || p?.phone?.trim() || p?.school?.trim() || p?.subjects?.length) return true;
     }
-  } catch {}
+  } catch {
+    return false;
+  }
   return false;
+}
+
+export function isReturningVisitor(profile) {
+  return isProfileDataAvailable(profile);
 }
 
 export function highlightField(elementId) {

@@ -1,9 +1,12 @@
+import { useNavigate } from 'react-router-dom';
 import ScoreKpis from './ScoreKpis';
 import ScoreChart from './ScoreChart';
 import ScoreTables from './ScoreTables';
 import ProgressionSubCharts from './ProgressionSubCharts';
 
 export default function ScoreAnalytics() {
+  const navigate = useNavigate();
+
   return (
     <section className="glass-panel rounded-3xl p-6 space-y-6">
       <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-white/5">
@@ -50,6 +53,15 @@ export default function ScoreAnalytics() {
       <ScoreChart />
       <ScoreTables />
       <ProgressionSubCharts />
+
+      <button
+        type="button"
+        onClick={() => navigate('/visual-analytics')}
+        className="w-full py-3.5 rounded-2xl font-bold text-xs sm:text-sm bg-gradient-to-r from-neon-cyan/20 via-neon-violet/20 to-neon-emerald/20 hover:from-neon-cyan/30 hover:via-neon-violet/30 hover:to-neon-emerald/30 text-white border border-neon-cyan/40 hover:border-neon-cyan transition flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-neon-cyan/10 group"
+      >
+        <span className="material-symbols-outlined text-[18px] text-neon-cyan group-hover:rotate-12 transition-transform">monitoring</span>
+        <span>Open Deep Visual Analytics, Radars &amp; Spaced Repetition →</span>
+      </button>
     </section>
   );
 }

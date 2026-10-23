@@ -1,8 +1,13 @@
 import SyllabusUnitCard from './SyllabusUnitCard';
 
-export default function SyllabusResultsList({ units = [], searchQuery = '', currentSubject, selectedSubjectId }) {
+export default function SyllabusResultsList({
+  units = [], searchQuery = '', currentSubject, selectedSubjectId,
+  expandedUnits = {}, onToggleUnit
+}) {
+  const isSearching = Boolean(searchQuery.trim());
+
   if (units.length === 0) {
-    if (!selectedSubjectId && !searchQuery.trim()) {
+    if (!selectedSubjectId && !isSearching) {
       return (
         <div className="py-12 px-4 text-center rounded-2xl border border-dashed border-white/10 bg-white/[0.01]">
           <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mx-auto mb-3">
@@ -32,12 +37,19 @@ export default function SyllabusResultsList({ units = [], searchQuery = '', curr
 
   return (
     <div className="space-y-3 pr-1 flex-1 overflow-y-auto custom-scrollbar">
-      {units.map((unit) => (
-        <SyllabusUnitCard
-          key={`${unit.subjectId || unit.subjectCode || ''}-${unit.num}`}
-          unit={unit}
-        />
-      ))}
+      {units.map((unit) => {
+        const unitKey = `${unit.subjectId || unit.subjectCode || currentSubject?.id || ''}-${unit.num}`;
+        const isExpanded = isSearching || Boolean(expandedUnits[unitKey]);
+        return (
+          <SyllabusUnitCard
+            key={unitKey}
+            unit={unit}
+            isExpanded={isExpanded}
+            onToggle={() => onToggleUnit?.(unitKey)}
+            isSearching={isSearching}
+          />
+        );
+      })}
     </div>
   );
 }

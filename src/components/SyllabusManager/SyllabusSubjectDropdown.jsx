@@ -1,4 +1,6 @@
-export default function SyllabusSubjectDropdown({ subjects = [], selectedSubjectId, onSelectSubject }) {
+export default function SyllabusSubjectDropdown({
+  subjects = [], selectedSubjectId, onSelectSubject, language = 'si'
+}) {
   return (
     <div className="space-y-1.5">
       <label className="text-[11px] font-mono uppercase tracking-wider text-slate-300 flex items-center gap-1.5">
@@ -16,10 +18,15 @@ export default function SyllabusSubjectDropdown({ subjects = [], selectedSubject
           </option>
           {subjects.map((sub) => {
             const code = sub.code || sub.name;
-            const sinhalaPart = sub.sinhala ? ` (${sub.sinhala})` : '';
+            const localizedName = language === 'si'
+              ? (sub.sinhala || sub.name)
+              : language === 'ta'
+              ? (sub.tamil || sub.name)
+              : sub.name;
+            const extraPart = (language !== 'si' && sub.sinhala) ? ` (${sub.sinhala})` : '';
             return (
               <option key={sub.id || sub.code} value={sub.id} className="bg-[#0b1020] text-white">
-                {code} &bull; {sub.name}{sinhalaPart}
+                {code} &bull; {localizedName}{extraPart}
               </option>
             );
           })}

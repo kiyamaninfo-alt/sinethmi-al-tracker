@@ -1,8 +1,10 @@
 import { useNavigate } from 'react-router-dom';
+import { useStudyStreak } from '../../hooks/useStudyStreak';
+import { HEATMAP_LEVEL_CLS } from '../../utils/streakCalculator';
 
 export default function ActivityHeatmap() {
   const navigate = useNavigate();
-  const days = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+  const { streakCount, todayMinutes, vsYesterday, heatmapDays } = useStudyStreak();
 
   return (
     <section className="lg:col-span-5 glass-panel rounded-3xl p-6 sm:p-7 flex flex-col justify-between gap-5">
@@ -20,7 +22,7 @@ export default function ActivityHeatmap() {
           <div className="flex items-center gap-1.5 text-xs text-amber-400 font-semibold mb-1">
             <span>🔥</span> Streak Count
           </div>
-          <div className="text-3xl font-black font-mono text-white tracking-tight">1 <span className="text-lg font-sans font-medium text-slate-300">Days</span></div>
+          <div className="text-3xl font-black font-mono text-white tracking-tight">{streakCount} <span className="text-lg font-sans font-medium text-slate-300">Days</span></div>
           <p className="text-[10px] text-slate-400 mt-1">දෛනික අඛණ්ඩ ඉලක්කය</p>
         </div>
 
@@ -29,8 +31,10 @@ export default function ActivityHeatmap() {
           <div className="flex items-center gap-1.5 text-xs text-neon-cyan font-semibold mb-1">
             <span>⏱️</span> Today Focused
           </div>
-          <div className="text-3xl font-black font-mono text-white tracking-tight">325 <span className="text-lg font-sans font-medium text-slate-300">m</span></div>
-          <p className="text-[10px] text-emerald-400 mt-1">▲ 18% vs ඊයේ දිනට සාපේක්ෂව</p>
+          <div className="text-3xl font-black font-mono text-white tracking-tight">{todayMinutes} <span className="text-lg font-sans font-medium text-slate-300">m</span></div>
+          <p className={`text-[10px] mt-1 ${vsYesterday.isIncrease ? 'text-emerald-400' : 'text-slate-400'}`}>
+            {vsYesterday.isIncrease ? '▲' : '▼'} {vsYesterday.pct}% vs ඊයේ දිනට සාපේක්ෂව
+          </p>
         </div>
       </div>
 
@@ -41,18 +45,12 @@ export default function ActivityHeatmap() {
         </div>
 
         <div className="grid grid-cols-7 gap-1.5 pt-1">
-          {days.map((d, i) => (
-            <div key={`d1-${i}`} className="h-6 rounded bg-neon-cyan/40 border border-neon-cyan/40 flex items-center justify-center text-[9px] text-slate-200 font-bold">
-              {d}
-            </div>
+          {heatmapDays.slice(7).map((d, i) => (
+            <div key={`hdr-${i}`} className="h-5 rounded bg-neon-cyan/20 flex items-center justify-center text-[9px] text-slate-300 font-bold">{d.label}</div>
           ))}
-          <div className="h-6 rounded bg-neon-cyan/30 border border-white/5" />
-          <div className="h-6 rounded bg-neon-cyan/60 border border-white/5" />
-          <div className="h-6 rounded bg-neon-cyan/40 border border-white/5" />
-          <div className="h-6 rounded bg-emerald-500/80 border border-emerald-400 shadow-glow-emerald/30" />
-          <div className="h-6 rounded bg-neon-cyan/70 border border-white/5" />
-          <div className="h-6 rounded bg-neon-violet/80 border border-neon-violet" />
-          <div className="h-6 rounded bg-gradient-to-tr from-neon-cyan to-neon-violet animate-pulse border border-white" />
+          {heatmapDays.map((cell) => (
+            <div key={cell.date} title={`${cell.date}: ${cell.minutes}m focus`} className={`h-5 rounded border transition-all ${HEATMAP_LEVEL_CLS[cell.level]} ${cell.isToday ? 'ring-1 ring-white/80' : ''}`} />
+          ))}
         </div>
 
         <div className="flex items-center justify-between text-[10px] text-slate-400 pt-1">
@@ -60,15 +58,15 @@ export default function ActivityHeatmap() {
           <div className="flex items-center gap-1">
             <span className="w-2.5 h-2.5 rounded-sm bg-white/10" />
             <span className="w-2.5 h-2.5 rounded-sm bg-neon-cyan/30" />
-            <span className="w-2.5 h-2.5 rounded-sm bg-neon-cyan/70" />
-            <span className="w-2.5 h-2.5 rounded-sm bg-neon-cyan" />
+            <span className="w-2.5 h-2.5 rounded-sm bg-neon-cyan/60" />
+            <span className="w-2.5 h-2.5 rounded-sm bg-emerald-500/80" />
             <span className="w-2.5 h-2.5 rounded-sm bg-neon-violet" />
           </div>
           <span>උපරිම (Intense)</span>
         </div>
       </div>
 
-      <button type="button" onClick={() => navigate('/study-analytics')} className="w-full py-3 rounded-xl font-bold text-xs sm:text-sm bg-neon-violet/20 hover:bg-neon-violet/30 text-neon-violet border border-neon-violet/40 hover:border-neon-violet transition flex items-center justify-center gap-2 cursor-pointer">
+      <button type="button" onClick={() => navigate('/study-analytics')} className="w-full py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-neon-violet/20 hover:bg-neon-violet/30 text-neon-violet border border-neon-violet/40 hover:border-neon-violet transition flex items-center justify-center gap-2 cursor-pointer">
         <span>📊</span> View Full Analytics &amp; Spaced Heatmap Matrix
       </button>
     </section>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { fetchDBSubjects, fetchAllSyllabus } from '../services/syllabusService';
 
-export function useSyllabusData(initialSubjects = []) {
+export function useSyllabusData(initialSubjects = [], language = 'si') {
   const [subjects, setSubjects] = useState(initialSubjects);
   const [syllabusMap, setSyllabusMap] = useState({});
   const [isLoading, setIsLoading] = useState(false);
@@ -23,7 +23,7 @@ export function useSyllabusData(initialSubjects = []) {
       }
 
       if (currentSubs.length) {
-        const map = await fetchAllSyllabus(currentSubs);
+        const map = await fetchAllSyllabus(currentSubs, language);
         if (active) {
           setSyllabusMap(map);
           if (!error && dbSubs?.length) setIsDbConnected(true);
@@ -34,7 +34,7 @@ export function useSyllabusData(initialSubjects = []) {
 
     loadData();
     return () => { active = false; };
-  }, [initialSubjects]);
+  }, [initialSubjects, language]);
 
   return { subjects, syllabusMap, isLoading, isDbConnected };
 }
