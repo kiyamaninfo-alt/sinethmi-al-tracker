@@ -40,7 +40,7 @@ export const MOCK_PROFILE = {
   subjectScoreTargets: { 'subj-007': '88', 'subj-008': '92', 'subj-005': '85' },
   subjects: [
     { id: 'subj-007', code: 'AL-007', name: 'Engineering Technology', sinhala: 'ඉංජිනේරු තාක්ෂණය', category: 'core', color: 'emerald', hours: 14, units: 14, credits: 4.0 },
-    { id: 'subj-008', code: 'AL-008', name: 'Science for Technology', sinhala: 'තාක්ෂණවේදය සඳහා විද්‍යාව', category: 'core', color: 'cyan', hours: 12, units: 16, credits: 4.0 },
-    { id: 'subj-005', code: 'AL-005', name: 'Information & Communication Tech', sinhala: 'තොරතුරු තාක්ෂණය', category: 'core', color: 'violet', hours: 10, units: 12, credits: 4.0 }
+    { id: 'subj-008', code: 'AL-008', name: 'Science for Technology', sinhala: 'තාක්ෂණවේදය සඳහා විද්‍යාව', category: 'core', color: 'cyan', hours: 12, units: 23, credits: 4.0 },
+    { id: 'subj-005', code: 'AL-005', name: 'Information & Communication Tech', sinhala: 'තොරතුරු තාක්ෂණය', category: 'core', color: 'violet', hours: 10, units: 13, credits: 4.0 }
   ]
 };
