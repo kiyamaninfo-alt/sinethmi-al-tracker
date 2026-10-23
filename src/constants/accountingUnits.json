@@ -1,0 +1,353 @@
+[
+  {
+    "num": 1,
+    "title": "Introduction to Accounting & Regulatory Framework",
+    "english": "Introduction to Accounting & Regulatory Framework",
+    "sinhala": "ගිණුම්කරණය හැඳින්වීම සහ නියාමන රාමුව",
+    "sinhala_title": "ඒකකය 01: ගිණුම්කරණය හැඳින්වීම සහ නියාමන රාමුව",
+    "tamil": "கணக்கியல் ஓர் அறிமுகமும் ஒழுங்குமுறை கட்டமைப்பும்",
+    "tamil_title": "அலகு 01: கணக்கியல் அறிமுகமும் ஒழுங்குமுறைக் கட்டமைப்பும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Nature, purpose and scope of accounting and user information needs",
+        "english": "Nature, purpose and scope of accounting and user information needs",
+        "sinhala": "ගිණුම්කරණයේ ස්වභාවය, අරමුණ, විෂය පථය සහ තොරතුරු අවශ්‍යතා",
+        "tamil": "கணக்கியலின் தன்மை, நோக்கம், எல்லை மற்றும் பயனர்களின் தேவைகள்",
+        "hours": 5
+      },
+      {
+        "num": "1.2",
+        "title": "Sri Lanka Accounting Standards (LKAS/SLFRS) and conceptual framework",
+        "english": "Sri Lanka Accounting Standards (LKAS/SLFRS) and conceptual framework",
+        "sinhala": "ශ්‍රී ලංකා ගිණුම්කරණ ප්‍රමිති (LKAS/SLFRS) සහ සංකල්පීය රාමුව",
+        "tamil": "இலங்கை கணக்கியல் தரநிலைகளும் (LKAS) எண்ணக்கருக் கட்டமைப்பும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Accounting Equation & Business Transactions",
+    "english": "Accounting Equation & Business Transactions",
+    "sinhala": "ගිණුම්කරණ සමීකරණය සහ ව්‍යාපාරික ගනුදෙනු",
+    "sinhala_title": "ඒකකය 02: ගිණුම්කරණ සමීකරණය සහ ගනුදෙනු",
+    "tamil": "கணக்கீட்டுச் சமன்பாடும் வணிக கொடுக்கல்வாங்கல்களும்",
+    "tamil_title": "அலகு 02: கணக்கீட்டுச் சமன்பாடும் கொடுக்கல்வாங்கல்களும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Elements of accounting equation: Assets, liabilities and equity",
+        "english": "Elements of accounting equation: Assets, liabilities and equity",
+        "sinhala": "ගිණුම්කරණ සමීකරණයේ මූලද්‍රව්‍ය: වත්කම්, වගකීම් සහ හිමිකම",
+        "tamil": "கணக்கீட்டுச் சமன்பாட்டின் கூறுகள்: சொத்துக்கள், பொறுப்புக்கள், உரிமை",
+        "hours": 5
+      },
+      {
+        "num": "2.2",
+        "title": "Effects of business events on equity, income, expenses and net assets",
+        "english": "Effects of business events on equity, income, expenses and net assets",
+        "sinhala": "ව්‍යාපාරික සිදුවීම්වලින් හිමිකම, ආදායම්, වියදම් සහ ශුද්ධ වත්කම්වලට වන බලපෑම",
+        "tamil": "கொடுக்கல்வாங்கல்களினால் உரிமை, வருமானம், செலவுகள் மீதான தாக்கம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Source Documents & Books of Prime Entry",
+    "english": "Source Documents & Books of Prime Entry",
+    "sinhala": "මූලාශ්‍ර ලේඛන සහ ප්‍රාථමික සටහන් පොත්",
+    "sinhala_title": "ඒකකය 03: මූලාශ්‍ර ලේඛන සහ ප්‍රාථමික සටහන් පොත්",
+    "tamil": "மூல ஆவணங்களும் முதன்மைப் பதிவேடுகளும்",
+    "tamil_title": "அலகு 03: மூல ஆவணங்களும் முதன்மைப் பதிவேடுகளும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Source documents and recording in sales, purchases and returns journals",
+        "english": "Source documents and recording in sales, purchases and returns journals",
+        "sinhala": "මූලාශ්‍ර ලේඛන සහ විකුණුම්, ගැණුම්, ආපසු ජර්නල්වල සටහන් කිරීම",
+        "tamil": "மூல ஆவணங்கள் மற்றும் விற்பனை, கொள்வனவு, திருப்ப நாட்குறிப்பேடுகள்",
+        "hours": 5
+      },
+      {
+        "num": "3.2",
+        "title": "Cash book, petty cash book (imprest system) and general journal",
+        "english": "Cash book, petty cash book (imprest system) and general journal",
+        "sinhala": "මුදල් පොත, සුළු මුදල් පොත (අත්තිකාරම් ක්‍රමය) සහ පොදු ජර්නලය",
+        "tamil": "காசுப் புத்தகம், சில்லறைக் காசுப் புத்தகம் மற்றும் பொது நாட்குறிப்பேடு",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Double Entry System, Ledgers & Trial Balance",
+    "english": "Double Entry System, Ledgers & Trial Balance",
+    "sinhala": "ද්විත්ව සටහන් ක්‍රමය, ලෙජරය සහ ශේෂ පිරික්සුම",
+    "sinhala_title": "ඒකකය 04: ද්විත්ව සටහන්, ලෙජරය සහ ශේෂ පිරික්සුම",
+    "tamil": "இரட்டைப் பதிவு முறை, பேரேடுகளும் ஐந்தொகையும்",
+    "tamil_title": "அலகு 04: இரட்டைப் பதிவு முறை, பேரேடுகளும் ஐந்தொகையும்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Rules of debit and credit, ledger accounts and balance extraction",
+        "english": "Rules of debit and credit, ledger accounts and balance extraction",
+        "sinhala": "හර-බැර නීති, ලෙජර් ගිණුම් සහ ශේෂයන් ලබා ගැනීම",
+        "tamil": "வரவு-செலவு விதிகள், பேரேட்டுக் கணக்குகள் மற்றும் மீதி பிரித்தெடுத்தல்",
+        "hours": 5
+      },
+      {
+        "num": "4.2",
+        "title": "Preparation, uses and limitations of the Trial Balance",
+        "english": "Preparation, uses and limitations of the Trial Balance",
+        "sinhala": "ශේෂ පිරික්සුම පිළියෙල කිරීම, ප්‍රයෝජන සහ සීමාවන්",
+        "tamil": "ஐந்தொகையைத் தயாரித்தல், பயன்பாடுகள் மற்றும் எல்லைகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Bank Reconciliation Statements",
+    "english": "Bank Reconciliation Statements",
+    "sinhala": "බැංකු සැසඳුම් ප්‍රකාශනය",
+    "sinhala_title": "ඒකකය 05: බැංකු සැසඳුම් ප්‍රකාශනය",
+    "tamil": "வங்கி இணக்கக் கூற்றுக்கள்",
+    "tamil_title": "அலகு 05: வங்கி இணக்கக் கூற்றுக்கள்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "Causes of differences between cash book and bank passbook/statement",
+        "english": "Causes of differences between cash book and bank passbook/statement",
+        "sinhala": "මුදල් පොත සහ බැංකු ප්‍රකාශනය අතර වෙනස්කම්වලට හේතු",
+        "tamil": "காசுப் புத்தகத்திற்கும் வங்கி கூற்றுக்கும் இடையிலான முரண்பாட்டுக் காரணங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "5.2",
+        "title": "Adjusting the cash book and preparation of Bank Reconciliation Statement",
+        "english": "Adjusting the cash book and preparation of Bank Reconciliation Statement",
+        "sinhala": "මුදල් පොත ගැලපීම සහ බැංකු සැසඳුම් ප්‍රකාශනය පිළියෙල කිරීම",
+        "tamil": "திருத்திய காசுப் புத்தகம் மற்றும் வங்கி இணக்கக் கூற்று தயாரித்தல்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Control Accounts & Correction of Errors",
+    "english": "Control Accounts & Correction of Errors",
+    "sinhala": "පාලන ගිණුම් සහ වැරදි නිවැරදි කිරීම",
+    "sinhala_title": "ඒකකය 06: පාලන ගිණුම් සහ වැරදි නිවැරදි කිරීම",
+    "tamil": "கட்டுப்பாட்டுக் கணக்குகளும் வழுத்திருத்தமும்",
+    "tamil_title": "அலகு 06: கட்டுப்பாட்டுக் கணக்குகளும் வழுத்திருத்தமும்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "Debtors and Creditors control accounts and reconciliation",
+        "english": "Debtors and Creditors control accounts and reconciliation",
+        "sinhala": "ණයගැති සහ ණයහිමි පාලන ගිණුම් සහ සැසඳීම",
+        "tamil": "கடன்பட்டோர், கடன்கொடுத்தோர் கட்டுப்பாட்டுக் கணக்குகளும் இணக்கமும்",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "Classification of accounting errors, journal entries and Suspense Account",
+        "english": "Classification of accounting errors, journal entries and Suspense Account",
+        "sinhala": "ගිණුම්කරණ වැරදි වර්ගීකරණය, නිවැරදි කිරීමේ සටහන් සහ අනියම් ගිණුම",
+        "tamil": "வழுக்களின் வகைப்பாடு, திருத்தல் நாட்குறிப்புப் பதிவுகளும் அனாமத்துக் கணக்கும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Financial Statements of Sole Proprietorships",
+    "english": "Financial Statements of Sole Proprietorships",
+    "sinhala": "තනි අයිති ව්‍යාපාරවල මූල්‍ය ප්‍රකාශන",
+    "sinhala_title": "ඒකකය 07: තනි අයිති ව්‍යාපාරවල මූල්‍ය ප්‍රකාශන",
+    "tamil": "தனியுடமை வணிகங்களின் நிதி அறிக்கைகள்",
+    "tamil_title": "அலகு 07: தனியுடமை வணிகங்களின் நிதி அறிக்கைகள்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Statement of profit or loss and other comprehensive income with adjustments",
+        "english": "Statement of profit or loss and other comprehensive income with adjustments",
+        "sinhala": "ගැලපීම් සහිත ආදායම් ප්‍රකාශනය පිළියෙල කිරීම",
+        "tamil": "செம்மையாக்கல்களுடன் கூடிய வருமானக் கூற்று தயாரித்தல்",
+        "hours": 5
+      },
+      {
+        "num": "7.2",
+        "title": "Statement of financial position: Classification of assets, equity and liabilities",
+        "english": "Statement of financial position: Classification of assets, equity and liabilities",
+        "sinhala": "මූල්‍ය තත්ත්ව ප්‍රකාශනය: වත්කම්, හිමිකම සහ වගකීම් වර්ගීකරණය",
+        "tamil": "நிதி நிலைமை கூற்று: சொத்துக்கள், உரிமை மற்றும் பொறுப்புக்களின் வகைப்படுத்தல்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Accounting for Partnerships",
+    "english": "Accounting for Partnerships",
+    "sinhala": "හවුල් ව්‍යාපාර ගිණුම්කරණය",
+    "sinhala_title": "ඒකකය 08: හවුල් ව්‍යාපාර ගිණුම්කරණය",
+    "tamil": "பங்காண்மை கணக்கீடு",
+    "tamil_title": "அலகு 08: பங்காண்மை கணக்கீடு",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Partnership agreement, appropriation of profit, capital and current accounts",
+        "english": "Partnership agreement, appropriation of profit, capital and current accounts",
+        "sinhala": "හවුල් ගිවිසුම, ලාභ බෙදාහැරීම, ප්‍රාග්ධන සහ ජංගම ගිණුම්",
+        "tamil": "பங்காண்மை உடன்படிக்கை, இலாபப் பங்கீடு, மூலதன மற்றும் நடைமுறைக் கணக்குகள்",
+        "hours": 5
+      },
+      {
+        "num": "8.2",
+        "title": "Goodwill, revaluation of assets and admission/retirement/dissolution of partners",
+        "english": "Goodwill, revaluation of assets and admission/retirement/dissolution of partners",
+        "sinhala": "කීර්තිනාමය, වත්කම් ප්‍රතිমূল්‍යාංකනය සහ හවුල්කරුවන් ඇතුළත් කරගැනීම/විසුරුවා හැරීම",
+        "tamil": "நன்மதிப்பு, மீள்மதிப்பீடு மற்றும் பங்குதாரர் சேர்ப்பு/விலகல்/கலைப்பு",
+        "hours": 6
+      }
+    ]
+  },
+  {
+    "num": 9,
+    "title": "Accounting for Limited Liability Companies",
+    "english": "Accounting for Limited Liability Companies",
+    "sinhala": "සීමාසහිත පොදු සහ පෞද්ගලික සමාගම් ගිණුම්",
+    "sinhala_title": "ඒකකය 09: සීමාසහිත සමාගම් ගිණුම්කරණය",
+    "tamil": "வரையறுக்கப்பட்ட கம்பனிகளுக்கான கணக்கீடு",
+    "tamil_title": "அலகு 09: வரையறுக்கப்பட்ட கம்பனிகளுக்கான கணக்கீடு",
+    "subUnits": [
+      {
+        "num": "9.1",
+        "title": "Share capital, debentures, reserves and equity structure under Companies Act",
+        "english": "Share capital, debentures, reserves and equity structure under Companies Act",
+        "sinhala": "කොටස් ප්‍රාග්ධනය, ණයකර, සංචිත සහ සමාගම් පනත යටතේ හිමිකම් ව්‍යුහය",
+        "tamil": "பங்கு மூலதனம், கடன் பத்திரங்கள், ஒதுக்கீடுகள் மற்றும் உரிமைக் கட்டமைப்பு",
+        "hours": 5
+      },
+      {
+        "num": "9.2",
+        "title": "Preparation of financial statements and Statement of Cash Flows (LKAS 7)",
+        "english": "Preparation of financial statements and Statement of Cash Flows (LKAS 7)",
+        "sinhala": "සමාගම් මූල්‍ය ප්‍රකාශන සහ මුදල් ප්‍රවාහ ප්‍රකාශනය (LKAS 7)",
+        "tamil": "கம்பனி நிதி அறிக்கைகள் மற்றும் காசுப்பாய்ச்சல் கூற்று (LKAS 7)",
+        "hours": 6
+      }
+    ]
+  },
+  {
+    "num": 10,
+    "title": "Not-for-Profit Organizations & Incomplete Records",
+    "english": "Not-for-Profit Organizations & Incomplete Records",
+    "sinhala": "ලාභ නොලබන සංවිධාන සහ අසම්පූර්ණ සටහන්",
+    "sinhala_title": "ඒකකය 10: ලාභ නොලබන සංවිධාන සහ අසම්පූර්ණ සටහන්",
+    "tamil": "இலாப நோக்கற்ற நிறுவனங்களும் முழுமையற்ற பதிவுகளும்",
+    "tamil_title": "அலகு 10: இலாப நோக்கற்ற நிறுவனங்கள்",
+    "subUnits": [
+      {
+        "num": "10.1",
+        "title": "Receipts and payments account, income and expenditure account and accumulated fund",
+        "english": "Receipts and payments account, income and expenditure account and accumulated fund",
+        "sinhala": "ලැබීම් සහ ගෙවීම් ගිණුම, ආදායම් සහ වියදම් ගිණුම සහ සමුච්චිත අරමුදල",
+        "tamil": "பெறுமதிகள்-கொடுப்பனவுகள் கணக்கு, வருமான-செலவினக் கணக்கு, திரட்டிய நிதி",
+        "hours": 5
+      },
+      {
+        "num": "10.2",
+        "title": "Single entry system: Statement of affairs and conversion to double entry",
+        "english": "Single entry system: Statement of affairs and conversion to double entry",
+        "sinhala": "තනි සටහන් ක්‍රමය: තත්ත්ව ප්‍රකාශනය සහ ද්විත්ව සටහන් බවට පරිවර්තනය",
+        "tamil": "ஒற்றைப் பதிவு முறை: நிலைமைக் கூற்று மற்றும் இரட்டைப் பதிவாக மாற்றுதல்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 11,
+    "title": "Manufacturing Accounts & Cost Concepts",
+    "english": "Manufacturing Accounts & Cost Concepts",
+    "sinhala": "නිෂ්පාදන ගිණුම් සහ පිරිවැය සංකල්ප",
+    "sinhala_title": "ඒකකය 11: නිෂ්පාදන ගිණුම් සහ පිරිවැය සංකල්ප",
+    "tamil": "உற்பத்திக் கணக்குகளும் அடக்கவிலைக் கருத்துக்களும்",
+    "tamil_title": "அலகு 11: உற்பத்திக் கணக்குகளும் அடக்கவிலைக் கருத்துக்களும்",
+    "subUnits": [
+      {
+        "num": "11.1",
+        "title": "Prime cost, factory overheads, work-in-progress and cost of finished goods",
+        "english": "Prime cost, factory overheads, work-in-progress and cost of finished goods",
+        "sinhala": "ප්‍රධාන පිරිවැය, කර්මාන්තශාලා පොදු කාර්ය පිරිවැය, අර්ධ නිමි භාණ්ඩ සහ නිෂ්පාදන පිරිවැය",
+        "tamil": "முதன்மை அடக்கம், தொழிற்சாலை மேந்தலைகள், முற்றுப்பெறா வேலை",
+        "hours": 5
+      },
+      {
+        "num": "11.2",
+        "title": "Preparation of Manufacturing Account and unrealized profit on stocks",
+        "english": "Preparation of Manufacturing Account and unrealized profit on stocks",
+        "sinhala": "නිෂ්පාදන ගිණුම පිළියෙල කිරීම සහ තොග මත උපයා නැති ලාභය",
+        "tamil": "உற்பத்திக் கணக்கு தயாரித்தல் மற்றும் இருப்பின் மீதான பெறாத இலாபம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 12,
+    "title": "Cost & Management Accounting: Marginal Costing & CVP",
+    "english": "Cost & Management Accounting: Marginal Costing & CVP",
+    "sinhala": "පිරිවැය හා කළමනාකරණ ගිණුම්කරණය: ආන්තික පිරිවැයනය සහ CVP",
+    "sinhala_title": "ඒකකය 12: ආන්තික පිරිවැයනය සහ CVP විශ්ලේෂණය",
+    "tamil": "அடக்கவிலை-முகாமைத்துவக் கணக்கீடு: எல்லைச்செலவியலும் CVPயும்",
+    "tamil_title": "அலகு 12: எல்லைச்செலவியலும் CVP பகுப்பாய்வும்",
+    "subUnits": [
+      {
+        "num": "12.1",
+        "title": "Cost behavior: Fixed, variable and semi-variable costs and contribution",
+        "english": "Cost behavior: Fixed, variable and semi-variable costs and contribution",
+        "sinhala": "පිරිවැය හැසිරීම: ස්ථාවර, විචල්‍ය පිරිවැය සහ දායකත්වය",
+        "tamil": "செலவு நடத்தை: நிலையான, மாறும் செலவுகள் மற்றும் பங்களிப்பு",
+        "hours": 5
+      },
+      {
+        "num": "12.2",
+        "title": "Break-even analysis, margin of safety and short-term decision making",
+        "english": "Break-even analysis, margin of safety and short-term decision making",
+        "sinhala": "සමච්ඡේද විශ්ලේෂණය, ආරක්ෂණ ආන්තිකය සහ කෙටිකාලීන තීරණ ගැනීම",
+        "tamil": "சமநிலைப்பள்ளி பகுப்பாய்வு, பாதுகாப்பு எல்லை மற்றும் குறுங்கால முடிவெடுத்தல்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 13,
+    "title": "Capital Budgeting & Financial Ratio Analysis",
+    "english": "Capital Budgeting & Financial Ratio Analysis",
+    "sinhala": "ප්‍රාග්ධන අයවැයකරණය සහ මූල්‍ය අනුපාත විශ්ලේෂණය",
+    "sinhala_title": "ඒකකය 13: ප්‍රාග්ධන අයවැයකරණය සහ අනුපාත",
+    "tamil": "மூலதன வரவுசெலவுத்திட்டமும் நிதி விகிதப் பகுப்பாய்வும்",
+    "tamil_title": "அலகு 13: மூலதன வரவுசெலவும் விகிதப் பகுப்பாய்வும்",
+    "subUnits": [
+      {
+        "num": "13.1",
+        "title": "Investment appraisal: Payback period, Accounting Rate of Return (ARR) and NPV",
+        "english": "Investment appraisal: Payback period, Accounting Rate of Return (ARR) and NPV",
+        "sinhala": "ආයෝජන ඇගයීම: ආපසු ගෙවීමේ කාලය, ARR සහ ශුද්ධ වර්තමාන අගය (NPV)",
+        "tamil": "முதலீட்டு மதிப்பீடு: மீளளிப்புக் காலம், கணக்கீட்டு வருமான விகிதம் மற்றும் NPV",
+        "hours": 5
+      },
+      {
+        "num": "13.2",
+        "title": "Profitability, liquidity, efficiency and gearing financial ratios",
+        "english": "Profitability, liquidity, efficiency and gearing financial ratios",
+        "sinhala": "ලාභදායිතා, ද්‍රවශීලතා, කාර්යක්ෂමතා සහ මුල්‍ය ලීවර අනුපාත",
+        "tamil": "இலாபத்தன்மை, நீர்மைத்தன்மை, வினைத்திறன் மற்றும் கடனுதவி விகிதங்கள்",
+        "hours": 5
+      }
+    ]
+  }
+]

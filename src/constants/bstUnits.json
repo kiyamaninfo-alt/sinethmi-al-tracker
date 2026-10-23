@@ -1,0 +1,326 @@
+[
+  {
+    "num": 1,
+    "title": "Agricultural Meteorology & Microclimate Management",
+    "english": "Agricultural Meteorology & Microclimate Management",
+    "sinhala": "කෘෂි කාලගුණ විද්‍යාව සහ ක්ෂුද්‍ර දේශගුණ කළමනාකරණය",
+    "sinhala_title": "ඒකකය 01: කෘෂි කාලගුණ විද්‍යාව සහ ක්ෂුද්‍ර දේශගුණය",
+    "tamil": "விவசாய வானிலையியலும் நுண் காலநிலை முகாமைத்துவமும்",
+    "tamil_title": "அலகு 01: விவசாய வானிலையியலும் நுண் காலநிலையும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Meteorological instruments, weather forecasting and agro-ecological regions",
+        "english": "Meteorological instruments, weather forecasting and agro-ecological regions",
+        "sinhala": "කාලගුණ විද්‍යා උපකරණ, කාලගුණ අනාවැකි සහ කෘෂි පාරිසරික කලාප",
+        "tamil": "வானிலை உபகரணங்கள், வானிலை முன்னறிவிப்பு மற்றும் விவசாய சூழலியல் வலயங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "1.2",
+        "title": "Solar radiation, relative humidity, windbreaks and microclimate modification",
+        "english": "Solar radiation, relative humidity, windbreaks and microclimate modification",
+        "sinhala": "සූර්ය විකිරණය, සාපේක්ෂ ආර්ද්‍රතාව, සුළං බාධක සහ ක්ෂුද්‍ර දේශගුණ වෙනස්කම්",
+        "tamil": "சூரியக் கதிர்வீச்சு, ஈரப்பதம், காற்றுத் தடைகள் மற்றும் நுண் காலநிலை மாற்றம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Land Surveying & Agricultural Levelling",
+    "english": "Land Surveying & Agricultural Levelling",
+    "sinhala": "ඉඩම් මැනුම් විද්‍යාව සහ කෘෂිකාර්මික මට්ටම් කිරීම",
+    "sinhala_title": "ඒකකය 02: ඉඩම් මැනුම් සහ මට්ටම් කිරීම",
+    "tamil": "நில அளவையியலும் விவசாய மட்டப்படுத்தலும்",
+    "tamil_title": "அலகு 02: நில அளவையியலும் மட்டப்படுத்தலும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Chain and tape surveying, compass surveying and area computation",
+        "english": "Chain and tape surveying, compass surveying and area computation",
+        "sinhala": "දාම සහ පටි මැනුම්, මාලිමා මැනුම් සහ භූමි වර්ගඵලය ගණනය කිරීම",
+        "tamil": "சங்கிலி-நாடா அளவை, திசையறி அளவை மற்றும் பரப்பளவுக் கணிப்பீடு",
+        "hours": 5
+      },
+      {
+        "num": "2.2",
+        "title": "Dumpy level, contour mapping, slope calculation and field grading",
+        "english": "Dumpy level, contour mapping, slope calculation and field grading",
+        "sinhala": "ඩම්පි ලෙවලය, සමෝච්ච සිතියම්කරණය, බෑවුම් ගණනය සහ ක්ෂේත්‍ර මට්ටම් කිරීම",
+        "tamil": "மட்டமானி, சமவுயரக் கோட்டுப் படம், சாய்வுக் கணிப்பீடு",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Hydrology, Irrigation & Drainage Engineering",
+    "english": "Hydrology, Irrigation & Drainage Engineering",
+    "sinhala": "ජල විද්‍යාව, වාරිමාර්ග සහ ජලාපවහන ඉංජිනේරු විද්‍යාව",
+    "sinhala_title": "ඒකකය 03: වාරිමාර්ග සහ ජලාපවහන තාක්ෂණය",
+    "tamil": "நீரியல், நீர்ப்பாசனம் மற்றும் வடிகால் பொறியியல்",
+    "tamil_title": "அலகு 03: நீர்ப்பாசனமும் வடிகால் தொழில்நுட்பமும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Soil-water-plant relationships, crop water requirements and water testing",
+        "english": "Soil-water-plant relationships, crop water requirements and water testing",
+        "sinhala": "පාංශු-ජල-ශාක සබඳතා, බෝග ජල අවශ්‍යතා සහ ජල තත්ත්ව පරීක්ෂණ",
+        "tamil": "மண்-நீர்-தாவர தொடர்புகள், பயிர் நீர் தேவைகள் மற்றும் நீர் பரிசோதனை",
+        "hours": 5
+      },
+      {
+        "num": "3.2",
+        "title": "Drip, sprinkler, surface irrigation methods and farm drainage design",
+        "english": "Drip, sprinkler, surface irrigation methods and farm drainage design",
+        "sinhala": "බිංදු, ඉසින, මතුපිට වාරි ක්‍රම සහ ගොවිපළ ජලාපවහන සැලසුම්",
+        "tamil": "சொட்டு, தெளிப்பு, தரைவழிப் பாசன முறைகள் மற்றும் பண்ணை வடிகால்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Controlled Environment Agriculture (CEA) & Hydroponics",
+    "english": "Controlled Environment Agriculture (CEA) & Hydroponics",
+    "sinhala": "පාලිත පරිසර කෘෂිකර්මාන්තය (CEA) සහ ජලරෝපිත වගාව",
+    "sinhala_title": "ඒකකය 04: පාලිත පරිසර කෘෂිකර්මාන්තය සහ හයිඩ්‍රොපොනික්ස්",
+    "tamil": "கட்டுப்படுத்தப்பட்ட சூழல் விவசாயமும் நீரூடகப் பயிர்ச்செய்கையும்",
+    "tamil_title": "அலகு 04: பாதுகாக்கப்பட்ட விவசாயமும் நீரூடகப் பயிர்ச்செய்கையும்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Greenhouses, polytunnels, shade nets and climate control automation",
+        "english": "Greenhouses, polytunnels, shade nets and climate control automation",
+        "sinhala": "හරිතාගාර, පොලිටනල්, සෙවන දැල් සහ ස්වයංක්‍රීය දේශගුණ පාලනය",
+        "tamil": "பசுமைக்குடில்கள், பொலிடனல்கள், நிழல்வலைகள் மற்றும் தன்னியக்கக் கட்டுப்பாடு",
+        "hours": 5
+      },
+      {
+        "num": "4.2",
+        "title": "Hydroponic systems (NFT, aeroponics), nutrient formulation and EC/pH regulation",
+        "english": "Hydroponic systems (NFT, aeroponics), nutrient formulation and EC/pH regulation",
+        "sinhala": "හයිඩ්‍රොපොනික් පද්ධති (NFT, වායුරෝපිත), පෝෂක ද්‍රාවණ සහ EC/pH නියාමනය",
+        "tamil": "நீரூடக முறைகள் (NFT), ஊட்டச்சத்துத் தயாரிப்பும் EC/pH ஒழுங்குபடுத்தலும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Plant Propagation & Commercial Nursery Technology",
+    "english": "Plant Propagation & Commercial Nursery Technology",
+    "sinhala": "ශාක ප්‍රචාරණය සහ වාණිජ තවාන් තාක්ෂණය",
+    "sinhala_title": "ඒකකය 05: ශාක ප්‍රචාරණය සහ වාණිජ තවාන්",
+    "tamil": "தாவரப் போக்கலும் வர்த்தக நாற்றுமேடைத் தொழில்நுட்பமும்",
+    "tamil_title": "அலகு 05: தாவரப் போக்கலும் நாற்றுமேடையும்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "Vegetative propagation: Grafting, budding, layering and plant tissue culture",
+        "english": "Vegetative propagation: Grafting, budding, layering and plant tissue culture",
+        "sinhala": "වර්ධක ප්‍රචාරණය: බද්ධ කිරීම, අංකුර බද්ධය, පතිත කිරීම සහ පටක රෝපණය",
+        "tamil": "பதியமுறைப் பெருக்கம்: ஒட்டுதல், பதிவைத்தல் மற்றும் இழைய வளர்ப்பு",
+        "hours": 5
+      },
+      {
+        "num": "5.2",
+        "title": "Potting media, hardening, nursery management and quality certification",
+        "english": "Potting media, hardening, nursery management and quality certification",
+        "sinhala": "බඳුන් මිශ්‍රණ, හුරුකිරීම, තවාන් කළමනාකරණය සහ තත්ත්ව සහතිකකරණය",
+        "tamil": "நாற்றுமேடை ஊடகங்கள், நாற்றுப் பராமரிப்பு மற்றும் தரச் சான்றிதழ்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Aquaculture & Fish Production Technology",
+    "english": "Aquaculture & Fish Production Technology",
+    "sinhala": "ජලජීවී වගාව සහ මත්ස්‍ය නිෂ්පාදන තාක්ෂණය",
+    "sinhala_title": "ඒකකය 06: ජලජීවී වගාව සහ මත්ස්‍ය නිෂ්පාදනය",
+    "tamil": "நீர்வாழ் உயிரின வளர்ப்பும் மீன் உற்பத்தித் தொழில்நுட்பமும்",
+    "tamil_title": "அலகு 06: நீர்வாழ் உயிரின வளர்ப்பும் மீன் உற்பத்தியும்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "Pond construction, water quality parameters (DO, ammonia) and species selection",
+        "english": "Pond construction, water quality parameters (DO, ammonia) and species selection",
+        "sinhala": "කුඩා පොකුණු ඉදිකිරීම, ජල ගුණාංග (DO, ඇමෝනියා) සහ මත්ස්‍ය විශේෂ තෝරාගැනීම",
+        "tamil": "குளங்கள் அமைத்தல், நீர்த்தரப் பண்புகள் மற்றும் மீன் இனத் தெரிவு",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "Fish breeding, feed formulation, ornamental fish culture and disease control",
+        "english": "Fish breeding, feed formulation, ornamental fish culture and disease control",
+        "sinhala": "මත්ස්‍ය අභිජනනය, ආහාර සැකසීම, විසිතුරු මසුන් ඇතිකිරීම සහ රෝග පාලනය",
+        "tamil": "மீன் இனப்பெருக்கம், தீவன தயாரிப்பு, அலங்கார மீன் வளர்ப்பு, நோய் கட்டுப்பாடு",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Livestock & Animal Husbandry Technology",
+    "english": "Livestock & Animal Husbandry Technology",
+    "sinhala": "පශු සම්පත් සහ සත්ත්ව පාලන තාක්ෂණය",
+    "sinhala_title": "ඒකකය 07: පශු සම්පත් සහ සත්ත්ව පාලනය",
+    "tamil": "கால்நடை வளர்ப்பும் விலங்குப் பராமரிப்புத் தொழில்நுட்பமும்",
+    "tamil_title": "அலகு 07: கால்நடை வளர்ப்பும் பராமரிப்பும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Dairy cattle, poultry and swine farming: Housing, breeding and management",
+        "english": "Dairy cattle, poultry and swine farming: Housing, breeding and management",
+        "sinhala": "කිරි ගව, කුකුළු සහ සූකර පාලනය: නිවාස, අභිජනනය සහ කළමනාකරණය",
+        "tamil": "பால் மாடு, கோழி வளர்ப்பு: பண்ணைக் கொட்டில்கள் மற்றும் முகாமைத்துவம்",
+        "hours": 5
+      },
+      {
+        "num": "7.2",
+        "title": "Animal nutrition, feed conservation (silage, hay), biosecurity and health",
+        "english": "Animal nutrition, feed conservation (silage, hay), biosecurity and health",
+        "sinhala": "සත්ත්ව පෝෂණය, ආහාර සංරක්ෂණය (සයිලේජ්, පිදුරු) සහ ජෛව ආරක්ෂණය",
+        "tamil": "விலங்குப் போசணை, தீவனப் பாதுகாப்பு (சைலேஜ்), உயிரியல் பாதுகாப்பு",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Food Chemistry, Processing & Post-Harvest Technology",
+    "english": "Food Chemistry, Processing & Post-Harvest Technology",
+    "sinhala": "ආහාර රසායන විද්‍යාව, සැකසුම්කරණය සහ පසු අස්වනු තාක්ෂණය",
+    "sinhala_title": "ඒකකය 08: ආහාර සැකසුම් සහ පසු අස්වනු තාක්ෂණය",
+    "tamil": "உணவு இரசாயனவியல், பதப்படுத்தலும் அறுவடைப் பிந்திய தொழில்நுட்பமும்",
+    "tamil_title": "அலகு 08: உணவு பதப்படுத்தலும் அறுவடைப் பிந்திய தொழில்நுட்பமும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Causes of food spoilage, food preservation methods (thermal, drying, freezing)",
+        "english": "Causes of food spoilage, food preservation methods (thermal, drying, freezing)",
+        "sinhala": "ආහාර නරක්වීමට හේතු, ආහාර සංරක්ෂණ ක්‍රම (තාපන, විජලන, ශීතකරණ)",
+        "tamil": "உணவு பழுதடைவதற்கான காரணங்கள், உணவுப் பாதுகாப்பு முறைகள்",
+        "hours": 5
+      },
+      {
+        "num": "8.2",
+        "title": "Post-harvest handling of fruits, vegetables and grains, packaging and shelf life",
+        "english": "Post-harvest handling of fruits, vegetables and grains, packaging and shelf life",
+        "sinhala": "එළවළු සහ පලතුරු පසු අස්වනු හැසිරවීම, ඇසුරුම්කරණය සහ කල්තබා ගැනීමේ කාලය",
+        "tamil": "பழங்கள், மரக்கறிகளின் அறுவடைக்குப் பிந்திய கையாளுமை, சிப்பமிடல்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 9,
+    "title": "Bioprocess Technology & Industrial Fermentation",
+    "english": "Bioprocess Technology & Industrial Fermentation",
+    "sinhala": "ජෛව සැකසුම් තාක්ෂණය සහ කාර්මික පැසවීම",
+    "sinhala_title": "ඒකකය 09: ජෛව සැකසුම් සහ පැසවීම් තාක්ෂණය",
+    "tamil": "உயிரியல் தொழினுட்பமும் கைத்தொழில் நொதித்தல் முறைகளும்",
+    "tamil_title": "அலகு 09: உயிரியல் முறைகளும் நொதித்தலும்",
+    "subUnits": [
+      {
+        "num": "9.1",
+        "title": "Bioreactors, fermentation technology, yeast and lactic acid fermentations",
+        "english": "Bioreactors, fermentation technology, yeast and lactic acid fermentations",
+        "sinhala": "ජෛව ප්‍රතික්‍රියාකාරක, පැසවීම් තාක්ෂණය, යීස්ට් සහ ලැක්ටික් අම්ල පැසවීම",
+        "tamil": "உயிரெதிர்வினைக்கலன்கள், நொதித்தல் தொழில்நுட்பம், ஈஸ்ட் மற்றும் லாக்டிக் நொதித்தல்",
+        "hours": 5
+      },
+      {
+        "num": "9.2",
+        "title": "Production of dairy products (yoghurt, cheese), bakery and fermented beverages",
+        "english": "Production of dairy products (yoghurt, cheese), bakery and fermented beverages",
+        "sinhala": "කිරි නිෂ්පාදන (යෝගට්, චීස්), බේකරි නිෂ්පාදන සහ පැසුණු පාන වර්ග",
+        "tamil": "பால் பொருட்கள் (யோகர்ட், சீஸ்), பேக்கரி பொருட்கள் உற்பத்தி",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 10,
+    "title": "Waste Management & Renewable Bioenergy",
+    "english": "Waste Management & Renewable Bioenergy",
+    "sinhala": "අපද්‍රව්‍ය කළමනාකරණය සහ පුනර්ජනනීය ජෛව බලශක්තිය",
+    "sinhala_title": "ඒකකය 10: අපද්‍රව්‍ය කළමනාකරණය සහ ජෛව බලශක්තිය",
+    "tamil": "கழிவு முகாமைத்துவமும் மீளுருவாக்க உயிரிச் சக்தியும்",
+    "tamil_title": "அலகு 10: கழிவு முகாமைத்துவமும் உயிரிச் சக்தியும்",
+    "subUnits": [
+      {
+        "num": "10.1",
+        "title": "Agricultural and food processing waste, composting and vermicomposting",
+        "english": "Agricultural and food processing waste, composting and vermicomposting",
+        "sinhala": "කෘෂිකාර්මික සහ ආහාර අපද්‍රව්‍ය, කොම්පෝස්ට් සහ ගැඩවිල් කොම්පෝස්ට් නිපදවීම",
+        "tamil": "விவசாயக் கழிவுகள், உரம் தயாரித்தல் மற்றும் மண்புழு உரம்",
+        "hours": 5
+      },
+      {
+        "num": "10.2",
+        "title": "Biogas digester design, biofuel extraction and sustainable circular bioeconomy",
+        "english": "Biogas digester design, biofuel extraction and sustainable circular bioeconomy",
+        "sinhala": "ජෛව වායු ජනක සැලසුම්කරණය, ජෛව ඉන්ධන සහ චක්‍රීය ජෛව ආර්ථිකය",
+        "tamil": "உயிரிவாயு அமைப்பு வடிவமைப்பு, உயிரி எரிபொருள் மற்றும் சுழற்சிப் பொருளாதாரம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 11,
+    "title": "Quality Assurance & Food Safety Standards (HACCP/ISO)",
+    "english": "Quality Assurance & Food Safety Standards (HACCP/ISO)",
+    "sinhala": "තත්ත්ව සහතිකය සහ ආහාර ආරක්ෂණ ප්‍රමිති (HACCP/ISO)",
+    "sinhala_title": "ඒකකය 11: තත්ත්ව සහතිකය සහ ආහාර ආරක්ෂණය",
+    "tamil": "தரக் காப்புறுதியும் உணவுப் பாதுகாப்புத் தரநிலைகளும் (HACCP/ISO)",
+    "tamil_title": "அலகு 11: தரக்கட்டுப்பாடும் உணவுப் பாதுகாப்பும்",
+    "subUnits": [
+      {
+        "num": "11.1",
+        "title": "Good Manufacturing Practices (GMP), Good Agricultural Practices (GAP) and hygiene",
+        "english": "Good Manufacturing Practices (GMP), Good Agricultural Practices (GAP) and hygiene",
+        "sinhala": "යහපත් නිෂ්පාදන පිළිවෙත් (GMP), යහපත් කෘෂිකාර්මික පිළිවෙත් (GAP) සහ සනීපාරක්ෂාව",
+        "tamil": "சிறந்த உற்பத்தி நடைமுறைகள் (GMP), சிறந்த விவசாய நடைமுறைகள் (GAP)",
+        "hours": 5
+      },
+      {
+        "num": "11.2",
+        "title": "Hazard Analysis Critical Control Point (HACCP), SLS and ISO food certifications",
+        "english": "Hazard Analysis Critical Control Point (HACCP), SLS and ISO food certifications",
+        "sinhala": "HACCP ක්‍රමය, ශ්‍රී ලංකා ප්‍රමිති (SLS) සහ ISO ආහාර සහතිකකරණ",
+        "tamil": "HACCP முறைமை, SLS மற்றும் ISO உணவு பாதுகாப்புத் தரச்சான்றுகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 12,
+    "title": "Agribusiness Management & Biosystems Entrepreneurship",
+    "english": "Agribusiness Management & Biosystems Entrepreneurship",
+    "sinhala": "කෘෂි ව්‍යාපාර කළමනාකරණය සහ ජෛව පද්ධති ව්‍යවසායකත්වය",
+    "sinhala_title": "ඒකකය 12: කෘෂි ව්‍යාපාර සහ ව්‍යවසායකත්වය",
+    "tamil": "விவசாய வணிக முகாமைத்துவமும் உயிரியல் தொழில்முயற்சியும்",
+    "tamil_title": "அலகு 12: விவசாய வணிகமும் தொழில்முயற்சியும்",
+    "subUnits": [
+      {
+        "num": "12.1",
+        "title": "Agribusiness planning, value addition and supply chains for bio-products",
+        "english": "Agribusiness planning, value addition and supply chains for bio-products",
+        "sinhala": "කෘෂි ව්‍යාපාර සැලසුම්කරණය, අගය එකතු කිරීම සහ ජෛව නිෂ්පාදන සැපයුම් දාම",
+        "tamil": "விவசாய வணிகத் திட்டமிடல், பெறுமதி சேர்த்தல் மற்றும் விநியோகச் சங்கிலி",
+        "hours": 5
+      },
+      {
+        "num": "12.2",
+        "title": "Market analysis, feasibility studies and commercialization of bio-innovations",
+        "english": "Market analysis, feasibility studies and commercialization of bio-innovations",
+        "sinhala": "වෙළඳපල විශ්ලේෂණය, ශක්‍යතා අධ්‍යයන සහ ජෛව නවෝත්පාදන වාණිජකරණය",
+        "tamil": "சந்தை ஆய்வு, சாத்தியக்கூறு ஆய்வு மற்றும் உயிரி புத்தாக்கங்களின் வணிகமயமாக்கல்",
+        "hours": 4
+      }
+    ]
+  }
+]

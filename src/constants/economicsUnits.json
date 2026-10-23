@@ -1,0 +1,326 @@
+[
+  {
+    "num": 1,
+    "title": "Basic Economic Concepts & Economic Systems",
+    "english": "Basic Economic Concepts & Economic Systems",
+    "sinhala": "මූලික ආර්ථික සංකල්ප සහ ආර්ථික පද්ධති",
+    "sinhala_title": "ඒකකය 01: මූලික ආර්ථික සංකල්ප සහ පද්ධති",
+    "tamil": "அடிப்படைப் பொருளாதாரக் கருத்துக்களும் பொருளாதார அமைப்புகளும்",
+    "tamil_title": "அலகு 01: அடிப்படைப் பொருளாதாரக் கருத்துக்கள்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Scarcity, choice, opportunity cost and Production Possibility Frontier (PPF)",
+        "english": "Scarcity, choice, opportunity cost and Production Possibility Frontier (PPF)",
+        "sinhala": "හිඟකම, තෝරාගැනීම, අවස්ථා පිරිවැය සහ නිෂ්පාදන ශක්‍යතා මායිම (PPF)",
+        "tamil": "அருமை, தெரிவு, சந்தர்ப்பச் செலவு மற்றும் உற்பத்திச் சாத்தியவளைவி (PPF)",
+        "hours": 5
+      },
+      {
+        "num": "1.2",
+        "title": "Fundamental economic problems and market, command and mixed economies",
+        "english": "Fundamental economic problems and market, command and mixed economies",
+        "sinhala": "මූලික ආර්ථික ගැටලු සහ වෙළඳපල, විධාන සහ මිශ්‍ර ආර්ථික පද්ධති",
+        "tamil": "அடிப்படைப் பொருளாதாரப் பிரச்சினைகளும் சந்தை, திட்டமிட்ட மற்றும் கலப்புப் பொருளாதாரங்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Theory of Consumer Demand & Utility",
+    "english": "Theory of Consumer Demand & Utility",
+    "sinhala": "පාරිභෝගික ඉල්ලුම සහ උපයෝගිතා න්‍යාය",
+    "sinhala_title": "ඒකකය 02: පාරිභෝගික ඉල්ලුම සහ උපයෝගිතාව",
+    "tamil": "நுகர்வோர் கேள்வி மற்றும் பயன்பாட்டுக் கோட்பாடு",
+    "tamil_title": "அலகு 02: நுகர்வோர் கேள்வியும் பயன்பாடும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Law of demand, demand curve, determinants of demand and consumer surplus",
+        "english": "Law of demand, demand curve, determinants of demand and consumer surplus",
+        "sinhala": "ඉල්ලුම් නියමය, ඉල්ලුම් වක්‍රය, ඉල්ලුම තීරණය කරන සාධක සහ පාරිභෝගික අතිරික්තය",
+        "tamil": "கேள்வி விதி, கேள்வி வளைவி, தீர்மானிக்கும் காரணிகள் மற்றும் நுகர்வோர் மிகை",
+        "hours": 5
+      },
+      {
+        "num": "2.2",
+        "title": "Elasticity of demand: Price, income and cross elasticity of demand",
+        "english": "Elasticity of demand: Price, income and cross elasticity of demand",
+        "sinhala": "ඉල්ලුමේ නම්‍යතාව: මිල, ආදායම් සහ ආදේශක/හරස් නම්‍යතාව",
+        "tamil": "கேள்வி நெகிழ்ச்சி: விலை, வருமானம் மற்றும் குறுக்கு நெகிழ்ச்சி",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Theory of Production, Cost & Supply",
+    "english": "Theory of Production, Cost & Supply",
+    "sinhala": "නිෂ්පාදන, පිරිවැය සහ සැපයුම් න්‍යාය",
+    "sinhala_title": "ඒකකය 03: නිෂ්පාදනය, පිරිවැය සහ සැපයුම",
+    "tamil": "உற்பத்தி, செலவு மற்றும் நிரம்பல் கோட்பாடு",
+    "tamil_title": "அலகு 03: உற்பத்தி, செலவு மற்றும் நிரம்பல்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Short-run production, law of diminishing returns and long-run economies of scale",
+        "english": "Short-run production, law of diminishing returns and long-run economies of scale",
+        "sinhala": "කෙටිකාලීන නිෂ්පාදනය, ක්ෂයවන ඵලදා නීතිය සහ දිගුකාලීන පරිමාණානුකූල ඵල",
+        "tamil": "குறுகிய கால உற்பத்தி, குறைந்துசெல்லும் விளைவு விதி மற்றும் பேரளவுச் சிக்கனங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "3.2",
+        "title": "Short-run and long-run cost curves and price elasticity of supply",
+        "english": "Short-run and long-run cost curves and price elasticity of supply",
+        "sinhala": "කෙටිකාලීන සහ දිගුකාලීන පිරිවැය වක්‍ර සහ සැපයුමේ මිල නම්‍යතාව",
+        "tamil": "குறுங்கால, நீண்டகால செலவு வளைவிகள் மற்றும் நிரம்பல் விலை நெகிழ்ச்சி",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Market Equilibrium & Government Price Intervention",
+    "english": "Market Equilibrium & Government Price Intervention",
+    "sinhala": "වෙළඳපල සමතුලිතතාව සහ රජයේ මිල මැදිහත්වීම්",
+    "sinhala_title": "ඒකකය 04: වෙළඳපල සමතුලිතතාව සහ මිල පාලනය",
+    "tamil": "சந்தைச் சமநிலையும் அரசாங்கத்தின் விலை தலையீடுகளும்",
+    "tamil_title": "அலகு 04: சந்தைச் சமநிலையும் விலைக்கட்டுப்பாடும்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Market equilibrium, shifts in demand and supply and producer surplus",
+        "english": "Market equilibrium, shifts in demand and supply and producer surplus",
+        "sinhala": "වෙළඳපල සමතුලිතතාව, ඉල්ලුම්-සැපයුම් විතැන්වීම් සහ නිෂ්පාදක අතිරික්තය",
+        "tamil": "சந்தைச் சமநிலை, கேள்வி-நிரம்பல் பெயர்ச்சிகள் மற்றும் உற்பத்தியாளர் மிகை",
+        "hours": 5
+      },
+      {
+        "num": "4.2",
+        "title": "Price ceiling, price floor, indirect taxes, subsidies and deadweight loss",
+        "english": "Price ceiling, price floor, indirect taxes, subsidies and deadweight loss",
+        "sinhala": "උපරිම මිල, සහතික මිල, වක්‍ර බදු, සහනාධාර සහ ශුද්ධ සුබසාධන අලාභය",
+        "tamil": "உச்ச விலை, ஆகக்குறைந்த விலை, மறைமுக வரிகள், மானியங்கள் மற்றும் இழப்புக்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Market Structures: Perfect Competition & Monopoly",
+    "english": "Market Structures: Perfect Competition & Monopoly",
+    "sinhala": "වෙළඳපල ව්‍යුහයන්: පරිපූර්ණ තරඟය සහ ඒකාධිකාරය",
+    "sinhala_title": "ඒකකය 05: පරිපූර්ණ තරඟය සහ ඒකාධිකාරය",
+    "tamil": "சந்தைக் கட்டமைப்புகள்: பூரண போட்டி மற்றும் தனியுரிமை",
+    "tamil_title": "அலகு 05: பூரண போட்டியும் தனியுரிமையும்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "Characteristics, short-run and long-run equilibrium of perfect competition",
+        "english": "Characteristics, short-run and long-run equilibrium of perfect competition",
+        "sinhala": "පරිපූර්ණ තරඟකාරී වෙළඳපල ලක්ෂණ, කෙටි සහ දිගු කාලීන සමතුලිතතාව",
+        "tamil": "பூரண போட்டி சந்தையின் இயல்புகள், குறுங்கால மற்றும் நீண்டகால சமநிலை",
+        "hours": 5
+      },
+      {
+        "num": "5.2",
+        "title": "Pure monopoly, price discrimination, monopolistic competition and oligopoly",
+        "english": "Pure monopoly, price discrimination, monopolistic competition and oligopoly",
+        "sinhala": "ඒකාධිකාරය, මිල විභේදනය, ඒකාධිකාරී තරඟය සහ කතිපයාධිකාරය",
+        "tamil": "தனியுரிமை, விலை வேறுபடுத்தல், தனியுரிமைப் போட்டி மற்றும் சில்லோர் உரிமை",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Factor Pricing & Income Distribution",
+    "english": "Factor Pricing & Income Distribution",
+    "sinhala": "නිෂ්පාදන සාධක මිලකරණය සහ ආදායම් බෙදීයාම",
+    "sinhala_title": "ඒකකය 06: සාධක මිලකරණය සහ ආදායම් බෙදීයාම",
+    "tamil": "உற்பத்திக் காரணி விலையிடலும் வருமானப் பங்கீடும்",
+    "tamil_title": "அலகு 06: காரணி விலையிடலும் வருமானப் பங்கீடும்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "Marginal Productivity Theory: Wages, economic rent, interest and profit",
+        "english": "Marginal Productivity Theory: Wages, economic rent, interest and profit",
+        "sinhala": "ආන්තික ඵලදායිතා න්‍යාය: වේතන, ආර්ථික බදුකුලිය, පොලිය සහ ලාභය",
+        "tamil": "எல்லை உற்பத்தித்திறன் கோட்பாடு: கூலி, பொருளாதார வாரம், வட்டி மற்றும் இலாபம்",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "Income inequality, Lorenz curve, Gini coefficient and poverty alleviation",
+        "english": "Income inequality, Lorenz curve, Gini coefficient and poverty alleviation",
+        "sinhala": "ආදායම් අසමානතාව, ලොරෙන්ස් වක්‍රය, ගිනි සංගුණකය සහ දිළිඳුකම පිටුදැකීම",
+        "tamil": "வருமான சமத்துவமின்மை, லோரன்ஸ் வளைவி, கினி குணகம் மற்றும் வறுமை ஒழிப்பு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "National Income Accounting",
+    "english": "National Income Accounting",
+    "sinhala": "ජාතික ආදායම් ගිණුම්කරණය",
+    "sinhala_title": "ඒකකය 07: ජාතික ආදායම් ගිණුම්කරණය",
+    "tamil": "தேசிய வருமானக் கணக்கீடு",
+    "tamil_title": "அலகு 07: தேசிய வருமானக் கணக்கீடு",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Circular flow of income, GDP, GNP, NNP and personal disposable income",
+        "english": "Circular flow of income, GDP, GNP, NNP and personal disposable income",
+        "sinhala": "ආදායමේ චක්‍රීය ගලනය, GDP, GNP, NNP සහ වැය කළ හැකි ආදායම",
+        "tamil": "வருமானத்தின் வட்டப்பாய்ச்சல், GDP, GNP, NNP மற்றும் செலவிடக்கூடிய வருமானம்",
+        "hours": 5
+      },
+      {
+        "num": "7.2",
+        "title": "Methods of measuring GDP (Output, Income and Expenditure) and GDP deflator",
+        "english": "Methods of measuring GDP (Output, Income and Expenditure) and GDP deflator",
+        "sinhala": "GDP මනින ක්‍රම (නිෂ්පාදන, ආදායම්, වියදම්) සහ දළ දේශීය නිෂ්පාදිත අවධමනකය",
+        "tamil": "GDPயை அளவிடும் முறைகள் (உற்பத்தி, வருமானம், செலவு) மற்றும் விலைத்தணிப்பி",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Macroeconomic Equilibrium & Keynesian Theory",
+    "english": "Macroeconomic Equilibrium & Keynesian Theory",
+    "sinhala": "සාර්ව ආර්ථික සමතුලිතතාව සහ කේන්සියානු න්‍යාය",
+    "sinhala_title": "ඒකකය 08: සාර්ව ආර්ථික සමතුලිතතාව",
+    "tamil": "பேரினப் பொருளாதாரச் சமநிலையும் கெயின்சியக் கோட்பாடும்",
+    "tamil_title": "அலகு 08: பேரினப் பொருளாதாரச் சமநிலை",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Aggregate Demand (AD) - Aggregate Supply (AS) framework",
+        "english": "Aggregate Demand (AD) - Aggregate Supply (AS) framework",
+        "sinhala": "සමස්ත ඉල්ලුම (AD) - සමස්ත සැපයුම (AS) රාමුව",
+        "tamil": "மொத்தக் கேள்வி (AD) - மொத்த நிரம்பல் (AS) கட்டமைப்பு",
+        "hours": 5
+      },
+      {
+        "num": "8.2",
+        "title": "Consumption function, investment multiplier and inflationary/deflationary gaps",
+        "english": "Consumption function, investment multiplier and inflationary/deflationary gaps",
+        "sinhala": "පරිභෝජන ශ්‍රිතය, ආයෝජන ගුණකය සහ උද්ධමන/අවධමන පරතරය",
+        "tamil": "நுகர்வுச் சார்பு, முதலீட்டுப் பெருக்கி மற்றும் பணவீக்க/பணச்சுருக்க இடைவெளிகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 9,
+    "title": "Money, Commercial Banks & Central Bank Policy",
+    "english": "Money, Commercial Banks & Central Bank Policy",
+    "sinhala": "මුදල්, වාණිජ බැංකු සහ මහ බැංකු ප්‍රතිපත්තිය",
+    "sinhala_title": "ඒකකය 09: මුදල්, බැංකු සහ මහ බැංකු ප්‍රතිපත්තිය",
+    "tamil": "பணம், வணிக வங்கிகள் மற்றும் மத்திய வங்கிக் கொள்கை",
+    "tamil_title": "அலகு 09: பணம் மற்றும் மத்திய வங்கிக் கொள்கை",
+    "subUnits": [
+      {
+        "num": "9.1",
+        "title": "Functions of money, money supply aggregates (M1, M2b) and credit creation",
+        "english": "Functions of money, money supply aggregates (M1, M2b) and credit creation",
+        "sinhala": "මුදලේ කාර්යයන්, මුදල් සැපයුම් එකතු (M1, M2b) සහ ණය නිර්මාණය",
+        "tamil": "பணத்தின் பணிகள், பண நிரம்பல் அளவைகள் மற்றும் கடன் உருவாக்கம்",
+        "hours": 5
+      },
+      {
+        "num": "9.2",
+        "title": "Quantity Theory of Money, inflation causes/costs and monetary policy instruments",
+        "english": "Quantity Theory of Money, inflation causes/costs and monetary policy instruments",
+        "sinhala": "මුදල් ප්‍රමාණ න්‍යාය, උද්ධමනයේ හේතු සහ මුදල් ප්‍රතිපත්ති මෙවලම්",
+        "tamil": "பண அளவு கோட்பாடு, பணவீக்கக் காரணங்களும் பணவியல் கொள்கைக் கருவிகளும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 10,
+    "title": "Fiscal Policy & Public Finance",
+    "english": "Fiscal Policy & Public Finance",
+    "sinhala": "රාජ්‍ය මූල්‍ය ප්‍රතිපත්තිය සහ රජයේ ආදායම්-වියදම්",
+    "sinhala_title": "ඒකකය 10: රාජ්‍ය මූල්‍ය ප්‍රතිපත්තිය",
+    "tamil": "நிதிக் கொள்கையும் அரச நிதியும்",
+    "tamil_title": "அலகு 10: நிதிக் கொள்கையும் பொது நிதியும்",
+    "subUnits": [
+      {
+        "num": "10.1",
+        "title": "Government revenue sources (tax and non-tax), expenditure classification",
+        "english": "Government revenue sources (tax and non-tax), expenditure classification",
+        "sinhala": "රජයේ ආදායම් ප්‍රභව (බදු සහ බදු නොවන) සහ වියදම් වර්ගීකරණය",
+        "tamil": "அரச வருமான மூலங்கள் (வரி மற்றும் வரியல்லா) மற்றும் செலவின வகைப்பாடு",
+        "hours": 5
+      },
+      {
+        "num": "10.2",
+        "title": "Budget deficits, public debt sustainability and fiscal policy interventions",
+        "english": "Budget deficits, public debt sustainability and fiscal policy interventions",
+        "sinhala": "අයවැය හිඟය, රාජ්‍ය ණය තිරසාරභාවය සහ රාජ්‍ය මූල්‍ය ප්‍රතිපත්තිමය මැදිහත්වීම්",
+        "tamil": "வரவுசெலவுத் திட்ட பற்றாக்குறை, பொதுக்கடன் நிலைபேறு மற்றும் நிதிக் கொள்கை",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 11,
+    "title": "International Trade, Exchange Rates & BOP",
+    "english": "International Trade, Exchange Rates & BOP",
+    "sinhala": "ජාත්‍යන්තර වෙළඳාම, විනිමය අනුපාත සහ ගෙවුම් ශේෂය",
+    "sinhala_title": "ඒකකය 11: ජාත්‍යන්තර වෙළඳාම සහ ගෙවුම් ශේෂය",
+    "tamil": "சர்வதேச வர்த்தகம், மாற்று வீதங்கள் மற்றும் கொடுப்பனவு நிலுவை",
+    "tamil_title": "அலகு 11: சர்வதேச வர்த்தகமும் கொடுப்பனவு நிலுவையும்",
+    "subUnits": [
+      {
+        "num": "11.1",
+        "title": "Comparative advantage theory, gains from trade, tariffs and protectionism",
+        "english": "Comparative advantage theory, gains from trade, tariffs and protectionism",
+        "sinhala": "සාපේක්ෂ වාසි න්‍යාය, වෙළඳාමෙන් ලැබෙන වාසි, තීරුබදු සහ ආරක්ෂණවාදය",
+        "tamil": "ஒப்பீட்டுச் சாதகக் கோட்பாடு, வர்த்தக நன்மைகள், தீர்வைகள் மற்றும் காப்புவாதம்",
+        "hours": 5
+      },
+      {
+        "num": "11.2",
+        "title": "Balance of Payments (Current, Capital, Financial accounts) and foreign exchange rates",
+        "english": "Balance of Payments (Current, Capital, Financial accounts) and foreign exchange rates",
+        "sinhala": "ගෙවුම් ශේෂය (ජංගම, ප්‍රාග්ධන, මූල්‍ය ගිණුම්) සහ විදේශ විනිමය අනුපාත",
+        "tamil": "கொடுப்பனவு நிலுவை (நடைமுறை, மூலதனக் கணக்குகள்) மற்றும் நாணய மாற்று வீதங்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 12,
+    "title": "Economic Growth, Development & The Sri Lankan Economy",
+    "english": "Economic Growth, Development & The Sri Lankan Economy",
+    "sinhala": "ආර්ථික වර්ධනය, සංවර්ධනය සහ ශ්‍රී ලංකා ආර්ථිකය",
+    "sinhala_title": "ඒකකය 12: ආර්ථික සංවර්ධනය සහ ශ්‍රී ලංකා ආර්ථිකය",
+    "tamil": "பொருளாதார வளர்ச்சி, அபிவிருத்தியும் இலங்கை பொருளாதாரமும்",
+    "tamil_title": "அலகு 12: பொருளாதார வளர்ச்சியும் இலங்கை பொருளாதாரமும்",
+    "subUnits": [
+      {
+        "num": "12.1",
+        "title": "Growth vs development indicators (HDI, MPI), sustainable development goals",
+        "english": "Growth vs development indicators (HDI, MPI), sustainable development goals",
+        "sinhala": "ආර්ථික වර්ධනය සහ සංවර්ධන දර්ශක (HDI, MPI) සහ තිරසාර සංවර්ධන ඉලක්ක",
+        "tamil": "பொருளாதார வளர்ச்சி vs அபிவிருத்தி குறிகாட்டிகள் (HDI), நிலைபேறான அபிவிருத்தி",
+        "hours": 5
+      },
+      {
+        "num": "12.2",
+        "title": "Post-independence structural shifts, external debt, crisis and reforms in Sri Lanka",
+        "english": "Post-independence structural shifts, external debt, crisis and reforms in Sri Lanka",
+        "sinhala": "නිදහසින් පසු ශ්‍රී ලංකා ආර්ථිකයේ ව්‍යුහාත්මක වෙනස්කම්, විදේශ ණය සහ ප්‍රතිසංස්කරණ",
+        "tamil": "சுதந்திரத்திற்குப் பின்னரான கட்டமைப்பு மாற்றங்கள், வெளிக்கடன் மற்றும் சீர்திருத்தங்கள்",
+        "hours": 6
+      }
+    ]
+  }
+]

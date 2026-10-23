@@ -1,0 +1,380 @@
+[
+  {
+    "num": 1,
+    "title": "The Nature of Business & Environment",
+    "english": "The Nature of Business & Environment",
+    "sinhala": "ව්‍යාපාරයේ ස්වභාවය සහ ව්‍යාපාර පරිසරය",
+    "sinhala_title": "ඒකකය 01: ව්‍යාපාරයේ ස්වභාවය සහ පරිසරය",
+    "tamil": "வணிகத்தின் இயல்பும் வணிகச் சூழலும்",
+    "tamil_title": "அலகு 01: வணிகத்தின் இயல்பும் வணிகச் சூழலும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Human needs and wants, products and classification of businesses",
+        "english": "Human needs and wants, products and classification of businesses",
+        "sinhala": "මානව අවශ්‍යතා සහ වුවමනා, නිෂ්පාදන සහ ව්‍යාපාර වර්ගීකරණය",
+        "tamil": "மனிதத் தேவைகளும் விருப்பங்களும், உற்பத்தி மற்றும் வணிக வகைப்பாடு",
+        "hours": 5
+      },
+      {
+        "num": "1.2",
+        "title": "Internal and external business environments (PESTEL analysis)",
+        "english": "Internal and external business environments (PESTEL analysis)",
+        "sinhala": "අභ්‍යන්තර සහ බාහිර ව්‍යාපාර පරිසරය (PESTEL විශ්ලේෂණය)",
+        "tamil": "அக மற்றும் புற வணிகச் சூழல்கள் (PESTEL பகுப்பாய்வு)",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Social Responsibility & Business Ethics",
+    "english": "Social Responsibility & Business Ethics",
+    "sinhala": "සමාජ වගකීම සහ ව්‍යාපාරික ආචාරධර්ම",
+    "sinhala_title": "ඒකකය 02: සමාජ වගකීම සහ ව්‍යාපාරික ආචාරධර්ම",
+    "tamil": "சமூகப் பொறுப்புணர்வும் வணிக ஒழுக்கவியலும்",
+    "tamil_title": "அலகு 02: சமூகப் பொறுப்பும் வணிக ஒழுக்கவியலும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Corporate Social Responsibility (CSR) towards stakeholders",
+        "english": "Corporate Social Responsibility (CSR) towards stakeholders",
+        "sinhala": "පාර්ශ්වකරුවන් කෙරෙහි ව්‍යාපාර සමාජ වගකීම (CSR)",
+        "tamil": "பங்குதாரர்கள் மீதான நிறுவன சமூகப் பொறுப்பு (CSR)",
+        "hours": 5
+      },
+      {
+        "num": "2.2",
+        "title": "Business ethics, consumer protection and sustainable green practices",
+        "english": "Business ethics, consumer protection and sustainable green practices",
+        "sinhala": "ව්‍යාපාරික ආචාරධර්ම, පාරිභෝගික ආරක්ෂණය සහ හරිත ව්‍යාපාර",
+        "tamil": "வணிக நெறிமுறைகள், நுகர்வோர் பாதுகாப்பு மற்றும் பசுமை நடைமுறைகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Government & Business Regulatory Framework",
+    "english": "Government & Business Regulatory Framework",
+    "sinhala": "රජය සහ ව්‍යාපාරික නියාමන රාමුව",
+    "sinhala_title": "ඒකකය 03: රජය සහ ව්‍යාපාර නියාමනය",
+    "tamil": "அரசாங்கமும் வணிக ஒழுங்குமுறைக் கட்டமைப்பும்",
+    "tamil_title": "அலகு 03: அரசாங்கமும் வணிக ஒழுங்குமுறைகளும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Government policies, economic role and taxation impacting business",
+        "english": "Government policies, economic role and taxation impacting business",
+        "sinhala": "ව්‍යාපාර කෙරෙහි බලපාන රජයේ ප්‍රතිපත්ති, ආර්ථික කාර්යභාරය සහ බදු ක්‍රමය",
+        "tamil": "வணிகத்தின் மீதான அரசாங்கத்தின் கொள்கைகள், வரிவிதிப்பு மற்றும் பாத்திரம்",
+        "hours": 5
+      },
+      {
+        "num": "3.2",
+        "title": "Legal framework, business registration laws and intellectual property",
+        "english": "Legal framework, business registration laws and intellectual property",
+        "sinhala": "නීතිමය රාමුව, ව්‍යාපාර නාම ලියාපදිංචි කිරීමේ නීති සහ බුද්ධිමය දේපළ",
+        "tamil": "சட்டக் கட்டமைப்பு, வணிகப் பதிவுச் சட்டங்கள் மற்றும் அறிவுசார் சொத்து",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Forms of Business Ownership & Organizations",
+    "english": "Forms of Business Ownership & Organizations",
+    "sinhala": "ව්‍යාපාර හිමිකාරිත්වයේ ස්වරූප සහ සංවිධාන",
+    "sinhala_title": "ඒකකය 04: ව්‍යාපාර හිමිකාරිත්වයේ ස්වරූප",
+    "tamil": "வணிக உரிமையாண்மை வடிவங்களும் நிறுவனங்களும்",
+    "tamil_title": "அலகு 04: வணிக உரிமையாண்மை வடிவங்கள்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Sole proprietorships, partnerships and incorporation of companies",
+        "english": "Sole proprietorships, partnerships and incorporation of companies",
+        "sinhala": "තනි අයිති ව්‍යාපාර, හවුල් ව්‍යාපාර සහ සංස්ථාපිත සමාගම්",
+        "tamil": "தனியுடமை, பங்காண்மை மற்றும் வரையறுக்கப்பட்ட நிருமங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "4.2",
+        "title": "Co-operative societies, state enterprises and public-private partnerships",
+        "english": "Co-operative societies, state enterprises and public-private partnerships",
+        "sinhala": "සමූපකාර සමිති, රාජ්‍ය ව්‍යවසාය සහ රාජ්‍ය-පෞද්ගලික හවුල්කාරිත්ව (PPP)",
+        "tamil": "கூட்டுறவுச் சங்கங்கள், அரச நிறுவனங்கள் மற்றும் அரச-தனியார் கூட்டுக்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Entrepreneurship & Small and Medium Enterprises (SMEs)",
+    "english": "Entrepreneurship & Small and Medium Enterprises (SMEs)",
+    "sinhala": "ව්‍යවසායකත්වය සහ සුළු හා මධ්‍ය පරිමාණ ව්‍යවසාය (SMEs)",
+    "sinhala_title": "ඒකකය 05: ව්‍යවසායකත්වය සහ සුළු හා මධ්‍ය ව්‍යවසාය",
+    "tamil": "தொழில்முயற்சியும் சிறிய, நடுத்தர நிறுவனங்களும் (SMEs)",
+    "tamil_title": "அலகு 05: தொழில்முயற்சியும் சிறு வணிகங்களும்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "Entrepreneurial characteristics, innovation and economic role",
+        "english": "Entrepreneurial characteristics, innovation and economic role",
+        "sinhala": "ව්‍යවසායක ලක්ෂණ, නවෝත්පාදනය සහ ආර්ථිකයට දායකත්වය",
+        "tamil": "தொழில்முனைவோர் பண்புகள், புத்தாக்கம் மற்றும் பொருளாதாரப் பங்கு",
+        "hours": 5
+      },
+      {
+        "num": "5.2",
+        "title": "Importance, challenges and support services for SMEs in Sri Lanka",
+        "english": "Importance, challenges and support services for SMEs in Sri Lanka",
+        "sinhala": "ශ්‍රී ලංකාවේ සුළු හා මධ්‍ය පරිමාණ ව්‍යාපාරවල වැදගත්කම, ගැටලු සහ ආධාරක සේවා",
+        "tamil": "இலங்கையில் சிறு-நடுத்தர வணிகங்களின் முக்கியத்துவம், சவால்கள் மற்றும் உதவிகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Money, Banking & Financial Institutions",
+    "english": "Money, Banking & Financial Institutions",
+    "sinhala": "මුදල්, බැංකු සහ මූල්‍ය ආයතන",
+    "sinhala_title": "ඒකකය 06: මුදල්, බැංකු සහ මූල්‍ය ආයතන",
+    "tamil": "பணம், வங்கியியல் மற்றும் நிதி நிறுவனங்கள்",
+    "tamil_title": "அலகு 06: பணம், வங்கியியல் மற்றும் நிதி நிறுவனங்கள்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "Evolution of money, Central Bank of Sri Lanka and commercial banking services",
+        "english": "Evolution of money, Central Bank of Sri Lanka and commercial banking services",
+        "sinhala": "මුදලේ පරිණාමය, ශ්‍රී ලංකා මහ බැංකුව සහ වාණිජ බැංකු සේවා",
+        "tamil": "பணத்தின் பரிணாமம், இலங்கை மத்திய வங்கி மற்றும் வணிக வங்கிச் சேவைகள்",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "Non-bank financial institutions, leasing, factoring and capital markets",
+        "english": "Non-bank financial institutions, leasing, factoring and capital markets",
+        "sinhala": "බැංකු නොවන මූල්‍ය ආයතන, කල්බදු, සාධ්‍යකරණය සහ ප්‍රාග්ධන වෙළඳපොළ",
+        "tamil": "வங்கியல்லா நிதி நிறுவனங்கள், குத்தகை, காரணிப்படுத்தல், மூலதன சந்தை",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Insurance & Risk Management",
+    "english": "Insurance & Risk Management",
+    "sinhala": "රක්ෂණය සහ අවදානම් කළමනාකරණය",
+    "sinhala_title": "ඒකකය 07: රක්ෂණය සහ අවදානම් කළමනාකරණය",
+    "tamil": "காப்புறுதியும் இடர் முகாமைத்துவமும்",
+    "tamil_title": "அலகு 07: காப்புறுதியும் இடர் முகாமைத்துவமும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Concept of risk, insurance principles (insurable interest, indemnity)",
+        "english": "Concept of risk, insurance principles (insurable interest, indemnity)",
+        "sinhala": "අවදානම් සංකල්පය, රක්ෂණ මූලධර්ම (රක්ෂණීය හිමිකම, හානිපූරණය)",
+        "tamil": "இடர் எண்ணக்கரு, காப்புறுதிக் கோட்பாடுகள் (காப்புறுதி அக்கறை, ஈட்டுறுதி)",
+        "hours": 5
+      },
+      {
+        "num": "7.2",
+        "title": "Life assurance, general insurance policies and re-insurance",
+        "english": "Life assurance, general insurance policies and re-insurance",
+        "sinhala": "ජීවිත රක්ෂණය, සාමාන්‍ය රක්ෂණ ඔප්පු සහ ප්‍රතිරක්ෂණය",
+        "tamil": "ஆயுள் காப்புறுதி, பொதுக் காப்புறுதி மற்றும் மீள்காப்புறுதி",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Logistics, Supply Chain & Warehousing",
+    "english": "Logistics, Supply Chain & Warehousing",
+    "sinhala": "සැපයුම් සම්පාදනය (ලොජිස්ටික්ස්), සැපයුම් දාමය සහ ගබඩාකරණය",
+    "sinhala_title": "ඒකකය 08: සැපයුම් සම්පාදනය සහ ගබඩාකරණය",
+    "tamil": "விநியோகவியல், விநியோகச் சங்கிலி மற்றும் களஞ்சியப்படுத்தல்",
+    "tamil_title": "அலகு 08: விநியோகவியலும் களஞ்சியப்படுத்தலும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Modes of transport, containerization and supply chain management",
+        "english": "Modes of transport, containerization and supply chain management",
+        "sinhala": "ප්‍රවාහන මාධ්‍ය, බහාලුම්කරණය සහ සැපයුම් දාම කළමනාකරණය",
+        "tamil": "போக்குவரத்து முறைகள், கொள்கலனாக்கம் மற்றும் விநியோகச் சங்கிலி",
+        "hours": 5
+      },
+      {
+        "num": "8.2",
+        "title": "Warehousing types, inventory control and logistics infrastructure",
+        "english": "Warehousing types, inventory control and logistics infrastructure",
+        "sinhala": "ගබඩා වර්ග, තොග පාලනය සහ සැපයුම් යටිතල පහසුකම්",
+        "tamil": "களஞ்சியசாலை வகைகள், இருப்புக்கட்டுப்பாடு மற்றும் விநியோக உட்கட்டமைப்பு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 9,
+    "title": "Domestic & International Trade",
+    "english": "Domestic & International Trade",
+    "sinhala": "දේශීය සහ ජාත්‍යන්තර වෙළඳාම",
+    "sinhala_title": "ඒකකය 09: දේශීය සහ ජාත්‍යන්තර වෙළඳාම",
+    "tamil": "உள்நாட்டு மற்றும் சர்வதேச வர்த்தகம்",
+    "tamil_title": "அலகு 09: உள்நாட்டு மற்றும் சர்வதேச வர்த்தகம்",
+    "subUnits": [
+      {
+        "num": "9.1",
+        "title": "Wholesale and retail trade channels and modern retailing trends",
+        "english": "Wholesale and retail trade channels and modern retailing trends",
+        "sinhala": "තොග සහ සිල්ලර වෙළඳ මාර්ග සහ නූතන සිල්ලර වෙළඳ ප්‍රවණතා",
+        "tamil": "மொத்த மற்றும் சில்லறை வர்த்தக வழிகள், நவீன விற்பனைப் போக்குகள்",
+        "hours": 5
+      },
+      {
+        "num": "9.2",
+        "title": "Export-import procedures, trade documentation, Incoterms and customs",
+        "english": "Export-import procedures, trade documentation, Incoterms and customs",
+        "sinhala": "අපනයන-ආනයන ක්‍රියාවලිය, වෙළඳ ලේඛන, ඉන්කොටර්ම්ස් සහ රේගු කටයුතු",
+        "tamil": "ஏற்றுமதி-இறக்குமதி நடைமுறைகள், ஆவணங்கள், சர்வதேச வர்த்தக நிபந்தனைகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 10,
+    "title": "Principles & Functions of Management",
+    "english": "Principles & Functions of Management",
+    "sinhala": "කළමනාකරණ මූලධර්ම සහ කාර්යයන්",
+    "sinhala_title": "ඒකකය 10: කළමනාකරණ මූලධර්ම සහ කාර්යයන්",
+    "tamil": "முகாமைத்துவக் கோட்பாடுகளும் தொழிற்பாடுகளும்",
+    "tamil_title": "அலகு 10: முகாமைத்துவக் கோட்பாடுகளும் தொழிற்பாடுகளும்",
+    "subUnits": [
+      {
+        "num": "10.1",
+        "title": "Definition of management, managerial skills, efficiency vs effectiveness",
+        "english": "Definition of management, managerial skills, efficiency vs effectiveness",
+        "sinhala": "කළමනාකරණ නිර්වචනය, කළමනාකරණ කුසලතා, කාර්යක්ෂමතාව සහ ඵලදායිතාව",
+        "tamil": "முகாமைத்துவ வரைவிலக்கணம், திறன்கள், வினைத்திறனும் விளைவுத்திறனும்",
+        "hours": 5
+      },
+      {
+        "num": "10.2",
+        "title": "Planning, organizing, leading and controlling (POLC framework)",
+        "english": "Planning, organizing, leading and controlling (POLC framework)",
+        "sinhala": "සැලසුම්කරණය, සංවිධානය කිරීම, මෙහෙයවීම සහ පාලනය (POLC රාමුව)",
+        "tamil": "திட்டமிடல், ஒழுங்கமைத்தல், தலைமைத்துவம் மற்றும் கட்டுப்படுத்தல்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 11,
+    "title": "Human Resource Management (HRM)",
+    "english": "Human Resource Management (HRM)",
+    "sinhala": "මානව සම්පත් කළමනාකරණය (HRM)",
+    "sinhala_title": "ඒකකය 11: මානව සම්පත් කළමනාකරණය",
+    "tamil": "மனித வள முகாமைத்துவம் (HRM)",
+    "tamil_title": "அலகு 11: மனித வள முகாமைத்துவம்",
+    "subUnits": [
+      {
+        "num": "11.1",
+        "title": "HR planning, job analysis, recruitment and selection process",
+        "english": "HR planning, job analysis, recruitment and selection process",
+        "sinhala": "මානව සම්පත් සැලසුම්කරණය, කාර්ය විශ්ලේෂණය, බඳවා ගැනීම සහ තෝරාගැනීම",
+        "tamil": "மனிதவளத் திட்டமிடல், தொழில் பகுப்பாய்வு, ஆட்சேர்ப்பு மற்றும் தெரிவுசெய்தல்",
+        "hours": 5
+      },
+      {
+        "num": "11.2",
+        "title": "Training, performance appraisal, compensation and industrial relations",
+        "english": "Training, performance appraisal, compensation and industrial relations",
+        "sinhala": "පුහුණුව, කාර්යසාධන ඇගයීම, වේතන කළමනාකරණය සහ කාර්මික සබඳතා",
+        "tamil": "பயிற்சி, செயலாற்றுகை மதிப்பீடு, கொடுப்பனவுகள் மற்றும் தொழிலுறவுகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 12,
+    "title": "Marketing Management & Marketing Mix",
+    "english": "Marketing Management & Marketing Mix",
+    "sinhala": "අලෙවිකරණ කළමනාකරණය සහ අලෙවිකරණ මිශ්‍රමය",
+    "sinhala_title": "ඒකකය 12: අලෙවිකරණ කළමනාකරණය සහ මිශ්‍රමය",
+    "tamil": "சந்தைப்படுத்தல் முகாமைத்துவமும் சந்தைக் கலவையும்",
+    "tamil_title": "அலகு 12: சந்தைப்படுத்தல் முகாமைத்துவமும் சந்தைக் கலவையும்",
+    "subUnits": [
+      {
+        "num": "12.1",
+        "title": "Market segmentation, targeting, positioning and consumer behaviour",
+        "english": "Market segmentation, targeting, positioning and consumer behaviour",
+        "sinhala": "වෙළඳපොළ ඛණ්ඩනය, ඉලක්කගත කිරීම, ස්ථානගත කිරීම සහ පාරිභෝගික හැසිරීම",
+        "tamil": "சந்தைப் பாகுபாடு, இலக்கிடல், நிலைப்படுத்தல் மற்றும் நுகர்வோர் நடத்தை",
+        "hours": 5
+      },
+      {
+        "num": "12.2",
+        "title": "Marketing mix (4Ps: Product, Price, Place, Promotion) and digital marketing",
+        "english": "Marketing mix (4Ps: Product, Price, Place, Promotion) and digital marketing",
+        "sinhala": "අලෙවිකරණ මිශ්‍රමය (නිෂ්පාදිතය, මිල, ස්ථානය, ප්‍රවර්ධනය) සහ ඩිජිටල් අලෙවිකරණය",
+        "tamil": "சந்தைக் கலவை (பண்டம், விலை, இடம், மேம்படுத்தல்) மற்றும் டிஜிட்டல் சந்தைப்படுத்தல்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 13,
+    "title": "Financial Management & Capital Structure",
+    "english": "Financial Management & Capital Structure",
+    "sinhala": "මූල්‍ය කළමනාකරණය සහ ප්‍රාග්ධන ව්‍යුහය",
+    "sinhala_title": "ඒකකය 13: මූල්‍ය කළමනාකරණය සහ ප්‍රාග්ධනය",
+    "tamil": "நிதி முகாமைத்துவமும் மூலதனக் கட்டமைப்பும்",
+    "tamil_title": "அலகு 13: நிதி முகாமைத்துவமும் மூலதனக் கட்டமைப்பும்",
+    "subUnits": [
+      {
+        "num": "13.1",
+        "title": "Objectives of financial management, short-term and long-term financing sources",
+        "english": "Objectives of financial management, short-term and long-term financing sources",
+        "sinhala": "මූල්‍ය කළමනාකරණ අරමුණු, කෙටිකාලීන සහ දිගුකාලීන මුදල් සම්පාදන ප්‍රභව",
+        "tamil": "நிதி முகாமைத்துவ நோக்கங்கள், குறுங்கால மற்றும் நீண்டகால நிதி மூலங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "13.2",
+        "title": "Working capital management, dividend policy and capital investment decisions",
+        "english": "Working capital management, dividend policy and capital investment decisions",
+        "sinhala": "වැඩකරන ප්‍රාග්ධන කළමනාකරණය, ලාභාංශ ප්‍රතිපත්තිය සහ ප්‍රාග්ධන ආයෝජන තීරණ",
+        "tamil": "நடைமுறை மூலதன முகாமைத்துவம், பங்குலாபக் கொள்கை, மூலதன முதலீட்டு முடிவுகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 14,
+    "title": "Information Systems & Preparation of a Business Plan",
+    "english": "Information Systems & Preparation of a Business Plan",
+    "sinhala": "තොරතුරු පද්ධති සහ ව්‍යාපාර සැලැස්මක් පිළියෙල කිරීම",
+    "sinhala_title": "ඒකකය 14: තොරතුරු පද්ධති සහ ව්‍යාපාර සැලැස්ම",
+    "tamil": "தகவல் தொகுதிகளும் வணிகத் திட்ட தயாரிப்பும்",
+    "tamil_title": "அலகு 14: தகவல் தொகுதிகளும் வணிகத் திட்டமும்",
+    "subUnits": [
+      {
+        "num": "14.1",
+        "title": "Management Information Systems (MIS), e-business and digital transformation",
+        "english": "Management Information Systems (MIS), e-business and digital transformation",
+        "sinhala": "කළමනාකරණ තොරතුරු පද්ධති (MIS), විද්‍යුත් ව්‍යාපාර සහ ඩිජිටල් පරිවර්තනය",
+        "tamil": "முகாமைத்துவ தகவல் தொகுதிகள் (MIS), மின்-வணிகம் மற்றும் டிஜிட்டல் மாற்றம்",
+        "hours": 5
+      },
+      {
+        "num": "14.2",
+        "title": "Components of a comprehensive business plan: Marketing, operational, financial plans",
+        "english": "Components of a comprehensive business plan: Marketing, operational, financial plans",
+        "sinhala": "සම්පූර්ණ ව්‍යාපාර සැලැස්මක අංග: අලෙවිකරණ, මෙහෙයුම්, මූල්‍ය සැලසුම්",
+        "tamil": "விரிவான வணிகத் திட்டத்தின் கூறுகள்: சந்தைப்படுத்தல், தொழிற்பாட்டு, நிதித் திட்டங்கள்",
+        "hours": 5
+      }
+    ]
+  }
+]

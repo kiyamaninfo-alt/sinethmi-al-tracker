@@ -1,0 +1,272 @@
+[
+  {
+    "num": 1,
+    "title": "Introduction to Statistics & Data Collection",
+    "english": "Introduction to Statistics & Data Collection",
+    "sinhala": "සංඛ්‍යානය හැඳින්වීම සහ දත්ත එක්රැස් කිරීම",
+    "sinhala_title": "ඒකකය 01: සංඛ්‍යානය හැඳින්වීම සහ දත්ත එක්රැස් කිරීම",
+    "tamil": "புள்ளிவிவரவியல் ஓர் அறிமுகமும் தரவு சேகரிப்பும்",
+    "tamil_title": "அலகு 01: புள்ளிவிவரவியல் அறிமுகமும் தரவு சேகரிப்பும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Population, sample, primary vs secondary data and variables",
+        "english": "Population, sample, primary vs secondary data and variables",
+        "sinhala": "ගහනය, නියැදිය, ප්‍රාථමික සහ ද්විතීයික දත්ත සහ විචල්‍යයන්",
+        "tamil": "குடித்தொகை, மாதிரி, முதன்மை-துணைத் தரவுகள் மற்றும் மாறிகள்",
+        "hours": 5
+      },
+      {
+        "num": "1.2",
+        "title": "Sampling techniques: Random, stratified, systematic and cluster sampling",
+        "english": "Sampling techniques: Random, stratified, systematic and cluster sampling",
+        "sinhala": "නියැදිකරණ ශිල්පක්‍රම: සරල සසම්භාවී, ස්ථරීභූත, ක්‍රමානුකූල සහ පොකුරු නියැදිකරණය",
+        "tamil": "மாதிரி முறைகள்: எழுமாற்று, படுகைப்படுத்தப்பட்ட மற்றும் கூட்ட மாதிரி",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Tabulation & Graphical Presentation of Data",
+    "english": "Tabulation & Graphical Presentation of Data",
+    "sinhala": "දත්ත සටහන්ගත කිරීම සහ ප්‍රස්තාරික නිරූපණය",
+    "sinhala_title": "ඒකකය 02: දත්ත සටහන්ගත කිරීම සහ ප්‍රස්තාර",
+    "tamil": "அட்டவணைப்படுத்தலும் தரவுகளின் வரைபு விளக்கமும்",
+    "tamil_title": "அலகு 02: அட்டவணைப்படுத்தலும் வரைபுகளும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Frequency distribution, histogram, frequency polygon and ogive curves",
+        "english": "Frequency distribution, histogram, frequency polygon and ogive curves",
+        "sinhala": "සංඛ්‍යාත ව්‍යාප්ති, හිස්ටෝග්‍රෑම්, සංඛ්‍යාත බහුඅස්‍ර සහ සමුච්චිත සංඛ්‍යාත වක්‍ර (ඔජීව්)",
+        "tamil": "அலைவெண் பரவல், செவ்வகப்படம், அலைவெண் பல்கோணி மற்றும் திரள் அலைவெண் வளைவி",
+        "hours": 5
+      },
+      {
+        "num": "2.2",
+        "title": "Bar charts, pie charts, stem-and-leaf and box-and-whisker plots",
+        "english": "Bar charts, pie charts, stem-and-leaf and box-and-whisker plots",
+        "sinhala": "තීරු ප්‍රස්තාර, වට ප්‍රස්තාර, කඳ-කොළ සටහන් සහ පෙට්ටි ප්‍රස්තාර",
+        "tamil": "பட்டை வரைபுகள், வட்ட வரைபுகள், தண்டு-இலை மற்றும் பெட்டி வரைபடங்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Measures of Central Tendency",
+    "english": "Measures of Central Tendency",
+    "sinhala": "කේන්ද්‍රික ප්‍රවණතා මිනුම්",
+    "sinhala_title": "ඒකකය 03: කේන්ද්‍රික ප්‍රවණතා මිනුම්",
+    "tamil": "மையப்போக்கு அளவைகள்",
+    "tamil_title": "அலகு 03: மையப்போக்கு அளவைகள்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Mean, median, mode for grouped and ungrouped data",
+        "english": "Mean, median, mode for grouped and ungrouped data",
+        "sinhala": "සමූහිත සහ අසමූහිත දත්ත සඳහා මධ්‍යන්‍යය, මධ්‍යස්ථය සහ මාතය",
+        "tamil": "கூட்டப்பட்ட, கூட்டப்படாத தரவுகளுக்கான இடை, இடைக்கோடு, ஆகாரம்",
+        "hours": 5
+      },
+      {
+        "num": "3.2",
+        "title": "Geometric mean, harmonic mean and properties of ideal average",
+        "english": "Geometric mean, harmonic mean and properties of ideal average",
+        "sinhala": "ගුණෝත්තර මධ්‍යන්‍යය, හරාත්මක මධ්‍යන්‍යය සහ උචිත සාමාන්‍යයක ගුණාංග",
+        "tamil": "பெருக்கல் இடை, இசை இடை மற்றும் சிறந்த சராசரியின் பண்புகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Measures of Dispersion & Skewness",
+    "english": "Measures of Dispersion & Skewness",
+    "sinhala": "අපකිරණ සහ විෂමතා මිනුම්",
+    "sinhala_title": "ඒකකය 04: අපකිරණ සහ විෂමතා මිනුම්",
+    "tamil": "சிதறல் அளவைகளும் சமச்சீரற்ற தன்மையும்",
+    "tamil_title": "அலகு 04: சிதறல் அளவைகளும் சமச்சீரற்ற தன்மையும்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Range, interquartile range, variance and standard deviation",
+        "english": "Range, interquartile range, variance and standard deviation",
+        "sinhala": "පරාසය, අන්තශ්චතුර්ථක පරාසය, විචල්‍යතාව සහ සම්මත අපගමනය",
+        "tamil": "வீச்சு, காலணையிடை வீச்சு, மாறுபாட்டளவு மற்றும் திட்டவிலகல்",
+        "hours": 5
+      },
+      {
+        "num": "4.2",
+        "title": "Coefficient of variation and Karl Pearson's skewness measures",
+        "english": "Coefficient of variation and Karl Pearson's skewness measures",
+        "sinhala": "විචලන සංගුණකය සහ කාල් පියර්සන්ගේ විෂමතා මිනුම්",
+        "tamil": "மாறுபட்டுக் குணகம் மற்றும் கார்ல் பியர்சனின் சமச்சீரற்ற குணகம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Probability Concepts & Probability Rules",
+    "english": "Probability Concepts & Probability Rules",
+    "sinhala": "සම්භාවිතා සංකල්ප සහ සම්භාවිතා නීති",
+    "sinhala_title": "ඒකකය 05: සම්භාවිතා සංකල්ප සහ නීති",
+    "tamil": "நிகழ்தகவுக் கருத்துக்களும் விதிகளும்",
+    "tamil_title": "அலகு 05: நிகழ்தகவுக் கருத்துக்களும் விதிகளும்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "Sample space, events, classical, empirical and subjective probability",
+        "english": "Sample space, events, classical, empirical and subjective probability",
+        "sinhala": "නියැදි අවකාශය, සිදුවීම් සහ සම්භාව්‍ය, අනුභූතික සම්භාවිතාව",
+        "tamil": "கூறுவெளி, நிகழ்ச்சிகள் மற்றும் பாரம்பரிய, பட்டறிவு நிகழ்தகவு",
+        "hours": 5
+      },
+      {
+        "num": "5.2",
+        "title": "Addition rule, multiplication rule, conditional probability and Bayes' Theorem",
+        "english": "Addition rule, multiplication rule, conditional probability and Bayes' Theorem",
+        "sinhala": "එකතු කිරීමේ, ගුණ කිරීමේ නීති, සප්‍රතිබන්ධ සම්භාවිතාව සහ බේස් ප්‍රමේයය",
+        "tamil": "கூட்டல், பெருக்கல் விதிகள், நிபந்தனை நிகழ்தகவு மற்றும் பேயீஸின் தேற்றம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Discrete & Continuous Probability Distributions",
+    "english": "Discrete & Continuous Probability Distributions",
+    "sinhala": "විවික්ත සහ සන්තතික සම්භාවිතා ව්‍යාප්ති",
+    "sinhala_title": "ඒකකය 06: සම්භාවිතා ව්‍යාප්ති",
+    "tamil": "தனித்த மற்றும் தொடர் நிகழ்தகவுப் பரவல்கள்",
+    "tamil_title": "அலகு 06: நிகழ்தகவுப் பரவல்கள்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "Binomial and Poisson discrete probability distributions and expectations",
+        "english": "Binomial and Poisson discrete probability distributions and expectations",
+        "sinhala": "ද්විපද සහ පොයිසන් විවික්ත සම්භාවිතා ව්‍යාප්ති සහ අපේක්ෂා අගයන්",
+        "tamil": "ஈருறுப்பு மற்றும் பொய்சான் தனித்த நிகழ்தகவுப் பரவல்கள்",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "Normal distribution, standard normal distribution (Z-scores) and properties",
+        "english": "Normal distribution, standard normal distribution (Z-scores) and properties",
+        "sinhala": "ප්‍රමත ව්‍යාප්තිය, සම්මත ප්‍රමත ව්‍යාප්තිය (Z-අගයන්) සහ ගුණාංග",
+        "tamil": "இயல்நிலைப் பரவல், திட்ட இயல்நிலைப் பரவல் (Z-பெறுமதிகள்) மற்றும் பண்புகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Correlation & Linear Regression Analysis",
+    "english": "Correlation & Linear Regression Analysis",
+    "sinhala": "සහසම්බන්ධය සහ රේඛීය ප්‍රතිපායන විශ්ලේෂණය",
+    "sinhala_title": "ඒකකය 07: සහසම්බන්ධය සහ ප්‍රතිපායනය",
+    "tamil": "ஒட்டுறவும் நேரியல் பின்னடைவுப் பகுப்பாய்வும்",
+    "tamil_title": "அலகு 07: ஒட்டுறவும் பின்னடைவுப் பகுப்பாய்வும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Scatter diagram, Karl Pearson's correlation and Spearman's rank correlation",
+        "english": "Scatter diagram, Karl Pearson's correlation and Spearman's rank correlation",
+        "sinhala": "විසිරුණු සටහන, කාල් පියර්සන්ගේ සහසම්බන්ධය සහ ස්පියර්මන්ගේ ශ්‍රේණි සහසම්බන්ධය",
+        "tamil": "சிதறல் வரிப்படம், கார்ல் பியர்சனின் ஒட்டுறவு, ஸ்பியர்மானின் தர ஒட்டுறவு",
+        "hours": 5
+      },
+      {
+        "num": "7.2",
+        "title": "Least squares simple linear regression line and coefficient of determination",
+        "english": "Least squares simple linear regression line and coefficient of determination",
+        "sinhala": "අවම වර්ග ක්‍රමයෙන් සරල රේඛීය ප්‍රතිපායන සමීකරණය සහ නිර්ණායක සංගුණකය",
+        "tamil": "மீச்சிறு வர்க்க நேரியல் பின்னடைவுக் கோடு மற்றும் தீர்மானக் குணகம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Time Series Analysis & Forecasting",
+    "english": "Time Series Analysis & Forecasting",
+    "sinhala": "කාල ශ්‍රේණි විශ්ලේෂණය සහ අනාවැකි පළකිරීම",
+    "sinhala_title": "ඒකකය 08: කාල ශ්‍රේණි විශ්ලේෂණය",
+    "tamil": "காலத்தொடர்ப் பகுப்பாய்வும் எதிர்வுகூறலும்",
+    "tamil_title": "அலகு 08: காலத்தொடர்ப் பகுப்பாய்வு",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Components of time series: Trend, seasonal, cyclical and irregular movements",
+        "english": "Components of time series: Trend, seasonal, cyclical and irregular movements",
+        "sinhala": "කාල ශ්‍රේණියක සංරචක: ප්‍රවණතාව, සෘතුමය, චක්‍රීය සහ අක්‍රමවත් විචලන",
+        "tamil": "காலத்தொடரின் கூறுகள்: போக்கு, பருவகால, சுழற்சி மற்றும் ஒழுங்கற்ற கூறுகள்",
+        "hours": 5
+      },
+      {
+        "num": "8.2",
+        "title": "Moving averages method and least squares method for trend estimation",
+        "english": "Moving averages method and least squares method for trend estimation",
+        "sinhala": "චල මධ්‍යන්‍ය ක්‍රමය සහ අවම වර්ග ක්‍රමයෙන් ප්‍රවණතාව ඇස්තමේන්තු කිරීම",
+        "tamil": "நகரும் சராசரி முறை மற்றும் போக்கு மதிப்பீட்டுக்கான மீச்சிறு வர்க்க முறை",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 9,
+    "title": "Index Numbers & Price Deflation",
+    "english": "Index Numbers & Price Deflation",
+    "sinhala": "දර්ශක අංක සහ මිල අවධමනය",
+    "sinhala_title": "ඒකකය 09: දර්ශක අංක සහ මිල අවධමනය",
+    "tamil": "சுட்டெண்களும் விலைத்தணிப்பும்",
+    "tamil_title": "அலகு 09: சுட்டெண்களும் விலைத்தணிப்பும்",
+    "subUnits": [
+      {
+        "num": "9.1",
+        "title": "Price, quantity and value indices, Laspeyres, Paasche and Fisher's indices",
+        "english": "Price, quantity and value indices, Laspeyres, Paasche and Fisher's indices",
+        "sinhala": "මිල, ප්‍රමාණ දර්ශක සහ ලැස්පෙයර්ස්, පාෂේ, ෆිෂර්ගේ සුචි අංක",
+        "tamil": "விலை, அளவு சுட்டெண்கள் மற்றும் லாஸ்பியர், பாஸ்சே, பிஷரின் சுட்டெண்கள்",
+        "hours": 5
+      },
+      {
+        "num": "9.2",
+        "title": "Consumer Price Index (CCPI in Sri Lanka), inflation calculation and real wages",
+        "english": "Consumer Price Index (CCPI in Sri Lanka), inflation calculation and real wages",
+        "sinhala": "පාරිභෝගික මිල දර්ශකය (කොළඹ පාරිභෝගික මිල දර්ශකය), උද්ධමනය සහ තාත්වික වේතන",
+        "tamil": "நுகர்வோர் விலைச் சுட்டெண் (CCPI), பணவீக்கக் கணிப்பீடு, உண்மைக்கூலி",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 10,
+    "title": "Statistical Quality Control & Statistical Estimation",
+    "english": "Statistical Quality Control & Statistical Estimation",
+    "sinhala": "සංඛ්‍යානමය තත්ත්ව පාලනය සහ ඇස්තමේන්තුකරණය",
+    "sinhala_title": "ඒකකය 10: තත්ත්ව පාලනය සහ ඇස්තමේන්තුකරණය",
+    "tamil": "புள்ளிவிவரத் தரக்கட்டுப்பாடும் மதிப்பீட்டியலும்",
+    "tamil_title": "அலகு 10: தரக்கட்டுப்பாடும் மதிப்பீட்டியலும்",
+    "subUnits": [
+      {
+        "num": "10.1",
+        "title": "Control charts for variables (X-bar and R charts) and attributes (p and c charts)",
+        "english": "Control charts for variables (X-bar and R charts) and attributes (p and c charts)",
+        "sinhala": "විචල්‍ය පාලන ප්‍රස්තාර (X-බාර් සහ R ප්‍රස්තාර) සහ ගුණාංග පාලන ප්‍රස්තාර (p සහ c)",
+        "tamil": "மாறிகளுக்கான கட்டுப்பாட்டு வரைபடங்கள் (X-bar, R) மற்றும் பண்பு வரைபடங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "10.2",
+        "title": "Point estimation, confidence intervals for mean and hypothesis testing concepts",
+        "english": "Point estimation, confidence intervals for mean and hypothesis testing concepts",
+        "sinhala": "ලක්ෂ්‍ය ඇස්තමේන්තුකරණය, විශ්වාසනීය පරාස සහ උපකල්පන පරීක්ෂා කිරීමේ සංකල්ප",
+        "tamil": "புள்ளி மதிப்பீடு, நம்பிக்கை இடைவெளி மற்றும் எடுகோள் சோதிப்பு",
+        "hours": 5
+      }
+    ]
+  }
+]

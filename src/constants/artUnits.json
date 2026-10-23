@@ -1,0 +1,218 @@
+[
+  {
+    "num": 1,
+    "title": "Elements of Art, Visual Principles & Design Theory",
+    "english": "Elements of Art, Visual Principles & Design Theory",
+    "sinhala": "කලා මූලිකාංග, දෘශ්‍ය මූලධර්ම සහ මෝස්තර න්‍යාය",
+    "sinhala_title": "ඒකකය 01: කලා මූලිකාංග සහ මෝස්තර න්‍යාය",
+    "tamil": "கலைக் கூறுகள், காட்சிக் கோட்பாடுகளும் வடிவமைப்புத் தத்துவமும்",
+    "tamil_title": "அலகு 01: கலைக் கூறுகளும் வடிவமைப்பும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Line, shape, form, texture, space, value and color theory (hue, value, chroma)",
+        "english": "Line, shape, form, texture, space, value and color theory (hue, value, chroma)",
+        "sinhala": "රේඛාව, හැඩය, ස්වරූපය, වයනය, අවකාශය සහ වර්ණ න්‍යාය (ප්‍රාථමික, ද්විතීයික)",
+        "tamil": "கோடு, வடிவம், உருவம், இழையமைப்பு, வெளி மற்றும் வர்ணக் கோட்பாடு",
+        "hours": 5
+      },
+      {
+        "num": "1.2",
+        "title": "Principles of composition: Balance, rhythm, proportion, emphasis and unity",
+        "english": "Principles of composition: Balance, rhythm, proportion, emphasis and unity",
+        "sinhala": "සංයුති මූලධර්ම: තුලනය, රිද්මය, සමානුපාතිකත්වය, ප්‍රමුඛතාව සහ ඒකීයත්වය",
+        "tamil": "கலவைக் கோட்பாடுகள்: சமநிலை, தாளம், விகிதம், அழுத்தம் மற்றும் ஒருமைப்பாடு",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Drawing, Perspective & Observational Studies",
+    "english": "Drawing, Perspective & Observational Studies",
+    "sinhala": "චිත්‍ර ඇඳීම, මූර්ත දර්ශනය (පර්ස්පෙක්ටිව්) සහ නිරීක්ෂණ අධ්‍යයන",
+    "sinhala_title": "ඒකකය 02: චිත්‍ර ඇඳීම සහ මූර්ත දර්ශනය",
+    "tamil": "வரைதல், தொலைநோக்கு மற்றும் அவதானிப்புப் பயிற்சிகள்",
+    "tamil_title": "அலகு 02: வரைதலும் தொலைநோக்கும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Linear perspective (one-point, two-point, three-point) and aerial perspective",
+        "english": "Linear perspective (one-point, two-point, three-point) and aerial perspective",
+        "sinhala": "රේඛීය මූර්ත දර්ශනය (ඒක ලක්ෂ්‍ය, ද්වි ලක්ෂ්‍ය) සහ වායුගෝලීය මූර්තනය",
+        "tamil": "நேரியல் தொலைநோக்கு (ஒருபுள்ளி, இருபுள்ளி) மற்றும் வளிமண்டல தொலைநோக்கு",
+        "hours": 5
+      },
+      {
+        "num": "2.2",
+        "title": "Still life, drapery, foliage and human anatomy sketching from observation",
+        "english": "Still life, drapery, foliage and human anatomy sketching from observation",
+        "sinhala": "නිශ්චල ද්‍රව්‍ය, රෙදිපිළි නැමුම්, ශාක පත්‍ර සහ මානව ව්‍යුහය ඇඳීම",
+        "tamil": "உயிரற்ற பொருட்கள், மனித உடற்கூற்றியல் மற்றும் இயற்கை வரைதல்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Traditional Sri Lankan Rock Art, Murals & Sculpture",
+    "english": "Traditional Sri Lankan Rock Art, Murals & Sculpture",
+    "sinhala": "ශ්‍රී ලංකාවේ සාම්ප්‍රදායික බිතුසිතුවම් සහ මූර්ති කලාව",
+    "sinhala_title": "ඒකකය 03: සාම්ප්‍රදායික බිතුසිතුවම් සහ මූර්ති",
+    "tamil": "பாரம்பரிய இலங்கை பாறை ஓவியங்கள், சுவரோவியங்கள், சிற்பக்கலை",
+    "tamil_title": "அலகு 03: பாரம்பரிய சுவரோவியங்களும் சிற்பங்களும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Prehistoric rock art (Tantirimale) and Sigiriya classical fresco paintings",
+        "english": "Prehistoric rock art (Tantirimale) and Sigiriya classical fresco paintings",
+        "sinhala": "ප්‍රාග් ඓතිහාසික ගුහා සිතුවම් (තන්තිරිමලේ) සහ සීගිරි සම්භාව්‍ය බිතුසිතුවම්",
+        "tamil": "வரலாற்றுக்கு முற்பட்ட பாறை ஓவியங்கள் மற்றும் சீகிரிய சுவரோவியங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "3.2",
+        "title": "Polonnaruwa Tivanka murals, Kandyan style murals (Degaldoruwa) and sculptures",
+        "english": "Polonnaruwa Tivanka murals, Kandyan style murals (Degaldoruwa) and sculptures",
+        "sinhala": "තිවංක පිළිමගෙයි සිතුවම්, නුවර යුගයේ බිතුසිතුවම් (දෙගල්දොරුව) සහ මූර්ති",
+        "tamil": "திவங்க சுவரோவியங்கள், கண்டி கால சுவரோவியங்கள் (தெகல்தொருவ)",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Ancient Indian Art & Architecture Traditions",
+    "english": "Ancient Indian Art & Architecture Traditions",
+    "sinhala": "පැරණි භාරතීය කලා සහ වාස්තුවිද්‍යා සම්ප්‍රදායන්",
+    "sinhala_title": "ඒකකය 04: භාරතීය කලා සහ වාස්තුවිද්‍යාව",
+    "tamil": "பண்டைய இந்தியக் கலை மற்றும் கட்டிடக்கலை மரபுகள்",
+    "tamil_title": "அலகு 04: இந்தியக் கலை மரபுகள்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Indus Valley art, Mauryan pillars and Sanchi stupa gateway reliefs",
+        "english": "Indus Valley art, Mauryan pillars and Sanchi stupa gateway reliefs",
+        "sinhala": "ඉන්දු නිම්න කලා නිර්මාණ, මෞර්ය අශෝක ස්තම්භ සහ සාංචි තොරණ කැටයම්",
+        "tamil": "சிந்துவெளி கலை, மௌரிய தூண்கள் மற்றும் சாஞ்சி தோரணச் சிற்பங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "4.2",
+        "title": "Ajanta cave murals, Gandhara/Mathura Buddha sculpture and Gupta golden age",
+        "english": "Ajanta cave murals, Gandhara/Mathura Buddha sculpture and Gupta golden age",
+        "sinhala": "අජන්තා ලෙන් සිතුවම්, ගන්ධාර/මථුරා බුද්ධ ප්‍රතිමා සහ ගුප්ත යුගයේ කලාව",
+        "tamil": "அஜந்தா குகை ஓவியங்கள், காந்தார புத்தர் சிற்பங்கள், குப்தர் கலை",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Western Art: Classical Antiquity to Renaissance",
+    "english": "Western Art: Classical Antiquity to Renaissance",
+    "sinhala": "බටහිර කලාව: සම්භාව්‍ය යුගයේ සිට පුනරුදය දක්වා",
+    "sinhala_title": "ඒකකය 05: බටහිර සම්භාව්‍ය සහ පුනරුද කලාව",
+    "tamil": "மேற்கத்தைய கலை: செவ்வியல் காலம் முதல் மறுமலர்ச்சி வரை",
+    "tamil_title": "அலகு 05: மேற்கத்தைய மறுமலர்ச்சிக் கலை",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "Greek classical proportions, Roman architecture and Gothic cathedral art",
+        "english": "Greek classical proportions, Roman architecture and Gothic cathedral art",
+        "sinhala": "ග්‍රීක සම්භාව්‍ය කලා, රෝමානු වාස්තුවිද්‍යාව සහ ගොතික් ආසන දෙව්මැදුරු කලාව",
+        "tamil": "கிரேக்க செவ்வியல் சிற்பங்கள், ரோமானிய கட்டிடக்கலை, கோதிக் கலை",
+        "hours": 5
+      },
+      {
+        "num": "5.2",
+        "title": "High Renaissance masters: Leonardo da Vinci, Michelangelo and Raphael",
+        "english": "High Renaissance masters: Leonardo da Vinci, Michelangelo and Raphael",
+        "sinhala": "උච්ච පුනරුද ශූරයන්: ලියනාඩෝ ඩා වින්චි, මයිකල්ඇන්ජලෝ සහ රෆායෙල්",
+        "tamil": "உயர் மறுமலர்ச்சி மேதைகள்: லியனார்டோ டா வின்சி, மைக்கலாஞ்சலோ, ரபேல்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Modern Art Movements (Impressionism to Surrealism)",
+    "english": "Modern Art Movements (Impressionism to Surrealism)",
+    "sinhala": "නූතන කලා ව්‍යාපාර (ආභාසවාදයේ සිට අධියථාර්ථවාදය දක්වා)",
+    "sinhala_title": "ඒකකය 06: නූතන බටහිර කලා ව්‍යාපාර",
+    "tamil": "நவீன கலை இயக்கங்கள் (இம்ப்ரெஷனிசம் முதல் சர்ரியலிசம் வரை)",
+    "tamil_title": "அலகு 06: நவீன கலை இயக்கங்கள்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "Impressionism (Monet) and Post-Impressionism (Van Gogh, Cezanne)",
+        "english": "Impressionism (Monet) and Post-Impressionism (Van Gogh, Cezanne)",
+        "sinhala": "ආභාසවාදය (මොනෙට්) සහ පශ්චාත්-ආභාසවාදය (වැන්ගෝ, සේසාන්)",
+        "tamil": "இம்ப்ரெஷனிசம் (மோனே) மற்றும் பின்-இம்ப்ரெஷனிசம் (வான் கோ, செசான்)",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "Cubism (Picasso), Expressionism and Surrealism (Salvador Dali)",
+        "english": "Cubism (Picasso), Expressionism and Surrealism (Salvador Dali)",
+        "sinhala": "ඝනකවාදය (පිකාසෝ), ප්‍රකාශනවාදය සහ අධියථාර්ථවාදය (සැල්වදෝර් ඩාලි)",
+        "tamil": "கியூபிசம் (பிக்காசோ), வெளிப்பாட்டுவாதம் மற்றும் சர்ரியலிசம் (டாலி)",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Graphic Design, Typography & Applied Commercial Art",
+    "english": "Graphic Design, Typography & Applied Commercial Art",
+    "sinhala": "ප්‍රස්ථාරික නිර්මාණකරණය, මුද්‍රණ අක්ෂර කලාව සහ ව්‍යවහාරික කලාව",
+    "sinhala_title": "ඒකකය 07: ප්‍රස්ථාරික නිර්මාණකරණය සහ අක්ෂර කලාව",
+    "tamil": "வரைகலை வடிவமைப்பு, அச்சுக்கலை மற்றும் வர்த்தகக் கலை",
+    "tamil_title": "அலகு 07: வரைகலை வடிவமைப்பும் அச்சுக்கலையும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Typography, logo branding, poster design and layout grids",
+        "english": "Typography, logo branding, poster design and layout grids",
+        "sinhala": "අක්ෂර කලාව, ලාංඡන සන්නාමකරණය, පෝස්ටර් නිර්මාණය සහ පිටු සැකසුම",
+        "tamil": "அச்சுக்கலை, சின்ன வடிவமைப்பு, சுவரொட்டி வடிவமைப்பு மற்றும் தளவமைப்பு",
+        "hours": 5
+      },
+      {
+        "num": "7.2",
+        "title": "Package design, digital vector illustration and UI/visual communication",
+        "english": "Package design, digital vector illustration and UI/visual communication",
+        "sinhala": "ඇසුරුම් නිර්මාණය, ඩිජිටල් දෛශික චිත්‍රණය සහ දෘශ්‍ය සන්නිවේදනය",
+        "tamil": "பொதியிடல் வடிவமைப்பு, டிஜிட்டல் சித்திரங்கள் மற்றும் காட்சிக் கலை",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Modern Sri Lankan Art & the '43 Group Movement",
+    "english": "Modern Sri Lankan Art & the '43 Group Movement",
+    "sinhala": "නූතන ශ්‍රී ලාංකේය චිත්‍ර කලාව සහ 43 කණ්ඩායමේ ව්‍යාපාරය",
+    "sinhala_title": "ඒකකය 08: නූතන ලාංකේය කලාව සහ 43 කණ්ඩායම",
+    "tamil": "நவீன இலங்கை கலை மற்றும் 43 குழு இயக்கம்",
+    "tamil_title": "அலகு 08: நவீன இலங்கை கலையும் 43 குழுவும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Origins of modern Sri Lankan art: Buddhist revivalist art (Solias Mendis, George Keyt)",
+        "english": "Origins of modern Sri Lankan art: Buddhist revivalist art (Solias Mendis, George Keyt)",
+        "sinhala": "නූතන ලාංකේය කලාවේ ආරම්භය: සෝලියස් මෙන්ඩිස් සහ ජෝර්ජ් කීට්ගේ සිතුවම්",
+        "tamil": "நவீன இலங்கை கலையின் தோற்றம்: சோலியஸ் மெண்டிஸ், ஜோர்ஜ் கீட்",
+        "hours": 5
+      },
+      {
+        "num": "8.2",
+        "title": "The '43 Group: Justin Daraniyagala, Richard Gabriel and contemporary art directions",
+        "english": "The '43 Group: Justin Daraniyagala, Richard Gabriel and contemporary art directions",
+        "sinhala": "43 කණ්ඩායම: ජස්ටින් දැරණියගල, රිචඩ් ගේබ්‍රියල් සහ සමකාලීන කලා ප්‍රවණතා",
+        "tamil": "43 குழு: ஜஸ்டின் தரணியகல, ரிச்சர்ட் கேப்ரியல் மற்றும் சமகால போக்குகள்",
+        "hours": 5
+      }
+    ]
+  }
+]

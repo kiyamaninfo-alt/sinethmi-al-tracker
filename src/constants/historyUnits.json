@@ -1,0 +1,272 @@
+[
+  {
+    "num": 1,
+    "title": "Sources of Sri Lankan History & Early Settlements",
+    "english": "Sources of Sri Lankan History & Early Settlements",
+    "sinhala": "ශ්‍රී ලංකා ඉතිහාසයේ මූලාශ්‍ර සහ මුල් ජනාවාස",
+    "sinhala_title": "ඒකකය 01: ඓතිහාසික මූලාශ්‍ර සහ මුල් ජනාවාස",
+    "tamil": "இலங்கை வரலாற்று மூலங்களும் ஆரம்பகால குடியேற்றங்களும்",
+    "tamil_title": "அலகு 01: வரலாற்று மூலங்களும் குடியேற்றங்களும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Literary and archaeological sources: Chronicles (Mahavamsa), inscriptions, coins",
+        "english": "Literary and archaeological sources: Chronicles (Mahavamsa), inscriptions, coins",
+        "sinhala": "සාහිත්‍ය සහ පුරාවිද්‍යාත්මක මූලාශ්‍ර: වංශකථා (මහාවංශය), සෙල්ලිපි, කාසි",
+        "tamil": "இலக்கிய மற்றும் தொல்பொருள் மூலங்கள்: மகாவம்சம், கல்வெட்டுக்கள், நாணயங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "1.2",
+        "title": "Prehistoric and protohistoric settlements, megalithic culture and Yan Oya",
+        "english": "Prehistoric and protohistoric settlements, megalithic culture and Yan Oya",
+        "sinhala": "ප්‍රාග් සහ පූර්ව ඓතිහාසික ජනාවාස, මහාශිලා සංස්කෘතිය සහ යාන් ඔය නිම්නය",
+        "tamil": "வரலாற்றுக்கு முற்பட்ட குடியேற்றங்கள், பெருங்கற்காலப் பண்பாடு",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Evolution of Anuradhapura Kingdom & Hydraulic Civilization",
+    "english": "Evolution of Anuradhapura Kingdom & Hydraulic Civilization",
+    "sinhala": "අනුරාධපුර රාජධානියේ පරිණාමය සහ වාරි ශිෂ්ටාචාරය",
+    "sinhala_title": "ඒකකය 02: අනුරාධපුර රාජධානිය සහ වාරි ශිෂ්ටාචාරය",
+    "tamil": "அனுராதபுர இராச்சியத்தின் வளர்ச்சியும் நீர்ப்பாசன நாகரிகமும்",
+    "tamil_title": "அலகு 02: அனுராதபுர இராச்சியமும் நீர்ப்பாசனமும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Consolidation of the state (Duttagamani, Valagamba, Vasabha and Mahasena)",
+        "english": "Consolidation of the state (Duttagamani, Valagamba, Vasabha and Mahasena)",
+        "sinhala": "රාජ්‍යය ඒකාබද්ධ වීම (දුටුගැමුණු, වළගම්බා, වසභ සහ මහසෙන් රජවරු)",
+        "tamil": "அரசின் ஒருங்கிணைப்பு (துட்டகைமுணு, வலகம்பா, வசப மற்றும் மகாசேனன்)",
+        "hours": 5
+      },
+      {
+        "num": "2.2",
+        "title": "Development of the hydraulic civilization: Tanks, canals (Yoda Ela) and bisokotuwa",
+        "english": "Development of the hydraulic civilization: Tanks, canals (Yoda Ela) and bisokotuwa",
+        "sinhala": "වාරි ශිෂ්ටාචාරයේ සංවර්ධනය: වැව්, යෝධ ඇළ සහ බිසෝකොටුව",
+        "tamil": "நீர்ப்பாசன நாகரிகத்தின் வளர்ச்சி: குளங்கள், யோத எல மற்றும் பிசோகொட்டுவ",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Polonnaruwa Kingdom & Socio-Economic Transformation",
+    "english": "Polonnaruwa Kingdom & Socio-Economic Transformation",
+    "sinhala": "පොළොන්නරු රාජධානිය සහ සමාජ-ආර්ථික පරිවර්තනය",
+    "sinhala_title": "ඒකකය 03: පොළොන්නරු රාජධානිය සහ ආර්ථිකය",
+    "tamil": "பொலன்னறுவை இராச்சியமும் சமூக-பொருளாதார மாற்றங்களும்",
+    "tamil_title": "அலகு 03: பொலன்னறுவை இராச்சியமும் சமூகமும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Liberation from Cholas by Vijayabahu I and consolidation of kingdom",
+        "english": "Liberation from Cholas by Vijayabahu I and consolidation of kingdom",
+        "sinhala": "පළමුවන විජයබාහු රජුගේ චෝල විමුක්ති සටන සහ රාජධානිය ස්ථාපනය",
+        "tamil": "முதலாம் விஜயபாகுவின் சோழர் விடுதலைப் போரும் ஆட்சியமைப்பும்",
+        "hours": 5
+      },
+      {
+        "num": "3.2",
+        "title": "Reign of Parakramabahu I (Parakrama Samudra), Nissankamalla and trade",
+        "english": "Reign of Parakramabahu I (Parakrama Samudra), Nissankamalla and trade",
+        "sinhala": "පළමුවන පරාක්‍රමබාහු (පරාක්‍රම සමුද්‍රය), නිශ්ශංකමල්ල රජු සහ වෙළඳාම",
+        "tamil": "முதலாம் பராக்கிரமபாகுவின் ஆட்சி (பராக்கிரம சமுத்திரம்) மற்றும் வர்த்தகம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Decentralization & Kingdoms of Dambadeniya, Gampola & Kotte",
+    "english": "Decentralization & Kingdoms of Dambadeniya, Gampola & Kotte",
+    "sinhala": "රාජධානි විමධ්‍යගත වීම: දඹදෙණිය, ගම්පොළ සහ කෝට්ටේ",
+    "sinhala_title": "ඒකකය 04: දඹදෙණිය, ගම්පොළ සහ කෝට්ටේ යුගයන්",
+    "tamil": "அதிகாரப் பரவலாக்கமும் தம்பதெனிய, கம்பளை, கோட்டே இராச்சியங்களும்",
+    "tamil_title": "அலகு 04: இடைக்கால இராச்சியங்கள்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Southwestward shift of the capital, Dambadeniya, Yapahuwa and Gampola eras",
+        "english": "Southwestward shift of the capital, Dambadeniya, Yapahuwa and Gampola eras",
+        "sinhala": "රාජධානිය නිරිතදිගට සංක්‍රමණය වීම, දඹදෙණිය, යාපහුව සහ ගම්පොළ යුගයන්",
+        "tamil": "தலைநகரம் தென்மேற்கு நோக்கி நகர்தல், தம்பதெனிய, யாப்பகூவ, கம்பளை",
+        "hours": 5
+      },
+      {
+        "num": "4.2",
+        "title": "The Kingdom of Kotte (Parakramabahu VI), literature renaissance and Jaffna Kingdom",
+        "english": "The Kingdom of Kotte (Parakramabahu VI), literature renaissance and Jaffna Kingdom",
+        "sinhala": "කෝට්ටේ රාජධානිය (හයවන පරාක්‍රමබාහු), සාහිත්‍ය පුනරුදය සහ යාපනය රාජධානිය",
+        "tamil": "கோட்டே இராச்சியம் (ஆறாம் பராக்கிரமபாகு), இலக்கிய மறுமலர்ச்சி, யாழ்ப்பாண அரசு",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "The Kingdom of Kandy & Resistance to European Powers",
+    "english": "The Kingdom of Kandy & Resistance to European Powers",
+    "sinhala": "මහනුවර රාජධානිය සහ යුරෝපීය ආක්‍රමණිකයන්ට එරෙහි ප්‍රතිරෝධය",
+    "sinhala_title": "ඒකකය 05: මහනුවර රාජධානිය සහ ප්‍රතිරෝධය",
+    "tamil": "கண்டி இராச்சியமும் ஐரோப்பிய ஆதிக்கத்திற்கு எதிரான எதிர்ப்பும்",
+    "tamil_title": "அலகு 05: கண்டி இராச்சியமும் எதிர்ப்பும்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "Establishment of Senkadagala, Vimaladharmasuriya I and resistance tactics",
+        "english": "Establishment of Senkadagala, Vimaladharmasuriya I and resistance tactics",
+        "sinhala": "සෙංකඩගල රාජධානිය ඇරඹීම, පළමුවන විමලධර්මසූරිය රජු සහ ගරිල්ලා යුද උපාය",
+        "tamil": "கண்டி இராச்சிய உருவாக்கம், முதலாம் விமலதர்மசூரியன் மற்றும் கொரில்லா போர்",
+        "hours": 5
+      },
+      {
+        "num": "5.2",
+        "title": "Portuguese and Dutch interactions, Treaty of 1638 and socio-political structure",
+        "english": "Portuguese and Dutch interactions, Treaty of 1638 and socio-political structure",
+        "sinhala": "පෘතුගීසි සහ ලන්දේසි සබඳතා, 1638 ගිවිසුම සහ මහනුවර සමාජ-දේශපාලන ව්‍යුහය",
+        "tamil": "போர்த்துக்கேய, ஒல்லாந்தர் தொடர்புகள், 1638 ஒப்பந்தம் மற்றும் கண்டிச் சமூகம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "British Rule, 1815 Kandyan Convention & Rebellions",
+    "english": "British Rule, 1815 Kandyan Convention & Rebellions",
+    "sinhala": "බ්‍රිතාන්‍ය පාලනය, 1815 උඩරට ගිවිසුම සහ නිදහස් අරගල",
+    "sinhala_title": "ඒකකය 06: බ්‍රිතාන්‍ය පාලනය සහ නිදහස් අරගල",
+    "tamil": "பிரித்தானியர் ஆட்சி, 1815 கண்டி ஒப்பந்தமும் கிளர்ச்சிகளும்",
+    "tamil_title": "அலகு 06: பிரித்தானியர் ஆட்சியும் கிளர்ச்சிகளும்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "Cession of Kandy (1815 Convention) and 1818 Uva-Wellassa Great Rebellion",
+        "english": "Cession of Kandy (1815 Convention) and 1818 Uva-Wellassa Great Rebellion",
+        "sinhala": "මහනුවර යටත් වීම (1815 ගිවිසුම) සහ 1818 ඌව-වෙල්ලස්ස මහා නිදහස් අරගලය",
+        "tamil": "கண்டி ஒப்பந்தம் (1815) மற்றும் 1818 ஊவா-வெல்லஸ்ஸ கிளர்ச்சி",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "1848 Matale Rebellion (Puran Appu, Gongalegoda Banda) and colonial repression",
+        "english": "1848 Matale Rebellion (Puran Appu, Gongalegoda Banda) and colonial repression",
+        "sinhala": "1848 මාතලේ කැරැල්ල (වීර පුරන් අප්පු, ගොංගාලේගොඩ බණ්ඩා) සහ මර්දනය",
+        "tamil": "1848 மாத்தளை கிளர்ச்சி (வீர புரான் அப்பு) மற்றும் காலனித்துவ அடக்குமுறை",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Colonial Economy, Plantations & Social Transformations",
+    "english": "Colonial Economy, Plantations & Social Transformations",
+    "sinhala": "යටත්විජිත ආර්ථිකය, වැවිලි කර්මාන්තය සහ සමාජ පරිවර්තනය",
+    "sinhala_title": "ඒකකය 07: වැවිලි ආර්ථිකය සහ සමාජ පරිවර්තනය",
+    "tamil": "காலனித்துவ பொருளாதாரம், பெருந்தோட்டங்களும் சமூக மாற்றங்களும்",
+    "tamil_title": "அலகு 07: பெருந்தோட்டப் பொருளாதாரமும் சமூகமும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Colebrooke-Cameron reforms (1833), coffee and tea/rubber plantation economy",
+        "english": "Colebrooke-Cameron reforms (1833), coffee and tea/rubber plantation economy",
+        "sinhala": "කෝල්බෲක්-කැමරන් ප්‍රතිසංස්කරණ (1833), කෝපි, තේ සහ රබර් වැවිලි ආර්ථිකය",
+        "tamil": "கோல்புறூக்-கமரன் சீர்திருத்தங்கள் (1833), தேயிலை, இறப்பர் பெருந்தோட்டங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "7.2",
+        "title": "Indian Tamil labor migration, rise of local elite and religious-national revivals",
+        "english": "Indian Tamil labor migration, rise of local elite and religious-national revivals",
+        "sinhala": "ඉන්දීය දෙමළ කම්කරු සංක්‍රමණය, දේශීය ප්‍රභූ පන්තිය සහ ආගමික පුනරුදය",
+        "tamil": "இந்தியத் தமிழ் தொழிலாளர் வருகை, உள்ளூர் உயர்வர்க்கமும் மத மறுமலர்ச்சியும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "National Movement & Constitutional Reforms towards Independence",
+    "english": "National Movement & Constitutional Reforms towards Independence",
+    "sinhala": "ජාතික ව්‍යාපාරය සහ නිදහස කරා ව්‍යවස්ථාමය ප්‍රතිසංස්කරණ",
+    "sinhala_title": "ඒකකය 08: ජාතික ව්‍යාපාරය සහ නිදහස කරා මග",
+    "tamil": "தேசிய இயக்கமும் சுதந்திரத்தை நோக்கிய அரசியலமைப்புச் சீர்திருத்தங்களும்",
+    "tamil_title": "அலகு 08: தேசிய இயக்கமும் சுதந்திரமும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Temperance movement, Ceylon National Congress, youth leagues and leftist movement",
+        "english": "Temperance movement, Ceylon National Congress, youth leagues and leftist movement",
+        "sinhala": "අමද්‍යප ව්‍යාපාරය, ලංකා ජාතික සංගමය, තරුණ සංගම් සහ වාමාංශික ව්‍යාපාරය",
+        "tamil": "மதுவிலக்கு இயக்கம், இலங்கை தேசிய காங்கிரஸ், இடதுசாரி இயக்கங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "8.2",
+        "title": "Donoughmore Constitution (universal franchise 1931), Soulbury and 1948 Independence",
+        "english": "Donoughmore Constitution (universal franchise 1931), Soulbury and 1948 Independence",
+        "sinhala": "ඩොනමෝර් ආණ්ඩුක්‍රමය (1931 සර්වජන ඡන්ද බලය), සෝල්බරි සහ 1948 නිදහස",
+        "tamil": "டொனமூர் அரசியலமைப்பு (1931 சர்வஜன வாக்குரிமை), 1948 சுதந்திரம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 9,
+    "title": "Ancient & Medieval Indian Civilization (Mauryas & Mughals)",
+    "english": "Ancient & Medieval Indian Civilization (Mauryas & Mughals)",
+    "sinhala": "පැරණි සහ මධ්‍යකාලීන භාරතීය ශිෂ්ටාචාරය (මෞර්ය සහ මෝගල් යුගයන්)",
+    "sinhala_title": "ඒකකය 09: භාරතීය ඉතිහාසය: මෞර්ය සහ මෝගල්",
+    "tamil": "பண்டைய மற்றும் இடைக்கால இந்திய நாகரிகம் (மௌரியர், முகலாயர்)",
+    "tamil_title": "அலகு 09: இந்திய வரலாறு: மௌரியர், முகலாயர்",
+    "subUnits": [
+      {
+        "num": "9.1",
+        "title": "Indus Valley civilization, Vedic period and Mauryan Empire under Emperor Ashoka",
+        "english": "Indus Valley civilization, Vedic period and Mauryan Empire under Emperor Ashoka",
+        "sinhala": "ඉන්දු නිම්න ශිෂ්ටාචාරය, වෛදික යුගය සහ අශෝක අධිරාජ්‍යයා යටතේ මෞර්ය අධිරාජ්‍යය",
+        "tamil": "சிந்துவெளி நாகரிகம், வேதகாலம் மற்றும் அசோகரின் கீழ் மௌரியப் பேரரசு",
+        "hours": 5
+      },
+      {
+        "num": "9.2",
+        "title": "Mughal Empire: Akbar the Great's administrative and religious policies",
+        "english": "Mughal Empire: Akbar the Great's administrative and religious policies",
+        "sinhala": "මෝගල් අධිරාජ්‍යය: අක්බර් අධිරාජ්‍යයාගේ පරිපාලන සහ ආගමික ප්‍රතිපත්ති",
+        "tamil": "முகலாயப் பேரரசு: பேரரசர் அக்பரின் நிர்வாக மற்றும் சமயக் கொள்கைகள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 10,
+    "title": "Modern World Milestones: Revolutions & World Wars",
+    "english": "Modern World Milestones: Revolutions & World Wars",
+    "sinhala": "නූතන ලෝකයේ සන්ධිස්ථාන: විප්ලව සහ ලෝක යුද්ධ",
+    "sinhala_title": "ඒකකය 10: නූතන ලෝක ඉතිහාසය සහ ලෝක යුද්ධ",
+    "tamil": "நவீன உலக மைல்கற்கள்: புரட்சிகளும் உலகப் போர்களும்",
+    "tamil_title": "அலகு 10: உலக வரலாறும் உலகப் போர்களும்",
+    "subUnits": [
+      {
+        "num": "10.1",
+        "title": "Industrial Revolution, French Revolution (1789) and Russian Revolution (1917)",
+        "english": "Industrial Revolution, French Revolution (1789) and Russian Revolution (1917)",
+        "sinhala": "කාර්මික විප්ලවය, ප්‍රංශ විප්ලවය (1789) සහ රුසියානු ඔක්තෝබර් විප්ලවය (1917)",
+        "tamil": "கைத்தொழில் புரட்சி, பிரெஞ்சுப் புரட்சி (1789), ரஷ்யப் புரட்சி (1917)",
+        "hours": 5
+      },
+      {
+        "num": "10.2",
+        "title": "World War I, League of Nations, World War II and establishment of the United Nations",
+        "english": "World War I, League of Nations, World War II and establishment of the United Nations",
+        "sinhala": "පළමු ලෝක යුද්ධය, ජාතීන්ගේ සංගමය, දෙවන ලෝක යුද්ධය සහ එක්සත් ජාතීන්ගේ සංවිධානය",
+        "tamil": "முதலாம் உலகப் போர், சர்வதேச சங்கம், இரண்டாம் உலகப் போர், ஐ.நா. சபை",
+        "hours": 5
+      }
+    ]
+  }
+]

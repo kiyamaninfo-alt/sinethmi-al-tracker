@@ -1,0 +1,218 @@
+[
+  {
+    "num": 1,
+    "title": "Introduction to Literary Criticism & Critical Reading",
+    "english": "Introduction to Literary Criticism & Critical Reading",
+    "sinhala": "සාහිත්‍ය විචාරය සහ විචාරාත්මක කියවීම හැඳින්වීම",
+    "sinhala_title": "ඒකකය 01: සාහිත්‍ය විචාරය සහ විචාරාත්මක කියවීම",
+    "tamil": "இலக்கிய விமர்சனமும் நுணுக்கமான வாசிப்பும் ஓர் அறிமுகம்",
+    "tamil_title": "அலகு 01: இலக்கிய விமர்சனம்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Literary genres, stylistic devices, imagery, tone and theme analysis",
+        "english": "Literary genres, stylistic devices, imagery, tone and theme analysis",
+        "sinhala": "සාහිත්‍ය ප්‍රභේද, ශෛලිගත උපක්‍රම, රූපක, තානය සහ තේමා විශ්ලේෂණය",
+        "tamil": "இலக்கிய வகைகள், நடை நயங்கள், உருவகங்கள் மற்றும் தொனி பகுப்பாய்வு",
+        "hours": 5
+      },
+      {
+        "num": "1.2",
+        "title": "Contextual reading: Historical, cultural, socio-economic and gender perspectives",
+        "english": "Contextual reading: Historical, cultural, socio-economic and gender perspectives",
+        "sinhala": "සන්දර්භගත කියවීම: ඓතිහාසික, සංස්කෘතික සහ ස්ත්‍රී-පුරුෂ සමාජභාවී දෘෂ්ටිකෝණ",
+        "tamil": "சூழல்சார் வாசிப்பு: வரலாற்று, கலாச்சார மற்றும் பாலினக் கண்ணோட்டங்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Shakespearean & Renaissance Drama",
+    "english": "Shakespearean & Renaissance Drama",
+    "sinhala": "ෂේක්ස්පියර් සහ පුනරුද නාට්‍ය කලාව",
+    "sinhala_title": "ඒකකය 02: ෂේක්ස්පියර් නාට්‍ය කලාව",
+    "tamil": "ஷேக்ஸ்பியர் மற்றும் மறுமலர்ச்சி கால நாடகம்",
+    "tamil_title": "அலகு 02: ஷேக்ஸ்பியர் நாடகங்கள்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Tragic vision, character flaws (Hamartia) and dramatic soliloquies in Shakespeare",
+        "english": "Tragic vision, character flaws (Hamartia) and dramatic soliloquies in Shakespeare",
+        "sinhala": "ඛේදවාචී දැක්ම, චරිත දුබලතා (හමාටියා) සහ ෂේක්ස්පියර්ගේ ආත්මභාෂණ",
+        "tamil": "துயரியல் பார்வை, குணாதிசய குறைபாடுகள் மற்றும் நாடகத் தனிமொழிகள்",
+        "hours": 5
+      },
+      {
+        "num": "2.2",
+        "title": "Dramatic structure, subplots, irony and comic relief in Renaissance plays",
+        "english": "Dramatic structure, subplots, irony and comic relief in Renaissance plays",
+        "sinhala": "නාට්‍යමය ව්‍යුහය, අතුරු කථා, උපහාසය සහ හාස්‍යෝත්පාදක සහනය",
+        "tamil": "நாடகக் கட்டமைப்பு, கிளைக்கதைகள், முரண்நகை மற்றும் நகைச்சுவை",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Metaphysical & Romantic Poetry",
+    "english": "Metaphysical & Romantic Poetry",
+    "sinhala": "අධිභෞතික සහ රොමෑන්ටික කාව්‍ය සම්ප්‍රදාය",
+    "sinhala_title": "ඒකකය 03: රොමෑන්ටික සහ අධිභෞතික කාව්‍ය",
+    "tamil": "மெட்டாபிசிக்கல் மற்றும் ரொமாண்டிக் கவிதைகள்",
+    "tamil_title": "அலகு 03: ரொமாண்டிக் கவிதைகள்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Metaphysical conceits, wit and paradox in Donne and Marvell",
+        "english": "Metaphysical conceits, wit and paradox in Donne and Marvell",
+        "sinhala": "ඩෝන් සහ මාවල්ගේ අධිභෞතික උපමා, බුද්ධිමත් බව සහ විරුද්ධාභාසය",
+        "tamil": "டான் மற்றும் மார்வெல்லின் உருவகங்கள் மற்றும் முரண்போலி நயங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "3.2",
+        "title": "Romantic aesthetics: Nature, sublime, individualism (Wordsworth, Keats, Shelley)",
+        "english": "Romantic aesthetics: Nature, sublime, individualism (Wordsworth, Keats, Shelley)",
+        "sinhala": "රොමෑන්ටික සෞන්දර්යය: සොබාදහම, උදාරත්වය සහ පුද්ගලවාදය (වර්ඩ්ස්වර්ත්, කීට්ස්)",
+        "tamil": "இயற்கை, தனிமனிதவாதம் மற்றும் அழகியல் (வேர்ட்ஸ்வொர்த், கீட்ஸ்)",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Victorian & 20th Century Modernist Poetry",
+    "english": "Victorian & 20th Century Modernist Poetry",
+    "sinhala": "වික්ටෝරියානු සහ විසිවන සියවසේ නූතනවාදී කාව්‍ය",
+    "sinhala_title": "ඒකකය 04: නූතනවාදී සහ වික්ටෝරියානු කාව්‍ය",
+    "tamil": "விக்டோரிய மற்றும் 20 ஆம் நூற்றாண்டு நவீனத்துவக் கவிதைகள்",
+    "tamil_title": "அலகு 04: நவீனத்துவக் கவிதைகள்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Victorian dilemmas: Faith, doubt and industrialization (Tennyson, Browning)",
+        "english": "Victorian dilemmas: Faith, doubt and industrialization (Tennyson, Browning)",
+        "sinhala": "වික්ටෝරියානු අර්බුද: විශ්වාසය, සැකය සහ කාර්මීකරණය (ටෙනිසන්, බ්‍රවුනින්)",
+        "tamil": "விக்டோரிய சவால்கள்: நம்பிக்கை, ஐயம் மற்றும் கைத்தொழில்மயமாக்கம்",
+        "hours": 5
+      },
+      {
+        "num": "4.2",
+        "title": "Modernist alienation, war poetry and fragmentation (T.S. Eliot, Yeats, Owen)",
+        "english": "Modernist alienation, war poetry and fragmentation (T.S. Eliot, Yeats, Owen)",
+        "sinhala": "නූතනවාදී හුදකලාව, යුද කාව්‍ය සහ ඛණ්ඩනය (ටී.එස්. එලියට්, යේට්ස්, ඕවන්)",
+        "tamil": "நவீனத்துவ அந்நியமாதல், யுத்தகவிதைகள் (ரி.எஸ். எலியட், யேட்ஸ்)",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "The 19th Century Realist Novel",
+    "english": "The 19th Century Realist Novel",
+    "sinhala": "දහනවවන සියවසේ යථාර්ථවාදී නවකතාව",
+    "sinhala_title": "ඒකකය 05: 19 වන සියවසේ යථාර්ථවාදී නවකතාව",
+    "tamil": "19 ஆம் நூற்றாண்டு எதார்த்தவாத நாவல்கள்",
+    "tamil_title": "அலகு 05: 19 ஆம் நூற்றாண்டு நாவல்கள்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "Class, morality, gender roles and social satire (Austen, Bronte, Dickens)",
+        "english": "Class, morality, gender roles and social satire (Austen, Bronte, Dickens)",
+        "sinhala": "පන්ති ක්‍රමය, සදාචාරය, ස්ත්‍රී-පුරුෂ භූමිකා සහ සමාජ උපහාසය (ජේන් ඔස්ටින්, ඩිකන්ස්)",
+        "tamil": "வர்க்கம், ஒழுக்கம், பாலின பாத்திரங்கள் மற்றும் சமூக அங்கதம் (டிக்கன்ஸ்)",
+        "hours": 5
+      },
+      {
+        "num": "5.2",
+        "title": "Narrative point of view, characterization and realism in Victorian fiction",
+        "english": "Narrative point of view, characterization and realism in Victorian fiction",
+        "sinhala": "කථන දෘෂ්ටිකෝණය, චරිත නිරූපණය සහ වික්ටෝරියානු ප්‍රබන්ධයේ යථාර්ථවාදය",
+        "tamil": "கதைசொல்லல் கண்ணோட்டம், பாத்திரப்படைப்பு மற்றும் எதார்த்தவாதம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Postcolonial & Sri Lankan English Literature",
+    "english": "Postcolonial & Sri Lankan English Literature",
+    "sinhala": "පශ්චාත් යටත්විජිත සහ ශ්‍රී ලාංකේය ඉංග්‍රීසි සාහිත්‍යය",
+    "sinhala_title": "ඒකකය 06: ශ්‍රී ලාංකේය ඉංග්‍රීසි සාහිත්‍යය",
+    "tamil": "பின்-காலனித்துவ மற்றும் இலங்கை ஆங்கில இலக்கியம்",
+    "tamil_title": "அலகு 06: இலங்கை ஆங்கில இலக்கியம்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "Identity, hybridity, nationhood and colonial resistance in African/Asian texts",
+        "english": "Identity, hybridity, nationhood and colonial resistance in African/Asian texts",
+        "sinhala": "අනන්‍යතාව, මුහුම්කරණය සහ අප්‍රිකානු/ආසියානු ලේඛකයන්ගේ යටත්විජිත ප්‍රතිරෝධය",
+        "tamil": "அடையாளம், கலப்புத்தன்மை மற்றும் காலனித்துவ எதிர்ப்பு இலக்கியம்",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "Sri Lankan English poetry and fiction: War, diaspora, culture and bilingual idioms",
+        "english": "Sri Lankan English poetry and fiction: War, diaspora, culture and bilingual idioms",
+        "sinhala": "ශ්‍රී ලාංකේය ඉංග්‍රීසි කාව්‍ය සහ ප්‍රබන්ධ: යුද්ධය, ඩයස්පෝරාව සහ සංස්කෘතික අනන්‍යතාව",
+        "tamil": "இலங்கை ஆங்கில கவிதைகளும் நாவல்களும்: யுத்தம், புலம்பெயர்வு, கலாச்சாரம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Modern Drama & Theatre of the Absurd",
+    "english": "Modern Drama & Theatre of the Absurd",
+    "sinhala": "නූතන නාට්‍ය කලාව සහ අභව්‍ය නාට්‍ය සම්ප්‍රදාය",
+    "sinhala_title": "ඒකකය 07: නූතන සහ අභව්‍ය නාට්‍ය සම්ප්‍රදාය",
+    "tamil": "நவீன நாடகமும் அபத்த நாடக மரபும்",
+    "tamil_title": "அலகு 07: நவீன நாடகமும் அபத்த நாடகமும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Realism and naturalism in modern drama: Ibsen, Shaw and Arthur Miller",
+        "english": "Realism and naturalism in modern drama: Ibsen, Shaw and Arthur Miller",
+        "sinhala": "නූතන නාට්‍යයේ යථාර්ථවාදය සහ ස්වභාවිකවාදය: ඉබ්සන්, ෂෝ සහ ආතර් මිලර්",
+        "tamil": "நவீன நாடகத்தில் எதார்த்தவாதம்: இப்சன், ஷா மற்றும் ஆர்தர் மில்லர்",
+        "hours": 5
+      },
+      {
+        "num": "7.2",
+        "title": "Existentialism, non-linear plot and dialogue in Theatre of the Absurd (Beckett)",
+        "english": "Existentialism, non-linear plot and dialogue in Theatre of the Absurd (Beckett)",
+        "sinhala": "පැවැත්මවාදය සහ අභව්‍ය නාට්‍ය සම්ප්‍රදායේ ආකෘතිය (සැමුවෙල් බෙකට්)",
+        "tamil": "இருத்தலியல் மற்றும் அபத்த நாடகக் கட்டமைப்பு (சாமுவேல் பெக்கட்)",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Short Story Craft & Global Contemporary Fiction",
+    "english": "Short Story Craft & Global Contemporary Fiction",
+    "sinhala": "කෙටිකතා කලාව සහ ගෝලීය සමකාලීන ප්‍රබන්ධ",
+    "sinhala_title": "ඒකකය 08: කෙටිකතා කලාව සහ සමකාලීන ප්‍රබන්ධ",
+    "tamil": "சிறுகதைக் கலையும் உலகளாவிய சமகாலப் புனைகதையும்",
+    "tamil_title": "அலகு 08: சிறுகதைகளும் சமகாலப் புனைகதையும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Elements of short fiction: Economy of language, epiphany and open endings",
+        "english": "Elements of short fiction: Economy of language, epiphany and open endings",
+        "sinhala": "කෙටිකතාවේ මූලිකාංග: භාෂා සංක්ෂිප්තතාව, හෙළිදරව්ව (එපිෆනි) සහ විවෘත අවසාන",
+        "tamil": "சிறுகதையின் கூறுகள்: மொழிச் சிக்கனம், திடீர் விழிப்புணர்வு, முடிவு",
+        "hours": 5
+      },
+      {
+        "num": "8.2",
+        "title": "World masters: Chekhov, Katherine Mansfield, Hemingway and contemporary voices",
+        "english": "World masters: Chekhov, Katherine Mansfield, Hemingway and contemporary voices",
+        "sinhala": "ලෝක කෙටිකතා ශූරයන්: චෙකොෆ්, කැතරින් මැන්ස්ෆීල්ඩ්, හෙමිංවේ සහ සමකාලීනයන්",
+        "tamil": "உலகப் புகழ்பெற்ற எழுத்தாளர்கள்: செக்கோவ், மேன்ஸ்பீல்ட், ஹெமிங்வே",
+        "hours": 5
+      }
+    ]
+  }
+]
