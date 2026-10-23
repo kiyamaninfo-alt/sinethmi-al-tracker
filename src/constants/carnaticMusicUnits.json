@@ -1,0 +1,178 @@
+[
+  {
+    "num": 1,
+    "english": "Origin & History of Carnatic Music",
+    "sinhala": "ඒකකය 01: කර්නාටක සංගීතයේ ඓතිහාසික සම්භවය සහ මූලාශ්‍ර",
+    "tamil": "அலகு 01: கர்நாடக சங்கீத தோற்றமும் வரலாற்று வளர்ச்சியும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "english": "Silappadikaram musical system (Yazh, Isai) to modern Carnatic tradition",
+        "sinhala": "සිලප්පදිකාරම් සංගීත පද්ධතියේ (යාල්, ඉසෛ) සිට කර්නාටක සංගීතය දක්වා",
+        "tamil": "சிலப்பதிகார இசை மரபு (யாழ், பண்) முதல் கர்நாடக சங்கீத வளர்ச்சி வரை",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "english": "Purandara Dasa (Pithamaha) and fundamental pedagogical exercises (Varisais)",
+        "sinhala": "පුරන්දර දාස (සංගීත පීතාමහ) සහ මූලික අභ්‍යාස මාලාව (වරිසෛ)",
+        "tamil": "புரந்தர தாசர் (சங்கீத பிதாமகர்) மற்றும் வரிசைப் பயிற்சிகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "english": "Sruti, Swara & Sthayi Fundamentals",
+    "sinhala": "ඒකකය 02: ශ්‍රැති, ස්වර සහ ස්ථායි මූලික සංකල්ප",
+    "tamil": "அலகு 02: சுருதி, ஸ்வரம் மற்றும் ஸ்தாயி அடிப்படைக் கோட்பாடுகள்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "english": "16 Swaranas: Shadjam, Rishabham, Gandharam, Madhyamam, Panchamam, Dhaivatam, Nishadam",
+        "sinhala": "ස්වරනාම 16: ෂඩ්ජම්, රිෂභම්, ගාන්ධාරම්, මධ්‍යමම්, පංචමම්, ධෛවතම්, නිෂාදම්",
+        "tamil": "பதினாறு ஸ்வர ஸ்தானங்கள் (ச, ரி, க, ம, ப, த, நி வகைகள்)",
+        "hours": 4
+      },
+      {
+        "num": "2.2",
+        "english": "Mandara, Madhya and Tara Sthayis, Gamakas (oscillations) and microtones",
+        "sinhala": "මන්ද්‍ර, මධ්‍ය, තාර ස්ථායි සහ ගමක (කම්පන) න්‍යාය",
+        "tamil": "மந்திர, மத்ய, தார ஸ்தாயிகள் மற்றும் 10 வகை கமகம் (Gamaka)",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "english": "72 Melakarta Raga Scheme (Venkatamakhin)",
+    "sinhala": "ඒකකය 03: වෙන්කටමඛින්ගේ මේලකර්තා රාග 72 පද්ධතිය",
+    "tamil": "அலகு 03: வேங்கடமகியின் 72 மேளகர்த்தா இராகத் திட்டம்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "english": "Chakras (12 groups of 6), Suddha Madhyamam and Prati Madhyamam division",
+        "sinhala": "චක්‍ර 12, ශුද්ධ මධ්‍යම සහ ප්‍රති මධ්‍යම බෙදීම",
+        "tamil": "12 சக்கரங்கள், சுத்த மத்திமம் மற்றும் பிரதி மத்திம பிரிவுகள்",
+        "hours": 4
+      },
+      {
+        "num": "3.2",
+        "english": "Katapayadi formula and identifying Melakarta number and Swara structure",
+        "sinhala": "කටපයාදි සූත්‍රය මඟින් මේලකර්තා රාග අංකය හඳුනාගැනීම",
+        "tamil": "கடபயாதி சூத்திரம் மற்றும் மேளகர்த்தா இராக வரிசை கணிப்பீடு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "english": "Janya Ragas & Lakshana Geethams",
+    "sinhala": "ඒකකය 04: ජන්‍ය රාග සහ ලක්ෂණ ගීතම් නිර්මාණ",
+    "tamil": "அலகு 04: ஜன்ய இராகங்களும் இலக்கணக் கீதங்களும்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "english": "Types of Janya Ragas: Varja (Sampurna, Shadava, Audava), Vakra and Upanga/Bhashanga",
+        "sinhala": "ජන්‍ය රාග වර්ග: වර්ජ (ෂාඩව, ඖඩව), වක්‍ර සහ උපාංග/භාෂාංග රාග",
+        "tamil": "ஜன்ய இராக வகைகள்: வர்ஜ்ய (சாடவ, ஔடவ), வக்ர, உபாங்க, பாஷாங்கம்",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "english": "Study of Mayamalavagowla, Kalyani, Mohanam, Hamsadhwani, Shankarabharanam",
+        "sinhala": "මායාමාලවගෞල, කල්‍යාණි, මෝහනම්, හංසධ්වනි සහ ශංකරාභරණම්",
+        "tamil": "மாயாமாளவகௌளை, கல்யாணி, மோகனம், ஹம்சத்வனி, சங்கராபரணம்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "english": "Sapta Talas, Jaathi & Gati System",
+    "sinhala": "ඒකකය 05: සප්ත තාල, ජාති සහ ගති පද්ධතිය",
+    "tamil": "அலகு 05: சப்த தாளங்கள், ஜாதி மற்றும் கதி அமைப்புகள்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "english": "7 Basic Talas: Dhruva, Matya, Roopaka, Jhampa, Thripuda, Ata, Eka",
+        "sinhala": "මූලික තාල 7: ධ්‍රැව, මත්‍ය, රූපක, ඣම්පා, ත්‍රිපුට, අට, ඒක තාල",
+        "tamil": "ஏழு தாளங்கள்: துருவ, மத்ய, ரூபக, ஜம்ப, திரிபுட, அட, ஏக தாளம்",
+        "hours": 4
+      },
+      {
+        "num": "5.2",
+        "english": "5 Jaathis (Tisra, Chaturasra, Khanda, Misra, Sankeerna) generating 35 Talas",
+        "sinhala": "පංච ජාති (තිස්‍ර, චතුරස්‍ර, ඛණ්ඩ, මිශ්‍ර, සංකීර්ණ) මඟින් 35 තාල නිර්මාණය",
+        "tamil": "ஐந்து ஜாதிகள் மற்றும் 35 தாளக் கட்டமைப்பு மற்றும் நடைகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "english": "Musical Forms: Varnam, Keerthanam, Kriti",
+    "sinhala": "ඒකකය 06: කර්නාටක සංගීත නිර්මාණ ආකෘති (වර්ණම්, කීර්තනම්, කෘති)",
+    "tamil": "அலகு 06: இசை உருப்படிகள்: வர்ணம், கீர்த்தனம், கிருதி",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "english": "Structure of Tana Varnam: Pallavi, Anupallavi, Muktayi Swaram, Charanam",
+        "sinhala": "තාන වර්ණම් ව්‍යුහය: පල්ලවි, අනුපල්ලවි, මුක්තායි ස්වරම්, චරණම්",
+        "tamil": "தான வர்ண அமைப்பு: பல்லவி, அனுபல்லவி, முக்தாயிஸ்வரம், சரணம்",
+        "hours": 4
+      },
+      {
+        "num": "6.2",
+        "english": "Kriti architecture: Sangathis, Neraval, Kalpana Swaram and Chittaswaram",
+        "sinhala": "කෘති ව්‍යුහය: සංගති, නිරවල්, කල්පනා ස්වරම් සහ චිත්තාස්වරම්",
+        "tamil": "கிருதி கட்டமைப்பு: சங்கதிகள், நிரவல், கல்பனாஸ்வரம் மற்றும் சிட்டஸ்வரம்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "english": "Carnatic Musical Instruments: Veena, Mridangam, Violin",
+    "sinhala": "ඒකකය 07: කර්නාටක සංගීත භාණ්ඩ (වීණාව, මෘදංගය, වයලීනය)",
+    "tamil": "அலகு 07: கர்நாடக இசைக்கருவிகள்: வீணை, மிருதங்கம், வயலின்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "english": "Saraswati Veena: Fretting, meend techniques and acoustic design",
+        "sinhala": "සරස්වතී වීණාව: පර්දා සැකසීම, මීණ්ඩ් තාක්ෂණය සහ ධ්වනි විද්‍යාව",
+        "tamil": "சரஸ்வதி வீணை: மெட்டுக்கள் அமைப்பு, மீட்டு முறைகள் மற்றும் நாதம்",
+        "hours": 4
+      },
+      {
+        "num": "7.2",
+        "english": "Mridangam sollus (Tha, Dhi, Thom, Nam), Kapala, Chappu and Violin adoption",
+        "sinhala": "මෘදංගම් වාදන සොල් (ත, ධි, තොම්, නම්) සහ දකුණු ඉන්දීය වයලීන වාදනය",
+        "tamil": "மிருதங்க சொற்கள் (த, தி, தொம், நம்) மற்றும் வயலின் பக்கவாத்திய மரபு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "english": "Trinity of Carnatic Music & Sri Lankan Heritage",
+    "sinhala": "ඒකකය 08: ත්‍රිමූර්ති සංගීතඥයන් සහ ශ්‍රී ලාංකික කර්නාටක උරුමය",
+    "tamil": "அலகு 08: சங்கீத மும்மூர்த்திகளும் ஈழத்து கர்நாடக இசைப் பாரம்பரியமும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "english": "Trinity of Carnatic Music: Tyagaraja, Muthuswami Dikshitar, Syama Sastri",
+        "sinhala": "කර්නාටක සංගීත ත්‍රිමූර්තිය: ත්‍යාගරාජ, මුත්තුස්වාමි දීක්ෂිතර්, ශ්‍යාමා ශාස්ත්‍රි",
+        "tamil": "சங்கீத மும்மூர்த்திகள்: தியாகராஜர், முத்துசுவாமி தீட்சிதர், சியாமா சாஸ்திரிகள்",
+        "hours": 4
+      },
+      {
+        "num": "8.2",
+        "english": "Carnatic music traditions in Jaffna, temple festivals and Sri Lankan maestros",
+        "sinhala": "යාපනයේ කර්නාටක සංගීත සම්ප්‍රදාය, කෝවිල් උත්සව සහ ලාංකික විද්වතුන්",
+        "tamil": "ஈழத்து கர்நாடக இசைப் பாரம்பரியம்: யாழ்ப்பாண இசை மரபும் ஆலய விழாக்களும்",
+        "hours": 4
+      }
+    ]
+  }
+]

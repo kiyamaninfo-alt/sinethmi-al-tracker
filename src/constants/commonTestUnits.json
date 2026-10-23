@@ -1,0 +1,134 @@
+[
+  {
+    "num": 1,
+    "english": "Comprehension & Verbal Reasoning",
+    "sinhala": "ඒකකය 01: අවබෝධය සහ වාචික තර්කනය",
+    "tamil": "அலகு 01: கிரகித்தலும் சொல்சார் காரண காரிய அறிவும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "english": "Passage comprehension, extracting inferences and contextual meaning",
+        "sinhala": "ඡේද අවබෝධය, අනුමාන උකහා ගැනීම සහ සන්දර්භගත අර්ථය හඳුනාගැනීම",
+        "tamil": "பந்தி வாசித்துக் கிரகித்தல், மறைமுகக் கருத்துக்களை ஊகித்தல்",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "english": "Verbal analogies, antonyms, synonyms and logical deductions from text",
+        "sinhala": "වාචික සමානතා, ප්‍රතිවිරුද්ධ පද සහ පාඨ පදනම් කරගත් තාර්කික නිගමන",
+        "tamil": "சொல் ஒப்புமைகள், எதிர்ச்சொற்கள், ஒத்தசொற்கள் மற்றும் தர்க்க முடிவுகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "english": "Logical & Analytical Thinking",
+    "sinhala": "ඒකකය 02: තාර්කික සහ විශ්ලේෂණාත්මක චින්තනය",
+    "tamil": "அலகு 02: தர்க்கரீதியான மற்றும் பகுப்பாய்வு சிந்தனை",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "english": "Syllogisms, deductive and inductive arguments and truth evaluation",
+        "sinhala": "ත්‍රිපද න්‍යාය, නිගාමී හා උද්ගාමී තර්ක සහ සත්‍යතා අගය නිර්ණය",
+        "tamil": "தர்க்க முக்கூற்று முடிவுகள், தொகுத்தறிதல், உய்த்தறிதல் வாதங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "2.2",
+        "english": "Pattern recognition, sequence completion and spatial logic puzzles",
+        "sinhala": "රටා හඳුනාගැනීම, අනුක්‍රම සම්පූර්ණ කිරීම සහ අවකාශීය තර්ක ප්‍රහේලිකා",
+        "tamil": "வடிவ அமைப்புகளை அறிதல், எண் தொடர்களை நிரப்புதல் மற்றும் உருவப் புதிர்கள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "english": "Quantitative & Numerical Reasoning",
+    "sinhala": "ඒකකය 03: ප්‍රමාණාත්මක සහ සංඛ්‍යාත්මක තර්කනය",
+    "tamil": "அලகு 03: அளவுசார் மற்றும் எண்சார் காரண காரிய அறிவு",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "english": "Percentages, ratios, proportions, simple averages and speed-time-distance",
+        "sinhala": "ප්‍රතිශත, අනුපාත, සමානුපාත, මධ්‍යන්‍ය සහ වේගය-කාලය-දුර ගණනය කිරීම්",
+        "tamil": "சதவீதம், விகிதங்கள், சராசரிகள் மற்றும் வேகம்-நேரம்-தூரம் கணிப்பீடுகள்",
+        "hours": 4
+      },
+      {
+        "num": "3.2",
+        "english": "Basic algebra, series equations and numerical aptitude tests",
+        "sinhala": "මූලික වීජ ගණිතය, ශ්‍රේණි සමීකරණ සහ සංඛ්‍යාත්මක අභියෝගතා ගැටළු",
+        "tamil": "அடிப்படை இயற்கணிதம், தொடர் சமன்பாடுகள் மற்றும் எண்சார் நுண்ணறிவுச் சோதனைகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "english": "Problem Solving & Decision Making",
+    "sinhala": "ඒකකය 04: ගැටළු විසඳීම සහ තීරණ ගැනීමේ කුසලතා",
+    "tamil": "அலகு 04: சிக்கல் தீர்த்தலும் விவேகமான தீர்மானம் எடுத்தலும்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "english": "Data sufficiency evaluation and eliminating erroneous hypotheses",
+        "sinhala": "දත්තවල ප්‍රමාණවත්භාවය ඇගයීම සහ වැරදි උපකල්පන බැහැර කිරීම",
+        "tamil": "தரவுகளின் போதுமான நிலையை மதிப்பீடு செய்தல் மற்றும் போலிக் காரணங்களை நீக்குதல்",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "english": "Practical scenarios: Cost-benefit comparisons and optimal solution paths",
+        "sinhala": "ප්‍රායෝගික අවස්ථා: පිරිවැය-ප්‍රතිලාභ සැසඳීම සහ ප්‍රශස්ත විසඳුම් තෝරාගැනීම",
+        "tamil": "நடைமுறைச் சூழல்கள்: செலவு-நன்மை ஒப்பீடுகள் மற்றும் உகந்த தீர்வு தெரிவு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "english": "Data Interpretation, Tables & Charts",
+    "sinhala": "ඒකකය 05: දත්ත අර්ථකථනය, සංඛ්‍යාන වගු සහ ප්‍රස්ථාර",
+    "tamil": "அலகு 05: தரவு விளக்கம், அட்டவணைகளும் வரைபடங்களும்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "english": "Extracting and analyzing metrics from bar charts, pie charts and histograms",
+        "sinhala": "තීරු ප්‍රස්ථාර, පයි ප්‍රස්ථාර සහ හිස්ටෝග්‍රෑම්වලින් දත්ත විශ්ලේෂණය",
+        "tamil": "பட்டை வரைபடங்கள், வட்ட வரைபடங்கள் மற்றும் செவ்வக வரைபடங்களை வாசித்தல்",
+        "hours": 4
+      },
+      {
+        "num": "5.2",
+        "english": "Cross-tabulation, identifying trends, correlations and making forecasts",
+        "sinhala": "හරස් වගුගත කිරීම්, ප්‍රවණතා හඳුනාගැනීම සහ පුරෝකථන නිගමන",
+        "tamil": "குறுக்கு அட்டவணைப்படுத்தல், போக்குகளை இனம் காணல் மற்றும் எதிர்வு கூறல்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "english": "Current Affairs, National & Global Knowledge",
+    "sinhala": "ඒකකය 06: සමකාලීන ජාතික හා ජාත්‍යන්තර තොරතුරු සහ ගෝලීය දැනුම",
+    "tamil": "அலகு 06: சமகால தேசிய, சர்வதேச விவகாரங்களும் பொது அறிவும்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "english": "Sri Lankan economy, constitution, geography, environment and sustainable goals",
+        "sinhala": "ශ්‍රී ලංකාවේ ආර්ථිකය, ව්‍යවස්ථාව, භූගෝලය, පරිසරය සහ තිරසාර ඉලක්ක",
+        "tamil": "இலங்கைப் பொருளாதாரம், அரசியலமைப்பு, புவியியல் மற்றும் நிலைபேறு அபிவிருத்தி",
+        "hours": 4
+      },
+      {
+        "num": "6.2",
+        "english": "International organizations (UN, WHO, SAARC), science discoveries, AI and world events",
+        "sinhala": "ජාත්‍යන්තර සංවිධාන (එක්සත් ජාතීන් ආදී), විද්‍යා සොයාගැනීම්, AI සහ ලෝක සිදුවීම්",
+        "tamil": "சர்வதேச நிறுவனங்கள் (ஐ.நா, சார்க்), புதிய அறிவியல் கண்டுபிடிப்புகள், AI",
+        "hours": 4
+      }
+    ]
+  }
+]

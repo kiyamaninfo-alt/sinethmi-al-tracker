@@ -1,0 +1,178 @@
+[
+  {
+    "num": 1,
+    "english": "The Bible: Old & New Testaments, Salvation History",
+    "sinhala": "ඒකකය 01: ශුද්ධ වූ බයිබලය, පරණ සහ අලුත් ගිවිසුම සහ ගැළවීමේ ඉතිහාසය",
+    "tamil": "அலகு 01: திருவிவிலியம்: பழைய, புதிய ஏற்பாடுகளும் மீட்பின் வரலாறும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "english": "Inspiration, canon, literary genres and historical context of Biblical texts",
+        "sinhala": "දේවානුභාවය, ධර්ම සංග්‍රහය, සාහිත්‍ය ප්‍රභේද සහ බයිබලයේ ඓතිහාසික පසුබිම",
+        "tamil": "விவிலியத்தின் தேவ ஏவுதல், திருமுறைத் தொகுப்பு, இலக்கிய வகைகள் மற்றும் வரலாறு",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "english": "Covenants with Abraham, Moses and David leading to the New Covenant in Christ",
+        "sinhala": "ආබ්‍රහම්, මෝසෙස් සහ දාවිත් සමඟ වූ ගිවිසුම් සහ ක්‍රිස්තුස් වහන්සේගේ නව ගිවිසුම",
+        "tamil": "ஆபிரகாம், மோசே, தாவீது உடன்படிக்கைகளும் கிறிஸ்துவிலுள்ள புதிய உடன்படிக்கையும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "english": "Life, Teachings & Ministry of Jesus Christ",
+    "sinhala": "ඒකකය 02: යේසුස් ක්‍රිස්තුස් වහන්සේගේ ජීවිතය, දේශනා සහ දේවසේවය",
+    "tamil": "அலகு 02: இயேசு கிறிஸ்துவின் வாழ்வும் போதனைகளும் நற்செய்தி ஊழியமும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "english": "The Kingdom of God, Sermon on the Mount (Beatitudes) and Parables",
+        "sinhala": "දේව රාජ්‍ය සංකල්පය, කන්ද උඩ දේශනාව (භාග්‍යවන්තයෝ) සහ උපමා කථා",
+        "tamil": "இறையரசு, மலைப் பிரசங்கம் (பேறுபெற்றோர்) மற்றும் இயேசுவின் உவமைகள்",
+        "hours": 4
+      },
+      {
+        "num": "2.2",
+        "english": "The Paschal Mystery: Passion, Crucifixion, Resurrection and Ascension",
+        "sinhala": "පාස්කු අභිරහස: දුක්විඳීම, කුරුසපත් වීම, උත්ථානය සහ ස්වර්ගාරෝහණය",
+        "tamil": "பாஸ்கா மறைபொருள்: பாடுகள், சிலுவை மரணம், உயிர்ப்பு மற்றும் விண்ணேற்றம்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "english": "Early Church, Apostles & Spread of Christianity",
+    "sinhala": "ඒකකය 03: මුල් කිතුනු සභාව, අපෝස්තුළුවරු සහ ක්‍රිස්තියානි ධර්මයේ ව්‍යාප්තිය",
+    "tamil": "அலகு 03: ஆரம்பகால திருச்சபை, அப்போஸ்தலர்கள் மற்றும் கிறிஸ்தவ நற்செய்திப் பரவல்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "english": "Pentecost, Acts of the Apostles, fellowship (Koinonia) and early persecution",
+        "sinhala": "පෙන්තකොස්ත දිනය, අපෝස්තුළුවරුන්ගේ ක්‍රියා, මුල් සහභාගීත්වය සහ පීඩා",
+        "tamil": "பெந்தக்கோஸ்தே பெருவிழா, திருத்தூதர் பணிகள், கூட்டுறவு மற்றும் ஆரம்பகால துன்புறுத்தல்கள்",
+        "hours": 4
+      },
+      {
+        "num": "3.2",
+        "english": "Pauline missionary journeys and theological epistles to early communities",
+        "sinhala": "ශාන්ත පාවුළු තුමාගේ ධර්මදූත චාරිකා සහ ප්‍රාදේශීය සභා වෙත යැවූ ලිපි",
+        "tamil": "புனித பவுலின் மறைபரப்புப் பயணங்களும் விவிலிய நிருபங்களும் இறையியலும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "english": "Christian Theology: Trinity, Grace & Sacraments",
+    "sinhala": "ඒකකය 04: ක්‍රිස්තියානි දේවධර්මය: ශුද්ධ වූ ත්‍රිත්වය, දේව වරප්‍රසාද සහ ප්‍රසාද නිධාන",
+    "tamil": "அலகு 04: கிறிஸ்தவ இறையியல்: மூவொரு இறைவன், அருள் மற்றும் திருவருட்சாதனங்கள்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "english": "The Holy Trinity: Father, Son and Holy Spirit as one God; Christology",
+        "sinhala": "ශුද්ධ වූ ත්‍රිත්වය: පියාණන්, පුත්‍රයාණන් සහ ශුද්ධාත්මයාණන් ඒකීය දෙවියන් ලෙස",
+        "tamil": "மூவொரு இறைவன்: தந்தை, மகன், தூய ஆவி மற்றும் கிறிஸ்துவியல்",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "english": "Seven Sacraments (Baptism, Eucharist, Confirmation, etc.) as channels of grace",
+        "sinhala": "සප්ත ප්‍රසාද නිධාන (ඥානස්නානය, දිව්‍ය සත්ප්‍රසාදය ආදී) සහ දේව වරප්‍රසාදය",
+        "tamil": "ஏழு திருவருட்சாதனங்கள் (திருமுழுக்கு, நற்கருணை, உறுதிப்பூசுதல்) மற்றும் இறையருள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "english": "Reformation, Ecumenism & Church Councils",
+    "sinhala": "ඒකකය 05: ප්‍රතිසංස්කරණ යුගය, සභා එකමුතුව (එකියුමෙනිස්ම) සහ සභා සම්මුතීන්",
+    "tamil": "அலகு 05: திருச்சபை மறுமலர்ச்சி, சபை ஒற்றுமை இயக்கம் (எக்குமெனிசம்) மற்றும் வரலாற்றுச் சங்கங்கள்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "english": "Protestant Reformation (Martin Luther, John Calvin) and Catholic Counter-Reformation (Council of Trent)",
+        "sinhala": "ප්‍රොතෙස්තන්ත ප්‍රතිසංස්කරණය (මාටින් ලූතර්) සහ කතෝලික ප්‍රති-ප්‍රතිසංස්කරණය",
+        "tamil": "சீர்திருத்த இயக்கம் (மார்ட்டின் லூதர்) மற்றும் கத்தோலிக்க மறுமலர்ச்சி (திரெந்து சங்கம்)",
+        "hours": 4
+      },
+      {
+        "num": "5.2",
+        "english": "Second Vatican Council (Vatican II), aggiornamento and modern ecumenical movement",
+        "sinhala": "දෙවන වතිකාන මන්ත්‍රණ සභාව (Vatican II) සහ නූතන කිතුනු එකමුතු ව්‍යාපාරය",
+        "tamil": "இரண்டாம் வத்திக்கான் சங்கம், திருச்சபை நவீனமயமாக்கம் மற்றும் ஒற்றுமை முயற்சிகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "english": "Christian Art, Architecture, Music & Social Contributions",
+    "sinhala": "ඒකකය 06: ක්‍රිස්තියානි කලාව, ගෘහ නිර්මාණ ශිල්පය, සංගීතය සහ සමාජ මෙහෙවර",
+    "tamil": "அலகு 06: கிறிஸ்தவக் கலை, கட்டிடக்கலை, திருவழிபாட்டு இசை மற்றும் சமூகப் பணிகள்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "english": "Gothic cathedrals, Renaissance art (Michelangelo, da Vinci) and Gregorian chant",
+        "sinhala": "ගොතික් ආසන දෙව්මැදුරු, පුනරුද කලාව (මයිකල්ඇන්ජලෝ) සහ ග්‍රෙගෝරියන් ගීතිකා",
+        "tamil": "கோதிக் பேராலயங்கள், மறுமலர்ச்சிக் கலை (மைக்கலேஞ்சலோ) மற்றும் கிரகோரியன் பாடல்கள்",
+        "hours": 4
+      },
+      {
+        "num": "6.2",
+        "english": "Establishment of hospitals, educational institutions and human welfare charities",
+        "sinhala": "රෝහල්, පාසල් සහ සමාජ සුභසාධන පුණ්‍යායතන පිහිටුවීම මඟින් කළ මෙහෙවර",
+        "tamil": "மருத்துவமனைகள், கல்வி நிறுவனங்கள் மற்றும் தொண்டுப் பணிகள் வழியான சமூகப் பங்களிப்பு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "english": "History of Christianity in Sri Lanka",
+    "sinhala": "ඒකකය 07: ශ්‍රී ලංකාවේ ක්‍රිස්තියානි ධර්මයේ ඉතිහාසය සහ ව්‍යාප්තිය",
+    "tamil": "அலகு 07: இலங்கையில் கிறிஸ்தவத்தின் வரலாறும் நற்செய்திப் பரவலும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "english": "Persian Christian cross at Anuradhapura, Portuguese Franciscan and Jesuit missions",
+        "sinhala": "අනුරාධපුර පර්සියානු කුරුසිය, පෘතුගීසි ෆ්‍රැන්සිස්කන් සහ ජේසුයිට් මෙහෙවර",
+        "tamil": "அனுராதபுர பாரசீக சிலுவை, போர்த்துக்கேய பிரான்சிஸ்கன் மற்றும் இயேசு சபை பணிகள்",
+        "hours": 4
+      },
+      {
+        "num": "7.2",
+        "english": "St. Joseph Vaz (Apostle of Sri Lanka), Dutch persecution and national inculturation",
+        "sinhala": "ශුද්ධ වූ ජුසේ වාස් මුනිතුමා, ලන්දේසි පීඩා හමුවේ ඇදහිල්ල රැකීම සහ දේශීයකරණය",
+        "tamil": "புனித ஜோசப் வாஸ் (இலங்கையின் திருத்தூதர்), ஒல்லாந்தர் கால தியாகமும் சுதேசமயமாக்கலும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "english": "Christian Ethics, Social Justice & Peacebuilding",
+    "sinhala": "ඒකකය 08: ක්‍රිස්තියානි ආචාර ධර්ම, සමාජ සාධාරණත්වය සහ සාමය ගොඩනැගීම",
+    "tamil": "அலகு 08: கிறிஸ்தவ ஒழுக்கவியல், சமூக நீதியும் சமாதானக் கட்டியெழுப்பலும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "english": "Catholic Social Teaching: Human dignity, option for the poor and stewardship of Creation (Laudato Si')",
+        "sinhala": "කතෝලික සමාජ ඉගැන්වීම්: මිනිස් ගරුත්වය, දුගීන් වෙනුවෙන් පෙනී සිටීම සහ සොබාදහම සුරැකීම",
+        "tamil": "கத்தோலிக்க சமூகப் போதனைகள்: மனித மாண்பு, வறியோருக்கான முன்னுரிமை, சுற்றுச்சூழல் பாதுகாப்பு",
+        "hours": 4
+      },
+      {
+        "num": "8.2",
+        "english": "Reconciliation, interfaith dialogue, non-violence and social transformation in Sri Lanka",
+        "sinhala": "සංහිඳියාව, අන්තර්-ආගමික සංවාදය, අවිහිංසාව සහ ජාතික සාමය",
+        "tamil": "தேசிய நல்லிணக்கம், சர்வமத உரையாடல், அகிம்சை மற்றும் அமைதிக்கான பங்களிப்பு",
+        "hours": 4
+      }
+    ]
+  }
+]

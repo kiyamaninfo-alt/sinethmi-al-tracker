@@ -1,0 +1,178 @@
+[
+  {
+    "num": 1,
+    "english": "Foundations of Drama & Theatrical Elements",
+    "sinhala": "ඒකකය 01: නාට්‍ය කලාවේ මූලධර්ම සහ නාට්‍යමය අංග",
+    "tamil": "அலகு 01: நாடகத்தின் கூறுகளும் அரங்கியல் அடிப்படைகளும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "english": "Definitions of drama, theatre, performative instinct and ritual origins",
+        "sinhala": "නාට්‍ය සහ රංග කලාවේ අර්ථ දැක්වීම්, අභිනය සහ චාරිත්‍රානුකූල මූලාරම්භය",
+        "tamil": "நாடகத்தின் வரைவிலக்கணம், நடிப்புத் தூண்டுதல் மற்றும் சடங்குத் தோற்றம்",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "english": "Aristotelian elements: Plot, character, thought, diction, spectacle and song",
+        "sinhala": "ඇරිස්ටෝටලියානු නාට්‍ය අංග: වස්තුව, චරිත, චින්තනය, භාෂාව, ගීතය සහ දර්ශනය",
+        "tamil": "அரிஸ்டோட்டிலின் நாடகக் கூறுகள்: கதைப்பின்னல், பாத்திரம், உரையாடல், காட்சி",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "english": "Historical Development of World Theatre",
+    "sinhala": "ඒකකය 02: ලෝක නාට්‍ය කලාවේ ඓතිහාසික විකාශනය",
+    "tamil": "அலகு 02: உலக நாடக வரலாறும் அரங்கியல் பரிணாமமும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "english": "Classical Greek theatre and Indian Sanskrit theatre traditions",
+        "sinhala": "සම්භාව්‍ය ග්‍රීක නාට්‍ය කලාව සහ භාරතීය සංස්කෘත නාට්‍ය සම්ප්‍රදාය",
+        "tamil": "பண்டைய கிரேக்க நாடகம் மற்றும் செவ்வியல் சமஸ்கிருத நாடக மரபுகள்",
+        "hours": 4
+      },
+      {
+        "num": "2.2",
+        "english": "Elizabethan theatre (Shakespeare) and European realism (Ibsen, Chekhov)",
+        "sinhala": "එලිසබෙත් යුගයේ රංග කලාව සහ යුරෝපීය යථාර්ථවාදය (ඉබ්සන්, චෙකොෆ්)",
+        "tamil": "எலிசபெத்தன் கால அரங்கு (ஷேக்ஸ்பியர்) மற்றும் ஐரோப்பிய எதார்த்தவாத நாடகங்கள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "english": "Traditional Ritual Drama & Folk Theatre of Sri Lanka",
+    "sinhala": "ඒකකය 03: දේශීය චාරිත්‍රානුකූල නාට්‍ය සහ ගැමි නාටක සම්ප්‍රදායන්",
+    "tamil": "அலகு 03: இலங்கையின் சடங்கு நாடகங்களும் கிராமியக் கூத்து வடிவங்களும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "english": "Kolam, Sokari and Nadagam: Performance structure, masks and songs",
+        "sinhala": "කෝලම්, සොකරි සහ නාඩගම්: රංග විලාසය, වෙස්මුහුණු සහ ගීත සම්ප්‍රදාය",
+        "tamil": "கோலம், சொக்கரி மற்றும் நாடகம்: அரங்கக் கட்டமைப்பு, முகமூடிகள், இசை",
+        "hours": 4
+      },
+      {
+        "num": "3.2",
+        "english": "Tamil folk Koothu traditions of Sri Lanka: Vadamodi, Thenmodi, Vilasam",
+        "sinhala": "ශ්‍රී ලංකාවේ දෙමළ කූත්තු සම්ප්‍රදායන්: වඩමෝඩි, තෙන්මෝඩි සහ විලාසම්",
+        "tamil": "ஈழத்து தமிழ் மரபுசார் கூத்துக்கள்: வடமோடி, தென்மோடி மற்றும் விலாசம்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "english": "Modern Sri Lankan Theatre Movement",
+    "sinhala": "ඒකකය 04: නූතන ශ්‍රී ලාංකේය නාට්‍ය ප්‍රවණතා සහ පුනරුදය",
+    "tamil": "அலகு 04: நவீன இலங்கை நாடக இயக்கமும் பரிசோதனை அரங்கும்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "english": "Stylized theatre revolution: Ediriweera Sarachchandra's Maname and Sinhabahu",
+        "sinhala": "ශෛලිගත නාට්‍ය විප්ලවය: එදිරිවීර සරච්චන්ද්‍රයන්ගේ මනමේ සහ සිංහබාහු",
+        "tamil": "பாணிப்படுத்தப்பட்ட நாடக எழுச்சி: எதிரிவீர சரச்சந்திரவின் மனமே, சிங்கபாகு",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "english": "Social realism, satirical theatre (Sugathapala de Silva, Henry Jayasena)",
+        "sinhala": "යථාර්ථවාදී සහ දේශපාලන උපහාස නාට්‍ය (සුගතපාල ද සිල්වා, හෙන්රි ජයසේන)",
+        "tamil": "சமூக யதார்த்தவாத நாடகங்கள், மொழிபெயர்ப்பு மற்றும் தழுவல் அரங்கியல்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "english": "Acting Techniques, Physical Expression & Voice Modulation",
+    "sinhala": "ඒකකය 05: රංගන ශිල්පය, කායික ප්‍රකාශනය සහ කටහඬ පුහුණුව",
+    "tamil": "அலகு 05: நடிப்புக் கலை, உடலசைவு வெளிப்பாடு மற்றும் குரல் பயிற்சி",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "english": "Stanislavski's system of psychological realism and emotional memory",
+        "sinhala": "ස්තානිස්ලාව්ස්කිගේ මනෝවිද්‍යාත්මක යථාර්ථවාදී රංගන පද්ධතිය",
+        "tamil": "ஸ்டானிஸ்லாவ்ஸ்கியின் உளவியல் எதார்த்த நடிப்பு முறை",
+        "hours": 4
+      },
+      {
+        "num": "5.2",
+        "english": "Brechtian epic theatre, alienation effect (Verfremdungseffekt) and mime",
+        "sinhala": "බ්‍රෙෂ්ට්ගේ එපික් නාට්‍ය සම්ප්‍රදාය, දුරස්ථභාවය සහ මුකාභිනය",
+        "tamil": "பிரெக்டின் இதிகாச அரங்கு, அந்நியமாதல் உத்தி மற்றும் மௌன நடிப்பு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "english": "Playwriting, Script Analysis & Dramatic Adaptation",
+    "sinhala": "ඒකකය 06: නාට්‍ය රචනය, පිටපත් විචාරය සහ නාට්‍යමය අනුවර්තන",
+    "tamil": "அலகு 06: நாடக எழுத்து, பிரதியாக்கம் மற்றும் நாடகத் தழுவல்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "english": "Dramatic dialogue, character arcs, conflict building and pacing",
+        "sinhala": "නාට්‍ය දෙබස් රචනය, චරිත ගොඩනැංවීම සහ ගැටුම් සංවර්ධනය",
+        "tamil": "நாடக உரையாடல் உருவாக்கம், பாத்திரப் பண்புகள் மற்றும் முரண்பாடுகள்",
+        "hours": 4
+      },
+      {
+        "num": "6.2",
+        "english": "Translating and adapting classical and foreign plays to local contexts",
+        "sinhala": "සම්භාව්‍ය හා විදේශීය නාට්‍ය දේශීය සන්දර්භයට අනුවර්තනය කිරීම",
+        "tamil": "செவ்வியல் மற்றும் வெளிநாட்டு நாடகங்களை உள்ளூர் சூழலுக்கு தழுவுதல்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "english": "Directing, Stagecraft & Technical Production",
+    "sinhala": "ඒකකය 07: නාට්‍ය අධ්‍යක්ෂණය, වේදිකා සැලසුම් සහ තාක්ෂණික නිෂ්පාදනය",
+    "tamil": "அலகு 07: நெறியாள்கை, மேடை அமைப்பு மற்றும் தொழில்நுட்ப தயாரிப்பு",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "english": "Director's concept, blocking, ensemble coordination and rehearsal schedule",
+        "sinhala": "අධ්‍යක්ෂක සංකල්පය, චලන සැලසුම් සහ පුහුණුවීම් කළමනාකරණය",
+        "tamil": "நெறியாளரின் எண்ணக்கரு, மேடை அசைவுகள் மற்றும் ஒத்திகை முகாமைத்துவம்",
+        "hours": 4
+      },
+      {
+        "num": "7.2",
+        "english": "Stage types, set design, lighting plots, sound design and makeup",
+        "sinhala": "වේදිකා වර්ග, දර්ශන තල සැලසුම්, ආලෝකකරණය, ශබ්ද සැලසුම් සහ වේශ නිරූපණය",
+        "tamil": "மேடை வகைகள், காட்சி வடிவமைப்பு, ஒளியமைப்பு, ஒலியமைப்பு மற்றும் ஒப்பனை",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "english": "Theatrical Criticism, Aesthetic Appreciation & Research",
+    "sinhala": "ඒකකය 08: නාට්‍ය විචාරය, රසවින්දනය සහ පර්යේෂණ",
+    "tamil": "அலகு 08: நாடக விமர்சனம், அழகியல் நயப்பும் கள ஆய்வும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "english": "Methods of theatre reviewing, critical analysis and performance evaluation",
+        "sinhala": "නාට්‍ය විචාර ක්‍රමවේදය, විචාරාත්මක ඇගයීම සහ කාර්යසාධන තක්සේරුව",
+        "tamil": "நாடகத் திறனாய்வு முறைகள் மற்றும் அரங்கியல் மதிப்பீட்டு நியமங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "8.2",
+        "english": "Contemporary experimental forms: Street theatre, playback and forum theatre",
+        "sinhala": "නූතන පර්යේෂණාත්මක රංග කලාව: වීදි නාට්‍ය සහ සංසද නාට්‍ය කලාව",
+        "tamil": "பரிசோதனை அரங்கு: வீதி நாடகம், அரங்கக் கருத்தரங்கு மற்றும் மக்கள் அரங்கு",
+        "hours": 4
+      }
+    ]
+  }
+]

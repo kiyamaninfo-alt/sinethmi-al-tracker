@@ -1,0 +1,178 @@
+[
+  {
+    "num": 1,
+    "english": "Foundations of Islam, Tawheed & Articles of Faith",
+    "sinhala": "ඒකකය 01: තව්හීද් සංකල්පය සහ ඉස්ලාමයේ මූලික ඇදහීම්",
+    "tamil": "அலகு 01: தவ்ஹீத் கோட்பாடும் ஈமானின் அடிப்படைகளும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "english": "Concept of Tawheed: Tawheed ar-Rububiyyah, al-Uluhiyyah and al-Asma was-Sifat",
+        "sinhala": "තව්හීද් වර්ග: තව්හීදුර් රුබූබියියා, උලූහියියා සහ අස්මාඋ වස්සිෆාත්",
+        "tamil": "தவ்ஹீதின் மூன்று பிரிவுகள்: ருபூபிய்யா, உலூஹிய்யா, அஸ்மா வஸ்ஸிபாத்",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "english": "Six Articles of Iman (Faith): Belief in Allah, Angels, Books, Prophets, Day of Judgement, Qadr",
+        "sinhala": "ඊමාන්හි අංග 6: අල්ලාහ්, මලක්වරුන්, පූජනීය ග්‍රන්ථ, නබිවරුන්, අවසාන දිනය, කද්ර්",
+        "tamil": "ஈமானின் ஆறு தூண்கள்: அல்லாஹ், மலக்குகள், வேதங்கள், நபிகள், மறுமை, கத்ர்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "english": "The Holy Quran: Compilation, Themes & Exegesis",
+    "sinhala": "ඒකකය 02: ශුද්ධ වූ අල්-කුර්ආනය: සංග්‍රහ කිරීම, තේමා සහ තෆ්සීර්",
+    "tamil": "அலகு 02: அல்-குர்ஆன்: வஹீ அருளப்படுதல், தொகுப்பும் விரிவுரையும் (தப்ஸீர்)",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "english": "Revelation of Wahy, preservation, compilation under Caliphs Abu Bakr and Uthman",
+        "sinhala": "වහී පහළවීම, මතක තබාගැනීම, අබුබක්ර් සහ උස්මාන් කලීෆාවරුන් යටතේ සම්පාදනය",
+        "tamil": "வஹீ இறங்குதல், மனனம் செய்தல், அபூபக்கர், உஸ்மான் (ரழி) காலத்தில் தொகுக்கப்படல்",
+        "hours": 4
+      },
+      {
+        "num": "2.2",
+        "english": "Makki and Madani Surahs, themes and principles of Quranic exegesis (Tafsir)",
+        "sinhala": "මක්කී සහ මදනී සූරා, ප්‍රධාන තේමාවන් සහ තෆ්සීර් (අර්ථ විවරණ) මූලධර්ම",
+        "tamil": "மக்கிய்யா, மதனிய்யா அத்தியாயங்கள் மற்றும் தப்ஸீர் கலை நியமங்கள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "english": "Hadith & The Sunnah of Prophet Muhammad (PBUH)",
+    "sinhala": "ඒකකය 03: හදීස් සහ මුහම්මද් නබිතුමාගේ සුන්නාහ් සම්ප්‍රදාය",
+    "tamil": "அலகு 03: ஹதீஸ் கலை மற்றும் முஹம்மது நபியின் (ஸல்) சுன்னா",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "english": "Structure of Hadith: Sanad (chain of narrators) and Matn (text), Sahih, Hasan, Da'if",
+        "sinhala": "හදීස් ව්‍යුහය: සනද් (පරම්පරාව) සහ මත්න් (පාඨය), සහීහ්, හසන් සහ ළඊෆ්",
+        "tamil": "ஹதீஸின் கட்டமைப்பு: ஸனத், மத்ன் மற்றும் ஸஹீஹ், ஹஸன், ழஈப் தரப்படுத்தல்கள்",
+        "hours": 4
+      },
+      {
+        "num": "3.2",
+        "english": "The Sihah Sitta (Six canonical Hadith collections) and Sunnah in jurisprudence",
+        "sinhala": "සිහාහ් සිත්තා (ප්‍රමුඛ හදීස් ග්‍රන්ථ 6) සහ නීතියේ මූලාශ්‍රයක් ලෙස සුන්නාව",
+        "tamil": "ஸிஹாஹ் ஸித்தா (ஆறு ஆதாரபூர்வமான நூல்கள்) மற்றும் சட்ட மூலாதாரமாக சுன்னா",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "english": "Five Pillars of Islam & Ibadah (Worship)",
+    "sinhala": "ඒකකය 04: ඉස්ලාමයේ මූලික කුළුණු පහ සහ ඉබාදාත් (වන්දනාමාන)",
+    "tamil": "அலகு 04: இஸ்லாத்தின் ஐந்து தூண்களும் இபாதாத் வழிபாடுகளும்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "english": "Shahadah and Salah: Conditions, preparation (Wudu), prayer times and spiritual impact",
+        "sinhala": "ශහදාහ් සහ සලාහ්: පවිත්‍රතාව (වුළු), යාච්ඤා වේලාවන් සහ ආධ්‍යාත්මික බලපෑම",
+        "tamil": "ஷஹாதா மற்றும் தொழுகை: உளத்தூய்மை (வுழூ), தொழுகை முறைகளும் ஆன்மீகப் பயன்களும்",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "english": "Zakah, Sawm (Ramadan fasting) and Hajj pilgrimage: Rules and social benefits",
+        "sinhala": "සකාත්, සව්ම් (රාමසාන් උපවාසය) සහ හජ් වන්දනාව: නීති සහ සමාජීය වාසි",
+        "tamil": "ஸகாத், ரமழான் நோன்பு மற்றும் ஹஜ் யாத்திரை: சமூகப் பொருளாதார நன்மைகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "english": "Islamic Jurisprudence (Shariah & Fiqh)",
+    "sinhala": "ඒකකය 05: ඉස්ලාමීය නීතිවේදය (ෂරීආ සහ ෆික්හ්)",
+    "tamil": "அலகு 05: இஸ்லாமிய சட்டவியலும் (ஷரீஆ) பிக்ஹ் கலை மரபுகளும்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "english": "Four primary sources of Fiqh: Quran, Sunnah, Ijma (consensus) and Qiyas (analogy)",
+        "sinhala": "ෆික්හ්හි මූලාශ්‍ර 4: අල්-කුර්ආන්, සුන්නාහ්, ඉජ්මාඃ (ඒකමතිකත්වය) සහ කියාස්",
+        "tamil": "பிக்ஹின் நான்கு மூலாதாரங்கள்: குர்ஆன், சுன்னா, இஜ்மாஃ, கியாஸ்",
+        "hours": 4
+      },
+      {
+        "num": "5.2",
+        "english": "The Four Sunni Madhhabs (Hanafi, Maliki, Shafi'i, Hanbali) and Maqasid al-Shariah",
+        "sinhala": "සුන්නි මද්හබ් 4 (හනෆී, මාලිකී, ෂාෆිඊ, හන්බලී) සහ මකාසිදුෂ් ෂරීආ",
+        "tamil": "நான்கு சட்டப் பள்ளிகள் (ஹனபி, மாலிகி, ஷாபிஈ, ஹன்பலி) மற்றும் மகflagsிதுஷ் ஷரீஆ",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "english": "Islamic Civilization & The Golden Age of Science",
+    "sinhala": "ඒකකය 06: ඉස්ලාමීය ශිෂ්ටාචාරය සහ විද්‍යාවේ ස්වර්ණමය යුගය",
+    "tamil": "அலகு 06: இஸ்லாமிய நாகரிகமும் அறிவியலின் பொற்காலமும்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "english": "The Rightly Guided Caliphs (Khulafa ar-Rashidun) and governance principles",
+        "sinhala": "ධර්මිෂ්ඨ කලීෆාවරු සිව්දෙනා (ඛුලෆාඋර් රෂිදූන්) සහ පාලන මූලධර්ම",
+        "tamil": "நேர்வழி நின்ற நான்கு கலீபாக்கள் மற்றும் இஸ்லாமிய ஆட்சி முறைமை",
+        "hours": 4
+      },
+      {
+        "num": "6.2",
+        "english": "House of Wisdom (Bayt al-Hikmah), contributions in medicine (Ibn Sina), math (Al-Khwarizmi), optics",
+        "sinhala": "බයිතුල් හික්මා, වෛද්‍ය විද්‍යාව (ඉබ්නු සීනා), ගණිතය (අල්-ක්වාරිස්මි), දෘෂ්ටි විද්‍යාව",
+        "tamil": "பைத்துல் ஹிக்மா, மருத்துவப் பங்களிப்பு (இப்னு சீனா), கணிதம் (அல்-குவாரிஸ்மி)",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "english": "Muslim Heritage & History in Sri Lanka",
+    "sinhala": "ඒකකය 07: ශ්‍රී ලාංකික මුස්ලිම් ඉතිහාසය සහ සංස්කෘතික උරුමය",
+    "tamil": "அலகு 07: இலங்கையில் முஸ்லிம்களின் வரலாறும் பண்பாட்டுப் பாரம்பரியமும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "english": "Arrival of Arab traders, cordial relations with Sinhala Kings and defense of the realm",
+        "sinhala": "අරාබි වෙළඳුන්ගේ පැමිණීම, සිංහල රජවරුන් සමඟ සුහද සබඳතා සහ දේශය රැකීම",
+        "tamil": "அரபு வணிகர்களின் வருகை, சிங்கள மன்னர்களுடனான நல்லுறவு மற்றும் தேசப் பாதுகாப்பு",
+        "hours": 4
+      },
+      {
+        "num": "7.2",
+        "english": "Portuguese and Dutch period resilience, Siddi Lebbe and 19th-century Muslim educational renaissance",
+        "sinhala": "පෘතුගීසි/ලන්දේසි පීඩා හමුවේ ඔරොත්තු දීම, සිද්ධි ලෙබ්බේ සහ අධ්‍යාපන පුනරුදය",
+        "tamil": "காலனித்துவ கால சவால்கள், சித்தி லெப்பை மற்றும் முஸ்லிம் கல்வி மறுமலர்ச்சி",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "english": "Islamic Ethics, Human Rights & Contemporary Society",
+    "sinhala": "ඒකකය 08: ඉස්ලාමීය ආචාර ධර්ම, මානව හිමිකම් සහ සමකාලීන සමාජය",
+    "tamil": "அலகு 08: இஸ்லாமிய ஒழுக்க நெறிகள், மனித உரிமைகளும் சமகால சவால்களும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "english": "The Prophet's Farewell Sermon: Equality, human rights, eradication of racism",
+        "sinhala": "නබිතුමාගේ අවසාන දේශනාව (හජ්ජතුල් විදාඃ): සමානාත්මතාව සහ මානව හිමිකම්",
+        "tamil": "நபிகளாரின் இறுதிப் பேருரை: மனித உரிமைகள், சமத்துவம், இனவாதம் ஒழிப்பு",
+        "hours": 4
+      },
+      {
+        "num": "8.2",
+        "english": "Islamic banking and finance, coexistence in pluralistic societies, environmental stewardship",
+        "sinhala": "ඉස්ලාමීය බැංකු ක්‍රමය, බහුවිධ සමාජ සහජීවනය සහ පාරිසරික භාරකාරත්වය",
+        "tamil": "இஸ்லாமிய வங்கி முறை, பல்கலாச்சார சகவாழ்வு மற்றும் சுற்றுச்சூழல் பாதுகாப்பு",
+        "hours": 4
+      }
+    ]
+  }
+]

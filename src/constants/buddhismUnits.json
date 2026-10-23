@@ -1,0 +1,178 @@
+[
+  {
+    "num": 1,
+    "english": "Historical Background & Life of the Buddha",
+    "sinhala": "ඒකකය 01: බුද්ධ චරිතය සහ ඓතිහාසික පසුබිම",
+    "tamil": "அலகு 01: வரலாற்றுப் பின்னணியும் கௌதம புத்தரின் வாழ்க்கையும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "english": "Socio-religious and philosophical conditions of 6th Century BCE India",
+        "sinhala": "ක්‍රි.පූ. 6 වන සියවසේ භාරතයේ සමාජ-ආගමික හා දාර්ශනික පසුබිම",
+        "tamil": "கி.மு. 6 ஆம் நூற்றாண்டு இந்தியாவின் சமூக-சமய, தத்துவப் பின்னணி",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "english": "Renunciation, spiritual quest, Enlightenment and establishment of the Sasana",
+        "sinhala": "අභිනිෂ්ක්‍රමණය, බුද්ධත්වයට පත්වීම සහ ශාසනය පිහිටුවීම",
+        "tamil": "துறவு, மெய்ஞ்ஞானத் தேடல், ஞானமடைதல் மற்றும் சாசனத்தை நிறுவுதல்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "english": "Four Noble Truths & Noble Eightfold Path",
+    "sinhala": "ඒකකය 02: චතුරාර්ය සත්‍යය සහ ආර්ය අෂ්ටාංගික මාර්ගය",
+    "tamil": "அலகு 02: நான்கு உயரிய உண்மைகளும் ஆரிய எண்வகை நெறியும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "english": "Dukkha, Samudaya, Nirodha and Magga: Analysis of suffering and cessation",
+        "sinhala": "දුක්ඛ, සමුදය, නිරෝධ, මාර්ග: දුක සහ දුක්ඛ නිරෝධය පිළිබඳ විග්‍රහය",
+        "tamil": "துன்பம், துன்பத்தின் தோற்றம், துன்ப நீக்கம் மற்றும் அதற்கான வழி",
+        "hours": 4
+      },
+      {
+        "num": "2.2",
+        "english": "Majjhima Patipada: Sila (virtue), Samadhi (concentration), Panna (wisdom)",
+        "sinhala": "මධ්‍යම ප්‍රතිපදාව: සීල, සමාධි, ප්‍රඥා ත්‍රිශික්ෂා පුහුණුව",
+        "tamil": "மத்திம பிரதிபடை: சீலம், சமாதி, ஞானம் ஆகிய முப்பெரும் பயிற்சிகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "english": "Paticca Samuppada & Tilakkhana (Three Characteristics)",
+    "sinhala": "ඒකකය 03: පටිච්ච සමුප්පාදය සහ ත්‍රිලක්ෂණය",
+    "tamil": "அலகு 03: சார்புற்ற தோற்றக் கொள்கையும் (பதிச்ச சமுப்பாத) முக்குணங்களும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "english": "Dependent Origination (12 Nidanas): Forward and reverse causal sequences",
+        "sinhala": "ද්වාදශාංගික පටිච්ච සමුප්පාදය: අනුලෝම සහ ප්‍රතිලෝම හේතුඵල ධර්මය",
+        "tamil": "சார்புற்ற தோற்றத்தின் பன்னிரு காரணக் கண்ணிகளும் காரணகாரியத் தொடர்பும்",
+        "hours": 4
+      },
+      {
+        "num": "3.2",
+        "english": "Tilakkhana: Anicca (impermanence), Dukkha (unsatisfactoriness), Anatta (non-self)",
+        "sinhala": "ත්‍රිලක්ෂණය: අනිත්‍ය, දුක්ඛ සහ අනාත්ම පිළිබඳ දාර්ශනික විග්‍රහය",
+        "tamil": "அனிச்ச (நிலையாமை), துக்க (துன்பம்), அனத்த (ஆன்மாவற்ற நிலை) கோட்பாடுகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "english": "Buddhist Epistemology & Theory of Karma",
+    "sinhala": "ඒකකය 04: කර්ම න්‍යාය, පුනර්භවය සහ ඥාන විභාගය",
+    "tamil": "அலகு 04: கர்மக் கோட்பாடு, மறுபிறப்பு மற்றும் பௌத்த அறிவாராய்ச்சியியல்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "english": "Kamma Niyama: Volition (Cetana), classifications of karma and Vipaka",
+        "sinhala": "කර්ම නියාමය: චේතනාව, කර්ම වර්ගීකරණය සහ විපාක දීමේ ස්වභාවය",
+        "tamil": "கர்ம நியமம்: சேதனா (நோக்கம்), கர்மத்தின் வகைகள் மற்றும் கர்ம பலன்கள்",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "english": "Bases of knowledge: Direct perception (Abhinna), Kalama Sutta and critical inquiry",
+        "sinhala": "ඥාන මූලාශ්‍ර: ප්‍රත්‍යක්ෂ ඥානය, කාලාම සූත්‍රය සහ විචාරාත්මක විමසුම",
+        "tamil": "அறிவுக்கான மூலாதாரங்கள்: நேரடி அனுபவம், காலாம சூத்திரம் மற்றும் சுய விசாரணை",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "english": "Buddhist Social & Political Philosophy",
+    "sinhala": "ඒකකය 05: බෞද්ධ සමාජ සහ දේශපාලන දර්ශනය",
+    "tamil": "அலகு 05: பௌத்த சமூக மற்றும் அரசியல் தத்துவம்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "english": "Agganna Sutta: Evolution of society, social contract and democratic Kingship",
+        "sinhala": "අග්ගඤ්ඤ සූත්‍රය: සමාජ සම්භවය, සමාජ සම්මුතිය සහ ප්‍රජාතන්ත්‍රවාදී රජය",
+        "tamil": "அக்கஞ்ஞ சூத்திரம்: சமூக பரிணாமம், சமூக ஒப்பந்தம் மற்றும் மக்கள் ஆட்சி",
+        "hours": 4
+      },
+      {
+        "num": "5.2",
+        "english": "Sigalovada, Cakkavatti Sihanada and Kutadanta suttas: Ethics and statecraft",
+        "sinhala": "සිඟාලෝවාද, චක්කවත්ති සීහනාද සහ කූටදන්ත සූත්‍ර: සමාජ ආචාර ධර්ම",
+        "tamil": "சிகாலோவாத, சக்கரவர்த்தி சீஹநாத சூத்திரங்கள்: நல்லாட்சியும் சமூக நீதியும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "english": "Buddhist Psychology & Mind Culture (Bhavana)",
+    "sinhala": "ඒකකය 06: බෞද්ධ මනෝවිද්‍යාව සහ භාවනාව (චිත්ත සමාධිය)",
+    "tamil": "அலகு 06: பௌத்த உளவியலும் மனப்பயிற்சியும் (பாவனா)",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "english": "Structure of consciousness: Citta, Cetasika, Rupa and 5 Aggregates (Pancakkhandha)",
+        "sinhala": "චිත්ත, චෛතසික, රූප සහ පංචස්කන්ධය පිළිබඳ මනෝවිද්‍යාත්මක විග්‍රහය",
+        "tamil": "உள்ளத்தின் கட்டமைப்பு: சித்தம், சேதசிகம், ரூபம் மற்றும் ஐம்புலக் கூறுகள்",
+        "hours": 4
+      },
+      {
+        "num": "6.2",
+        "english": "Samatha (tranquility) and Vipassana (insight) meditation: Satipatthana method",
+        "sinhala": "සමථ සහ විපස්සනා භාවනා ක්‍රම: සතිපට්ඨාන ක්‍රමවේදය සහ නිර්වාණය",
+        "tamil": "சமத, விபஸ்ஸனா தியான முறைகள் மற்றும் சதிபட்டான மன ஒருமைப்பாடு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "english": "Buddhist Councils & Spread of Theravada & Mahayana",
+    "sinhala": "ඒකකය 07: ධර්ම සංගායනා සහ ථෙරවාද/මහායාන සම්ප්‍රදායන්",
+    "tamil": "அலகு 07: தர்ம சங்காயனைகளும் தேரவாத, மஹாயான மரபுகளும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "english": "Three Buddhist Councils (Rajagaha, Vesali, Pataliputra) and Tripitaka compilation",
+        "sinhala": "පළමු, දෙවන සහ තෙවන ධර්ම සංගායනා සහ ත්‍රිපිටකය සංගායනා කිරීම",
+        "tamil": "மூன்று தர்ம சங்காயனைகள் மற்றும் திரிபிடகத் தொகுப்பு வரலாறு",
+        "hours": 4
+      },
+      {
+        "num": "7.2",
+        "english": "Doctrinal differences between Theravada, Mahayana and Bodhisattva ideal",
+        "sinhala": "ථෙරවාද සහ මහායාන සම්ප්‍රදායන් අතර ධාර්මික වෙනස්කම් හා බෝධිසත්ව සංකල්පය",
+        "tamil": "தேரவாத, மஹாயான கோட்பாட்டு வேறுபாடுகளும் போதிசத்துவ கொள்கையும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "english": "Buddhist Ethics & Contemporary Global Challenges",
+    "sinhala": "ඒකකය 08: බෞද්ධ ආචාර ධර්ම සහ සමකාලීන ලෝක අභියෝග",
+    "tamil": "அலகு 08: பௌத்த ஒழுக்கவியலும் சமகால உலக சவால்களும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "english": "Buddhist bioethics: Euthanasia, abortion, cloning and genetic engineering",
+        "sinhala": "බෞද්ධ ජෛව ආචාර ධර්ම: දයා මරණය, ගබ්සාව, ක්ලෝනීකරණය සහ ජාන ඉංජිනේරු විද්‍යාව",
+        "tamil": "பௌத்த உயிரியல் ஒழுக்கவியல்: கருக்கலைப்பு, கருணைக்கொலை மற்றும் மரபணு மாற்றம்",
+        "hours": 4
+      },
+      {
+        "num": "8.2",
+        "english": "Environmental conservation, non-violence (Ahimsa), peacebuilding and economic justice",
+        "sinhala": "පාරිසරික සංරක්ෂණය, අහිංසාවාදය, සාම ගොඩනැගීම සහ ආර්ථික සාධාරණත්වය",
+        "tamil": "சுற்றுச்சூழல் பாதுகாப்பு, அகிம்சை, சமாதானக் கட்டியெழுப்பல் மற்றும் நீதி",
+        "hours": 4
+      }
+    ]
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "num": 1,
+    "english": "Sangam Literature & Classical Poetry",
+    "sinhala": "ඒකකය 01: සංගම් සාහිත්‍යය සහ සම්භාව්‍ය කාව්‍ය",
+    "tamil": "அலகு 01: சங்க இலக்கியமும் செவ்வியல் கவிதைகளும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "english": "Ettuthogai and Pathupattu thematic structures (Agam and Puram)",
+        "sinhala": "එට්ටුතොගෛ සහ පත්තුප්පාට්ටු අගම්/පුරම් කාව්‍ය ව්‍යුහය",
+        "tamil": "எட்டுத்தொகை, பத்துப்பாட்டு அகப் புறப் பகுப்புகள்",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "english": "Poetic conventions, landscape tinai concepts and social life",
+        "sinhala": "තිණෛ සංකල්ප, කාව්‍ය සම්ප්‍රදායන් සහ පුරාණ දෙමළ සමාජය",
+        "tamil": "திணைக் கோட்பாடுகளும் பண்டைத் தமிழர் சமூக வாழ்வியலும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "english": "Epic Literature & Didactic Works",
+    "sinhala": "ඒකකය 02: වීරකාව්‍ය සාහිත්‍යය සහ උපදේශාත්මක කෘති",
+    "tamil": "அலகு 02: காப்பிய இலக்கியமும் நீதி நூல்களும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "english": "Silappadikaram and Manimekalai: Literary ethics and narrative art",
+        "sinhala": "සිලප්පදිකාරම් සහ මණිමේකලෛ: කථා කලාව සහ සාහිත්‍ය සදාචාරය",
+        "tamil": "சிலப்பதிகாரம், மணிமேகலை காப்பியப் பண்புகளும் கதைக்கலையும்",
+        "hours": 4
+      },
+      {
+        "num": "2.2",
+        "english": "Tirukkural and Naladiyar ethical philosophy and societal values",
+        "sinhala": "තිරුක්කුරල් සහ නාලඩියාර් ආචාර ධර්ම හා සමාජ දර්ශනය",
+        "tamil": "திருக்குறள், நாலடியார் வாழ்வியல் நீதிகளும் அறக்கோட்பாடுகளும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "english": "Devotional Literature: Bhakti Movement",
+    "sinhala": "ඒකකය 03: භක්ති සාහිත්‍යය සහ ආගමික ප්‍රබෝධය",
+    "tamil": "அலகு 03: பக்தி இலக்கியமும் சமய மறுமலர்ச்சியும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "english": "Saiva devotional hymns: Tevaram, Tiruvasagam and Periyapuranam",
+        "sinhala": "ශෛව භක්ති ගීත: තේවාරම්, තිරුවාසගම් සහ පෙරියපුරාණම්",
+        "tamil": "தேவாரம், திருவாசகம், பெரியபுராணம் பக்தி நெறியும் மொழிநடையும்",
+        "hours": 4
+      },
+      {
+        "num": "3.2",
+        "english": "Vaishnava Nalayira Divya Prabandham and Kambaramayanam",
+        "sinhala": "වෛෂ්ණව නාලායිර දිව්‍ය ප්‍රබන්ධම් සහ කම්බරාමායණ කාව්‍ය",
+        "tamil": "நாலாயிர திவ்வியப் பிரபந்தமும் கம்பராமாயணக் கவிநயமும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "english": "Medieval & Modern Tamil Poetry",
+    "sinhala": "ඒකකය 04: මධ්‍යතන සහ නූතන දෙමළ කාව්‍ය",
+    "tamil": "அலகு 04: இடைக்கால மற்றும் நவீன தமிழ்க் கவிதைகள்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "english": "Minor literary forms: Sitrilakkiyam, Pillaittamil and Kuravanji",
+        "sinhala": "සිට්‍රිලක්කියම්, පිල්ලෛත්තමිළ් සහ කුරවන්ජි සුළු සාහිත්‍ය අංග",
+        "tamil": "சிற்றிலக்கிய வடிவங்கள்: பிள்ளைத் தமிழ், குறவஞ்சி",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "english": "Subramania Bharati, Bharatidasan and modern free verse renaissance",
+        "sinhala": "සුබ්‍රමනිය භාරතී, භාරතීදාසන් සහ නූතන නිසඳැස් පුනරුදය",
+        "tamil": "பாரதியார், பாரதிதாசன் மற்றும் புதுக்கவிதை எழுச்சியும் போக்கும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "english": "Tamil Prose, Novels & Short Stories",
+    "sinhala": "ඒකකය 05: දෙමළ ගද්‍ය, නවකතා සහ කෙටිකතා",
+    "tamil": "அலகு 05: தமிழ் உரைநடை, நாவல் மற்றும் சிறுகதைகள்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "english": "Origins and growth of modern Tamil prose and novelistic realism",
+        "sinhala": "නූතන දෙමළ ගද්‍යයේ ආරම්භය සහ නවකතාවල යථාර්ථවාදය",
+        "tamil": "தமிழ் உரைநடையின் வளர்ச்சியும் நாவல் இலக்கியத்தின் தோற்றமும்",
+        "hours": 4
+      },
+      {
+        "num": "5.2",
+        "english": "Pudukavithai and thematic evolution of the contemporary short story",
+        "sinhala": "කෙටිකතාවේ ව්‍යුහය, චරිත නිරූපණය සහ තේමාත්මක විකාශනය",
+        "tamil": "சிறுகதைக் கலை: கருப்பொருள், கதைப்பின்னல் மற்றும் உத்திகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "english": "Tamil Drama, Theatre & Performing Arts",
+    "sinhala": "ඒකකය 06: දෙමළ නාට්‍ය, රංග කලාව සහ නාට්‍ය ශිල්පය",
+    "tamil": "அலகு 06: தமிழ் நாடகம், அரங்கியல் மற்றும் கூத்து மரபு",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "english": "Traditional Koothu forms of Sri Lanka (Vadamodi and Thenmodi)",
+        "sinhala": "ශ්‍රී ලාංකික කූත්තු සම්ප්‍රදායන් (වඩමෝඩි සහ තෙන්මෝඩි කූත්තු)",
+        "tamil": "ஈழத்துக் கூத்து மரபுகள்: வடமோடி, தென்மோடி மற்றும் விலாசங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "6.2",
+        "english": "Modern Tamil dramatic scripts, social realism and stagecraft",
+        "sinhala": "නූතන දෙමළ නාට්‍ය පිටපත්, සමාජ යථාර්ථය සහ වේදිකා භාවිතය",
+        "tamil": "நவீன தமிழ் நாடகங்கள்: சமூக விழிப்புணர்வும் மேடை அமைப்பும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "english": "Grammar, Morphology & Syntax (Tolkapium & Nannool)",
+    "sinhala": "ඒකකය 07: දෙමළ ව්‍යාකරණ, රූප විද්‍යාව සහ වාක්‍ය වින්‍යාසය",
+    "tamil": "அலகு 07: தமிழ் இலக்கணம்: தொல்காப்பியம் மற்றும் நன்னூல்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "english": "Phonology (Ezhuthu) and morphology (Sol): Sandhi rules and word classes",
+        "sinhala": "අක්ෂර විද්‍යාව (එළුත්තු) සහ පද විද්‍යාව (සොල්): සන්ධි නීති",
+        "tamil": "எழுத்திலக்கணம், சொல்லிலக்கணம் மற்றும் புணர்ச்சி விதிகள்",
+        "hours": 4
+      },
+      {
+        "num": "7.2",
+        "english": "Prosody (Yappu) and rhetoric (Ani): Poetic meters and figures of speech",
+        "sinhala": "ඡන්දස් (යාප්පු) සහ අලංකාර (අණි): කාව්‍ය ඡන්දස් සහ උපමාලංකාර",
+        "tamil": "யாப்பிலக்கணம் (பா வகைகள்) மற்றும் அணியிலக்கணம் (உவமை, உருவகம்)",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "english": "Sri Lankan Tamil Literature & Literary Criticism",
+    "sinhala": "ඒකකය 08: ශ්‍රී ලාංකික දෙමළ සාහිත්‍යය සහ සාහිත්‍ය විචාරය",
+    "tamil": "அலகு 08: ஈழத்துத் தமிழ் இலக்கியமும் இலக்கியத் திறனாய்வும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "english": "Pioneering Sri Lankan Tamil scholars (Arumuka Navalar, Swami Vipulananda)",
+        "sinhala": "ශ්‍රී ලාංකික දෙමළ විද්වතුන්ගේ සේවය (ආරුමුග නාවලර්, විපුලානන්ද හිමි)",
+        "tamil": "ஈழத்து தமிழ்ப் பேரறிஞர்கள்: ஆறுமுக நாவலர், சுவாமி விபுலானந்தர்",
+        "hours": 4
+      },
+      {
+        "num": "8.2",
+        "english": "Contemporary Eelam literature, poetry of displacement and identity",
+        "sinhala": "සමකාලීන ඊළාම් සාහිත්‍යය, අනන්‍යතාව සහ සාහිත්‍ය විචාර න්‍යාය",
+        "tamil": "சமகால ஈழத்து இலக்கியப் போக்குகளும் திறனாய்வுக் கோட்பாடுகளும்",
+        "hours": 4
+      }
+    ]
+  }
+]

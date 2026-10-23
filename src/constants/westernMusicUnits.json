@@ -1,0 +1,178 @@
+[
+  {
+    "num": 1,
+    "english": "Elements of Western Music, Notation & Clefs",
+    "sinhala": "ඒකකය 01: බටහිර සංගීත මූලධර්ම, ප්‍රස්ථාර සහ ක්ලෙෆ් සටහන්",
+    "tamil": "அலகு 01: மேற்கத்திய இசை அடிப்படைகள், குறியீட்டு முறையும் சுருதிகளும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "english": "Treble, Bass, Alto and Tenor clefs, pitch names and ledger lines",
+        "sinhala": "ට්‍රෙබල්, බේස්, ඇල්ටෝ සහ ටෙනර් ක්ලෙෆ් සහ අතිරේක රේඛා",
+        "tamil": "டிரெபிள், பேஸ், ஆல்டோ, டெனர் சுருதிகள் மற்றும் லெட்ஜர் வரிகள்",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "english": "Note values, rests, simple and compound time signatures and triplets",
+        "sinhala": "ස්වර මාත්‍රා, විරාම, සරල සහ සංයුක්ත කාල සංඥා",
+        "tamil": "ஸ்வரப் பெறுமானங்கள், ஓய்வுகள், எளிய மற்றும் கூட்டு நேரக் குறியீடுகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "english": "Scales, Keys, Intervals & Transposition",
+    "sinhala": "ඒකකය 02: පරිමාණ, යතුරු, අන්තර සහ පරිවර්තනය",
+    "tamil": "அலகு 02: ஸ்வர அளவீடுகள், திறவுகோல்கள் மற்றும் இடைவெளிகள்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "english": "Major and minor (harmonic/melodic) scales up to 5 sharps and flats",
+        "sinhala": "මේජර් සහ මයිනර් පරිමාණ (හර්මොනික්/මෙලොඩික්) ෂාප් සහ ෆ්ලැට් 5 දක්වා",
+        "tamil": "மேஜர், மைனர் அளவீடுகள் (ஹார்மோனிக், மெலோடிக்) 5 குறியீடுகள் வரை",
+        "hours": 4
+      },
+      {
+        "num": "2.2",
+        "english": "Intervals (diatonic/chromatic) and melody transposition",
+        "sinhala": "ඩයැටොනික් සහ ක්‍රෝමැටික් අන්තර සහ තනුව වෙනත් යතුරකට පරිවර්තනය",
+        "tamil": "இடைவெளிகள் (டையடோனிக், குரோமடிக்) மற்றும் சுருதி மாற்றம்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "english": "Harmony, Chords & Cadences",
+    "sinhala": "ඒකකය 03: සුසංයෝගය, ත්‍රිත්ව ස්වර සහ කේඩන්ස්",
+    "tamil": "அலகு 03: இசை நல்லிணக்கம், முஸ்வர நாண்களும் (Chords) முடிவு அமைப்புகளும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "english": "Primary and secondary triads in root, 1st and 2nd inversions",
+        "sinhala": "ප්‍රාථමික සහ ද්විතීයික ත්‍රිත්ව ස්වර සහ ඒවායේ පෙරළීම්",
+        "tamil": "முதன்மை, இரண்டாம் நிலை முஸ்வர நாண்கள் மற்றும் தலைகீழ் மாற்றங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "3.2",
+        "english": "Perfect, Imperfect, Plagal and Interrupted cadences and 4-part SATB harmony",
+        "sinhala": "පර්ෆෙක්ට්, ඉම්පර්ෆෙක්ට්, ප්ලේගල් සහ ඉන්ටරප්ටඩ් කේඩන්ස් හා SATB සංයෝජනය",
+        "tamil": "நிறைவு, குறைவு, பிளேகல், இடைமறித்த முடிவு நிலைகளும் 4-பகுதி இசைப்பும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "english": "Baroque Period & Master Composers",
+    "sinhala": "ඒකකය 04: බැරොක් යුගය සහ ශ්‍රේෂ්ඨ නිර්මාණකරුවෝ (Bach, Handel, Vivaldi)",
+    "tamil": "அலகு 04: பரோக் காலம் மற்றும் புகழ்பெற்ற இசையமைப்பாளர்கள்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "english": "Polyphony, Basso Continuo, fugue form and ornamentation in Baroque era",
+        "sinhala": "පොලිෆෝනි, බැසෝ කන්ටිනුවෝ, ෆියුග් ආකෘතිය සහ අලංකරණ ශිල්පය",
+        "tamil": "பல்பகுதி இசைப்பு, தொடர் பாஸ், பியூக் வடிவம் மற்றும் பரோக் அலங்காரங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "english": "Life and representative masterpieces of J.S. Bach, G.F. Handel and Antonio Vivaldi",
+        "sinhala": "ජේ.එස්. බැක්, ජී.එෆ්. හැන්ඩල් සහ ඇන්ටෝනියෝ විවාල්ඩිගේ කෘති",
+        "tamil": "பாக், ஹாண்டெல், விவால்டி ஆகியோரின் தலைசிறந்த படைப்புகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "english": "Classical Period & The Viennese Masters",
+    "sinhala": "ඒකකය 05: සම්භාව්‍ය යුගය (Haydn, Mozart, Beethoven)",
+    "tamil": "அலகு 05: கிளாசிக்கல் காலம் மற்றும் வியன்னா மேதைகள்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "english": "Sonata-Allegro form, Symphony, Concerto and String Quartet development",
+        "sinhala": "සොනාටා-ඇලෙග්‍රෝ ආකෘතිය, සිම්ෆනි, කොන්චර්ටෝ සහ තත් ක්වාටෙට්",
+        "tamil": "சொனாட்டா வடிவம், சிம்பொனி, கன்செர்ட்டோ மற்றும் நரம்பு நாற்றிசை வடிவம்",
+        "hours": 4
+      },
+      {
+        "num": "5.2",
+        "english": "Musical idioms of Joseph Haydn, Wolfgang Amadeus Mozart and early Ludwig van Beethoven",
+        "sinhala": "හයිඩ්න්, මොසාර්ට් සහ බීතෝවන්ගේ සංගීත ශෛලීන්",
+        "tamil": "ஹைடன், மொசார்ட், பேத்தோவன் ஆகியோரின் இசை அமைப்பும் பங்களிப்பும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "english": "Romantic Period & 20th Century Musical Trends",
+    "sinhala": "ඒකකය 06: රොමෑන්ටික යුගය සහ 20 වන සියවසේ නූතන සංගීත ප්‍රවණතා",
+    "tamil": "அலகு 06: ரொமாண்டிக் காலமும் 20 ஆம் நூற்றாண்டு நவீன இசைப் போக்குகளும்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "english": "Romanticism: Program music, Lieder (Schubert, Schumann) and Chopin piano works",
+        "sinhala": "වැඩසටහන් සංගීතය, ෂුබර්ට්ගේ ලීඩර් ගීත සහ චොපින්ගේ පියානෝ කෘති",
+        "tamil": "நிகழ்ச்சி இசை, லீடர் பாடல்கள் (ஷூபர்ட்) மற்றும் சொப்பின் பியானோ படைப்புகள்",
+        "hours": 4
+      },
+      {
+        "num": "6.2",
+        "english": "Musical nationalism (Tchaikovsky, Grieg), Impressionism (Debussy) and Neoclassicism",
+        "sinhala": "සංගීත ජාතිකවාදය, ඉම්ප්‍රෙෂනිස්ට් ශෛලිය (ඩෙබුසි) සහ නව-සම්භාව්‍යවාදය",
+        "tamil": "தேசியவாத இசை (சைக்கோவ்ஸ்கி), இம்ப்ரெஷனிசம் (டெபியூசி) மற்றும் நவீன பரிசோதனைகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "english": "Orchestral Instruments & Acoustic Ensembles",
+    "sinhala": "ඒකකය 07: වාද්‍ය වෘන්ද භාණ්ඩ සහ ධ්වනි කණ්ඩායම්",
+    "tamil": "அலகு 07: ஆர்க்கெஸ்ட்ரா இசைக்கருவிகளும் ஒலியியல் இசைக் குழுக்களும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "english": "Four orchestral sections: Strings, Woodwinds, Brass and Percussion",
+        "sinhala": "වාද්‍ය වෘන්දයේ අංශ 4: තත්, ලී පිඹින, පිත්තල පිඹින සහ බෙර/ඝට්ටන භාණ්ඩ",
+        "tamil": "ஆர்க்கெஸ்ட்ராவின் நான்கு பிரிவுகள்: நரம்பு, மரக்காற்று, பித்தளை, தட்டு வாத்தியங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "7.2",
+        "english": "Orchestral score reading, seating arrangement and transposing instruments",
+        "sinhala": "වාද්‍ය වෘන්ද ප්‍රස්ථාර කියවීම, අසුන් ගැන්වීම සහ ට්‍රාන්ස්පෝසිං භාණ්ඩ",
+        "tamil": "ஆர்க்கெஸ்ட்ரா முழுக்குறிப்பு வாசிப்பு, இருக்கை ஒழுங்கும் சுருதி மாற்று வாத்தியங்களும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "english": "Vocal Forms, Choral Music & Opera",
+    "sinhala": "ඒකකය 08: ගායනා සංගීත ආකෘති, ගීතිකා කණ්ඩායම් සහ ඔපෙරා කලාව",
+    "tamil": "அலகு 08: குரலிசை வடிவங்கள், பாடகர் குழு மரபும் ஓபரா கலையும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "english": "Vocal ranges (Soprano, Alto, Tenor, Bass), Madrigal, Mass and Oratorio",
+        "sinhala": "හඬ පරාස (සොප්‍රානෝ, ඇල්ටෝ, ටෙනර්, බේස්), මැඩ්රිගල් සහ ඔරටෝරියෝ",
+        "tamil": "குரல் எல்லைகள் (சோப்ரானோ, ஆல்டோ, டெனர், பேஸ்), மெட்ரிகல், ஒரட்டோரியோ",
+        "hours": 4
+      },
+      {
+        "num": "8.2",
+        "english": "Opera: Recitative, Aria, Libretto and theatrical staging through history",
+        "sinhala": "ඔපෙරා: රෙසිටටිව්, ඒරියා, ලිබ්‍රෙට්ටෝ සහ නාට්‍යමය වේදිකාගත කිරීම",
+        "tamil": "ஓபரா அரங்கக் கலை: ரெசிட்டேடிவ், ஆரியா, லிப்ரெட்டோ மற்றும் மேடை நெறிகள்",
+        "hours": 4
+      }
+    ]
+  }
+]

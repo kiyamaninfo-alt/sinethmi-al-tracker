@@ -1,0 +1,178 @@
+[
+  {
+    "num": 1,
+    "english": "History, Origin & Natyashastra Fundamentals",
+    "sinhala": "ඒකකය 01: භාරත නැටුම් ඉතිහාසය, සම්භවය සහ නාට්‍ය ශාස්ත්‍රය",
+    "tamil": "அலகு 01: பரதநாட்டிய வரலாறு, தோற்றமும் நாட்டிய சாஸ்திர அடிப்படைகளும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "english": "Origin: Sadir Natyam to Bharatha Natyam revival (Rukmini Devi Arundale)",
+        "sinhala": "සදීර් නැටුමෙන් භාරත නැටුම් පුනරුදය (රුක්මිණී දේවි අරුන්ඩේල්)",
+        "tamil": "சதிர் கச்சேரி முதல் ருக்மிணி தேவியின் பரதநாட்டிய மறுமலர்ச்சி வரை",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "english": "Bharatam muni's Natyashastra and Nandikeshvara's Abhinaya Darpana",
+        "sinhala": "භරත මුනිගේ නාට්‍ය ශාස්ත්‍රය සහ නන්දිකේශ්වරගේ අභිනය දර්පණය",
+        "tamil": "பரத முனியின் நாட்டிய சாஸ்திரம் மற்றும் அபினய தர்ப்பணக் கோட்பாடுகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "english": "Adavus, Jathis & Footwork Mechanics",
+    "sinhala": "ඒකකය 02: අඩවු, ජති සහ පාද චලන පුහුණුව",
+    "tamil": "அலகு 02: அடவுகள், ஜதிகள் மற்றும் பாத அசைவு பயிற்சிகள்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "english": "Adavu groups: Tatta, Natta, Visharu, Kuditta Mettu and Sarikkal",
+        "sinhala": "අඩවු වර්ග: තට්ට, නට්ට, විෂරු, කුදිත මෙට්ටු සහ සරිකල් අඩවු",
+        "tamil": "அடவு வகைகள்: தட்ட, நட்ட, விஷரு, குதித்த மெட்டு, சரிக்கல் அடவுகள்",
+        "hours": 4
+      },
+      {
+        "num": "2.2",
+        "english": "Three speeds (Prathama, Dwitiya, Tritiya Kala) and Angasuddhi alignment",
+        "sinhala": "ත්‍රිකාල (ප්‍රථම, ද්විතීය, තෘතීය කාල) සහ අංගශුද්ධිය පවත්වා ගැනීම",
+        "tamil": "திரிகால சாதகம் மற்றும் அங்கசுத்தி உடல் சீரமைப்பு நெறிகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "english": "Abhinaya & Navarasas (Nine Aesthetic Sentiments)",
+    "sinhala": "ඒකකය 03: අභිනය සහ නවරස (භාව හා රස න්‍යාය)",
+    "tamil": "அலகு 03: சதுர்வித அபிநயம் மற்றும் நவரசங்கள்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "english": "Four types of Abhinaya: Angika, Vachika, Aharya and Satvika",
+        "sinhala": "සිව්වැදෑරුම් අභිනය: ආංගික, වාචික, ආහාර්ය සහ සාත්වික අභිනය",
+        "tamil": "நால்வகை அபிநயங்கள்: ஆங்கிக, வாசிக, ஆகார்ய, சாத்விக அபிநயம்",
+        "hours": 4
+      },
+      {
+        "num": "3.2",
+        "english": "The Nine Rasas: Shringara, Hasya, Karuna, Roudra, Veera, Bhayanaka, Bibhatsa, Adbhuta, Shanta",
+        "sinhala": "නවරස: ශෘංගාර, හාස්‍ය, කරුණා, රෞද්‍ර, වීර, භයානක, බීභත්ස, අද්භූත, ශාන්ත",
+        "tamil": "நவரசங்கள்: சிருங்காரம், ஹாஸ்யம், கருணை, ரௌத்திரம், வீரம், பயானகம், பீபத்சம், அற்புதம், சாந்தம்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "english": "Tala Systems, Solkattu & Carnatic Rhythms",
+    "sinhala": "ඒකකය 04: තාල පද්ධතිය, සොල්කට්ටු සහ ලය න්‍යාය",
+    "tamil": "அலகு 04: தாள அமைப்புகள், சொற்கட்டு மற்றும் Carnatic லயக் கோட்பாடு",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "english": "Sapta Talas, Angas (Laghu, Dhrutam, Anudhrutam) and 35 Talas",
+        "sinhala": "සප්ත තාල, අංග (ලඝු, ධෘත, අනුධෘත) සහ තිස්පස් තාල ක්‍රමය",
+        "tamil": "சப்த தாளங்கள், தாள அங்கங்கள் (லகு, துருதம், அனுதுருதம்) மற்றும் 35 தாளங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "english": "Nattuvangam reciting, Solkattu execution and rhythm coordination",
+        "sinhala": "නට්ටුවාංගම් වාදනය, සොල්කට්ටු උච්චාරණය සහ රිද්ම සමමුහුර්තකරණය",
+        "tamil": "நட்டுவாங்கம் வாசிப்பு, சொற்கட்டு உச்சரிப்பு மற்றும் லய ஒருங்கிணைப்பு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "english": "Classical Margam Repertoire (Alarippu to Thillana)",
+    "sinhala": "ඒකකය 05: මාර්ගම් සම්භාව්‍ය නර්තන අංග (අලාරිප්පු සිට තිල්ලානා දක්වා)",
+    "tamil": "அலகு 05: பாரம்பரிய மார்க்க உருப்படிகள் (அலாரிப்பு முதல் தில்லானா வரை)",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "english": "Pure dance (Nritta): Alarippu, Jathiswaram and Shabdam",
+        "sinhala": "ශුද්ධ නර්තන අංග: අලාරිප්පු, ජතිස්වරම් සහ ශබ්දම්",
+        "tamil": "நிருத்த உருப்படிகள்: அலாரிப்பு, ஜதீஸ்வரம் மற்றும் சப்தம்",
+        "hours": 4
+      },
+      {
+        "num": "5.2",
+        "english": "Expressive items (Nritya): Varnam, Padam, Javali and Thillana",
+        "sinhala": "භාව ප්‍රකාශන අංග: වර්ණම්, පදම්, ජාවලි සහ තිල්ලානා",
+        "tamil": "நிருத்திய உருப்படிகள்: வர்ணம், பதம், ஜாவளி மற்றும் தில்லானா",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "english": "Mudras: Asamyutha & Samyutha Hasthas",
+    "sinhala": "ඒකකය 06: හස්ත මුද්‍රා: අසංයුත සහ සංයුත හස්ත",
+    "tamil": "அலகு 06: ஹஸ்த முத்திரைகள்: அசம்யுத மற்றும் சம்யுத ஹஸ்தங்கள்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "english": "28 Asamyutha Hasthas (Single hand gestures) and usage (Viniyoga)",
+        "sinhala": "අසංයුත හස්ත 28 සහ ඒවායේ විනියෝග (යෙදීම්)",
+        "tamil": "28 அசம்யுத ஹஸ்தங்கள் (ஒற்றைக் கை) மற்றும் விநியோகங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "6.2",
+        "english": "24 Samyutha Hasthas (Double hand gestures) and dramatic representations",
+        "sinhala": "සංයුත හස්ත 24 සහ නාට්‍යමය සංකේත නිරූපණ",
+        "tamil": "24 சம்யுத ஹஸ்தங்கள் (இணைந்த கை) மற்றும் நாடகக் குறியீடுகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "english": "Costume, Aharya & Temple Dance Heritage",
+    "sinhala": "ඒකකය 07: ඇඳුම් පැළඳුම්, ආභරණ සහ කෝවිල් නර්තන උරුමය",
+    "tamil": "அலகு 07: ஆடை அலங்காரம், ஆகார்யம் மற்றும் ஆலய நாட்டிய மரபு",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "english": "Temple dancers (Devadasis) and spiritual heritage of Bharatha Natyam",
+        "sinhala": "දේවදාසි සම්ප්‍රදාය සහ භාරත නැටුම් කලාවේ ආධ්‍යාත්මික උරුමය",
+        "tamil": "ஆலய தேவதாசி மரபும் பரதநாட்டியத்தின் ஆன்மீகப் பின்னணியும்",
+        "hours": 4
+      },
+      {
+        "num": "7.2",
+        "english": "Aharya Abhinaya: Silk pleated saree, temple jewelry, bells (Salangai) and Alta",
+        "sinhala": "ආහාර්ය අභිනය: පට සාරිය, කෝවිල් ආභරණ, ගෙජ්ජි සහ අල්තා ආලේපය",
+        "tamil": "ஆகார்ய அலங்காரம்: பட்டு ஆடை, கோவில் நகைகள், சலங்கை, மருதாணி",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "english": "Arangetram & Contemporary Dance Dramas",
+    "sinhala": "ඒකකය 08: අරංගේත්‍රම් මංගල්‍යය සහ නූතන නර්තන නාට්‍ය",
+    "tamil": "அலகு 08: அரங்கேற்ற நெறிமுறைகளும் நவீன நாட்டிய நாடகங்களும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "english": "Structure and preparation of the Arangetram solo debut recital",
+        "sinhala": "අරංගේත්‍රම් මංගල්‍යයේ ව්‍යුහය, සූදානම සහ වේදිකා ආචාරධර්ම",
+        "tamil": "அரங்கேற்ற மேடை அறிமுக நெறிமுறைகளும் அரங்க ஒழுங்கமைப்பும்",
+        "hours": 4
+      },
+      {
+        "num": "8.2",
+        "english": "Contemporary thematic choreography and thematic dance dramas",
+        "sinhala": "සමකාලීන තේමාත්මක නර්තන නිර්මාණ සහ නාට්‍යමය භාරත නාටක",
+        "tamil": "சமகால கருப்பொருள் நாட்டிய நாடகங்களும் சர்வதேச பரிமாணமும்",
+        "hours": 4
+      }
+    ]
+  }
+]

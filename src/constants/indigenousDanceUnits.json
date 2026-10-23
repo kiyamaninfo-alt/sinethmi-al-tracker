@@ -1,0 +1,178 @@
+[
+  {
+    "num": 1,
+    "english": "Foundations of Sri Lankan Indigenous Dance",
+    "sinhala": "ඒකකය 01: දේශීය නර්තන කලාවේ ඓතිහාසික පදනම සහ සම්භවය",
+    "tamil": "அலகு 01: பாரம்பரிய இலங்கை நடனக் கலையின் வரலாற்றுத் தோற்றம்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "english": "Historical evolution of Kandyan, Low-Country and Sabaragamuwa traditions",
+        "sinhala": "උඩරට, පහතරට සහ සබරගමු ත්‍රිවිධ නර්තන සම්ප්‍රදායන්ගේ ඓතිහාසික විකාශනය",
+        "tamil": "கண்டி, கீழ்நாட்டு, சபரகமுவ நடன மரபுகளின் வரலாற்று பரிணாமம்",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "english": "Ritualistic origin: Kohomba Kankariya, Gam Maduwa and Shanthikarma roots",
+        "sinhala": "චාරිත්‍රානුකූල සම්භවය: කොහොඹා කංකාරිය, ගම්මඩුව සහ ශාන්තිකර්ම පදනම",
+        "tamil": "சடங்குசார் தோற்றம்: கொஹொம்பா கங்காரிய, கம்மடுவ சாந்திகர்ம வழிபாடுகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "english": "Kandyan Dance Tradition (Uda Rata)",
+    "sinhala": "ඒකකය 02: උඩරට නර්තන සම්ප්‍රදාය සහ ප්‍රායෝගික අභ්‍යාස",
+    "tamil": "அலகு 02: கண்டி நடன மரபும் (உடரட்ட) செய்முறை பயிற்சிகளும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "english": "Basic Mandi postures, Pa Saramba (footwork) and Gaman Saramba",
+        "sinhala": "මණ්ඩිය ඉරියව්, පා සරඹ සහ ගමන් සරඹ මූලික අභ්‍යාස",
+        "tamil": "மண்டிய நிலைகள், பா சரம்ப (பாதப் பயிற்சிகள்) மற்றும் கமன் சரம்ப",
+        "hours": 4
+      },
+      {
+        "num": "2.2",
+        "english": "Vannam repertoire: 18 classical Vannams and rhythmic execution",
+        "sinhala": "වන්නම් සාහිත්‍යය: සම්භාව්‍ය වන්නම් දහඅට සහ තාලානුකූල රංගනය",
+        "tamil": "வண்ண இலக்கியம்: 18 பாரம்பரிய வண்ணங்களும் தாள அமைப்புகளும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "english": "Low-Country Dance Tradition (Pahatha Rata / Ruhunu)",
+    "sinhala": "ඒකකය 03: පහතරට (රුහුණු) නර්තන සම්ප්‍රදාය",
+    "tamil": "அலகு 03: கீழ்நாட்டு (ருஹுணு) நடன மரபும் அரங்க அமைப்பும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "english": "Mandi postures, Pa Saramba and athletic movements of Ruhunu style",
+        "sinhala": "පහතරට මණ්ඩිය, පා සරඹ සහ වේගවත් කරණම් අභ්‍යාස",
+        "tamil": "கீழ்நாட்டு மண்டிய நிலைகள், பா சரம்ப மற்றும் வேக அசைவுகள்",
+        "hours": 4
+      },
+      {
+        "num": "3.2",
+        "english": "Yakun Natuma, Sanni Yakuma rituals and mask (Vesmuhunu) arts",
+        "sinhala": "යකූන් නැටුම, සන්නි යකුම ශාන්තිකර්ම සහ වෙස්මුහුණු භාවිතය",
+        "tamil": "யகுன் நெட்டும, சன்னி யகும சடங்குகளும் முகமூடிப் பயன்பாடும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "english": "Sabaragamuwa Dance Tradition",
+    "sinhala": "ඒකකය 04: සබරගමු නර්තන සම්ප්‍රදාය සහ සුවිශේෂතා",
+    "tamil": "அலகு 04: சபரகமுவ நடன மரபும் தனித்துவ பண்புகளும்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "english": "Sabaragamuwa postures, footwork, drumming styles and hymns",
+        "sinhala": "සබරගමු මණ්ඩිය, පා සරඹ, මද්දල් වාදනය සහ උපහාර ගීත",
+        "tamil": "சபரகமுவ நிலைகள், பாதப் பயிற்சிகள், மத்தள வாசிப்பும் துதிகளும்",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "english": "Madu Puraya rituals, flower dance (Mal Natuma) and devotional items",
+        "sinhala": "මඩුව ශාන්තිකර්මය, මල් නැටුම සහ ආශිර්වාදාත්මක රංගන අංග",
+        "tamil": "மடுவ சாந்திகர்ம வழிபாடுகள், மல் நெட்டும மற்றும் ஆசிர்வாத நடனங்கள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "english": "Traditional Rhythms, Tala Systems & Drumming Techniques",
+    "sinhala": "ඒකකය 05: දේශීය තාල පද්ධතිය, මාත්‍රා සහ බෙර වාදන කලාව",
+    "tamil": "அலகு 05: பாரம்பரிய தாள முறைகள், மாத்திரை மற்றும் மேள வாத்தியங்கள்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "english": "Geta Beraya, Yak Beraya and Davula: Tuning, aksharas and playing techniques",
+        "sinhala": "ගැටබෙරය, යක්බෙරය සහ දවුල: තත්ත්ව, අක්ෂර සහ වාදන තාක්ෂණය",
+        "tamil": "கெடபேரய, யக்பேரய, தவுல்: சுருதி, அட்சரங்கள் மற்றும் வாசிப்பு முறைகள்",
+        "hours": 4
+      },
+      {
+        "num": "5.2",
+        "english": "Tala notation, rhythm patterns (Matra/Vattam) and Kastiram sequences",
+        "sinhala": "තාල සටහන්, මාත්‍රා, වට්ටම් සහ කස්තිරම් සංයුති",
+        "tamil": "தாளக் குறியீடுகள், மாத்திரை, வட்டம் மற்றும் கஸ்திர அமைப்புகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "english": "Costumes, Ornaments & Ves Bandhana Ceremony",
+    "sinhala": "ඒකකය 06: සාම්ප්‍රදායික ඇඳුම් ආයිත්තම් සහ වෙස් බැඳීමේ මංගල්‍යය",
+    "tamil": "அலகு 06: பாரம்பரிய ஆடைகள், ஆபரணங்கள் மற்றும் வேச மங்கல சடங்கு",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "english": "64 ornaments of the Ves costume and ritual significance",
+        "sinhala": "වෙස් ඇඳුමේ සූසැට ආභරණ සහ ඒවායේ ආගමික/චාරිත්‍රානුකූල අර්ථය",
+        "tamil": "வேச ஆடையின் அறுபத்து நான்கு ஆபரணங்களும் அவற்றின் புனிதத்துவமும்",
+        "hours": 4
+      },
+      {
+        "num": "6.2",
+        "english": "The Sacred Ves Bandhana ceremony and master-pupil lineage (Gurukula)",
+        "sinhala": "පූජනීය වෙස් බැඳීමේ ශාන්තිකර්මය සහ ගුරුකුල පරම්පරාව",
+        "tamil": "புனித வேச பந்தன சடங்கும் குருகுல மரபும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "english": "Folk Dances & Ceremonial Pageants (Perahera)",
+    "sinhala": "ඒකකය 07: ගැමි නැටුම් සහ පෙරහැර සංස්කෘතිය",
+    "tamil": "அலகு 07: கிராமிய நடனங்களும் பெரஹரா கலாச்சாரமும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "english": "Lee Keli, Kalagedi, Raban and seasonal harvest folk dances",
+        "sinhala": "ලී කෙළි, කළගෙඩි, රබන් සහ අස්වනු මංගල්‍ය ගැමි නැටුම්",
+        "tamil": "லீ கெலி, கலகெடி, ரபான் மற்றும் அறுவடைக்கால கிராமிய நடனங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "7.2",
+        "english": "The Dalada Perahera pageant: Sequence of dances, hierarchy and discipline",
+        "sinhala": "ශ්‍රී දළදා පෙරහැර මංගල්‍යය: නර්තන පෙළගැස්ම, ධූරාවලිය සහ විනය",
+        "tamil": "கண்டி தம்பலதெனியா பெரஹரா: நடன ஒழுங்கு, படிமுறை மற்றும் மரபு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "english": "Creative Choreography & Contemporary Dance Drama",
+    "sinhala": "ඒකකය 08: නූතන නර්තන නිර්මාණකරණය සහ මුද්‍රා නාට්‍ය",
+    "tamil": "அலகு 08: நவீன நடன உருவாக்கமும் பாலே நடன நாடகங்களும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "english": "Ballet traditions of Chitrasena and pioneers of modern Sri Lankan dance",
+        "sinhala": "චිත්‍රසේන ශූරීන්ගේ මුද්‍රා නාට්‍ය සහ නූතන නර්තන පුරෝගාමියෝ",
+        "tamil": "சித்திரசேனவின் பாலே நடன மரபும் நவீன இலங்கை நடன முன்னோடிகளும்",
+        "hours": 4
+      },
+      {
+        "num": "8.2",
+        "english": "Choreographic principles, theme selection, stage dynamics and lighting",
+        "sinhala": "නර්තන රචනා මූලධර්ම, තේමා තේරීම, වේදිකා ආලෝකකරණය සහ සංගීතය",
+        "tamil": "நடன அமைப்பு நெறிகள், கருப்பொருள் தேர்வு, மேடை வெளிச்சம் மற்றும் இசை",
+        "hours": 4
+      }
+    ]
+  }
+]

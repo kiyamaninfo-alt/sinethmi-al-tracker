@@ -1,0 +1,178 @@
+[
+  {
+    "num": 1,
+    "english": "Vedic Heritage & Upanishadic Philosophy",
+    "sinhala": "ඒකකය 01: වේද සාහිත්‍යය සහ උපනිෂද් දර්ශනය",
+    "tamil": "அலகு 01: வேத இலக்கியமும் உபநிடத தத்துவமும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "english": "Four Vedas (Rig, Yajur, Sama, Atharva), Brahmanas, Aranyakas and Samhitas",
+        "sinhala": "චතුර්වේදය (සෘග්, යජුර්, සාම, අථර්ව), බ්‍රාහ්මණ, ආරණ්‍යක සහ සංහිතා",
+        "tamil": "நான்கு வேதங்கள் (ரிக், யஜுர், சாம, அதர்வண), பிராமணங்கள், ஆரண்யகங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "english": "Upanishadic insights: Brahman-Atman unity (Tat Tvam Asi), Mahavakyas",
+        "sinhala": "උපනිෂද් චින්තනය: බ්‍රහ්මන්-ආත්මන් ඒකත්වය (තත් ත්වම් අසි) සහ මහා වාක්‍ය",
+        "tamil": "உபநிடத மெய்யியல்: பிரம்ம-ஆன்ம ஐக்கியம் (தத்துவமசி) மற்றும் மகா வாக்கியங்கள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "english": "Hindu Epics & The Bhagavad Gita",
+    "sinhala": "ඒකකය 02: හින්දු ඉතිහාස කාව්‍ය (රාමායනය, මහාභාරතය) සහ භගවත් ගීතාව",
+    "tamil": "அலகு 02: இதிகாசங்கள் (இராமாயணம், மகாபாரதம்) மற்றும் பகவத்கீதை",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "english": "The Ramayana (Valmiki) and Mahabharata (Vyasa): Dharma and moral dilemmas",
+        "sinhala": "රාමායනය සහ මහාභාරතය: ධාර්මික පරමාදර්ශ සහ සදාචාරාත්මක ගැටුම්",
+        "tamil": "வால்மீகி இராமாயணம், வியாச மகாபாரதம்: தர்ம நெறிகளும் அறப்போராட்டங்களும்",
+        "hours": 4
+      },
+      {
+        "num": "2.2",
+        "english": "The Bhagavad Gita: Karma Yoga, Jnana Yoga, Bhakti Yoga and Svadharma",
+        "sinhala": "භගවත් ගීතාව: කර්ම යෝග, ඥාන යෝග, භක්ති යෝග සහ ස්වධර්මය",
+        "tamil": "பகவத்கீதை: கர்ம யோகம், ஞான யோகம், பக்தி யோகம் மற்றும் சுவதர்மம்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "english": "Six Systems of Philosophy (Shad Darshana) & Vedanta",
+    "sinhala": "ඒකකය 03: ෂඩ් දර්ශන (හයවැදෑරුම් දර්ශන ක්‍රම) සහ වේදාන්තය",
+    "tamil": "அலகு 03: அறுவகைத் தத்துவ தரிசனங்களும் (ஷட் தர்சனம்) வேதாந்தமும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "english": "Nyaya, Vaisheshika, Samkhya, Yoga, Mimamsa and Vedanta systems",
+        "sinhala": "න්‍යාය, වෛශේෂික, සාංඛ්‍ය, යෝග, මීමංසා සහ වේදාන්ත දර්ශන ක්‍රම",
+        "tamil": "நியாயம், வைசேடிகம், சாங்கியம், யோகம், மீமாம்சம், வேதாந்த தரிசனங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "3.2",
+        "english": "Vedantic schools: Advaita (Adi Shankara), Vishishtadvaita (Ramanuja), Dvaita",
+        "sinhala": "අද්වෛත (ශංකර), විශිෂ්ටාද්වෛත (රාමානුජ) සහ ද්වෛත වේදාන්ත සම්ප්‍රදායන්",
+        "tamil": "அத்வைதம் (ஆதி சங்கரர்), விசிஷ்டாத்வைதம் (இராமானுஜர்), துவைதக் கோட்பாடுகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "english": "Core Philosophical Doctrines: Purusharthas, Samsara & Karma",
+    "sinhala": "ඒකකය 04: චතුර්විධ පුරුෂාර්ථ, කර්මය, සංසාරය සහ මෝක්ෂය",
+    "tamil": "அலகு 04: புருஷார்த்தங்கள், கர்மம், மறுபிறப்பு மற்றும் மோட்சக் கோட்பாடு",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "english": "The Four Purusharthas: Dharma (righteousness), Artha (wealth), Kama (pleasure), Moksha (liberation)",
+        "sinhala": "සිව් පුරුෂාර්ථ: ධර්ම, අර්ථ, කාම සහ මෝක්ෂ පරමාර්ථ",
+        "tamil": "நால்வகை புருஷார்த்தங்கள்: தர்மம், அர்த்தம், காமம், மோட்சம்",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "english": "Samsara (cycle of rebirth), Sanchita, Prarabdha and Agami Karma dynamics",
+        "sinhala": "සංසාර චක්‍රය, සඤ්චිත, ප්‍රාරබ්ධ සහ ආගාමී කර්ම න්‍යාය",
+        "tamil": "சம்சாரம் (பிறவிச்சுழல்) மற்றும் சஞ்சிதம், பிராரப்தம், ஆகாமிய கர்மங்கள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "english": "Saivism, Vaishnavism & The Bhakti Movements",
+    "sinhala": "ඒකකය 05: ශෛව, වෛෂ්ණව සහ භක්ති ව්‍යාපාරය",
+    "tamil": "அலகு 05: சைவ சமயம், வைணவம் மற்றும் பக்தி இயக்கங்கள்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "english": "Saiva Siddhanta philosophy: Pati, Pasu, Pasa and 63 Nayanmars",
+        "sinhala": "ශෛව සිද්ධාන්ත දර්ශනය: පති, පසු, පාශ සහ නායනමාර්වරු 63 දෙනා",
+        "tamil": "சைவ சித்தாந்தம்: பதி, பசு, பாசம் மற்றும் 63 நாயன்மார்கள் பக்தி நெறி",
+        "hours": 4
+      },
+      {
+        "num": "5.2",
+        "english": "Vaishnava tradition: 12 Alvars, Divya Prabandham and Prapatti",
+        "sinhala": "වෛෂ්ණව සම්ප්‍රදාය: ආල්වාර්වරු 12 දෙනා, නාලායිර දිව්‍ය ප්‍රබන්ධම්",
+        "tamil": "வைணவ மரபு: பன்னிரு ஆழ்வார்கள், நாலாயிர திவ்வியப் பிரபந்தம், சரணாகதி",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "english": "Temple Architecture, Rituals & Iconography",
+    "sinhala": "ඒකකය 06: කෝවිල් ගෘහ නිර්මාණ ශිල්පය, පූජා චාරිත්‍ර සහ ප්‍රතිමා කලාව",
+    "tamil": "அலகு 06: இந்துக் கோவில் கட்டிடக்கலை, பூசைகளும் திருவுருவச் சிற்பங்களும்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "english": "Dravidian temple architecture: Garbhagriha, Vimana, Gopuram and Mandapas",
+        "sinhala": "ද්‍රවිඩ කෝවිල් නිර්මාණ ශිල්පය: ගර්භගෘහය, විමානය, රාජ ගෝපුරය සහ මණ්ඩප",
+        "tamil": "திராவிடக் கோவில் கட்டமைப்பு: கர்ப்பக்கிருகம், விமானம், இராஜகோபுரம், மண்டபங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "6.2",
+        "english": "Daily Puja rituals, Abhishekam, festivals (Mahasivaratri, Deepavali, Thai Pongal)",
+        "sinhala": "දෛනික පූජා, අභිෂේක, මහා ශිවරාත්‍රී, දීපාවලි සහ තෛපොංගල් උත්සව",
+        "tamil": "நித்திய நைமித்திக பூசைகள், அபிஷேகம் மற்றும் முக்கிய சமய திருவிழாக்கள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "english": "Hindu Civilization in Sri Lanka (Pancha Ishwarams)",
+    "sinhala": "ඒකකය 07: ශ්‍රී ලංකාවේ හින්දු ශිෂ්ටාචාරය සහ පංච ඊශ්වරම් පූජා භූමි",
+    "tamil": "அலகு 07: இலங்கையில் இந்து நாகரிகமும் வரலாற்றுப் பஞ்ச ஈஸ்வரங்களும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "english": "The Sacred Pancha Ishwarams: Naguleswaram, Ketheeswaram, Koneswaram, Munneswaram, Tondeswaram",
+        "sinhala": "පංච ඊශ්වරම්: නගුලේශ්වරම්, කේතීශ්වරම්, කෝණේශ්වරම්, මුන්නේශ්වරම්, තොණ්ඩේශ්වරම්",
+        "tamil": "பஞ்ச ஈஸ்வரங்கள்: நகுலேஸ்வரம், கேதீஸ்வரம், கோணேஸ்வரம், முன்னேஸ்வரம், தொண்டேஸ்வரம்",
+        "hours": 4
+      },
+      {
+        "num": "7.2",
+        "english": "Arumuka Navalar and the 19th-century Hindu-Tamil cultural renaissance in Sri Lanka",
+        "sinhala": "ආරුමුග නාවලර් තුමා සහ 19 වන සියවසේ ශ්‍රී ලංකා හින්දු සංස්කෘතික පුනරුදය",
+        "tamil": "ஸ்ரீலஸ்ரீ ஆறுமுக நாவலரின் சைவப் பணிகளும் 19 ஆம் நூற்றாண்டு மறுமலர்ச்சியும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "english": "Modern Hindu Reformers & Ethics",
+    "sinhala": "ඒකකය 08: නූතන හින්දු ප්‍රතිසංස්කරණවාදීන් සහ සමාජ ආචාර ධර්ම",
+    "tamil": "அலகு 08: நவீன இந்து மறுமலர்ச்சியாளர்களும் சமூக ஒழுக்க நெறிகளும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "english": "Sri Ramakrishna, Swami Vivekananda, Sri Aurobindo and Mahatma Gandhi",
+        "sinhala": "ශ්‍රී රාමකෘෂ්ණ, ස්වාමි විවේකානන්ද, ශ්‍රී අරවින්ද සහ මහත්මා ගාන්ධි චින්තනය",
+        "tamil": "ஸ்ரீ ராமகிருஷ்ணர், சுவாமி விவேகானந்தர், அரவிந்தர், மகாத்மா காந்தி பங்களிப்பு",
+        "hours": 4
+      },
+      {
+        "num": "8.2",
+        "english": "Environmental stewardship in Hinduism, Ahimsa, Vasudhaiva Kutumbakam",
+        "sinhala": "හින්දු පාරිසරික දැක්ම, අහිංසාව සහ 'වසූධෛව කුටුම්බකම්' (විශ්ව මානව සහෝදරත්වය)",
+        "tamil": "இந்து சூழலியல் நோக்கு, அகிம்சை, 'வசுதைவ குடும்பகம்' உலகளாவிய சகோதரத்துவம்",
+        "hours": 4
+      }
+    ]
+  }
+]

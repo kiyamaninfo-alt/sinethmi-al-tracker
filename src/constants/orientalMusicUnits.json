@@ -1,0 +1,178 @@
+[
+  {
+    "num": 1,
+    "english": "Foundations of North Indian Classical Music",
+    "sinhala": "ඒකකය 01: උත්තර භාරතීය ශාස්ත්‍රීය සංගීතයේ පදනම සහ සම්භවය",
+    "tamil": "அலகு 01: வட இந்திய சாஸ்திரிய சங்கீத அடிப்படைகளும் தோற்றமும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "english": "Historical evolution: Vedic Sama Veda chants to modern Hindustani music",
+        "sinhala": "සාම වේද ගායනයේ සිට නූතන හින්දුස්ථානි සංගීතය දක්වා විකාශනය",
+        "tamil": "சாம வேத கானம் முதல் நவீன இந்துஸ்தானி சங்கீத வளர்ச்சி வரை",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "english": "Pt. Vishnu Narayan Bhatkhande and Pt. Vishnu Digambar Paluskar systems",
+        "sinhala": "භාත්ඛණ්ඩේ සහ පලුස්කාර් සංගීත ප්‍රස්ථාර හා අධ්‍යාපනික ක්‍රම",
+        "tamil": "பட்கண்டே, பலுஸ்கர் சுரக்குறிப்பு முறைகளும் இசைச் சீர்திருத்தங்களும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "english": "Swara, Saptaka & Shruti Theory",
+    "sinhala": "ඒකකය 02: ස්වර, සප්තක සහ ශ්‍රැති න්‍යාය",
+    "tamil": "அலகு 02: ஸ்வரம், சப்தகம் மற்றும் சுருதி கோட்பாடுகள்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "english": "22 Shrutis, Shuddha, Komal and Teevra Swaras across 3 Saptakas",
+        "sinhala": "ශ්‍රැති 22, ශුද්ධ, කෝමල සහ තීව්‍ර ස්වර හා මන්ද්‍ර/මධ්‍ය/තාර සප්තක",
+        "tamil": "22 சுருதிகள், சுத்த, கோமள, தீவிர ஸ்வரங்கள் மற்றும் மூன்று சப்தகங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "2.2",
+        "english": "Vadi, Samvadi, Anuvadi, Vivadi and Varjya Swara dynamics",
+        "sinhala": "වාදී, සංවාදී, අනුවාදී, විවාදී සහ වර්ජ්‍ය ස්වර සම්බන්ධතා",
+        "tamil": "வாதி, சம்வாதி, அனுவாதி, விவாதி மற்றும் வர்ஜ்ய ஸ்வர விதிகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "english": "Raga Systems, Thaat & Chalan",
+    "sinhala": "ඒකකය 03: රාග පද්ධතිය, ථාට සහ චලන ලක්ෂණ",
+    "tamil": "அலகு 03: இராக அமைப்பு, தாட் முறைமை மற்றும் சலன் பண்புகள்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "english": "Bhatkhande's 10 Thaat classification system and Raga-Ragini system",
+        "sinhala": "භාත්ඛණ්ඩේගේ ථාට 10 වර්ගීකරණය සහ රාග-රාගිණී ක්‍රමය",
+        "tamil": "பட்கண்டேயின் 10 தாட் முறையும் இராக-இராகிணி அமைப்பும்",
+        "hours": 4
+      },
+      {
+        "num": "3.2",
+        "english": "Aroha, Avaroha, Pakad and Time theory of Ragas (Samay Chakra)",
+        "sinhala": "ආරෝහණ, අවරෝහණ, පකඩ් සහ රාගවල කාල නියාමය",
+        "tamil": "ஆரோகணம், அவரோகணம், பகட் மற்றும் காலக் கோட்பாடு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "english": "Prescribed Ragas & Bandishes (Chota & Bada Khayal)",
+    "sinhala": "ඒකකය 04: නියමිත රාග, බඩා ඛයාල් සහ ඡෝටා ඛයාල් බන්දිශ්",
+    "tamil": "அலகு 04: பரிந்துரைக்கப்பட்ட இராகங்கள், படா கயால், சோட்டா கயால் பந்திஷ்கள்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "english": "Study of Yaman, Bhupali, Bilawal, Kafi, Bhairav and Asavari",
+        "sinhala": "යමන්, භූපාලි, බිලාවල්, කාෆි, භෛරව් සහ ආසාවරී රාග අධ්‍යයනය",
+        "tamil": "யமன், பூபாலி, பிலாவல், காபி, பைரவ், ஆசாவரி இராக இலக்கணங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "english": "Aalap, Taan, Bol-taan and improvisation within Raga structure",
+        "sinhala": "ආලාප, තාන, බෝල්-තාන සහ රාගය තුළ ස්වර ප්‍රස්තාරික නිදහස",
+        "tamil": "ஆலாபனம், தான், போல்-தான் மற்றும் மனோதர்ம சங்கீத வெளிப்பாடு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "english": "Tala System, Laya & Theka (Tabla)",
+    "sinhala": "ඒකකය 05: තාල පද්ධතිය, ලය සහ තේකා වාදනය",
+    "tamil": "அலகு 05: தாள அமைப்பு, லயம் மற்றும் தபலா தேகாக்கள்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "english": "Teentaal, Ektaal, Jhaptaal, Roopak, Dadra and Keherwa: Matras and Vibhags",
+        "sinhala": "තීන්තාල, ඒක්තාල, ඣප්තාල, රූපක්, දාද්රා සහ කෙහර්වා: මාත්‍රා සහ විභාග",
+        "tamil": "தீன்தாள், ஏக்தாள், ஜப்தாள், ரூபக், தாத்ரா, கெஹர்வா: மாத்திரைகளும் விபாகங்களும்",
+        "hours": 4
+      },
+      {
+        "num": "5.2",
+        "english": "Sam, Khali, Tali and Laya variations (Vilambit, Madhya, Drut)",
+        "sinhala": "සම්, ඛාලී, තාලී සහ ලය ප්‍රභේද (විලම්බිත, මධ්‍ය, ද්‍රුත ලය)",
+        "tamil": "சம், காலி, தாலி மற்றும் லய பேதங்கள் (விலம்பித, மத்ய, துருத)",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "english": "Folk Music & Traditional Sinhala Musical Heritage",
+    "sinhala": "ඒකකය 06: දේශීය ගැමි සංගීතය සහ ජන උරුමය",
+    "tamil": "அலகு 06: கிராமிய இசை மற்றும் சிங்கள பாரம்பரிய இசைப் பின்னணி",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "english": "Seepada, Goyam Kavi, Karaththa Kavi, Pathuru Kavi and Prashasthi Gee",
+        "sinhala": "සීපද, ගොයම් කවි, කරත්ත කවි, පැල කවි, පතුරු සහ ප්‍රශස්ති ගී",
+        "tamil": "சீபத, கொயம் கவி, கரத்த கவி, பெல கவி மற்றும் பிரசஸ்தி கீதங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "6.2",
+        "english": "Nurthi and Nadagam theatrical song traditions and dramatic scales",
+        "sinhala": "නූර්ති සහ නාඩගම් නාට්‍ය සංගීත සම්ප්‍රදාය සහ රාග භාවිතය",
+        "tamil": "நூர்த்தி மற்றும் நாடக அரங்க இசை மரபுகளும் சுரப் பயன்பாடும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "english": "Musical Instruments: Classification & Acoustics",
+    "sinhala": "ඒකකය 07: සංගීත භාණ්ඩ වර්ගීකරණය සහ ධ්වනි විද්‍යාව",
+    "tamil": "அலகு 07: இசைக்கருவிகளின் வகைப்படுத்தலும் ஒலியியலும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "english": "Fourfold classification: Tata (strings), Sushira (wind), Avanaddha (percussion), Ghana (cymbals)",
+        "sinhala": "සිව්වැදෑරුම් වාද්‍ය භාණ්ඩ: තත, සුෂිර, අවනද්ධ සහ ඝන භාණ්ඩ",
+        "tamil": "நால்வகை வாத்தியங்கள்: தத (நரம்பு), சுஷிர (காற்று), அவனத்த (தோல்), கன (உலோகம்)",
+        "hours": 4
+      },
+      {
+        "num": "7.2",
+        "english": "Tanpura acoustic harmonics and resonance, Esraj, Harmonium, Sitar, Flute",
+        "sinhala": "තම්පුරාවේ උපස්වර හා අනුනාදය, එස්රාජ්, හාමෝනියම්, සිතාරය, බටනලාව",
+        "tamil": "தம்பூராவின் அனுசுர நாத ஒலிப்பு, எஸ்ராஜ், ஆர்மோனியம், சித்தார், புல்லாங்குழல்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "english": "Evolution of Sri Lankan Sarala Gee & Modern Composition",
+    "sinhala": "ඒකකය 08: ශ්‍රී ලාංකේය සරල ගීතය සහ නූතන සංගීත නිර්මාණකරණය",
+    "tamil": "அலகு 08: இலங்கை மெல்லிசைப் பரிணாமமும் நவீன இசை உருவாக்கமும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "english": "Pioneering composers: Sunil Santha, W.D. Amaradeva and Premasiri Khemadasa",
+        "sinhala": "සුනිල් ශාන්ත, ඩබ්.ඩී. අමරදේව සහ ප්‍රේමසිරි ඛේමදාස සංගීතඥයන්ගේ දායකත්වය",
+        "tamil": "சுனில் சாந்த, டபிள்யு.டி. அமரதேவ, பிரேமசிரி கேமதாச ஆகியோரின் பங்களிப்பு",
+        "hours": 4
+      },
+      {
+        "num": "8.2",
+        "english": "Modern song composition, lyrical harmony and orchestral arrangements",
+        "sinhala": "නූතන ගීත නිර්මාණය, පද රචනය සහ වාද්‍ය වෘන්ද සංයෝජනය",
+        "tamil": "நவீன பாடல் உருவாக்கம், கவிதை நயம் மற்றும் ஆர்க்கெஸ்ட்ரா இசைக்கோர்ப்பு",
+        "hours": 4
+      }
+    ]
+  }
+]

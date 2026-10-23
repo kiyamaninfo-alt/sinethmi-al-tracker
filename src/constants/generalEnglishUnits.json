@@ -1,0 +1,134 @@
+[
+  {
+    "num": 1,
+    "english": "Reading Comprehension & Textual Analysis",
+    "sinhala": "ඒකකය 01: කියවීම සහ අවබෝධතා කුසලතා",
+    "tamil": "அலகு 01: வாசித்துக் கிரகித்தலும் உரைநடைப் பகுப்பாய்வும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "english": "Skimming, scanning, predicting content and understanding writer's tone",
+        "sinhala": "ඉක්මන් කියවීම (Skimming), තොරතුරු සෙවීම (Scanning) සහ කතුවරයාගේ ස්වරය",
+        "tamil": "மேலோட்ட வாசிப்பு, தகவல்களைத் தேடுதல் மற்றும் எழுத்தாளரின் தொனியை அறிதல்",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "english": "Reference words, vocabulary in context and synthesizing multi-paragraph articles",
+        "sinhala": "සන්දර්භගත වචනාර්ථ, යොමු වදන් (Pronoun references) සහ සාරාංශකරණය",
+        "tamil": "சுட்டுப் பெயர்கள், சூழல்சார் சொற்பொருள் மற்றும் பல பந்தித் தொகுப்பு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "english": "Applied Grammar, Tenses & Sentence Structures",
+    "sinhala": "ඒකකය 02: ව්‍යවහාරික ව්‍යාකරණ, කාල සහ වාක්‍ය වින්‍යාසය",
+    "tamil": "அலகு 02: பிரயோக இலக்கணம், காலங்களும் வாக்கிய அமைப்புகளும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "english": "12 English tenses, subject-verb agreement and conditional clauses (Types 0, 1, 2, 3)",
+        "sinhala": "ඉංග්‍රීසි කාල 12, උක්ත-ආඛ්‍යාත ගැලපීම සහ කොන්දේසි සහිත වාක්‍ය (Conditionals)",
+        "tamil": "12 காலங்கள், எழுவாய்-பயனிலை உடன்பாடு மற்றும் நிபந்தனை வாக்கியங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "2.2",
+        "english": "Active and Passive voice transformations and Direct vs. Indirect reported speech",
+        "sinhala": "කර්මකාරක සහ කර්තෘකාරක වාක්‍ය හා ප්‍රත්‍යක්ෂ/පරෝක්ෂ කථන පරිවර්තනය",
+        "tamil": "செய்வினை, செயப்பாட்டு வினை மாற்றங்கள் மற்றும் நேர், நேரில் கூற்றுகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "english": "Vocabulary Enrichment, Collocations & Idioms",
+    "sinhala": "ඒකකය 03: වාග්කෝෂ වර්ධනය, සහසම්බන්ධ පද සහ රූඪි භාවිතය",
+    "tamil": "அலகு 03: சொல்லாட்சி விருத்தி, இணைச்சொற்கள் மற்றும் மரபுத்தொடர்கள்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "english": "Academic word lists, prefixes, suffixes and contextual word formation",
+        "sinhala": "ශාස්ත්‍රීය වචන මාලාව, උපසර්ග, ප්‍රත්‍ය සහ නව පද සාදාගැනීම",
+        "tamil": "கல்விசார் சொற்களஞ்சியம், முன்னொட்டுகள், பின்னொட்டுகள் மற்றும் சொல் உருவாக்கம்",
+        "hours": 4
+      },
+      {
+        "num": "3.2",
+        "english": "Common collocations, phrasal verbs, idioms and avoiding common Sri Lankan errors",
+        "sinhala": "සහසම්බන්ධ පද (Collocations), වාක්‍යාංශ ක්‍රියාපද (Phrasal verbs) සහ නිවැරදි භාවිතය",
+        "tamil": "இணைச்சொற்கள், மரபுத்தொடர்கள் மற்றும் பொதுவான இலக்கண வழுக்களைத் தவிர்த்தல்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "english": "Formal, Informal & Professional Correspondence",
+    "sinhala": "ඒකකය 04: ලිපි ලේඛන ලිවීම, විද්‍යුත් තැපැල් සහ නිල සන්නිවේදනය",
+    "tamil": "அலகு 04: உத்தியோகபூர்வ, தனிப்பட்ட மற்றும் மின்னஞ்சல் கடிதங்கள்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "english": "Formal letters: Applications, inquiries, complaints and requests with standard layout",
+        "sinhala": "නිල ලිපි: රැකියා අයදුම්පත්, විමසීම්, පැමිණිලි සහ සම්මත සැකැස්ම",
+        "tamil": "உத்தியோகபூர்வ கடிதங்கள்: தொழில் விண்ணப்பம், புகார்கள், வேண்டுகோள் கடிதங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "english": "Professional emails, business memos, notices and circular formatting",
+        "sinhala": "වෘත්තීය ඊමේල්, ව්‍යාපාරික සටහන්, දැන්වීම් සහ චක්‍රලේඛ සැකසීම",
+        "tamil": "தொழில்சார் மின்னஞ்சல்கள், குறிப்பாணைகள் (Memos) மற்றும் உத்தியோகபூர்வ அறிவித்தல்கள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "english": "Report Writing, Summarization & Data Description",
+    "sinhala": "ඒකකය 05: වාර්තා ලිවීම, සාරාංශකරණය සහ ප්‍රස්ථාරික දත්ත විස්තර කිරීම",
+    "tamil": "அலகு 05: அறிக்கை எழுதுதல், சுருக்கக் குறிப்பு மற்றும் வரைபட தரவு விபரிப்பு",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "english": "Writing descriptive reports on bar charts, pie charts, tables and process flow diagrams",
+        "sinhala": "ප්‍රස්ථාර, වගු සහ ක්‍රියාවලි සටහන් විස්තර කරමින් තාක්ෂණික වාර්තා ලිවීම",
+        "tamil": "வரைபடங்கள், அட்டவணைகள் மற்றும் படிமுறை வரைபடங்களை விபரித்து எழுதுதல்",
+        "hours": 4
+      },
+      {
+        "num": "5.2",
+        "english": "Summarizing lengthy texts, identifying key topic sentences and avoiding plagiarism",
+        "sinhala": "දීර්ඝ පාඨ සාරාංශගත කිරීම, ප්‍රධාන මාතෘකා වාක්‍ය හඳුනාගැනීම සහ සංක්ෂිප්තය",
+        "tamil": "நீண்ட கட்டுரைகளை சுருக்கி வரைதல் மற்றும் மூலக் கருத்துக்களைத் தொகுத்தல்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "english": "Essay Writing & Persuasive Composition",
+    "sinhala": "ඒකකය 06: රචනා ලිවීම සහ තාර්කික ප්‍රකාශනය",
+    "tamil": "அலகு 06: கட்டுரை எழுதுதலும் தர்க்கரீதியான வாதமும்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "english": "Essay structure: Thesis statement, body paragraphs, transitions and conclusion",
+        "sinhala": "රචනා ව්‍යුහය: ප්‍රස්තුත ප්‍රකාශය, ඡේද ගොඩනැංවීම, සම්බන්ධක පද සහ සමාප්තිය",
+        "tamil": "கட்டுரைக் கட்டமைப்பு: ஆரம்பக் கூற்று, உடற்பகுதிகள், இணைப்புச் சொற்கள், முடிவுரை",
+        "hours": 4
+      },
+      {
+        "num": "6.2",
+        "english": "Argumentative, expository and discursive essays on contemporary global themes",
+        "sinhala": "වාදනාත්මක, විග්‍රහාත්මක සහ සංවාදාත්මක රචනා ලිවීම",
+        "tamil": "வாதக்கட்டுரைகள், விளக்கக் கட்டுரைகள் மற்றும் தற்கால சமூகப் பிரச்சினைகள்",
+        "hours": 4
+      }
+    ]
+  }
+]

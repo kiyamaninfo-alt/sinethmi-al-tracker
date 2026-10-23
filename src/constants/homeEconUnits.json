@@ -1,0 +1,178 @@
+[
+  {
+    "num": 1,
+    "english": "Principles of Food Science & Human Nutrition",
+    "sinhala": "ඒකකය 01: ආහාර විද්‍යාව සහ මානව පෝෂණය",
+    "tamil": "அலகு 01: உணவு அறிவியலும் மனித ஊட்டச்சத்துக் கோட்பாடுகளும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "english": "Macronutrients and micronutrients: Classification, functions and metabolism",
+        "sinhala": "ස්ථූල සහ ක්ෂුද්‍ර පෝෂක: වර්ගීකරණය, කාර්යභාරය සහ පරිවෘත්තිය",
+        "tamil": "மக்ரோ, மைக்ரோ போசாக்குகள்: தொழிற்பாடுகள், மூலங்கள் மற்றும் குறைபாடுகள்",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "english": "Digestion, absorption and bioavailability of dietary components",
+        "sinhala": "ආහාර දිරවීම, අවශෝෂණය සහ ජෛව උපයෝගීතාව",
+        "tamil": "சமிபாடு, அகத்துறிஞ்சல் மற்றும் போசணைக் கூறுகளின் உயிரியல் பயன்பாடு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "english": "Meal Planning, Dietary Needs & Therapeutic Diets",
+    "sinhala": "ඒකකය 02: ආහාර සැලසුම්කරණය සහ චිකිත්සක ආහාර වේල්",
+    "tamil": "அலகு 02: உணவுத் திட்டமிடலும் சிகிச்சைக்குரிய உணவு முறைகளும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "english": "Nutritional requirements across lifecycle stages (infancy to elderly)",
+        "sinhala": "ජීවන චක්‍රයේ විවිධ අවස්ථා සඳහා පෝෂණ අවශ්‍යතා (ළදරු වියේ සිට මහලු විය දක්වා)",
+        "tamil": "வாழ்க்கை வட்டத்தின் பல்வேறு நிலைகளுக்கான ஊட்டச்சத்துத் தேவைகள்",
+        "hours": 4
+      },
+      {
+        "num": "2.2",
+        "english": "Therapeutic nutrition: Dietary management of diabetes, hypertension and obesity",
+        "sinhala": "චිකිත්සක පෝෂණය: දියවැඩියාව, අධි රුධිර පීඩනය සහ තරබාරුකම කළමනාකරණය",
+        "tamil": "சிகிச்சைசார் ஊட்டச்சத்து: நீரிழிவு, உயர் இரத்த அழுத்தம், உடற்பருமன் முகாமைத்துவம்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "english": "Food Preservation, Processing & Hygiene Standards",
+    "sinhala": "ඒකකය 03: ආහාර කල්තබා ගැනීම, සැකසීම සහ සනීපාරක්ෂාව",
+    "tamil": "அலகு 03: உணவு பதப்படுத்தல், பாதுகாத்தல் மற்றும் சுகாதாரத் தரநிலைகள்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "english": "Principles of food spoilage and commercial preservation methods",
+        "sinhala": "ආහාර නරක්වීමේ හේතු සහ වාණිජ කල්තබා ගැනීමේ ක්‍රම",
+        "tamil": "உணவு பழுதடைவதற்கான காரணங்களும் பதப்படுத்தும் நவீன முறைகளும்",
+        "hours": 4
+      },
+      {
+        "num": "3.2",
+        "english": "Kitchen hygiene, food microbiology and HACCP/ISO food safety",
+        "sinhala": "මුළුතැන්ගෙයි සනීපාරක්ෂාව, ආහාර ක්ෂුද්‍රජීව විද්‍යාව සහ HACCP ප්‍රමිති",
+        "tamil": "சமையலறை சுகாதாரம், உணவு நுண்ணுயிரியல் மற்றும் HACCP பாதுகாப்பு முறைகள்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "english": "Family Resource Management & Consumer Economics",
+    "sinhala": "ඒකකය 04: පවුල් සම්පත් කළමනාකරණය සහ පාරිභෝගික ආර්ථිකය",
+    "tamil": "அலகு 04: குடும்ப வள முகாமைத்துவமும் நுகர்வோர் பொருளாதாரமும்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "english": "Management of family resources: Time, energy, income and budgeting",
+        "sinhala": "පවුල් සම්පත් කළමනාකරණය: කාලය, ශක්තිය, ආදායම සහ අයවැයකරණය",
+        "tamil": "குடும்ப வளங்களின் பயன்பாடு: நேரம், சக்தி, வருமானம் மற்றும் வரவு செலவுத் திட்டம்",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "english": "Consumer rights, market protection laws and wise purchasing practices",
+        "sinhala": "පාරිභෝගික අයිතිවාසිකම්, ආරක්ෂණ නීති සහ ඥානාන්විත මිලදී ගැනීම්",
+        "tamil": "நுகர்வோர் உரிமைகள், பாதுகாப்புச் சட்டங்கள் மற்றும் புத்திசாலித்தனமான கொள்வனவு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "english": "Housing, Interior Design & Space Ergonomics",
+    "sinhala": "ඒකකය 05: නිවාස සැලසුම්, අභ්‍යන්තර නිර්මාණ සහ කාර්යක්ෂමතා විද්‍යාව",
+    "tamil": "அலகு 05: வீடமைப்பு, உள்ளக வடிவமைப்பு மற்றும் சூழலியல் பணிச்சூழலியல்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "english": "Principles of house planning, ventilation, lighting and color dynamics",
+        "sinhala": "නිවාස සැලසුම් මූලධර්ම, වාතාශ්‍රය, ආලෝකකරණය සහ වර්ණ යෙදීම",
+        "tamil": "வீட்டுத் திட்டமிடல் கோட்பாடுகள், காற்றோட்டம், வெளிச்சம் மற்றும் வர்ணத் தேர்வு",
+        "hours": 4
+      },
+      {
+        "num": "5.2",
+        "english": "Ergonomics in kitchen design, waste management and sustainable living",
+        "sinhala": "මුළුතැන්ගෙයි කාර්යක්ෂමතා සැලසුම් සහ තිරසාර ජීවන රටාව",
+        "tamil": "சமையலறை பணிச்சூழலியல், வீட்டுக் கழிவு முகாமைத்துவம் மற்றும் நிலைபேறு வாழ்வு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "english": "Human Growth, Child Development & Family Relationships",
+    "sinhala": "ඒකකය 06: මානව වර්ධනය, ළමා සංවර්ධනය සහ පවුල් සබඳතා",
+    "tamil": "அலகு 06: மனித வளர்ச்சி, பிள்ளை விருத்தி மற்றும் குடும்ப உறவுகள்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "english": "Physical, emotional, intellectual and social development in childhood",
+        "sinhala": "ළමා අවධියේ කායික, මානසික, බුද්ධිමය සහ සමාජයීය සංවර්ධනය",
+        "tamil": "பிள்ளைப் பருவத்தின் உடலியல், உளவியல் மற்றும் சமூக விருத்தி நிலைகள்",
+        "hours": 4
+      },
+      {
+        "num": "6.2",
+        "english": "Adolescence dynamics, effective parenting and positive interpersonal relations",
+        "sinhala": "යොවුන් වියේ අභියෝග, ඵලදායී දෙමාපියභාවය සහ පවුල් සබඳතා",
+        "tamil": "பருவமடைதல் சவால்கள், பெற்றோர் வழிகாட்டல் மற்றும் ஆரோக்கியமான குடும்ப உறவு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "english": "Textiles, Fabric Science & Garment Technology",
+    "sinhala": "ඒකකය 07: රෙදිපිළි විද්‍යාව, ඇඳුම් සැලසුම් සහ ඇඟලුම් තාක්ෂණය",
+    "tamil": "அலகு 07: புடவை அறிவியல், ஆடை வடிவமைப்பு மற்றும் தையல் தொழில்நுட்பம்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "english": "Textile fibers: Natural and synthetic fibers, yarns and weave structures",
+        "sinhala": "රෙදිපිළි කෙඳි: ස්වාභාවික සහ කෘත්‍රිම කෙඳි, නූල් සහ රෙදි විවීම",
+        "tamil": "இழைகளின் வகைப்படுத்தல்: இயற்கை, செயற்கை இழைகள் மற்றும் நெசவு முறைகள்",
+        "hours": 4
+      },
+      {
+        "num": "7.2",
+        "english": "Pattern making, garment construction, tailoring and fabric care",
+        "sinhala": "මෝස්තර සැකසීම, ඇඟලුම් මැසීම, නිමාව සහ රෙදිපිළි නඩත්තුව",
+        "tamil": "ஆடை மாதிரி வடிவமைப்பு, தையல் நுட்பங்கள் மற்றும் ஆடைப் பராமரிப்பு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "english": "Home Economics Entrepreneurship & Community Nutrition",
+    "sinhala": "ඒකකය 08: ගෘහ ආර්ථික ව්‍යවසායකත්වය සහ ප්‍රජා පෝෂණය",
+    "tamil": "அலகு 08: மனைப் பொருளியல் தொழில்முனைவும் சமூக ஊட்டச்சத்தும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "english": "Micro-enterprise development in catering, fashion craft and cottage industries",
+        "sinhala": "ආහාර පාන, විලාසිතා සහ ගෘහ කර්මාන්ත ක්ෂේත්‍රයේ කුඩා ව්‍යාපාර",
+        "tamil": "உணவு வழங்கல், ஆடை கைவினை மற்றும் குடிசைத் தொழில்களில் சுயதொழில் வாய்ப்புகள்",
+        "hours": 4
+      },
+      {
+        "num": "8.2",
+        "english": "Assessment of community nutritional status and intervention programs",
+        "sinhala": "ප්‍රජා පෝෂණ මට්ටම තක්සේරු කිරීම සහ ජාතික පෝෂණ වැඩසටහන්",
+        "tamil": "சமூக ஊட்டச்சத்து நிலை மதிப்பீடும் தேசிய போசாக்கு வேலைத்திட்டங்களும்",
+        "hours": 4
+      }
+    ]
+  }
+]
