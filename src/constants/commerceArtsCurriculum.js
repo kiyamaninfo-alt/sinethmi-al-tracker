@@ -1,23 +1,6 @@
-export const BIOLOGY_UNITS = [
-  { num: 1, title: 'Cell Structure & Chemical Basis of Life', sinhala: 'සෛල ව්‍යුහය හා ජීවයේ රසායනික පදනම',
-    subUnits: [
-      { num: '1.1', title: 'Biomolecules, Water & Minerals (ජෛව අණු හා ජලය)', hours: 4 },
-      { num: '1.2', title: 'Cell Ultrastructure & Microscopy (සෛල ඉන්ද්‍රයිකා)', hours: 5 },
-      { num: '1.3', title: 'Cell Cycle, Mitosis & Meiosis (සෛල චක්‍රය හා ඌනනය)', hours: 4 }
-    ] },
-  { num: 2, title: 'Plant & Animal Form and Physiology', sinhala: 'ශාක හා සත්ත්ව ආකාරය සහ ක්‍රියාකාරිත්වය',
-    subUnits: [
-      { num: '2.1', title: 'Photosynthesis & Transpiration (ප්‍රභාසංස්ලේෂණය හා උත්ස්වේදනය)', hours: 5 },
-      { num: '2.2', title: 'Human Nutrition, Digestion & Transport (පෝෂණය හා සංසරණය)', hours: 5 },
-      { num: '2.3', title: 'Respiration & Gaseous Exchange (ශ්වසනය හා වායු හුවමාරුව)', hours: 4 }
-    ] },
-  { num: 3, title: 'Genetics, Molecular Biology & Ecology', sinhala: 'ප්‍රවේණිය, අණුක ජීව විද්‍යාව හා පරිසරය',
-    subUnits: [
-      { num: '3.1', title: 'Mendelian Genetics & Gene Interaction (මෙන්ඩලීය ප්‍රවේණිය)', hours: 5 },
-      { num: '3.2', title: 'DNA Replication & Protein Synthesis (DNA ප්‍රතිවලිතය)', hours: 5 },
-      { num: '3.3', title: 'Ecosystems & Biodiversity Conservation (පරිසර පද්ධති)', hours: 4 }
-    ] }
-];
+import { BIOLOGY_UNITS } from './biologyUnits.js';
+
+export { BIOLOGY_UNITS };
 
 export const COMMERCE_UNITS = [
   { num: 1, title: 'Accounting Systems & Financial Reporting', sinhala: 'ගිණුම්කරණ පද්ධති හා මූල්‍ය ප්‍රකාශන',

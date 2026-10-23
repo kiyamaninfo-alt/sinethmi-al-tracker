@@ -1,0 +1,469 @@
+[
+  {
+    "num": 1,
+    "title": "Introduction to Biology",
+    "english": "Introduction to Biology",
+    "sinhala": "ජීව විද්‍යාව හැඳින්වීම",
+    "sinhala_title": "ජීව විද්‍යාව හැඳින්වීම",
+    "tamil": "உயிரியல் ஓர் அறிமுகம்",
+    "tamil_title": "உயிரியல் ஓர் அறிமுகம்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Nature and scope of Biology",
+        "sinhala": "ජීව විද්‍යාවේ ස්වභාවය සහ විෂය පථය",
+        "tamil": "உயிரியலின் தன்மையும் எல்லையும்",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "title": "Importance of Biology and global challenges",
+        "sinhala": "ජීව විද්‍යාවේ වැදගත්කම සහ ගෝලීය අභියෝග",
+        "tamil": "உயிரியலின் முக்கியத்துவமும் உலகளாவிய சவால்களும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Chemical and Cellular Basis of Life",
+    "english": "Chemical and Cellular Basis of Life",
+    "sinhala": "ජීවයේ රසායනික හා සෛලීය පදනම",
+    "sinhala_title": "ජීවයේ රසායනික හා සෛලීය පදනම",
+    "tamil": "வாழ்க்கையின் இரசாயன மற்றும் கல அடிப்படை",
+    "tamil_title": "வாழ்க்கையின் இரசாயன மற்றும் கல அடிப்படை",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Chemical elements and water in living organisms",
+        "sinhala": "ජීවීන්ගේ රසායනික මූලද්‍රව්‍ය හා ජලය",
+        "tamil": "உயிரினங்களில் இரசாயன மூலகங்களும் நீரும்",
+        "hours": 4
+      },
+      {
+        "num": "2.2",
+        "title": "Carbohydrates, lipids, proteins and nucleic acids",
+        "sinhala": "කාබෝහයිඩ්‍රේට, ලිපිඩ, ප්‍රෝටීන සහ නියුක්ලෙයික් අම්ල",
+        "tamil": "காபோவைதரேற்றுக்கள், லிப்பிட்டுக்கள், புரதங்கள், கருவமிலங்கள்",
+        "hours": 6
+      },
+      {
+        "num": "2.3",
+        "title": "Cell structure and microscopy",
+        "sinhala": "සෛල ව්‍යුහය සහ අන්වීක්ෂවේදය",
+        "tamil": "கலக் கட்டமைப்பும் நுணுக்குக்காட்டியியலும்",
+        "hours": 5
+      },
+      {
+        "num": "2.4",
+        "title": "Cell membrane and transport mechanisms",
+        "sinhala": "සෛල පටලය සහ ප්‍රවාහන යාන්ත්‍රණ",
+        "tamil": "கல மென்சவ்வும் கடத்தல் பொறிமுறைகளும்",
+        "hours": 5
+      },
+      {
+        "num": "2.5",
+        "title": "Cellular metabolism and enzymes",
+        "sinhala": "සෛලීය පරිවෘත්තිය සහ එන්සයිම",
+        "tamil": "கல அனுசேபமும் நொதியங்களும்",
+        "hours": 5
+      },
+      {
+        "num": "2.6",
+        "title": "Cell cycle, mitosis and meiosis",
+        "sinhala": "සෛල චක්‍රය, අනූනනය සහ ඌනනය",
+        "tamil": "கல வட்டம், இழையுருப்பிரிவு, ஒடுக்கற்பிரிவு",
+        "hours": 5
+      },
+      {
+        "num": "2.7",
+        "title": "Cellular respiration",
+        "sinhala": "සෛලීය ශ්වසනය",
+        "tamil": "கலச் சுவாசம்",
+        "hours": 6
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Evolution and Diversity of Organisms",
+    "english": "Evolution and Diversity of Organisms",
+    "sinhala": "ජීවීන්ගේ පරිණාමය සහ විවිධත්වය",
+    "sinhala_title": "ජීවීන්ගේ පරිණාමය සහ විවිධත්වය",
+    "tamil": "உயிரினங்களின் கூர்ப்பும் பல்வகைமையும்",
+    "tamil_title": "உயிரினங்களின் கூர்ப்பும் பல்வகைமையும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Origin of life and evolutionary theories",
+        "sinhala": "ජීවයේ සම්භවය සහ පරිණාමවාදී න්‍යායයන්",
+        "tamil": "உயிரின் தோற்றமும் கூர்ப்புக் கொள்கைகளும்",
+        "hours": 4
+      },
+      {
+        "num": "3.2",
+        "title": "Biological classification and domains of life",
+        "sinhala": "ජීව විද්‍යාත්මක වර්ගීකරණය සහ ජීවයේ අධිරාජ්‍ය",
+        "tamil": "உயிரியல் வகைப்பாடும் ஆட்சிப் பிரிவுகளும்",
+        "hours": 4
+      },
+      {
+        "num": "3.3",
+        "title": "Kingdom Monera and Protista",
+        "sinhala": "මොනෙරා සහ ප්‍රොටිස්ටා රාජධානි",
+        "tamil": "மொனேரா மற்றும் புரொட்டிஸ்டா இராச்சியங்கள்",
+        "hours": 5
+      },
+      {
+        "num": "3.4",
+        "title": "Kingdom Plantae diversity",
+        "sinhala": "ශාක රාජධානියේ විවිධත්වය",
+        "tamil": "தாவர இராச்சியத்தின் பல்வகைமை",
+        "hours": 6
+      },
+      {
+        "num": "3.5",
+        "title": "Kingdom Fungi diversity",
+        "sinhala": "දිලීර රාජධානියේ විවිධත්වය",
+        "tamil": "பங்கசு இராச்சியத்தின் பல்வகைமை",
+        "hours": 4
+      },
+      {
+        "num": "3.6",
+        "title": "Kingdom Animalia diversity",
+        "sinhala": "සත්ත්ව රාජධානියේ විවිධත්වය",
+        "tamil": "விலங்கு இராச்சியத்தின் பல்வகைமை",
+        "hours": 7
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Plant Form and Function",
+    "english": "Plant Form and Function",
+    "sinhala": "ශාක ආකාරය සහ ක්‍රියාකාරිත්වය",
+    "sinhala_title": "ශාක ආකාරය සහ ක්‍රියාකාරිත්වය",
+    "tamil": "தாவர உருவமும் தொழிற்பாடும்",
+    "tamil_title": "தாவர உருவமும் தொழிற்பாடும்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Plant tissues and internal structure",
+        "sinhala": "ශාක පටක සහ අභ්‍යන්තර ව්‍යුහය",
+        "tamil": "தாவர இழையங்களும் உள்ளமைப்பும்",
+        "hours": 5
+      },
+      {
+        "num": "4.2",
+        "title": "Water and mineral transport in plants",
+        "sinhala": "ශාක තුළ ජලය සහ ඛනිජ ප්‍රවාහනය",
+        "tamil": "தாவரங்களில் நீரும் கனிப்பொருட்களும் கடத்தப்படல்",
+        "hours": 6
+      },
+      {
+        "num": "4.3",
+        "title": "Photosynthesis and assimilate transport",
+        "sinhala": "ප්‍රභාසංස්ලේෂණය සහ ඵල ප්‍රවාහනය",
+        "tamil": "ஒளித்தொகுப்பும் விளைபொருள் கடத்தலும்",
+        "hours": 6
+      },
+      {
+        "num": "4.4",
+        "title": "Plant growth, development and responses",
+        "sinhala": "ශාක වර්ධනය, සංවර්ධනය සහ ප්‍රතිචාර",
+        "tamil": "தாவர வளர்ச்சியும் துலங்கல்களும்",
+        "hours": 5
+      },
+      {
+        "num": "4.5",
+        "title": "Plant reproduction and life cycles",
+        "sinhala": "ශාක ප්‍රජනනය සහ ජීවන චක්‍ර",
+        "tamil": "தாவர இனப்பெருக்கமும் வாழ்க்கை வட்டங்களும்",
+        "hours": 6
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Animal Form and Function",
+    "english": "Animal Form and Function",
+    "sinhala": "සත්ත්ව ආකාරය සහ ක්‍රියාකාරිත්වය",
+    "sinhala_title": "සත්ත්ව ආකාරය සහ ක්‍රියාකාරිත්වය",
+    "tamil": "விலங்கு உருவமும் தொழிற்பாடும்",
+    "tamil_title": "விலங்கு உருவமும் தொழிற்பாடும்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "Animal tissues and body architecture",
+        "sinhala": "සත්ත්ව පටක සහ දේහ සැකැස්ම",
+        "tamil": "விலங்கு இழையங்களும் உடலமைப்பும்",
+        "hours": 4
+      },
+      {
+        "num": "5.2",
+        "title": "Nutrition and human digestive system",
+        "sinhala": "පෝෂණය සහ මානව ආහාර ජීරණ පද්ධතිය",
+        "tamil": "போசணையும் மனித சமிபாட்டுத் தொகுதியும்",
+        "hours": 6
+      },
+      {
+        "num": "5.3",
+        "title": "Circulatory system and cardiovascular health",
+        "sinhala": "සංසරණ පද්ධතිය සහ හෘද වාහිනී සෞඛ්‍යය",
+        "tamil": "சுற்றோட்டத் தொகுதியும் இதயக் குருதிக் கலன் நலம்",
+        "hours": 6
+      },
+      {
+        "num": "5.4",
+        "title": "Respiratory system and gas exchange",
+        "sinhala": "ශ්වසන පද්ධතිය සහ වායු හුවමාරුව",
+        "tamil": "சுவாசத் தொகுதியும் வாயுப் பரிமாற்றமும்",
+        "hours": 5
+      },
+      {
+        "num": "5.5",
+        "title": "Immunity and body defense mechanisms",
+        "sinhala": "ප්‍රතිශක්තිය සහ දේහ ආරක්ෂක යාන්ත්‍රණ",
+        "tamil": "நோயெதிர்ப்புச் சக்தியும் பாதுகாப்புப் பொறிமுறைகளும்",
+        "hours": 5
+      },
+      {
+        "num": "5.6",
+        "title": "Excretion and osmoregulation",
+        "sinhala": "බැහැර කිරීම සහ ආස්‍රැති විගමනය",
+        "tamil": "கழிவகற்றலும் பிரசாரணச் சீராக்கமும்",
+        "hours": 5
+      },
+      {
+        "num": "5.7",
+        "title": "Nervous coordination and sensory organs",
+        "sinhala": "ස්නායුක සමායෝජනය සහ සංවේදක ඉන්ද්‍රිය",
+        "tamil": "நரம்பு ஒருங்கிணைப்பும் புலனுறுப்புக்களும்",
+        "hours": 6
+      },
+      {
+        "num": "5.8",
+        "title": "Endocrine coordination and hormones",
+        "sinhala": "අන්තරාසර්ග සමායෝජනය සහ හෝමෝන",
+        "tamil": "அகஞ்சுரக்கும் தொகுதி ஒருங்கிணைப்பும் ஓமோன்களும்",
+        "hours": 5
+      },
+      {
+        "num": "5.9",
+        "title": "Musculoskeletal system and human movement",
+        "sinhala": "පේශි-සැකිලි පද්ධතිය සහ මානව චලනය",
+        "tamil": "தசை-எலும்புக்கூட்டுத் தொகுதியும் இயக்கமும்",
+        "hours": 5
+      },
+      {
+        "num": "5.10",
+        "title": "Animal reproduction and human reproductive system",
+        "sinhala": "සත්ත්ව ප්‍රජනනය සහ මානව ප්‍රජනක පද්ධතිය",
+        "tamil": "விலங்கு இனப்பெருக்கமும் மனித இனப்பெருக்கத் தொகுதியும்",
+        "hours": 6
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Genetics",
+    "english": "Genetics",
+    "sinhala": "ප්‍රවේණිය",
+    "sinhala_title": "ප්‍රවේණිය",
+    "tamil": "பாரம்பரியம் (மரபியல்)",
+    "tamil_title": "பாரம்பரியம் (மரபியல்)",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "Mendelian inheritance principles",
+        "sinhala": "මෙන්ඩලීය ප්‍රවේණි මූලධර්ම",
+        "tamil": "மெண்டலின் பாரம்பரியக் கொள்கைகள்",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "Deviations from Mendelian genetics",
+        "sinhala": "මෙන්ඩලීය ප්‍රවේණියෙන් බැහැරවීම්",
+        "tamil": "மெண்டலிய பாரம்பரியத்தில் விலகல்கள்",
+        "hours": 5
+      },
+      {
+        "num": "6.3",
+        "title": "Chromosomal basis of inheritance and sex linkage",
+        "sinhala": "ප්‍රවේණියේ වර්ණදේහ පදනම සහ ලිංග ප්‍රතිබද්ධය",
+        "tamil": "பாரம்பரியத்தின் நிறமூர்த்த அடிப்படையும் இலிங்கப் பிணைப்பும்",
+        "hours": 5
+      },
+      {
+        "num": "6.4",
+        "title": "Human pedigrees and genetic disorders",
+        "sinhala": "මානව පෙළපත් සහ ප්‍රවේණික අක්‍රමිකතා",
+        "tamil": "மனித பரம்பரை அட்டவணைகளும் பிறப்புரிமைக் கோளாறுகளும்",
+        "hours": 4
+      },
+      {
+        "num": "6.5",
+        "title": "Polygenic inheritance and epistasis",
+        "sinhala": "බහුජාන ප්‍රවේණිය සහ අපිස්ටැසිසය",
+        "tamil": "பல்மரபணுப் பாரம்பரியமும் மேற்பொருந்துகையும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Molecular Biology and Recombinant DNA Technology",
+    "english": "Molecular Biology and Recombinant DNA Technology",
+    "sinhala": "අණුක ජීව විද්‍යාව සහ ප්‍රතිසංයෝජිත DNA තාක්ෂණය",
+    "sinhala_title": "අණුක ජීව විද්‍යාව සහ ප්‍රතිසංයෝජිත DNA තාක්ෂණය",
+    "tamil": "மூலக்கூற்று உயிரியலும் மீள்சேர்க்கை டி.என்.ஏ. தொழில்நுட்பமும்",
+    "tamil_title": "மூலக்கூற்று உயிரியலும் மீள்சேர்க்கை டி.என்.ஏ. தொழில்நுட்பமும்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "DNA and RNA structure and replication",
+        "sinhala": "DNA සහ RNA ව්‍යුහය හා ප්‍රතිවලිතය",
+        "tamil": "DNA, RNA கட்டமைப்பும் இரட்டிப்பாதலும்",
+        "hours": 5
+      },
+      {
+        "num": "7.2",
+        "title": "Gene expression, transcription and translation",
+        "sinhala": "ජාන ප්‍රකාශනය, අනුලේඛනය සහ පරිවර්තනය",
+        "tamil": "மரபணு வெளிப்பாடும் படியெடுத்தலும் மொழிபெயர்ப்பும்",
+        "hours": 5
+      },
+      {
+        "num": "7.3",
+        "title": "Mutation and genome variations",
+        "sinhala": "විකෘති සහ ප්‍රවේණික විචලන",
+        "tamil": "திடீர்மாற்றமும் மரபணு வேறுபாடுகளும்",
+        "hours": 4
+      },
+      {
+        "num": "7.4",
+        "title": "Recombinant DNA technology and genetic engineering",
+        "sinhala": "ප්‍රතිසංයෝජිත DNA තාක්ෂණය සහ ජාන ඉංජිනේරු විද්‍යාව",
+        "tamil": "மீள்சேர்க்கை டி.என்.ஏ. தொழில்நுட்பமும் மரபணுப் பொறியியலும்",
+        "hours": 5
+      },
+      {
+        "num": "7.5",
+        "title": "Applications and ethics of biotechnology",
+        "sinhala": "ජෛව තාක්ෂණයේ යෙදීම් සහ ආචාර ධර්ම",
+        "tamil": "உயிரித் தொழில்நுட்பத்தின் பயன்பாடுகளும் அறநெறிகளும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Environmental Biology",
+    "english": "Environmental Biology",
+    "sinhala": "පාරිසරික ජීව විද්‍යාව",
+    "sinhala_title": "පාරිසරික ජීව විද්‍යාව",
+    "tamil": "சூழல் உயிரியல்",
+    "tamil_title": "சூழல் உயிரியல்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Ecosystem structure, energy flow and biogeochemical cycles",
+        "sinhala": "පරිසර පද්ධති ව්‍යුහය, ශක්ති ප්‍රවාහය සහ ජෛව භූ-රසායනික චක්‍ර",
+        "tamil": "சூழற்றொகுதிக் கட்டமைப்பும் சக்திப் பாய்ச்சலும் உயிர்-புவி இரசாயன வட்டங்களும்",
+        "hours": 5
+      },
+      {
+        "num": "8.2",
+        "title": "Biomes and major vegetation zones of Sri Lanka",
+        "sinhala": "ශ්‍රී ලංකාවේ ප්‍රධාන ජෛව ප්‍රදේශ සහ වෘක්ෂලතා",
+        "tamil": "இலங்கையின் முக்கிய உயிரின வலயங்களும் தாவரப் போர்வைகளும்",
+        "hours": 5
+      },
+      {
+        "num": "8.3",
+        "title": "Biodiversity, threats and conservation",
+        "sinhala": "ජෛව විවිධත්වය, තර්ජන සහ සංරක්ෂණය",
+        "tamil": "உயிரியல் பல்வகைமையும் அச்சுறுத்தல்களும் பாதுகாப்பும்",
+        "hours": 4
+      },
+      {
+        "num": "8.4",
+        "title": "Environmental pollution and global challenges",
+        "sinhala": "පරිසර දූෂණය සහ ගෝලීය අභියෝග",
+        "tamil": "சூழல் மாசடைதலும் உலகளாவிய சவால்களும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 9,
+    "title": "Microbiology",
+    "english": "Microbiology",
+    "sinhala": "ක්ෂුද්‍රජීව විද්‍යාව",
+    "sinhala_title": "ක්ෂුද්‍රජීව විද්‍යාව",
+    "tamil": "நுண்ணுயிரியல்",
+    "tamil_title": "நுண்ணுயிரியல்",
+    "subUnits": [
+      {
+        "num": "9.1",
+        "title": "Scope of microbiology and microbial diversity",
+        "sinhala": "ක්ෂුද්‍රජීව විද්‍යාවේ විෂය පථය සහ විවිධත්වය",
+        "tamil": "நுண்ணுயிரியலின் எல்லையும் நுண்ணுயிர் பல்வகைமையும்",
+        "hours": 4
+      },
+      {
+        "num": "9.2",
+        "title": "Microbial culture techniques and growth",
+        "sinhala": "ක්ෂුද්‍රජීවී වර්ධක මාධ්‍ය සහ වර්ධනය",
+        "tamil": "நுண்ணுயிர்ப் பயிர்ச்செய்கை நுட்பங்களும் வளர்ச்சியும்",
+        "hours": 5
+      },
+      {
+        "num": "9.3",
+        "title": "Control of microorganisms",
+        "sinhala": "ක්ෂුද්‍රජීවීන් පාලනය කිරීම",
+        "tamil": "நுண்ணுயிர்களைக் கட்டுப்படுத்தல்",
+        "hours": 4
+      },
+      {
+        "num": "9.4",
+        "title": "Microorganisms in disease, industry and environment",
+        "sinhala": "රෝග, කර්මාන්ත සහ පරිසරය ආශ්‍රිත ක්ෂුද්‍රජීවීන්",
+        "tamil": "நோய்கள், கைத்தொழில், சூழலில் நுண்ணுயிர்கள்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 10,
+    "title": "Applied Biology",
+    "english": "Applied Biology",
+    "sinhala": "ව්‍යවහාරික ජීව විද්‍යාව",
+    "sinhala_title": "ව්‍යවහාරික ජීව විද්‍යාව",
+    "tamil": "பிரயோக உயிரியல்",
+    "tamil_title": "பிரயோக உயிரியல்",
+    "subUnits": [
+      {
+        "num": "10.1",
+        "title": "Aquaculture and fisheries",
+        "sinhala": "ජලජීවී වගාව සහ ධීවර කර්මාන්තය",
+        "tamil": "நீர்வாழ் உயிரின வளர்ப்பும் கடற்றொழிலும்",
+        "hours": 4
+      },
+      {
+        "num": "10.2",
+        "title": "Agriculture, pest control and post-harvest biology",
+        "sinhala": "කෘෂිකර්මාන්තය, පළිබෝධ පාලනය සහ පසු අස්වනු ජීව විද්‍යාව",
+        "tamil": "விவசாயமும் பீடைக் கட்டுப்பாடும் அறுவடைப் பின் உயிரியலும்",
+        "hours": 4
+      },
+      {
+        "num": "10.3",
+        "title": "Stem cells, tissue culture and nanobiology",
+        "sinhala": "ප්‍රාථමික සෛල, පටක රෝපණය සහ නැනෝ ජීව විද්‍යාව",
+        "tamil": "குருத்தணுக் கலங்களும் இழைய வளர்ப்பும் நனோ உயிரியலும்",
+        "hours": 4
+      }
+    ]
+  }
+]

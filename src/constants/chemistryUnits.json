@@ -1,0 +1,450 @@
+[
+  {
+    "num": 1,
+    "title": "Atomic Structure",
+    "english": "Atomic Structure",
+    "sinhala": "පරමාණුක ව්‍යුහය",
+    "sinhala_title": "පරමාණුක ව්‍යුහය",
+    "tamil": "அணுக்கட்டமைப்பு",
+    "tamil_title": "அணுக்கட்டமைப்பு",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Subatomic particles and atomic models",
+        "sinhala": "උපපරමාණුක අංශු සහ පරමාණුක ආකෘති",
+        "tamil": "உபஅணுத் துணிக்கைகளும் அணு மாதிரிகளும்",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "title": "Electromagnetic radiation and Planck quantum theory",
+        "sinhala": "විද්‍යුත් චුම්බක විකිරණ සහ ප්ලාන්ක් ක්වොන්ටම් න්‍යාය",
+        "tamil": "மின்காந்தக் கதிர்வீசலும் பிளாங்கின் குவாண்டம் கொள்கையும்",
+        "hours": 4
+      },
+      {
+        "num": "1.3",
+        "title": "Electronic configuration and quantum numbers",
+        "sinhala": "ඉලෙක්ට්‍රොනික වින්‍යාසය සහ ක්වොන්ටම් අංක",
+        "tamil": "இலத்திரன் அமைப்பும் குவாண்டம் எண்களும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Structure and Bonding",
+    "english": "Structure and Bonding",
+    "sinhala": "ව්‍යුහය සහ බන්ධන",
+    "sinhala_title": "ව්‍යුහය සහ බන්ධන",
+    "tamil": "கட்டமைப்பும் பிணைப்பும்",
+    "tamil_title": "கட்டமைப்பும் பிணைப்பும்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Ionic and covalent bonding",
+        "sinhala": "අයනික සහ සහසංයුජ බන්ධන",
+        "tamil": "அயன் மற்றும் பங்கீட்டுப் பிணைப்புக்கள்",
+        "hours": 5
+      },
+      {
+        "num": "2.2",
+        "title": "VSEPR theory and molecular geometry",
+        "sinhala": "VSEPR න්‍යාය සහ අණුක ජ්‍යාමිතිය",
+        "tamil": "VSEPR கொள்கையும் மூலக்கூற்று வடிவவியலும்",
+        "hours": 5
+      },
+      {
+        "num": "2.3",
+        "title": "Intermolecular forces and metallic bonding",
+        "sinhala": "අන්තර් අණුක බල සහ ලෝහක බන්ධන",
+        "tamil": "மூலக்கூற்றிடை விசைகளும் உலோகப் பிணைப்பும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Chemical Calculations",
+    "english": "Chemical Calculations",
+    "sinhala": "රසායනික ගණනය කිරීම්",
+    "sinhala_title": "රසායනික ගණනය කිරීම්",
+    "tamil": "இரசாயனக் கணிப்புகள்",
+    "tamil_title": "இரசாயனக் கணிப்புகள்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Mole concept and Avogadro constant",
+        "sinhala": "මවුල සංකල්පය සහ ඇවගාඩ්රෝ නියතය",
+        "tamil": "மூல் எண்ணக்கருவும் அவகாதரோவின் மாறிலியும்",
+        "hours": 4
+      },
+      {
+        "num": "3.2",
+        "title": "Stoichiometry and volumetric analysis",
+        "sinhala": "ස්ථායිකියෝමිතිය සහ පරිමාමිතික විශ්ලේෂණය",
+        "tamil": "மூலக்கூற்று விகிதவியலும் பருமனறி பகுப்பாய்வும்",
+        "hours": 6
+      },
+      {
+        "num": "3.3",
+        "title": "Redox titrations and oxidation numbers",
+        "sinhala": "ඔක්සිහරණ-ඔක්සිකරණ අනුමාපන",
+        "tamil": "ஒட்சியேற்ற-தாழ்த்தல் தரம்பார்த்தல்களும் ஒட்சியேற்ற எண்களும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Gaseous State of Matter",
+    "english": "Gaseous State of Matter",
+    "sinhala": "පදාර්ථයේ වායුමය අවස්ථාව",
+    "sinhala_title": "පදාර්ථයේ වායුමය අවස්ථාව",
+    "tamil": "சடப்பொருளின் வாயு நிலை",
+    "tamil_title": "சடப்பொருளின் வாயு நிலை",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Gas laws and ideal gas equation",
+        "sinhala": "වායු නියම සහ පරිපූර්ණ වායු සමීකරණය",
+        "tamil": "வாயு விதிகளும் இலட்சிய வாயுச் சமன்பாடும்",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "title": "Kinetic molecular theory of gases",
+        "sinhala": "වායුවල චාලක අණුක න්‍යාය",
+        "tamil": "வாயுக்களின் இயக்க மூலக்கூற்றுக் கொள்கை",
+        "hours": 4
+      },
+      {
+        "num": "4.3",
+        "title": "Real gases and deviations from ideal behavior",
+        "sinhala": "තාත්වික වායු සහ පරිපූර්ණ හැසිරීමෙන් අපගමනය",
+        "tamil": "மெய் வாயுக்களும் இலட்சிய நடத்தையிலிருந்து விலகல்களும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Energetics (Chemical Thermodynamics)",
+    "english": "Energetics (Chemical Thermodynamics)",
+    "sinhala": "ශක්ති විද්‍යාව (තාප රසායනය)",
+    "sinhala_title": "ශක්ති විද්‍යාව (තාප රසායනය)",
+    "tamil": "சக்தியியல் (வெப்ப இரசாயனம்)",
+    "tamil_title": "சக்தியியல் (வெப்ப இரசாயனம்)",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "Enthalpy changes and calorimetry",
+        "sinhala": "එන්තැල්පි විපර්යාස සහ කැලරිමිතිය",
+        "tamil": "என்தல்பி மாற்றங்களும் கலோரிமானியும்",
+        "hours": 5
+      },
+      {
+        "num": "5.2",
+        "title": "Hess law and Born-Haber cycle",
+        "sinhala": "හෙසස්ගේ නියමය සහ බෝන්-හේබර් චක්‍රය",
+        "tamil": "ஹெஸ்சின் விதியும் போர்ன்-ஹேபர் வட்டமும்",
+        "hours": 5
+      },
+      {
+        "num": "5.3",
+        "title": "Entropy and Gibbs free energy",
+        "sinhala": "එන්ට්‍රොපිය සහ ගිබ්ස්ගේ මුක්ත ශක්තිය",
+        "tamil": "என்ட்ரோபியும் கிப்ஸின் சுயாதீன சக்தியும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Chemistry of s, p and d Block Elements",
+    "english": "Chemistry of s, p and d Block Elements",
+    "sinhala": "s, p සහ d ගොනුවල මූලද්‍රව්‍යවල රසායනය",
+    "sinhala_title": "s, p සහ d ගොනුවල මූලද්‍රව්‍යවල රසායනය",
+    "tamil": "s, p, d தொகுதி மூலகங்களின் இரசாயனம்",
+    "tamil_title": "s, p, d தொகுதி மூலகங்களின் இரசாயனம்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "s-block elements and compounds",
+        "sinhala": "s ගොනුවේ මූලද්‍රව්‍ය හා සංයෝග",
+        "tamil": "s தொகுதி மூலகங்களும் அவற்றின் சேர்வைகளும்",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "p-block elements (Group 13 to 18)",
+        "sinhala": "p ගොනුවේ මූලද්‍රව්‍ය (කාණ්ඩ 13 සිට 18)",
+        "tamil": "p தொகுதி மூலகங்கள் (கூட்டம் 13 தொடக்கம் 18)",
+        "hours": 7
+      },
+      {
+        "num": "6.3",
+        "title": "d-block transition metals and complexes",
+        "sinhala": "d ගොනුවේ සංක්‍රාන්ති ලෝහ සහ සංකීර්ණ",
+        "tamil": "d தொகுதி இடைமாறல் உலோகங்களும் அணைவுச் சேர்வைகளும்",
+        "hours": 6
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Basic Concepts of Organic Chemistry",
+    "english": "Basic Concepts of Organic Chemistry",
+    "sinhala": "කාබනික රසායනයේ මූලික සංකල්ප",
+    "sinhala_title": "කාබනික රසායනයේ මූලික සංකල්ප",
+    "tamil": "சேதன இரசாயனத்தின் அடிப்படை எண்ணக்கருக்கள்",
+    "tamil_title": "சேதன இரசாயனத்தின் அடிப்படை எண்ணக்கருக்கள்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Functional groups and IUPAC nomenclature",
+        "sinhala": "ක්‍රියාකාරී කාණ්ඩ සහ IUPAC නාමකරණය",
+        "tamil": "தொழிற்பாட்டுக் கூட்டங்களும் IUPAC பெயரீடும்",
+        "hours": 4
+      },
+      {
+        "num": "7.2",
+        "title": "Isomerism (structural and stereoisomerism)",
+        "sinhala": "සමාවයවිකතාව (ව්‍යුහමය හා ත්‍රිමාණ)",
+        "tamil": "சமபகுதியம் (கட்டமைப்பு மற்றும் முப்பரிமாண)",
+        "hours": 5
+      },
+      {
+        "num": "7.3",
+        "title": "Electronic effects and reaction intermediates",
+        "sinhala": "ඉලෙක්ට්‍රොනික ආචරණ සහ ප්‍රතික්‍රියා අතරමැදි",
+        "tamil": "இலத்திரனியல் விளைவுகளும் இடைநிலைகளும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Hydrocarbons and Halohydrocarbons",
+    "english": "Hydrocarbons and Halohydrocarbons",
+    "sinhala": "හයිඩ්‍රොකාබන සහ හැලෝහයිඩ්‍රොකාබන",
+    "sinhala_title": "හයිඩ්‍රොකාබන සහ හැලෝහයිඩ්‍රොකාබන",
+    "tamil": "ஐதரோகாபன்களும் அலோஐதரோகாபன்களும்",
+    "tamil_title": "ஐதரோகாபன்களும் அலோஐதரோகாபன்களும்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Alkanes, alkenes and alkynes",
+        "sinhala": "ඇල්කේන, ඇල්කීන සහ ඇල්කයින",
+        "tamil": "அல்கேன்கள், அல்கீன்கள், அல்கைன்கள்",
+        "hours": 6
+      },
+      {
+        "num": "8.2",
+        "title": "Benzene and aromatic substitution reactions",
+        "sinhala": "බෙන්සීන් සහ ඇරෝමැටික ආදේශ ප්‍රතික්‍රියා",
+        "tamil": "பென்சீனும் அரோமற்றிக்குப் பிரதியீட்டுத் தாக்கங்களும்",
+        "hours": 5
+      },
+      {
+        "num": "8.3",
+        "title": "Alkyl halides and nucleophilic substitution",
+        "sinhala": "ඇල්කයිල් හේලයිඩ සහ නියුක්ලියෝෆිලික ආදේශය",
+        "tamil": "அல்கைல் ஏலைட்டுகளும் கருநாட்டப் பிரதியீட்டுத் தாக்கங்களும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 9,
+    "title": "Oxygen Containing Organic Compounds",
+    "english": "Oxygen Containing Organic Compounds",
+    "sinhala": "ඔක්සිජන් අඩංගු කාබනික සංයෝග",
+    "sinhala_title": "ඔක්සිජන් අඩංගු කාබනික සංයෝග",
+    "tamil": "ஒக்சிசன் கொண்ட சேதனச் சேர்வைகள்",
+    "tamil_title": "ஒக்சிசன் கொண்ட சேதனச் சேர்வைகள்",
+    "subUnits": [
+      {
+        "num": "9.1",
+        "title": "Alcohols and phenols",
+        "sinhala": "ඇල්කොහොල සහ ෆීනෝල",
+        "tamil": "அல்கஹோல்களும் பீனோல்களும்",
+        "hours": 5
+      },
+      {
+        "num": "9.2",
+        "title": "Aldehydes and ketones (Carbonyl compounds)",
+        "sinhala": "ඇල්ඩිහයිඩ සහ කීටෝන (කාබොනයිල් සංයෝග)",
+        "tamil": "அல்டிகைட்டுகளும் கீற்றோன்களும் (காபோனைல் சேர்வைகள்)",
+        "hours": 6
+      },
+      {
+        "num": "9.3",
+        "title": "Carboxylic acids and derivatives (Esters, Acid halides)",
+        "sinhala": "කාබොක්සිලික් අම්ල සහ ව්‍යුත්පන්න",
+        "tamil": "காபொட்சிலிக் அமிலங்களும் அவற்றின் வழித்தோன்றல்களும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 10,
+    "title": "Nitrogen Containing Organic Compounds",
+    "english": "Nitrogen Containing Organic Compounds",
+    "sinhala": "නයිට්‍රජන් අඩංගු කාබනික සංයෝග",
+    "sinhala_title": "නයිට්‍රජන් අඩංගු කාබනික සංයෝග",
+    "tamil": "நைதரசன் கொண்ட சேதனச் சேர்வைகள்",
+    "tamil_title": "நைதரசன் கொண்ட சேதனச் சேர்வைகள்",
+    "subUnits": [
+      {
+        "num": "10.1",
+        "title": "Amines and basicity",
+        "sinhala": "ඇමීන සහ භෂ්මිකතාව",
+        "tamil": "அமீன்களும் அவற்றின் காரத்தன்மையும்",
+        "hours": 4
+      },
+      {
+        "num": "10.2",
+        "title": "Amides and amino acids",
+        "sinhala": "ඇමයිඩ සහ ඇමයිනෝ අම්ල",
+        "tamil": "அமைட்டுகளும் அமினோ அமிலங்களும்",
+        "hours": 4
+      },
+      {
+        "num": "10.3",
+        "title": "Diazonium salts and synthetic applications",
+        "sinhala": "ඩයසෝනියම් ලවණ සහ කෘත්‍රිම යෙදවුම්",
+        "tamil": "டயசோனியம் உப்புகளும் தொகுப்புப் பயன்பாடுகளும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 11,
+    "title": "Chemical Kinetics",
+    "english": "Chemical Kinetics",
+    "sinhala": "රසායනික චාලක විද්‍යාව",
+    "sinhala_title": "රසායනික චාලක විද්‍යාව",
+    "tamil": "இரசாயன இயக்கவியல்",
+    "tamil_title": "இரசாயன இயக்கவியல்",
+    "subUnits": [
+      {
+        "num": "11.1",
+        "title": "Rate of reactions and collision theory",
+        "sinhala": "ප්‍රතික්‍රියා සීඝ්‍රතාව සහ ගැටුම් න්‍යාය",
+        "tamil": "தாக்க வீதமும் மோதுகைக் கொள்கையும்",
+        "hours": 4
+      },
+      {
+        "num": "11.2",
+        "title": "Rate equations, order and rate constant",
+        "sinhala": "සීඝ්‍රතා සමීකරණ, පෙළ සහ නියතය",
+        "tamil": "வீதச் சமன்பாடுகள், வரிசை, வீத மாறிலி",
+        "hours": 5
+      },
+      {
+        "num": "11.3",
+        "title": "Catalysis and Arrhenius equation",
+        "sinhala": "උත්ප්‍රේරණය සහ ආර්හීනියස් සමීකරණය",
+        "tamil": "ஊக்கலும் அரீனியஸ் சமன்பாடும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 12,
+    "title": "Chemical Equilibrium",
+    "english": "Chemical Equilibrium",
+    "sinhala": "රසායනික සමතුලිතතාව",
+    "sinhala_title": "රසායනික සමතුලිතතාව",
+    "tamil": "இரசாயனச் சமநிலை",
+    "tamil_title": "இரசாயனச் சமநிலை",
+    "subUnits": [
+      {
+        "num": "12.1",
+        "title": "Dynamic equilibrium, Kc and Kp",
+        "sinhala": "ගතික සමතුලිතතාව, Kc සහ Kp",
+        "tamil": "இயக்கச் சமநிலையும் Kc, Kp மாறிலிகளும்",
+        "hours": 5
+      },
+      {
+        "num": "12.2",
+        "title": "Le Chatelier principle and equilibrium shift",
+        "sinhala": "ලෙ චැටලියර් මූලධර්මය",
+        "tamil": "ல சாட்லியரின் கொள்கை",
+        "hours": 4
+      },
+      {
+        "num": "12.3",
+        "title": "Ionic equilibrium, pH, buffers and solubility product (Ksp)",
+        "sinhala": "අයනික සමතුලිතතාව, pH, බෆර සහ ද්‍රාව්‍යතා ගුණිතය",
+        "tamil": "அயன் சமநிலை, pH, தாங்கல் கரைசல்கள், கரைதிறன் பெருக்கம்",
+        "hours": 6
+      }
+    ]
+  },
+  {
+    "num": 13,
+    "title": "Electrochemistry",
+    "english": "Electrochemistry",
+    "sinhala": "විද්‍යුත් රසායනය",
+    "sinhala_title": "විද්‍යුත් රසායනය",
+    "tamil": "மின்னிரசாயனம்",
+    "tamil_title": "மின்னிரசாயனம்",
+    "subUnits": [
+      {
+        "num": "13.1",
+        "title": "Electrolytic cells and Faraday laws of electrolysis",
+        "sinhala": "විද්‍යුත් විච්ඡේද්‍ය කෝෂ සහ ෆැරඩේ නියම",
+        "tamil": "மின்னகுப்புக் கலங்களும் பரடேயின் விதிகளும்",
+        "hours": 5
+      },
+      {
+        "num": "13.2",
+        "title": "Galvanic (Electrochemical) cells and standard electrode potentials",
+        "sinhala": "ගැල්වනික කෝෂ සහ සම්මත ඉලෙක්ට්‍රෝඩ විභව",
+        "tamil": "கல்வனி கலங்களும் நியம மின்முனை அழுத்தங்களும்",
+        "hours": 5
+      },
+      {
+        "num": "13.3",
+        "title": "Commercial batteries, fuel cells and corrosion",
+        "sinhala": "වාණිජ බැටරි, ඉන්ධන කෝෂ සහ ලෝහ විඛාදනය",
+        "tamil": "வர்த்தக மின்கலங்கள், எரிபொருள் கலங்கள், அரிமானம்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 14,
+    "title": "Industrial Chemistry and Environmental Pollution",
+    "english": "Industrial Chemistry and Environmental Pollution",
+    "sinhala": "කාර්මික රසායනය සහ පරිසර දූෂණය",
+    "sinhala_title": "කාර්මික රසායනය සහ පරිසර දූෂණය",
+    "tamil": "கைத்தொழில் இரசாயனமும் சூழல் மாசடைதலும்",
+    "tamil_title": "கைத்தொழில் இரசாயனமும் சூழல் மாசடைதலும்",
+    "subUnits": [
+      {
+        "num": "14.1",
+        "title": "Chemical industries in Sri Lanka (Chlor-alkali, ammonia, nitric acid)",
+        "sinhala": "ශ්‍රී ලංකාවේ රසායනික කර්මාන්ත (ක්ලෝර්-ඇල්කලි, ඇමෝනියා, නයිට්‍රික් අම්ලය)",
+        "tamil": "இலங்கையின் இரசாயனக் கைத்தொழில்கள்",
+        "hours": 5
+      },
+      {
+        "num": "14.2",
+        "title": "Polymer, soap, paint and petroleum industries",
+        "sinhala": "බහුඅවයවික, සබන්, තීන්ත සහ ඛනිජ තෙල් කර්මාන්ත",
+        "tamil": "பல்கூற்று, சவர்க்காரம், வர்ணப்பூச்சு, பெற்றோலியக் கைத்தொழில்கள்",
+        "hours": 5
+      },
+      {
+        "num": "14.3",
+        "title": "Air, water and soil pollution and green chemistry principles",
+        "sinhala": "වායු, ජල, පාංශු දූෂණය සහ හරිත රසායන විද්‍යා මූලධර්ම",
+        "tamil": "வளி, நீர், மண் மாசடைதலும் பசுமை இரசாயனவியல் கொள்கைகளும்",
+        "hours": 5
+      }
+    ]
+  }
+]

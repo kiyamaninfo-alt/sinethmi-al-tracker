@@ -8,7 +8,13 @@ export async function persistSyllabusUnitsToDB(subjectId, units = []) {
       const { data: unitRow, error: uErr } = await supabase
         .from('syllabus_units')
         .upsert(
-          { subject_id: subjectId, unit_number: Number(u.num), title: u.title, sinhala_title: u.sinhala || '' },
+          {
+            subject_id: subjectId,
+            unit_number: Number(u.num),
+            title: u.title,
+            sinhala_title: u.sinhala || u.sinhala_title || '',
+            tamil_title: u.tamil || u.tamil_title || ''
+          },
           { onConflict: 'subject_id,unit_number' }
         )
         .select('id')
@@ -21,6 +27,8 @@ export async function persistSyllabusUnitsToDB(subjectId, units = []) {
         unit_id: unitRow.id,
         sub_number: String(su.num),
         title: su.title || '',
+        sinhala_title: su.sinhala || su.sinhala_title || '',
+        tamil_title: su.tamil || su.tamil_title || '',
         target_hours: Number(su.hours || 4)
       }));
 

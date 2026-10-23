@@ -1,0 +1,389 @@
+[
+  {
+    "num": 1,
+    "title": "Measurement",
+    "english": "Measurement",
+    "sinhala": "මිනුම්",
+    "sinhala_title": "මිනුම්",
+    "tamil": "அளவீடு",
+    "tamil_title": "அளவீடு",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Physical quantities, units and dimensions",
+        "sinhala": "භෞතික රාශි, ඒකක සහ මාන",
+        "tamil": "பௌதிகக் கணியங்கள், அலகுகள், பரிமாணங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "title": "Errors, measuring instruments (Vernier, Micrometer, Spherometer)",
+        "sinhala": "දෝෂ සහ මිනුම් උපකරණ",
+        "tamil": "வழுக்களும் அளவீட்டு உபகரணங்களும்",
+        "hours": 5
+      },
+      {
+        "num": "1.3",
+        "title": "Scalars and vectors and vector operations",
+        "sinhala": "අදිශ සහ දෛශික රාශි සහ කර්ම",
+        "tamil": "எண்ணளவுகளும் காவிகளும் காவிச் செயற்பாடுகளும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Mechanics",
+    "english": "Mechanics",
+    "sinhala": "යාන්ත්‍ර විද්‍යාව",
+    "sinhala_title": "යාන්ත්‍ර විද්‍යාව",
+    "tamil": "பொறிமுறையியல்",
+    "tamil_title": "பொறிமுறையியல்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Linear kinematics and equations of motion",
+        "sinhala": "රේඛීය චලිතය සහ චලිත සමීකරණ",
+        "tamil": "நேர்கோட்டு இயக்கவியலும் இயக்கச் சமன்பாடுகளும்",
+        "hours": 5
+      },
+      {
+        "num": "2.2",
+        "title": "Newton laws of motion and momentum conservation",
+        "sinhala": "නිව්ටන්ගේ නියම සහ ගම්‍යතා සංස්ථිතිය",
+        "tamil": "நியூட்டனின் இயக்க விதிகளும் உந்தக் காப்பும்",
+        "hours": 6
+      },
+      {
+        "num": "2.3",
+        "title": "Friction and circular motion",
+        "sinhala": "ඝර්ෂණය සහ වෘත්ත චලිතය",
+        "tamil": "உராய்வும் வட்ட இயக்கமும்",
+        "hours": 5
+      },
+      {
+        "num": "2.4",
+        "title": "Work, energy, power and conservation of mechanical energy",
+        "sinhala": "කාර්යය, ශක්තිය, ක්ෂමතාව සහ යාන්ත්‍රික ශක්ති සංස්ථිතිය",
+        "tamil": "வேலை, சக்தி, வலு, பொறிமுறைச் சக்தி காப்பு",
+        "hours": 5
+      },
+      {
+        "num": "2.5",
+        "title": "Rotational motion, moment of inertia and angular momentum",
+        "sinhala": "භ්‍රමණ චලිතය, අවස්ථිති ඝූර්ණය සහ කෝණික ගම්‍යතාව",
+        "tamil": "சுழற்சி இயக்கம், சடத்துவத் திருப்பம், கோண உந்தம்",
+        "hours": 6
+      },
+      {
+        "num": "2.6",
+        "title": "Hydrostatics and fluid pressure",
+        "sinhala": "ස්ථිති තරල විද්‍යාව සහ තරල පීඩනය",
+        "tamil": "நிலைநீரியலும் பாயி அமுக்கமும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Oscillations and Waves",
+    "english": "Oscillations and Waves",
+    "sinhala": "දෝලන සහ තරංග",
+    "sinhala_title": "දෝලන සහ තරංග",
+    "tamil": "அலைவுகளும் அலைகளும்",
+    "tamil_title": "அலைவுகளும் அலைகளும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Simple harmonic motion and damping",
+        "sinhala": "සරල අනුවර්තී චලිතය සහ අවපාලනය",
+        "tamil": "எளிய இசை இயக்கமும் தணிப்பும்",
+        "hours": 5
+      },
+      {
+        "num": "3.2",
+        "title": "Mechanical waves and wave properties (Superposition, Interference, Resonance)",
+        "sinhala": "යාන්ත්‍රික තරංග සහ තරංග ගුණ",
+        "tamil": "பொறிமுறை அலைகளும் அலை இயல்புகளும்",
+        "hours": 6
+      },
+      {
+        "num": "3.3",
+        "title": "Sound waves, Doppler effect and acoustics",
+        "sinhala": "ධ්වනි තරංග, ඩොප්ලර් ආචරණය",
+        "tamil": "ஒலியலைகள், டொப்ளரின் விளைவு",
+        "hours": 5
+      },
+      {
+        "num": "3.4",
+        "title": "Geometrical optics (Reflection, Refraction, Lenses and Optical instruments)",
+        "sinhala": "ජ්‍යාමිතික ප්‍රකාශ විද්‍යාව",
+        "tamil": "கேத்திரகணித ஒளியியல்",
+        "hours": 6
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Thermal Physics",
+    "english": "Thermal Physics",
+    "sinhala": "තාප භෞතික විද්‍යාව",
+    "sinhala_title": "තාප භෞතික විද්‍යාව",
+    "tamil": "வெப்பப் பௌதிகவியல்",
+    "tamil_title": "வெப்பப் பௌதிகவியல்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Temperature measurement and thermometry",
+        "sinhala": "උෂ්ණත්ව මිනුම් සහ උෂ්ණත්වමානය",
+        "tamil": "வெப்பநிலை அளவீடும் வெப்பநிலைமானியியலும்",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "title": "Thermal expansion and calorimetry",
+        "sinhala": "තාප ප්‍රසාරණය සහ කැලරිමිතිය",
+        "tamil": "வெப்ப விரிவும் கலோரிமானியும்",
+        "hours": 5
+      },
+      {
+        "num": "4.3",
+        "title": "Thermal conduction, convection and radiation",
+        "sinhala": "තාප සන්නයනය, සංවහනය සහ විකිරණය",
+        "tamil": "வெப்பக் கடத்தல், மேற்காவுகை, கதிர்வீசல்",
+        "hours": 5
+      },
+      {
+        "num": "4.4",
+        "title": "First law of thermodynamics and kinetic theory of gases",
+        "sinhala": "තාප ගති විද්‍යාවේ පළමු නියමය සහ වායුවල චාලක න්‍යාය",
+        "tamil": "வெப்பவியக்கவியலின் முதலாம் விதியும் வாயுக்களின் இயக்கக் கொள்கையும்",
+        "hours": 6
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Gravitational Fields",
+    "english": "Gravitational Fields",
+    "sinhala": "ගුරුත්වාකර්ෂණ ක්ෂේත්‍ර",
+    "sinhala_title": "ගුරුත්වාකර්ෂණ ක්ෂේත්‍ර",
+    "tamil": "ஈர்ப்புப் புலங்கள்",
+    "tamil_title": "ஈர்ப்புப் புலங்கள்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "Newton law of gravitation and gravitational field strength",
+        "sinhala": "නිව්ටන්ගේ ගුරුත්වාකර්ෂණ නියමය සහ ක්ෂේත්‍ර තීව්‍රතාව",
+        "tamil": "நியூட்டனின் ஈர்ப்பு விதியும் ஈர்ப்புப் புலச் செறிவும்",
+        "hours": 4
+      },
+      {
+        "num": "5.2",
+        "title": "Gravitational potential and potential energy",
+        "sinhala": "ගුරුත්වාකර්ෂණ විභවය සහ විභව ශක්තිය",
+        "tamil": "ஈர்ப்பு அழுத்தமும் அழுத்தச் சக்தியும்",
+        "hours": 4
+      },
+      {
+        "num": "5.3",
+        "title": "Planetary motion, Kepler laws and orbital mechanics",
+        "sinhala": "ග්‍රහලෝක චලිතය, කෙප්ලර් නියම සහ චන්ද්‍රිකා",
+        "tamil": "கோள்களின் இயக்கம், கெப்லரின் விதிகளும் செய்மதிகளும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Electrostatic Fields",
+    "english": "Electrostatic Fields",
+    "sinhala": "ස්ථිති විද්‍යුත් ක්ෂේත්‍ර",
+    "sinhala_title": "ස්ථිති විද්‍යුත් ක්ෂේත්‍ර",
+    "tamil": "நிலைமின்னியல் புலங்கள்",
+    "tamil_title": "நிலைமின்னியல் புலங்கள்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "Coulomb law and electric field strength",
+        "sinhala": "කූලෝම් නියමය සහ විද්‍යුත් ක්ෂේත්‍ර තීව්‍රතාව",
+        "tamil": "கூலூமின் விதியும் மின்புலச் செறிவும்",
+        "hours": 5
+      },
+      {
+        "num": "6.2",
+        "title": "Electric potential and potential gradient",
+        "sinhala": "විද්‍යුත් විභවය සහ විභව අනුක්‍රමණය",
+        "tamil": "மின்னழுத்தமும் அழுத்தச் சரிவும்",
+        "hours": 4
+      },
+      {
+        "num": "6.3",
+        "title": "Capacitors and dielectrics in electric circuits",
+        "sinhala": "ධාරිත්‍රක සහ පාරවිද්‍යුත් ද්‍රව්‍ය",
+        "tamil": "கொள்ளளவிகளும் மின்காப்புக்களும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Current Electricity",
+    "english": "Current Electricity",
+    "sinhala": "ධාරා විද්‍යුතය",
+    "sinhala_title": "ධාරා විද්‍යුතය",
+    "tamil": "ஓட்டமின்னியல்",
+    "tamil_title": "ஓட்டமின்னியல்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Ohm law, electromotive force (EMF) and internal resistance",
+        "sinhala": "ඕම්ගේ නියමය, වි.චා.බ. සහ අභ්‍යන්තර ප්‍රතිරෝධය",
+        "tamil": "ஓம் விதி, மி.இ.வி., அகத்தடை",
+        "hours": 5
+      },
+      {
+        "num": "7.2",
+        "title": "Kirchhoff laws and DC circuit analysis",
+        "sinhala": "කර්චොෆ් නියම සහ DC පරිපථ විශ්ලේෂණය",
+        "tamil": "கிர்க்கோப்பின் விதிகளும் DC சுற்றுப் பகுப்பாய்வும்",
+        "hours": 6
+      },
+      {
+        "num": "7.3",
+        "title": "Wheatstone bridge and potentiometer applications",
+        "sinhala": "වීට්ස්ටන් සේතුව සහ විභවමානය",
+        "tamil": "வீட்ஸ்டனின் பாலமும் அழுத்தமானியின் பிரயோகங்களும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Electromagnetism",
+    "english": "Electromagnetism",
+    "sinhala": "විද්‍යුත් චුම්බකත්වය",
+    "sinhala_title": "විද්‍යුත් චුම්බකත්වය",
+    "tamil": "மின்காந்தவியல்",
+    "tamil_title": "மின்காந்தவியல்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Magnetic force on moving charges and current conductors (Biot-Savart & Ampere law)",
+        "sinhala": "චුම්බක බලය සහ ඇම්පියර් නියමය",
+        "tamil": "மின்னோட்டக் கடத்திகளில் காந்த விசை",
+        "hours": 6
+      },
+      {
+        "num": "8.2",
+        "title": "Faraday and Lenz laws of electromagnetic induction",
+        "sinhala": "විද්‍යුත් චුම්බක ප්‍රේරණය සහ ෆැරඩේ හා ලෙන්ස් නියම",
+        "tamil": "மின்காந்தத் தூண்டலும் பரடேயின், லென்ஸின் விதிகளும்",
+        "hours": 6
+      },
+      {
+        "num": "8.3",
+        "title": "Alternating current (AC) principles and transformers",
+        "sinhala": "ප්‍රත්‍යාවර්ත ධාරාව සහ ට්‍රාන්ස්ෆෝමර්",
+        "tamil": "ஆடலோட்டமும் மின்மாற்றிகளும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 9,
+    "title": "Electronics",
+    "english": "Electronics",
+    "sinhala": "ඉලෙක්ට්‍රොනික විද්‍යාව",
+    "sinhala_title": "ඉලෙක්ට්‍රොනික විද්‍යාව",
+    "tamil": "இலத்திரனியல்",
+    "tamil_title": "இலத்திரனியல்",
+    "subUnits": [
+      {
+        "num": "9.1",
+        "title": "Semiconductors, p-n junction diodes and rectification",
+        "sinhala": "අර්ධ සන්නායක, ඩයෝඩ සහ සෘජුකරණය",
+        "tamil": "குறைக்கடத்திகள், இருமுனையங்கள், செப்பமாக்கல்",
+        "hours": 5
+      },
+      {
+        "num": "9.2",
+        "title": "Bipolar junction transistors (BJT) and amplification",
+        "sinhala": "ද්විධ්‍රැව සන්ධි ට්‍රාන්සිස්ටර් සහ වර්ධනය",
+        "tamil": "இருமுனையச் சந்தி டிரான்சிஸ்டர்களும் பெருக்கமும்",
+        "hours": 5
+      },
+      {
+        "num": "9.3",
+        "title": "Operational amplifiers (Op-Amps) and logic gates",
+        "sinhala": "කාරක වර්ධක සහ තාර්කික ද්වාර",
+        "tamil": "செயற்பாட்டுப் பெருக்கிகளும் தருக்க வாயில்களும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 10,
+    "title": "Mechanical Properties of Matter",
+    "english": "Mechanical Properties of Matter",
+    "sinhala": "පදාර්ථයේ යාන්ත්‍රික ගුණ",
+    "sinhala_title": "පදාර්ථයේ යාන්ත්‍රික ගුණ",
+    "tamil": "சடப்பொருளின் பொறிமுறை இயல்புகள்",
+    "tamil_title": "சடப்பொருளின் பொறிமுறை இயல்புகள்",
+    "subUnits": [
+      {
+        "num": "10.1",
+        "title": "Elasticity, Hooke law and Young modulus",
+        "sinhala": "ප්‍රත්‍යාස්ථතාව, හුක්ගේ නියමය සහ යං මාපාංකය",
+        "tamil": "மீள்தன்மை, ஊக்கின் விதி, யங்கின் மட்டு",
+        "hours": 5
+      },
+      {
+        "num": "10.2",
+        "title": "Surface tension, contact angle and capillarity",
+        "sinhala": "පෘෂ්ඨික ආතතිය සහ කේශිකතාව",
+        "tamil": "மேற்பரப்பிழுவிசையும் மயிர்த்துளைத்துவமும்",
+        "hours": 5
+      },
+      {
+        "num": "10.3",
+        "title": "Viscosity, Poiseuille formula and terminal velocity",
+        "sinhala": "දුස්ස්‍රාවිතාව, ස්ටෝක්ස් නියමය සහ අන්ත ප්‍රවේගය",
+        "tamil": "பாகுநிலை, ஸ்டோக்சின் விதி, முற்றுத் திசைவேகம்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 11,
+    "title": "Matter and Radiation",
+    "english": "Matter and Radiation",
+    "sinhala": "පදාර්ථය සහ විකිරණය",
+    "sinhala_title": "පදාර්ථය සහ විකිරණය",
+    "tamil": "சடப்பொருளும் கதிர்வீசலும்",
+    "tamil_title": "சடப்பொருளும் கதிர்வீசலும்",
+    "subUnits": [
+      {
+        "num": "11.1",
+        "title": "Photoelectric effect and photon theory of light",
+        "sinhala": "ප්‍රකාශ විද්‍යුත් ආචරණය සහ ආලෝකයේ ෆෝටෝන න්‍යාය",
+        "tamil": "ஒளிமின் விளைவும் ஒளியின் போட்டோன் கொள்கையும்",
+        "hours": 5
+      },
+      {
+        "num": "11.2",
+        "title": "Wave-particle duality and de Broglie wavelength",
+        "sinhala": "තරංග-අංශු ද්වෛතය සහ ඩි බ්‍රොග්ලි තරංග ආයාමය",
+        "tamil": "அலை-துணிக்கை இருமைத்துவமும் டி புரோக்லியின் அலைநீளமும்",
+        "hours": 4
+      },
+      {
+        "num": "11.3",
+        "title": "Atomic models, X-rays, radioactivity and nuclear physics",
+        "sinhala": "විකිරණශීලතාව, X-කිරණ සහ න්‍යෂ්ටික භෞතික විද්‍යාව",
+        "tamil": "கதிர்த்தொழிற்பாடு, X-கதிர்கள், அணுக்கருப் பௌதிகவியல்",
+        "hours": 6
+      }
+    ]
+  }
+]

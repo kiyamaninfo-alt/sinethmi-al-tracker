@@ -34,6 +34,7 @@ export async function syncCandidateSubjects(userId, subjectsArray = []) {
       code: s.code || s.id?.toUpperCase() || `SUB-${idx}`,
       name: s.name || '',
       sinhala: s.sinhala || '',
+      tamil: s.tamil || '',
       color: s.color || 'cyan',
       target_score: Number(s.targetScore ?? s.target_score ?? 75),
       weekly_hours: Number(s.hours ?? s.weekly_hours ?? 8),

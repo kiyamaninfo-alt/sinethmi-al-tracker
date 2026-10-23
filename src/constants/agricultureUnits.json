@@ -1,0 +1,309 @@
+[
+  {
+    "num": 1,
+    "title": "Importance and Trends of Agriculture",
+    "english": "Importance and Trends of Agriculture",
+    "sinhala": "කෘෂිකර්මාන්තයේ වැදගත්කම සහ ප්‍රවණතා",
+    "sinhala_title": "කෘෂිකර්මාන්තයේ වැදගත්කම සහ ප්‍රවණතා",
+    "tamil": "விவசாயத்தின் முக்கியத்துவமும் போக்குகளும்",
+    "tamil_title": "விவசாயத்தின் முக்கியத்துவமும் போக்குகளும்",
+    "subUnits": [
+      {
+        "num": "1.1",
+        "title": "Role of agriculture in economy and food security",
+        "sinhala": "ආර්ථිකය සහ ආහාර සුරක්ෂිතතාවෙහි කෘෂිකර්මාන්තයේ කාර්යභාරය",
+        "tamil": "பொருளாதாரத்திலும் உணவுப் பாதுகாப்பிலும் விவசாயத்தின் பங்கு",
+        "hours": 4
+      },
+      {
+        "num": "1.2",
+        "title": "Modern trends and precision agriculture",
+        "sinhala": "නවීන ප්‍රවණතා සහ නිරවද්‍ය කෘෂිකර්මාන්තය",
+        "tamil": "நவீன போக்குகளும் துல்லிய விவசாயமும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 2,
+    "title": "Agricultural Meteorology",
+    "english": "Agricultural Meteorology",
+    "sinhala": "කෘෂි කාලගුණ විද්‍යාව",
+    "sinhala_title": "කෘෂි කාලගුණ විද්‍යාව",
+    "tamil": "விவசாய வானிலையியல்",
+    "tamil_title": "விவசாய வானிலையியல்",
+    "subUnits": [
+      {
+        "num": "2.1",
+        "title": "Agro-climatic zones and weather parameters in Sri Lanka",
+        "sinhala": "ශ්‍රී ලංකාවේ කෘෂි දේශගුණික කලාප සහ කාලගුණ සාධක",
+        "tamil": "இலங்கையின் விவசாய காலநிலை வலயங்களும் வானிலைக் காரணிகளும்",
+        "hours": 4
+      },
+      {
+        "num": "2.2",
+        "title": "Climate change adaptation in agriculture",
+        "sinhala": "කෘෂිකර්මාන්තයේ දේශගුණික විපර්යාස අනුවර්තනය",
+        "tamil": "விவசாயத்தில் காலநிலை மாற்றப் பொருத்தப்பாடு",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 3,
+    "title": "Soil and Plant Nutrition",
+    "english": "Soil and Plant Nutrition",
+    "sinhala": "පස සහ ශාක පෝෂණය",
+    "sinhala_title": "පස සහ ශාක පෝෂණය",
+    "tamil": "மண்ணும் தாவர போசணையும்",
+    "tamil_title": "மண்ணும் தாவர போசணையும்",
+    "subUnits": [
+      {
+        "num": "3.1",
+        "title": "Soil physical, chemical and biological properties",
+        "sinhala": "පසේ භෞතික, රසායනික සහ ජෛව විද්‍යාත්මක ගුණ",
+        "tamil": "மண்ணின் பௌதிக, இரசாயன, உயிரியல் பண்புகள்",
+        "hours": 5
+      },
+      {
+        "num": "3.2",
+        "title": "Plant nutrients, deficiency symptoms and fertilizers",
+        "sinhala": "ශාක පෝෂක, ඌනතා ලක්ෂණ සහ පොහොර",
+        "tamil": "தாவர போசணைகளும் குறைபாட்டு அறிகுறிகளும் பசளைகளும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Water Management in Agriculture",
+    "english": "Water Management in Agriculture",
+    "sinhala": "කෘෂිකාර්මික ජල කළමනාකරණය",
+    "sinhala_title": "කෘෂිකාර්මික ජල කළමනාකරණය",
+    "tamil": "விவசாய நீர் முகாமைத்துவம்",
+    "tamil_title": "விவசாய நீர் முகாமைத்துவம்",
+    "subUnits": [
+      {
+        "num": "4.1",
+        "title": "Irrigation methods and water requirements",
+        "sinhala": "වාරිමාර්ග ක්‍රම සහ ජල අවශ්‍යතා",
+        "tamil": "நீர்ப்பாசன முறைகளும் நீர்த் தேவைகளும்",
+        "hours": 4
+      },
+      {
+        "num": "4.2",
+        "title": "Agricultural drainage and watershed management",
+        "sinhala": "කෘෂිකාර්මික ජලාපවහනය සහ ජල පෝෂක කළමනාකරණය",
+        "tamil": "விவசாய வடிகாலமைப்பும் நீரேந்து பிரதேசம்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Crop Production and Agronomy",
+    "english": "Crop Production and Agronomy",
+    "sinhala": "බෝග නිෂ්පාදනය සහ ශෂ්‍ය විද්‍යාව",
+    "sinhala_title": "බෝග නිෂ්පාදනය සහ ශෂ්‍ය විද්‍යාව",
+    "tamil": "பயிர் உற்பத்தியும் பயிர்ச்செய்கை முறைகளும்",
+    "tamil_title": "பயிர் உற்பத்தியும் பயிர்ச்செய்கை முறைகளும்",
+    "subUnits": [
+      {
+        "num": "5.1",
+        "title": "Paddy and field crop cultivation",
+        "sinhala": "වී සහ ක්ෂේත්‍ර බෝග වගාව",
+        "tamil": "நெற் செய்கையும் வயல் பயிர்ச்செய்கையும்",
+        "hours": 5
+      },
+      {
+        "num": "5.2",
+        "title": "Horticulture, fruit and vegetable production",
+        "sinhala": "උද්‍යාන පාලනය, පලතුරු සහ එළවළු නිෂ්පාදනය",
+        "tamil": "தோட்டக்கலையும் பழங்கள் மற்றும் மரக்கறி உற்பத்தியும்",
+        "hours": 5
+      },
+      {
+        "num": "5.3",
+        "title": "Protected agriculture and soilless culture",
+        "sinhala": "ආරක්ෂිත කෘෂිකර්මාන්තය සහ පාංශු විරහිත වගාව",
+        "tamil": "பாதுகாக்கப்பட்ட விவசாயமும் மண்ணில்லாப் பயிர்ச்செய்கையும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Plant Breeding and Seed Technology",
+    "english": "Plant Breeding and Seed Technology",
+    "sinhala": "ශාක ප්‍රජනනය සහ බීජ තාක්ෂණය",
+    "sinhala_title": "ශාක ප්‍රජනනය සහ බීජ තාක්ෂණය",
+    "tamil": "தாவர இனப்பெருக்கமும் விதைத் தொழில்நுட்பமும்",
+    "tamil_title": "தாவர இனப்பெருக்கமும் விதைத் தொழில்நுட்பமும்",
+    "subUnits": [
+      {
+        "num": "6.1",
+        "title": "Plant breeding methods and hybridization",
+        "sinhala": "ශාක ප්‍රජනන ක්‍රම සහ දෙමුහුන්කරණය",
+        "tamil": "தாவர இனப்பெருக்க முறைகளும் கலப்பினமாக்கலும்",
+        "hours": 4
+      },
+      {
+        "num": "6.2",
+        "title": "Seed certification, storage and tissue culture",
+        "sinhala": "බීජ සහතිකකරණය, ගබඩා කිරීම සහ පටක රෝපණය",
+        "tamil": "விதைச் சான்றளிப்பும் களஞ்சியப்படுத்தலும் இழைய வளர்ப்பும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Pest and Disease Management",
+    "english": "Pest and Disease Management",
+    "sinhala": "පළිබෝධ සහ රෝග කළමනාකරණය",
+    "sinhala_title": "පළිබෝධ සහ රෝග කළමනාකරණය",
+    "tamil": "பீடை மற்றும் நோய் முகாமைத்துவம்",
+    "tamil_title": "பீடை மற்றும் நோய் முகாமைத்துவம்",
+    "subUnits": [
+      {
+        "num": "7.1",
+        "title": "Integrated pest management (IPM) and biological control",
+        "sinhala": "සමෝධානික පළිබෝධ පාලනය (IPM) සහ ජෛව පාලනය",
+        "tamil": "ஒருங்கிணைந்த பீடை முகாமைத்துவமும் (IPM) உயிரியல் கட்டுப்பாடும்",
+        "hours": 5
+      },
+      {
+        "num": "7.2",
+        "title": "Plant pathology and weed control principles",
+        "sinhala": "ශාක රෝග විද්‍යාව සහ වල් මර්ධන මූලධර්ම",
+        "tamil": "தாவர நோயியலும் களைக் கட்டுப்பாட்டுக் கொள்கைகளும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Post-Harvest Technology",
+    "english": "Post-Harvest Technology",
+    "sinhala": "පසු අස්වනු තාක්ෂණය",
+    "sinhala_title": "පසු අස්වනු තාක්ෂණය",
+    "tamil": "அறுவடைக்குப் பிந்தைய தொழில்நுட்பம்",
+    "tamil_title": "அறுவடைக்குப் பிந்தைய தொழில்நுட்பம்",
+    "subUnits": [
+      {
+        "num": "8.1",
+        "title": "Post-harvest losses and handling techniques",
+        "sinhala": "පසු අස්වනු හානි සහ හැසිරවීමේ ශිල්පීය ක්‍රම",
+        "tamil": "அறுவடைக்குப் பிந்தைய இழப்புகளும் கையாளுதல் நுட்பங்களும்",
+        "hours": 4
+      },
+      {
+        "num": "8.2",
+        "title": "Food processing, value addition and preservation",
+        "sinhala": "ආහාර සැකසුම්කරණය, අගය එකතු කිරීම සහ කල්තබා ගැනීම",
+        "tamil": "உணவு பதப்படுத்தலும் பெறுமதி சேர்த்தலும் பேணலும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 9,
+    "title": "Livestock Production and Management",
+    "english": "Livestock Production and Management",
+    "sinhala": "පශු සම්පත් නිෂ්පාදනය සහ කළමනාකරණය",
+    "sinhala_title": "පශු සම්පත් නිෂ්පාදනය සහ කළමනාකරණය",
+    "tamil": "கால்நடை உற்பத்தியும் முகாமைத்துவமும்",
+    "tamil_title": "கால்நடை உற்பத்தியும் முகாமைத்துவமும்",
+    "subUnits": [
+      {
+        "num": "9.1",
+        "title": "Dairy, cattle and poultry farming systems",
+        "sinhala": "කිරි ගව සහ කුකුළු පාලන ක්‍රම",
+        "tamil": "பால் பண்ணை மற்றும் கோழி வளர்ப்பு அமைப்புகள்",
+        "hours": 5
+      },
+      {
+        "num": "9.2",
+        "title": "Animal feeds, breeding and animal health",
+        "sinhala": "සත්ත්ව ආහාර, ප්‍රජනනය සහ සත්ත්ව සෞඛ්‍යය",
+        "tamil": "விலங்குத் தீவனங்களும் இனப்பெருக்கமும் சுகாதாரமும்",
+        "hours": 5
+      }
+    ]
+  },
+  {
+    "num": 10,
+    "title": "Farm Machinery and Structures",
+    "english": "Farm Machinery and Structures",
+    "sinhala": "ගොවිපළ යන්ත්‍රෝපකරණ සහ ව්‍යූහ",
+    "sinhala_title": "ගොවිපළ යන්ත්‍රෝපකරණ සහ ව්‍යූහ",
+    "tamil": "பண்ணை இயந்திரங்களும் அமைப்புகளும்",
+    "tamil_title": "பண்ணை இயந்திரங்களும் அமைப்புகளும்",
+    "subUnits": [
+      {
+        "num": "10.1",
+        "title": "Tractors, implements and harvesting machinery",
+        "sinhala": "ට්‍රැක්ටර්, උපකරණ සහ අස්වනු නෙළන යන්ත්‍ර",
+        "tamil": "உழவு இயந்திரங்கள், கருவிகள், அறுவடை இயந்திரங்கள்",
+        "hours": 4
+      },
+      {
+        "num": "10.2",
+        "title": "Greenhouses and farm building layouts",
+        "sinhala": "හරිතාගාර සහ ගොවිපළ ගොඩනැගිලි සැකසුම්",
+        "tamil": "பச்சை இல்லங்களும் பண்ணைக் கட்டட அமைப்புகளும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 11,
+    "title": "Agricultural Economics and Agribusiness",
+    "english": "Agricultural Economics and Agribusiness",
+    "sinhala": "කෘෂිකාර්මික ආර්ථික විද්‍යාව සහ කෘෂි ව්‍යාපාර",
+    "sinhala_title": "කෘෂිකාර්මික ආර්ථික විද්‍යාව සහ කෘෂි ව්‍යාපාර",
+    "tamil": "விவசாயப் பொருளியலும் விவசாய வணிகமும்",
+    "tamil_title": "விவசாயப் பொருளியலும் விவசாய வணிகமும்",
+    "subUnits": [
+      {
+        "num": "11.1",
+        "title": "Agricultural marketing and supply chain systems",
+        "sinhala": "කෘෂිකාර්මික අලෙවිකරණය සහ සැපයුම් දාම",
+        "tamil": "விவசாய சந்தைப்படுத்தலும் விநியோகச் சங்கிலி அமைப்புகளும்",
+        "hours": 4
+      },
+      {
+        "num": "11.2",
+        "title": "Farm accounting and project evaluation",
+        "sinhala": "ගොවිපළ ගිණුම්කරණය සහ ව්‍යාපෘති ඇගයීම",
+        "tamil": "பண்ணைக் கணக்கியலும் திட்ட மதிப்பீடும்",
+        "hours": 4
+      }
+    ]
+  },
+  {
+    "num": 12,
+    "title": "Sustainable Agriculture and Forestry",
+    "english": "Sustainable Agriculture and Forestry",
+    "sinhala": "තිරසර කෘෂිකර්මාන්තය සහ වන විද්‍යාව",
+    "sinhala_title": "තිරසර කෘෂිකර්මාන්තය සහ වන විද්‍යාව",
+    "tamil": "நிலைபேறான விவசாயமும் வனவியலும்",
+    "tamil_title": "நிலைபேறான விவசாயமும் வனவியலும்",
+    "subUnits": [
+      {
+        "num": "12.1",
+        "title": "Organic farming and soil conservation practices",
+        "sinhala": "කාබනික ගොවිතැන සහ පාංශු සංරක්ෂණ පිළිවෙත්",
+        "tamil": "சேதன விவசாயமும் மண் பாதுகாப்பு நடைமுறைகளும்",
+        "hours": 4
+      },
+      {
+        "num": "12.2",
+        "title": "Agroforestry and natural resource management",
+        "sinhala": "කෘෂි වන විද්‍යාව සහ ස්වභාවික සම්පත් කළමනාකරණය",
+        "tamil": "விவசாய வனவியலும் இயற்கை வள முகாமைத்துவமும்",
+        "hours": 4
+      }
+    ]
+  }
+]
